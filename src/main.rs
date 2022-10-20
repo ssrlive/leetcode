@@ -8,5 +8,6 @@ mod code0118;
 mod code0119;
 mod code0120;
 mod code0121;
+mod code0122;
 
 fn main() {}
