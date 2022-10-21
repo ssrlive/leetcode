@@ -12,14 +12,19 @@ struct Solution;
 
 impl Solution {
     pub fn word_break(s: String, word_dict: Vec<String>) -> Vec<String> {
-        fn walk(result: &mut Vec<String>, buffer: &mut Vec<String>, s: &str, word_dict: &Vec<String>) {
-            if s.len()==0 {
+        fn walk(
+            result: &mut Vec<String>,
+            buffer: &mut Vec<String>,
+            s: &str,
+            word_dict: &Vec<String>,
+        ) {
+            if s.is_empty() {
                 result.push(buffer.join(" "));
             }
 
             for word in word_dict.iter() {
                 let len = word.len();
-                if s.len()>=len && word==&s[0..len] {
+                if s.len() >= len && word == &s[0..len] {
                     buffer.push(s[0..len].to_string());
                     walk(result, buffer, &s[len..], word_dict);
                     buffer.pop();
@@ -47,10 +52,7 @@ fn test_word_break() {
     ];
     let mut ans = Solution::word_break(s, word_dict);
     ans.sort();
-    let mut expected = vec![
-        "cats and dog".to_string(),
-        "cat sand dog".to_string(),
-    ];
+    let mut expected = vec!["cats and dog".to_string(), "cat sand dog".to_string()];
     expected.sort();
     assert_eq!(ans, expected);
     let s = "pineapplepenapple".to_string();
