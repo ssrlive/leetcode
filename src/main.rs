@@ -12,5 +12,6 @@ mod code0122;
 mod code0123;
 mod code0124;
 mod code0125;
+mod code0126;
 
 fn main() {}
