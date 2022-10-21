@@ -32,5 +32,6 @@ mod code0139;
 mod code0140;
 mod code0141;
 mod code0142;
+mod code0143;
 
 fn main() {}
