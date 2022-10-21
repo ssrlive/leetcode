@@ -10,8 +10,8 @@ use super::treenode::TreeNode;
 
 struct Solution {}
 
-use std::rc::Rc;
 use std::cell::RefCell;
+use std::rc::Rc;
 impl Solution {
     pub fn preorder_traversal(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
         let mut result = Vec::new();
@@ -36,12 +36,7 @@ impl Solution {
 #[test]
 fn test() {
     assert_eq!(
-        Solution::preorder_traversal(TreeNode::from_vec(vec![
-            Some(1),
-            None,
-            Some(2),
-            Some(3)
-        ])),
+        Solution::preorder_traversal(TreeNode::from_vec(vec![Some(1), None, Some(2), Some(3)])),
         vec![1, 2, 3]
     );
 }
