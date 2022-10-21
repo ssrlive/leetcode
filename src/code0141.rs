@@ -11,17 +11,17 @@
 //
 
 #[derive(PartialEq, Eq, Clone, Debug)]
-struct Node {
-    val: i32,
-    next: Option<Rc<RefCell<Node>>>,
+pub struct Node {
+    pub val: i32,
+    pub next: Option<Rc<RefCell<Node>>>,
 }
 
 impl Node {
-    fn new(val: i32) -> Self {
+    pub fn new(val: i32) -> Self {
         Node { val, next: None }
     }
 
-    fn from_vec(v: Vec<i32>) -> Option<Rc<RefCell<Node>>> {
+    pub fn from_vec(v: Vec<i32>) -> Option<Rc<RefCell<Node>>> {
         if v.is_empty() {
             return None;
         }
@@ -35,7 +35,7 @@ impl Node {
         head
     }
 
-    fn get_tail(&self) -> Option<Rc<RefCell<Node>>> {
+    pub fn get_tail(&self) -> Option<Rc<RefCell<Node>>> {
         let mut tail = Some(Rc::new(RefCell::new(self.clone())));
         while tail.as_ref()?.borrow().next.is_some() {
             tail = tail?.borrow().next.clone();
