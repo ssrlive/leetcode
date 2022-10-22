@@ -22,6 +22,19 @@ impl ListNode {
         }
         head?.next
     }
+
+    pub fn to_vec(&self) -> Vec<i32> {
+        let mut v = vec![];
+        let mut p = Some(self);
+        while let Some(node) = p {
+            v.push(node.val);
+            p = match &node.next {
+                Some(node) => Some(node),
+                None => None,
+            };
+        }
+        v
+    }
 }
 
 impl std::fmt::Display for ListNode {
