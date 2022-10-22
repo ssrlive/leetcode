@@ -21,7 +21,7 @@ use super::listnode::ListNode;
 struct Solution;
 
 impl Solution {
-    pub fn insertion_sort_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+    pub fn insertion_sort_list(head: Option<Box<ListNode<i32>>>) -> Option<Box<ListNode<i32>>> {
         match head {
             None => None,
             Some(node) => {

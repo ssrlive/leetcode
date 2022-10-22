@@ -2,19 +2,19 @@
 
 // Definition for singly-linked list.
 #[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: i32,
-    pub next: Option<Box<ListNode>>,
+pub struct ListNode<T> {
+    pub val: T,
+    pub next: Option<Box<ListNode<T>>>,
 }
 
-impl ListNode {
+impl<T: Default + Copy> ListNode<T> {
     #[inline]
-    pub fn new(val: i32) -> Self {
+    pub fn new(val: T) -> Self {
         ListNode { next: None, val }
     }
 
-    pub fn from_vec(v: Vec<i32>) -> Option<Box<ListNode>> {
-        let mut head = Some(Box::new(ListNode::new(0)));
+    pub fn from_vec(v: Vec<T>) -> Option<Box<ListNode<T>>> {
+        let mut head = Some(Box::new(ListNode::new(T::default())));
         let mut tail = &mut head;
         for i in v {
             tail.as_mut()?.next = Some(Box::new(ListNode::new(i)));
@@ -23,7 +23,7 @@ impl ListNode {
         head?.next
     }
 
-    pub fn to_vec(&self) -> Vec<i32> {
+    pub fn to_vec(&self) -> Vec<T> {
         let mut v = vec![];
         let mut p = Some(self);
         while let Some(node) = p {
@@ -37,7 +37,7 @@ impl ListNode {
     }
 }
 
-impl std::fmt::Display for ListNode {
+impl<T: std::fmt::Display> std::fmt::Display for ListNode<T> {
     fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
         let mut s = String::new();
         let mut node = Some(self);

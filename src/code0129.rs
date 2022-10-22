@@ -19,8 +19,8 @@ struct Solution {}
 use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
-    pub fn sum_numbers(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
-        fn solve(root: Option<&Rc<RefCell<TreeNode>>>, ans: &mut i32, number: &mut i32) {
+    pub fn sum_numbers(root: Option<Rc<RefCell<TreeNode<i32>>>>) -> i32 {
+        fn solve(root: Option<&Rc<RefCell<TreeNode<i32>>>>, ans: &mut i32, number: &mut i32) {
             if let Some(root) = root {
                 let node = root.borrow();
                 *number = *number * 10 + node.val;

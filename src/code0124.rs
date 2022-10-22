@@ -16,8 +16,8 @@ struct Solution {}
 use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
-    pub fn max_path_sum(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
-        fn dfs(node: &Option<Rc<RefCell<TreeNode>>>, answer: &mut i32) -> i32 {
+    pub fn max_path_sum(root: Option<Rc<RefCell<TreeNode<i32>>>>) -> i32 {
+        fn dfs(node: &Option<Rc<RefCell<TreeNode<i32>>>>, answer: &mut i32) -> i32 {
             if let Some(n) = node {
                 let val = n.borrow().val;
                 let l = std::cmp::max(0, dfs(&n.borrow().left, answer));

@@ -10,9 +10,9 @@ struct Solution;
 use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
-    pub fn path_sum(root: Option<Rc<RefCell<TreeNode>>>, target_sum: i32) -> Vec<Vec<i32>> {
+    pub fn path_sum(root: Option<Rc<RefCell<TreeNode<i32>>>>, target_sum: i32) -> Vec<Vec<i32>> {
         fn backtrack(
-            node_rc: Rc<RefCell<TreeNode>>,
+            node_rc: Rc<RefCell<TreeNode<i32>>>,
             target_sum: i32,
             path: &mut Vec<i32>,
             sum: i32,

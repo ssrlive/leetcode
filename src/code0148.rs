@@ -10,7 +10,7 @@ use super::listnode::ListNode;
 struct Solution;
 
 impl Solution {
-    pub fn sort_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+    pub fn sort_list(head: Option<Box<ListNode<i32>>>) -> Option<Box<ListNode<i32>>> {
         let mut head = head;
         let mut vec: Vec<i32> = vec![];
         while let Some(node) = head {

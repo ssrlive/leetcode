@@ -5,16 +5,16 @@ use std::rc::Rc;
 
 // Definition for a binary tree node.
 #[derive(Debug, PartialEq, Eq, Clone)]
-pub struct TreeNode {
-    pub val: i32,
-    pub left: Option<Rc<RefCell<TreeNode>>>,
-    pub right: Option<Rc<RefCell<TreeNode>>>,
-    pub next: Option<Rc<RefCell<TreeNode>>>,
+pub struct TreeNode<T> {
+    pub val: T,
+    pub left: Option<Rc<RefCell<TreeNode<T>>>>,
+    pub right: Option<Rc<RefCell<TreeNode<T>>>>,
+    pub next: Option<Rc<RefCell<TreeNode<T>>>>,
 }
 
-impl TreeNode {
+impl<T: std::fmt::Display + Copy> TreeNode<T> {
     #[inline]
-    pub fn new(val: i32) -> Self {
+    pub fn new(val: T) -> Self {
         TreeNode {
             val,
             left: None,
@@ -23,7 +23,7 @@ impl TreeNode {
         }
     }
 
-    pub fn from_vec(v: Vec<Option<i32>>) -> Option<Rc<RefCell<TreeNode>>> {
+    pub fn from_vec(v: Vec<Option<T>>) -> Option<Rc<RefCell<TreeNode<T>>>> {
         if v.is_empty() {
             return None;
         }
@@ -51,7 +51,7 @@ impl TreeNode {
         root
     }
 
-    pub fn to_vec(root: &Option<Rc<RefCell<TreeNode>>>) -> Vec<Option<i32>> {
+    pub fn to_vec(root: &Option<Rc<RefCell<TreeNode<T>>>>) -> Vec<Option<T>> {
         let mut v = Vec::new();
         if root.is_none() {
             return v;
@@ -74,7 +74,7 @@ impl TreeNode {
         v
     }
 
-    pub fn to_string(root: &Option<Rc<RefCell<TreeNode>>>) -> String {
+    pub fn to_string(root: &Option<Rc<RefCell<TreeNode<T>>>>) -> String {
         let v = TreeNode::to_vec(root);
         let mut s = String::new();
         for (i, item) in v.iter().enumerate() {
@@ -90,8 +90,8 @@ impl TreeNode {
         s
     }
 
-    pub fn preorder_traversal(root: &Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
-        fn helper(node: &Option<Rc<RefCell<TreeNode>>>, ret: &mut Vec<i32>) {
+    pub fn preorder_traversal(root: &Option<Rc<RefCell<TreeNode<T>>>>) -> Vec<T> {
+        fn helper<T: Copy>(node: &Option<Rc<RefCell<TreeNode<T>>>>, ret: &mut Vec<T>) {
             if let Some(v) = node {
                 let v = v.borrow();
                 ret.push(v.val);
@@ -107,8 +107,8 @@ impl TreeNode {
         ret
     }
 
-    pub fn inorder_traversal(root: &Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
-        fn helper(node: &Option<Rc<RefCell<TreeNode>>>, ret: &mut Vec<i32>) {
+    pub fn inorder_traversal(root: &Option<Rc<RefCell<TreeNode<T>>>>) -> Vec<T> {
+        fn helper<T: Copy>(node: &Option<Rc<RefCell<TreeNode<T>>>>, ret: &mut Vec<T>) {
             if let Some(v) = node {
                 let v = v.borrow();
                 helper(&v.left, ret);
@@ -124,8 +124,8 @@ impl TreeNode {
         ret
     }
 
-    pub fn postorder_traversal(root: &Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
-        fn helper(node: &Option<Rc<RefCell<TreeNode>>>, ret: &mut Vec<i32>) {
+    pub fn postorder_traversal(root: &Option<Rc<RefCell<TreeNode<T>>>>) -> Vec<T> {
+        fn helper<T: Copy>(node: &Option<Rc<RefCell<TreeNode<T>>>>, ret: &mut Vec<T>) {
             if let Some(v) = node {
                 let v = v.borrow();
                 helper(&v.left, ret);

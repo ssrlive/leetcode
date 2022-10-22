@@ -18,7 +18,7 @@ use super::listnode::ListNode;
 struct Solution {}
 
 impl Solution {
-    pub fn reorder_list(head: &mut Option<Box<ListNode>>) {
+    pub fn reorder_list(head: &mut Option<Box<ListNode<i32>>>) {
         // Find how many nodes are in the list;
         let mut count = 0;
         let mut list = &*head;

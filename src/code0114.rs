@@ -10,7 +10,7 @@ struct Solution;
 use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
-    pub fn flatten(root: &mut Option<Rc<RefCell<TreeNode>>>) {
+    pub fn flatten(root: &mut Option<Rc<RefCell<TreeNode<i32>>>>) {
         // .flatten() takes care of the edge case of an empty root,
         // in which case the stack will be empty.
         let mut stack = std::iter::once(root.clone()).flatten().collect::<Vec<_>>();

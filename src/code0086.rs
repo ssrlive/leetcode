@@ -8,7 +8,7 @@ use super::listnode::ListNode;
 struct Solution;
 
 impl Solution {
-    pub fn partition(head: Option<Box<ListNode>>, x: i32) -> Option<Box<ListNode>> {
+    pub fn partition(head: Option<Box<ListNode<i32>>>, x: i32) -> Option<Box<ListNode<i32>>> {
         let mut head = head;
         let mut less_head = Some(Box::new(ListNode::new(0)));
         let mut less_tail = &mut less_head;
