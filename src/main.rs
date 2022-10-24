@@ -50,5 +50,6 @@ mod code0162;
 mod code0164;
 mod code0165;
 mod code0166;
+mod code0167;
 
 fn main() {}
