@@ -42,8 +42,8 @@ impl ListNode {
         }
         let head = Some(Rc::new(RefCell::new(ListNode::new(v[0]))));
         let mut node = head.clone();
-        for i in 1..v.len() {
-            node.as_ref()?.borrow_mut().next = Some(Rc::new(RefCell::new(ListNode::new(v[i]))));
+        for item in v.iter().skip(1) {
+            node.as_ref()?.borrow_mut().next = Some(Rc::new(RefCell::new(ListNode::new(*item))));
             let n = node.as_ref()?.borrow().next.clone();
             node = n;
         }
@@ -77,9 +77,9 @@ impl Solution {
             }
         }
 
-        let head_a = head_a.clone();
+        let head_a = head_a;
         change_sign(&head_a);
-        let mut head_b = head_b.clone();
+        let mut head_b = head_b;
         while let Some(node) = head_b {
             if node.borrow().val < 0 {
                 head_b = Some(node);
