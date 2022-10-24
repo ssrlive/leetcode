@@ -43,5 +43,6 @@ mod code0150;
 mod code0151;
 mod code0152;
 mod code0153;
+mod code0154;
 
 fn main() {}
