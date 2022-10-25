@@ -34,10 +34,11 @@ impl Solution {
 
 #[test]
 fn test_find_repeated_dna_sequences() {
-    assert_eq!(
-        Solution::find_repeated_dna_sequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT".to_string()),
-        vec!["AAAAACCCCC".to_string(), "CCCCCAAAAA".to_string(),]
-    );
+    let mut l =
+        Solution::find_repeated_dna_sequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT".to_owned());
+    l.sort();
+    let expected = vec!["AAAAACCCCC", "CCCCCAAAAA"];
+    assert_eq!(l, expected);
     assert_eq!(
         Solution::find_repeated_dna_sequences("AAAAAAAAAAAAA".to_string()),
         vec!["AAAAAAAAAA".to_string()]
