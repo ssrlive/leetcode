@@ -70,5 +70,6 @@ mod code0201;
 mod code0202;
 mod code0203;
 mod code0204;
+mod code0205;
 
 fn main() {}
