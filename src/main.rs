@@ -16,6 +16,7 @@ mod code0094;
 mod code0095;
 mod code0098;
 mod code0099;
+mod code0100;
 mod code0113;
 mod code0114;
 mod code0115;
