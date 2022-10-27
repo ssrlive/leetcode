@@ -10,7 +10,7 @@ struct Solution {}
 use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
-    pub fn connect(root: Option<Rc<RefCell<TreeNode<i32>>>>) -> Option<Rc<RefCell<TreeNode<i32>>>> {
+    pub fn connect<T>(root: Option<Rc<RefCell<TreeNode<T>>>>) -> Option<Rc<RefCell<TreeNode<T>>>> {
         let mut cur = root.clone();
         while let Some(cur_rc) = cur.clone() {
             let l = cur_rc.borrow().left.clone();
@@ -32,7 +32,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let root = TreeNode::from_vec(vec![
+    let root = TreeNode::from_vec(&vec![
         Some(1),
         Some(2),
         Some(3),

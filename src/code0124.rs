@@ -38,11 +38,11 @@ impl Solution {
 #[test]
 fn test_max_path_sum() {
     assert_eq!(
-        Solution::max_path_sum(TreeNode::from_vec(vec![Some(1), Some(2), Some(3)])),
+        Solution::max_path_sum(TreeNode::from_vec(&vec![Some(1), Some(2), Some(3)])),
         6
     );
     assert_eq!(
-        Solution::max_path_sum(TreeNode::from_vec(vec![
+        Solution::max_path_sum(TreeNode::from_vec(&[
             Some(-10),
             Some(9),
             Some(20),

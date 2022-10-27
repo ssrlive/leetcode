@@ -46,11 +46,11 @@ impl Solution {
 
 #[test]
 fn test_insertion_sort_list() {
-    let head = ListNode::from_vec(vec![4, 2, 1, 3]);
+    let head = ListNode::from_vec(&vec![4, 2, 1, 3]);
     let head = Solution::insertion_sort_list(head).unwrap();
     assert_eq!(head.to_vec(), vec![1, 2, 3, 4]);
 
-    let head = ListNode::from_vec(vec![-1, 5, 3, 4, 0]);
+    let head = ListNode::from_vec(&vec![-1, 5, 3, 4, 0]);
     let head = Solution::insertion_sort_list(head).unwrap();
     assert_eq!(head.to_vec(), vec![-1, 0, 3, 4, 5]);
 }

@@ -13,7 +13,7 @@ struct Solution {}
 use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
-    pub fn postorder_traversal(root: Option<Rc<RefCell<TreeNode<i32>>>>) -> Vec<i32> {
+    pub fn postorder_traversal<T: Copy>(root: Option<Rc<RefCell<TreeNode<T>>>>) -> Vec<T> {
         let mut result = Vec::new();
         let mut stack = Vec::new();
         let mut node = root;
@@ -37,7 +37,7 @@ impl Solution {
 #[test]
 fn test_postorder_traversal() {
     assert_eq!(
-        Solution::postorder_traversal(TreeNode::from_vec(vec![Some(1), None, Some(2), Some(3)])),
+        Solution::postorder_traversal(TreeNode::from_vec(&[Some(1), None, Some(2), Some(3)])),
         vec![3, 2, 1]
     );
 }

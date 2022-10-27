@@ -10,13 +10,15 @@ struct Solution;
 use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
-    pub fn flatten(root: &mut Option<Rc<RefCell<TreeNode<i32>>>>) {
+    pub fn flatten<T: Default + Copy + std::fmt::Display>(
+        root: &mut Option<Rc<RefCell<TreeNode<T>>>>,
+    ) {
         // .flatten() takes care of the edge case of an empty root,
         // in which case the stack will be empty.
         let mut stack = std::iter::once(root.clone()).flatten().collect::<Vec<_>>();
         // Create a dummy node to make it easier to append nodes without
         // dealing with the edge case of the first node
-        let mut head = Rc::new(RefCell::new(TreeNode::new(0)));
+        let mut head = Rc::new(RefCell::new(TreeNode::new(T::default())));
         while let Some(node) = stack.pop() {
             let mut node_ref = node.borrow_mut();
             // Push right node onto stack first, since we want to pop it last
@@ -36,7 +38,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let mut root = TreeNode::from_vec(vec![
+    let mut root = TreeNode::from_vec(&vec![
         Some(1),
         Some(2),
         Some(5),

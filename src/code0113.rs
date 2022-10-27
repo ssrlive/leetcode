@@ -10,14 +10,17 @@ struct Solution;
 use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
-    pub fn path_sum(root: Option<Rc<RefCell<TreeNode<i32>>>>, target_sum: i32) -> Vec<Vec<i32>> {
-        fn backtrack(
-            node_rc: Rc<RefCell<TreeNode<i32>>>,
-            target_sum: i32,
-            path: &mut Vec<i32>,
-            sum: i32,
-            mut rez: Vec<Vec<i32>>,
-        ) -> Vec<Vec<i32>> {
+    pub fn path_sum<T: PartialEq + Clone + std::ops::Add<Output = T> + Default + Copy>(
+        root: Option<Rc<RefCell<TreeNode<T>>>>,
+        target_sum: T,
+    ) -> Vec<Vec<T>> {
+        fn backtrack<T: PartialEq + Clone + std::ops::Add<Output = T> + Default + Copy>(
+            node_rc: Rc<RefCell<TreeNode<T>>>,
+            target_sum: T,
+            path: &mut Vec<T>,
+            sum: T,
+            mut rez: Vec<Vec<T>>,
+        ) -> Vec<Vec<T>> {
             let mut node_ref = node_rc.borrow_mut();
             path.push(node_ref.val);
             let sum = sum + node_ref.val;
@@ -39,15 +42,15 @@ impl Solution {
         }
 
         match root {
-            Some(root_rc) => backtrack(root_rc, target_sum, &mut vec![], 0, vec![]),
+            Some(root_rc) => backtrack(root_rc, target_sum, &mut vec![], T::default(), vec![]),
             None => vec![],
         }
     }
 }
 
 #[test]
-fn test() {
-    let root = TreeNode::from_vec(vec![
+fn test_path_sum() {
+    let root = TreeNode::from_vec(&vec![
         Some(5),
         Some(4),
         Some(8),

@@ -45,8 +45,8 @@ impl Solution {
 
 #[test]
 fn test_sum_numbers() {
-    let root = TreeNode::from_vec(vec![Some(1), Some(2), Some(3)]);
+    let root = TreeNode::from_vec(&[Some(1), Some(2), Some(3)]);
     assert_eq!(Solution::sum_numbers(root), 25);
-    let root = TreeNode::from_vec(vec![Some(4), Some(9), Some(0), Some(5), Some(1)]);
+    let root = TreeNode::from_vec(&[Some(4), Some(9), Some(0), Some(5), Some(1)]);
     assert_eq!(Solution::sum_numbers(root), 1026);
 }
