@@ -23,7 +23,7 @@ impl TreeNode {
         }
     }
 
-    pub fn from_vec(v: Vec<Option<i32>>) -> Option<Rc<RefCell<TreeNode>>> {
+    pub fn from_vec(v: &[Option<i32>]) -> Option<Rc<RefCell<TreeNode>>> {
         if v.is_empty() {
             return None;
         }
@@ -144,7 +144,7 @@ impl TreeNode {
 
 #[test]
 fn test_tree_node() {
-    let root = TreeNode::from_vec(vec![Some(1), Some(2), Some(3), Some(4), Some(5), Some(6)]);
+    let root = TreeNode::from_vec(&[Some(1), Some(2), Some(3), Some(4), Some(5), Some(6)]);
     assert_eq!(
         TreeNode::to_vec(&root),
         vec![Some(1), Some(2), Some(3), Some(4), Some(5), Some(6)]

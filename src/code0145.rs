@@ -37,7 +37,7 @@ impl Solution {
 #[test]
 fn test_postorder_traversal() {
     assert_eq!(
-        Solution::postorder_traversal(TreeNode::from_vec(vec![Some(1), None, Some(2), Some(3)])),
+        Solution::postorder_traversal(TreeNode::from_vec(&[Some(1), None, Some(2), Some(3)])),
         vec![3, 2, 1]
     );
 }

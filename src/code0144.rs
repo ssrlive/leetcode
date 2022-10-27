@@ -36,7 +36,7 @@ impl Solution {
 #[test]
 fn test() {
     assert_eq!(
-        Solution::preorder_traversal(TreeNode::from_vec(vec![Some(1), None, Some(2), Some(3)])),
+        Solution::preorder_traversal(TreeNode::from_vec(&[Some(1), None, Some(2), Some(3)])),
         vec![1, 2, 3]
     );
 }

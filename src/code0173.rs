@@ -53,7 +53,7 @@ impl BSTIterator {
 
 #[test]
 fn test_bst_iterator() {
-    let root = TreeNode::from_vec(vec![
+    let root = TreeNode::from_vec(&vec![
         Some(7),
         Some(3),
         Some(15),

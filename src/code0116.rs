@@ -32,7 +32,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let root = TreeNode::from_vec(vec![
+    let root = TreeNode::from_vec(&vec![
         Some(1),
         Some(2),
         Some(3),

@@ -39,7 +39,7 @@ impl Solution {
 #[test]
 fn test() {
     assert_eq!(
-        Solution::right_side_view(TreeNode::from_vec(vec![
+        Solution::right_side_view(TreeNode::from_vec(&vec![
             Some(1),
             Some(2),
             Some(3),
@@ -51,7 +51,7 @@ fn test() {
         vec![1, 3, 4]
     );
     assert_eq!(
-        Solution::right_side_view(TreeNode::from_vec(vec![
+        Solution::right_side_view(TreeNode::from_vec(&[
             Some(1),
             Some(2),
             Some(3),
