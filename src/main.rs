@@ -27,6 +27,7 @@ mod code0107;
 mod code0108;
 mod code0109;
 mod code0110;
+mod code0111;
 mod code0113;
 mod code0114;
 mod code0115;
