@@ -1,0 +1,60 @@
+#![allow(dead_code)]
+
+// 23. Merge k Sorted Lists
+// https://leetcode.com/problems/merge-k-sorted-lists/
+//
+// You are given an array of k linked-lists lists, each linked-list is sorted in ascending order.
+//
+// Merge all the linked-lists into one sorted linked-list and return it.
+//
+
+use super::listnode::ListNode;
+
+pub struct Solution {}
+
+impl Solution {
+    pub fn merge_k_lists(lists: Vec<Option<Box<ListNode>>>) -> Option<Box<ListNode>> {
+        let mut lists = lists;
+        let mut head = None;
+        let mut tail = &mut head;
+        loop {
+            let mut min: Option<&Box<ListNode>> = None;
+            let mut min_index = 0;
+            for (i, item) in lists.iter().enumerate() {
+                if let Some(node) = item {
+                    if min.is_none() || node.val < min.unwrap().val {
+                        min = Some(node);
+                        min_index = i;
+                    }
+                }
+            }
+            if min.is_none() {
+                break;
+            }
+            let mut node = lists[min_index].take().unwrap();
+            lists[min_index] = node.next.take();
+            *tail = Some(node);
+            tail = &mut tail.as_mut().unwrap().next;
+        }
+        head
+    }
+}
+
+#[test]
+fn test_merge_k_lists() {
+    let lists = vec![
+        ListNode::from_vec(&[1, 4, 5]),
+        ListNode::from_vec(&[1, 3, 4]),
+        ListNode::from_vec(&[2, 6]),
+    ];
+    let result = ListNode::from_vec(&[1, 1, 2, 3, 4, 4, 5, 6]);
+    assert_eq!(Solution::merge_k_lists(lists), result);
+
+    let lists = vec![];
+    let result = None;
+    assert_eq!(Solution::merge_k_lists(lists), result);
+
+    let lists = vec![None];
+    let result = None;
+    assert_eq!(Solution::merge_k_lists(lists), result);
+}
