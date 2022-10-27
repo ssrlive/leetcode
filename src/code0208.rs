@@ -51,7 +51,7 @@ impl Trie {
     fn insert(&mut self, word: String) {
         let mut current_node = &mut self.root;
         for c in word.chars() {
-            let next_node = current_node.children.entry(c).or_insert(TrieNode::new());
+            let next_node = current_node.children.entry(c).or_insert_with(TrieNode::new);
             current_node = next_node;
         }
         current_node.is_word = true;
@@ -65,7 +65,7 @@ impl Trie {
                 None => return false,
             }
         }
-        return current_node.is_word;
+        current_node.is_word
     }
 
     fn starts_with(&self, prefix: String) -> bool {
@@ -76,7 +76,7 @@ impl Trie {
                 None => return false,
             }
         }
-        return true;
+        true
     }
 }
 
