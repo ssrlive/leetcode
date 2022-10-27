@@ -71,18 +71,18 @@ impl Solution {
 
 #[test]
 fn test() {
-    let l1 = ListNode::from_vec(vec![1, 2, 4]);
-    let l2 = ListNode::from_vec(vec![1, 3, 4]);
-    let l3 = ListNode::from_vec(vec![1, 1, 2, 3, 4, 4]);
+    let l1 = ListNode::from_vec(&[1, 2, 4]);
+    let l2 = ListNode::from_vec(&[1, 3, 4]);
+    let l3 = ListNode::from_vec(&[1, 1, 2, 3, 4, 4]);
     assert_eq!(Solution::merge_two_lists_2(l1, l2), l3);
 
-    let l1 = ListNode::from_vec(vec![]);
-    let l2 = ListNode::from_vec(vec![]);
-    let l3 = ListNode::from_vec(vec![]);
+    let l1 = ListNode::from_vec(&vec![]);
+    let l2 = ListNode::from_vec(&vec![]);
+    let l3 = ListNode::from_vec(&vec![]);
     assert_eq!(Solution::merge_two_lists_2(l1, l2), l3);
 
-    let l1 = ListNode::from_vec(vec![]);
-    let l2 = ListNode::from_vec(vec![0]);
-    let l3 = ListNode::from_vec(vec![0]);
+    let l1 = ListNode::from_vec(&vec![]);
+    let l2 = ListNode::from_vec(&vec![0]);
+    let l3 = ListNode::from_vec(&vec![0]);
     assert_eq!(Solution::merge_two_lists_2(l1, l2), l3);
 }

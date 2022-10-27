@@ -34,19 +34,19 @@ impl Solution {
 #[test]
 fn test_remove_elements() {
     assert_eq!(
-        Solution::remove_elements(ListNode::from_vec(vec![1, 2, 6, 3, 4, 5, 6]), 6),
-        ListNode::from_vec(vec![1, 2, 3, 4, 5])
+        Solution::remove_elements(ListNode::from_vec(&[1, 2, 6, 3, 4, 5, 6]), 6),
+        ListNode::from_vec(&[1, 2, 3, 4, 5])
     );
     assert_eq!(
-        Solution::remove_elements(ListNode::from_vec(vec![1]), 1),
-        ListNode::from_vec(vec![])
+        Solution::remove_elements(ListNode::from_vec(&vec![1]), 1),
+        ListNode::from_vec(&vec![])
     );
     assert_eq!(
-        Solution::remove_elements(ListNode::from_vec(vec![1, 1]), 1),
-        ListNode::from_vec(vec![])
+        Solution::remove_elements(ListNode::from_vec(&vec![1, 1]), 1),
+        ListNode::from_vec(&vec![])
     );
     assert_eq!(
-        Solution::remove_elements(ListNode::from_vec(vec![7, 7, 7, 7]), 7),
-        ListNode::from_vec(vec![])
+        Solution::remove_elements(ListNode::from_vec(&vec![7, 7, 7, 7]), 7),
+        ListNode::from_vec(&vec![])
     );
 }

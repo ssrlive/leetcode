@@ -13,11 +13,11 @@ impl ListNode {
         ListNode { next: None, val }
     }
 
-    pub fn from_vec(v: Vec<i32>) -> Option<Box<ListNode>> {
+    pub fn from_vec(v: &[i32]) -> Option<Box<ListNode>> {
         let mut head = Some(Box::new(ListNode::new(0)));
         let mut tail = &mut head;
         for i in v {
-            tail.as_mut()?.next = Some(Box::new(ListNode::new(i)));
+            tail.as_mut()?.next = Some(Box::new(ListNode::new(*i)));
             tail = &mut tail.as_mut()?.next;
         }
         head?.next

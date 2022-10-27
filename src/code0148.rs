@@ -28,11 +28,11 @@ impl Solution {
 
 #[test]
 fn test1() {
-    let head = ListNode::from_vec(vec![4, 2, 1, 3]);
+    let head = ListNode::from_vec(&vec![4, 2, 1, 3]);
     let head = Solution::sort_list(head);
     assert_eq!(head.unwrap().to_vec(), vec![1, 2, 3, 4]);
 
-    let head = ListNode::from_vec(vec![-1, 5, 3, 4, 0]);
+    let head = ListNode::from_vec(&vec![-1, 5, 3, 4, 0]);
     let head = Solution::sort_list(head);
     assert_eq!(head.unwrap().to_vec(), vec![-1, 0, 3, 4, 5]);
 }
