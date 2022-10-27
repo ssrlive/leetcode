@@ -38,6 +38,30 @@ impl Solution {
         }
         head
     }
+
+    pub fn merge_k_lists_2(lists: Vec<Option<Box<ListNode>>>) -> Option<Box<ListNode>> {
+        // Collect all values from all nodes in all lists.
+        let mut vals = Vec::new();
+        lists.iter().for_each(|list| {
+            let mut head = list.as_ref();
+            while head.is_some() {
+                vals.push(head.unwrap().val);
+                head = head.unwrap().next.as_ref();
+            }
+        });
+        vals.sort_unstable();
+
+        // Build the returned list in reverse, starting with None.
+        let mut head = None;
+        vals.iter().rev().for_each(|&val| {
+            head = Some(Box::new(ListNode {
+                val,
+                next: head.take(),
+            }));
+        });
+        head
+    }
+
 }
 
 #[test]
@@ -48,13 +72,13 @@ fn test_merge_k_lists() {
         ListNode::from_vec(&[2, 6]),
     ];
     let result = ListNode::from_vec(&[1, 1, 2, 3, 4, 4, 5, 6]);
-    assert_eq!(Solution::merge_k_lists(lists), result);
+    assert_eq!(Solution::merge_k_lists_2(lists), result);
 
     let lists = vec![];
     let result = None;
-    assert_eq!(Solution::merge_k_lists(lists), result);
+    assert_eq!(Solution::merge_k_lists_2(lists), result);
 
     let lists = vec![None];
     let result = None;
-    assert_eq!(Solution::merge_k_lists(lists), result);
+    assert_eq!(Solution::merge_k_lists_2(lists), result);
 }
