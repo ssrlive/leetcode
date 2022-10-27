@@ -40,12 +40,9 @@ impl Solution {
                 };
                 for l_item in &l_trees {
                     for r_item in &r_trees {
-                        let tree = TreeNode {
-                            val: pivot,
-                            left: l_item.clone(),
-                            right: r_item.clone(),
-                            next: None,
-                        };
+                        let mut tree = TreeNode::new(pivot);
+                        tree.left = l_item.clone();
+                        tree.right = r_item.clone();
                         res.push(Some(Rc::new(RefCell::new(tree))));
                     }
                 }
