@@ -37,13 +37,13 @@ impl Solution {
             }
             let mut slow = &head;
             let mut fast = &head;
-            while fast != &tail && fast.as_ref().unwrap().next != tail {
-                slow = &slow.as_ref().unwrap().next;
-                fast = &fast.as_ref().unwrap().next.as_ref().unwrap().next;
+            while fast != &tail && fast.as_ref()?.next != tail {
+                slow = &slow.as_ref()?.next;
+                fast = &fast.as_ref()?.next.as_ref()?.next;
             }
-            let mut node = TreeNode::new(slow.as_ref().unwrap().val);
+            let mut node = TreeNode::new(slow.as_ref()?.val);
             node.left = helper(head.clone(), slow.clone());
-            node.right = helper(slow.as_ref().unwrap().next.clone(), tail);
+            node.right = helper(slow.as_ref()?.next.clone(), tail);
             Some(Rc::new(RefCell::new(node)))
         }
         helper(head, None)
