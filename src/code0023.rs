@@ -61,7 +61,6 @@ impl Solution {
         });
         head
     }
-
 }
 
 #[test]
