@@ -14,6 +14,9 @@ struct Solution;
 impl Solution {
     pub fn remove_nth_from_end(head: Option<Box<ListNode>>, n: i32) -> Option<Box<ListNode>> {
         let cnt = std::iter::successors(head.as_ref(), |last| last.next.as_ref()).count();
+        if cnt < n as usize {
+            return head;
+        }
         let mut dummy = Some(Box::new(ListNode { val: 0, next: head }));
         let mut prev = (0..cnt - n as usize).fold(dummy.as_mut(), |curr, _| curr?.next.as_mut());
         prev?.next = prev.as_mut()?.next.as_mut()?.next.take();
