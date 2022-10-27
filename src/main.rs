@@ -8,6 +8,7 @@ mod code0024;
 mod code0025;
 mod code0026;
 mod code0061;
+mod code0082;
 mod code0086;
 mod code0113;
 mod code0114;
