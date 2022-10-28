@@ -58,8 +58,8 @@ impl WordDictionary {
             } else {
                 let b = word[j];
                 if b == b'.' {
-                        // stack.extend(node.children.iter().filter_map(|c| (*c != 0).then(|| (*c, j+1))));
-                        stack.extend(
+                    // stack.extend(node.children.iter().filter_map(|c| (*c != 0).then(|| (*c, j+1))));
+                    stack.extend(
                         node.children
                             .iter()
                             .filter_map(|c| (*c != 0).then_some((*c, j + 1))),
