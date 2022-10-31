@@ -31,19 +31,12 @@ use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
     pub fn delete_node(node: Option<Rc<RefCell<ListNode>>>) {
-        let mut node = node;
-        let mut following = None;
-        while let Some(n) = node {
-            if n.borrow().next.is_none() {
-                break;
+        if let Some(node) = node {
+            let mut node = node.borrow_mut();
+            if let Some(next) = node.next.take() {
+                node.val = next.borrow().val;
+                node.next = next.borrow_mut().next.take();
             }
-            let tmp = n.borrow().next.clone();
-            n.borrow_mut().val = tmp.as_ref().unwrap().borrow().val;
-            following = Some(n.clone());
-            node = tmp;
-        }
-        if let Some(following) = following {
-            following.borrow_mut().next = None;
         }
     }
 }
