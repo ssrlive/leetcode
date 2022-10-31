@@ -137,6 +137,26 @@ impl TreeNode {
         helper(&Some(Rc::new(RefCell::new(self.clone()))), &mut ret);
         ret
     }
+
+    pub fn find_node(&self, val: i32) -> Option<Rc<RefCell<TreeNode>>> {
+        fn helper(node: &Option<Rc<RefCell<TreeNode>>>, val: i32) -> Option<Rc<RefCell<TreeNode>>> {
+            if let Some(v) = node {
+                let v = v.borrow();
+                if v.val == val {
+                    return Some(Rc::new(RefCell::new(v.clone())));
+                }
+                if let Some(node) = helper(&v.left, val) {
+                    return Some(node);
+                }
+                if let Some(node) = helper(&v.right, val) {
+                    return Some(node);
+                }
+            }
+            None
+        }
+
+        helper(&Some(Rc::new(RefCell::new(self.clone()))), val)
+    }
 }
 
 #[test]
