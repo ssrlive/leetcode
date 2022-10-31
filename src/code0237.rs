@@ -1,0 +1,63 @@
+#![allow(dead_code)]
+
+// 237. Delete Node in a Linked List
+// https://leetcode.com/problems/delete-node-in-a-linked-list/
+//
+// There is a singly-linked list head and we want to delete a node node in it.
+//
+// You are given the node to be deleted node. You will not be given access to the first node of head.
+//
+// All the values of the linked list are unique, and it is guaranteed that the given node node is not the last node in the linked list.
+//
+// Delete the given node. Note that by deleting the node, we do not mean removing it from memory. We mean:
+//
+// - The value of the given node should not exist in the linked list.
+// - The number of nodes in the linked list should decrease by one.
+// - All the values before node should be in the same order.
+// - All the values after node should be in the same order.
+//
+// Custom testing:
+//
+// - For the input, you should provide the entire linked list head and the node to be given node. node should not be the last node of the list and should be an actual node in the list.
+// - We will build the linked list and pass the node to your function.
+// - The output will be the entire list after calling your function.
+//
+
+use crate::listnode2::ListNode;
+
+struct Solution;
+
+use std::cell::RefCell;
+use std::rc::Rc;
+impl Solution {
+    pub fn delete_node(node: Option<Rc<RefCell<ListNode>>>) {
+        let mut node = node;
+        let mut following = None;
+        while let Some(n) = node {
+            if n.borrow().next.is_none() {
+                break;
+            }
+            let tmp = n.borrow().next.clone();
+            n.borrow_mut().val = tmp.as_ref().unwrap().borrow().val;
+            following = Some(n.clone());
+            node = tmp;
+        }
+        if let Some(following) = following {
+            following.borrow_mut().next = None;
+        }
+    }
+}
+
+#[test]
+fn test_delete_node() {
+    let root = ListNode::from_vec(&[4, 5, 1, 9]);
+    let node = ListNode::find_node(root.clone(), 5);
+    Solution::delete_node(node);
+    let v = root.as_ref().unwrap().borrow().to_vec();
+    assert_eq!(v, &[4, 1, 9]);
+
+    let node = ListNode::find_node(root.clone(), 1);
+    Solution::delete_node(node);
+    let v = root.as_ref().unwrap().borrow().to_vec();
+    assert_eq!(v, &[4, 9]);
+}
