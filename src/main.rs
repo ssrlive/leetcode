@@ -153,5 +153,6 @@ mod code0284;
 mod code0287;
 mod code0289;
 mod code0290;
+mod code0292;
 
 fn main() {}
