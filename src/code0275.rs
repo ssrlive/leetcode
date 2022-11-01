@@ -10,7 +10,7 @@
 // have at least h citations each, and the other n − h papers have no more than h citations each.
 //
 // If there are several possible values for h, the maximum one is taken as the h-index.
-// 
+//
 // You must write an algorithm that runs in logarithmic time.
 //
 // Example 1:
