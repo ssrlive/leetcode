@@ -42,8 +42,8 @@ struct Board<T: Copy + Default> {
 impl<T: Copy + Default> Board<T> {
     fn zeroed(width: usize, height: usize) -> Self {
         assert!(width > 0 && height > 0);
-        let b_width = width / INNER_SIDE + if width % INNER_SIDE > 0 { 1 } else { 0 };
-        let b_height = height / INNER_SIDE + if height % INNER_SIDE > 0 { 1 } else { 0 };
+        let b_width = width / INNER_SIDE + usize::from(height % INNER_SIDE > 0);
+        let b_height = height / INNER_SIDE + usize::from(height % INNER_SIDE > 0);
         Self {
             b_width,
             width,

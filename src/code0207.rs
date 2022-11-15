@@ -40,9 +40,9 @@ impl Solution {
             false
         }
 
-        let mut graph = std::collections::HashMap::new();
+        let mut graph = std::collections::HashMap::<i32, Vec<i32>>::new();
         for p in prerequisites {
-            graph.entry(p[0]).or_insert(vec![]).push(p[1]);
+            graph.entry(p[0]).or_default().push(p[1]);
         }
         let mut visited = vec![false; num_courses as usize];
         let mut visiting = vec![false; num_courses as usize];
