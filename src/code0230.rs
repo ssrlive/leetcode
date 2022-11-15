@@ -43,12 +43,7 @@ use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
     pub fn kth_smallest(root: Option<Rc<RefCell<TreeNode>>>, k: i32) -> i32 {
-        fn kth_smallest_helper(
-            root: &Option<Rc<RefCell<TreeNode>>>,
-            k: i32,
-            count: &mut i32,
-            result: &mut i32,
-        ) {
+        fn kth_smallest_helper(root: &Option<Rc<RefCell<TreeNode>>>, k: i32, count: &mut i32, result: &mut i32) {
             if let Some(root) = root {
                 let root = root.borrow();
                 kth_smallest_helper(&root.left, k, count, result);
@@ -73,15 +68,6 @@ fn test() {
     let root = TreeNode::from_vec(&[Some(3), Some(1), Some(4), None, Some(2)]);
     assert_eq!(Solution::kth_smallest(root, 1), 1);
 
-    let root = TreeNode::from_vec(&[
-        Some(5),
-        Some(3),
-        Some(6),
-        Some(2),
-        Some(4),
-        None,
-        None,
-        Some(1),
-    ]);
+    let root = TreeNode::from_vec(&[Some(5), Some(3), Some(6), Some(2), Some(4), None, None, Some(1)]);
     assert_eq!(Solution::kth_smallest(root, 3), 3);
 }

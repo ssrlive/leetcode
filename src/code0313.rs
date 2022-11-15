@@ -64,8 +64,5 @@ impl Solution {
 fn test_nth_super_ugly_number() {
     assert_eq!(Solution::nth_super_ugly_number(12, vec![2, 7, 13, 19]), 32);
     assert_eq!(Solution::nth_super_ugly_number(1, vec![2, 3, 5]), 1);
-    assert_eq!(
-        Solution::nth_super_ugly_number(5911, vec![2, 3, 5, 7]),
-        2144153025
-    );
+    assert_eq!(Solution::nth_super_ugly_number(5911, vec![2, 3, 5, 7]), 2144153025);
 }

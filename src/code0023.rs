@@ -54,10 +54,7 @@ impl Solution {
         // Build the returned list in reverse, starting with None.
         let mut head = None;
         vals.iter().rev().for_each(|&val| {
-            head = Some(Box::new(ListNode {
-                val,
-                next: head.take(),
-            }));
+            head = Some(Box::new(ListNode { val, next: head.take() }));
         });
         head
     }

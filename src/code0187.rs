@@ -34,8 +34,7 @@ impl Solution {
 
 #[test]
 fn test_find_repeated_dna_sequences() {
-    let mut l =
-        Solution::find_repeated_dna_sequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT".to_owned());
+    let mut l = Solution::find_repeated_dna_sequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT".to_owned());
     l.sort();
     let expected = vec!["AAAAACCCCC", "CCCCCAAAAA"];
     assert_eq!(l, expected);

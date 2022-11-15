@@ -46,8 +46,7 @@ impl Solution {
                 if node.left.is_none() && node.right.is_none() {
                     return node.val == sum;
                 }
-                _has_path_sum(&node.left, sum - node.val)
-                    || _has_path_sum(&node.right, sum - node.val)
+                _has_path_sum(&node.left, sum - node.val) || _has_path_sum(&node.right, sum - node.val)
             } else {
                 false
             }

@@ -53,9 +53,7 @@ struct MyStack {
 
 impl MyStack {
     fn new() -> Self {
-        Self {
-            queue: VecDeque::new(),
-        }
+        Self { queue: VecDeque::new() }
     }
 
     fn push(&mut self, x: i32) {

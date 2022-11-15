@@ -31,10 +31,7 @@ impl Solution {
 #[test]
 fn test_largest_number() {
     assert_eq!(Solution::largest_number(vec![10, 2]), "210".to_string());
-    assert_eq!(
-        Solution::largest_number(vec![3, 30, 34, 5, 9]),
-        "9534330".to_string()
-    );
+    assert_eq!(Solution::largest_number(vec![3, 30, 34, 5, 9]), "9534330".to_string());
     assert_eq!(Solution::largest_number(vec![1]), "1".to_string());
     assert_eq!(Solution::largest_number(vec![10]), "10".to_string());
     assert_eq!(Solution::largest_number(vec![0, 0]), "0".to_string());

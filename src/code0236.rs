@@ -66,8 +66,7 @@ impl Solution {
                 return root;
             }
             let rt = root.clone();
-            let l =
-                _lowest_common_ancestor(rt?.as_ref().borrow().left.clone(), p.clone(), q.clone());
+            let l = _lowest_common_ancestor(rt?.as_ref().borrow().left.clone(), p.clone(), q.clone());
             if l.is_some() {
                 let rt = root.clone();
                 let r = _lowest_common_ancestor(rt?.as_ref().borrow().right.clone(), p, q);

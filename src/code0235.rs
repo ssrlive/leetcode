@@ -38,11 +38,7 @@ impl Solution {
         p: Option<Rc<RefCell<TreeNode>>>,
         q: Option<Rc<RefCell<TreeNode>>>,
     ) -> Option<Rc<RefCell<TreeNode>>> {
-        fn _recurse_impl(
-            root: &Option<Rc<RefCell<TreeNode>>>,
-            min: i32,
-            max: i32,
-        ) -> Option<Rc<RefCell<TreeNode>>> {
+        fn _recurse_impl(root: &Option<Rc<RefCell<TreeNode>>>, min: i32, max: i32) -> Option<Rc<RefCell<TreeNode>>> {
             if let Some(root_node) = root {
                 let root_node = root_node.borrow();
                 let value = root_node.val;

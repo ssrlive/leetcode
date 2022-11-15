@@ -48,8 +48,7 @@ impl TreeNode {
                 break;
             }
             if let Some(val) = v.get(i)? {
-                node.as_ref()?.borrow_mut().right =
-                    Some(Rc::new(RefCell::new(TreeNode::new(*val))));
+                node.as_ref()?.borrow_mut().right = Some(Rc::new(RefCell::new(TreeNode::new(*val))));
                 queue.push_back(node.as_ref()?.borrow().right.clone());
             }
             i += 1;

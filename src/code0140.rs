@@ -12,12 +12,7 @@ struct Solution;
 
 impl Solution {
     pub fn word_break(s: String, word_dict: Vec<String>) -> Vec<String> {
-        fn walk(
-            result: &mut Vec<String>,
-            buffer: &mut Vec<String>,
-            s: &str,
-            word_dict: &Vec<String>,
-        ) {
+        fn walk(result: &mut Vec<String>, buffer: &mut Vec<String>, s: &str, word_dict: &Vec<String>) {
             if s.is_empty() {
                 result.push(buffer.join(" "));
             }

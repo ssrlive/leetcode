@@ -46,16 +46,7 @@ impl Solution {
         for i in 0..m {
             for j in 0..n {
                 let mut c = 0;
-                for (di, dj) in &[
-                    (0, 1),
-                    (0, -1),
-                    (1, 0),
-                    (-1, 0),
-                    (1, 1),
-                    (1, -1),
-                    (-1, 1),
-                    (-1, -1),
-                ] {
+                for (di, dj) in &[(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)] {
                     let (ni, nj) = (i as i32 + di, j as i32 + dj);
                     if ni >= 0 && ni < m as i32 && nj >= 0 && nj < n as i32 {
                         c += board[ni as usize][nj as usize];
@@ -82,8 +73,5 @@ impl Solution {
 fn test_game_of_life() {
     let mut board = vec![vec![0, 1, 0], vec![0, 0, 1], vec![1, 1, 1], vec![0, 0, 0]];
     Solution::game_of_life(&mut board);
-    assert_eq!(
-        board,
-        vec![vec![0, 0, 0], vec![1, 0, 1], vec![0, 1, 1], vec![0, 1, 0]]
-    );
+    assert_eq!(board, vec![vec![0, 0, 0], vec![1, 0, 1], vec![0, 1, 1], vec![0, 1, 0]]);
 }

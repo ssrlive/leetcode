@@ -30,9 +30,7 @@ impl Solution {
                 while let Some(mut node_to_insert) = unsorted {
                     unsorted = node_to_insert.next.take();
                     let mut sorted_ref = &mut sorted;
-                    while sorted_ref.next.is_some()
-                        && sorted_ref.next.as_ref().unwrap().val < node_to_insert.val
-                    {
+                    while sorted_ref.next.is_some() && sorted_ref.next.as_ref().unwrap().val < node_to_insert.val {
                         sorted_ref = sorted_ref.next.as_mut().unwrap()
                     }
                     node_to_insert.next = sorted_ref.next.take();

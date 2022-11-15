@@ -14,11 +14,7 @@
 struct Solution;
 
 impl Solution {
-    pub fn find_ladders(
-        begin_word: String,
-        end_word: String,
-        word_list: Vec<String>,
-    ) -> Vec<Vec<String>> {
+    pub fn find_ladders(begin_word: String, end_word: String, word_list: Vec<String>) -> Vec<Vec<String>> {
         fn backtrack(
             route: &mut Vec<usize>,
             ans: &mut Vec<Vec<String>>,
@@ -27,11 +23,7 @@ impl Solution {
         ) {
             let curr = *route.last().unwrap();
             if curr == word_list.len() - 1 {
-                let ans2 = route
-                    .iter()
-                    .rev()
-                    .map(|&i| word_list[i].to_owned())
-                    .collect();
+                let ans2 = route.iter().rev().map(|&i| word_list[i].to_owned()).collect();
                 ans.push(ans2);
             } else {
                 for &p in helper[curr].0.iter() {
@@ -43,12 +35,7 @@ impl Solution {
         }
 
         fn is_adj(word1: &str, word2: &str) -> bool {
-            word1
-                .chars()
-                .zip(word2.chars())
-                .filter(|(ch1, ch2)| ch1 != ch2)
-                .count()
-                == 1
+            word1.chars().zip(word2.chars()).filter(|(ch1, ch2)| ch1 != ch2).count() == 1
         }
 
         let mut word_list = word_list;
@@ -65,9 +52,7 @@ impl Solution {
             for i in 0..word_list.len() {
                 if helper[i].1 == depth {
                     for j in 0..word_list.len() - 1 {
-                        if (helper[j].1 == -1 || helper[j].1 == depth + 1)
-                            && is_adj(&word_list[i], &word_list[j])
-                        {
+                        if (helper[j].1 == -1 || helper[j].1 == depth + 1) && is_adj(&word_list[i], &word_list[j]) {
                             no_route = false;
                             helper[j].0.push(i);
                             helper[j].1 = depth + 1;

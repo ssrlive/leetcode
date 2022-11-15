@@ -84,10 +84,7 @@ impl DoublyLinkedList {
         let dummy_tail: Rc<RefCell<ListNode>> = Rc::new(RefCell::new(ListNode::new(-1, -1)));
         dummy_head.borrow_mut().next = Some(dummy_tail.clone());
         dummy_tail.borrow_mut().prev = Some(dummy_head.clone());
-        Self {
-            dummy_head,
-            dummy_tail,
-        }
+        Self { dummy_head, dummy_tail }
     }
     /// according to
     /// 1. the current design

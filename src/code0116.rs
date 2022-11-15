@@ -18,8 +18,7 @@ impl Solution {
                 if let Some(left) = cur_rc.borrow().left.clone() {
                     left.borrow_mut().next = cur_rc.borrow().right.clone();
                     if let Some(next) = cur_rc.borrow().next.clone() {
-                        cur_rc.borrow().right.as_ref()?.borrow_mut().next =
-                            next.borrow().left.clone();
+                        cur_rc.borrow().right.as_ref()?.borrow_mut().next = next.borrow().left.clone();
                     }
                 }
                 cur = cur_rc.borrow().next.clone();
@@ -32,15 +31,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let root = TreeNode::from_vec(&vec![
-        Some(1),
-        Some(2),
-        Some(3),
-        Some(4),
-        Some(5),
-        Some(6),
-        Some(7),
-    ]);
+    let root = TreeNode::from_vec(&vec![Some(1), Some(2), Some(3), Some(4), Some(5), Some(6), Some(7)]);
     let root = Solution::connect(root);
 
     println!("{:#?}", root.unwrap().borrow());

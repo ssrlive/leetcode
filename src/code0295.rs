@@ -60,8 +60,7 @@ impl MedianFinder {
     fn add_num(&mut self, num: i32) {
         if self.small.len() >= self.large.len() {
             self.small.push(num);
-            self.large
-                .push(std::cmp::Reverse(self.small.pop().unwrap()));
+            self.large.push(std::cmp::Reverse(self.small.pop().unwrap()));
         } else {
             self.large.push(std::cmp::Reverse(num));
             self.small.push(self.large.pop().unwrap().0);
@@ -70,9 +69,7 @@ impl MedianFinder {
 
     fn find_median(&self) -> f64 {
         match self.small.len().cmp(&self.large.len()) {
-            std::cmp::Ordering::Equal => {
-                (self.small.peek().unwrap() + self.large.peek().unwrap().0) as f64 / 2.0
-            }
+            std::cmp::Ordering::Equal => (self.small.peek().unwrap() + self.large.peek().unwrap().0) as f64 / 2.0,
             std::cmp::Ordering::Greater => *self.small.peek().unwrap() as f64,
             std::cmp::Ordering::Less => self.large.peek().unwrap().0 as f64,
         }

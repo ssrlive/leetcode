@@ -39,9 +39,6 @@ impl Solution {
 
 #[test]
 fn test_is_palindrome() {
-    assert_eq!(
-        Solution::is_palindrome(ListNode::from_vec(&[1, 2, 2, 1])),
-        true
-    );
+    assert_eq!(Solution::is_palindrome(ListNode::from_vec(&[1, 2, 2, 1])), true);
     assert_eq!(Solution::is_palindrome(ListNode::from_vec(&[1, 2])), false);
 }

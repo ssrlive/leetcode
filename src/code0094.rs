@@ -26,10 +26,7 @@ use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
     pub fn inorder_traversal(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
-        fn inorder_traversal_recursive(
-            root: &Option<Rc<RefCell<TreeNode>>>,
-            result: &mut Vec<i32>,
-        ) {
+        fn inorder_traversal_recursive(root: &Option<Rc<RefCell<TreeNode>>>, result: &mut Vec<i32>) {
             if let Some(node) = root {
                 inorder_traversal_recursive(&node.borrow().left, result);
                 result.push(node.borrow().val);

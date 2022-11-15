@@ -30,11 +30,7 @@ use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
     pub fn build_tree(preorder: Vec<i32>, inorder: Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {
-        fn build(
-            preorder: &mut Vec<i32>,
-            inorder: &mut Vec<i32>,
-            bound: Option<i32>,
-        ) -> Option<Rc<RefCell<TreeNode>>> {
+        fn build(preorder: &mut Vec<i32>, inorder: &mut Vec<i32>, bound: Option<i32>) -> Option<Rc<RefCell<TreeNode>>> {
             if inorder.is_empty() || (bound.is_some() && *inorder.last()? == bound?) {
                 return None;
             }

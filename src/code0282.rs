@@ -47,14 +47,7 @@ impl Solution {
         Self::backtrack(&mut answer, &mut Vec::new(), &v, 0, 0, target as i64);
         answer
     }
-    fn backtrack(
-        answer: &mut Vec<String>,
-        ops: &mut Vec<String>,
-        v: &[i64],
-        val: i64,
-        last: i64,
-        target: i64,
-    ) {
+    fn backtrack(answer: &mut Vec<String>, ops: &mut Vec<String>, v: &[i64], val: i64, last: i64, target: i64) {
         if v.is_empty() {
             if val == target {
                 answer.push(ops[1..].join(""));
@@ -77,14 +70,7 @@ impl Solution {
                 ops.pop();
                 ops.push(String::from("*"));
                 ops.push(n.to_string());
-                Self::backtrack(
-                    answer,
-                    ops,
-                    &v[i + 1..],
-                    val - last + last * n,
-                    last * n,
-                    target,
-                );
+                Self::backtrack(answer, ops, &v[i + 1..], val - last + last * n, last * n, target);
                 ops.pop();
                 ops.pop();
             }

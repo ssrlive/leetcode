@@ -23,16 +23,8 @@ impl Solution {
         let v2: Vec<&str> = version2.split('.').collect();
         let mut i = 0;
         while i < v1.len() || i < v2.len() {
-            let n1 = if i < v1.len() {
-                v1[i].parse::<i32>().unwrap()
-            } else {
-                0
-            };
-            let n2 = if i < v2.len() {
-                v2[i].parse::<i32>().unwrap()
-            } else {
-                0
-            };
+            let n1 = if i < v1.len() { v1[i].parse::<i32>().unwrap() } else { 0 };
+            let n2 = if i < v2.len() { v2[i].parse::<i32>().unwrap() } else { 0 };
             match n1.cmp(&n2) {
                 std::cmp::Ordering::Less => return -1,
                 std::cmp::Ordering::Greater => return 1,
@@ -46,20 +38,8 @@ impl Solution {
 
 #[test]
 fn test_compare_version() {
-    assert_eq!(
-        Solution::compare_version("1.01".to_string(), "1.001".to_string()),
-        0
-    );
-    assert_eq!(
-        Solution::compare_version("1.0".to_string(), "1.0.0".to_string()),
-        0
-    );
-    assert_eq!(
-        Solution::compare_version("0.1".to_string(), "1.1".to_string()),
-        -1
-    );
-    assert_eq!(
-        Solution::compare_version("1.0.1".to_string(), "1".to_string()),
-        1
-    );
+    assert_eq!(Solution::compare_version("1.01".to_string(), "1.001".to_string()), 0);
+    assert_eq!(Solution::compare_version("1.0".to_string(), "1.0.0".to_string()), 0);
+    assert_eq!(Solution::compare_version("0.1".to_string(), "1.1".to_string()), -1);
+    assert_eq!(Solution::compare_version("1.0.1".to_string(), "1".to_string()), 1);
 }

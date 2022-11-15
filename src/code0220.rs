@@ -40,11 +40,7 @@
 struct Solution;
 
 impl Solution {
-    pub fn contains_nearby_almost_duplicate(
-        nums: Vec<i32>,
-        index_diff: i32,
-        value_diff: i32,
-    ) -> bool {
+    pub fn contains_nearby_almost_duplicate(nums: Vec<i32>, index_diff: i32, value_diff: i32) -> bool {
         if value_diff < 0 {
             return false;
         }
@@ -70,10 +66,7 @@ impl Solution {
 
 #[test]
 fn test_contains_nearby_almost_duplicate() {
-    assert_eq!(
-        Solution::contains_nearby_almost_duplicate(vec![1, 2, 3, 1], 3, 0),
-        true
-    );
+    assert_eq!(Solution::contains_nearby_almost_duplicate(vec![1, 2, 3, 1], 3, 0), true);
     assert_eq!(
         Solution::contains_nearby_almost_duplicate(vec![1, 5, 9, 1, 5, 9], 2, 3),
         false

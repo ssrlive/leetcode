@@ -43,12 +43,6 @@ fn test_swap_pairs() {
         Solution::swap_pairs(ListNode::from_vec(&[1, 2, 3, 4, 5])),
         ListNode::from_vec(&[2, 1, 4, 3, 5])
     );
-    assert_eq!(
-        Solution::swap_pairs(ListNode::from_vec(&[1])),
-        ListNode::from_vec(&[1])
-    );
-    assert_eq!(
-        Solution::swap_pairs(ListNode::from_vec(&[])),
-        ListNode::from_vec(&[])
-    );
+    assert_eq!(Solution::swap_pairs(ListNode::from_vec(&[1])), ListNode::from_vec(&[1]));
+    assert_eq!(Solution::swap_pairs(ListNode::from_vec(&[])), ListNode::from_vec(&[]));
 }

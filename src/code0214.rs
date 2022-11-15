@@ -55,8 +55,5 @@ fn test() {
         Solution::shortest_palindrome("aacecaaa".to_string()),
         "aaacecaaa".to_string()
     );
-    assert_eq!(
-        Solution::shortest_palindrome("abcd".to_string()),
-        "dcbabcd".to_string()
-    );
+    assert_eq!(Solution::shortest_palindrome("abcd".to_string()), "dcbabcd".to_string());
 }

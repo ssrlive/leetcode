@@ -40,10 +40,7 @@ impl ListNode {
         v
     }
 
-    pub fn find_node(
-        root: Option<Rc<RefCell<ListNode>>>,
-        val: i32,
-    ) -> Option<Rc<RefCell<ListNode>>> {
+    pub fn find_node(root: Option<Rc<RefCell<ListNode>>>, val: i32) -> Option<Rc<RefCell<ListNode>>> {
         let mut node = root;
         while let Some(n) = node {
             if n.borrow().val == val {

@@ -20,11 +20,7 @@ use crate::listnode::ListNode;
 struct Solution;
 
 impl Solution {
-    pub fn reverse_between(
-        head: Option<Box<ListNode>>,
-        left: i32,
-        right: i32,
-    ) -> Option<Box<ListNode>> {
+    pub fn reverse_between(head: Option<Box<ListNode>>, left: i32, right: i32) -> Option<Box<ListNode>> {
         if left == right {
             return head;
         }

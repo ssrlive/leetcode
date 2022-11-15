@@ -28,10 +28,7 @@ use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
     pub fn level_order(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<Vec<i32>> {
-        fn _level_order(
-            root: Option<Rc<RefCell<TreeNode>>>,
-            result: &mut Vec<Vec<i32>>,
-        ) -> Option<()> {
+        fn _level_order(root: Option<Rc<RefCell<TreeNode>>>, result: &mut Vec<Vec<i32>>) -> Option<()> {
             if root.is_none() {
                 return Some(());
             }

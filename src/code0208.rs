@@ -43,9 +43,7 @@ impl TrieNode {
 
 impl Trie {
     fn new() -> Self {
-        Self {
-            root: TrieNode::new(),
-        }
+        Self { root: TrieNode::new() }
     }
 
     fn insert(&mut self, word: String) {

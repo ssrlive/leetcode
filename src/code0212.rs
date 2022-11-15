@@ -56,14 +56,9 @@ impl<T: Copy + Default> Board<T> {
 fn from_chars(board: Vec<Vec<char>>) -> Board<u8> {
     assert!(!board.is_empty(), "Expected square");
     assert!(!board.first().unwrap().is_empty(), "Expected square");
+    assert!(board.windows(2).all(|w| w[0].len() == w[1].len()), "Expected square");
     assert!(
-        board.windows(2).all(|w| w[0].len() == w[1].len()),
-        "Expected square"
-    );
-    assert!(
-        board
-            .iter()
-            .all(|sub| sub.iter().all(char::is_ascii_lowercase)),
+        board.iter().all(|sub| sub.iter().all(char::is_ascii_lowercase)),
         "Expected ascii lowercase"
     );
     let width = board[0].len();
@@ -81,13 +76,7 @@ fn calc_existing_chars(board: &Board<u8>) -> [usize; RANGE] {
     let mut result = [0; RANGE];
     for block in board.buff.iter() {
         if block.iter().flatten().any(|&x| x == 0) {
-            for b in block
-                .iter()
-                .flatten()
-                .copied()
-                .filter(|&x| x != 0)
-                .map(alph_to_idx)
-            {
+            for b in block.iter().flatten().copied().filter(|&x| x != 0).map(alph_to_idx) {
                 result[b] += 1;
             }
         } else {
@@ -128,10 +117,7 @@ impl<T: Copy + Default> IndexMut<(usize, usize)> for Board<T> {
 fn remove_all_invalid_words(words: &mut Vec<String>, board: &Board<u8>) {
     let allowed_chars = calc_existing_chars(board);
     words.retain(|w| {
-        if w.as_bytes()
-            .iter()
-            .any(|&c| allowed_chars[alph_to_idx(c)] == 0)
-        {
+        if w.as_bytes().iter().any(|&c| allowed_chars[alph_to_idx(c)] == 0) {
             return false;
         }
         let mut chars = [0usize; RANGE];
@@ -221,10 +207,7 @@ impl Solution {
         words.sort_unstable();
         words.dedup();
 
-        assert!(words
-            .iter()
-            .flat_map(|w| w.as_bytes())
-            .all(|&b| b.is_ascii_lowercase()));
+        assert!(words.iter().flat_map(|w| w.as_bytes()).all(|&b| b.is_ascii_lowercase()));
 
         let board = from_chars(board);
         words.retain(|x| x.len() <= board.width * board.height);

@@ -10,30 +10,13 @@ struct Solution;
 
 impl Solution {
     pub fn hamming_weight(n: u32) -> i32 {
-        std::iter::successors(Some(n), |acc| {
-            if *acc == 0 {
-                None
-            } else {
-                Some(*acc & (*acc - 1))
-            }
-        })
-        .count() as i32
-            - 1
+        std::iter::successors(Some(n), |acc| if *acc == 0 { None } else { Some(*acc & (*acc - 1)) }).count() as i32 - 1
     }
 }
 
 #[test]
 fn test() {
-    assert_eq!(
-        Solution::hamming_weight(0b00000000000000000000000000001011),
-        3
-    );
-    assert_eq!(
-        Solution::hamming_weight(0b00000000000000000000000010000000),
-        1
-    );
-    assert_eq!(
-        Solution::hamming_weight(0b11111111111111111111111111111101),
-        31
-    );
+    assert_eq!(Solution::hamming_weight(0b00000000000000000000000000001011), 3);
+    assert_eq!(Solution::hamming_weight(0b00000000000000000000000010000000), 1);
+    assert_eq!(Solution::hamming_weight(0b11111111111111111111111111111101), 31);
 }

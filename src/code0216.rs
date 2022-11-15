@@ -70,8 +70,5 @@ fn test_combination_sum3() {
     );
     assert_eq!(Solution::combination_sum3(4, 1), Vec::<Vec<i32>>::new());
     assert_eq!(Solution::combination_sum3(3, 2), Vec::<Vec<i32>>::new());
-    assert_eq!(
-        Solution::combination_sum3(9, 45),
-        vec![vec![1, 2, 3, 4, 5, 6, 7, 8, 9]]
-    );
+    assert_eq!(Solution::combination_sum3(9, 45), vec![vec![1, 2, 3, 4, 5, 6, 7, 8, 9]]);
 }

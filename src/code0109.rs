@@ -28,10 +28,7 @@ use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
     pub fn sorted_list_to_bst(head: Option<Box<ListNode>>) -> Option<Rc<RefCell<TreeNode>>> {
-        fn helper(
-            head: Option<Box<ListNode>>,
-            tail: Option<Box<ListNode>>,
-        ) -> Option<Rc<RefCell<TreeNode>>> {
+        fn helper(head: Option<Box<ListNode>>, tail: Option<Box<ListNode>>) -> Option<Rc<RefCell<TreeNode>>> {
             if head == tail {
                 return None;
             }

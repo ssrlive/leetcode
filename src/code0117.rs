@@ -104,10 +104,7 @@ impl Solution {
                 return None;
             }
             let mut root = root.clone();
-            while root.is_some()
-                && root.as_ref()?.borrow().left.is_none()
-                && root.as_ref()?.borrow().right.is_none()
-            {
+            while root.is_some() && root.as_ref()?.borrow().left.is_none() && root.as_ref()?.borrow().right.is_none() {
                 let r = root.as_ref()?.borrow().next.clone();
                 root = r;
             }
@@ -129,12 +126,7 @@ impl Solution {
         }
         if root.as_ref()?.borrow().right.is_some() {
             let v = get_next(&root.as_ref()?.borrow().next);
-            root.as_ref()?
-                .borrow_mut()
-                .right
-                .as_ref()?
-                .borrow_mut()
-                .next = v;
+            root.as_ref()?.borrow_mut().right.as_ref()?.borrow_mut().next = v;
         }
         Self::connect(root.as_ref()?.borrow().right.clone());
         Self::connect(root.as_ref()?.borrow().left.clone());
@@ -166,15 +158,7 @@ fn test() {
     assert_eq!(root.left.as_ref().unwrap().borrow().val, 2);
     assert_eq!(root.right.as_ref().unwrap().borrow().val, 3);
     assert_eq!(
-        root.left
-            .as_ref()
-            .unwrap()
-            .borrow()
-            .left
-            .as_ref()
-            .unwrap()
-            .borrow()
-            .val,
+        root.left.as_ref().unwrap().borrow().left.as_ref().unwrap().borrow().val,
         4
     );
     assert_eq!(

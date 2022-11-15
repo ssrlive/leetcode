@@ -86,10 +86,7 @@ fn test_minimum_height_trees() {
         vec![1]
     );
     assert_eq!(
-        Solution::find_min_height_trees(
-            6,
-            vec![vec![3, 0], vec![3, 1], vec![3, 2], vec![3, 4], vec![5, 4]]
-        ),
+        Solution::find_min_height_trees(6, vec![vec![3, 0], vec![3, 1], vec![3, 2], vec![3, 4], vec![5, 4]]),
         vec![3, 4]
     );
 }

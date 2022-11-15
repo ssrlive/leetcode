@@ -14,10 +14,7 @@ use super::listnode::ListNode;
 struct Solution;
 
 impl Solution {
-    pub fn merge_two_lists(
-        list1: Option<Box<ListNode>>,
-        list2: Option<Box<ListNode>>,
-    ) -> Option<Box<ListNode>> {
+    pub fn merge_two_lists(list1: Option<Box<ListNode>>, list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         let mut dummy = Some(Box::new(ListNode { val: 0, next: None }));
         let mut curr = dummy.as_mut();
         let mut list1 = list1;
@@ -43,14 +40,8 @@ impl Solution {
         dummy?.next
     }
 
-    pub fn merge_two_lists_2(
-        list1: Option<Box<ListNode>>,
-        list2: Option<Box<ListNode>>,
-    ) -> Option<Box<ListNode>> {
-        fn _merge_two_lists(
-            list1: Option<Box<ListNode>>,
-            list2: Option<Box<ListNode>>,
-        ) -> Option<Box<ListNode>> {
+    pub fn merge_two_lists_2(list1: Option<Box<ListNode>>, list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+        fn _merge_two_lists(list1: Option<Box<ListNode>>, list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
             match (list1, list2) {
                 (None, None) => None,
                 (Some(x), None) | (None, Some(x)) => Some(x),

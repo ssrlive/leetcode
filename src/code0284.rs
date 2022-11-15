@@ -48,9 +48,7 @@ struct PeekingIterator<T: Iterator> {
 
 impl<T: Iterator> PeekingIterator<T> {
     fn new(iter: T) -> Self {
-        Self {
-            iter: iter.peekable(),
-        }
+        Self { iter: iter.peekable() }
     }
 
     fn peek(&mut self) -> Option<&T::Item> {

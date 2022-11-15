@@ -80,8 +80,5 @@ impl Solution {
 fn test_recover_tree() {
     let mut tree = TreeNode::from_vec(&[Some(1), Some(3), None, None, Some(2)]);
     Solution::recover_tree_2(&mut tree);
-    assert_eq!(
-        tree,
-        TreeNode::from_vec(&[Some(3), Some(1), None, None, Some(2)])
-    );
+    assert_eq!(tree, TreeNode::from_vec(&[Some(3), Some(1), None, None, Some(2)]));
 }

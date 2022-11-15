@@ -67,12 +67,6 @@ fn test_clone_graph() {
     let clone = Solution::clone_graph(Some(node1));
     assert_eq!(clone.as_ref().unwrap().borrow().val, 1);
     assert_eq!(clone.as_ref().unwrap().borrow().neighbors.len(), 2);
-    assert_eq!(
-        clone.as_ref().unwrap().borrow().neighbors[0].borrow().val,
-        2
-    );
-    assert_eq!(
-        clone.as_ref().unwrap().borrow().neighbors[1].borrow().val,
-        4
-    );
+    assert_eq!(clone.as_ref().unwrap().borrow().neighbors[0].borrow().val, 2);
+    assert_eq!(clone.as_ref().unwrap().borrow().neighbors[1].borrow().val, 4);
 }

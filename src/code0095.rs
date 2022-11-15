@@ -28,16 +28,8 @@ impl Solution {
             }
             let mut res = vec![];
             for pivot in l..=r {
-                let l_trees = if pivot == l {
-                    vec![None]
-                } else {
-                    helper(l, pivot - 1)
-                };
-                let r_trees = if pivot == r {
-                    vec![None]
-                } else {
-                    helper(pivot + 1, r)
-                };
+                let l_trees = if pivot == l { vec![None] } else { helper(l, pivot - 1) };
+                let r_trees = if pivot == r { vec![None] } else { helper(pivot + 1, r) };
                 for l_item in &l_trees {
                     for r_item in &r_trees {
                         let mut tree = TreeNode::new(pivot);

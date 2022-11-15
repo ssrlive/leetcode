@@ -54,39 +54,15 @@ fn test_fraction_to_decimal() {
     assert_eq!(Solution::fraction_to_decimal(4, 333), "0.(012)".to_string());
     assert_eq!(Solution::fraction_to_decimal(1, 5), "0.2".to_string());
     assert_eq!(Solution::fraction_to_decimal(1, 6), "0.1(6)".to_string());
-    assert_eq!(
-        Solution::fraction_to_decimal(1, 7),
-        "0.(142857)".to_string()
-    );
-    assert_eq!(
-        Solution::fraction_to_decimal(1, 17),
-        "0.(0588235294117647)".to_string()
-    );
+    assert_eq!(Solution::fraction_to_decimal(1, 7), "0.(142857)".to_string());
+    assert_eq!(Solution::fraction_to_decimal(1, 17), "0.(0588235294117647)".to_string());
     assert_eq!(Solution::fraction_to_decimal(1, 90), "0.0(1)".to_string());
     assert_eq!(Solution::fraction_to_decimal(1, 99), "0.(01)".to_string());
     assert_eq!(Solution::fraction_to_decimal(1, 999), "0.(001)".to_string());
-    assert_eq!(
-        Solution::fraction_to_decimal(1, 9999),
-        "0.(0001)".to_string()
-    );
-    assert_eq!(
-        Solution::fraction_to_decimal(1, 99999),
-        "0.(00001)".to_string()
-    );
-    assert_eq!(
-        Solution::fraction_to_decimal(1, 999999),
-        "0.(000001)".to_string()
-    );
-    assert_eq!(
-        Solution::fraction_to_decimal(1, 9999999),
-        "0.(0000001)".to_string()
-    );
-    assert_eq!(
-        Solution::fraction_to_decimal(1, 99999999),
-        "0.(00000001)".to_string()
-    );
-    assert_eq!(
-        Solution::fraction_to_decimal(1, 999999999),
-        "0.(000000001)".to_string()
-    );
+    assert_eq!(Solution::fraction_to_decimal(1, 9999), "0.(0001)".to_string());
+    assert_eq!(Solution::fraction_to_decimal(1, 99999), "0.(00001)".to_string());
+    assert_eq!(Solution::fraction_to_decimal(1, 999999), "0.(000001)".to_string());
+    assert_eq!(Solution::fraction_to_decimal(1, 9999999), "0.(0000001)".to_string());
+    assert_eq!(Solution::fraction_to_decimal(1, 99999999), "0.(00000001)".to_string());
+    assert_eq!(Solution::fraction_to_decimal(1, 999999999), "0.(000000001)".to_string());
 }

@@ -19,11 +19,7 @@ impl Solution {
         for i in 1..dp.len() {
             for j in 0..dp[i].len() {
                 let left: i32 = if j > 0 { dp[i - 1][j - 1] } else { i32::MAX };
-                let right: i32 = if j < dp[i - 1].len() {
-                    dp[i - 1][j]
-                } else {
-                    i32::MAX
-                };
+                let right: i32 = if j < dp[i - 1].len() { dp[i - 1][j] } else { i32::MAX };
 
                 dp[i][j] += if left < right { left } else { right };
             }

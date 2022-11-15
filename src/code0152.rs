@@ -15,16 +15,10 @@ use std::cmp::{max, min};
 impl Solution {
     pub fn max_product(nums: Vec<i32>) -> i32 {
         nums.iter()
-            .fold((1, 1, nums[0]), |(neg, pos, answ), &val| {
-                match (val, val > 0) {
-                    (0, _) => (0, 0, max(0, answ)),
-                    (_, true) => (
-                        neg * val,
-                        max(pos * val, val),
-                        max(max(pos * val, val), answ),
-                    ),
-                    (_, false) => (min(pos * val, val), neg * val, max(neg * val, answ)),
-                }
+            .fold((1, 1, nums[0]), |(neg, pos, answ), &val| match (val, val > 0) {
+                (0, _) => (0, 0, max(0, answ)),
+                (_, true) => (neg * val, max(pos * val, val), max(max(pos * val, val), answ)),
+                (_, false) => (min(pos * val, val), neg * val, max(neg * val, answ)),
             })
             .2
     }

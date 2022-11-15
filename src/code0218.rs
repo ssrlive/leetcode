@@ -65,19 +65,14 @@ impl Solution {
         for (x, h) in points {
             if h > 0 {
                 // is end-poiont
-                if let std::collections::btree_map::Entry::Occupied(mut entry) =
-                    max_heights.entry(h)
-                {
+                if let std::collections::btree_map::Entry::Occupied(mut entry) = max_heights.entry(h) {
                     *entry.get_mut() -= 1;
                     if *entry.get() == 0 {
                         entry.remove();
                     }
                 }
             } else {
-                max_heights
-                    .entry(-h)
-                    .and_modify(|count| *count += 1)
-                    .or_insert(1);
+                max_heights.entry(-h).and_modify(|count| *count += 1).or_insert(1);
             }
 
             let (&curr_max, _) = max_heights.iter().next_back().unwrap(); // next_back gets and removes last entry
