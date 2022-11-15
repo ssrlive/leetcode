@@ -168,5 +168,6 @@ mod code0310;
 mod code0312;
 mod code0313;
 mod code0315;
+mod code0316;
 
 fn main() {}
