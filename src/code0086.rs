@@ -24,8 +24,8 @@ impl Solution {
                 greater_tail = &mut greater_tail.as_mut()?.next;
             }
         }
-        less_tail.as_mut()?.next = greater_head?.next;
-        less_head?.next
+        less_tail.as_mut()?.next = greater_head?.next.take();
+        less_head?.next.take()
     }
 }
 

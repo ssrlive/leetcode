@@ -37,7 +37,7 @@ impl Solution {
         if list2.is_some() {
             curr.as_mut()?.next = list2;
         }
-        dummy?.next
+        dummy?.next.take()
     }
 
     pub fn merge_two_lists_2(list1: Option<Box<ListNode>>, list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
@@ -47,10 +47,10 @@ impl Solution {
                 (Some(x), None) | (None, Some(x)) => Some(x),
                 (Some(mut x), Some(mut y)) => {
                     if x.val >= y.val {
-                        y.next = _merge_two_lists(Some(x), y.next);
+                        y.next = _merge_two_lists(Some(x), y.next.take());
                         Some(y)
                     } else {
-                        x.next = _merge_two_lists(Some(y), x.next);
+                        x.next = _merge_two_lists(Some(y), x.next.take());
                         Some(x)
                     }
                 }

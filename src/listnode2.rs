@@ -58,3 +58,19 @@ impl std::fmt::Display for ListNode {
         write!(f, "{:?}", v)
     }
 }
+
+// impl Drop for ListNode {
+//     fn drop(&mut self) {
+//         let mut next = self.next.take();
+//         while let Some(n) = next {
+//             next = n.borrow_mut().next.take();
+//         }
+//     }
+// }
+// #[test]
+// fn test_listnode2() {
+//     // stack overflow
+//     let v = (0..100_000).collect::<Vec<i32>>();
+//     let list = ListNode::from_vec(&v);
+//     assert_eq!(list.as_ref().unwrap().borrow().to_vec(), v);
+// }

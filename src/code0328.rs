@@ -39,8 +39,7 @@ impl Solution {
         let mut flag = 0i32;
 
         while let Some(mut node) = head {
-            head = node.next;
-            node.next = None;
+            head = node.next.take();
             flag = 1 - flag;
             if flag == 1 {
                 tail1 = &mut tail1.insert(node).next;

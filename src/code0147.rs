@@ -36,7 +36,7 @@ impl Solution {
                     node_to_insert.next = sorted_ref.next.take();
                     sorted_ref.next = Some(node_to_insert);
                 }
-                sorted.next
+                sorted.next.take()
             }
         }
     }

@@ -20,7 +20,7 @@ impl ListNode {
             tail.as_mut()?.next = Some(Box::new(ListNode::new(*i)));
             tail = &mut tail.as_mut()?.next;
         }
-        head?.next
+        head?.next.take()
     }
 
     pub fn to_vec(&self) -> Vec<i32> {
@@ -50,4 +50,24 @@ impl std::fmt::Display for ListNode {
         }
         write!(f, "{}", s)
     }
+}
+
+impl Drop for ListNode {
+    // Drop is called when the object goes out of scope.
+    // To avoid infinite recursion, we need to set the next pointer to None.
+    // https://matklad.github.io/2022/11/18/if-a-tree-falls-in-a-forest-does-it-overflow-the-stack.html
+    fn drop(&mut self) {
+        let mut next = self.next.take();
+        while let Some(mut node) = next {
+            next = (*node).next.take();
+        }
+    }
+}
+
+#[test]
+fn test_listnode() {
+    // no stack overflow
+    let v = (0..100_000).collect::<Vec<i32>>();
+    let list = ListNode::from_vec(&v);
+    assert_eq!(list.as_ref().unwrap().to_vec(), v);
 }

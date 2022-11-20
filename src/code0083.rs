@@ -15,14 +15,14 @@ impl Solution {
     pub fn delete_duplicates(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         fn remove(node: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
             match node {
-                Some(node) => {
+                Some(mut node) => {
                     if let Some(next_node) = &node.next {
                         if node.val == next_node.val {
-                            remove(node.next)
+                            remove(node.next.take())
                         } else {
                             Some(Box::new(ListNode {
                                 val: node.val,
-                                next: remove(node.next),
+                                next: remove(node.next.take()),
                             }))
                         }
                     } else {

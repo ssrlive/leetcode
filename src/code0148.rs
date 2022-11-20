@@ -13,9 +13,9 @@ impl Solution {
     pub fn sort_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         let mut head = head;
         let mut vec: Vec<i32> = vec![];
-        while let Some(node) = head {
+        while let Some(mut node) = head {
             vec.push(node.val);
-            head = node.next;
+            head = node.next.take();
         }
         vec.sort();
         let mut next = None;

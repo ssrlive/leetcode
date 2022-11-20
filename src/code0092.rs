@@ -26,9 +26,9 @@ impl Solution {
         }
         let mut stack = vec![];
         let mut next = head;
-        while let Some(this) = next {
+        while let Some(mut this) = next {
             stack.push(this.val);
-            next = this.next;
+            next = this.next.take();
         }
         stack[left as usize - 1..=right as usize - 1].reverse();
         let mut next = None;

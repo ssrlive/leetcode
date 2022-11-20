@@ -20,7 +20,7 @@ impl Solution {
         let mut dummy = Some(Box::new(ListNode { val: 0, next: head }));
         let mut prev = (0..cnt - n as usize).fold(dummy.as_mut(), |curr, _| curr?.next.as_mut());
         prev?.next = prev.as_mut()?.next.as_mut()?.next.take();
-        dummy?.next
+        dummy?.next.take()
     }
 }
 
