@@ -191,6 +191,7 @@ mod code0342;
 mod code0343;
 mod code0344;
 mod code0345;
+mod code0347;
 
 mod code0876;
 
