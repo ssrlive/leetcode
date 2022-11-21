@@ -59,7 +59,7 @@ impl Drop for ListNode {
     fn drop(&mut self) {
         let mut next = self.next.take();
         while let Some(mut node) = next {
-            next = (*node).next.take();
+            next = node.next.take();
         }
     }
 }
