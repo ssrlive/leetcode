@@ -62,7 +62,7 @@ impl Solution {
         let n = n as usize + 1;
         let mut dp = vec![vec![0; n]; n];
 
-        return Self::dfs(1, n - 1, &mut dp);
+        Self::dfs(1, n - 1, &mut dp)
     }
 
     fn dfs(start: usize, end: usize, dp: &mut Vec<Vec<i32>>) -> i32 {
