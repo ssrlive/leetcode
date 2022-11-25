@@ -228,6 +228,7 @@ mod code0394;
 mod code0395;
 mod code0396;
 mod code0397;
+mod code0398;
 
 mod code0876;
 
