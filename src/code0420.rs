@@ -105,8 +105,5 @@ fn test() {
     assert_eq!(Solution::strong_password_checker("a".to_string()), 5);
     assert_eq!(Solution::strong_password_checker("aA1".to_string()), 3);
     assert_eq!(Solution::strong_password_checker("1337C0d3".to_string()), 0);
-    assert_eq!(
-        Solution::strong_password_checker("aaaaAAAAAA000000123456".to_string()),
-        5
-    );
+    assert_eq!(Solution::strong_password_checker("aaaaAAAAAA0000001346".to_string()), 5);
 }
