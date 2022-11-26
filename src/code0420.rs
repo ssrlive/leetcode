@@ -42,7 +42,7 @@ struct Solution;
 
 impl Solution {
     pub fn strong_password_checker(password: String) -> i32 {
-        pub fn _strong_password_checker(password: String) -> Option<i64> {
+        pub fn _strong_password_checker(password: &str) -> Option<i64> {
             let mut mislchar = true;
             let mut misdigit = true;
             let mut misuchar = true;
@@ -96,7 +96,7 @@ impl Solution {
             }
             Some(result)
         }
-        _strong_password_checker(password).unwrap_or_default() as i32
+        _strong_password_checker(&password).unwrap_or_default() as i32
     }
 }
 
