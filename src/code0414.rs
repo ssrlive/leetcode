@@ -36,29 +36,43 @@ struct Solution;
 
 impl Solution {
     pub fn third_max(nums: Vec<i32>) -> i32 {
-        pub fn _third_max(nums: Vec<i64>) -> i64 {
-            let mut max1 = std::i64::MIN;
-            let mut max2 = std::i64::MIN;
-            let mut max3 = std::i64::MIN;
-            for &num in nums.iter() {
-                if num > max1 {
-                    max3 = max2;
-                    max2 = max1;
-                    max1 = num;
-                } else if num > max2 && num < max1 {
-                    max3 = max2;
-                    max2 = num;
-                } else if num > max3 && num < max2 {
-                    max3 = num;
-                }
-            }
-            if max3 == std::i64::MIN {
-                max1
-            } else {
-                max3
+        use std::cmp::Ordering;
+        fn compare(v: i32, max: Option<i32>) -> Ordering {
+            match max {
+                Some(max) => v.cmp(&max),
+                None => Ordering::Greater,
             }
         }
-        _third_max(nums.into_iter().map(|x| x as i64).collect()) as i32
+
+        let mut i = nums.into_iter();
+        let mut max1 = i.next().unwrap();
+        let mut max2 = None;
+        let mut max3 = None;
+
+        for n in i {
+            match n.cmp(&max1) {
+                Ordering::Greater => {
+                    max3 = max2;
+                    max2 = Some(max1);
+                    max1 = n;
+                }
+                Ordering::Equal => (),
+                Ordering::Less => match compare(n, max2) {
+                    Ordering::Greater => {
+                        max3 = max2;
+                        max2 = Some(n);
+                    }
+                    Ordering::Equal => (),
+                    Ordering::Less => {
+                        if compare(n, max3) == Ordering::Greater {
+                            max3 = Some(n);
+                        }
+                    }
+                },
+            }
+        }
+
+        max3.unwrap_or(max1)
     }
 }
 
