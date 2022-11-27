@@ -251,6 +251,7 @@ mod code0420;
 mod code0421;
 mod code0423;
 mod code0424;
+mod code0427;
 mod code0432;
 
 mod code0876;
