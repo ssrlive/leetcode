@@ -93,18 +93,14 @@ impl Node {
     }
 
     pub fn from_vec(v: &[Option<i32>]) -> Option<Rc<RefCell<Node>>> {
-        let sec = v.split(|x| x.is_none()).collect::<Vec<_>>();
+        let sec = v.split(|x| x.is_none()).collect::<VecDeque<_>>();
         let mut sec = sec.iter().map(|&x| Self::_from_vec(x)).collect::<VecDeque<_>>();
-        println!("{:?}", sec);
 
         let mut count = 0;
         let result = sec.pop_front()?;
         let mut parent = result.clone();
         while !sec.is_empty() {
-            let child = match sec.pop_front() {
-                Some(x) => x,
-                None => break,
-            };
+            let child = sec.pop_front()?;
             if child.is_none() {
                 count += 1;
                 continue;
@@ -172,7 +168,7 @@ impl Solution {
         let mut c = cur.as_ref()?.borrow_mut().child.take();
         let mut r = cur.as_ref()?.borrow_mut().next.clone();
         ans.as_ref()?.borrow_mut().next = cur.clone();
-        cur.as_ref()?.borrow_mut().prev = Some(Rc::downgrade(&ans.clone().unwrap()));
+        cur.as_ref()?.borrow_mut().prev = Some(Rc::downgrade(&ans.clone()?));
         ans.as_ref()?.borrow_mut().child = None;
         *ans = cur.clone();
         Solution::dfs(ans, &mut c);
