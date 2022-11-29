@@ -51,13 +51,13 @@ impl Solution {
 #[test]
 fn test_frequency_sort() {
     let r = ["eert", "eetr"];
-    assert!( r.contains(&Solution::frequency_sort("tree".to_string()).as_str()));
+    assert!(r.contains(&Solution::frequency_sort("tree".to_string()).as_str()));
 
     let r = ["cccaaa", "aaaccc"];
     let s = Solution::frequency_sort("cccaaa".to_string());
     println!("{}", s);
-    assert!( r.contains(&s.as_str()));
+    assert!(r.contains(&s.as_str()));
 
     let r = ["bbAa", "bbaA"];
-    assert!( r.contains(&Solution::frequency_sort("Aabb".to_string()).as_str()));
+    assert!(r.contains(&Solution::frequency_sort("Aabb".to_string()).as_str()));
 }

@@ -53,21 +53,28 @@ impl Solution {
         points.sort_by_key(|x| x[1]);
         let mut endpoint = points[0][1];
         //  if x is between points[0] and points[1]
-        points[..]
-            .iter()
-            .fold(1, |mut count, point| { 
-                if point[0] > endpoint { 
-                    count +=1;
-                    endpoint = point[1]
-                }
+        points[..].iter().fold(1, |mut count, point| {
+            if point[0] > endpoint {
+                count += 1;
+                endpoint = point[1]
+            }
             count
-            }) as i32
+        }) as i32
     }
 }
 
 #[test]
 fn test_find_min_arrow_shots() {
-    assert_eq!(Solution::find_min_arrow_shots(vec![vec![10, 16], vec![2, 8], vec![1, 6], vec![7, 12]]), 2);
-    assert_eq!(Solution::find_min_arrow_shots(vec![vec![1, 2], vec![3, 4], vec![5, 6], vec![7, 8]]), 4);
-    assert_eq!(Solution::find_min_arrow_shots(vec![vec![1, 2], vec![2, 3], vec![3, 4], vec![4, 5]]), 2);
+    assert_eq!(
+        Solution::find_min_arrow_shots(vec![vec![10, 16], vec![2, 8], vec![1, 6], vec![7, 12]]),
+        2
+    );
+    assert_eq!(
+        Solution::find_min_arrow_shots(vec![vec![1, 2], vec![3, 4], vec![5, 6], vec![7, 8]]),
+        4
+    );
+    assert_eq!(
+        Solution::find_min_arrow_shots(vec![vec![1, 2], vec![2, 3], vec![3, 4], vec![4, 5]]),
+        2
+    );
 }
