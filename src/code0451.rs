@@ -36,10 +36,9 @@
 
 struct Solution;
 
-use std::collections::HashMap;
 impl Solution {
     pub fn frequency_sort(s: String) -> String {
-        let mut map = HashMap::new();
+        let mut map = std::collections::HashMap::new();
         for c in s.chars() {
             *map.entry(c).or_insert(0) += 1;
         }
