@@ -54,19 +54,16 @@ impl Solution {
             let area = (rect[2] - rect[0] + 1) * (rect[3] - rect[1] + 1);
             c_areas.push(area + c_areas[c_areas.len() - 1]);
         }
-        Solution {
-            rects,
-            c_areas,
-        }
+        Solution { rects, c_areas }
     }
 
     fn pick(&self) -> Vec<i32> {
         use rand::Rng;
-        let r = rand::thread_rng().gen_range(0 .. self.c_areas[self.c_areas.len() - 1]) + 1;
+        let r = rand::thread_rng().gen_range(0..self.c_areas[self.c_areas.len() - 1]) + 1;
         let i = self.c_areas.binary_search(&r).unwrap_or_else(|x| x) - 1;
         let rect = &self.rects[i];
-        let x = rand::thread_rng().gen_range(rect[0] .. rect[2] + 1);
-        let y = rand::thread_rng().gen_range(rect[1] .. rect[3] + 1);
+        let x = rand::thread_rng().gen_range(rect[0]..rect[2] + 1);
+        let y = rand::thread_rng().gen_range(rect[1]..rect[3] + 1);
         vec![x, y]
     }
 }
