@@ -27,9 +27,9 @@ use crate::treenode::TreeNode;
 
 struct Solution;
 
+use std::cell::RefCell;
 use std::collections::HashMap;
 use std::rc::Rc;
-use std::cell::RefCell;
 
 impl Solution {
     pub fn find_frequent_tree_sum(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
@@ -66,5 +66,8 @@ fn test() {
     let mut result = Solution::find_frequent_tree_sum(root);
     result.sort();
     assert_eq!(result, vec![-3, 2, 4]);
-    assert_eq!(Solution::find_frequent_tree_sum(TreeNode::from_vec(&[Some(5), Some(2), Some(-5)])), vec![2]);
+    assert_eq!(
+        Solution::find_frequent_tree_sum(TreeNode::from_vec(&[Some(5), Some(2), Some(-5)])),
+        vec![2]
+    );
 }
