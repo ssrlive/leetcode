@@ -48,8 +48,8 @@ impl Solution {
         let mut sum = 0;
         let mut map = std::collections::HashMap::<i32, i32>::new();
         map.insert(0, -1);
-        for i in 0..nums.len() {
-            sum += nums[i];
+        for (i, &item) in nums.iter().enumerate() {
+            sum += item;
             if k != 0 {
                 sum %= k;
             }
