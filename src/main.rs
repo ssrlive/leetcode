@@ -319,6 +319,7 @@ mod code0503;
 mod code0504;
 mod code0506;
 mod code0507;
+mod code0508;
 
 mod code0876;
 
