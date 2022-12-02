@@ -56,72 +56,73 @@
 // Constraints:
 //
 // - n == grid.length == grid[i].length
-// - n == 2x where 0 <= x <= 6
+// - n == 2^x where 0 <= x <= 6
 //
 
-#[derive(Debug, PartialEq, Eq)]
-pub struct Node {
-    pub val: bool,
-    pub is_leaf: bool,
-    pub top_left: Option<Box<Node>>,
-    pub top_right: Option<Box<Node>>,
-    pub bottom_left: Option<Box<Node>>,
-    pub bottom_right: Option<Box<Node>>,
-}
+use crate::quadtree::Node;
 
-impl Node {
-    #[inline]
-    pub fn new(
-        val: bool,
-        is_leaf: bool,
-        top_left: Option<Box<Node>>,
-        top_right: Option<Box<Node>>,
-        bottom_left: Option<Box<Node>>,
-        bottom_right: Option<Box<Node>>,
-    ) -> Self {
-        Node {
-            val,
-            is_leaf,
-            top_left,
-            top_right,
-            bottom_left,
-            bottom_right,
-        }
-    }
-}
+pub struct Solution;
 
-struct Solution;
-
+use std::cell::RefCell;
+use std::rc::Rc;
 impl Solution {
-    pub fn construct(grid: Vec<Vec<i32>>) -> Option<Box<Node>> {
+    pub fn construct(grid: Vec<Vec<i32>>) -> Option<Rc<RefCell<Node>>> {
+        let grid: Vec<Vec<bool>> = grid
+            .iter()
+            .map(|row| row.iter().map(|&val| val != 0).collect())
+            .collect();
         Self::helper(&grid, 0, 0, grid.len())
     }
 
-    fn helper(grid: &Vec<Vec<i32>>, x: usize, y: usize, len: usize) -> Option<Box<Node>> {
+    fn helper(grid: &Vec<Vec<bool>>, x: usize, y: usize, len: usize) -> Option<Rc<RefCell<Node>>> {
+        let mut val = grid[x][y];
         if len == 1 {
-            return Some(Box::new(Node::new(grid[x][y] != 0, true, None, None, None, None)));
+            return Some(Rc::new(RefCell::new(Node::new(true, val, None, None, None, None))));
         }
-        let mut result = Node::new(false, false, None, None, None, None);
         let top_left = Self::helper(grid, x, y, len / 2);
         let top_right = Self::helper(grid, x, y + len / 2, len / 2);
         let bottom_left = Self::helper(grid, x + len / 2, y, len / 2);
         let bottom_right = Self::helper(grid, x + len / 2, y + len / 2, len / 2);
-        if top_left.as_ref()?.is_leaf
-            && top_right.as_ref()?.is_leaf
-            && bottom_left.as_ref()?.is_leaf
-            && bottom_right.as_ref()?.is_leaf
-            && top_left.as_ref()?.val == top_right.as_ref()?.val
-            && top_right.as_ref()?.val == bottom_left.as_ref()?.val
-            && bottom_left.as_ref()?.val == bottom_right.as_ref()?.val
+        let result = if top_left.as_ref().unwrap().borrow().is_leaf()
+            && top_right.as_ref().unwrap().borrow().is_leaf()
+            && bottom_left.as_ref().unwrap().borrow().is_leaf()
+            && bottom_right.as_ref().unwrap().borrow().is_leaf()
+            && top_left.as_ref().unwrap().borrow().val() == top_right.as_ref().unwrap().borrow().val()
+            && top_right.as_ref().unwrap().borrow().val() == bottom_left.as_ref().unwrap().borrow().val()
+            && bottom_left.as_ref().unwrap().borrow().val() == bottom_right.as_ref().unwrap().borrow().val()
         {
-            result.is_leaf = true;
-            result.val = top_left.as_ref()?.val;
+            Node::new(true, top_left.as_ref().unwrap().borrow().val(), None, None, None, None)
         } else {
-            result.top_left = top_left;
-            result.top_right = top_right;
-            result.bottom_left = bottom_left;
-            result.bottom_right = bottom_right;
-        }
-        Some(Box::new(result))
+            val = false; // force to false in node type
+            Node::new(
+                false,
+                val,
+                top_left,
+                top_right,
+                bottom_left,
+                bottom_right,
+            )
+        };
+        Some(Rc::new(RefCell::new(result)))
     }
+}
+
+#[test]
+fn test() {
+    let grid = vec![vec![0, 1], vec![1, 0]];
+    let res = Solution::construct(grid);
+    println!("{}", res.as_ref().unwrap().borrow());
+
+    let grid = vec![
+        vec![1, 1, 1, 1, 0, 0, 0, 0],
+        vec![1, 1, 1, 1, 0, 0, 0, 0],
+        vec![1, 1, 1, 1, 1, 1, 1, 1],
+        vec![1, 1, 1, 1, 1, 1, 1, 1],
+        vec![1, 1, 1, 1, 0, 0, 0, 0],
+        vec![1, 1, 1, 1, 0, 0, 0, 0],
+        vec![1, 1, 1, 1, 0, 0, 0, 0],
+        vec![1, 1, 1, 1, 0, 0, 0, 0],
+    ];
+    let res = Solution::construct(grid);
+    println!("{}", res.as_ref().unwrap().borrow());
 }
