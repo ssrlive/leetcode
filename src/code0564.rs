@@ -63,7 +63,7 @@ impl Solution {
             cur_p
         }
     }
-    
+
     fn nearest_palindrom(cur_p: &str, dir: bool) -> String {
         let k = cur_p.len() / 2;
         let p = cur_p.len() - k;
