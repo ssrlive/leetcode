@@ -141,7 +141,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let leaf_false = Some(Rc::new(RefCell::new(Node::new(true, false,  None, None, None, None))));
+    let leaf_false = Some(Rc::new(RefCell::new(Node::new(true, false, None, None, None, None))));
     let leaf_true = Some(Rc::new(RefCell::new(Node::new(true, true, None, None, None, None))));
 
     let quad_tree1 = Some(Rc::new(RefCell::new(Node::new(

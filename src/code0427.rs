@@ -94,14 +94,7 @@ impl Solution {
             Node::new(true, top_left.as_ref().unwrap().borrow().val(), None, None, None, None)
         } else {
             val = false; // force to false in node type
-            Node::new(
-                false,
-                val,
-                top_left,
-                top_right,
-                bottom_left,
-                bottom_right,
-            )
+            Node::new(false, val, top_left, top_right, bottom_left, bottom_right)
         };
         Some(Rc::new(RefCell::new(result)))
     }
