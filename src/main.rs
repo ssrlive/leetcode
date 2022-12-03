@@ -381,6 +381,7 @@ mod code0594;
 mod code0598;
 mod code0599;
 mod code0600;
+mod code0605;
 
 mod code0821;
 
