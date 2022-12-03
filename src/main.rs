@@ -380,6 +380,7 @@ mod code0593;
 mod code0594;
 mod code0598;
 mod code0599;
+mod code0600;
 
 mod code0821;
 
