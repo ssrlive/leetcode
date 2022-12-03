@@ -36,10 +36,12 @@ impl Solution {
         while i < flowerbed.len() {
             if flowerbed[i] == 0 {
                 let mut can_plant = true;
-                if i > 0 && flowerbed[i - 1] == 1 {
+                let &pro = flowerbed.get(i - 1).unwrap_or(&0);
+                if pro == 1 {
                     can_plant = false;
                 }
-                if i < flowerbed.len() - 1 && flowerbed[i + 1] == 1 {
+                let &next = flowerbed.get(i + 1).unwrap_or(&0);
+                if next == 1 {
                     can_plant = false;
                 }
                 if can_plant {
