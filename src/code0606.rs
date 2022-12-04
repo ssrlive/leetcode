@@ -1,6 +1,6 @@
 #![allow(dead_code)]
 
-// 606. Construct String from Binary Data
+// 606. Construct String from Binary Tree
 // https://leetcode.com/problems/construct-string-from-binary-tree/
 //
 // Given the root of a binary tree, construct a string consisting of parenthesis and integers from a binary tree with the preorder traversal way, and return it.
@@ -33,23 +33,26 @@ use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
     pub fn tree2str(root: Option<Rc<RefCell<TreeNode>>>) -> String {
-        if let Some(node) = root {
-            let node = node.borrow();
-            let mut s = node.val.to_string();
-            if node.left.is_some() || node.right.is_some() {
-                s.push('(');
-                s.push_str(&Solution::tree2str(node.left.clone()));
-                s.push(')');
+        pub fn _tree2str(root: &Option<Rc<RefCell<TreeNode>>>) -> String {
+            if let Some(node) = root {
+                let node = node.borrow();
+                let mut s = node.val.to_string();
+                if node.left.is_some() || node.right.is_some() {
+                    s.push('(');
+                    s.push_str(&_tree2str(&node.left));
+                    s.push(')');
+                }
+                if node.right.is_some() {
+                    s.push('(');
+                    s.push_str(&_tree2str(&node.right));
+                    s.push(')');
+                }
+                s
+            } else {
+                "".to_string()
             }
-            if node.right.is_some() {
-                s.push('(');
-                s.push_str(&Solution::tree2str(node.right.clone()));
-                s.push(')');
-            }
-            s
-        } else {
-            "".to_string()
         }
+        _tree2str(&root)
     }
 }
 
