@@ -409,6 +409,7 @@ mod code0649;
 mod code0650;
 mod code0652;
 mod code0653;
+mod code0654;
 
 mod code0821;
 
