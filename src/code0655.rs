@@ -48,19 +48,20 @@ use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
     pub fn print_tree(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<Vec<String>> {
-        let height = Self::height(root.clone());
-        Self::print_tree_internal(root, height)
+        let height = Self::height(&root);
+        Self::print_tree_internal(&root, height).unwrap_or_else(|| vec![vec![]])
     }
 
-    fn print_tree_internal(root: Option<Rc<RefCell<TreeNode>>>, height: i32) -> Vec<Vec<String>> {
+    fn print_tree_internal(root: &Option<Rc<RefCell<TreeNode>>>, height: i32) -> Option<Vec<Vec<String>>> {
+        let dummy = Rc::new(RefCell::new(TreeNode::new(0)));
         let val = if root.is_none() {
             String::from("")
         } else {
-            format!("{}", root.clone().unwrap().borrow().val)
+            root.as_ref()?.borrow().val.to_string()
         };
 
         if height == 1 {
-            return vec![vec![val]];
+            return Some(vec![vec![val]]);
         }
 
         let mut result = Vec::new();
@@ -68,13 +69,8 @@ impl Solution {
         let mut this_level = vec!["".to_string(); len * 2 + 1];
         this_level[len] = val;
         result.push(this_level);
-        let (left_node, right_node) = if let Some(root) = root {
-            (root.borrow().left.clone(), root.borrow().right.clone())
-        } else {
-            (None, None)
-        };
-        let left = Self::print_tree_internal(left_node, height - 1);
-        let right = Self::print_tree_internal(right_node, height - 1);
+        let left = Self::print_tree_internal(&root.as_ref().unwrap_or(&dummy).borrow().left, height - 1)?;
+        let right = Self::print_tree_internal(&root.as_ref().unwrap_or(&dummy).borrow().right, height - 1)?;
 
         for i in 0..left.len() {
             let mut v = Vec::new();
@@ -84,15 +80,15 @@ impl Solution {
             result.push(v);
         }
 
-        result
+        Some(result)
     }
 
-    fn height(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
+    fn height(root: &Option<Rc<RefCell<TreeNode>>>) -> i32 {
         match root {
             None => 0,
             Some(root) => {
-                let left = Self::height(root.borrow().left.clone());
-                let right = Self::height(root.borrow().right.clone());
+                let left = Self::height(&root.borrow().left);
+                let right = Self::height(&root.borrow().right);
                 left.max(right) + 1
             }
         }
@@ -119,5 +115,18 @@ fn test() {
         .map(|v| v.iter().map(|s| s.to_string()).collect())
         .collect();
     let root = TreeNode::from_vec(&[Some(1), Some(2), Some(3), None, Some(4)]);
+    assert_eq!(Solution::print_tree(root), expected);
+
+    let expected = vec![
+        vec!["", "", "", "", "", "", "", "1", "", "", "", "", "", "", ""],
+        vec!["", "", "", "2", "", "", "", "", "", "", "", "5", "", "", ""],
+        vec!["", "3", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+        vec!["4", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+    ];
+    let expected: Vec<Vec<String>> = expected
+        .iter()
+        .map(|v| v.iter().map(|s| s.to_string()).collect())
+        .collect();
+    let root = TreeNode::from_vec(&[Some(1), Some(2), Some(5), Some(3), None, None, None, Some(4)]);
     assert_eq!(Solution::print_tree(root), expected);
 }
