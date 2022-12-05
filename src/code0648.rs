@@ -44,10 +44,14 @@ impl Solution {
             trie.insert(word.as_bytes(), i);
             trie
         });
-        sentence.split_whitespace().map(|word| match trie.find(word.as_bytes()) {
-            Some(i) => dictionary[i].clone(),
-            None => word.to_owned(),
-        }).collect::<Vec<_>>().join(" ")
+        sentence
+            .split_whitespace()
+            .map(|word| match trie.find(word.as_bytes()) {
+                Some(i) => dictionary[i].clone(),
+                None => word.to_owned(),
+            })
+            .collect::<Vec<_>>()
+            .join(" ")
     }
 }
 
@@ -64,9 +68,10 @@ struct Trie {
 }
 
 impl Trie {
-
     fn new() -> Self {
-        Self { nodes: vec![TrieNode::default()] }
+        Self {
+            nodes: vec![TrieNode::default()],
+        }
     }
 
     fn insert(&mut self, s: &[u8], entry: usize) {
@@ -89,28 +94,21 @@ impl Trie {
                 return None;
             }
             if self.nodes[i].entry.is_some() {
-                return self.nodes[i].entry.clone()
+                return self.nodes[i].entry;
             }
         }
         None
     }
-
 }
 
 #[test]
 fn test() {
-    let dictionary = vec!["cat", "bat", "rat"]
-        .into_iter()
-        .map(|s| s.to_string())
-        .collect();
+    let dictionary = vec!["cat", "bat", "rat"].into_iter().map(|s| s.to_string()).collect();
     let sentence = "the cattle was rattled by the battery".to_string();
     let expected = "the cat was rat by the bat".to_string();
     assert_eq!(Solution::replace_words(dictionary, sentence), expected);
 
-    let dictionary = vec!["a", "b", "c"]
-        .into_iter()
-        .map(|s| s.to_string())
-        .collect();
+    let dictionary = vec!["a", "b", "c"].into_iter().map(|s| s.to_string()).collect();
     let sentence = "aadsfasf absbs bbab cadsfafs".to_string();
     let expected = "a a b c".to_string();
     assert_eq!(Solution::replace_words(dictionary, sentence), expected);
