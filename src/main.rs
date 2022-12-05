@@ -418,6 +418,8 @@ mod code0821;
 
 mod code0876;
 
+mod code1047;
+
 mod code2488;
 
 fn main() {}
