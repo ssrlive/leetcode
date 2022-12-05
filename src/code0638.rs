@@ -67,13 +67,14 @@ impl Solution {
         price: &Vec<i32>,
         special: &Vec<Vec<i32>>,
         needs: &Vec<i32>,
-        dp: &mut std::collections::VecDeque<(Vec<i32>, i32)>,
+        dp: &mut std::collections::HashMap<String, i32>,
     ) -> i32 {
-        if let Some(v) = dp.iter().find(|(n, _)| n == needs).map(|(_, p)| *p) {
+        let k = needs.iter().map(|i| i.to_string()).collect::<Vec<_>>().join(",");
+        if let Some(&v) = dp.get(&k) {
             return v;
         }
         if Self::is_empty(needs) {
-            dp.push_back((needs.clone(), 0));
+            dp.insert(k, 0);
             return 0;
         }
         let mut min_price = std::i32::MAX;
@@ -93,18 +94,12 @@ impl Solution {
         }
         min_price = min_price.min(lprice);
 
-        if dp
-            .iter_mut()
-            .find(|(n, _)| n == needs)
-            .map(|(_, p)| *p = min_price)
-            .is_none()
-        {
-            dp.push_back((needs.clone(), min_price));
-        }
+        dp.insert(k, min_price);
+
         min_price
     }
     pub fn shopping_offers(price: Vec<i32>, special: Vec<Vec<i32>>, needs: Vec<i32>) -> i32 {
-        let mut dp = std::collections::VecDeque::new();
+        let mut dp = std::collections::HashMap::new();
         Self::solve(&price, &special, &needs, &mut dp)
     }
 }
