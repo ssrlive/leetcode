@@ -33,6 +33,26 @@ use std::rc::Rc;
 impl Solution {
     pub fn find_target(root: Option<Rc<RefCell<TreeNode>>>, k: i32) -> bool {
         let mut set = std::collections::HashSet::new();
+        let mut queue = std::collections::VecDeque::new();
+        queue.push_back(root);
+        while let Some(node) = queue.pop_front() {
+            if let Some(node) = node {
+                let node = node.borrow();
+                if set.contains(&(k - node.val)) {
+                    return true;
+                }
+                set.insert(node.val);
+                queue.push_back(node.left.clone());
+                queue.push_back(node.right.clone());
+            }
+        }
+        false
+    }
+
+    /*
+    // This is a recursive solution, but it's slower than the iterative one above.
+    pub fn find_target(root: Option<Rc<RefCell<TreeNode>>>, k: i32) -> bool {
+        let mut set = std::collections::HashSet::new();
         Self::find_target_helper(root, k, &mut set)
     }
 
@@ -48,6 +68,7 @@ impl Solution {
         }
         false
     }
+    */
 }
 
 #[test]
