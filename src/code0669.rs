@@ -53,21 +53,19 @@ use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
     pub fn trim_bst(root: Option<Rc<RefCell<TreeNode>>>, low: i32, high: i32) -> Option<Rc<RefCell<TreeNode>>> {
-        if let node @ Some(_) = root {
-            let val = node.as_ref()?.borrow().val;
-            if val < low {
-                return Solution::trim_bst(node.as_ref()?.borrow().right.clone(), low, high);
-            } else if val > high {
-                return Solution::trim_bst(node.as_ref()?.borrow().left.clone(), low, high);
-            } else {
-                let left = Solution::trim_bst(node.as_ref()?.borrow().left.clone(), low, high);
-                node.as_ref()?.borrow_mut().left = left;
-                let right = Solution::trim_bst(node.as_ref()?.borrow().right.clone(), low, high);
-                node.as_ref()?.borrow_mut().right = right;
-                return node;
-            }
+        root.as_ref()?;
+        let val = root.as_ref()?.borrow().val;
+        if val < low {
+            Solution::trim_bst(root.as_ref()?.borrow().right.clone(), low, high)
+        } else if val > high {
+            Solution::trim_bst(root.as_ref()?.borrow().left.clone(), low, high)
+        } else {
+            let left = Solution::trim_bst(root.as_ref()?.borrow().left.clone(), low, high);
+            root.as_ref()?.borrow_mut().left = left;
+            let right = Solution::trim_bst(root.as_ref()?.borrow().right.clone(), low, high);
+            root.as_ref()?.borrow_mut().right = right;
+            root
         }
-        None
     }
 }
 
