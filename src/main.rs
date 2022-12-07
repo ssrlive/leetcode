@@ -453,6 +453,7 @@ mod code0701;
 mod code0703;
 mod code0704;
 mod code0705;
+mod code0706;
 
 mod code0821;
 
