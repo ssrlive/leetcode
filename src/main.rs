@@ -442,6 +442,7 @@ mod code0689;
 mod code0690;
 mod code0691;
 mod code0692;
+mod code0693;
 
 mod code0821;
 
