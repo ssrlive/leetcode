@@ -178,7 +178,7 @@ impl Solution {
 }
 
 #[test]
-fn test_flatten() {
+fn test_flatten() -> Result<(), Box<dyn std::error::Error>> {
     let head = Node::from_vec(&[]);
     assert!(head.is_none());
     let head = Solution::flatten(head);
@@ -203,7 +203,7 @@ fn test_flatten() {
         Some(11),
         Some(12),
     ]);
-    println!("{}", head.as_ref().unwrap().borrow());
+    println!("{}", head.as_ref().ok_or("")?.borrow());
     let head = Solution::flatten(head);
     let result = Node::from_vec(&[
         Some(1),
@@ -220,23 +220,24 @@ fn test_flatten() {
         Some(6),
     ]);
     assert_eq!(
-        head.as_ref().unwrap().borrow().to_string(),
-        result.as_ref().unwrap().borrow().to_string()
+        head.as_ref().ok_or("")?.borrow().to_string(),
+        result.as_ref().ok_or("")?.borrow().to_string()
     );
 
     let head = Node::from_vec(&[Some(1), Some(2), Some(3), Some(4), Some(5), Some(6)]);
     let head = Solution::flatten(head);
     let result = Node::from_vec(&[Some(1), Some(2), Some(3), Some(4), Some(5), Some(6)]);
     assert_eq!(
-        head.as_ref().unwrap().borrow().to_string(),
-        result.as_ref().unwrap().borrow().to_string()
+        head.as_ref().ok_or("")?.borrow().to_string(),
+        result.as_ref().ok_or("")?.borrow().to_string()
     );
 
     let head = Node::from_vec(&[Some(1), Some(2), None, Some(3)]);
     let head = Solution::flatten(head);
     let result = Node::from_vec(&[Some(1), Some(3), Some(2)]);
     assert_eq!(
-        head.as_ref().unwrap().borrow().to_string(),
-        result.as_ref().unwrap().borrow().to_string()
+        head.as_ref().ok_or("")?.borrow().to_string(),
+        result.as_ref().ok_or("")?.borrow().to_string()
     );
+    Ok(())
 }

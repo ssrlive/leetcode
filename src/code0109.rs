@@ -48,20 +48,21 @@ impl Solution {
 }
 
 #[test]
-fn test_sorted_list_to_bst() {
+fn test_sorted_list_to_bst() -> Result<(), Box<dyn std::error::Error>> {
     let head = ListNode::from_vec(&[-10, -3, 0, 5, 9]);
     let tree = TreeNode::from_vec(&[Some(0), Some(-3), Some(9), Some(-10), None, Some(5)]);
     assert_eq!(Solution::sorted_list_to_bst(head), tree);
     assert_eq!(
-        tree.as_ref().unwrap().borrow().preorder_traversal(),
+        tree.as_ref().ok_or("")?.borrow().preorder_traversal(),
         vec![0, -3, -10, 9, 5]
     );
     assert_eq!(
-        tree.as_ref().unwrap().borrow().inorder_traversal(),
+        tree.as_ref().ok_or("")?.borrow().inorder_traversal(),
         vec![-10, -3, 0, 5, 9]
     );
     assert_eq!(
-        tree.as_ref().unwrap().borrow().postorder_traversal(),
+        tree.as_ref().ok_or("")?.borrow().postorder_traversal(),
         vec![-10, -3, 5, 9, 0]
     );
+    Ok(())
 }

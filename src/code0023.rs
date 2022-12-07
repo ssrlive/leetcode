@@ -22,7 +22,7 @@ impl Solution {
             let mut min_index = 0;
             for (i, item) in lists.iter().enumerate() {
                 if let Some(node) = item {
-                    if min.is_none() || node.val < min.unwrap().val {
+                    if min.is_none() || node.val < min?.val {
                         min = Some(node);
                         min_index = i;
                     }
@@ -31,10 +31,10 @@ impl Solution {
             if min.is_none() {
                 break;
             }
-            let mut node = lists[min_index].take().unwrap();
+            let mut node = lists[min_index].take()?;
             lists[min_index] = node.next.take();
             *tail = Some(node);
-            tail = &mut tail.as_mut().unwrap().next;
+            tail = &mut tail.as_mut()?.next;
         }
         head
     }

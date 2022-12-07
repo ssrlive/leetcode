@@ -44,18 +44,19 @@ impl Solution {
 }
 
 #[test]
-fn test() {
+fn test() -> Result<(), Box<dyn std::error::Error>> {
     let v1 = vec![Some(4), Some(2), Some(7), Some(1), Some(3), Some(6), Some(9)];
     let root = TreeNode::from_vec(&v1);
     let root = Solution::invert_tree(root);
-    let v = root.as_ref().unwrap().borrow().to_vec();
+    let v = root.as_ref().ok_or("")?.borrow().to_vec();
     let v2 = vec![Some(4), Some(7), Some(2), Some(9), Some(6), Some(3), Some(1)];
     assert_eq!(v, v2);
 
     let v1 = vec![Some(2), Some(1), Some(3)];
     let root = TreeNode::from_vec(&v1);
     let root = Solution::invert_tree(root);
-    let v = root.as_ref().unwrap().borrow().to_vec();
+    let v = root.as_ref().ok_or("")?.borrow().to_vec();
     let v2 = vec![Some(2), Some(3), Some(1)];
     assert_eq!(v, v2);
+    Ok(())
 }

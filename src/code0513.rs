@@ -30,35 +30,39 @@ use std::rc::Rc;
 
 impl Solution {
     pub fn find_bottom_left_value(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
-        let mut queue = vec![];
-        let mut result = 0;
+        fn _find_bottom_left_value(root: Option<Rc<RefCell<TreeNode>>>) -> Option<i32> {
+            let mut queue = vec![];
+            let mut result = 0;
 
-        if let node @ Some(_) = root {
-            queue.push(node);
-        }
+            if let node @ Some(_) = root {
+                queue.push(node);
+            }
 
-        while !queue.is_empty() {
-            let mut next_queue = vec![];
+            while !queue.is_empty() {
+                let mut next_queue = vec![];
 
-            for node in queue.iter() {
-                if let left @ Some(_) = node.as_ref().unwrap().borrow().left.clone() {
-                    next_queue.push(left);
+                for node in queue.iter() {
+                    if let left @ Some(_) = node.as_ref()?.borrow().left.clone() {
+                        next_queue.push(left);
+                    }
+
+                    if let right @ Some(_) = node.as_ref()?.borrow().right.clone() {
+                        next_queue.push(right);
+                    }
                 }
 
-                if let right @ Some(_) = node.as_ref().unwrap().borrow().right.clone() {
-                    next_queue.push(right);
+                if !next_queue.is_empty() {
+                    queue = next_queue;
+                } else {
+                    result = queue.get(0)?.as_ref()?.borrow().val;
+                    break;
                 }
             }
 
-            if !next_queue.is_empty() {
-                queue = next_queue;
-            } else {
-                result = queue.get(0).unwrap().as_ref().unwrap().borrow().val;
-                break;
-            }
+            Some(result)
         }
 
-        result
+        _find_bottom_left_value(root).unwrap_or_default()
     }
 }
 

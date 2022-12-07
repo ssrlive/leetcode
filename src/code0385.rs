@@ -151,32 +151,35 @@ struct Solution;
 
 impl Solution {
     pub fn deserialize(s: String) -> NestedInteger {
-        s.parse().unwrap()
+        s.parse().unwrap_or_else(|_| NestedInteger::new())
     }
 
     pub fn deserialize2(s: String) -> NestedInteger {
-        let mut stack = Vec::new();
-        stack.push(NestedInteger::new());
-        let mut i = 0;
-        while i < s.len() {
-            let c = s.chars().nth(i).unwrap();
-            if c == '[' {
-                stack.push(NestedInteger::new());
-            } else if c == ']' {
-                let ni = stack.pop().unwrap();
-                stack.last_mut().unwrap().add(ni);
-            } else if c == '-' || c.is_ascii_digit() {
-                let mut j = i + 1;
-                while j < s.len() && s.chars().nth(j).unwrap().is_ascii_digit() {
-                    j += 1;
+        pub fn _deserialize2(s: String) -> Option<NestedInteger> {
+            let mut stack = Vec::new();
+            stack.push(NestedInteger::new());
+            let mut i = 0;
+            while i < s.len() {
+                let c = s.chars().nth(i)?;
+                if c == '[' {
+                    stack.push(NestedInteger::new());
+                } else if c == ']' {
+                    let ni = stack.pop()?;
+                    stack.last_mut()?.add(ni);
+                } else if c == '-' || c.is_ascii_digit() {
+                    let mut j = i + 1;
+                    while j < s.len() && s.chars().nth(j)?.is_ascii_digit() {
+                        j += 1;
+                    }
+                    let num = s[i..j].parse::<i32>().ok()?;
+                    stack.last_mut()?.add(NestedInteger::new_int(num));
+                    i = j - 1;
                 }
-                let num = s[i..j].parse::<i32>().unwrap();
-                stack.last_mut().unwrap().add(NestedInteger::new_int(num));
-                i = j - 1;
+                i += 1;
             }
-            i += 1;
+            Some(stack.pop()?.get_list()[0].clone())
         }
-        stack.pop().unwrap().get_list()[0].clone()
+        _deserialize2(s).unwrap_or_else(NestedInteger::new)
     }
 }
 

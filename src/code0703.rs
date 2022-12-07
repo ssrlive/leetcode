@@ -55,11 +55,14 @@ impl KthLargest {
     }
 
     fn add(&mut self, val: i32) -> i32 {
+        self._add(val).unwrap_or(-1)
+    }
+    fn _add(&mut self, val: i32) -> Option<i32> {
         self.heap.push(Reverse(val));
         while self.heap.len() > self.k {
             self.heap.pop();
         }
-        self.heap.peek().unwrap().0
+        Some(self.heap.peek()?.0)
     }
 }
 

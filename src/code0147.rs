@@ -30,8 +30,8 @@ impl Solution {
                 while let Some(mut node_to_insert) = unsorted {
                     unsorted = node_to_insert.next.take();
                     let mut sorted_ref = &mut sorted;
-                    while sorted_ref.next.is_some() && sorted_ref.next.as_ref().unwrap().val < node_to_insert.val {
-                        sorted_ref = sorted_ref.next.as_mut().unwrap()
+                    while sorted_ref.next.is_some() && sorted_ref.next.as_ref()?.val < node_to_insert.val {
+                        sorted_ref = sorted_ref.next.as_mut()?;
                     }
                     node_to_insert.next = sorted_ref.next.take();
                     sorted_ref.next = Some(node_to_insert);
@@ -43,12 +43,13 @@ impl Solution {
 }
 
 #[test]
-fn test_insertion_sort_list() {
+fn test_insertion_sort_list() -> Result<(), Box<dyn std::error::Error>> {
     let head = ListNode::from_vec(&vec![4, 2, 1, 3]);
-    let head = Solution::insertion_sort_list(head).unwrap();
+    let head = Solution::insertion_sort_list(head).ok_or("")?;
     assert_eq!(head.to_vec(), vec![1, 2, 3, 4]);
 
     let head = ListNode::from_vec(&vec![-1, 5, 3, 4, 0]);
-    let head = Solution::insertion_sort_list(head).unwrap();
+    let head = Solution::insertion_sort_list(head).ok_or("")?;
     assert_eq!(head.to_vec(), vec![-1, 0, 3, 4, 5]);
+    Ok(())
 }

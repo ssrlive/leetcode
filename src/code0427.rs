@@ -83,15 +83,15 @@ impl Solution {
         let top_right = Self::helper(grid, x, y + len / 2, len / 2);
         let bottom_left = Self::helper(grid, x + len / 2, y, len / 2);
         let bottom_right = Self::helper(grid, x + len / 2, y + len / 2, len / 2);
-        let result = if top_left.as_ref().unwrap().borrow().is_leaf()
-            && top_right.as_ref().unwrap().borrow().is_leaf()
-            && bottom_left.as_ref().unwrap().borrow().is_leaf()
-            && bottom_right.as_ref().unwrap().borrow().is_leaf()
-            && top_left.as_ref().unwrap().borrow().val() == top_right.as_ref().unwrap().borrow().val()
-            && top_right.as_ref().unwrap().borrow().val() == bottom_left.as_ref().unwrap().borrow().val()
-            && bottom_left.as_ref().unwrap().borrow().val() == bottom_right.as_ref().unwrap().borrow().val()
+        let result = if top_left.as_ref()?.borrow().is_leaf()
+            && top_right.as_ref()?.borrow().is_leaf()
+            && bottom_left.as_ref()?.borrow().is_leaf()
+            && bottom_right.as_ref()?.borrow().is_leaf()
+            && top_left.as_ref()?.borrow().val() == top_right.as_ref()?.borrow().val()
+            && top_right.as_ref()?.borrow().val() == bottom_left.as_ref()?.borrow().val()
+            && bottom_left.as_ref()?.borrow().val() == bottom_right.as_ref()?.borrow().val()
         {
-            Node::new(true, top_left.as_ref().unwrap().borrow().val(), None, None, None, None)
+            Node::new(true, top_left.as_ref()?.borrow().val(), None, None, None, None)
         } else {
             val = false; // force to false in node type
             Node::new(false, val, top_left, top_right, bottom_left, bottom_right)
@@ -101,10 +101,10 @@ impl Solution {
 }
 
 #[test]
-fn test() {
+fn test() -> Result<(), Box<dyn std::error::Error>> {
     let grid = vec![vec![0, 1], vec![1, 0]];
     let res = Solution::construct(grid);
-    println!("{}", res.as_ref().unwrap().borrow());
+    println!("{}", res.as_ref().ok_or("")?.borrow());
 
     let grid = vec![
         vec![1, 1, 1, 1, 0, 0, 0, 0],
@@ -117,5 +117,6 @@ fn test() {
         vec![1, 1, 1, 1, 0, 0, 0, 0],
     ];
     let res = Solution::construct(grid);
-    println!("{}", res.as_ref().unwrap().borrow());
+    println!("{}", res.as_ref().ok_or("")?.borrow());
+    Ok(())
 }

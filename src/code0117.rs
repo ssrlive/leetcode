@@ -3,103 +3,15 @@
 // 117. Populating Next Right Pointers in Each Node II
 // https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
 
-// Definition for a binary tree node.
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct Node {
-    pub val: i32,
-    pub left: Option<Rc<RefCell<Node>>>,
-    pub right: Option<Rc<RefCell<Node>>>,
-    pub next: Option<Rc<RefCell<Node>>>,
-}
-
-impl Node {
-    #[inline]
-    fn new(val: i32) -> Self {
-        Node {
-            val,
-            left: None,
-            right: None,
-            next: None,
-        }
-    }
-
-    pub fn from_vec(v: Vec<Option<i32>>) -> Option<Rc<RefCell<Node>>> {
-        if v.is_empty() {
-            return None;
-        }
-        let root = Some(Rc::new(RefCell::new(Node::new(v[0]?))));
-        let mut queue = std::collections::VecDeque::new();
-        queue.push_back(root.clone());
-        let mut i = 1;
-        while i < v.len() {
-            let node = queue.pop_front()?;
-            if let Some(val) = v.get(i)? {
-                node.as_ref()?.borrow_mut().left = Some(Rc::new(RefCell::new(Node::new(*val))));
-                queue.push_back(node.as_ref()?.borrow().left.clone());
-            }
-            i += 1;
-            if i >= v.len() {
-                break;
-            }
-            if let Some(val) = v.get(i)? {
-                node.as_ref()?.borrow_mut().right = Some(Rc::new(RefCell::new(Node::new(*val))));
-                queue.push_back(node.as_ref()?.borrow().right.clone());
-            }
-            i += 1;
-        }
-        root
-    }
-
-    pub fn preorder_traversal(root: Option<Rc<RefCell<Self>>>) -> Vec<i32> {
-        fn helper(node: &Option<Rc<RefCell<Node>>>, ret: &mut Vec<i32>) {
-            if let Some(v) = node {
-                let v = v.borrow();
-                ret.push(v.val);
-                helper(&v.left, ret);
-                helper(&v.right, ret);
-            }
-        }
-        let mut ret = Vec::new();
-        helper(&root, &mut ret);
-        ret
-    }
-
-    pub fn inorder_traversal(root: Option<Rc<RefCell<Self>>>) -> Vec<i32> {
-        fn helper(node: &Option<Rc<RefCell<Node>>>, ret: &mut Vec<i32>) {
-            if let Some(v) = node {
-                let v = v.borrow();
-                helper(&v.left, ret);
-                ret.push(v.val);
-                helper(&v.right, ret);
-            }
-        }
-        let mut ret = Vec::new();
-        helper(&root, &mut ret);
-        ret
-    }
-
-    pub fn postorder_traversal(root: Option<Rc<RefCell<Self>>>) -> Vec<i32> {
-        fn helper(node: &Option<Rc<RefCell<Node>>>, ret: &mut Vec<i32>) {
-            if let Some(v) = node {
-                let v = v.borrow();
-                helper(&v.left, ret);
-                helper(&v.right, ret);
-                ret.push(v.val);
-            }
-        }
-        let mut ret = Vec::new();
-        helper(&root, &mut ret);
-        ret
-    }
-}
+use crate::treenode::TreeNode;
 
 struct Solution {}
 
 use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
-    pub fn connect(root: Option<Rc<RefCell<Node>>>) -> Option<Rc<RefCell<Node>>> {
-        fn get_next(root: &Option<Rc<RefCell<Node>>>) -> Option<Rc<RefCell<Node>>> {
+    pub fn connect(root: Option<Rc<RefCell<TreeNode>>>) -> Option<Rc<RefCell<TreeNode>>> {
+        fn get_next(root: &Option<Rc<RefCell<TreeNode>>>) -> Option<Rc<RefCell<TreeNode>>> {
             if root.is_none() {
                 return None;
             }
@@ -112,7 +24,7 @@ impl Solution {
                 v.borrow()
                     .left
                     .clone()
-                    .unwrap_or_else(|| v.borrow().right.clone().unwrap())
+                    .unwrap_or_else(|| v.borrow().right.clone().unwrap_or_else(|| unreachable!()))
             })
         }
 
@@ -135,8 +47,8 @@ impl Solution {
 }
 
 #[test]
-fn test() {
-    let root = Node::from_vec(vec![
+fn test() -> Result<(), Box<dyn std::error::Error>> {
+    let root = TreeNode::from_vec(&[
         Some(1),
         Some(2),
         Some(3),
@@ -152,36 +64,44 @@ fn test() {
         Some(13),
     ]);
     let root = Solution::connect(root);
-    let root = root.unwrap();
+    let root = root.ok_or("")?;
     let root = root.borrow();
     assert_eq!(root.val, 1);
-    assert_eq!(root.left.as_ref().unwrap().borrow().val, 2);
-    assert_eq!(root.right.as_ref().unwrap().borrow().val, 3);
+    assert_eq!(root.left.as_ref().ok_or("")?.borrow().val, 2);
+    assert_eq!(root.right.as_ref().ok_or("")?.borrow().val, 3);
     assert_eq!(
-        root.left.as_ref().unwrap().borrow().left.as_ref().unwrap().borrow().val,
+        root.left
+            .as_ref()
+            .ok_or("")?
+            .borrow()
+            .left
+            .as_ref()
+            .ok_or("")?
+            .borrow()
+            .val,
         4
     );
     assert_eq!(
         root.left
             .as_ref()
-            .unwrap()
+            .ok_or("")?
             .borrow()
             .right
             .as_ref()
-            .unwrap()
+            .ok_or("")?
             .borrow()
             .val,
         5
     );
-    assert_eq!(root.right.as_ref().unwrap().borrow().left.as_ref(), None);
+    assert_eq!(root.right.as_ref().ok_or("")?.borrow().left.as_ref(), None);
     assert_eq!(
         root.right
             .as_ref()
-            .unwrap()
+            .ok_or("")?
             .borrow()
             .right
             .as_ref()
-            .unwrap()
+            .ok_or("")?
             .borrow()
             .val,
         7
@@ -189,15 +109,15 @@ fn test() {
     assert_eq!(
         root.left
             .as_ref()
-            .unwrap()
+            .ok_or("")?
             .borrow()
             .left
             .as_ref()
-            .unwrap()
+            .ok_or("")?
             .borrow()
             .next
             .as_ref()
-            .unwrap()
+            .ok_or("")?
             .borrow()
             .val,
         5
@@ -205,15 +125,15 @@ fn test() {
     assert_eq!(
         root.left
             .as_ref()
-            .unwrap()
+            .ok_or("")?
             .borrow()
             .right
             .as_ref()
-            .unwrap()
+            .ok_or("")?
             .borrow()
             .next
             .as_ref()
-            .unwrap()
+            .ok_or("")?
             .borrow()
             .val,
         7
@@ -221,11 +141,11 @@ fn test() {
     assert_eq!(
         root.right
             .as_ref()
-            .unwrap()
+            .ok_or("")?
             .borrow()
             .right
             .as_ref()
-            .unwrap()
+            .ok_or("")?
             .borrow()
             .next,
         None
@@ -233,21 +153,22 @@ fn test() {
     assert_eq!(
         root.left
             .as_ref()
-            .unwrap()
+            .ok_or("")?
             .borrow()
             .right
             .as_ref()
-            .unwrap()
+            .ok_or("")?
             .borrow()
             .right
             .as_ref()
-            .unwrap()
+            .ok_or("")?
             .borrow()
             .next
             .as_ref()
-            .unwrap()
+            .ok_or("")?
             .borrow()
             .val,
         13
     );
+    Ok(())
 }

@@ -53,20 +53,20 @@ impl Solution {
             let mut new_node = Node::new(n.borrow().val);
             new_node.next = n.borrow().next.clone();
             n.borrow_mut().next = Some(Rc::new(RefCell::new(new_node)));
-            node = n.borrow().next.as_ref().unwrap().borrow().next.clone();
+            node = n.borrow().next.as_ref()?.borrow().next.clone();
         }
         let mut node = head.clone();
         while let Some(n) = node {
             let r = n.borrow().random.clone();
             if let Some(r) = r {
-                n.borrow_mut().next.as_mut().unwrap().borrow_mut().random = r.borrow().next.clone();
+                n.borrow_mut().next.as_mut()?.borrow_mut().random = r.borrow().next.clone();
             }
-            node = n.borrow().next.as_ref().unwrap().borrow().next.clone();
+            node = n.borrow().next.as_ref()?.borrow().next.clone();
         }
         let mut node = head;
-        let new_head = node.as_ref().unwrap().borrow().next.clone();
+        let new_head = node.as_ref()?.borrow().next.clone();
         while let Some(n) = node {
-            let new_node = n.borrow_mut().next.take().unwrap();
+            let new_node = n.borrow_mut().next.take()?;
             n.borrow_mut().next = new_node.borrow().next.clone();
             let next = new_node.borrow().next.clone();
             if let Some(next) = next {

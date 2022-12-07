@@ -29,9 +29,12 @@ struct Solution;
 
 impl Solution {
     pub fn find_number_of_lis(nums: Vec<i32>) -> i32 {
+        Self::_find_number_of_lis(nums).unwrap_or(-1)
+    }
+    fn _find_number_of_lis(nums: Vec<i32>) -> Option<i32> {
         let n = nums.len();
         if n == 0 {
-            return 0;
+            return Some(0);
         }
 
         let mut dp = vec![1; n];
@@ -54,7 +57,7 @@ impl Solution {
             }
         }
 
-        let max_len = dp.iter().max().unwrap();
+        let max_len = dp.iter().max()?;
         let mut res = 0;
         for i in 0..n {
             if dp[i] == *max_len {
@@ -62,7 +65,7 @@ impl Solution {
             }
         }
 
-        res
+        Some(res)
     }
 }
 

@@ -48,19 +48,19 @@ impl Solution {
         mask: i32,
         the_mask: i32,
         matrix: &mut Vec<Vec<i32>>,
-    ) -> i32 {
+    ) -> Option<i32> {
         if mask == the_mask {
-            return 0;
+            return Some(0);
         }
 
         if i == stickers.len() {
-            return 1 << 30;
+            return Some(1 << 30);
         }
 
         let mut result = matrix[mask as usize][i];
 
         if result != -1 {
-            return result;
+            return Some(result);
         }
 
         let mut __m = vec![0; 26];
@@ -75,30 +75,30 @@ impl Solution {
             if mask & (1 << k) != 0 {
                 continue;
             }
-            if __m[target.chars().nth(k).unwrap() as usize - 'a' as usize] != 0 {
+            if __m[target.chars().nth(k)? as usize - 'a' as usize] != 0 {
                 over_lap |= 1 << k;
-                __m[target.chars().nth(k).unwrap() as usize - 'a' as usize] -= 1;
+                __m[target.chars().nth(k)? as usize - 'a' as usize] -= 1;
             }
         }
 
         if over_lap != 0 {
             result = std::cmp::min(
-                1 + Self::solve(stickers, i, target, mask | over_lap, the_mask, matrix),
-                Self::solve(stickers, i + 1, target, mask, the_mask, matrix),
+                1 + Self::solve(stickers, i, target, mask | over_lap, the_mask, matrix)?,
+                Self::solve(stickers, i + 1, target, mask, the_mask, matrix)?,
             );
             matrix[mask as usize][i] = result;
-            return result;
+            return Some(result);
         }
 
-        result = Self::solve(stickers, i + 1, target, mask, the_mask, matrix);
+        result = Self::solve(stickers, i + 1, target, mask, the_mask, matrix)?;
         matrix[mask as usize][i] = result;
-        result
+        Some(result)
     }
 
     pub fn min_stickers(stickers: Vec<String>, target: String) -> i32 {
         let the_mask = (1 << target.len()) - 1;
         let mut matrix = vec![vec![-1; 52]; 32780];
-        let ans = Self::solve(&stickers, 0, &target, 0, the_mask, &mut matrix);
+        let ans = Self::solve(&stickers, 0, &target, 0, the_mask, &mut matrix).unwrap_or(1 << 30);
         if ans >= 1 << 30 {
             return -1;
         }

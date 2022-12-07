@@ -139,7 +139,7 @@ impl Solution {
                         i += 1;
                     }
 
-                    if st.is_empty() || st.pop().unwrap() != t {
+                    if st.is_empty() || st.pop()? != t {
                         return Some(false);
                     }
                 } else {

@@ -43,19 +43,23 @@ impl Codec {
         Self
     }
 
-    fn serialize(&self, root: Option<Rc<RefCell<TreeNode>>>) -> String {
+    pub fn serialize(&self, root: Option<Rc<RefCell<TreeNode>>>) -> String {
+        self._serialize(root).unwrap_or_default()
+    }
+
+    fn _serialize(&self, root: Option<Rc<RefCell<TreeNode>>>) -> Option<String> {
         let mut v = Vec::new();
         let mut queue = std::collections::VecDeque::new();
         queue.push_back(root);
         while !queue.is_empty() {
-            let node = queue.pop_front().unwrap();
+            let node = queue.pop_front()?;
             if node.is_none() {
                 v.push(None);
                 continue;
             }
-            v.push(Some(node.as_ref().unwrap().borrow().val));
-            queue.push_back(node.as_ref().unwrap().borrow().left.clone());
-            queue.push_back(node.as_ref().unwrap().borrow().right.clone());
+            v.push(Some(node.as_ref()?.borrow().val));
+            queue.push_back(node.as_ref()?.borrow().left.clone());
+            queue.push_back(node.as_ref()?.borrow().right.clone());
         }
         while let Some(None) = v.last() {
             v.pop();
@@ -65,7 +69,7 @@ impl Codec {
             Some(x) => x.to_string(),
             None => "null".to_string(),
         };
-        v.iter().map(f).collect::<Vec<_>>().join(",")
+        Some(v.iter().map(f).collect::<Vec<_>>().join(","))
     }
 
     fn deserialize(&self, data: String) -> Option<Rc<RefCell<TreeNode>>> {
@@ -105,12 +109,13 @@ impl Codec {
 }
 
 #[test]
-fn test() {
+fn test() -> Result<(), Box<dyn std::error::Error>> {
     let v = vec![Some(1), Some(2), Some(3), None, None, Some(4), Some(5)];
     let root = TreeNode::from_vec(&v);
     let codec = Codec::new();
     let data = codec.serialize(root);
     assert_eq!(data, "1,2,3,null,null,4,5");
     let root = codec.deserialize(data);
-    assert_eq!(root.as_ref().unwrap().borrow().to_vec(), v);
+    assert_eq!(root.as_ref().ok_or("")?.borrow().to_vec(), v);
+    Ok(())
 }

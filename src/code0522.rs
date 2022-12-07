@@ -32,17 +32,17 @@ struct Solution;
 
 impl Solution {
     pub fn find_lu_slength(strs: Vec<String>) -> i32 {
-        fn is_subsequence(s1: &str, s2: &str) -> bool {
+        fn is_subsequence(s1: &str, s2: &str) -> Option<bool> {
             let mut i = 0;
             for c in s2.chars() {
                 if i == s1.len() {
                     break;
                 }
-                if c == s1.chars().nth(i).unwrap() {
+                if c == s1.chars().nth(i)? {
                     i += 1;
                 }
             }
-            i == s1.len()
+            Some(i == s1.len())
         }
 
         let mut strs = strs;
@@ -55,7 +55,7 @@ impl Solution {
                 if i == j {
                     continue;
                 }
-                if is_subsequence(&strs[i], &strs[j]) {
+                if is_subsequence(&strs[i], &strs[j]).unwrap_or(false) {
                     flag = true;
                     break;
                 }

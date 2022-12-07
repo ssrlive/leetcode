@@ -42,7 +42,7 @@ impl Solution {
         }
     }
 
-    pub fn recover_tree_2(root: &mut Option<Rc<RefCell<TreeNode>>>) {
+    pub fn recover_tree_2(root: &mut Option<Rc<RefCell<TreeNode>>>) -> Option<()> {
         let mut stack = vec![];
         let mut curr = root.clone();
         let mut x = None;
@@ -70,9 +70,10 @@ impl Solution {
             }
         }
 
-        let mut x = x.as_ref().unwrap().borrow_mut();
-        let mut y = y.as_ref().unwrap().borrow_mut();
+        let mut x = x.as_ref()?.borrow_mut();
+        let mut y = y.as_ref()?.borrow_mut();
         std::mem::swap(&mut x.val, &mut y.val);
+        Some(())
     }
 }
 

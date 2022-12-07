@@ -103,35 +103,46 @@ impl MyLinkedList {
     }
 
     fn add_at_tail(&mut self, val: i32) {
+        if self._add_at_tail(val).is_none() {
+            println!("invalid val: {}", val);
+        }
+    }
+    fn _add_at_tail(&mut self, val: i32) -> Option<()> {
         let node = Rc::new(RefCell::new(Node::new(val)));
         if self.tail.is_none() {
             self.head = Some(node.clone());
             self.tail = Some(node);
         } else {
-            self.tail.as_ref().unwrap().borrow_mut().next = Some(node.clone());
+            self.tail.as_ref()?.borrow_mut().next = Some(node.clone());
             self.tail = Some(node);
         }
         self.len += 1;
+        Some(())
     }
 
-    fn add_at_index(&mut self, index: i32, val: i32) {
+    pub fn add_at_index(&mut self, index: i32, val: i32) {
+        if self._add_at_index(index, val).is_none() {
+            println!("invalid index: {}", index);
+        }
+    }
+    fn _add_at_index(&mut self, index: i32, val: i32) -> Option<()> {
         if index < 0 || index as usize > self.len {
-            return;
+            return Some(());
         }
 
         if index == 0 {
             self.add_at_head(val);
-            return;
+            return Some(());
         }
 
         if index as usize == self.len {
             self.add_at_tail(val);
-            return;
+            return Some(());
         }
 
-        let mut node = self.head.as_ref().unwrap().clone();
+        let mut node = self.head.as_ref()?.clone();
         for _ in 0..index - 1 {
-            let _node = node.borrow().next.as_ref().unwrap().clone();
+            let _node = node.borrow().next.as_ref()?.clone();
             node = _node;
         }
 
@@ -139,35 +150,42 @@ impl MyLinkedList {
         new_node.borrow_mut().next = node.borrow().next.clone();
         node.borrow_mut().next = Some(new_node);
         self.len += 1;
+        Some(())
     }
 
-    fn delete_at_index(&mut self, index: i32) {
+    pub fn delete_at_index(&mut self, index: i32) {
+        if self._delete_at_index(index).is_none() {
+            println!("invalid index: {}", index);
+        }
+    }
+    fn _delete_at_index(&mut self, index: i32) -> Option<()> {
         if index < 0 || index as usize >= self.len {
-            return;
+            return Some(());
         }
 
         if index == 0 {
-            let head = self.head.as_ref().unwrap().borrow().next.clone();
+            let head = self.head.as_ref()?.borrow().next.clone();
             self.head = head;
             if self.head.is_none() {
                 self.tail = None;
             }
             self.len -= 1;
-            return;
+            return Some(());
         }
 
-        let mut node = self.head.as_ref().unwrap().clone();
+        let mut node = self.head.as_ref()?.clone();
         for _ in 0..index - 1 {
-            let _node = node.borrow().next.as_ref().unwrap().clone();
+            let _node = node.borrow().next.as_ref()?.clone();
             node = _node;
         }
 
-        let next = node.borrow().next.as_ref().unwrap().borrow().next.clone();
+        let next = node.borrow().next.as_ref()?.borrow().next.clone();
         node.borrow_mut().next = next;
         if index as usize == self.len - 1 {
             self.tail = Some(node);
         }
         self.len -= 1;
+        Some(())
     }
 }
 

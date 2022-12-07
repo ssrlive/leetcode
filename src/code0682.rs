@@ -68,6 +68,9 @@ struct Solution;
 
 impl Solution {
     pub fn cal_points(operations: Vec<String>) -> i32 {
+        Self::_cal_points(operations).unwrap_or(0)
+    }
+    fn _cal_points(operations: Vec<String>) -> Option<i32> {
         let mut scores = Vec::new();
         for op in operations {
             match op.as_str() {
@@ -75,20 +78,20 @@ impl Solution {
                     scores.pop();
                 }
                 "D" => {
-                    let last = scores.last().unwrap();
+                    let last = scores.last()?;
                     scores.push(last * 2);
                 }
                 "+" => {
-                    let last = scores.last().unwrap();
+                    let last = scores.last()?;
                     let second_last = scores[scores.len() - 2];
                     scores.push(last + second_last);
                 }
                 _ => {
-                    scores.push(op.parse::<i32>().unwrap());
+                    scores.push(op.parse::<i32>().ok()?);
                 }
             }
         }
-        scores.iter().sum()
+        Some(scores.iter().sum())
     }
 }
 

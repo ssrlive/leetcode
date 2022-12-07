@@ -34,40 +34,43 @@ struct Solution;
 
 impl Solution {
     pub fn calculate(s: String) -> i32 {
-        let mut stack = std::collections::VecDeque::new();
-        let mut num = 0;
-        let mut sign = 1;
-        let mut result = 0;
+        fn _calculate(s: &str) -> Option<i32> {
+            let mut stack = std::collections::VecDeque::new();
+            let mut num = 0;
+            let mut sign = 1;
+            let mut result = 0;
 
-        for c in s.chars() {
-            if c.is_ascii_digit() {
-                num = num * 10 + c.to_digit(10).unwrap() as i32;
-            } else if c == '+' {
-                result += sign * num;
-                num = 0;
-                sign = 1;
-            } else if c == '-' {
-                result += sign * num;
-                num = 0;
-                sign = -1;
-            } else if c == '(' {
-                stack.push_back(result);
-                stack.push_back(sign);
-                result = 0;
-                sign = 1;
-            } else if c == ')' {
-                result += sign * num;
-                num = 0;
-                result *= stack.pop_back().unwrap();
-                result += stack.pop_back().unwrap();
+            for c in s.chars() {
+                if c.is_ascii_digit() {
+                    num = num * 10 + c.to_digit(10)? as i32;
+                } else if c == '+' {
+                    result += sign * num;
+                    num = 0;
+                    sign = 1;
+                } else if c == '-' {
+                    result += sign * num;
+                    num = 0;
+                    sign = -1;
+                } else if c == '(' {
+                    stack.push_back(result);
+                    stack.push_back(sign);
+                    result = 0;
+                    sign = 1;
+                } else if c == ')' {
+                    result += sign * num;
+                    num = 0;
+                    result *= stack.pop_back()?;
+                    result += stack.pop_back()?;
+                }
             }
-        }
 
-        if num != 0 {
-            result += sign * num;
-        }
+            if num != 0 {
+                result += sign * num;
+            }
 
-        result
+            Some(result)
+        }
+        _calculate(&s).unwrap_or_default()
     }
 }
 

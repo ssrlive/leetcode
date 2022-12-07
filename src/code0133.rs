@@ -50,12 +50,12 @@ impl Solution {
 
         node.as_ref()?;
         let mut mp = std::collections::HashMap::new();
-        Some(dfs(node.unwrap(), &mut mp))
+        Some(dfs(node?, &mut mp))
     }
 }
 
 #[test]
-fn test_clone_graph() {
+fn test_clone_graph() -> Result<(), Box<dyn std::error::Error>> {
     let node1 = Rc::new(RefCell::new(Node::new(1)));
     let node2 = Rc::new(RefCell::new(Node::new(2)));
     let node3 = Rc::new(RefCell::new(Node::new(3)));
@@ -65,8 +65,9 @@ fn test_clone_graph() {
     node3.borrow_mut().neighbors = vec![node2.clone(), node4.clone()];
     node4.borrow_mut().neighbors = vec![node1.clone(), node3.clone()];
     let clone = Solution::clone_graph(Some(node1));
-    assert_eq!(clone.as_ref().unwrap().borrow().val, 1);
-    assert_eq!(clone.as_ref().unwrap().borrow().neighbors.len(), 2);
-    assert_eq!(clone.as_ref().unwrap().borrow().neighbors[0].borrow().val, 2);
-    assert_eq!(clone.as_ref().unwrap().borrow().neighbors[1].borrow().val, 4);
+    assert_eq!(clone.as_ref().ok_or("")?.borrow().val, 1);
+    assert_eq!(clone.as_ref().ok_or("")?.borrow().neighbors.len(), 2);
+    assert_eq!(clone.as_ref().ok_or("")?.borrow().neighbors[0].borrow().val, 2);
+    assert_eq!(clone.as_ref().ok_or("")?.borrow().neighbors[1].borrow().val, 4);
+    Ok(())
 }

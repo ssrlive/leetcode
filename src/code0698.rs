@@ -46,7 +46,7 @@ impl Solution {
             nums.sort();
             nums
         };
-        if *sorted.last().unwrap() > target {
+        if *sorted.last().unwrap_or(&(target + 1)) > target {
             return false;
         };
         for cur in 0..range {

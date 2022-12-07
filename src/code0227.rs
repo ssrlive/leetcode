@@ -41,32 +41,35 @@ struct Solution;
 
 impl Solution {
     pub fn calculate(s: String) -> i32 {
-        let mut stack = std::collections::VecDeque::new();
-        let mut num = 0;
-        let mut sign = '+';
-        for (i, c) in s.chars().enumerate() {
-            if c.is_ascii_digit() {
-                num = num * 10 + c.to_digit(10).unwrap() as i32;
-            }
-            if !c.is_ascii_digit() && c != ' ' || i == s.len() - 1 {
-                match sign {
-                    '+' => stack.push_back(num),
-                    '-' => stack.push_back(-num),
-                    '*' => {
-                        let n = stack.pop_back().unwrap();
-                        stack.push_back(n * num);
-                    }
-                    '/' => {
-                        let n = stack.pop_back().unwrap();
-                        stack.push_back(n / num);
-                    }
-                    _ => (),
+        fn _calculate(s: String) -> Option<i32> {
+            let mut stack = std::collections::VecDeque::new();
+            let mut num = 0;
+            let mut sign = '+';
+            for (i, c) in s.chars().enumerate() {
+                if c.is_ascii_digit() {
+                    num = num * 10 + c.to_digit(10)? as i32;
                 }
-                sign = c;
-                num = 0;
+                if !c.is_ascii_digit() && c != ' ' || i == s.len() - 1 {
+                    match sign {
+                        '+' => stack.push_back(num),
+                        '-' => stack.push_back(-num),
+                        '*' => {
+                            let n = stack.pop_back()?;
+                            stack.push_back(n * num);
+                        }
+                        '/' => {
+                            let n = stack.pop_back()?;
+                            stack.push_back(n / num);
+                        }
+                        _ => (),
+                    }
+                    sign = c;
+                    num = 0;
+                }
             }
+            Some(stack.iter().sum())
         }
-        stack.iter().sum()
+        _calculate(s).unwrap_or(0)
     }
 }
 

@@ -68,9 +68,10 @@ impl std::fmt::Display for ListNode {
 //     }
 // }
 // #[test]
-// fn test_listnode2() {
+// fn test_listnode2() -> Result<(), Box<dyn std::error::Error>> {
 //     // stack overflow
 //     let v = (0..100_000).collect::<Vec<i32>>();
 //     let list = ListNode::from_vec(&v);
-//     assert_eq!(list.as_ref().unwrap().borrow().to_vec(), v);
+//     assert_eq!(list.as_ref().ok_or("")?.borrow().to_vec(), v);
+//     Ok(())
 // }

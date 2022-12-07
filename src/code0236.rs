@@ -85,7 +85,7 @@ impl Solution {
 }
 
 #[test]
-fn test_lowest_common_ancestor() {
+fn test_lowest_common_ancestor() -> Result<(), Box<dyn std::error::Error>> {
     let root = TreeNode::from_vec(&[
         Some(3),
         Some(5),
@@ -100,15 +100,16 @@ fn test_lowest_common_ancestor() {
         Some(4),
     ]);
 
-    let node5 = root.clone().unwrap().borrow().find_node(5);
-    let node1 = root.clone().unwrap().borrow().find_node(1);
-    let node4 = root.clone().unwrap().borrow().find_node(4);
+    let node5 = root.clone().ok_or("")?.borrow().find_node(5);
+    let node1 = root.clone().ok_or("")?.borrow().find_node(1);
+    let node4 = root.clone().ok_or("")?.borrow().find_node(4);
 
     let node = Solution::lowest_common_ancestor(root.clone(), node5.clone(), node1.clone());
-    let val = node.unwrap().borrow().val;
+    let val = node.ok_or("")?.borrow().val;
     assert_eq!(val, 3);
 
     let node = Solution::lowest_common_ancestor(root.clone(), node5.clone(), node4.clone());
-    let val = node.unwrap().borrow().val;
+    let val = node.ok_or("")?.borrow().val;
     assert_eq!(val, 5);
+    Ok(())
 }

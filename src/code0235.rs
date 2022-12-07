@@ -61,7 +61,7 @@ impl Solution {
 }
 
 #[test]
-fn test() {
+fn test() -> Result<(), Box<dyn std::error::Error>> {
     let root = TreeNode::from_vec(&[
         Some(6),
         Some(2),
@@ -78,10 +78,11 @@ fn test() {
     let p = TreeNode::from_vec(&[Some(2)]);
     let q = TreeNode::from_vec(&[Some(8)]);
     let result = Solution::lowest_common_ancestor(root.clone(), p, q);
-    assert_eq!(result.unwrap().borrow().val, 6);
+    assert_eq!(result.ok_or("")?.borrow().val, 6);
 
     let p = TreeNode::from_vec(&[Some(2)]);
     let q = TreeNode::from_vec(&[Some(3)]);
     let result = Solution::lowest_common_ancestor(root.clone(), p, q);
-    assert_eq!(result.unwrap().borrow().val, 2);
+    assert_eq!(result.ok_or("")?.borrow().val, 2);
+    Ok(())
 }

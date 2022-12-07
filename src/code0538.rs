@@ -57,7 +57,7 @@ impl Solution {
 }
 
 #[test]
-fn test() {
+fn test() -> Result<(), Box<dyn std::error::Error>> {
     let root = TreeNode::from_vec(&[
         Some(4),
         Some(1),
@@ -76,7 +76,7 @@ fn test() {
         Some(8),
     ]);
     let root = Solution::convert_bst(root);
-    let root = root.as_ref().unwrap().borrow().to_vec();
+    let root = root.as_ref().ok_or("")?.borrow().to_vec();
     assert_eq!(
         root,
         vec![
@@ -97,4 +97,5 @@ fn test() {
             Some(8)
         ]
     );
+    Ok(())
 }

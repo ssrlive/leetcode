@@ -74,7 +74,7 @@ impl Solution {
 
                 let mut count = 1;
                 if str_to_node_and_count.contains_key(&s) {
-                    let (_, c) = str_to_node_and_count.get(&s).unwrap();
+                    let (_, c) = str_to_node_and_count.get(&s)?;
                     count += *c;
                 }
                 str_to_node_and_count.insert(s.clone(), (node, count));

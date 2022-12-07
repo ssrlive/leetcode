@@ -58,7 +58,7 @@ impl Solution {
                 } else if r.left.as_ref().is_none() && r.right.as_ref().is_some() {
                     return r.right.take();
                 } else {
-                    let mini = Self::min(r.right.clone()).unwrap().borrow().val;
+                    let mini = Self::min(r.right.clone())?.borrow().val;
                     r.val = mini;
                     r.right = Self::delete_node(r.right.clone(), mini);
                 }

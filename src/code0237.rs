@@ -42,15 +42,16 @@ impl Solution {
 }
 
 #[test]
-fn test_delete_node() {
+fn test_delete_node() -> Result<(), Box<dyn std::error::Error>> {
     let root = ListNode::from_vec(&[4, 5, 1, 9]);
     let node = ListNode::find_node(root.clone(), 5);
     Solution::delete_node(node);
-    let v = root.as_ref().unwrap().borrow().to_vec();
+    let v = root.as_ref().ok_or("")?.borrow().to_vec();
     assert_eq!(v, &[4, 1, 9]);
 
     let node = ListNode::find_node(root.clone(), 1);
     Solution::delete_node(node);
-    let v = root.as_ref().unwrap().borrow().to_vec();
+    let v = root.as_ref().ok_or("")?.borrow().to_vec();
     assert_eq!(v, &[4, 9]);
+    Ok(())
 }

@@ -83,51 +83,51 @@ impl Solution {
         if quad_tree2.is_none() {
             return quad_tree1;
         }
-        if quad_tree1.as_ref().unwrap().borrow().is_leaf() {
-            return if quad_tree1.as_ref().unwrap().borrow().val() {
+        if quad_tree1.as_ref()?.borrow().is_leaf() {
+            return if quad_tree1.as_ref()?.borrow().val() {
                 quad_tree1
             } else {
                 quad_tree2
             };
         }
-        if quad_tree2.as_ref().unwrap().borrow().is_leaf() {
-            return if quad_tree2.as_ref().unwrap().borrow().val() {
+        if quad_tree2.as_ref()?.borrow().is_leaf() {
+            return if quad_tree2.as_ref()?.borrow().val() {
                 quad_tree2
             } else {
                 quad_tree1
             };
         }
         let tl = Solution::intersect(
-            quad_tree1.as_ref().unwrap().borrow().top_left(),
-            quad_tree2.as_ref().unwrap().borrow().top_left(),
+            quad_tree1.as_ref()?.borrow().top_left(),
+            quad_tree2.as_ref()?.borrow().top_left(),
         );
         let tr = Solution::intersect(
-            quad_tree1.as_ref().unwrap().borrow().top_right(),
-            quad_tree2.as_ref().unwrap().borrow().top_right(),
+            quad_tree1.as_ref()?.borrow().top_right(),
+            quad_tree2.as_ref()?.borrow().top_right(),
         );
         let bl = Solution::intersect(
-            quad_tree1.as_ref().unwrap().borrow().bottom_left(),
-            quad_tree2.as_ref().unwrap().borrow().bottom_left(),
+            quad_tree1.as_ref()?.borrow().bottom_left(),
+            quad_tree2.as_ref()?.borrow().bottom_left(),
         );
         let br = Solution::intersect(
-            quad_tree1.as_ref().unwrap().borrow().bottom_right(),
-            quad_tree2.as_ref().unwrap().borrow().bottom_right(),
+            quad_tree1.as_ref()?.borrow().bottom_right(),
+            quad_tree2.as_ref()?.borrow().bottom_right(),
         );
         if tl.is_some()
             && tr.is_some()
             && bl.is_some()
             && br.is_some()
-            && tl.as_ref().unwrap().borrow().is_leaf()
-            && tr.as_ref().unwrap().borrow().is_leaf()
-            && bl.as_ref().unwrap().borrow().is_leaf()
-            && br.as_ref().unwrap().borrow().is_leaf()
-            && tl.as_ref().unwrap().borrow().val() == tr.as_ref().unwrap().borrow().val()
-            && tl.as_ref().unwrap().borrow().val() == bl.as_ref().unwrap().borrow().val()
-            && tl.as_ref().unwrap().borrow().val() == br.as_ref().unwrap().borrow().val()
+            && tl.as_ref()?.borrow().is_leaf()
+            && tr.as_ref()?.borrow().is_leaf()
+            && bl.as_ref()?.borrow().is_leaf()
+            && br.as_ref()?.borrow().is_leaf()
+            && tl.as_ref()?.borrow().val() == tr.as_ref()?.borrow().val()
+            && tl.as_ref()?.borrow().val() == bl.as_ref()?.borrow().val()
+            && tl.as_ref()?.borrow().val() == br.as_ref()?.borrow().val()
         {
             Some(Rc::new(RefCell::new(Node::new(
                 true,
-                tl.as_ref().unwrap().borrow().val(),
+                tl.as_ref()?.borrow().val(),
                 None,
                 None,
                 None,

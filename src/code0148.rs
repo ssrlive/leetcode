@@ -27,12 +27,13 @@ impl Solution {
 }
 
 #[test]
-fn test1() {
+fn test1() -> Result<(), Box<dyn std::error::Error>> {
     let head = ListNode::from_vec(&vec![4, 2, 1, 3]);
     let head = Solution::sort_list(head);
-    assert_eq!(head.unwrap().to_vec(), vec![1, 2, 3, 4]);
+    assert_eq!(head.ok_or("")?.to_vec(), vec![1, 2, 3, 4]);
 
     let head = ListNode::from_vec(&vec![-1, 5, 3, 4, 0]);
     let head = Solution::sort_list(head);
-    assert_eq!(head.unwrap().to_vec(), vec![-1, 0, 3, 4, 5]);
+    assert_eq!(head.ok_or("")?.to_vec(), vec![-1, 0, 3, 4, 5]);
+    Ok(())
 }

@@ -47,12 +47,13 @@ impl Solution {
 }
 
 #[test]
-fn test_build_tree() {
+fn test_build_tree() -> Result<(), Box<dyn std::error::Error>> {
     let inorder = vec![9, 3, 15, 20, 7];
     let postorder = vec![9, 15, 7, 20, 3];
     let root = Solution::build_tree(inorder, postorder);
     assert_eq!(
-        root.unwrap().borrow().to_vec(),
+        root.ok_or("")?.borrow().to_vec(),
         vec![Some(3), Some(9), Some(20), None, None, Some(15), Some(7)]
     );
+    Ok(())
 }

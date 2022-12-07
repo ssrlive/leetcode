@@ -65,9 +65,10 @@ impl Drop for ListNode {
 }
 
 #[test]
-fn test_listnode() {
+fn test_listnode() -> Result<(), Box<dyn std::error::Error>> {
     // no stack overflow
     let v = (0..100_000).collect::<Vec<i32>>();
     let list = ListNode::from_vec(&v);
-    assert_eq!(list.as_ref().unwrap().to_vec(), v);
+    assert_eq!(list.as_ref().ok_or("")?.to_vec(), v);
+    Ok(())
 }

@@ -31,11 +31,14 @@ struct Solution;
 
 impl Solution {
     pub fn count_binary_substrings(s: String) -> i32 {
+        Self::_count_binary_substrings(s).unwrap_or(-1)
+    }
+    pub fn _count_binary_substrings(s: String) -> Option<i32> {
         let mut count = 0;
         let mut prev = 0;
         let mut curr = 1;
         let mut chars = s.chars();
-        let mut prev_char = chars.next().unwrap();
+        let mut prev_char = chars.next()?;
         for c in chars {
             if c == prev_char {
                 curr += 1;
@@ -46,7 +49,7 @@ impl Solution {
                 prev_char = c;
             }
         }
-        count + prev.min(curr)
+        Some(count + prev.min(curr))
     }
 }
 
