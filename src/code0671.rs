@@ -49,28 +49,44 @@ use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
     pub fn find_second_minimum_value(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
-        fn recursive_helper(root: &Option<Rc<RefCell<TreeNode>>>, min: &mut i64, second_min: &mut i64) {
-            if let Some(node) = root {
-                let val = node.borrow().val as i64;
-                if val < *min {
+        fn recursive_helper(node: &Option<Rc<RefCell<TreeNode>>>, min: &mut Option<i32>, second_min: &mut Option<i32>) {
+            if let Some(node) = node {
+                let val = node.borrow().val;
+                if min.is_none() || val < min.unwrap() {
                     *second_min = *min;
-                    *min = val;
-                } else if val > *min && val < *second_min {
-                    *second_min = val;
+                    *min = Some(val);
+                } else if val > min.unwrap() && (second_min.is_none() || val < second_min.unwrap()) {
+                    *second_min = Some(val);
                 }
                 recursive_helper(&node.borrow().left, min, second_min);
                 recursive_helper(&node.borrow().right, min, second_min);
             }
         }
-
-        let mut min = i64::MAX;
-        let mut second_min = i64::MAX;
+        let mut min = None;
+        let mut second_min = None;
         recursive_helper(&root, &mut min, &mut second_min);
-        if second_min == i64::MAX {
-            -1
-        } else {
-            second_min as i32
+        second_min.unwrap_or(-1)
+
+        /*
+        // Iterative solution, but slower than recursive solution.
+        let mut min = None;
+        let mut second_min = None;
+        let mut stack = vec![root];
+        while let Some(node) = stack.pop() {
+            if let Some(node) = node {
+                let val = node.borrow().val;
+                if min.is_none() || val < min.unwrap() {
+                    second_min = min;
+                    min = Some(val);
+                } else if val > min.unwrap() && (second_min.is_none() || val < second_min.unwrap()) {
+                    second_min = Some(val);
+                }
+                stack.push(node.borrow().left.clone());
+                stack.push(node.borrow().right.clone());
+            }
         }
+        second_min.unwrap_or(-1)
+        */
     }
 }
 
