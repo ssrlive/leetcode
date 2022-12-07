@@ -83,7 +83,18 @@ fn test() {
 
     let root = TreeNode::from_vec(&[Some(40), Some(20), Some(60), Some(10), Some(30), Some(50), Some(70)]);
     let val = 25;
-    let expected = TreeNode::from_vec(&[Some(40), Some(20), Some(60), Some(10), Some(30), Some(50), Some(70), None, None, Some(25)]);
+    let expected = TreeNode::from_vec(&[
+        Some(40),
+        Some(20),
+        Some(60),
+        Some(10),
+        Some(30),
+        Some(50),
+        Some(70),
+        None,
+        None,
+        Some(25),
+    ]);
     assert_eq!(Solution::insert_into_bst(root, val), expected);
 
     let root = TreeNode::from_vec(&[Some(4), Some(2), Some(7), Some(1), Some(3), None, None]);

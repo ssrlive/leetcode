@@ -51,10 +51,7 @@ impl KthLargest {
         for n in nums {
             heap.push(Reverse(n));
         }
-        Self {
-            k: k as usize,
-            heap,
-        }
+        Self { k: k as usize, heap }
     }
 
     fn add(&mut self, val: i32) -> i32 {
