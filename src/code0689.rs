@@ -39,8 +39,8 @@ impl Solution {
         let mut isuff = vec![0; n];
         {
             let mut sum = 0;
-            for i in 0..k {
-                sum += nums[i];
+            for &item in nums.iter().take(k) {
+                sum += item;
             }
             pref[k - 1] = sum;
             ipref[k - 1] = 0;
@@ -72,8 +72,8 @@ impl Solution {
             }
         }
         let mut sum = 0;
-        for i in 0..k {
-            sum += nums[i];
+        for &item in nums.iter().take(k) {
+            sum += item;
         }
         let mut maks = 0;
         let mut ans = vec![];
