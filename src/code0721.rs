@@ -46,25 +46,25 @@ struct Solution;
 
 impl Solution {
     pub fn accounts_merge(accounts: Vec<Vec<String>>) -> Vec<Vec<String>> {
-        fn _accounts_merge(accounts: Vec<Vec<String>>) -> Option<Vec<Vec<String>>> {
+        fn _accounts_merge(accounts: &[Vec<String>]) -> Option<Vec<Vec<&String>>> {
             use std::collections::{HashMap, HashSet};
             let mut email_to_name = HashMap::new();
             let mut graph = HashMap::<_, HashSet<_>>::new();
 
-            for account in accounts.into_iter() {
-                let name = account.get(0)?.clone();
+            for account in accounts.iter() {
+                let name = account.get(0)?;
                 let emails = &account[1..];
 
                 for email in emails.iter() {
-                    email_to_name.insert(email.clone(), name.clone());
-                    graph.entry(email.clone()).or_default().insert(email.clone());
+                    email_to_name.insert(email, name);
+                    graph.entry(email).or_default().insert(email);
                 }
 
                 for i in 0..emails.len() {
                     for j in i + 1..emails.len() {
-                        let email_i = emails[i].clone();
-                        let email_j = emails[j].clone();
-                        graph.entry(email_i.clone()).or_default().insert(email_j.clone());
+                        let email_i = emails.get(i)?;
+                        let email_j = emails.get(j)?;
+                        graph.entry(email_i).or_default().insert(email_j);
                         graph.entry(email_j).or_default().insert(email_i);
                     }
                 }
@@ -73,7 +73,7 @@ impl Solution {
             let mut visited = HashSet::new();
             let mut result = Vec::new();
 
-            for email in graph.keys() {
+            for &email in graph.keys() {
                 if !visited.contains(email) {
                     let mut stack = vec![email];
                     let mut component = vec![];
@@ -87,15 +87,15 @@ impl Solution {
                     }
 
                     component.sort();
-                    let mut account = vec![email_to_name.get(*component.get(0)?)?.clone()];
-                    account.extend(component.iter().map(|email| email.to_string()));
+                    let mut account = vec![*email_to_name.get(*component.get(0)?)?];
+                    account.extend(component.iter());
                     result.push(account);
                 }
             }
-
             Some(result)
         }
-        _accounts_merge(accounts).unwrap_or_default()
+        let result = _accounts_merge(&accounts).unwrap_or_default();
+        result.iter().map(|v| v.iter().map(|&s| s.clone()).collect()).collect()
     }
 }
 
