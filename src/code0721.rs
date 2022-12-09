@@ -97,6 +97,63 @@ impl Solution {
         let result = _accounts_merge(&accounts).unwrap_or_default();
         result.iter().map(|v| v.iter().map(|&s| s.clone()).collect()).collect()
     }
+
+    // Union Find Solution
+    pub fn accounts_merge2(accounts: Vec<Vec<String>>) -> Vec<Vec<String>> {
+        use std::collections::HashMap;
+
+        fn find<'a>(fa: &mut HashMap<&'a String, &'a String>, x: &'a String) -> &'a String {
+            if x == fa[x] {
+                return x;
+            }
+            let fd = find(fa, fa[x]);
+            fa.insert(x, fd);
+            fa[x]
+        }
+
+        fn union<'a>(fa: &mut HashMap<&'a String, &'a String>, x: &'a String, y: &'a String) {
+            let a = find(fa, x);
+            let b = find(fa, y);
+            fa.insert(b, a);
+        }
+
+        fn _accounts_merge2(accounts: &[Vec<String>]) -> Option<Vec<Vec<&String>>> {
+            let mut fa = HashMap::new();
+            let mut email_name = HashMap::new();
+            for acc in accounts {
+                let name = &acc[0];
+                for item in acc.iter().skip(1) {
+                    fa.insert(item, item);
+                    email_name.entry(item).or_insert(name);
+                }
+            }
+            for acc in accounts {
+                for i in 2..acc.len() {
+                    union(&mut fa, &acc[1], &acc[i]);
+                }
+            }
+            let mut name_emails = HashMap::<_, Vec<_>>::new();
+            for em in email_name.keys() {
+                name_emails.entry(find(&mut fa, em)).or_default().push(*em);
+            }
+            for v in name_emails.values_mut() {
+                v.sort();
+            }
+
+            let mut res = Vec::new();
+            for fa_email in name_emails.keys() {
+                let mut data = Vec::new();
+                data.push(*email_name.get(*fa_email)?);
+                for t in name_emails.get(*fa_email)?.iter() {
+                    data.push(t);
+                }
+                res.push(data);
+            }
+            Some(res)
+        }
+        let result = _accounts_merge2(&accounts).unwrap_or_default();
+        result.iter().map(|v| v.iter().map(|&s| s.clone()).collect()).collect()
+    }
 }
 
 #[test]
@@ -111,7 +168,7 @@ fn test() {
         .iter()
         .map(|v| v.iter().map(|s| s.to_string()).collect())
         .collect();
-    let mut result = Solution::accounts_merge(accounts);
+    let mut result = Solution::accounts_merge2(accounts);
     result.sort();
     let expected = vec![
         vec!["John", "john00@mail.com", "john_newyork@mail.com", "johnsmith@mail.com"],
@@ -131,7 +188,7 @@ fn test() {
         .iter()
         .map(|v| v.iter().map(|s| s.to_string()).collect())
         .collect();
-    let mut result = Solution::accounts_merge(accounts);
+    let mut result = Solution::accounts_merge2(accounts);
     result.sort();
     let expected = vec![
         vec!["Ethan", "Ethan0@m.co", "Ethan4@m.co", "Ethan5@m.co"],
