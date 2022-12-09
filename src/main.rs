@@ -466,6 +466,7 @@ mod code0718;
 mod code0719;
 mod code0720;
 mod code0721;
+mod code0722;
 
 mod code0796;
 
