@@ -53,7 +53,8 @@ impl Solution {
             for i in 0..k as usize {
                 answer.push(head);
                 let mut node = answer.get_mut(i)?;
-                for _ in 0..len / k + i32::from(i < (len % k) as usize) {
+                let len2 = len / k + i32::from(i < (len % k) as usize);
+                for _ in 0..len2 {
                     if let Some(n) = node {
                         node = &mut n.next;
                     }
