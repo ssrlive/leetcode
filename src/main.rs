@@ -473,6 +473,7 @@ mod code0726;
 mod code0728;
 mod code0729;
 mod code0730;
+mod code0731;
 
 mod code0796;
 
