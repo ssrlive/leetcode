@@ -29,11 +29,10 @@
 
 struct Solution;
 
-use std::collections::VecDeque;
 impl Solution {
     pub fn daily_temperatures(temperatures: Vec<i32>) -> Vec<i32> {
         let mut result = vec![0; temperatures.len()];
-        let mut stack = VecDeque::new();
+        let mut stack = std::collections::VecDeque::new();
 
         for (i, &t) in temperatures.iter().enumerate() {
             while let Some(&j) = stack.back() {
