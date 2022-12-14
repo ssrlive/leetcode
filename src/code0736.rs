@@ -65,23 +65,24 @@ impl Solution {
     }
 
     fn get_val(expr: &str, variables: &std::collections::HashMap<String, i32>) -> Option<i32> {
-        let type_ = Self::get_type(expr)?;
-        if type_ == 1 {
-            let tokens = Self::parse(expr)?;
-            Some(Self::_evaluate_(&tokens, variables)?)
-        } else if type_ == 2 {
-            Some(*variables.get(expr)?)
-        } else {
-            let mut val = 0;
-            let mut sign = 1;
-            for c in expr.chars() {
-                if c == '-' {
-                    sign = -1;
-                } else {
-                    val = (val * 10) + (c as i32 - '0' as i32);
-                }
+        match Self::get_type(expr) {
+            Some(1) => {
+                let tokens = Self::parse(expr)?;
+                Some(Self::_evaluate_(&tokens, variables)?)
             }
-            Some(val * sign)
+            Some(2) => Some(*variables.get(expr)?),
+            _ => {
+                let mut val = 0;
+                let mut sign = 1;
+                for c in expr.chars() {
+                    if c == '-' {
+                        sign = -1;
+                    } else {
+                        val = (val * 10) + (c as i32 - '0' as i32);
+                    }
+                }
+                Some(val * sign)
+            }
         }
     }
 
@@ -113,7 +114,7 @@ impl Solution {
                 start = cursor + 1;
             } else if c == '(' {
                 let mut open_parenthesis = 1;
-                while open_parenthesis > 0 && cursor < expr.len() {
+                while open_parenthesis > 0 {
                     cursor += 1;
                     let c = expr.chars().nth(cursor)?;
                     if c == '(' {
@@ -142,14 +143,10 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(
-        Solution::evaluate("(let x 2 (add (let x 3 (let x 4 x)) x))".to_string()),
-        6
-    );
-    assert_eq!(
-        Solution::evaluate("(let x 2 (mult x (let x 3 y 4 (add x y))))".to_string()),
-        14
-    );
+    let expression = "(let x 2 (add (let x 3 (let x 4 x)) x))".to_string();
+    assert_eq!(Solution::evaluate(expression), 6);
+    let expression = "(let x 2 (mult x (let x 3 y 4 (add x y))))".to_string();
+    assert_eq!(Solution::evaluate(expression), 14);
     assert_eq!(Solution::evaluate("(let x 3 x 2 x)".to_string()), 2);
     assert_eq!(Solution::evaluate("(let x 1 y 2 x (add x y) (add x y))".to_string()), 5);
 }
