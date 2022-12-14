@@ -50,7 +50,7 @@ impl TrieNode {
         let mut node = self;
 
         for ch in word.chars() {
-            node = node.children.entry(ch).or_insert(TrieNode::default());
+            node = node.children.entry(ch).or_default();
             node.index.insert(index);
         }
     }
@@ -70,17 +70,13 @@ impl TrieNode {
 
 impl WordFilter {
     fn new(words: Vec<String>) -> Self {
-        let unique_val: HashMap<String, usize> = words
-            .iter()
-            .enumerate()
-            .map(|(i, w)| (w.to_owned(), i))
-            .collect();
+        let unique_val: HashMap<String, usize> = words.iter().enumerate().map(|(i, w)| (w.to_owned(), i)).collect();
 
         let mut prefix_root = TrieNode::default();
         let mut suffix_root = TrieNode::default();
 
         for (w, i) in unique_val.iter() {
-            prefix_root.insert(&w.as_str(), i.to_owned());
+            prefix_root.insert(w.as_str(), i.to_owned());
             suffix_root.insert(&w.chars().rev().collect::<String>(), i.to_owned());
         }
 
@@ -99,9 +95,7 @@ impl WordFilter {
             Some(res) => res,
             None => return -1,
         };
-        let suffix_res = self
-            .suffix_root
-            .find(&suffix.chars().rev().collect::<String>());
+        let suffix_res = self.suffix_root.find(&suffix.chars().rev().collect::<String>());
         let s_res = match suffix_res {
             Some(res) => res,
             None => return -1,
@@ -115,7 +109,6 @@ impl WordFilter {
         }
     }
 }
-
 
 #[test]
 fn test() {
