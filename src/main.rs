@@ -484,6 +484,7 @@ mod code0740;
 mod code0741;
 mod code0743;
 mod code0744;
+mod code0745;
 
 mod code0796;
 
