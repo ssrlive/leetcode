@@ -500,6 +500,7 @@ mod code0763;
 mod code0764;
 mod code0765;
 mod code0766;
+mod code0767;
 
 mod code0796;
 
