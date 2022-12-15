@@ -62,7 +62,7 @@ impl Solution {
 
             Some(swaps)
         }
-        
+
         _min_swaps_couples(row).unwrap_or_default()
     }
 }
