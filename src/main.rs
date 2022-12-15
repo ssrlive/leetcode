@@ -507,6 +507,7 @@ mod code0770;
 mod code0771;
 mod code0773;
 mod code0775;
+mod code0777;
 
 mod code0796;
 
