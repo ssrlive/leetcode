@@ -12,20 +12,28 @@ struct Solution;
 
 impl Solution {
     pub fn minimum_total(triangle: Vec<Vec<i32>>) -> i32 {
-        if triangle.is_empty() {
-            return 0;
-        }
-        let mut dp = triangle;
-        for i in 1..dp.len() {
-            for j in 0..dp[i].len() {
-                let left: i32 = if j > 0 { dp[i - 1][j - 1] } else { i32::MAX };
-                let right: i32 = if j < dp[i - 1].len() { dp[i - 1][j] } else { i32::MAX };
-
-                dp[i][j] += if left < right { left } else { right };
+        fn _minimum_total(triangle: Vec<Vec<i32>>) -> Option<i32> {
+            if triangle.is_empty() {
+                return Some(0);
             }
+            let mut dp = triangle;
+            for i in 1..dp.len() {
+                for j in 0..dp.get(i)?.len() {
+                    let left: i32 = if j > 0 { *dp.get(i - 1)?.get(j - 1)? } else { i32::MAX };
+                    let right: i32 = if j < dp.get(i - 1)?.len() {
+                        *dp.get(i - 1)?.get(j)?
+                    } else {
+                        i32::MAX
+                    };
+
+                    *dp.get_mut(i)?.get_mut(j)? += if left < right { left } else { right };
+                }
+            }
+            let v = *dp.last()?.iter().min()?;
+            Some(v)
         }
-        // println!("{:?}", dp);
-        *dp[dp.len() - 1].iter().min().unwrap()
+
+        _minimum_total(triangle).unwrap_or_default()
     }
 }
 

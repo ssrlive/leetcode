@@ -44,24 +44,28 @@ impl Solution {
             max_index.map(|max_index| (max, max_index))
         }
 
-        let mut digits = Vec::new();
-        let mut n = num;
-        while n > 0 {
-            digits.push(n % 10);
-            n /= 10;
+        fn _maximum_swap(num: i32) -> Option<i32> {
+            let mut digits = Vec::new();
+            let mut n = num;
+            while n > 0 {
+                digits.push(n % 10);
+                n /= 10;
+            }
+            let mut result = 0;
+            while check_max(&digits).is_none() && !digits.is_empty() {
+                result = result * 10 + digits.pop()?;
+            }
+            if let Some((_, max_index)) = check_max(&digits) {
+                let len = digits.len();
+                digits.swap(len - 1, max_index);
+            }
+            while let Some(n) = digits.pop() {
+                result = result * 10 + n;
+            }
+            Some(result)
         }
-        let mut result = 0;
-        while check_max(&digits).is_none() && !digits.is_empty() {
-            result = result * 10 + digits.pop().unwrap();
-        }
-        if let Some((_, max_index)) = check_max(&digits) {
-            let len = digits.len();
-            digits.swap(len - 1, max_index);
-        }
-        while let Some(n) = digits.pop() {
-            result = result * 10 + n;
-        }
-        result
+
+        _maximum_swap(num).unwrap_or(num)
     }
 }
 

@@ -44,35 +44,39 @@ impl Solution {
             }
         }
 
-        let mut i = nums.into_iter();
-        let mut max1 = i.next().unwrap();
-        let mut max2 = None;
-        let mut max3 = None;
+        fn _third_max(nums: Vec<i32>) -> Option<i32> {
+            let mut i = nums.into_iter();
+            let mut max1 = i.next()?;
+            let mut max2 = None;
+            let mut max3 = None;
 
-        for n in i {
-            match n.cmp(&max1) {
-                Ordering::Greater => {
-                    max3 = max2;
-                    max2 = Some(max1);
-                    max1 = n;
-                }
-                Ordering::Equal => (),
-                Ordering::Less => match compare(n, max2) {
+            for n in i {
+                match n.cmp(&max1) {
                     Ordering::Greater => {
                         max3 = max2;
-                        max2 = Some(n);
+                        max2 = Some(max1);
+                        max1 = n;
                     }
                     Ordering::Equal => (),
-                    Ordering::Less => {
-                        if compare(n, max3) == Ordering::Greater {
-                            max3 = Some(n);
+                    Ordering::Less => match compare(n, max2) {
+                        Ordering::Greater => {
+                            max3 = max2;
+                            max2 = Some(n);
                         }
-                    }
-                },
+                        Ordering::Equal => (),
+                        Ordering::Less => {
+                            if compare(n, max3) == Ordering::Greater {
+                                max3 = Some(n);
+                            }
+                        }
+                    },
+                }
             }
+
+            Some(max3.unwrap_or(max1))
         }
 
-        max3.unwrap_or(max1)
+        _third_max(nums).unwrap_or_default()
     }
 }
 

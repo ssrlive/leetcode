@@ -37,7 +37,7 @@ impl Solution {
                 s.swap(i + k, j - k);
             }
         }
-        String::from_utf8(s).unwrap()
+        String::from_utf8(s).unwrap_or_default()
     }
 }
 

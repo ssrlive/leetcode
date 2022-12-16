@@ -71,30 +71,34 @@ struct Solution;
 
 impl Solution {
     pub fn exclusive_time(n: i32, logs: Vec<String>) -> Vec<i32> {
-        let mut stack = Vec::new();
-        let mut result = vec![0; n as usize];
-        let mut prev_time = 0;
+        fn _exclusive_time(n: i32, logs: Vec<String>) -> Option<Vec<i32>> {
+            let mut stack = Vec::new();
+            let mut result = vec![0; n as usize];
+            let mut prev_time = 0;
 
-        for log in logs {
-            let mut iter = log.split(':');
-            let id = iter.next().unwrap().parse::<usize>().unwrap();
-            let is_start = iter.next().unwrap() == "start";
-            let time = iter.next().unwrap().parse::<i32>().unwrap();
+            for log in logs {
+                let mut iter = log.split(':');
+                let id = iter.next()?.parse::<usize>().ok()?;
+                let is_start = iter.next()? == "start";
+                let time = iter.next()?.parse::<i32>().ok()?;
 
-            if is_start {
-                if let Some(&last_id) = stack.last() {
-                    result[last_id] += time - prev_time;
+                if is_start {
+                    if let Some(&last_id) = stack.last() {
+                        result[last_id] += time - prev_time;
+                    }
+                    stack.push(id);
+                    prev_time = time;
+                } else {
+                    result[id] += time - prev_time + 1;
+                    stack.pop();
+                    prev_time = time + 1;
                 }
-                stack.push(id);
-                prev_time = time;
-            } else {
-                result[id] += time - prev_time + 1;
-                stack.pop();
-                prev_time = time + 1;
             }
+
+            Some(result)
         }
 
-        result
+        _exclusive_time(n, logs).unwrap_or_default()
     }
 }
 

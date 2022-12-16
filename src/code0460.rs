@@ -72,15 +72,18 @@ impl LFUCache {
         }
     }
 
-    fn get(&mut self, key: i32) -> i32 {
+    pub fn get(&mut self, key: i32) -> i32 {
+        self._get(key).unwrap_or_default()
+    }
+    fn _get(&mut self, key: i32) -> Option<i32> {
         let key = key as usize;
         if !self.key_to_val.contains_key(&key) {
-            return -1;
+            return Some(-1);
         }
 
-        let freq = self.key_to_freq.get(&key).unwrap();
-        self.freq.get_mut(freq).unwrap().retain(|&k| k != key);
-        if self.freq.get(freq).unwrap().is_empty() {
+        let freq = self.key_to_freq.get(&key)?;
+        self.freq.get_mut(freq)?.retain(|&k| k != key);
+        if self.freq.get(freq)?.is_empty() {
             self.freq.remove(freq);
             if self.min_freq == *freq {
                 self.min_freq += 1;
@@ -91,27 +94,30 @@ impl LFUCache {
         self.freq.entry(freq).or_default().push(key);
         self.key_to_freq.insert(key, freq);
 
-        *self.key_to_val.get(&key).unwrap() as i32
+        Some(*self.key_to_val.get(&key)? as i32)
     }
 
-    fn put(&mut self, key: i32, value: i32) {
+    pub fn put(&mut self, key: i32, value: i32) {
+        self._put(key, value).unwrap_or_default();
+    }
+    fn _put(&mut self, key: i32, value: i32) -> Option<()> {
         let key = key as usize;
         let value = value as usize;
         if self.capacity == 0 {
-            return;
+            return Some(());
         }
 
         if let std::collections::hash_map::Entry::Occupied(mut e) = self.key_to_val.entry(key) {
             e.insert(value);
             self.get(key as i32);
-            return;
+            return Some(());
         }
 
         if self.key_to_val.len() == self.capacity {
-            let key = self.freq.get_mut(&self.min_freq).unwrap().remove(0);
+            let key = self.freq.get_mut(&self.min_freq)?.remove(0);
             self.key_to_val.remove(&key);
             self.key_to_freq.remove(&key);
-            if self.freq.get(&self.min_freq).unwrap().is_empty() {
+            if self.freq.get(&self.min_freq)?.is_empty() {
                 self.freq.remove(&self.min_freq);
             }
         }
@@ -120,6 +126,7 @@ impl LFUCache {
         self.key_to_freq.insert(key, 1);
         self.freq.entry(1).or_default().push(key);
         self.min_freq = 1;
+        Some(())
     }
 }
 

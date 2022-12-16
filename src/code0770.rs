@@ -132,7 +132,7 @@ impl Solution {
                         st.push(num.clone());
                     }
                     if sign == "*" {
-                        let v = multiply(&st.pop().unwrap(), &num);
+                        let v = multiply(&st.pop()?, &num);
                         st.push(v);
                     }
                     sign = char.clone();

@@ -46,47 +46,50 @@
 // - There will be at least one element in the data structure when getRandom is called.
 //
 
-struct RandomizedCollection {
-    data: Vec<i32>,
-    mp: std::collections::HashMap<i32, std::collections::BinaryHeap<usize>>,
+pub struct RandomizedCollection {
+    pub data: Vec<i32>,
+    pub mp: std::collections::HashMap<i32, std::collections::BinaryHeap<usize>>,
 }
 
 impl RandomizedCollection {
-    fn new() -> Self {
+    pub fn new() -> Self {
         Self {
             data: vec![],
             mp: std::collections::HashMap::new(),
         }
     }
 
-    fn insert(&mut self, val: i32) -> bool {
+    pub fn insert(&mut self, val: i32) -> bool {
         let ret = !self.mp.contains_key(&val);
         self.mp.entry(val).or_default().push(self.data.len());
         self.data.push(val);
         ret
     }
 
-    fn remove(&mut self, val: i32) -> bool {
+    pub fn remove(&mut self, val: i32) -> bool {
+        self._remove(val).unwrap_or(false)
+    }
+    fn _remove(&mut self, val: i32) -> Option<bool> {
         if !self.mp.contains_key(&val) {
-            return false;
+            return Some(false);
         }
-        let v = self.mp.get_mut(&val).unwrap();
-        let i = v.pop().unwrap();
+        let v = self.mp.get_mut(&val)?;
+        let i = v.pop()?;
         if v.is_empty() {
             self.mp.remove(&val);
         }
         let n = self.data.len();
         if i < n - 1 {
-            let w = self.mp.get_mut(&self.data[n - 1]).unwrap();
+            let w = self.mp.get_mut(&self.data[n - 1])?;
             self.data[i] = self.data[n - 1];
             w.pop();
             w.push(i);
         }
         self.data.pop();
-        true
+        Some(true)
     }
 
-    fn get_random(&self) -> i32 {
+    pub fn get_random(&self) -> i32 {
         // use rand::Rng;
         // self.data[rand::thread_rng().gen_range(0..self.data.len())]
         let index = rand::random::<usize>() % self.data.len();

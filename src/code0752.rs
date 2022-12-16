@@ -49,35 +49,39 @@ struct Solution;
 
 impl Solution {
     pub fn open_lock(deadends: Vec<String>, target: String) -> i32 {
-        let mut dead = vec![false; 10_000];
-        deadends
-            .iter()
-            .filter_map(|d| d.parse::<usize>().ok())
-            .for_each(|i| dead[i] = true);
-        let target = target.parse::<usize>().unwrap();
-        let mut visited = vec![false; 10_000];
-        let mut vd = std::collections::VecDeque::new();
-        if !dead[0] {
-            vd.push_back((0, 0));
-        }
-        while let Some((state, moves)) = vd.pop_front() {
-            if state == target {
-                return moves;
+        fn _open_lock(deadends: Vec<String>, target: String) -> Option<i32> {
+            let mut dead = vec![false; 10_000];
+            deadends
+                .iter()
+                .filter_map(|d| d.parse::<usize>().ok())
+                .for_each(|i| dead[i] = true);
+            let target = target.parse::<usize>().ok()?;
+            let mut visited = vec![false; 10_000];
+            let mut vd = std::collections::VecDeque::new();
+            if !dead[0] {
+                vd.push_back((0, 0));
             }
-            for i in &[1, 10, 100, 1000] {
-                let w = (state / i) % 10;
-                for &j in &[
-                    (state - i * w) + i * ((w + 1) % 10),
-                    (state - i * w) + i * ((w + 9) % 10),
-                ] {
-                    if !dead[j] && !visited[j] {
-                        visited[j] = true;
-                        vd.push_back((j, moves + 1));
+            while let Some((state, moves)) = vd.pop_front() {
+                if state == target {
+                    return Some(moves);
+                }
+                for i in &[1, 10, 100, 1000] {
+                    let w = (state / i) % 10;
+                    for &j in &[
+                        (state - i * w) + i * ((w + 1) % 10),
+                        (state - i * w) + i * ((w + 9) % 10),
+                    ] {
+                        if !dead[j] && !visited[j] {
+                            visited[j] = true;
+                            vd.push_back((j, moves + 1));
+                        }
                     }
                 }
             }
+            Some(-1)
         }
-        -1
+
+        _open_lock(deadends, target).unwrap_or(-1)
     }
 }
 

@@ -18,7 +18,7 @@ struct Solution;
 
 impl Solution {
     pub fn find_min(nums: Vec<i32>) -> i32 {
-        *nums.iter().min().unwrap()
+        *nums.iter().min().unwrap_or(&0)
     }
 }
 

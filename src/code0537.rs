@@ -29,7 +29,7 @@
 //
 // Follow up: Can you solve the problem without using the built-in complex data type?
 
-#[derive(Debug, PartialEq)]
+#[derive(Debug, PartialEq, Default, Clone, Copy)]
 struct Complex {
     real: i32,
     imaginary: i32,
@@ -40,11 +40,14 @@ impl Complex {
         Self { real, imaginary }
     }
 
-    fn from_str(s: &str) -> Self {
-        let mut parts = s.split('+');
-        let real = parts.next().unwrap().parse().unwrap();
-        let imaginary = parts.next().unwrap().trim_end_matches('i').parse().unwrap();
-        Self { real, imaginary }
+    pub fn from_str(s: &str) -> Self {
+        fn _from_str(s: &str) -> Option<Complex> {
+            let mut parts = s.split('+');
+            let real = parts.next()?.parse().ok()?;
+            let imaginary = parts.next()?.trim_end_matches('i').parse().ok()?;
+            Some(Complex { real, imaginary })
+        }
+        _from_str(s).unwrap_or_default()
     }
 }
 

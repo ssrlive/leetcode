@@ -81,31 +81,33 @@ struct Solution;
 
 impl Solution {
     pub fn fraction_addition(expression: String) -> String {
-        let chars: Vec<char> = expression.chars().collect();
-        let mut fractions = vec![];
-        let mut cursor = 0;
-        while cursor < chars.len() {
-            if chars[cursor] == '/' {
-                let mut i = cursor;
-                while i > 0 && chars[i - 1].is_ascii_digit() {
-                    i -= 1;
+        fn _fraction_addition(expression: String) -> Option<String> {
+            let chars: Vec<char> = expression.chars().collect();
+            let mut fractions = vec![];
+            let mut cursor = 0;
+            while cursor < chars.len() {
+                if chars[cursor] == '/' {
+                    let mut i = cursor;
+                    while i > 0 && chars[i - 1].is_ascii_digit() {
+                        i -= 1;
+                    }
+                    let num = chars[i..cursor].iter().collect::<String>().parse::<i32>().ok()?;
+                    let mut j = cursor + 1;
+                    while j + 1 < chars.len() && chars[j + 1].is_ascii_digit() {
+                        j += 1;
+                    }
+                    let denom = chars[cursor + 1..=j].iter().collect::<String>().parse::<i32>().ok()?;
+                    let sign = if i > 0 && chars[i - 1] == '-' { -1 } else { 1 };
+                    let fraction = Fraction::new(sign, num, denom);
+                    fractions.push(fraction);
                 }
-                let num = chars[i..cursor].iter().collect::<String>().parse::<i32>().unwrap();
-                let mut j = cursor + 1;
-                while j + 1 < chars.len() && chars[j + 1].is_ascii_digit() {
-                    j += 1;
-                }
-                let denom = chars[cursor + 1..=j].iter().collect::<String>().parse::<i32>().unwrap();
-                let sign = if i > 0 && chars[i - 1] == '-' { -1 } else { 1 };
-                let fraction = Fraction::new(sign, num, denom);
-                fractions.push(fraction);
+                cursor += 1;
             }
-            cursor += 1;
+            let f = |acc: Fraction, x: &Fraction| acc.add(x);
+            let v = fractions.iter().fold(Fraction::new(1, 0, 1), f).to_string();
+            Some(v)
         }
-        fractions
-            .iter()
-            .fold(Fraction::new(1, 0, 1), |acc, x| acc.add(x))
-            .to_string()
+        _fraction_addition(expression).unwrap_or_default()
     }
 }
 

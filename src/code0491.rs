@@ -36,18 +36,19 @@ impl Solution {
         result.into_iter().collect()
     }
 
-    fn backtrack(nums: &[i32], start: usize, path: &mut Vec<i32>, result: &mut HashSet<Vec<i32>>) {
+    fn backtrack(nums: &[i32], start: usize, path: &mut Vec<i32>, result: &mut HashSet<Vec<i32>>) -> Option<()> {
         if path.len() >= 2 {
             result.insert(path.clone());
         }
 
         for i in start..nums.len() {
-            if path.is_empty() || nums[i] >= *path.last().unwrap() {
+            if path.is_empty() || nums[i] >= *path.last()? {
                 path.push(nums[i]);
-                Self::backtrack(nums, i + 1, path, result);
+                Self::backtrack(nums, i + 1, path, result)?;
                 path.pop();
             }
         }
+        Some(())
     }
 }
 

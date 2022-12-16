@@ -31,20 +31,24 @@ struct Solution;
 
 impl Solution {
     pub fn character_replacement(s: String, k: i32) -> i32 {
-        let mut map = std::collections::HashMap::new();
-        let mut max_count = 0;
-        let mut result = 0;
-        let mut left = 0;
-        for (right, c) in s.chars().enumerate() {
-            *map.entry(c).or_insert(0) += 1;
-            max_count = std::cmp::max(max_count, *map.get(&c).unwrap());
-            while right - left + 1 - max_count > k as usize {
-                *map.get_mut(&s.chars().nth(left).unwrap()).unwrap() -= 1;
-                left += 1;
+        fn _character_replacement(s: String, k: i32) -> Option<i32> {
+            let mut map = std::collections::HashMap::new();
+            let mut max_count = 0;
+            let mut result = 0;
+            let mut left = 0;
+            for (right, c) in s.chars().enumerate() {
+                *map.entry(c).or_insert(0) += 1;
+                max_count = std::cmp::max(max_count, *map.get(&c)?);
+                while right - left + 1 - max_count > k as usize {
+                    *map.get_mut(&s.chars().nth(left)?)? -= 1;
+                    left += 1;
+                }
+                result = std::cmp::max(result, right - left + 1);
             }
-            result = std::cmp::max(result, right - left + 1);
+            Some(result as i32)
         }
-        result as i32
+
+        _character_replacement(s, k).unwrap_or(0)
     }
 }
 

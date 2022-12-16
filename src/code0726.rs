@@ -53,64 +53,68 @@ struct Solution;
 
 impl Solution {
     pub fn count_of_atoms(formula: String) -> String {
-        use std::collections::BTreeMap;
-        let mut stack = vec![];
-        let mut map = BTreeMap::new();
-        let mut i = 0;
-        let n = formula.len();
+        fn _count_of_atoms(formula: String) -> Option<String> {
+            use std::collections::BTreeMap;
+            let mut stack = vec![];
+            let mut map = BTreeMap::new();
+            let mut i = 0;
+            let n = formula.len();
 
-        while i < n {
-            let c = formula.chars().nth(i).unwrap();
-            if c == '(' {
-                stack.push(map);
-                map = BTreeMap::new();
-                i += 1;
-            } else if c == ')' {
-                i += 1;
-                let mut count = 0;
-                while i < n && formula.chars().nth(i).unwrap().is_ascii_digit() {
-                    count = count * 10 + (formula.chars().nth(i).unwrap() as u8 - b'0') as usize;
+            while i < n {
+                let c = formula.chars().nth(i)?;
+                if c == '(' {
+                    stack.push(map);
+                    map = BTreeMap::new();
                     i += 1;
-                }
-                if count == 0 {
-                    count = 1;
-                }
-                let mut tmp = BTreeMap::new();
-                for (k, v) in map {
-                    tmp.insert(k, v * count);
-                }
-                map = stack.pop().unwrap();
-                for (k, v) in tmp {
-                    *map.entry(k).or_insert(0) += v;
-                }
-            } else {
-                let mut name = String::new();
-                name.push(c);
-                i += 1;
-                while i < n && formula.chars().nth(i).unwrap().is_ascii_lowercase() {
-                    name.push(formula.chars().nth(i).unwrap());
+                } else if c == ')' {
                     i += 1;
-                }
-                let mut count = 0;
-                while i < n && formula.chars().nth(i).unwrap().is_ascii_digit() {
-                    count = count * 10 + (formula.chars().nth(i).unwrap() as u8 - b'0') as usize;
+                    let mut count = 0;
+                    while i < n && formula.chars().nth(i)?.is_ascii_digit() {
+                        count = count * 10 + (formula.chars().nth(i)? as u8 - b'0') as usize;
+                        i += 1;
+                    }
+                    if count == 0 {
+                        count = 1;
+                    }
+                    let mut tmp = BTreeMap::new();
+                    for (k, v) in map {
+                        tmp.insert(k, v * count);
+                    }
+                    map = stack.pop()?;
+                    for (k, v) in tmp {
+                        *map.entry(k).or_insert(0) += v;
+                    }
+                } else {
+                    let mut name = String::new();
+                    name.push(c);
                     i += 1;
+                    while i < n && formula.chars().nth(i)?.is_ascii_lowercase() {
+                        name.push(formula.chars().nth(i)?);
+                        i += 1;
+                    }
+                    let mut count = 0;
+                    while i < n && formula.chars().nth(i)?.is_ascii_digit() {
+                        count = count * 10 + (formula.chars().nth(i)? as u8 - b'0') as usize;
+                        i += 1;
+                    }
+                    if count == 0 {
+                        count = 1;
+                    }
+                    *map.entry(name).or_insert(0) += count;
                 }
-                if count == 0 {
-                    count = 1;
-                }
-                *map.entry(name).or_insert(0) += count;
             }
+
+            let mut res = String::new();
+            for (k, v) in map {
+                res.push_str(&k);
+                if v > 1 {
+                    res.push_str(&v.to_string());
+                }
+            }
+            Some(res)
         }
 
-        let mut res = String::new();
-        for (k, v) in map {
-            res.push_str(&k);
-            if v > 1 {
-                res.push_str(&v.to_string());
-            }
-        }
-        res
+        _count_of_atoms(formula).unwrap_or_default()
     }
 }
 

@@ -30,44 +30,48 @@ struct Solution;
 
 impl Solution {
     pub fn nearest_palindromic(n: String) -> String {
+        Solution::_nearest_palindromic(n).unwrap_or_default()
+    }
+
+    fn _nearest_palindromic(n: String) -> Option<String> {
         let mut arr = n.chars().collect::<Vec<char>>();
         let len = arr.len();
         for i in 0..len / 2 {
             arr[len - 1 - i] = arr[i];
         }
         let cur_p = arr.iter().collect::<String>();
-        let pre_p = Solution::nearest_palindrom(&cur_p, false);
-        let next_p = Solution::nearest_palindrom(&cur_p, true);
-        let num = n.parse::<i64>().unwrap();
-        let cur = cur_p.parse::<i64>().unwrap();
-        let pre = pre_p.parse::<i64>().unwrap();
-        let next = next_p.parse::<i64>().unwrap();
+        let pre_p = Solution::nearest_palindrom(&cur_p, false)?;
+        let next_p = Solution::nearest_palindrom(&cur_p, true)?;
+        let num = n.parse::<i64>().ok()?;
+        let cur = cur_p.parse::<i64>().ok()?;
+        let pre = pre_p.parse::<i64>().ok()?;
+        let next = next_p.parse::<i64>().ok()?;
         let d1 = (num - pre).abs();
         let d2 = (num - cur).abs();
         let d3 = (num - next).abs();
         if num == cur {
             if d1 <= d3 {
-                pre_p
+                Some(pre_p)
             } else {
-                next_p
+                Some(next_p)
             }
         } else if num > cur {
             if d2 <= d3 {
-                cur_p
+                Some(cur_p)
             } else {
-                next_p
+                Some(next_p)
             }
         } else if d1 <= d2 {
-            pre_p
+            Some(pre_p)
         } else {
-            cur_p
+            Some(cur_p)
         }
     }
 
-    fn nearest_palindrom(cur_p: &str, dir: bool) -> String {
+    fn nearest_palindrom(cur_p: &str, dir: bool) -> Option<String> {
         let k = cur_p.len() / 2;
         let p = cur_p.len() - k;
-        let mut l = cur_p[0..p].parse::<i64>().unwrap();
+        let mut l = cur_p[0..p].parse::<i64>().ok()?;
         if dir {
             l += 1;
         } else {
@@ -75,9 +79,9 @@ impl Solution {
         }
         if l == 0 {
             if k == 0 {
-                return "0".to_string();
+                return Some("0".to_string());
             } else {
-                return "9".to_string();
+                return Some("9".to_string());
             }
         }
         let mut left = l.to_string();
@@ -87,7 +91,7 @@ impl Solution {
             right.push('9');
         }
         left.push_str(&right[right.len() - k..]);
-        left
+        Some(left)
     }
 }
 

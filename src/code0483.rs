@@ -35,24 +35,28 @@ struct Solution;
 
 impl Solution {
     pub fn smallest_good_base(n: String) -> String {
-        let n = n.parse::<u64>().unwrap();
-        let mut m_max = (n as f64).log(2.0).floor() as u32;
-        while m_max > 1 {
-            let k = (n as f64).powf(1.0 / m_max as f64).floor() as u64;
-            if k > 1 {
-                let mut sum = 1;
-                let mut mul = 1;
-                for _ in 0..m_max {
-                    mul *= k;
-                    sum += mul;
+        fn _smallest_good_base(n: String) -> Option<String> {
+            let n = n.parse::<u64>().ok()?;
+            let mut m_max = (n as f64).log(2.0).floor() as u32;
+            while m_max > 1 {
+                let k = (n as f64).powf(1.0 / m_max as f64).floor() as u64;
+                if k > 1 {
+                    let mut sum = 1;
+                    let mut mul = 1;
+                    for _ in 0..m_max {
+                        mul *= k;
+                        sum += mul;
+                    }
+                    if sum == n {
+                        return Some(k.to_string());
+                    }
                 }
-                if sum == n {
-                    return k.to_string();
-                }
+                m_max -= 1;
             }
-            m_max -= 1;
+            Some((n - 1).to_string())
         }
-        (n - 1).to_string()
+
+        _smallest_good_base(n).unwrap_or_default()
     }
 }
 
@@ -60,8 +64,7 @@ impl Solution {
 fn test() {
     assert_eq!(Solution::smallest_good_base("13".to_string()), "3".to_string());
     assert_eq!(Solution::smallest_good_base("4681".to_string()), "8".to_string());
-    assert_eq!(
-        Solution::smallest_good_base("1000000000000000000".to_string()),
-        "999999999999999999".to_string()
-    );
+    let n = "1000000000000000000".to_string();
+    let r = "999999999999999999".to_string();
+    assert_eq!(Solution::smallest_good_base(n), r);
 }

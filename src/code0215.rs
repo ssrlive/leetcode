@@ -7,14 +7,18 @@ struct Solution;
 
 impl Solution {
     pub fn find_kth_largest(nums: Vec<i32>, k: i32) -> i32 {
-        let mut heap = std::collections::BinaryHeap::new();
-        for n in nums {
-            heap.push(n);
+        fn _find_kth_largest(nums: Vec<i32>, k: i32) -> Option<i32> {
+            let mut heap = std::collections::BinaryHeap::new();
+            for n in nums {
+                heap.push(n);
+            }
+            for _ in 0..k - 1 {
+                heap.pop();
+            }
+            heap.pop()
         }
-        for _ in 0..k - 1 {
-            heap.pop();
-        }
-        heap.pop().unwrap()
+
+        _find_kth_largest(nums, k).unwrap_or_default()
     }
 }
 

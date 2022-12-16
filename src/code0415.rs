@@ -34,22 +34,26 @@ struct Solution;
 
 impl Solution {
     pub fn add_strings(num1: &str, num2: &str) -> String {
-        let mut num1 = num1.chars().collect::<Vec<char>>();
-        let mut num2 = num2.chars().collect::<Vec<char>>();
-        let mut carry = 0;
-        let mut result = String::new();
-        while !num1.is_empty() || !num2.is_empty() || carry > 0 {
-            let mut sum = carry;
-            if let Some(digit) = num1.pop() {
-                sum += digit.to_digit(10).unwrap() as i32;
+        fn _add_strings(num1: &str, num2: &str) -> Option<String> {
+            let mut num1 = num1.chars().collect::<Vec<char>>();
+            let mut num2 = num2.chars().collect::<Vec<char>>();
+            let mut carry = 0;
+            let mut result = String::new();
+            while !num1.is_empty() || !num2.is_empty() || carry > 0 {
+                let mut sum = carry;
+                if let Some(digit) = num1.pop() {
+                    sum += digit.to_digit(10)? as i32;
+                }
+                if let Some(digit) = num2.pop() {
+                    sum += digit.to_digit(10)? as i32;
+                }
+                carry = sum / 10;
+                result.push((sum % 10).to_string().chars().next()?);
             }
-            if let Some(digit) = num2.pop() {
-                sum += digit.to_digit(10).unwrap() as i32;
-            }
-            carry = sum / 10;
-            result.push((sum % 10).to_string().chars().next().unwrap());
+            Some(result.chars().rev().collect())
         }
-        result.chars().rev().collect()
+
+        _add_strings(num1, num2).unwrap_or_default()
     }
 }
 

@@ -20,18 +20,19 @@ impl Solution {
             ans: &mut Vec<Vec<String>>,
             helper: &Vec<(Vec<usize>, i32)>,
             word_list: &Vec<String>,
-        ) {
-            let curr = *route.last().unwrap();
+        ) -> Option<()> {
+            let curr = *route.last()?;
             if curr == word_list.len() - 1 {
                 let ans2 = route.iter().rev().map(|&i| word_list[i].to_owned()).collect();
                 ans.push(ans2);
             } else {
                 for &p in helper[curr].0.iter() {
                     route.push(p);
-                    backtrack(route, ans, helper, word_list);
+                    backtrack(route, ans, helper, word_list)?;
                     route.pop();
                 }
             }
+            Some(())
         }
 
         fn is_adj(word1: &str, word2: &str) -> bool {
@@ -68,7 +69,7 @@ impl Solution {
             }
         }
         let mut ans = Vec::new();
-        backtrack(&mut vec![end], &mut ans, &helper, &word_list);
+        let _ = backtrack(&mut vec![end], &mut ans, &helper, &word_list);
         ans
     }
 }

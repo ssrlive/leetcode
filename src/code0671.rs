@@ -71,27 +71,31 @@ impl Solution {
         let mut second_min = None;
         recursive_helper(&root, &mut min, &mut second_min);
         second_min.unwrap_or(-1)
+    }
 
-        /*
-        // Iterative solution, but slower than recursive solution.
-        let mut min = None;
-        let mut second_min = None;
-        let mut stack = vec![root];
-        while let Some(node) = stack.pop() {
-            if let Some(node) = node {
-                let val = node.borrow().val;
-                if min.is_none() || val < min.unwrap() {
-                    second_min = min;
-                    min = Some(val);
-                } else if val > min.unwrap() && (second_min.is_none() || val < second_min.unwrap()) {
-                    second_min = Some(val);
+    // Iterative solution, but slower than recursive solution.
+    pub fn find_second_minimum_value2(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
+        fn _find_second_minimum_value2(root: Option<Rc<RefCell<TreeNode>>>) -> Option<i32> {
+            let mut min = None;
+            let mut second_min = None;
+            let mut stack = vec![root];
+            while let Some(node) = stack.pop() {
+                if let Some(node) = node {
+                    let val = node.borrow().val;
+                    if min.is_none() || val < min? {
+                        second_min = min;
+                        min = Some(val);
+                    } else if val > min? && (second_min.is_none() || val < second_min?) {
+                        second_min = Some(val);
+                    }
+                    stack.push(node.borrow().left.clone());
+                    stack.push(node.borrow().right.clone());
                 }
-                stack.push(node.borrow().left.clone());
-                stack.push(node.borrow().right.clone());
             }
+            second_min
         }
-        second_min.unwrap_or(-1)
-        */
+
+        _find_second_minimum_value2(root).unwrap_or(-1)
     }
 }
 
@@ -101,4 +105,9 @@ fn test() {
     assert_eq!(Solution::find_second_minimum_value(root), 5);
     let root = TreeNode::from_vec(&[Some(2), Some(2), Some(2)]);
     assert_eq!(Solution::find_second_minimum_value(root), -1);
+
+    let root = TreeNode::from_vec(&[Some(2), Some(2), Some(5), None, None, Some(5), Some(7)]);
+    assert_eq!(Solution::find_second_minimum_value2(root), 5);
+    let root = TreeNode::from_vec(&[Some(2), Some(2), Some(2)]);
+    assert_eq!(Solution::find_second_minimum_value2(root), -1);
 }

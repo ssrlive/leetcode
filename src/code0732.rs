@@ -52,9 +52,12 @@ impl MyCalendarThree {
         }
     }
 
-    fn book(&mut self, start: i32, end: i32) -> i32 {
+    pub fn book(&mut self, start: i32, end: i32) -> i32 {
+        self._book(start, end).unwrap_or_default()
+    }
+    fn _book(&mut self, start: i32, end: i32) -> Option<i32> {
         let r = &mut self.max;
-        let mut cur = *self.data.range(..=start).rev().next().unwrap().1;
+        let mut cur = *self.data.range(..=start).rev().next()?.1;
 
         self.data.entry(start).or_insert(cur);
         for (_, v) in self.data.range_mut(start..end) {
@@ -64,7 +67,7 @@ impl MyCalendarThree {
         }
         self.data.entry(end).or_insert(cur);
 
-        *r
+        Some(*r)
     }
 }
 

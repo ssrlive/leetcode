@@ -25,25 +25,28 @@ struct Solution;
 
 impl Solution {
     pub fn largest_palindrome(n: i32) -> i32 {
-        if n == 1 {
-            return 9;
-        }
-        let upper = 10_i64.pow(n as u32) - 1;
-        let lower = 10_i64.pow(n as u32 - 1);
-        for i in (lower..=upper).rev() {
-            let palindrome = format!("{}{}", i, i.to_string().chars().rev().collect::<String>())
-                .parse::<i64>()
-                .unwrap();
-            for j in (lower..=upper).rev() {
-                if j * j < palindrome {
-                    break;
-                }
-                if palindrome % j == 0 {
-                    return (palindrome % 1337) as i32;
+        fn _largest_palindrome(n: i32) -> Option<i32> {
+            if n == 1 {
+                return Some(9);
+            }
+            let upper = 10_i64.pow(n as u32) - 1;
+            let lower = 10_i64.pow(n as u32 - 1);
+            for i in (lower..=upper).rev() {
+                let s = format!("{}{}", i, i.to_string().chars().rev().collect::<String>());
+                let palindrome = s.parse::<i64>().ok()?;
+                for j in (lower..=upper).rev() {
+                    if j * j < palindrome {
+                        break;
+                    }
+                    if palindrome % j == 0 {
+                        return Some((palindrome % 1337) as i32);
+                    }
                 }
             }
+            Some(0)
         }
-        0
+
+        _largest_palindrome(n).unwrap_or_default()
     }
 }
 

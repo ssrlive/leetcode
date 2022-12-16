@@ -41,26 +41,30 @@ struct Solution;
 
 impl Solution {
     pub fn decode_string(s: String) -> String {
-        let mut stack = Vec::new();
-        let mut num = 0;
-        let mut res = String::new();
-        for c in s.chars() {
-            match c {
-                '0'..='9' => num = num * 10 + c.to_digit(10).unwrap() as usize,
-                '[' => {
-                    stack.push((res, num));
-                    res = String::new();
-                    num = 0;
+        fn _decode_string(s: String) -> Option<String> {
+            let mut stack = Vec::new();
+            let mut num = 0;
+            let mut res = String::new();
+            for c in s.chars() {
+                match c {
+                    '0'..='9' => num = num * 10 + c.to_digit(10)? as usize,
+                    '[' => {
+                        stack.push((res, num));
+                        res = String::new();
+                        num = 0;
+                    }
+                    ']' => {
+                        let (mut prev, n) = stack.pop()?;
+                        prev.push_str(&res.repeat(n));
+                        res = prev;
+                    }
+                    _ => res.push(c),
                 }
-                ']' => {
-                    let (mut prev, n) = stack.pop().unwrap();
-                    prev.push_str(&res.repeat(n));
-                    res = prev;
-                }
-                _ => res.push(c),
             }
+            Some(res)
         }
-        res
+
+        _decode_string(s).unwrap_or_default()
     }
 }
 

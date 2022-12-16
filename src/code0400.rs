@@ -18,27 +18,32 @@
 //
 // Constraints:
 //
-// - 1 <= n <= 231 - 1
+// - 1 <= n <= 2^31 - 1
 //
 
 struct Solution;
 
 impl Solution {
     pub fn find_nth_digit(n: i32) -> i32 {
-        let mut n = n as i64;
-        let mut digits = 1;
-        let mut start = 1;
-        let mut count = 9;
-        while n > count {
-            n -= count;
-            digits += 1;
-            start *= 10;
-            count = digits as i64 * start * 9;
+        fn _find_nth_digit(n: i32) -> Option<i32> {
+            let mut n = n as i64;
+            let mut digits = 1;
+            let mut start = 1;
+            let mut count = 9;
+            while n > count {
+                n -= count;
+                digits += 1;
+                start *= 10;
+                count = digits as i64 * start * 9;
+            }
+            let num = start + (n - 1) / digits as i64;
+            let s = num.to_string();
+            let idx = (n - 1) % digits as i64;
+            let v = s.chars().nth(idx as usize)? as i32 - '0' as i32;
+            Some(v)
         }
-        let num = start + (n - 1) / digits as i64;
-        let s = num.to_string();
-        let idx = (n - 1) % digits as i64;
-        s.chars().nth(idx as usize).unwrap() as i32 - '0' as i32
+
+        _find_nth_digit(n).unwrap_or_default()
     }
 }
 

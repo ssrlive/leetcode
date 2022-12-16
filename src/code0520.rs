@@ -31,27 +31,31 @@ struct Solution;
 
 impl Solution {
     pub fn detect_capital_use(word: String) -> bool {
-        let mut chars = word.chars();
-        let first = chars.next().unwrap();
-        let is_upper = first.is_uppercase();
-        let mut is_lower = first.is_lowercase();
-        let mut is_mixed = false;
+        fn _detect_capital_use(word: String) -> Option<bool> {
+            let mut chars = word.chars();
+            let first = chars.next()?;
+            let is_upper = first.is_uppercase();
+            let mut is_lower = first.is_lowercase();
+            let mut is_mixed = false;
 
-        for c in chars {
-            if c.is_uppercase() {
-                if is_lower {
-                    return false;
+            for c in chars {
+                if c.is_uppercase() {
+                    if is_lower {
+                        return Some(false);
+                    }
+                    is_mixed = true;
+                } else {
+                    if is_upper && is_mixed {
+                        return Some(false);
+                    }
+                    is_lower = true;
                 }
-                is_mixed = true;
-            } else {
-                if is_upper && is_mixed {
-                    return false;
-                }
-                is_lower = true;
             }
+
+            Some(true)
         }
 
-        true
+        _detect_capital_use(word).unwrap_or(false)
     }
 }
 

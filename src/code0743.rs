@@ -39,36 +39,40 @@ struct Solution;
 
 impl Solution {
     pub fn network_delay_time(times: Vec<Vec<i32>>, n: i32, k: i32) -> i32 {
-        let mut graph = vec![vec![]; n as usize];
-        for time in times {
-            graph[time[0] as usize - 1].push((time[1] as usize - 1, time[2]));
-        }
-
-        let mut dist = vec![std::i32::MAX; n as usize];
-        dist[k as usize - 1] = 0;
-
-        let mut heap = std::collections::BinaryHeap::new();
-        heap.push(std::cmp::Reverse((0, k as usize - 1)));
-
-        while let Some(std::cmp::Reverse((d, u))) = heap.pop() {
-            if d > dist[u] {
-                continue;
+        fn _network_delay_time(times: Vec<Vec<i32>>, n: i32, k: i32) -> Option<i32> {
+            let mut graph = vec![vec![]; n as usize];
+            for time in times {
+                graph[time[0] as usize - 1].push((time[1] as usize - 1, time[2]));
             }
 
-            for &(v, w) in &graph[u] {
-                if dist[u] + w < dist[v] {
-                    dist[v] = dist[u] + w;
-                    heap.push(std::cmp::Reverse((dist[v], v)));
+            let mut dist = vec![std::i32::MAX; n as usize];
+            dist[k as usize - 1] = 0;
+
+            let mut heap = std::collections::BinaryHeap::new();
+            heap.push(std::cmp::Reverse((0, k as usize - 1)));
+
+            while let Some(std::cmp::Reverse((d, u))) = heap.pop() {
+                if d > dist[u] {
+                    continue;
+                }
+
+                for &(v, w) in &graph[u] {
+                    if dist[u] + w < dist[v] {
+                        dist[v] = dist[u] + w;
+                        heap.push(std::cmp::Reverse((dist[v], v)));
+                    }
                 }
             }
+
+            let ans = dist.iter().max()?;
+            if *ans == std::i32::MAX {
+                Some(-1)
+            } else {
+                Some(*ans)
+            }
         }
 
-        let ans = dist.iter().max().unwrap();
-        if *ans == std::i32::MAX {
-            -1
-        } else {
-            *ans
-        }
+        _network_delay_time(times, n, k).unwrap_or(-1)
     }
 }
 

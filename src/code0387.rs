@@ -30,16 +30,20 @@ struct Solution;
 
 impl Solution {
     pub fn first_uniq_char(s: String) -> i32 {
-        let mut map = std::collections::HashMap::new();
-        for c in s.chars() {
-            *map.entry(c).or_insert(0) += 1;
-        }
-        for (i, c) in s.chars().enumerate() {
-            if map.get(&c).unwrap() == &1 {
-                return i as i32;
+        fn _first_uniq_char(s: String) -> Option<i32> {
+            let mut map = std::collections::HashMap::new();
+            for c in s.chars() {
+                *map.entry(c).or_insert(0) += 1;
             }
+            for (i, c) in s.chars().enumerate() {
+                if map.get(&c)? == &1 {
+                    return Some(i as i32);
+                }
+            }
+            Some(-1)
         }
-        -1
+
+        _first_uniq_char(s).unwrap_or(-1)
     }
 }
 

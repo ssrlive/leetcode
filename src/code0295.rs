@@ -50,28 +50,35 @@ struct MedianFinder {
 }
 
 impl MedianFinder {
-    fn new() -> Self {
+    pub fn new() -> Self {
         Self {
             small: std::collections::BinaryHeap::new(),
             large: std::collections::BinaryHeap::new(),
         }
     }
 
-    fn add_num(&mut self, num: i32) {
+    pub fn add_num(&mut self, num: i32) {
+        self._add_num(num).unwrap_or_default();
+    }
+    fn _add_num(&mut self, num: i32) -> Option<()> {
         if self.small.len() >= self.large.len() {
             self.small.push(num);
-            self.large.push(std::cmp::Reverse(self.small.pop().unwrap()));
+            self.large.push(std::cmp::Reverse(self.small.pop()?));
         } else {
             self.large.push(std::cmp::Reverse(num));
-            self.small.push(self.large.pop().unwrap().0);
+            self.small.push(self.large.pop()?.0);
         }
+        Some(())
     }
 
-    fn find_median(&self) -> f64 {
+    pub fn find_median(&self) -> f64 {
+        self._find_median().unwrap_or_default()
+    }
+    fn _find_median(&self) -> Option<f64> {
         match self.small.len().cmp(&self.large.len()) {
-            std::cmp::Ordering::Equal => (self.small.peek().unwrap() + self.large.peek().unwrap().0) as f64 / 2.0,
-            std::cmp::Ordering::Greater => *self.small.peek().unwrap() as f64,
-            std::cmp::Ordering::Less => self.large.peek().unwrap().0 as f64,
+            std::cmp::Ordering::Equal => Some((self.small.peek()? + self.large.peek()?.0) as f64 / 2.0),
+            std::cmp::Ordering::Greater => Some(*self.small.peek()? as f64),
+            std::cmp::Ordering::Less => Some(self.large.peek()?.0 as f64),
         }
     }
 }

@@ -51,29 +51,33 @@ struct Solution;
 
 impl Solution {
     pub fn predict_party_victory(senate: String) -> String {
-        let mut dire = std::collections::VecDeque::new();
-        let mut radiant = std::collections::VecDeque::new();
-        for (i, ch) in senate.chars().enumerate() {
-            if ch == 'D' {
-                dire.push_back(i);
+        fn _predict_party_victory(senate: String) -> Option<String> {
+            let mut dire = std::collections::VecDeque::new();
+            let mut radiant = std::collections::VecDeque::new();
+            for (i, ch) in senate.chars().enumerate() {
+                if ch == 'D' {
+                    dire.push_back(i);
+                } else {
+                    radiant.push_back(i);
+                }
+            }
+            while !dire.is_empty() && !radiant.is_empty() {
+                let d: usize = dire.pop_front()?;
+                let r: usize = radiant.pop_front()?;
+                if d < r {
+                    dire.push_back(d + senate.len());
+                } else {
+                    radiant.push_back(r + senate.len());
+                }
+            }
+            if radiant.is_empty() {
+                Some("Dire".to_string())
             } else {
-                radiant.push_back(i);
+                Some("Radiant".to_string())
             }
         }
-        while !dire.is_empty() && !radiant.is_empty() {
-            let d: usize = dire.pop_front().unwrap();
-            let r: usize = radiant.pop_front().unwrap();
-            if d < r {
-                dire.push_back(d + senate.len());
-            } else {
-                radiant.push_back(r + senate.len());
-            }
-        }
-        if radiant.is_empty() {
-            "Dire".to_string()
-        } else {
-            "Radiant".to_string()
-        }
+
+        _predict_party_victory(senate).unwrap_or_else(|| "Dire".to_string())
     }
 }
 
