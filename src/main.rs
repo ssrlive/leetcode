@@ -525,6 +525,7 @@ mod code0790;
 mod code0791;
 mod code0792;
 mod code0793;
+mod code0794;
 
 mod code0796;
 
