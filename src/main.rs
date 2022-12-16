@@ -519,6 +519,7 @@ mod code0784;
 mod code0785;
 mod code0786;
 mod code0787;
+mod code0788;
 
 mod code0796;
 
