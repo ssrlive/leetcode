@@ -536,6 +536,7 @@ mod code0802;
 mod code0803;
 mod code0804;
 mod code0805;
+mod code0806;
 
 mod code0821;
 
