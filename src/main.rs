@@ -565,6 +565,7 @@ mod code1047;
 
 mod code2481;
 mod code2482;
+mod code2483;
 
 mod code2488;
 mod code2490;
