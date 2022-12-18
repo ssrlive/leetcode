@@ -578,5 +578,6 @@ mod code2502;
 mod code2503;
 mod code2506;
 mod code2507;
+mod code2508;
 
 fn main() {}
