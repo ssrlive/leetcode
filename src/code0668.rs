@@ -2,6 +2,7 @@
 
 // 668. Kth Smallest Element in a Sorted Matrix
 // https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
+// https://leetcode.cn/problems/kth-smallest-element-in-a-sorted-matrix/
 //
 // Nearly everyone has used the Multiplication Table. The multiplication table of size m x n is
 // an integer matrix mat where mat[i][j] == i * j (1-indexed).

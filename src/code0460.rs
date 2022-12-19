@@ -1,6 +1,8 @@
 #![allow(dead_code)]
+
 // 460. LFU Cache
 // https://leetcode.com/problems/lfu-cache/
+// https://leetcode.cn/problems/lfu-cache/
 //
 // Design and implement a data structure for Least Frequently Used (LFU) cache.
 //

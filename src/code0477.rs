@@ -2,6 +2,7 @@
 
 // 477. Total Hamming Distance
 // https://leetcode.com/problems/total-hamming-distance/
+// https://leetcode.cn/problems/total-hamming-distance/
 //
 // The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
 //

@@ -2,6 +2,7 @@
 
 // 778. Swim in Rising Water
 // https://leetcode.com/problems/swim-in-rising-water/
+// https://leetcode.cn/problems/swim-in-rising-water/
 //
 // You are given an n x n integer matrix grid where each value grid[i][j] represents the elevation at that point (i, j).
 //

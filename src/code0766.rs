@@ -2,6 +2,7 @@
 
 // 766. Toeplitz Matrix
 // https://leetcode.com/problems/toeplitz-matrix/
+// https://leetcode.cn/problems/toeplitz-matrix/
 //
 // Given an m x n matrix, return true if the matrix is Toeplitz. Otherwise, return false.
 //

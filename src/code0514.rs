@@ -2,6 +2,7 @@
 
 // 514. Freedom Trail
 // https://leetcode.com/problems/freedom-trail/
+// https://leetcode.cn/problems/freedom-trail/
 //
 // In the video game Fallout 4, the quest "Road to Freedom" requires players to reach a metal dial called
 // the "Freedom Trail Ring" and use the dial to spell a specific keyword to open the door.

@@ -2,6 +2,7 @@
 
 // 669. Trim a Binary Search Tree
 // https://leetcode.com/problems/trim-a-binary-search-tree/
+// https://leetcode.cn/problems/trim-a-binary-search-tree/
 //
 // Given the root of a binary search tree and the lowest and highest boundaries as low and high,
 // trim the tree so that all its elements lies in [low, high]. Trimming the tree should not change

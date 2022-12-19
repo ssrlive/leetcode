@@ -2,6 +2,7 @@
 
 // 747. Largest Number At Least Twice of Others
 // https://leetcode.com/problems/largest-number-at-least-twice-of-others/
+// https://leetcode.cn/problems/largest-number-at-least-twice-of-others/
 //
 // You are given an integer array nums where the largest integer is unique.
 //

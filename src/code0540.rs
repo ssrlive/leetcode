@@ -2,6 +2,7 @@
 
 // 540. Single Element in a Sorted Array
 // https://leetcode.com/problems/single-element-in-a-sorted-array/
+// https://leetcode.cn/problems/single-element-in-a-sorted-array/
 //
 // You are given a sorted array consisting of only integers where every element appears exactly twice,
 // except for one element which appears exactly once.
@@ -22,8 +23,8 @@
 //
 // Constraints:
 //
-// - 1 <= nums.length <= 105
-// - 0 <= nums[i] <= 105
+// - 1 <= nums.length <= 10^5
+// - 0 <= nums[i] <= 10^5
 //
 
 struct Solution;

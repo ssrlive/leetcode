@@ -2,6 +2,7 @@
 
 // 479. Largest Palindrome Product
 // https://leetcode.com/problems/largest-palindrome-product/
+// https://leetcode.cn/problems/largest-palindrome-product/
 //
 // Given an integer n, return the largest palindromic integer that can be represented as the product of two n-digits integers. Since the answer can be very large, return it modulo 1337.
 //

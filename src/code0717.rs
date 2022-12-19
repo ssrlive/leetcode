@@ -2,6 +2,7 @@
 
 // 717. 1-bit and 2-bit Characters
 // https://leetcode.com/problems/1-bit-and-2-bit-characters/
+// https://leetcode.cn/problems/1-bit-and-2-bit-characters/
 //
 // We have two special characters:
 //

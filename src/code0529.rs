@@ -2,6 +2,7 @@
 
 // 529. Minesweeper
 // https://leetcode.com/problems/minesweeper/
+// https://leetcode.cn/problems/minesweeper/
 //
 // Let's play the minesweeper game (Wikipedia, online game)!
 //

@@ -2,6 +2,7 @@
 
 // 767. Reorganize String
 // https://leetcode.com/problems/reorganize-string/
+// https://leetcode.cn/problems/reorganize-string/
 //
 // Given a string s, rearrange the characters of s so that any two adjacent characters are not the same.
 //

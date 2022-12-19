@@ -2,6 +2,7 @@
 
 // 646. Maximum Length of Pair Chain
 // https://leetcode.com/problems/maximum-length-of-pair-chain/
+// https://leetcode.cn/problems/maximum-length-of-pair-chain/
 //
 // You are given an array of n pairs pairs where pairs[i] = [lefti, righti] and lefti < righti.
 //

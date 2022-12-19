@@ -2,6 +2,7 @@
 
 // 470. Implement Rand10() Using Rand7()
 // https://leetcode.com/problems/implement-rand10-using-rand7/
+// https://leetcode.cn/problems/implement-rand10-using-rand7/
 //
 // Given the API rand7() that generates a uniform random integer in the range [1, 7], write a function rand10()
 // that generates a uniform random integer in the range [1, 10]. You can only call the API rand7(), and you shouldn't
@@ -27,7 +28,7 @@
 //
 // Constraints:
 //
-// - 1 <= n <= 105
+// - 1 <= n <= 10^5
 //
 // Follow up:
 //

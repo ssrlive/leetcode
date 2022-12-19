@@ -2,6 +2,7 @@
 
 // 434. Number of Segments in a String
 // https://leetcode.com/problems/number-of-segments-in-a-string/
+// https://leetcode.cn/problems/number-of-segments-in-a-string/
 //
 // Given a string s, return the number of segments in the string.
 //

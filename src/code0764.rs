@@ -2,6 +2,7 @@
 
 // 764. Largest Plus Sign
 // https://leetcode.com/problems/largest-plus-sign/
+// https://leetcode.cn/problems/largest-plus-sign/
 //
 // You are given an integer n. You have an n x n binary grid grid with all values initially 1's except for some indices given in the array mines.
 // The i-th element of the array mines is defined as mines[i] = [xi, yi] where grid[xi][yi] == 0.

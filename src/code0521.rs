@@ -2,6 +2,7 @@
 
 // 521. Longest Uncommon Subsequence I
 // https://leetcode.com/problems/longest-uncommon-subsequence-i/
+// https://leetcode.cn/problems/longest-uncommon-subsequence-i/
 //
 // Given two strings a and b, return the length of the longest uncommon subsequence between a and b.
 // If the longest uncommon subsequence does not exist, return -1.

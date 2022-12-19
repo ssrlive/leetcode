@@ -2,6 +2,7 @@
 
 // 575. Distribute Candies
 // https://leetcode.com/problems/distribute-candies/
+// https://leetcode.cn/problems/distribute-candies/
 //
 // Alice has n candies, where the ith candy is of type candyType[i].
 // Alice noticed that she started to gain weight, so she visited a doctor.

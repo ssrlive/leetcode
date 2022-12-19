@@ -2,8 +2,11 @@
 
 // 447. Number of Boomerangs
 // https://leetcode.com/problems/number-of-boomerangs/
+// https://leetcode.cn/problems/number-of-boomerangs/
 //
-// You are given n points in the plane that are all distinct, where points[i] = [xi, yi]. A boomerang is a tuple of points (i, j, k) such that the distance between i and j equals the distance between i and k (the order of the tuple matters).
+// You are given n points in the plane that are all distinct, where points[i] = [xi, yi].
+// A boomerang is a tuple of points (i, j, k) such that the distance between i and j equals the distance
+// between i and k (the order of the tuple matters).
 //
 // Return the number of boomerangs.
 //
@@ -28,7 +31,7 @@
 // - n == points.length
 // - 1 <= n <= 500
 // - points[i].length == 2
-// - -104 <= xi, yi <= 104
+// - -10^4 <= xi, yi <= 10^4
 // - All the points are unique.
 //
 

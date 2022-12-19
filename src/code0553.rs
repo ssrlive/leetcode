@@ -2,6 +2,7 @@
 
 // 553. Optimal Division
 // https://leetcode.com/problems/optimal-division/
+// https://leetcode.cn/problems/optimal-division/
 //
 // You are given an integer array nums. The adjacent integers in nums will perform the float division.
 //

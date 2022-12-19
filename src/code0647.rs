@@ -2,6 +2,7 @@
 
 // 647. Palindromic Substrings
 // https://leetcode.com/problems/palindromic-substrings/
+// https://leetcode.cn/problems/palindromic-substrings/
 //
 // Given a string s, return the number of palindromic substrings in it.
 //

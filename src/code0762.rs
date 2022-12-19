@@ -2,6 +2,7 @@
 
 // 762. Prime Number of Set Bits in Binary Representation
 // https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/
+// https://leetcode.cn/problems/prime-number-of-set-bits-in-binary-representation/
 //
 // Given two integers left and right, return the count of numbers in the inclusive range [left, right] having a prime number
 // of set bits in their binary representation.

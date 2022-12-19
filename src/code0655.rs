@@ -2,6 +2,7 @@
 
 // 655. Print Binary Tree
 // https://leetcode.com/problems/print-binary-tree/
+// https://leetcode.cn/problems/print-binary-tree/
 //
 // Given the root of a binary tree, construct a 0-indexed m x n string matrix res that represents a
 // formatted layout of the tree. The formatted layout matrix should be constructed using the following rules:

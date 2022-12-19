@@ -2,6 +2,7 @@
 
 // 483. Smallest Good Base
 // https://leetcode.com/problems/smallest-good-base/
+// https://leetcode.cn/problems/smallest-good-base/
 //
 // Given an integer n represented as a string, return the smallest good base of n.
 //

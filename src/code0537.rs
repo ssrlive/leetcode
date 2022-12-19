@@ -2,6 +2,7 @@
 
 // 537. Complex Number Multiplication
 // https://leetcode.com/problems/complex-number-multiplication/
+// https://leetcode.cn/problems/complex-number-multiplication/
 //
 // A complex number can be represented as a string on the form "real+imaginaryi" where:
 //

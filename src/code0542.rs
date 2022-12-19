@@ -2,6 +2,7 @@
 
 // 542. 01 Matrix
 // https://leetcode.com/problems/01-matrix/
+// https://leetcode.cn/problems/01-matrix/
 //
 // Given an m x n binary matrix mat, return the distance of the nearest 0 for each cell.
 //

@@ -2,6 +2,7 @@
 
 // 480. Sliding Window Median
 // https://leetcode.com/problems/sliding-window-median/
+// https://leetcode.cn/problems/sliding-window-median/
 //
 // he median is the middle value in an ordered integer list. If the size of the list is even,
 // there is no middle value. So the median is the mean of the two middle values.
@@ -35,8 +36,8 @@
 //
 // Constraints:
 //
-// - 1 <= k <= nums.length <= 105
-// - -231 <= nums[i] <= 231 - 1
+// - 1 <= k <= nums.length <= 10^5
+// - -2^31 <= nums[i] <= 2^31 - 1
 //
 
 struct Solution;

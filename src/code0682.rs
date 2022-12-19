@@ -2,6 +2,7 @@
 
 // 682. Baseball Game
 // https://leetcode.com/problems/baseball-game/description/
+// https://leetcode.cn/problems/baseball-game/description/
 //
 // You are keeping the scores for a baseball game with strange rules. At the beginning of the game, you start with an empty record.
 //
@@ -58,10 +59,10 @@
 //
 // Constraints:
 //
-// 1 <= operations.length <= 1000
-// operations[i] is "C", "D", "+", or a string representing an integer in the range [-3 * 10^4, 3 * 10^4].
-// For operation "+", there will always be at least two previous scores on the record.
-// For operations "C" and "D", there will always be at least one previous score on the record.
+// - 1 <= operations.length <= 1000
+// - operations[i] is "C", "D", "+", or a string representing an integer in the range [-3 * 10^4, 3 * 10^4].
+// - For operation "+", there will always be at least two previous scores on the record.
+// - For operations "C" and "D", there will always be at least one previous score on the record.
 //
 
 struct Solution;

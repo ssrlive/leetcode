@@ -2,6 +2,7 @@
 
 // 599. Minimum Index Sum of Two Lists
 // https://leetcode.com/problems/minimum-index-sum-of-two-lists/
+// https://leetcode.cn/problems/minimum-index-sum-of-two-lists/
 //
 // Given two arrays of strings list1 and list2, find the common strings with the least index sum.
 //

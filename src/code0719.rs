@@ -2,6 +2,7 @@
 
 // 719. Find K-th Smallest Pair Distance
 // https://leetcode.com/problems/find-k-th-smallest-pair-distance/
+// https://leetcode.cn/problems/find-k-th-smallest-pair-distance/
 //
 // The distance of a pair of integers a and b is defined as the absolute difference between a and b.
 //

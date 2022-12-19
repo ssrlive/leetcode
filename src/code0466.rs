@@ -2,6 +2,7 @@
 
 // 466. Count The Repetitions
 // https://leetcode.com/problems/count-the-repetitions/
+// https://leetcode.cn/problems/count-the-repetitions/
 //
 // We define str = [s, n] as the string str which consists of the string s concatenated n times.
 //
@@ -27,7 +28,7 @@
 //
 // - 1 <= s1.length, s2.length <= 100
 // - s1 and s2 consist of lowercase English letters.
-// - 1 <= n1, n2 <= 106
+// - 1 <= n1, n2 <= 10^6
 //
 
 struct Solution;

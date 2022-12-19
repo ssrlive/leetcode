@@ -2,6 +2,7 @@
 
 // 728. Self Dividing Numbers
 // https://leetcode.com/problems/self-dividing-numbers/
+// https://leetcode.cn/problems/self-dividing-numbers/
 //
 // A self-dividing number is a number that is divisible by every digit it contains.
 //

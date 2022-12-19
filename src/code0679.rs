@@ -2,6 +2,7 @@
 
 // 679. 24 Game
 // https://leetcode.com/problems/24-game/
+// https://leetcode.cn/problems/24-game/
 //
 // You are given an integer array cards of length 4. You have four cards, each
 // containing a number in the range [1, 9]. You should arrange the numbers on

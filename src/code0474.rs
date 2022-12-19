@@ -2,6 +2,7 @@
 
 // 474. Ones and Zeroes
 // https://leetcode.com/problems/ones-and-zeroes/
+// https://leetcode.cn/problems/ones-and-zeroes/
 //
 // You are given an array of binary strings strs and two integers m and n.
 //

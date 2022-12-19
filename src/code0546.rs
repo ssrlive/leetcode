@@ -2,6 +2,7 @@
 
 // 546. Remove Boxes
 // https://leetcode.com/problems/remove-boxes/
+// https://leetcode.cn/problems/remove-boxes/
 //
 // You are given several boxes with different colors represented by different positive numbers.
 //

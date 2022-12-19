@@ -2,6 +2,7 @@
 
 // 769. Max Chunks To Make Sorted
 // https://leetcode.com/problems/max-chunks-to-make-sorted/
+// https://leetcode.cn/problems/max-chunks-to-make-sorted/
 //
 // You are given an integer array arr of length n that represents a permutation of the integers in the range [0, n - 1].
 //

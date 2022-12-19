@@ -2,6 +2,7 @@
 
 // 680. Valid Palindrome II
 // https://leetcode.com/problems/valid-palindrome-ii/description/
+// https://leetcode.cn/problems/valid-palindrome-ii/description/
 //
 // Given a string s, return true if the s can be palindrome after deleting at most one character from it.
 //
@@ -23,7 +24,7 @@
 //
 // Constraints:
 //
-// - 1 <= s.length <= 105
+// - 1 <= s.length <= 10^5
 // - s consists of lowercase English letters.
 //
 // Follow up: Could you solve it in O(n) time and O(1) space?

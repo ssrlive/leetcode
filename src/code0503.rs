@@ -2,6 +2,7 @@
 
 // 503. Next Greater Element II
 // https://leetcode.com/problems/next-greater-element-ii/
+// https://leetcode.cn/problems/next-greater-element-ii/
 //
 // Given a circular integer array nums (i.e., the next element of nums[nums.length - 1] is nums[0]), return the next greater number for every element in nums.
 //
@@ -22,8 +23,8 @@
 //
 // Constraints:
 //
-// - 1 <= nums.length <= 104
-// - -109 <= nums[i] <= 109
+// - 1 <= nums.length <= 10^4
+// - -10^9 <= nums[i] <= 10^9
 //
 
 struct Solution;

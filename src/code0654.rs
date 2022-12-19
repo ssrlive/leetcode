@@ -2,6 +2,7 @@
 
 // 654. Maximum Binary Tree
 // https://leetcode.com/problems/maximum-binary-tree/
+// https://leetcode.cn/problems/maximum-binary-tree/
 //
 // You are given an integer array nums with no duplicates. A maximum binary tree can be built recursively from nums using
 // the following algorithm:

@@ -2,6 +2,7 @@
 
 // 740. Delete and Earn
 // https://leetcode.com/problems/delete-and-earn/
+// https://leetcode.cn/problems/delete-and-earn/
 //
 // You are given an integer array nums. You want to maximize the number of points you get by performing the following operation any number of times:
 //

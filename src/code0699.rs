@@ -2,6 +2,7 @@
 
 // 699. Falling Squares
 // https://leetcode.com/problems/falling-squares/
+// https://leetcode.cn/problems/falling-squares/
 //
 // There are several squares being dropped onto the X-axis of a 2D plane.
 //

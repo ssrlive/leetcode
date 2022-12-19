@@ -2,6 +2,7 @@
 
 // 664. Strange Printer
 // https://leetcode.com/problems/strange-printer/
+// https://leetcode.cn/problems/strange-printer/
 //
 // There is a strange printer with the following two special properties:
 //

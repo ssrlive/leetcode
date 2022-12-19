@@ -2,6 +2,7 @@
 
 // 672. Bulb Switcher II
 // https://leetcode.com/problems/bulb-switcher-ii/
+// https://leetcode.cn/problems/bulb-switcher-ii/
 //
 // There is a room with n bulbs labeled from 1 to n that all are turned on initially, and four buttons on the wall.
 // Each of the four buttons has a different functionality where:

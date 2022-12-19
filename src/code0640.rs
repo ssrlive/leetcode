@@ -2,6 +2,7 @@
 
 // 640. Solve the Equation
 // https://leetcode.com/problems/solve-the-equation/
+// https://leetcode.cn/problems/solve-the-equation/
 //
 // Solve a given equation and return the value of 'x' in the form of a string "x=#value". The equation contains
 // only '+', '-' operation, the variable 'x' and its coefficient. You should return "No solution" if there is

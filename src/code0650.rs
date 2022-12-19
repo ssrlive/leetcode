@@ -2,6 +2,7 @@
 
 // 650. 2 Keys Keyboard
 // https://leetcode.com/problems/2-keys-keyboard/
+// https://leetcode.cn/problems/2-keys-keyboard/
 //
 // There is only one character 'A' on the screen of a notepad. You can perform one of two operations on this notepad for each step:
 //

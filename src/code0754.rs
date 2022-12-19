@@ -2,6 +2,7 @@
 
 // 754. Reach a Number
 // https://leetcode.com/problems/reach-a-number/
+// https://leetcode.cn/problems/reach-a-number/
 //
 // You are standing at position 0 on an infinite number line. There is a destination at position target.
 //

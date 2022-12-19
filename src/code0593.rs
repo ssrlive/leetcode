@@ -2,6 +2,7 @@
 
 // 593. Valid Square
 // https://leetcode.com/problems/valid-square/
+// https://leetcode.cn/problems/valid-square/
 //
 // Given the coordinates of four points in 2D space p1, p2, p3 and p4, return true if the four points construct a square.
 //

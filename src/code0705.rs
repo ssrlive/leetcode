@@ -2,6 +2,7 @@
 
 // 705. Design HashSet
 // https://leetcode.com/problems/design-hashset/
+// https://leetcode.cn/problems/design-hashset/
 //
 // Design a HashSet without using any built-in hash table libraries.
 //

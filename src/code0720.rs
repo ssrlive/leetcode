@@ -2,6 +2,7 @@
 
 // 720. Longest Word in Dictionary
 // https://leetcode.com/problems/longest-word-in-dictionary/
+// https://leetcode.cn/problems/longest-word-in-dictionary/
 //
 // Given an array of strings words representing an English Dictionary, return the longest word in words that can be built one character at a time by other words in words.
 //

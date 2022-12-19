@@ -2,6 +2,7 @@
 
 // 643. Maximum Average Subarray I
 // https://leetcode.com/problems/maximum-average-subarray-i/
+// https://leetcode.cn/problems/maximum-average-subarray-i/
 //
 // You are given an integer array nums consisting of n elements, and an integer k.
 //

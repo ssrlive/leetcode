@@ -2,6 +2,7 @@
 
 // 641. Design Circular Queue
 // https://leetcode.com/problems/design-circular-queue/
+// https://leetcode.cn/problems/design-circular-queue/
 //
 // Design your implementation of the circular double-ended queue (deque).
 //

@@ -2,6 +2,7 @@
 
 // 771. Jewels and Stones
 // https://leetcode.com/problems/jewels-and-stones/
+// https://leetcode.cn/problems/jewels-and-stones/
 //
 // You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have.
 // Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
@@ -41,9 +42,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(
-        Solution::num_jewels_in_stones("aA".to_string(), "aAAbbbb".to_string()),
-        3
-    );
+    let stones = "aAAbbbb".to_string();
+    assert_eq!(Solution::num_jewels_in_stones("aA".to_string(), stones), 3);
     assert_eq!(Solution::num_jewels_in_stones("z".to_string(), "ZZ".to_string()), 0);
 }

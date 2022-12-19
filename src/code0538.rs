@@ -2,6 +2,7 @@
 
 // 538. Convert BST to Greater Tree
 // https://leetcode.com/problems/convert-bst-to-greater-tree/
+// https://leetcode.cn/problems/convert-bst-to-greater-tree/
 //
 // Given the root of a Binary Search Tree (BST), convert it to a Greater Tree such that every key of the
 // original BST is changed to the original key plus the sum of all keys greater than the original key in BST.
@@ -24,7 +25,7 @@
 //
 // Constraints:
 //
-// - The number of nodes in the tree is in the range [0, 104].
+// - The number of nodes in the tree is in the range [0, 10^4].
 // - -10^4 <= Node.val <= 10^4
 // - All the values in the tree are unique.
 // - root is guaranteed to be a valid binary search tree.

@@ -2,6 +2,7 @@
 
 // 435. Non-overlapping Intervals
 // https://leetcode.com/problems/non-overlapping-intervals/
+// https://leetcode.cn/problems/non-overlapping-intervals/
 //
 // Given a collection of intervals, find the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.
 //
@@ -33,7 +34,11 @@
 // Complexity: O(n log n)
 // Space: O(1)
 //
-// Note: This is a greedy algorithm. The idea is to sort the intervals by their end point. Then, we take the first interval and compare its end with the next intervals start. As long as they overlap, we remove the next interval and continue comparing the end with the rest. We do this until we find a non overlapping interval. Then, we can add the current interval to our set of non overlapping intervals.
+// Note: This is a greedy algorithm. The idea is to sort the intervals by their end point.
+// Then, we take the first interval and compare its end with the next intervals start.
+// As long as they overlap, we remove the next interval and continue comparing the end with the rest.
+// We do this until we find a non overlapping interval. Then, we can add the current interval to our set of non overlapping intervals.
+//
 
 struct Solution;
 

@@ -2,6 +2,7 @@
 
 // 473. Matchsticks to Square
 // https://leetcode.com/problems/matchsticks-to-square/
+// https://leetcode.cn/problems/matchsticks-to-square/
 //
 // You are given an integer array matchsticks where matchsticks[i] is the length of the ith matchstick.
 // You want to use all the matchsticks to make one square. You should not break any stick,
@@ -24,7 +25,7 @@
 // Constraints:
 //
 // - 1 <= matchsticks.length <= 15
-// - 1 <= matchsticks[i] <= 108
+// - 1 <= matchsticks[i] <= 10^8
 //
 
 struct Solution;

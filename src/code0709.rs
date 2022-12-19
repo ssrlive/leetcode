@@ -2,6 +2,7 @@
 
 // 709. To Lower Case
 // https://leetcode.com/problems/to-lower-case/
+// https://leetcode.cn/problems/to-lower-case/
 //
 // Given a string s, return the string after replacing every uppercase letter with the same lowercase letter.
 //

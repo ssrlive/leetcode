@@ -2,6 +2,7 @@
 
 // 528. Random Pick with Weight
 // https://leetcode.com/problems/random-pick-with-weight/
+// https://leetcode.cn/problems/random-pick-with-weight/
 //
 // You are given a 0-indexed array of positive integers w where w[i] describes the weight of the ith index.
 //
@@ -51,9 +52,9 @@
 //
 // Constraints:
 //
-// - 1 <= w.length <= 104
-// - 1 <= w[i] <= 105
-// - pickIndex will be called at most 104 times.
+// - 1 <= w.length <= 10^4
+// - 1 <= w[i] <= 10^5
+// - pickIndex will be called at most 10^4 times.
 //
 
 struct Solution {

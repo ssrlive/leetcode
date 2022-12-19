@@ -2,6 +2,7 @@
 
 // 648. Replace Words
 // https://leetcode.com/problems/replace-words/
+// https://leetcode.cn/problems/replace-words/
 //
 // In English, we have a concept called root, which can be followed by some other word
 // to form another longer word - let's call this word successor. For example,

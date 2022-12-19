@@ -2,6 +2,7 @@
 
 // 765. Couples Holding Hands
 // https://leetcode.com/problems/couples-holding-hands/
+// https://leetcode.cn/problems/couples-holding-hands/
 //
 // There are n couples sitting in 2n seats arranged in a row and want to hold hands.
 //

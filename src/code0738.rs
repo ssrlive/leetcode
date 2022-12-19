@@ -2,6 +2,7 @@
 
 // 738. Monotone Increasing Digits
 // https://leetcode.com/problems/monotone-increasing-digits/
+// https://leetcode.cn/problems/monotone-increasing-digits/
 //
 // An integer has monotone increasing digits if and only if each pair of adjacent digits x and y satisfy x <= y.
 //

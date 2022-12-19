@@ -2,6 +2,7 @@
 
 // 649. Dota2 Senate
 // https://leetcode.com/problems/dota2-senate/
+// https://leetcode.cn/problems/dota2-senate/
 //
 // In the world of Dota2, there are two parties: the Radiant and the Dire.
 //

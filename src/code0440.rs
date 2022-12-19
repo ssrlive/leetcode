@@ -2,6 +2,7 @@
 
 // 440. K-th Smallest in Lexicographical Order
 // https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/
+// https://leetcode.cn/problems/k-th-smallest-in-lexicographical-order/
 //
 // Given an integer n and an integer k, return the kth lexicographically smallest integer in the range [1, n].
 //
@@ -19,6 +20,7 @@
 // Constraints:
 //
 // 1 <= k <= n <= 10^9
+//
 
 struct Solution;
 

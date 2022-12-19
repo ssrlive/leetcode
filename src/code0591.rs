@@ -2,6 +2,7 @@
 
 // 591. Tag Validation
 // https://leetcode.com/problems/tag-validator/
+// https://leetcode.cn/problems/tag-validator/
 //
 // Given a string representing a code snippet, implement a tag validator to parse the code and return whether it is valid.
 //

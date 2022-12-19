@@ -2,6 +2,7 @@
 
 // 690. Employee Importance
 // https://leetcode.com/problems/employee-importance/
+// https://leetcode.cn/problems/employee-importance/
 //
 // You have a data structure of employee information, including the employee's unique ID, importance value, and direct subordinates' IDs.
 //

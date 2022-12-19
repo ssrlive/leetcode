@@ -2,6 +2,7 @@
 
 // 488. Zuma Game
 // https://leetcode.com/problems/zuma-game/
+// https://leetcode.cn/problems/zuma-game/
 //
 // You are playing a variation of the game Zuma.
 //

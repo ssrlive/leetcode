@@ -2,6 +2,7 @@
 
 // 638. Shopping Offers
 // https://leetcode.com/problems/shopping-offers/
+// https://leetcode.cn/problems/shopping-offers/
 //
 // In LeetCode Store, there are n items to sell. Each item has a price. However, there are some special offers,
 // and a special offer consists of one or more different kinds of items with a sale price.

@@ -2,6 +2,7 @@
 
 // 476. Number Complement
 // https://leetcode.com/problems/number-complement/
+// https://leetcode.cn/problems/number-complement/
 //
 // The complement of an integer is the integer you get when you flip all the 0's to 1's and all the 1's to 0's in its binary representation.
 //
@@ -22,7 +23,7 @@
 //
 // Constraints:
 //
-// - 1 <= num < 231
+// - 1 <= num < 2^31
 //
 // Note: This question is the same as 1009: https://leetcode.com/problems/complement-of-base-10-integer/
 //

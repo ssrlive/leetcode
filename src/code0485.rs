@@ -2,6 +2,7 @@
 
 // 485. Max Consecutive Ones
 // https://leetcode.com/problems/max-consecutive-ones/
+// https://leetcode.cn/problems/max-consecutive-ones/
 //
 // Given a binary array nums, return the maximum number of consecutive 1's in the array.
 //
@@ -18,7 +19,7 @@
 //
 // Constraints:
 //
-// - 1 <= nums.length <= 105
+// - 1 <= nums.length <= 10^5
 // - nums[i] is either 0 or 1.
 //
 // Follow up: Could you find the maximum number of consecutive 1's without using any built-in function?

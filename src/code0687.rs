@@ -2,6 +2,7 @@
 
 // 687. Longest Univalue Path
 // https://leetcode.com/problems/longest-univalue-path/
+// https://leetcode.cn/problems/longest-univalue-path/
 //
 // Given the root of a binary tree, return the length of the longest path, where each node in the path has the same value.
 // This path may or may not pass through the root.

@@ -2,6 +2,7 @@
 
 // 478. Generate Random Point in a Circle
 // https://leetcode.com/problems/generate-random-point-in-a-circle/
+// https://leetcode.cn/problems/generate-random-point-in-a-circle/
 //
 // Given the radius and the position of the center of a circle, implement the function randPoint which generates a uniform random point inside the circle.
 //
@@ -26,9 +27,9 @@
 //
 // Constraints:
 //
-// - 0 < radius <= 108
-// - -107 <= x_center, y_center <= 107
-// - At most 3 * 104 calls will be made to randPoint.
+// - 0 < radius <= 10^8
+// - -10^7 <= x_center, y_center <= 10^7
+// - At most 3 * 10^4 calls will be made to randPoint.
 //
 
 use rand::{rngs::ThreadRng, Rng};

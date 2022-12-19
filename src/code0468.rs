@@ -2,6 +2,7 @@
 
 // 468. Validate IP Address
 // https://leetcode.com/problems/validate-ip-address/
+// https://leetcode.cn/problems/validate-ip-address/
 //
 // Given a string queryIP, return "IPv4" if IP is a valid IPv4 address,
 // "IPv6" if IP is a valid IPv6 address or "Neither" if IP is not a correct IP of any type.

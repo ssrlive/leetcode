@@ -2,6 +2,7 @@
 
 // 587. Erect the Fence
 // https://leetcode.com/problems/erect-the-fence/
+// https://leetcode.cn/problems/erect-the-fence/
 //
 // You are given an array trees where trees[i] = [xi, yi] represents the location of a tree in the garden.
 //

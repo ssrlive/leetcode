@@ -2,6 +2,7 @@
 
 // 495. Teemo Attacking
 // https://leetcode.com/problems/teemo-attacking/
+// https://leetcode.cn/problems/teemo-attacking/
 //
 // Our hero Teemo is attacking an enemy Ashe with poison attacks! When Teemo attacks Ashe, Ashe gets poisoned for a exactly duration seconds. More formally, an attack at second t will mean Ashe is poisoned during the inclusive time interval [t, t + duration - 1]. If Teemo attacks again before the poison effect ends, the timer for it is reset, and the poison effect will end duration seconds after the new attack.
 //
@@ -29,8 +30,8 @@
 //
 // Constraints:
 //
-// - 1 <= timeSeries.length <= 104
-// - 0 <= timeSeries[i], duration <= 107
+// - 1 <= timeSeries.length <= 10^4
+// - 0 <= timeSeries[i], duration <= 10^7
 // - timeSeries is sorted in non-decreasing order.
 //
 

@@ -2,6 +2,7 @@
 
 // 756. Pyramid Transition Matrix
 // https://leetcode.com/problems/pyramid-transition-matrix/
+// https://leetcode.cn/problems/pyramid-transition-matrix/
 //
 // You are stacking blocks to form a pyramid. Each block has a color, which is represented by a single letter.
 // Each row of blocks contains one less block than the row beneath it and is centered on top.

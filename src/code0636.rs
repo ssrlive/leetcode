@@ -2,6 +2,7 @@
 
 // 636. Exclusive Time of Functions
 // https://leetcode.com/problems/exclusive-time-of-functions/
+// https://leetcode.cn/problems/exclusive-time-of-functions/
 //
 // On a single-threaded CPU, we execute a program containing n functions. Each function has a unique ID between 0 and n-1.
 //

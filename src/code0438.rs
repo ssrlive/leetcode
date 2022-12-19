@@ -2,6 +2,7 @@
 
 // 438. Find All Anagrams in a String
 // https://leetcode.com/problems/find-all-anagrams-in-a-string/
+// https://leetcode.cn/problems/find-all-anagrams-in-a-string/
 //
 // Given two strings s and p, return an array of all the start indices of p's anagrams in s. You may return the answer in any order.
 //
@@ -26,10 +27,11 @@
 //
 // Constraints:
 //
-// 1 <= s.length, p.length <= 3 * 104
+// 1 <= s.length, p.length <= 3 * 10^4
 // s and p consist of lowercase English letters.
 //
 // Follow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
+//
 
 struct Solution;
 

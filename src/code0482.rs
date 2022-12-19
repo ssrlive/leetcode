@@ -2,6 +2,7 @@
 
 // 482. License Key Formatting
 // https://leetcode.com/problems/license-key-formatting/
+// https://leetcode.cn/problems/license-key-formatting/
 //
 // You are given a license key represented as a string s that consists of only alphanumeric characters and dashes.
 // The string is separated into n + 1 groups by n dashes. You are also given an integer k.
@@ -28,9 +29,9 @@
 //
 // Constraints:
 //
-// - 1 <= s.length <= 105
+// - 1 <= s.length <= 10^5
 // - s consists of English letters, digits, and dashes '-'.
-// - 1 <= k <= 104
+// - 1 <= k <= 10^4
 //
 // Follow up: Could you solve it in O(n) time and O(1) space?
 

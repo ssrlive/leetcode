@@ -2,6 +2,7 @@
 
 // 670. Maximum Swap
 // https://leetcode.com/problems/maximum-swap/
+// https://leetcode.cn/problems/maximum-swap/
 //
 // You are given an integer num. You can swap two digits at most once to get the maximum valued number.
 //

@@ -2,6 +2,7 @@
 
 // 662. Maximum Width of Binary Tree
 // https://leetcode.com/problems/maximum-width-of-binary-tree/
+// https://leetcode.cn/problems/maximum-width-of-binary-tree/
 //
 // Given the root of a binary tree, return the maximum width of the given tree.
 //

@@ -2,6 +2,7 @@
 
 // 459. Repeated Substring Pattern
 // https://leetcode.com/problems/repeated-substring-pattern/
+// https://leetcode.cn/problems/repeated-substring-pattern/
 //
 // Given a string s, check if it can be constructed by taking a substring of it and appending multiple copies of the substring together.
 //
@@ -24,7 +25,7 @@
 //
 // Constraints:
 //
-// - 1 <= s.length <= 104
+// - 1 <= s.length <= 10^4
 // - s consists of lowercase English letters.
 //
 

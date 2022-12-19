@@ -2,6 +2,7 @@
 
 // 753. Cracking the Safe
 // https://leetcode.com/problems/cracking-the-safe/description/
+// https://leetcode.cn/problems/cracking-the-safe/description/
 //
 // There is a safe protected by a password. The password is a sequence of n digits where each digit can be in the range [0, k - 1].
 //

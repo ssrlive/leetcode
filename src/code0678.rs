@@ -2,6 +2,7 @@
 
 // 678. Valid Parenthesis String
 // https://leetcode.com/problems/valid-parenthesis-string/
+// https://leetcode.cn/problems/valid-parenthesis-string/
 //
 // Given a string s containing only three types of characters: '(', ')' and '*', return true if s is valid.
 //

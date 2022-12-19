@@ -2,6 +2,7 @@
 
 // 456. 132 Pattern
 // https://leetcode.com/problems/132-pattern/
+// https://leetcode.cn/problems/132-pattern/
 //
 // Given an array of n integers nums, a 132 pattern is a subsequence of three integers
 // nums[i], nums[j] and nums[k] such that i < j < k and nums[i] < nums[k] < nums[j].
@@ -29,8 +30,8 @@
 // Constraints:
 //
 // - n == nums.length
-// - 1 <= n <= 2 * 105
-// - -109 <= nums[i] <= 109
+// - 1 <= n <= 2 * 10^5
+// - -10^9 <= nums[i] <= 10^9
 //
 
 struct Solution;

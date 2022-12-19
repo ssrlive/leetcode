@@ -2,6 +2,7 @@
 
 // 748. Shortest Completing Word
 // https://leetcode.com/problems/shortest-completing-word/
+// https://leetcode.cn/problems/shortest-completing-word/
 //
 // Given a string licensePlate and an array of strings words, find the shortest completing word in words.
 //

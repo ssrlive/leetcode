@@ -2,6 +2,7 @@
 
 // 743. Network Delay Time
 // https://leetcode.com/problems/network-delay-time/
+// https://leetcode.cn/problems/network-delay-time/
 //
 // You are given a network of n nodes, labeled from 1 to n. You are also given times, a list of travel times as directed edges times[i] = (ui, vi, wi),
 // where ui is the source node, vi is the target node, and wi is the time it takes for a signal to travel from source to target.

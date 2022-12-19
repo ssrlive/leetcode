@@ -2,6 +2,7 @@
 
 // 560. Subarray Sum Equals K
 // https://leetcode.com/problems/subarray-sum-equals-k/
+// https://leetcode.cn/problems/subarray-sum-equals-k/
 //
 // Given an array of integers nums and an integer k, return the total number of subarrays whose sum equals to k.
 //

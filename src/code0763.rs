@@ -2,6 +2,7 @@
 
 // 763. Partition Labels
 // https://leetcode.com/problems/partition-labels/
+// https://leetcode.cn/problems/partition-labels/
 //
 // You are given a string s. We want to partition the string into as many parts as possible so that each letter appears in at most one part.
 //

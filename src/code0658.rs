@@ -2,6 +2,7 @@
 
 // 658. Find K Closest Elements
 // https://leetcode.com/problems/find-k-closest-elements/
+// https://leetcode.cn/problems/find-k-closest-elements/
 //
 // Given a sorted integer array arr, two integers k and x, return the k closest integers to x in the array.
 // The result should also be sorted in ascending order.

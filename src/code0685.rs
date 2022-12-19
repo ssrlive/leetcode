@@ -2,6 +2,7 @@
 
 // 685. Redundant Connection II
 // https://leetcode.com/problems/redundant-connection-ii/description/
+// https://leetcode.cn/problems/redundant-connection-ii/description/
 //
 // In this problem, a rooted tree is a directed graph such that, there is exactly one node (the root)
 // for which all other nodes are descendants of this node, plus every node has exactly one parent,

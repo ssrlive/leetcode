@@ -2,6 +2,7 @@
 
 // 436. Find Right Interval
 // https://leetcode.com/problems/find-right-interval/
+// https://leetcode.cn/problems/find-right-interval/
 //
 // You are given an array of intervals, where intervals[i] = [starti, endi] and each starti is unique.
 //
@@ -32,9 +33,9 @@
 //
 // Constraints:
 //
-// - 1 <= intervals.length <= 2 * 104
+// - 1 <= intervals.length <= 2 * 10^4
 // - intervals[i].length == 2
-// - -106 <= starti <= endi <= 106
+// - -10^6 <= starti <= endi <= 10^6
 // - The start point of each interval is unique.
 //
 

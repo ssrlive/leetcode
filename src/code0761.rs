@@ -2,6 +2,7 @@
 
 // 761. Special Binary String
 // https://leetcode.com/problems/special-binary-string/
+// https://leetcode.cn/problems/special-binary-string/
 //
 // Special binary strings are binary strings with the following two properties:
 //

@@ -2,6 +2,7 @@
 
 // 558. Logical OR of Two Binary Grids Represented as Quad-Trees
 // https://leetcode.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees/
+// https://leetcode.cn/problems/logical-or-of-two-binary-grids-represented-as-quad-trees/
 //
 // A Binary Matrix is a matrix in which all the elements are either 0 or 1.
 //

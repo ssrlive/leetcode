@@ -2,6 +2,7 @@
 
 // 592. Fraction Addition and Subtraction
 // https://leetcode.com/problems/fraction-addition-and-subtraction/
+// https://leetcode.cn/problems/fraction-addition-and-subtraction/
 //
 // Given a string expression representing an expression of fraction addition and subtraction,
 // return the calculation result in string format.
@@ -34,6 +35,7 @@
 // - The number of given fractions will be in the range [1, 10].
 // - The numerator and denominator of the final result are guaranteed to be valid and in the range of 32-bit int.
 //
+
 #[derive(Debug, PartialEq, Eq)]
 struct Fraction {
     sign: i32,

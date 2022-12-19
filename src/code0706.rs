@@ -2,6 +2,7 @@
 
 // 706. Design HashMap
 // https://leetcode.com/problems/design-hashmap/
+// https://leetcode.cn/problems/design-hashmap/
 //
 // Design a HashMap without using any built-in hash table libraries.
 //

@@ -2,6 +2,7 @@
 
 // 497. Random Point in Non-overlapping Rectangles
 // https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/
+// https://leetcode.cn/problems/random-point-in-non-overlapping-rectangles/
 //
 // You are given an array of non-overlapping axis-aligned rectangles rects where rects[i] = [ai, bi, xi, yi] indicates that (ai, bi) is the bottom-left corner point of the ith rectangle and (xi, yi) is the top-right corner point of the ith rectangle. Design an algorithm to pick a random integer point inside the space covered by one of the given rectangles. A point on the perimeter of a rectangle is included in the space covered by the rectangle.
 //
@@ -34,8 +35,8 @@
 //
 // - 1 <= rects.length <= 100
 // - rects[i].length == 4
-// - -109 <= ai < xi <= 109
-// - -109 <= bi < yi <= 109
+// - -10^9 <= ai < xi <= 10^9
+// - -10^9 <= bi < yi <= 10^9
 // - xi - ai <= 2000
 // - yi - bi <= 2000
 // - All the rectangles do not overlap.

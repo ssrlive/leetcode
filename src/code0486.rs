@@ -2,6 +2,7 @@
 
 // 486. Predict the Winner
 // https://leetcode.com/problems/predict-the-winner/
+// https://leetcode.cn/problems/predict-the-winner/
 //
 // You are given an integer array nums. Two players are playing a game with this array: player 1 and player 2.
 //
@@ -32,7 +33,7 @@
 // Constraints:
 //
 // - 1 <= nums.length <= 20
-// - 0 <= nums[i] <= 107
+// - 0 <= nums[i] <= 10^7
 //
 // Follow up: Could you do it recursively?
 

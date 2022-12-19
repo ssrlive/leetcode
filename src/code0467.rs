@@ -2,6 +2,7 @@
 
 // 467. Unique Substrings in Wraparound String
 // https://leetcode.com/problems/unique-substrings-in-wraparound-string/
+// https://leetcode.cn/problems/unique-substrings-in-wraparound-string/
 //
 // We define the string base to be the infinite wraparound string of "abcdefghijklmnopqrstuvwxyz", so base will look like this:
 //
@@ -29,7 +30,7 @@
 //
 // Constraints:
 //
-// - 1 <= s.length <= 105
+// - 1 <= s.length <= 10^5
 // - s consists of lowercase English letters.
 //
 

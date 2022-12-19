@@ -2,6 +2,7 @@
 
 // 516. Longest Palindromic Subsequence
 // https://leetcode.com/problems/longest-palindromic-subsequence/
+// https://leetcode.cn/problems/longest-palindromic-subsequence/
 //
 // Given a string s, find the longest palindromic subsequence's length in s.
 //

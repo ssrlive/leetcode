@@ -2,6 +2,7 @@
 
 // 481. Magical String
 // https://leetcode.com/problems/magical-string/
+// https://leetcode.cn/problems/magical-string/
 //
 // A magical string s consists of only '1' and '2' and obeys the following rules:
 //
@@ -23,7 +24,7 @@
 //
 // Constraints:
 //
-// - 1 <= n <= 105
+// - 1 <= n <= 10^5
 //
 // Follow up: Could you solve it in O(n) time?
 

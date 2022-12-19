@@ -2,6 +2,7 @@
 
 // 773. Sliding Puzzle
 // https://leetcode.com/problems/sliding-puzzle/
+// https://leetcode.cn/problems/sliding-puzzle/
 //
 // On an 2 x 3 board, there are five tiles labeled from 1 to 5, and an empty square represented by 0.
 // A move consists of choosing 0 and a 4-directionally adjacent number and swapping it.

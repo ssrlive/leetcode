@@ -2,6 +2,7 @@
 
 // 622. Design Circular Queue
 // https://leetcode.com/problems/design-circular-queue/
+// https://leetcode.cn/problems/design-circular-queue/
 //
 // Design your implementation of the circular queue. The circular queue is a linear data structure in which the operations
 // are performed based on FIFO (First In First Out) principle, and the last position is connected back

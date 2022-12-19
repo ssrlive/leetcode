@@ -2,6 +2,7 @@
 
 // 475. Heaters
 // https://leetcode.com/problems/heaters/
+// https://leetcode.cn/problems/heaters/
 //
 // Winter is coming! During the contest, your first job is to design a standard heater with a fixed warm radius to warm all the houses.
 //
@@ -30,8 +31,8 @@
 //
 // Constraints:
 //
-// - 1 <= houses.length, heaters.length <= 3 * 104
-// - 1 <= houses[i], heaters[i] <= 109
+// - 1 <= houses.length, heaters.length <= 3 * 10^4
+// - 1 <= houses[i], heaters[i] <= 10^9
 //
 
 struct Solution;

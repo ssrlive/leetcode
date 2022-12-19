@@ -2,6 +2,7 @@
 
 // 715. Range Module
 // https://leetcode.com/problems/range-module/
+// https://leetcode.cn/problems/range-module/
 //
 // A Range Module is a module that tracks ranges of numbers. Design a data structure to track the
 // ranges represented as half-open intervals and query about them.

@@ -2,6 +2,7 @@
 
 // 502. IPO
 // https://leetcode.com/problems/ipo/
+// https://leetcode.cn/problems/ipo/
 //
 // Suppose LeetCode will start its IPO soon. In order to sell a good price of its shares to Venture Capital, LeetCode would like to work on some projects to increase its capital before the IPO. Since it has limited resources, it can only finish at most k distinct projects before the IPO. Help LeetCode design the best way to maximize its total capital after finishing at most k distinct projects.
 //
@@ -31,13 +32,13 @@
 //
 // Constraints:
 //
-// - 1 <= k <= 105
-// - 0 <= w <= 109
+// - 1 <= k <= 10^5
+// - 0 <= w <= 10^9
 // - n == profits.length
 // - n == capital.length
-// - 1 <= n <= 105
-// - 0 <= profits[i] <= 104
-// - 0 <= capital[i] <= 109
+// - 1 <= n <= 10^5
+// - 0 <= profits[i] <= 10^4
+// - 0 <= capital[i] <= 10^9
 //
 
 struct Solution;

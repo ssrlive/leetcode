@@ -2,6 +2,7 @@
 
 // 452. Minimum Number of Arrows to Burst Balloons
 // https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/
+// https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons/
 //
 // There are some spherical balloons taped onto a flat wall that represents the XY-plane.
 // The balloons are represented as a 2D integer array points where points[i] = [xstart, xend]
@@ -39,9 +40,9 @@
 //
 // Constraints:
 //
-// - 1 <= points.length <= 105
+// - 1 <= points.length <= 10^5
 // - points[i].length == 2
-// - -231 <= xstart < xend <= 231 - 1
+// - -2^31 <= xstart < xend <= 2^31 - 1
 //
 
 struct Solution;

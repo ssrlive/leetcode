@@ -2,6 +2,7 @@
 
 // 508. Most Frequent Subtree Sum
 // https://leetcode.com/problems/most-frequent-subtree-sum/
+// https://leetcode.cn/problems/most-frequent-subtree-sum/
 //
 // Given the root of a binary tree, return the most frequent subtree sum. If there is a tie, return all the values with the highest frequency in any order.
 //
@@ -19,8 +20,8 @@
 //
 // Constraints:
 //
-// - The number of nodes in the tree is in the range [1, 104].
-// - -105 <= Node.val <= 105
+// - The number of nodes in the tree is in the range [1, 10^4].
+// - -10^5 <= Node.val <= 10^5
 //
 
 use crate::treenode::TreeNode;

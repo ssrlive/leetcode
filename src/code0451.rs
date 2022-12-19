@@ -2,6 +2,7 @@
 
 // 451. Sort Characters By Frequency
 // https://leetcode.com/problems/sort-characters-by-frequency/
+// https://leetcode.cn/problems/sort-characters-by-frequency/
 //
 // Given a string s, sort it in decreasing order based on the frequency of the characters. The frequency of a character is the number of times it appears in the string.
 //
@@ -30,7 +31,7 @@
 //
 // Constraints:
 //
-// - 1 <= s.length <= 5 * 105
+// - 1 <= s.length <= 5 * 10^5
 // - s consists of uppercase and lowercase English letters and digits.
 //
 

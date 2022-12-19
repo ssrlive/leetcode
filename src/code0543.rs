@@ -2,6 +2,7 @@
 
 // 543. Diameter of Binary Tree
 // https://leetcode.com/problems/diameter-of-binary-tree/
+// https://leetcode.cn/problems/diameter-of-binary-tree/
 //
 // Given the root of a binary tree, return the length of the diameter of the tree.
 //

@@ -2,6 +2,7 @@
 
 // 675. Cut Off Trees for Golf Event
 // https://leetcode.com/problems/cut-off-trees-for-golf-event/
+// https://leetcode.cn/problems/cut-off-trees-for-golf-event/
 //
 // You are asked to cut off all the trees in a forest for a golf event. The forest is represented as an m x n matrix. In this matrix:
 //

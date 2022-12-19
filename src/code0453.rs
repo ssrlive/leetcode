@@ -2,6 +2,7 @@
 
 // 453. Minimum Moves to Equal Array Elements
 // https://leetcode.com/problems/minimum-moves-to-equal-array-elements/
+// https://leetcode.cn/problems/minimum-moves-to-equal-array-elements/
 //
 // Given an integer array nums of size n, return the minimum number of moves required to make all array elements equal.
 //
@@ -22,8 +23,8 @@
 // Constraints:
 //
 // - n == nums.length
-// - 1 <= nums.length <= 105
-// - -109 <= nums[i] <= 109
+// - 1 <= nums.length <= 10^5
+// - -10^9 <= nums[i] <= 10^9
 // - The answer is guaranteed to fit in a 32-bit integer.
 //
 

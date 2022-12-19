@@ -2,6 +2,7 @@
 
 // 775. Global and Local Inversions
 // https://leetcode.com/problems/global-and-local-inversions/
+// https://leetcode.cn/problems/global-and-local-inversions/
 //
 // You are given an integer array nums of length n which represents a permutation of all the integers in the range [0, n - 1].
 //

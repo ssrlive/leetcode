@@ -2,6 +2,7 @@
 
 // 674. Longest Continuous Increasing Subsequence
 // https://leetcode.com/problems/longest-continuous-increasing-subsequence/
+// https://leetcode.cn/problems/longest-continuous-increasing-subsequence/
 //
 // Given an unsorted array of integers nums, return the length of the longest continuous increasing subsequence (i.e. subarray).
 // The subsequence must be strictly increasing.

@@ -2,6 +2,7 @@
 
 // 691. Stickers to Spell Word
 // https://leetcode.com/problems/stickers-to-spell-word/
+// https://leetcode.cn/problems/stickers-to-spell-word/
 //
 // We are given n different types of stickers. Each sticker has a lowercase English word on it.
 //

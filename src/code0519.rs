@@ -2,6 +2,7 @@
 
 // 519. Random Flip Matrix
 // https://leetcode.com/problems/random-flip-matrix/
+// https://leetcode.cn/problems/random-flip-matrix/
 //
 // There is an m x n binary grid matrix with all the values set 0 initially. Design an algorithm to randomly pick an index (i, j) where matrix[i][j] == 0 and flips it to 1. All the indices (i, j) where matrix[i][j] == 0 should be equally likely to be returned.
 //
@@ -31,7 +32,7 @@
 //
 // Constraints:
 //
-// - 1 <= m, n <= 104
+// - 1 <= m, n <= 10^4
 // - There will be at least one free cell for each call to flip.
 // - At most 1000 calls will be made to flip and reset.
 //

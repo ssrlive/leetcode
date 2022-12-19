@@ -2,6 +2,7 @@
 
 // 576. Out of Boundary Paths
 // https://leetcode.com/problems/out-of-boundary-paths/
+// https://leetcode.cn/problems/out-of-boundary-paths/
 //
 // There is an m x n grid with a ball. The ball is initially at the position [startRow, startColumn].
 // You are allowed to move the ball to one of the four adjacent cells in the grid (possibly out of the grid crossing the grid boundary).

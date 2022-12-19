@@ -2,6 +2,7 @@
 
 // 749. Contain Virus
 // https://leetcode.com/problems/contain-virus/
+// https://leetcode.cn/problems/contain-virus/
 //
 // A virus is spreading rapidly, and your task is to quarantine the infected area by installing walls.
 //

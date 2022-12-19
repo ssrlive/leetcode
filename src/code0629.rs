@@ -2,6 +2,7 @@
 
 // 629. K Inverse Pairs Array
 // https://leetcode.com/problems/k-inverse-pairs-array/
+// https://leetcode.cn/problems/k-inverse-pairs-array/
 //
 // For an integer array nums, an inverse pair is a pair of integers [i, j] where 0 <= i < j < nums.length and nums[i] > nums[j].
 //

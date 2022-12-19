@@ -2,6 +2,7 @@
 
 // 522. Longest Uncommon Subsequence II
 // https://leetcode.com/problems/longest-uncommon-subsequence-ii/
+// https://leetcode.cn/problems/longest-uncommon-subsequence-ii/
 //
 // Given an array of strings strs, return the length of the longest uncommon subsequence between them. If the longest uncommon subsequence does not exist, return -1.
 //

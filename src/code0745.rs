@@ -2,6 +2,7 @@
 
 // 745. Prefix and Suffix Search
 // https://leetcode.com/problems/prefix-and-suffix-search/
+// https://leetcode.cn/problems/prefix-and-suffix-search/
 //
 // Design a special dictionary that searches the words in it by a prefix and a suffix.
 //

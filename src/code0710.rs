@@ -2,6 +2,7 @@
 
 // 710. Random Pick with Blacklist
 // https://leetcode.com/problems/random-pick-with-blacklist/
+// https://leetcode.cn/problems/random-pick-with-blacklist/
 //
 // You are given an integer n and an array of unique integers blacklist. Design an algorithm to pick a random integer
 // in the range [0, n - 1] that is not in blacklist. Any integer that is in the mentioned range and not in blacklist

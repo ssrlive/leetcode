@@ -2,6 +2,7 @@
 
 // 552. Student Attendance Record II
 // https://leetcode.com/problems/student-attendance-record-ii/
+// https://leetcode.cn/problems/student-attendance-record-ii/
 //
 // An attendance record for a student can be represented as a string where each character signifies whether the
 // student was absent, late, or present on that day. The record only contains the following three characters:
