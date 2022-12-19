@@ -563,6 +563,7 @@ mod code0977;
 
 mod code1047;
 
+mod code2465;
 mod code2481;
 mod code2482;
 mod code2483;
