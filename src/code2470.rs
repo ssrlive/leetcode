@@ -37,38 +37,37 @@ struct Solution;
 
 impl Solution {
     pub fn subarray_lcm(nums: Vec<i32>, k: i32) -> i32 {
-        use std::cmp::{max, min};
-
         fn gcd(a: i32, b: i32) -> i32 {
-            match ((a, b), (a & 1, b & 1)) {
-                ((x, y), _) if x == y => y,
-                ((0, x), _) | ((x, 0), _) => x,
-                ((x, y), (0, 1)) | ((y, x), (1, 0)) => gcd(x >> 1, y),
-                ((x, y), (0, 0)) => gcd(x >> 1, y >> 1) << 1,
-                ((x, y), (1, 1)) => {
-                    let (x, y) = (min(x, y), max(x, y));
-                    gcd((y - x) >> 1, x)
-                }
-                _ => unreachable!(),
+            if b == 0 {
+                a
+            } else {
+                gcd(b, a % b)
             }
         }
 
-        fn lcm(a: i32, b: i32) -> i32 {
-            a * b / gcd(a, b)
-        }
-
-        let n = nums.len();
         let mut ans = 0;
-        for i in 0..n {
-            let mut l = 1;
-            for &item in nums.iter().take(n).skip(i) {
-                l = lcm(l, item);
-                if l == k {
-                    ans += 1;
+        let mut arr = Vec::new();
+        let mut i0 = -1;
+        for (i, &num) in nums.iter().enumerate() {
+            if k % num > 0 {
+                arr.clear();
+                i0 = i as i32;
+                continue;
+            }
+            arr.push(vec![num, i as i32]);
+            let mut j = 0;
+            for k in 0..arr.len() {
+                arr[k][0] = arr[k][0] / gcd(arr[k][0], num) * num;
+                if arr[k][0] != arr[j][0] {
+                    j += 1;
+                    arr[j] = arr[k].clone();
+                } else {
+                    arr[j][1] = arr[k][1];
                 }
-                if l > k {
-                    break;
-                }
+            }
+            arr.truncate(j + 1);
+            if arr[0][0] == k {
+                ans += arr[0][1] - i0;
             }
         }
         ans
