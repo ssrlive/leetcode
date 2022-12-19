@@ -106,16 +106,9 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(
-        Solution::minimum_fuel_cost(vec![vec![0, 1], vec![0, 2], vec![0, 3]], 5),
-        3
-    );
-    assert_eq!(
-        Solution::minimum_fuel_cost(
-            vec![vec![3, 1], vec![3, 2], vec![1, 0], vec![0, 4], vec![0, 5], vec![4, 6]],
-            2
-        ),
-        7
-    );
+    let roads = vec![vec![0, 1], vec![0, 2], vec![0, 3]];
+    assert_eq!(Solution::minimum_fuel_cost(roads, 5), 3);
+    let roads = vec![vec![3, 1], vec![3, 2], vec![1, 0], vec![0, 4], vec![0, 5], vec![4, 6]];
+    assert_eq!(Solution::minimum_fuel_cost(roads, 2), 7);
     assert_eq!(Solution::minimum_fuel_cost(vec![], 1), 0);
 }
