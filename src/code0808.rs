@@ -2,6 +2,7 @@
 
 // 808. Soup Servings
 // https://leetcode.com/problems/soup-servings/
+// https://leetcode.cn/problems/soup-servings/
 //
 // There are two types of soup: type A and type B. Initially, we have n ml of each type of soup. There are four kinds of operations:
 //

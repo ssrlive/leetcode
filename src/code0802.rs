@@ -2,6 +2,7 @@
 
 // 802. Find Eventual Safe States
 // https://leetcode.com/problems/find-eventual-safe-states/
+// https://leetcode.cn/problems/find-eventual-safe-states/
 //
 // There is a directed graph of n nodes with each node labeled from 0 to n - 1. The graph is represented by a 0-indexed 2D integer array graph
 // where graph[i] is an integer array of nodes adjacent to node i, meaning there is an edge from node i to each node in graph[i].

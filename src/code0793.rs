@@ -2,6 +2,7 @@
 
 // 793. Preimage Size of Factorial Zeroes Function
 // https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/
+// https://leetcode.cn/problems/preimage-size-of-factorial-zeroes-function/
 //
 // Let f(x) be the number of zeroes at the end of x!. Recall that x! = 1 * 2 * 3 * ... * x and by convention, 0! = 1.
 //

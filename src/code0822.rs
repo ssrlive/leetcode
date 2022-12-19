@@ -2,6 +2,7 @@
 
 // 822. Card Flipping Game
 // https://leetcode.com/problems/card-flipping-game/
+// https://leetcode.cn/problems/card-flipping-game/
 //
 // You are given two 0-indexed integer arrays fronts and backs of length n, where the ith card has the positive integer fronts[i] printed on the front
 // and backs[i] printed on the back. Initially, each card is placed on a table such that the front number is facing up and the other is facing down.

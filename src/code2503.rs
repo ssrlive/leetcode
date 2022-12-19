@@ -2,6 +2,7 @@
 
 // 2503. Maximum Number of Points From Grid Queries
 // https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/
+// https://leetcode.cn/problems/maximum-number-of-points-from-grid-queries/
 //
 // You are given an m x n integer matrix grid and an array queries of size k.
 //

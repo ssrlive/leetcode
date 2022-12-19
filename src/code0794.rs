@@ -2,6 +2,7 @@
 
 // 794. Valid Tic-Tac-Toe State
 // https://leetcode.com/problems/valid-tic-tac-toe-state/
+// https://leetcode.cn/problems/valid-tic-tac-toe-state/
 //
 // Given a Tic-Tac-Toe board as a string array board, return true if and only if it is possible
 // to reach this board position during the course of a valid tic-tac-toe game.

@@ -2,6 +2,7 @@
 
 // 782. Transform to Chessboard
 // https://leetcode.com/problems/transform-to-chessboard/
+// https://leetcode.cn/problems/transform-to-chessboard/
 //
 // You are given an n x n binary grid board. In each move, you can swap any two rows with each other, or any two columns with each other.
 //

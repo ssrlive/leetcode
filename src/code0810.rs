@@ -2,6 +2,7 @@
 
 // 810. Chalkboard XOR Game
 // https://leetcode.com/problems/chalkboard-xor-game/
+// https://leetcode.cn/problems/chalkboard-xor-game/
 //
 // You are given an array of integers nums represents the numbers written on a chalkboard.
 //

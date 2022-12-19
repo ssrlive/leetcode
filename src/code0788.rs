@@ -2,6 +2,7 @@
 
 // 788. Rotated Digits
 // https://leetcode.com/problems/rotated-digits/
+// https://leetcode.cn/problems/rotated-digits/
 //
 // An integer x is a good if after rotating each digit individually by 180 degrees, we get a valid number that is different from x.
 // Each digit must be rotated - we cannot choose to leave it alone.

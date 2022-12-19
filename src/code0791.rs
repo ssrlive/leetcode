@@ -2,6 +2,7 @@
 
 // 791. Custom Sort String
 // https://leetcode.com/problems/custom-sort-string/
+// https://leetcode.cn/problems/custom-sort-string/
 //
 // You are given two strings order and s. All the characters of order are unique and were sorted in some custom order previously.
 //

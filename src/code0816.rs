@@ -2,6 +2,7 @@
 
 // 816. Ambiguous Coordinates
 // https://leetcode.com/problems/ambiguous-coordinates/
+// https://leetcode.cn/problems/ambiguous-coordinates/
 //
 // We had some 2-dimensional coordinates, like "(1, 3)" or "(2, 0.5)". Then, we removed all commas, decimal points, and spaces and ended up with the string s.
 //

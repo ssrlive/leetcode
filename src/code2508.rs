@@ -42,67 +42,6 @@
 // - There are no repeated edges.
 //
 
-/*
-// java solution
-
-    public boolean isPossible(int n, List<List<Integer>> edges) {
-        List<List<Integer>> adj = new ArrayList<>();
-        int[] node_degree = new int[n+1];
-
-        for(int i=0;i<=n;i++){
-            adj.add(new ArrayList<>());
-        }
-
-        for (List<Integer> c:edges){
-            int x = c.get(0);
-            int y = c.get(1);
-            adj.get(x).add(y);
-            adj.get(y).add(x);
-            node_degree[x]++;
-            node_degree[y]++;
-        }
-
-        List<Integer> oddList = new ArrayList<>();
-        // add all the odd degree node into the another list, that we can easily iterate
-        for (int i=0;i<=n;i++){
-            if (node_degree[i] % 2 == 1){
-                oddList.add(i);
-            }
-        }
-        // if there is no odd degree node
-        if (oddList.size() == 0) return true;
-        // if there is two odd degree node
-        else if (oddList.size() == 2){
-            int a = oddList.get(0);
-            int b = oddList.get(1);
-            if (checkLegal(adj,a,b)) return true;
-            // n = 4, edges = [[1,2],[3,4]] this is the test case of below code
-            for (int i=1;i<=n;i++){
-                if (i == a || i == b) continue;
-                if (checkLegal(adj,i,a) &&  checkLegal(adj,i,b)) return true;
-            }
-        }
-        // if there is four odd degree node
-        else if (oddList.size() == 4){
-            int n1 = oddList.get(0);
-            int n2 = oddList.get(1);
-            int n3 = oddList.get(2);
-            int n4 = oddList.get(3);
-            if (checkLegal(adj,n1,n2) && checkLegal(adj,n3,n4)) return true;
-            if (checkLegal(adj,n2,n3) && checkLegal(adj,n1,n4)) return true;
-            if (checkLegal(adj,n1,n3) && checkLegal(adj,n2,n4)) return true;
-        }
-        return false;
-    }
-
-    private boolean checkLegal(List<List<Integer>> adj,int a,int b){
-        for (int val:adj.get(a)) if (val == b) return false;
-        for (int val:adj.get(b)) if (val == a) return false;
-        return true;
-    }
-
-*/
-
 struct Solution;
 
 impl Solution {

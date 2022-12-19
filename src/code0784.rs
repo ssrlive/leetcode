@@ -2,6 +2,7 @@
 
 // 784. Letter Case Permutation
 // https://leetcode.com/problems/letter-case-permutation/
+// https://leetcode.cn/problems/letter-case-permutation/
 //
 // Given a string s, you can transform every letter individually to be lowercase or uppercase to create another string.
 //

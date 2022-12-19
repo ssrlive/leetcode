@@ -2,6 +2,7 @@
 
 // 817. Linked List Components
 // https://leetcode.com/problems/linked-list-components/
+// https://leetcode.cn/problems/linked-list-components/
 //
 // You are given the head of a linked list containing unique integer values and an integer array nums that is a subset of the linked list values.
 //

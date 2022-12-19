@@ -2,6 +2,7 @@
 
 // 825. Friends Of Appropriate Ages
 // https://leetcode.com/problems/friends-of-appropriate-ages/
+// https://leetcode.cn/problems/friends-of-appropriate-ages/
 //
 // There are n persons on a social media website. You are given an integer array ages where ages[i] is the age of the ith person.
 //

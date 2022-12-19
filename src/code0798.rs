@@ -2,6 +2,7 @@
 
 // 798. Smallest Rotation with Highest Score
 // https://leetcode.com/problems/smallest-rotation-with-highest-score/
+// https://leetcode.cn/problems/smallest-rotation-with-highest-score/
 //
 // You are given an array nums. You can rotate it by a non-negative integer k so that the array becomes [nums[k],
 // nums[k + 1], ... nums[nums.length - 1], nums[0], nums[1], ..., nums[k-1]].

@@ -2,6 +2,7 @@
 
 // 824. Goat Latin
 // https://leetcode.com/problems/goat-latin/
+// https://leetcode.cn/problems/goat-latin/
 //
 // You are given a string sentence that consist of words separated by spaces. Each word consists of lowercase and uppercase letters only.
 //
@@ -59,13 +60,13 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(
-        Solution::to_goat_latin("I speak Goat Latin".to_string()),
-        "Imaa peaksmaaa oatGmaaaa atinLmaaaaa".to_string()
-    );
-    assert_eq!(
-        Solution::to_goat_latin("The quick brown fox jumped over the lazy dog".to_string()),
+    let sentence = "I speak Goat Latin".to_string();
+    let expected = "Imaa peaksmaaa oatGmaaaa atinLmaaaaa".to_string();
+    assert_eq!(Solution::to_goat_latin(sentence), expected);
+
+    let sentence = "The quick brown fox jumped over the lazy dog".to_string();
+    let expected =
         "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa"
-            .to_string()
-    );
+            .to_string();
+    assert_eq!(Solution::to_goat_latin(sentence), expected);
 }

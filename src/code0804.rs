@@ -2,6 +2,7 @@
 
 // 804. Unique Morse Code Words
 // https://leetcode.com/problems/unique-morse-code-words/
+// https://leetcode.cn/problems/unique-morse-code-words/
 //
 // International Morse Code defines a standard encoding where each letter is mapped to a series of dots and dashes, as follows:
 //

@@ -2,6 +2,7 @@
 
 // 823. Binary Trees With Factors
 // https://leetcode.com/problems/binary-trees-with-factors/
+// https://leetcode.cn/problems/binary-trees-with-factors/
 //
 // Given an array of unique integers, arr, where each integer arr[i] is strictly greater than 1.
 //
@@ -26,7 +27,7 @@
 // Constraints:
 //
 // - 1 <= arr.length <= 1000
-// - 2 <= arr[i] <= 109
+// - 2 <= arr[i] <= 10^9
 // - All the values of arr are unique.
 //
 

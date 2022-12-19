@@ -2,6 +2,7 @@
 
 // 813. Largest Sum of Averages
 // https://leetcode.com/problems/largest-sum-of-averages/
+// https://leetcode.cn/problems/largest-sum-of-averages/
 //
 // You are given an integer array nums and an integer k. You can partition the array into at most k non-empty adjacent subarrays.
 // The score of a partition is the sum of the averages of each subarray.

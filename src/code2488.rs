@@ -2,6 +2,7 @@
 
 // 2488. Count Number of Nice Subarrays
 // https://leetcode.com/problems/count-number-of-nice-subarrays/
+// https://leetcode.cn/problems/count-number-of-nice-subarrays/
 //
 // You are given an array nums of size n consisting of distinct integers from 1 to n and a positive integer k.
 //

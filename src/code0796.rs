@@ -2,6 +2,7 @@
 
 // 796. Rotate String
 // https://leetcode.com/problems/rotate-string/
+// https://leetcode.cn/problems/rotate-string/
 //
 // Given two strings s and goal, return true if and only if s can become goal after some number of shifts on s.
 //

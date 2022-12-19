@@ -2,6 +2,7 @@
 
 // 820. Short Encoding of Words
 // https://leetcode.com/problems/short-encoding-of-words/
+// https://leetcode.cn/problems/short-encoding-of-words/
 //
 // A valid encoding of an array of words is any reference string s and array of indices indices such that:
 //

@@ -2,6 +2,7 @@
 
 // 789. Escape the Ghosts
 // https://leetcode.com/problems/escape-the-ghosts/
+// https://leetcode.cn/problems/escape-the-ghosts/
 //
 // You are playing a simplified PAC-MAN game on an infinite 2-D grid. You start at the point [0, 0],
 // and you are given a destination point target = [xtarget, ytarget] that you are trying to get to.

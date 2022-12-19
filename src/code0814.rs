@@ -2,6 +2,7 @@
 
 // 814. Binary Tree Pruning
 // https://leetcode.com/problems/binary-tree-pruning/
+// https://leetcode.cn/problems/binary-tree-pruning/
 //
 // Given the root of a binary tree, return the same tree where every subtree (of the given tree) not containing a 1 has been removed.
 //

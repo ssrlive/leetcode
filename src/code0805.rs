@@ -2,6 +2,7 @@
 
 // 805. Split Array With Same Average
 // https://leetcode.com/problems/split-array-with-same-average/
+// https://leetcode.cn/problems/split-array-with-same-average/
 //
 // You are given an integer array nums.
 //

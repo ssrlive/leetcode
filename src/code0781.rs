@@ -2,6 +2,7 @@
 
 // 781. Rabbits in Forest
 // https://leetcode.com/problems/rabbits-in-forest/
+// https://leetcode.cn/problems/rabbits-in-forest/
 //
 // There is a forest with an unknown number of rabbits. We asked n rabbits "How many rabbits have the same color as you?"
 // and collected the answers in an integer array answers where answers[i] is the answer of the ith rabbit.

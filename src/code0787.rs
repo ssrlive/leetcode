@@ -2,6 +2,7 @@
 
 // 787. Cheapest Flights Within K Stops
 // https://leetcode.com/problems/cheapest-flights-within-k-stops/
+// https://leetcode.cn/problems/cheapest-flights-within-k-stops/
 //
 // There are n cities connected by some number of flights. You are given an array flights where flights[i] = [fromi, toi, pricei]
 // indicates that there is a flight from city fromi to city toi with cost pricei.
@@ -41,7 +42,7 @@
 // - flights[i].length == 3
 // - 0 <= fromi, toi < n
 // - fromi != toi
-// - 1 <= pricei <= 104
+// - 1 <= pricei <= 10^4
 // - There will not be any multiple flights between two cities.
 // - 0 <= src, dst, k < n
 // - src != dst
