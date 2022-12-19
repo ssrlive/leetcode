@@ -2,6 +2,7 @@
 
 // 160. Intersection of Two Linked Lists
 // https://leetcode.com/problems/intersection-of-two-linked-lists/
+// https://leetcode.cn/problems/intersection-of-two-linked-lists/
 //
 // Given the heads of two singly linked-lists headA and headB, return the node at which the two lists intersect.
 // If the two linked lists have no intersection at all, return null.
@@ -21,6 +22,7 @@
 // - skipB - The number of nodes to skip ahead in listB (starting from the head) to get to the intersected node.
 //
 // The judge will then create the linked structure based on these inputs and pass the two heads, headA and headB to your program. If you correctly return the intersected node, then your solution will be accepted.
+//
 
 #[derive(Debug, PartialEq, Eq)]
 pub struct ListNode {

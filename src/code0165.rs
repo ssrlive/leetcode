@@ -2,6 +2,7 @@
 
 // 165. Compare Version Numbers
 // https://leetcode.com/problems/compare-version-numbers/
+// https://leetcode.cn/problems/compare-version-numbers/
 //
 // Given two version numbers, version1 and version2, compare them.
 //

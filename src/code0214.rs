@@ -2,6 +2,7 @@
 
 // 214. Shortest Palindrome
 // https://leetcode.com/problems/shortest-palindrome/
+// https://leetcode.cn/problems/shortest-palindrome/
 //
 // You are given a string s. You can convert s to a palindrome by adding characters in front of it.
 //
@@ -21,6 +22,7 @@
 //
 // 0 <= s.length <= 5 * 104
 // s consists of lowercase English letters only.
+//
 
 struct Solution;
 

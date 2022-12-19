@@ -2,6 +2,7 @@
 
 // 332. Reconstruct Itinerary
 // https://leetcode.com/problems/reconstruct-itinerary/
+// https://leetcode.cn/problems/reconstruct-itinerary/
 //
 // You are given a list of airline tickets where tickets[i] = [fromi, toi] represent the departure
 // and the arrival airports of one flight. Reconstruct the itinerary in order and return it.

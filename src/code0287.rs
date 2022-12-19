@@ -2,6 +2,7 @@
 
 // 287. Find the Duplicate Number
 // https://leetcode.com/problems/find-the-duplicate-number/
+// https://leetcode.cn/problems/find-the-duplicate-number/
 //
 // Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.
 //
@@ -21,10 +22,10 @@
 //
 // Constraints:
 //
-// 1 <= n <= 105
-// nums.length == n + 1
-// 1 <= nums[i] <= n
-// All the integers in nums appear only once except for precisely one integer which appears two or more times.
+// - 1 <= n <= 10^5
+// - nums.length == n + 1
+// - 1 <= nums[i] <= n
+// - All the integers in nums appear only once except for precisely one integer which appears two or more times.
 //
 // Follow up:
 //

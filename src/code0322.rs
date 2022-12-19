@@ -2,6 +2,7 @@
 
 // 322. Coin Change
 // https://leetcode.com/problems/coin-change/
+// https://leetcode.cn/problems/coin-change/
 //
 // You are given an integer array coins representing coins of different denominations
 // and an integer amount representing a total amount of money.
@@ -30,8 +31,8 @@
 // Constraints:
 //
 // - 1 <= coins.length <= 12
-// - 1 <= coins[i] <= 231 - 1
-// - 0 <= amount <= 104
+// - 1 <= coins[i] <= 2^31 - 1
+// - 0 <= amount <= 10^4
 //
 
 struct Solution;

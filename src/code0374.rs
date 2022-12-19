@@ -2,6 +2,7 @@
 
 // 374. Guess Number Higher or Lower
 // https://leetcode.com/problems/guess-number-higher-or-lower/
+// https://leetcode.cn/problems/guess-number-higher-or-lower/
 //
 // We are playing the Guess Game. The game is as follows:
 //
@@ -38,8 +39,8 @@
 //
 // Constraints:
 //
-// 1 <= n <= 231 - 1
-// 1 <= pick <= n
+// -  1 <= n <= 2^31 - 1
+// -  1 <= pick <= n
 //
 
 struct Solution;

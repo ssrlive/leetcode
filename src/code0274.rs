@@ -2,6 +2,7 @@
 
 // 274. H-Index
 // https://leetcode.com/problems/h-index/
+// https://leetcode.cn/problems/h-index/
 //
 // Given an array of integers citations where citations[i] is the number of citations a researcher received for their ith paper, return compute the researcher's h-index.
 //

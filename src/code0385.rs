@@ -2,6 +2,7 @@
 
 // 385. Mini Parser
 // https://leetcode.com/problems/mini-parser/
+// https://leetcode.cn/problems/mini-parser/
 //
 // Given a nested list of integers represented as a string, implement a parser to deserialize it.
 //

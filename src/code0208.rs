@@ -2,6 +2,7 @@
 
 // 208. Implement Trie (Prefix Tree)
 // https://leetcode.com/problems/implement-trie-prefix-tree/
+// https://leetcode.cn/problems/implement-trie-prefix-tree/
 //
 // Implement a trie with insert, search, and startsWith methods.
 //
@@ -20,6 +21,7 @@
 //
 // You may assume that all inputs are consist of lowercase letters a-z.
 // All inputs are guaranteed to be non-empty strings.
+//
 
 use std::collections::HashMap;
 

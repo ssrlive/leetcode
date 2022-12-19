@@ -2,6 +2,7 @@
 
 // 321. Create Maximum Number
 // https://leetcode.com/problems/create-maximum-number/
+// https://leetcode.cn/problems/create-maximum-number/
 //
 // You are given two integer arrays nums1 and nums2 of lengths m and n respectively.
 // nums1 and nums2 represent the digits of two numbers. You are also given an integer k.

@@ -2,6 +2,7 @@
 
 // 327. Count of Range Sum
 // https://leetcode.com/problems/count-of-range-sum/
+// https://leetcode.cn/problems/count-of-range-sum/
 //
 // Given an integer array nums, return the number of range sums that lie in
 // [lower, upper] inclusive.

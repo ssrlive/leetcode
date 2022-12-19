@@ -2,6 +2,7 @@
 
 // 172. Factorial Trailing Zeroes
 // https://leetcode.com/problems/factorial-trailing-zeroes/
+// https://leetcode.cn/problems/factorial-trailing-zeroes/
 //
 // Given an integer n, return the number of trailing zeroes in n!.
 //

@@ -2,6 +2,7 @@
 
 // 263. Ugly Numbers
 // https://leetcode.com/problems/ugly-number/
+// https://leetcode.cn/problems/ugly-number/
 //
 // An ugly number is a positive integer whose prime factors are limited to 2, 3, and 5.
 //
@@ -27,7 +28,7 @@
 //
 // Constraints:
 //
-// -231 <= n <= 231 - 1
+// - -2^31 <= n <= 2^31 - 1
 //
 
 struct Solution;

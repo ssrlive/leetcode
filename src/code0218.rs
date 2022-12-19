@@ -2,6 +2,7 @@
 
 // 218. The Skyline Problem
 // https://leetcode.com/problems/the-skyline-problem/
+// https://leetcode.cn/problems/the-skyline-problem/
 //
 // A city's skyline is the outer contour of the silhouette formed by all the buildings in that city
 // when viewed from a distance. Given the locations and heights of all the buildings,
@@ -43,6 +44,7 @@
 // 0 <= lefti < righti <= 231 - 1
 // 1 <= heighti <= 231 - 1
 // buildings is sorted by lefti in non-decreasing order.
+//
 
 struct Solution;
 

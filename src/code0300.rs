@@ -2,6 +2,7 @@
 
 // 300. Longest Increasing Subsequence
 // https://leetcode.com/problems/longest-increasing-subsequence/
+// https://leetcode.cn/problems/longest-increasing-subsequence/
 //
 // Given an integer array nums, return the length of the longest strictly increasing subsequence.
 //
@@ -27,10 +28,11 @@
 //
 // Constraints:
 //
-// 1 <= nums.length <= 2500
-// -104 <= nums[i] <= 104
+// - 1 <= nums.length <= 2500
+// - -10^4 <= nums[i] <= 10^4
 //
 // Follow up: Can you come up with an algorithm that runs in O(n log(n)) time complexity?
+//
 
 struct Solution;
 

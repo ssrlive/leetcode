@@ -2,6 +2,7 @@
 
 // 386. Lexicographical Numbers
 // https://leetcode.com/problems/lexicographical-numbers/
+// https://leetcode.cn/problems/lexicographical-numbers/
 //
 // Given an integer n, return 1 - n in lexicographical order.
 //
@@ -17,7 +18,8 @@
 //
 // Constraints:
 //
-// 1 <= n <= 5 * 10^4
+// -  1 <= n <= 5 * 10^4
+//
 
 struct Solution;
 

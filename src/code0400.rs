@@ -2,6 +2,7 @@
 
 // 400. Nth Digit
 // https://leetcode.com/problems/nth-digit/
+// https://leetcode.cn/problems/nth-digit/
 //
 // Given an integer n, return the nth digit of the infinite integer sequence [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...].
 //
@@ -18,7 +19,7 @@
 //
 // Constraints:
 //
-// - 1 <= n <= 2^31 - 1
+// -  1 <= n <= 2^31 - 1
 //
 
 struct Solution;

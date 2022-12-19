@@ -2,9 +2,10 @@
 
 // 391. Perfect Rectangle
 // https://leetcode.com/problems/perfect-rectangle/
+// https://leetcode.cn/problems/perfect-rectangle/
 //
-// Given an array rectangles where rectangles[i] = [xi, yi, ai, bi] represents an axis-aligned rectangle.
-// The bottom-left point of the rectangle is (xi, yi) and the top-right point of it is (ai, bi).
+// Given an array rectangles where rectangles[i] = [x[i], y[i], a[i], b[i]] represents an axis-aligned rectangle.
+// The bottom-left point of the rectangle is (x[i], y[i]) and the top-right point of it is (a[i], b[i]).
 //
 // Return true if all the rectangles together form an exact cover of a rectangular region.
 //
@@ -28,9 +29,9 @@
 //
 // Constraints:
 //
-// - 1 <= rectangles.length <= 2 * 104
+// - 1 <= rectangles.length <= 2 * 10^4
 // - rectangles[i].length == 4
-// - -105 <= xi, yi, ai, bi <= 105
+// - -10^5 <= x[i], y[i], a[i], b[i] <= 10^5
 //
 
 struct Solution;

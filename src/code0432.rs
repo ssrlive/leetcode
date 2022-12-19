@@ -2,6 +2,7 @@
 
 // 432. All O`one Data Structure
 // https://leetcode.com/problems/all-oone-data-structure/
+// https://leetcode.cn/problems/all-oone-data-structure/
 //
 // Design a data structure to store the strings' count with the ability to return the strings with minimum and maximum counts.
 //

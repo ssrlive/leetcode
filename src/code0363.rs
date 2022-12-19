@@ -2,6 +2,7 @@
 
 // 363. Max Sum of Rectangle No Larger Than K
 // https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/
+// https://leetcode.cn/problems/max-sum-of-rectangle-no-larger-than-k/
 //
 // Given an m x n matrix matrix and an integer k, return the max sum of a rectangle in the matrix such that its sum is no larger than k.
 //
@@ -21,13 +22,14 @@
 //
 // Constraints:
 //
-// m == matrix.length
-// n == matrix[i].length
-// 1 <= m, n <= 100
-// -100 <= matrix[i][j] <= 100
-// -105 <= k <= 105
+// - m == matrix.length
+// - n == matrix[i].length
+// - 1 <= m, n <= 100
+// - -100 <= matrix[i][j] <= 100
+// - -10^5 <= k <= 10^5
 //
 // Follow up: What if the number of rows is much larger than the number of columns?
+//
 
 struct Solution;
 

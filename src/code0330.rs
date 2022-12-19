@@ -2,6 +2,7 @@
 
 // 330. Patching Array
 // https://leetcode.com/problems/patching-array/
+// https://leetcode.cn/problems/patching-array/
 //
 // Given a sorted integer array nums and an integer n, add/patch elements to the array such that any number
 // in the range [1, n] inclusive can be formed by the sum of some elements in the array.
@@ -34,7 +35,7 @@
 // - 1 <= nums.length <= 1000
 // - 1 <= nums[i] <= 104
 // - nums is sorted in ascending order.
-// - 1 <= n <= 231 - 1
+// - 1 <= n <= 2^31 - 1
 //
 
 struct Solution;

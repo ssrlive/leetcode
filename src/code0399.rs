@@ -2,6 +2,7 @@
 
 // 399. Evaluate Division
 // https://leetcode.com/problems/evaluate-division/
+// https://leetcode.cn/problems/evaluate-division/
 //
 // You are given an array of variable pairs equations and an array of real numbers values, where equations[i] = [Ai, Bi] and values[i] represent the equation Ai / Bi = values[i]. Each Ai or Bi is a string that represents a single variable.
 //
@@ -41,6 +42,7 @@
 // - queries[i].length == 2
 // - 1 <= Cj.length, Dj.length <= 5
 // - Ai, Bi, Cj, Dj consist of lower case English letters and digits.
+//
 
 struct Solution;
 

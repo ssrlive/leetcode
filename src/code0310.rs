@@ -2,6 +2,7 @@
 
 // 310. Minimum Height Trees
 // https://leetcode.com/problems/minimum-height-trees/
+// https://leetcode.cn/problems/minimum-height-trees/
 //
 // A tree is an undirected graph in which any two vertices are connected by exactly one path.
 // In other words, any connected graph without simple cycles is a tree.
@@ -28,12 +29,13 @@
 //
 // Constraints:
 //
-// - 1 <= n <= 2 * 104
+// - 1 <= n <= 2 * 10^4
 // - edges.length == n - 1
-// - 0 <= ai, bi < n
-// - ai != bi
-// - All the pairs (ai, bi) are distinct.
+// - 0 <= a[i], b[i] < n
+// - a[i] != b[i]
+// - All the pairs (a[i], b[i]) are distinct.
 // - The given input is guaranteed to be a tree and there will be no repeated edges.
+//
 
 struct Solution;
 

@@ -2,6 +2,7 @@
 
 // 231. Power of Two
 // https://leetcode.com/problems/power-of-two/
+// https://leetcode.cn/problems/power-of-two/
 //
 // Given an integer n, return true if it is a power of two. Otherwise, return false.
 //

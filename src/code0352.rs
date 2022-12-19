@@ -2,6 +2,7 @@
 
 // 352. Data Stream as Disjoint Intervals
 // https://leetcode.com/problems/data-stream-as-disjoint-intervals/
+// https://leetcode.cn/problems/data-stream-as-disjoint-intervals/
 //
 // Given a data stream input of non-negative integers a1, a2, ..., an, summarize the numbers seen so far as a list of disjoint intervals.
 //
@@ -34,8 +35,8 @@
 // summaryRanges.getIntervals(); // return [[1, 3], [6, 7]]
 //
 // Constraints:
-// - 0 <= value <= 104
-// - At most 3 * 104 calls will be made to addNum and getIntervals.
+// - 0 <= value <= 10^4
+// - At most 3 * 10^4 calls will be made to addNum and getIntervals.
 //
 // Follow up: What if there are lots of merges and the number of disjoint intervals is small compared to the size of the data stream?
 //

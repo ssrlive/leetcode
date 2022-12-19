@@ -2,6 +2,7 @@
 
 // 393. UTF-8 Validation
 // https://leetcode.com/problems/utf-8-validation/
+// https://leetcode.cn/problems/utf-8-validation/
 //
 // Given an integer array data representing the data, return whether it is a valid UTF-8 encoding
 // (i.e. it translates to a sequence of valid UTF-8 encoded characters).
@@ -43,7 +44,7 @@
 //
 // Constraints:
 //
-// - 1 <= data.length <= 2 * 104
+// - 1 <= data.length <= 2 * 10^4
 // - 0 <= data[i] <= 255
 //
 

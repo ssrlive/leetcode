@@ -2,6 +2,8 @@
 
 // 146. LRU Cache
 // https://leetcode.com/problems/lru-cache/
+// https://leetcode.cn/problems/lru-cache/
+//
 
 use std::cell::RefCell;
 use std::collections::HashMap;

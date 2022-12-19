@@ -2,6 +2,7 @@
 
 // 301. Remove Invalid Parentheses
 // https://leetcode.com/problems/remove-invalid-parentheses/
+// https://leetcode.cn/problems/remove-invalid-parentheses/
 //
 // Given a string s that contains parentheses and letters, remove the minimum number of invalid parentheses to make the input string valid.
 //

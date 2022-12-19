@@ -2,6 +2,7 @@
 
 // 367. Valid Perfect Square
 // https://leetcode.com/problems/valid-perfect-square/
+// https://leetcode.cn/problems/valid-perfect-square/
 //
 // Given a positive integer num, write a function which returns True if num is a perfect square else False.
 //

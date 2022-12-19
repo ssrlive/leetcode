@@ -2,6 +2,7 @@
 
 // 278. First Bad Version
 // https://leetcode.com/problems/first-bad-version/
+// https://leetcode.cn/problems/first-bad-version/
 //
 // You are a product manager and currently leading a team to develop a new
 // product. Unfortunately, the latest version of your product fails the quality

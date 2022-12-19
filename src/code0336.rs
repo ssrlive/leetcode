@@ -2,6 +2,7 @@
 
 // 336. Palindrome Pairs
 // https://leetcode.com/problems/palindrome-pairs/
+// https://leetcode.cn/problems/palindrome-pairs/
 //
 // You are given a 0-indexed array of unique strings words.
 //

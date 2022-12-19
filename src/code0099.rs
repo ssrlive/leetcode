@@ -2,6 +2,7 @@
 
 // 99. Recover Binary Search Tree
 // https://leetcode.com/problems/recover-binary-search-tree/
+// https://leetcode.cn/problems/recover-binary-search-tree/
 //
 // You are given the root of a binary search tree (BST),
 // where the values of exactly two nodes of the tree were swapped by mistake.

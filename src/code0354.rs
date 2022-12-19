@@ -2,6 +2,7 @@
 
 // 354. Russian Doll Envelopes
 // https://leetcode.com/problems/russian-doll-envelopes/
+// https://leetcode.cn/problems/russian-doll-envelopes/
 //
 // You are given a 2D array of integers envelopes where envelopes[i] = [wi, hi] represents the width and the height of an envelope.
 //
@@ -23,11 +24,13 @@
 // Output: 1
 //
 // Constraints:
+//
 // - 1 <= envelopes.length <= 5000
 // - envelopes[i].length == 2
-// - 1 <= wi, hi <= 104
+// - 1 <= w[i], h[i] <= 10^4
 //
 // Follow up: Could you solve this problem with time complexity O(n log(n))?
+//
 
 struct Solution;
 

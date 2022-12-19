@@ -2,6 +2,7 @@
 
 // 378. Kth Smallest Element in a Sorted Matrix
 // https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
+// https://leetcode.cn/problems/kth-smallest-element-in-a-sorted-matrix/
 //
 // Given an n x n matrix where each of the rows and columns is sorted in ascending order, return the kth smallest element in the matrix.
 //
@@ -24,9 +25,9 @@
 //
 // - n == matrix.length == matrix[i].length
 // - 1 <= n <= 300
-// - -109 <= matrix[i][j] <= 109
+// - -10^9 <= matrix[i][j] <= 10^9
 // - All the rows and columns of matrix are guaranteed to be sorted in non-decreasing order.
-// - 1 <= k <= n2
+// - 1 <= k <= n^2
 //
 // Follow up:
 //

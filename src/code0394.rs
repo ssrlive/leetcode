@@ -2,6 +2,7 @@
 
 // 394. Decode String
 // https://leetcode.com/problems/decode-string/
+// https://leetcode.cn/problems/decode-string/
 //
 // Given an encoded string, return its decoded string.
 //
@@ -72,8 +73,7 @@ impl Solution {
 fn test() {
     assert_eq!(Solution::decode_string("3[a]2[bc]".to_string()), "aaabcbc".to_string());
     assert_eq!(Solution::decode_string("3[a2[c]]".to_string()), "accaccacc".to_string());
-    assert_eq!(
-        Solution::decode_string("2[abc]3[cd]ef".to_string()),
-        "abcabccdcdcdef".to_string()
-    );
+    let s = "2[abc]3[cd]ef".to_string();
+    let expected = "abcabccdcdcdef".to_string();
+    assert_eq!(Solution::decode_string(s), expected);
 }

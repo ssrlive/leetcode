@@ -2,6 +2,7 @@
 
 // 136. Single Number
 // https://leetcode.com/problems/single-number/
+// https://leetcode.cn/problems/single-number/
 //
 // Given a non-empty array of integers, every element appears twice except for one. Find that single one.
 //

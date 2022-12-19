@@ -2,6 +2,7 @@
 
 // 313. Super Ugly Number
 // https://leetcode.com/problems/super-ugly-number/
+// https://leetcode.cn/problems/super-ugly-number/
 //
 // A super ugly number is a positive integer whose prime factors are in the array primes.
 //
@@ -23,7 +24,7 @@
 //
 // Constraints:
 //
-// - 1 <= n <= 105
+// - 1 <= n <= 10^5
 // - 1 <= primes.length <= 100
 // - 2 <= primes[i] <= 1000
 // - primes[i] is guaranteed to be a prime number.

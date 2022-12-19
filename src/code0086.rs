@@ -2,6 +2,8 @@
 
 // 86. Partition List
 // https://leetcode.com/problems/partition-list/
+// https://leetcode.cn/problems/partition-list/
+//
 
 use super::listnode::ListNode;
 

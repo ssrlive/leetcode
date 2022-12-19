@@ -2,6 +2,7 @@
 
 // 406. Queue Reconstruct by Height
 // https://leetcode.com/problems/queue-reconstruct-by-height/
+// https://leetcode.cn/problems/queue-reconstruct-by-height/
 //
 // You are given an array of people, people, which are the attributes of some people in a queue (not necessarily in order).
 // Each people[i] = [hi, ki] represents the ith person of height hi with exactly ki other people
@@ -32,7 +33,7 @@
 // Constraints:
 //
 // - 1 <= people.length <= 2000
-// - 0 <= hi <= 106
+// - 0 <= hi <= 10^6
 // - 0 <= ki < people.length
 // - It is guaranteed that the queue can be reconstructed.
 //

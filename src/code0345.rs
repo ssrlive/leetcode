@@ -2,6 +2,7 @@
 
 // 345. Reverse Vowels of a String
 // https://leetcode.com/problems/reverse-vowels-of-a-string/
+// https://leetcode.cn/problems/reverse-vowels-of-a-string/
 //
 // Given a string s, reverse only all the vowels in the string and return it.
 //
@@ -19,7 +20,7 @@
 //
 // Constraints:
 //
-// - 1 <= s.length <= 3 * 105
+// - 1 <= s.length <= 3 * 10^5
 // - s consist of printable ASCII characters.
 //
 

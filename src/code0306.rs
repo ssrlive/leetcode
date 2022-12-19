@@ -2,6 +2,7 @@
 
 // 306. Additive Number
 // https://leetcode.com/problems/additive-number/
+// https://leetcode.cn/problems/additive-number/
 //
 // Additive number is a string whose digits can form additive sequence.
 //
@@ -32,9 +33,11 @@
 //
 // Constraints:
 //
-// 1 <= num.length <= 35
-// num consists of only digits '0'-'9'.
+// - 1 <= num.length <= 35
+// - num consists of only digits '0'-'9'.
+//
 // Follow up: How would you handle overflow for very large input integers?
+//
 
 struct Solution;
 

@@ -2,6 +2,7 @@
 
 // 377. Combination Sum IV
 // https://leetcode.com/problems/combination-sum-iv/
+// https://leetcode.cn/problems/combination-sum-iv/
 //
 // Given an array of distinct integers nums and a target integer target, return the number of possible combinations that add up to target.
 //

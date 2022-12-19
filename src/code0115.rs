@@ -2,6 +2,8 @@
 
 // 115. Distinct Subsequences
 // https://leetcode.com/problems/distinct-subsequences/
+// https://leetcode.cn/problems/distinct-subsequences/
+//
 
 struct Solution;
 

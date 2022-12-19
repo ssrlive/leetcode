@@ -2,6 +2,7 @@
 
 // 304. Range Sum Query 2D - Immutable
 // https://leetcode.com/problems/range-sum-query-2d-immutable/
+// https://leetcode.cn/problems/range-sum-query-2d-immutable/
 //
 // Given a 2D matrix matrix, handle multiple queries of the following type:
 //
@@ -31,13 +32,13 @@
 //
 // Constraints:
 //
-// m == matrix.length
-// n == matrix[i].length
-// 1 <= m, n <= 200
-// -104 <= matrix[i][j] <= 104
-// 0 <= row1 <= row2 < m
-// 0 <= col1 <= col2 < n
-// At most 104 calls will be made to sumRegion.
+// - m == matrix.length
+// - n == matrix[i].length
+// - 1 <= m, n <= 200
+// - -10^4 <= matrix[i][j] <= 10^4
+// - 0 <= row1 <= row2 < m
+// - 0 <= col1 <= col2 < n
+// - At most 104 calls will be made to sumRegion.
 //
 
 struct NumMatrix {

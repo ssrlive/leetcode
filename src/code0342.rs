@@ -2,6 +2,7 @@
 
 // 342. Power of Four
 // https://leetcode.com/problems/power-of-four/
+// https://leetcode.cn/problems/power-of-four/
 //
 // Given an integer n, return true if it is a power of four. Otherwise, return false.
 //
@@ -24,7 +25,7 @@
 //
 // Constraints:
 //
-// -2^31 <= n <= 2^31 - 1
+// - -2^31 <= n <= 2^31 - 1
 //
 // Follow up: Could you solve it without loops/recursion?
 //

@@ -2,6 +2,7 @@
 
 // 421. Maximum XOR of Two Numbers in an Array
 // https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/
+// https://leetcode.cn/problems/maximum-xor-of-two-numbers-in-an-array/
 //
 // Given an integer array nums, return the maximum result of nums[i] XOR nums[j], where 0 <= i <= j < n.
 //
@@ -18,8 +19,8 @@
 //
 // Constraints:
 //
-// - 1 <= nums.length <= 2 * 105
-// - 0 <= nums[i] <= 231 - 1
+// - 1 <= nums.length <= 2 * 10^5
+// - 0 <= nums[i] <= 2^31 - 1
 //
 
 struct Solution;

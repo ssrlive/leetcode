@@ -2,6 +2,7 @@
 
 // 289. Game of Life
 // https://leetcode.com/problems/game-of-life/
+// https://leetcode.cn/problems/game-of-life/
 //
 // According to Wikipedia's article: "The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970."
 //
@@ -26,10 +27,10 @@
 //
 // Constraints:
 //
-// m == board.length
-// n == board[i].length
-// 1 <= m, n <= 25
-// board[i][j] is 0 or 1.
+// - m == board.length
+// - n == board[i].length
+// - 1 <= m, n <= 25
+// - board[i][j] is 0 or 1.
 //
 // Follow up:
 //

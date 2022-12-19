@@ -2,6 +2,8 @@
 
 // 114. Flatten Binary Tree to Linked List
 // https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
+// https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/
+//
 
 use super::treenode::TreeNode;
 

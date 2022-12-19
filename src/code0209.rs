@@ -2,6 +2,7 @@
 
 // 209. Minimum Size Subarray Sum
 // https://leetcode.com/problems/minimum-size-subarray-sum/
+// https://leetcode.cn/problems/minimum-size-subarray-sum/
 //
 // Given an array of n positive integers and a positive integer s, find the
 // minimal length of a contiguous subarray of which the sum ≥ s. If there isn't
@@ -18,6 +19,7 @@
 //
 // If you have figured out the O(n) solution, try coding another solution of
 // which the time complexity is O(n log n).
+//
 
 struct Solution;
 

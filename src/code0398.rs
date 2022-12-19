@@ -2,6 +2,7 @@
 
 // 398. Random Pick Index
 // https://leetcode.com/problems/random-pick-index/
+// https://leetcode.cn/problems/random-pick-index/
 //
 // Given an integer array nums with possible duplicates, randomly output the index of a given target number.
 // You can assume that the given target number must exist in the array.
@@ -28,10 +29,10 @@
 //
 // Constraints:
 //
-// - 1 <= nums.length <= 2 * 104
-// - -231 <= nums[i] <= 231 - 1
+// - 1 <= nums.length <= 2 * 10^4
+// - -2^31 <= nums[i] <= 2^31 - 1
 // - target is an integer from nums.
-// - At most 104 calls will be made to pick.
+// - At most 10^4 calls will be made to pick.
 //
 
 struct Solution {

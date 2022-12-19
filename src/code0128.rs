@@ -2,10 +2,12 @@
 
 // 128. Longest Consecutive Sequence
 // https://leetcode.com/problems/longest-consecutive-sequence/
+// https://leetcode.cn/problems/longest-consecutive-sequence/
 //
 // Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
 //
 // Follow up: Could you implement the O(n) solution?
+//
 
 struct Solution;
 

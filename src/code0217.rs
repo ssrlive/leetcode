@@ -2,6 +2,7 @@
 
 // 217. Contains Duplicate
 // https://leetcode.com/problems/contains-duplicate/
+// https://leetcode.cn/problems/contains-duplicate/
 //
 // Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 //
@@ -18,8 +19,9 @@
 // Output: true
 //
 // Constraints:
-// 1 <= nums.length <= 105
-// -109 <= nums[i] <= 109
+// 1 <= nums.length <= 10^5
+// -10^9 <= nums[i] <= 10^9
+//
 
 struct Solution;
 

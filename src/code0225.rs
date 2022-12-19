@@ -2,6 +2,7 @@
 
 // 225. Implement Stack using Queues
 // https://leetcode.com/problems/implement-stack-using-queues/
+// https://leetcode.cn/problems/implement-stack-using-queues/
 //
 // mplement a last-in-first-out (LIFO) stack using only two queues. The implemented stack
 // should support all the functions of a normal stack (push, top, pop, and empty).
@@ -44,6 +45,7 @@
 // - All the calls to pop and top are valid.
 //
 // Follow-up: Can you implement the stack such that each operation is amortized O(1) time complexity? In other words, performing n operations will take overall O(n) time even if one of those operations may take longer.
+//
 
 use std::collections::VecDeque;
 

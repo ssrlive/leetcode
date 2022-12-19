@@ -2,6 +2,7 @@
 
 // 282. Expression Add Operators
 // https://leetcode.com/problems/expression-add-operators/
+// https://leetcode.cn/problems/expression-add-operators/
 //
 // Given a string num that contains only digits and an integer target, return all
 // possibilities to add the binary operators '+', '-', or '*' between the digits

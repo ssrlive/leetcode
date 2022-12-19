@@ -2,6 +2,7 @@
 
 // 397. Integer Replacement
 // https://leetcode.com/problems/integer-replacement/
+// https://leetcode.cn/problems/integer-replacement/
 //
 // Given a positive integer n, you can apply one of the following operations:
 //
@@ -29,7 +30,8 @@
 //
 // Constraints:
 //
-// 1 <= n <= 231 - 1
+// -  1 <= n <= 2^31 - 1
+//
 
 struct Solution;
 

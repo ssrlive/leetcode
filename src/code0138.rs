@@ -2,6 +2,8 @@
 
 // 138. Copy List with Random Pointer
 // https://leetcode.com/problems/copy-list-with-random-pointer/
+// https://leetcode.cn/problems/copy-list-with-random-pointer/
+//
 
 // Definition for a Node.
 #[derive(Debug, PartialEq, Eq, Clone)]

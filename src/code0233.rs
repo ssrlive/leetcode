@@ -2,6 +2,7 @@
 
 // 233. Number of Digit One
 // https://leetcode.com/problems/number-of-digit-one/
+// https://leetcode.cn/problems/number-of-digit-one/
 //
 // Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.
 //
@@ -15,6 +16,7 @@
 //
 // Constraints:
 // 0 <= n <= 2 * 10^9
+//
 
 struct Solution;
 

@@ -2,6 +2,7 @@
 
 // 120. Triangle
 // https://leetcode.com/problems/triangle/
+// https://leetcode.cn/problems/triangle/
 //
 // Given a triangle array, return the minimum path sum from top to bottom.
 // For each step, you may move to an adjacent number of the row below. More formally,

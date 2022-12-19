@@ -2,6 +2,7 @@
 
 // 405. Convert a Number to Hexadecimal
 // https://leetcode.com/problems/convert-a-number-to-hexadecimal/
+// https://leetcode.cn/problems/convert-a-number-to-hexadecimal/
 //
 // Given an integer num, return a string representing its hexadecimal representation.
 // For negative integers, two’s complement method is used.
@@ -23,9 +24,10 @@
 //
 // Constraints:
 //
-// -231 <= num <= 231 - 1
+// -2^31 <= num <= 2^31 - 1
 //
 // Follow up: Could you solve it without using any loop / recursion?
+//
 
 struct Solution;
 

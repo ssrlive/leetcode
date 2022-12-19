@@ -2,6 +2,7 @@
 
 // 275. H-Index II
 // https://leetcode.com/problems/h-index-ii/
+// https://leetcode.cn/problems/h-index-ii/
 //
 // Given an array of integers citations where citations[i] is the number of citations a researcher received
 // for their ith paper and citations is sorted in an ascending order, return compute the researcher's h-index.
@@ -30,7 +31,7 @@
 // Constraints:
 //
 // - n == citations.length
-// - 1 <= n <= 105
+// - 1 <= n <= 10^5
 // - 0 <= citations[i] <= 1000
 // - citations is sorted in ascending order.
 //

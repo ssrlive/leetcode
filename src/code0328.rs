@@ -2,6 +2,7 @@
 
 // 328. Odd Even Linked List
 // https://leetcode.com/problems/odd-even-linked-list/
+// https://leetcode.cn/problems/odd-even-linked-list/
 //
 // Given the head of a singly linked list, group all the nodes with odd indices together
 // followed by the nodes with even indices, and return the reordered list.
@@ -23,8 +24,8 @@
 //
 // Constraints:
 //
-// - The number of nodes in the linked list is in the range [0, 104].
-// - -106 <= Node.val <= 106
+// - The number of nodes in the linked list is in the range [0, 10^4].
+// - -10^6 <= Node.val <= 10^6
 //
 
 use crate::listnode::ListNode;

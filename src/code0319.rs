@@ -2,6 +2,7 @@
 
 // 319. Bulb Switcher
 // https://leetcode.com/problems/bulb-switcher/
+// https://leetcode.cn/problems/bulb-switcher/
 //
 // There are n bulbs that are initially off. You first turn on all the bulbs.
 // Then, you turn off every second bulb. On the third round, you toggle every
@@ -31,9 +32,10 @@
 //
 // Constraints:
 //
-// - 0 <= n <= 109
+// - 0 <= n <= 10^9
 //
 // Follow up: Could you find an O(1) solution?
+//
 
 struct Solution;
 

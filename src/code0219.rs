@@ -2,6 +2,7 @@
 
 // 219. Contains Duplicate II
 // https://leetcode.com/problems/contains-duplicate-ii/
+// https://leetcode.cn/problems/contains-duplicate-ii/
 //
 // Given an integer array nums and an integer k, return true if there are two distinct indices i and j in the array
 // such that nums[i] == nums[j] and abs(i - j) <= k.
@@ -19,9 +20,10 @@
 // Output: false
 //
 // Constraints:
-// 1 <= nums.length <= 105
-// -109 <= nums[i] <= 109
-// 0 <= k <= 105
+// 1 <= nums.length <= 10^5
+// -10^9 <= nums[i] <= 10^9
+// 0 <= k <= 10^5
+//
 
 struct Solution;
 

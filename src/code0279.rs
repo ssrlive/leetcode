@@ -2,6 +2,7 @@
 
 // 279. Perfect Squares
 // https://leetcode.com/problems/perfect-squares/
+// https://leetcode.cn/problems/perfect-squares/
 //
 // Given an integer n, return the least number of perfect square numbers that sum to n.
 //
@@ -23,7 +24,7 @@
 //
 // Constraints:
 //
-// 1 <= n <= 104
+// - 1 <= n <= 10^4
 //
 
 struct Solution;

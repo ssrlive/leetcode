@@ -2,6 +2,7 @@
 
 // 204. Count Primes
 // https://leetcode.com/problems/count-primes/
+// https://leetcode.cn/problems/count-primes/
 //
 // Given an integer n, return the number of prime numbers that are strictly less than n.
 //

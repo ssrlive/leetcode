@@ -2,6 +2,7 @@
 
 // 307. Range Sum Query - Mutable
 // https://leetcode.com/problems/range-sum-query-mutable/
+// https://leetcode.cn/problems/range-sum-query-mutable/
 //
 // Given an integer array nums, handle multiple queries of the following types:
 //
@@ -31,12 +32,12 @@
 //
 // Constraints:
 //
-// - 1 <= nums.length <= 3 * 104
+// - 1 <= nums.length <= 3 * 10^4
 // - -100 <= nums[i] <= 100
 // - 0 <= index < nums.length
 // - -100 <= val <= 100
 // - 0 <= left <= right < nums.length
-// - At most 3 * 104 calls will be made to update and sumRange.
+// - At most 3 * 10^4 calls will be made to update and sumRange.
 //
 
 struct NumArray {

@@ -2,6 +2,7 @@
 
 // 388. Longest Absolute File Path
 // https://leetcode.com/problems/longest-absolute-file-path/
+// https://leetcode.cn/problems/longest-absolute-file-path/
 //
 // Suppose we abstract our file system by a string in the following manner:
 //
@@ -58,9 +59,9 @@
 //
 // Constraints:
 //
-// 1 <= input.length <= 10^4
-// input may contain lower-case or upper-case English letters, a new line
-// character '\', a tab character '\t', a dot '.', a space ' ', and digits.
+// - 1 <= input.length <= 10^4
+// - input may contain lower-case or upper-case English letters, a new line
+// - character '\', a tab character '\t', a dot '.', a space ' ', and digits.
 //
 
 struct Solution;

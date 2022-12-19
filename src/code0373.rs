@@ -2,6 +2,7 @@
 
 // 373. Find K Pairs with Smallest Sums
 // https://leetcode.com/problems/find-k-pairs-with-smallest-sums/
+// https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/
 //
 // You are given two integer arrays nums1 and nums2 sorted in ascending order and an integer k.
 //
@@ -29,10 +30,10 @@
 //
 // Constraints:
 //
-// 1 <= nums1.length, nums2.length <= 105
-// -109 <= nums1[i], nums2[i] <= 109
-// nums1 and nums2 both are sorted in ascending order.
-// 1 <= k <= 104
+// - 1 <= nums1.length, nums2.length <= 10^5
+// - -10^9 <= nums1[i], nums2[i] <= 10^9
+// - nums1 and nums2 both are sorted in ascending order.
+// - 1 <= k <= 10^4
 //
 
 struct Solution;

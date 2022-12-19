@@ -2,6 +2,7 @@
 
 // 343. Integer Break
 // https://leetcode.com/problems/integer-break/
+// https://leetcode.cn/problems/integer-break/
 //
 // Given an integer n, break it into the sum of k positive integers, where k >= 2, and maximize the product of those integers.
 //
@@ -21,9 +22,10 @@
 //
 // Constraints:
 //
-// 2 <= n <= 58
+// - 2 <= n <= 58
 //
 // Follow up: Could you solve it in O(n) time and O(1) space?
+//
 
 struct Solution;
 

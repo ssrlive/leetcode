@@ -2,6 +2,7 @@
 
 // 315. Count of Smaller Numbers After Self
 // https://leetcode.com/problems/count-of-smaller-numbers-after-self/
+// https://leetcode.cn/problems/count-of-smaller-numbers-after-self/
 //
 // Given an integer array nums, return an integer array counts where counts[i] is the number of smaller elements to the right of nums[i].
 //
@@ -27,8 +28,8 @@
 //
 // Constraints:
 //
-// - 1 <= nums.length <= 105
-// - -104 <= nums[i] <= 104
+// - 1 <= nums.length <= 10^5
+// - -10^4 <= nums[i] <= 10^4
 //
 
 struct Solution;

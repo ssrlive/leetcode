@@ -2,6 +2,7 @@
 
 // 121. Best Time to Buy and Sell Stock
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+// https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/
 //
 // You are given an array prices where prices[i] is the price of a given stock on the ith day.
 //

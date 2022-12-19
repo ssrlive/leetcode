@@ -2,6 +2,7 @@
 
 // 260. Single Number III
 // https://leetcode.com/problems/single-number-iii/
+// https://leetcode.cn/problems/single-number-iii/
 //
 // Given an integer array nums, in which exactly two elements appear only once and all the other
 // elements appear exactly twice. Find the two elements that appear only once.
@@ -27,9 +28,10 @@
 //
 // Constraints:
 //
-// 2 <= nums.length <= 3 * 104
-// -231 <= nums[i] <= 231 - 1
-// Each integer in nums will appear twice, only two integers will appear once.
+// - 2 <= nums.length <= 3 * 10^4
+// - -2^31 <= nums[i] <= 2^31 - 1
+// - Each integer in nums will appear twice, only two integers will appear once.
+//
 
 struct Solution;
 

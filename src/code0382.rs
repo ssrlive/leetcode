@@ -2,6 +2,7 @@
 
 // 382. Linked List Random Node
 // https://leetcode.com/problems/linked-list-random-node/
+// https://leetcode.cn/problems/linked-list-random-node/
 //
 // Given a singly linked list, return a random node's value from the linked list. Each node must have the same probability of being chosen.
 //
@@ -29,9 +30,9 @@
 //
 // Constraints:
 //
-// - The number of nodes in the linked list will be in the range [1, 104].
-// - -104 <= Node.val <= 104
-// - At most 104 calls will be made to getRandom.
+// - The number of nodes in the linked list will be in the range [1, 10^4].
+// - -10^4 <= Node.val <= 10^4
+// - At most 10^4 calls will be made to getRandom.
 //
 // Follow up:
 //

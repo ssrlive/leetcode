@@ -2,6 +2,7 @@
 
 // 257. Binary Tree Paths
 // https://leetcode.com/problems/binary-tree-paths/
+// https://leetcode.cn/problems/binary-tree-paths/
 //
 // Given the root of a binary tree, return all root-to-leaf paths in any order.
 //

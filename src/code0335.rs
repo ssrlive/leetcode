@@ -2,6 +2,7 @@
 
 // 335. Self Crossing
 // https://leetcode.com/problems/self-crossing/
+// https://leetcode.cn/problems/self-crossing/
 //
 // You are given an array of integers distance.
 //
@@ -43,8 +44,8 @@
 //
 // Constraints:
 //
-// - 1 <= distance.length <= 105
-// - 1 <= distance[i] <= 105
+// - 1 <= distance.length <= 10^5
+// - 1 <= distance[i] <= 10^5
 //
 
 struct Solution;

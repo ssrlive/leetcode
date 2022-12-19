@@ -2,6 +2,7 @@
 
 // 409. Longest Palindrome
 // https://leetcode.com/problems/longest-palindrome/
+// https://leetcode.cn/problems/longest-palindrome/
 //
 // Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters.
 //
@@ -28,6 +29,7 @@
 //
 // - 1 <= s.length <= 2000
 // - s consists of lowercase and/or uppercase English letters only.
+//
 
 struct Solution;
 

@@ -2,6 +2,7 @@
 
 // 410. Split Array Largest Sum
 // https://leetcode.com/problems/split-array-largest-sum/
+// https://leetcode.cn/problems/split-array-largest-sum/
 //
 // Given an array which consists of non-negative integers and an integer m, you can split the array
 // into m non-empty continuous subarrays. Write an algorithm to minimize the largest sum among these
@@ -32,6 +33,7 @@
 // - 1 <= nums.length <= 1000
 // - 0 <= nums[i] <= 10^6
 // - 1 <= m <= min(50, nums.length)
+//
 
 struct Solution;
 

@@ -2,6 +2,7 @@
 
 // 375. Guess Number Higher or Lower II
 // https://leetcode.com/problems/guess-number-higher-or-lower-ii/
+// https://leetcode.cn/problems/guess-number-higher-or-lower-ii/
 //
 // We are playing the Guessing Game. The game will work as follows:
 //
@@ -52,7 +53,7 @@
 //
 // Constraints:
 //
-// 1 <= n <= 200
+// -  1 <= n <= 200
 //
 
 struct Solution;

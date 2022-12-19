@@ -2,6 +2,7 @@
 
 // 283. Move Zeroes
 // https://leetcode.com/problems/move-zeroes/
+// https://leetcode.cn/problems/move-zeroes/
 //
 // Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 //
@@ -19,8 +20,8 @@
 //
 // Constraints:
 //
-// 1 <= nums.length <= 104
-// -231 <= nums[i] <= 231 - 1
+// - 1 <= nums.length <= 10^4
+// - -2^31 <= nums[i] <= 2^31 - 1
 //
 // Follow up: Could you minimize the total number of operations done?
 //

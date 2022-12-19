@@ -2,6 +2,7 @@
 
 // 355. Design Twitter
 // https://leetcode.com/problems/design-twitter/
+// https://leetcode.cn/problems/design-twitter/
 //
 // Design a simplified version of Twitter where users can post tweets, follow/unfollow another user,
 // and is able to see the 10 most recent tweets in the user's news feed.
@@ -38,9 +39,10 @@
 // Constraints:
 //
 // - 1 <= userId, followerId, followeeId <= 500
-// - 0 <= tweetId <= 104
+// - 0 <= tweetId <= 10^4
 // - All the tweets have unique IDs.
-// - At most 3 * 104 calls will be made to postTweet, getNewsFeed, follow, and unfollow.
+// - At most 3 * 10^4 calls will be made to postTweet, getNewsFeed, follow, and unfollow.
+//
 
 struct Twitter {
     posts: Vec<(i32, i32)>,

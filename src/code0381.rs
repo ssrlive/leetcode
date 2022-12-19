@@ -2,6 +2,7 @@
 
 // 381. Insert Delete GetRandom O(1) - Duplicates allowed
 // https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/
+// https://leetcode.cn/problems/insert-delete-getrandom-o1-duplicates-allowed/
 //
 // RandomizedCollection is a data structure that contains a collection of numbers, possibly duplicates (i.e., a multiset). It should support inserting and removing specific elements and also removing a random element.
 //
@@ -41,7 +42,7 @@
 //
 // Constraints:
 //
-// - -231 <= val <= 231 - 1
+// - -2^31 <= val <= 2^31 - 1
 // - At most 2 * 105 calls in total will be made to insert, remove, and getRandom.
 // - There will be at least one element in the data structure when getRandom is called.
 //

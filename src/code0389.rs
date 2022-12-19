@@ -2,6 +2,7 @@
 
 // 389. Find the Difference
 // https://leetcode.com/problems/find-the-difference/
+// https://leetcode.cn/problems/find-the-difference/
 //
 // You are given two strings s and t.
 //

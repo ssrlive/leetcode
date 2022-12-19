@@ -2,6 +2,7 @@
 
 // 412. Fizz Buzz
 // https://leetcode.com/problems/fizz-buzz/
+// https://leetcode.cn/problems/fizz-buzz/
 //
 // Given an integer n, return a string array answer (1-indexed) where:
 //
@@ -27,7 +28,7 @@
 //
 // Constraints:
 //
-// - 1 <= n <= 104
+// - 1 <= n <= 10^4
 //
 
 struct Solution;

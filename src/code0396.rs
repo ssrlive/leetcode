@@ -2,6 +2,7 @@
 
 // 396. Rotate Function
 // https://leetcode.com/problems/rotate-function/
+// https://leetcode.cn/problems/rotate-function/
 //
 // You are given an integer array nums of length n.
 //
@@ -31,7 +32,7 @@
 // Constraints:
 //
 // - n == nums.length
-// - 1 <= n <= 105
+// - 1 <= n <= 10^5
 // - -100 <= nums[i] <= 100
 //
 

@@ -2,6 +2,7 @@
 
 // 173. Binary Search Tree Iterator
 // https://leetcode.com/problems/binary-search-tree-iterator/
+// https://leetcode.cn/problems/binary-search-tree-iterator/
 //
 // Implement the BSTIterator class that represents an iterator over the in-order traversal of a binary search tree (BST):
 //

@@ -2,6 +2,7 @@
 
 // 312. Burst Balloons
 // https://leetcode.com/problems/burst-balloons/
+// https://leetcode.cn/problems/burst-balloons/
 //
 // You are given n balloons, indexed from 0 to n - 1. Each balloon is painted with a number
 // on it represented by an array nums. You are asked to burst all the balloons.
@@ -29,6 +30,7 @@
 // - n == nums.length
 // - 1 <= n <= 300
 // - 0 <= nums[i] <= 100
+//
 
 struct Solution;
 

@@ -2,6 +2,7 @@
 
 // 292. Nim Game
 // https://leetcode.com/problems/nim-game/
+// https://leetcode.cn/problems/nim-game/
 //
 // You are playing the following Nim Game with your friend:
 //
@@ -35,7 +36,7 @@
 //
 // Constraints:
 //
-// 1 <= n <= 231 - 1
+// - 1 <= n <= 2^31 - 1
 //
 
 struct Solution;

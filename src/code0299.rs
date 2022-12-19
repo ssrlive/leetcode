@@ -2,6 +2,7 @@
 
 // 299. Bulls and Cows
 // https://leetcode.com/problems/bulls-and-cows/
+// https://leetcode.cn/problems/bulls-and-cows/
 //
 // You are playing the Bulls and Cows game with your friend.
 //
@@ -40,9 +41,10 @@
 //
 // Constraints:
 //
-// 1 <= secret.length, guess.length <= 1000
-// secret.length == guess.length
-// secret and guess consist of digits only.
+// - 1 <= secret.length, guess.length <= 1000
+// - secret.length == guess.length
+// - secret and guess consist of digits only.
+//
 
 struct Solution;
 

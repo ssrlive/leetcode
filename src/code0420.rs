@@ -2,6 +2,7 @@
 
 // 420. Strong Password Checker
 // https://leetcode.com/problems/strong-password-checker/
+// https://leetcode.cn/problems/strong-password-checker/
 //
 // A password is considered strong if below conditions are all met:
 //

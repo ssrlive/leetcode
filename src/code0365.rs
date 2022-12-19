@@ -2,6 +2,7 @@
 
 // 365. Water and Jug Problem
 // https://leetcode.com/problems/water-and-jug-problem/
+// https://leetcode.cn/problems/water-and-jug-problem/
 //
 // You are given two jugs with capacities jug1Capacity and jug2Capacity liters. There is an infinite amount of water supply available.
 // Determine whether it is possible to measure exactly targetCapacity liters using these two jugs.
@@ -32,7 +33,7 @@
 //
 // Constraints:
 //
-// - 1 <= jug1Capacity, jug2Capacity, targetCapacity <= 106
+// - 1 <= jug1Capacity, jug2Capacity, targetCapacity <= 10^6
 //
 
 struct Solution;

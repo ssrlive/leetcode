@@ -2,6 +2,7 @@
 
 // 372. Super Pow
 // https://leetcode.com/problems/super-pow/
+// https://leetcode.cn/problems/super-pow/
 //
 // Your task is to calculate ab mod 1337 where a is a positive integer and b is
 // an extremely large positive integer given in the form of an array.
@@ -23,7 +24,7 @@
 // Output: 1198
 //
 // Note:
-// 1 <= a <= 231 - 1
+// 1 <= a <= 2^31 - 1
 // 1 <= b.length <= 2000
 // 0 <= b[i] <= 9
 // b doesn't contain leading zeros.

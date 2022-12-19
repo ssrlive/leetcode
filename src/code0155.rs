@@ -2,6 +2,7 @@
 
 // 155. Min Stack
 // https://leetcode.com/problems/min-stack/
+// https://leetcode.cn/problems/min-stack/
 //
 // Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 //
@@ -13,6 +14,7 @@
 // - int getMin() retrieves the minimum element in the stack.
 //
 // You must implement a solution with O(1) time complexity for each function.
+//
 
 struct MinStack {
     stack: Vec<i32>,

@@ -2,6 +2,7 @@
 
 // 390. Elimination Game
 // https://leetcode.com/problems/elimination-game/
+// https://leetcode.cn/problems/elimination-game/
 //
 // You have a list arr of all integers in the range [1, n] sorted in a strictly increasing order. Apply the following algorithm on arr:
 //
@@ -28,7 +29,7 @@
 //
 // Constraints:
 //
-// - 1 <= n <= 109
+// - 1 <= n <= 10^9
 //
 
 struct Solution;

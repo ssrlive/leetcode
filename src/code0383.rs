@@ -2,6 +2,7 @@
 
 // 383. Ransom Note
 // https://leetcode.com/problems/ransom-note/
+// https://leetcode.cn/problems/ransom-note/
 //
 // Given two stings ransomNote and magazine, return true if ransomNote can be constructed from magazine and false otherwise.
 //
@@ -24,7 +25,7 @@
 //
 // Constraints:
 //
-// - 1 <= ransomNote.length, magazine.length <= 105
+// - 1 <= ransomNote.length, magazine.length <= 10^5
 // - ransomNote and magazine consist of lowercase English letters.
 //
 
