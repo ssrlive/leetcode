@@ -90,3 +90,9 @@ impl Solution {
         count
     }
 }
+
+#[test]
+fn test() {
+    assert_eq!(Solution::max_palindromes("abaccdbbd".to_string(), 3), 2);
+    assert_eq!(Solution::max_palindromes("adbcda".to_string(), 2), 0);
+}
