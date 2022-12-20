@@ -47,11 +47,32 @@ impl Solution {
         }
         result
     }
+
+    pub fn find_duplicates_2(nums: Vec<i32>) -> Vec<i32> {
+        use std::collections::HashMap;
+        let mut map = HashMap::new();
+        for &num in nums.iter() {
+            *map.entry(num).or_insert(0) += 1;
+        }
+        map.iter().filter(|(_, &v)| v > 1).map(|(&k, _)| k).collect()
+    }
 }
 
 #[test]
 fn test() {
-    assert_eq!(Solution::find_duplicates(vec![4, 3, 2, 7, 8, 2, 3, 1]), vec![2, 3]);
+    let nums = vec![4, 3, 2, 7, 8, 2, 3, 1];
+    let mut result = Solution::find_duplicates(nums);
+    result.sort();
+    assert_eq!(result, vec![2, 3]);
+
     assert_eq!(Solution::find_duplicates(vec![1, 1, 2]), vec![1]);
     assert_eq!(Solution::find_duplicates(vec![1]), vec![]);
+
+    let nums = vec![4, 3, 2, 7, 8, 2, 3, 1];
+    let mut result = Solution::find_duplicates_2(nums);
+    result.sort();
+    assert_eq!(result, vec![2, 3]);
+
+    assert_eq!(Solution::find_duplicates_2(vec![1, 1, 2]), vec![1]);
+    assert_eq!(Solution::find_duplicates_2(vec![1]), vec![]);
 }

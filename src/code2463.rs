@@ -68,17 +68,17 @@ impl Solution {
         robot.sort();
         let mut factory = factory;
         factory.sort();
-        let m=robot.len();
-        let mut f=vec![i64::MAX/2;m+1];
-        f[0]=0;
+        let m = robot.len();
+        let mut f = vec![i64::MAX / 2; m + 1];
+        f[0] = 0;
 
-        for v in &factory{
-            let (pos,limit)=(v[0],v[1] as usize);
-            for j in (0..=m).rev(){
-                let mut cost=0;
-                for k in 1..=j.min(limit){
-                    cost+=(robot[j-k]-pos).abs() as i64;
-                    f[j]=f[j].min(f[j-k]+cost);
+        for v in &factory {
+            let (pos, limit) = (v[0], v[1] as usize);
+            for j in (0..=m).rev() {
+                let mut cost = 0;
+                for k in 1..=j.min(limit) {
+                    cost += (robot[j - k] - pos).abs() as i64;
+                    f[j] = f[j].min(f[j - k] + cost);
                 }
             }
         }
