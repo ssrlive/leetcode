@@ -561,6 +561,11 @@ mod code0827;
 mod code0828;
 mod code0829;
 mod code0830;
+mod code0831;
+mod code0832;
+mod code0833;
+mod code0834;
+mod code0835;
 
 mod code0876;
 
