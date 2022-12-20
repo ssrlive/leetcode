@@ -560,6 +560,7 @@ mod code0826;
 mod code0827;
 mod code0828;
 mod code0829;
+mod code0830;
 
 mod code0876;
 
