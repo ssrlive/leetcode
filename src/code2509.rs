@@ -54,7 +54,7 @@ struct Solution;
 
 impl Solution {
     pub fn cycle_length_queries(_: i32, queries: Vec<Vec<i32>>) -> Vec<i32> {
-        fn dfs(mut m:i32, mut n:i32) -> i32 {
+        fn dfs(mut m: i32, mut n: i32) -> i32 {
             let mut ans = 2;
             while m >= 1 && n >= 1 && m != n {
                 if m > n {
@@ -67,9 +67,7 @@ impl Solution {
             }
             ans - 1
         }
-        queries.iter().map(|q| {
-            dfs(q[0], q[1])
-        }).collect::<Vec<i32>>()
+        queries.iter().map(|q| dfs(q[0], q[1])).collect::<Vec<i32>>()
     }
 }
 
