@@ -54,35 +54,22 @@ struct Solution;
 
 impl Solution {
     pub fn cycle_length_queries(_: i32, queries: Vec<Vec<i32>>) -> Vec<i32> {
-        let mut ans = Vec::new();
-        for i in queries {
-            let mut v1 = Vec::new();
-            let mut num1 = i[0];
-            while num1 != 0 {
-                v1.push(num1);
-                num1 /= 2;
+        fn dfs(mut m:i32, mut n:i32) -> i32 {
+            let mut ans = 2;
+            while m >= 1 && n >= 1 && m != n {
+                if m > n {
+                    m /= 2;
+                    ans += 1;
+                } else {
+                    n /= 2;
+                    ans += 1;
+                }
             }
-            let n1 = v1.len();
-            v1.reverse();
-
-            let mut v2 = Vec::new();
-            let mut num2 = i[1];
-            while num2 != 0 {
-                v2.push(num2);
-                num2 /= 2;
-            }
-            let n2 = v2.len();
-            v2.reverse();
-
-            let mut common_lvl = 1;
-            let mut j = 0;
-            while j < n1 && j < n2 && v1[j] == v2[j] {
-                common_lvl = j + 1;
-                j += 1;
-            }
-            ans.push((n1 + n2 - (2 * common_lvl) + 1) as i32);
+            ans - 1
         }
-        ans
+        queries.iter().map(|q| {
+            dfs(q[0], q[1])
+        }).collect::<Vec<i32>>()
     }
 }
 
