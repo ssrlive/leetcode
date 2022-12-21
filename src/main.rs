@@ -4,6 +4,8 @@ mod narytree;
 mod quadtree;
 mod treenode;
 
+mod code0001;
+mod code0002;
 mod code0003;
 mod code0019;
 mod code0021;
