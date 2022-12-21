@@ -2,6 +2,7 @@
 
 // 838. Push Dominoes
 // https://leetcode.com/problems/push-dominoes/
+// https://leetcode.cn/problems/push-dominoes/
 //
 // There are n dominoes in a line, and we place each domino vertically upright. In the beginning,
 // we simultaneously push some of the dominoes either to the left or to the right.
