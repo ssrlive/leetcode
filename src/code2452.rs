@@ -43,42 +43,13 @@ struct Solution;
 
 impl Solution {
     pub fn two_edit_words(queries: Vec<String>, dictionary: Vec<String>) -> Vec<String> {
-        fn is_two_edit_word(query: &str, word: &str) -> bool {
-            let mut i = 0;
-            let mut j = 0;
-            let mut diff = 0;
-            while i < query.len() && j < word.len() {
-                if query.as_bytes()[i] != word.as_bytes()[j] {
-                    diff += 1;
-                    if diff > 2 {
-                        return false;
-                    }
-                    match query.len().cmp(&word.len()) {
-                        std::cmp::Ordering::Greater => i += 1,
-                        std::cmp::Ordering::Less => j += 1,
-                        std::cmp::Ordering::Equal => {
-                            i += 1;
-                            j += 1;
-                        }
-                    }
-                } else {
-                    i += 1;
-                    j += 1;
-                }
-            }
-            diff + (query.len() - i) + (word.len() - j) <= 2
-        }
-
-        let mut result = Vec::new();
-        for query in queries {
-            for word in &dictionary {
-                if is_two_edit_word(&query, word) {
-                    result.push(query.clone());
-                    break;
-                }
-            }
-        }
-        result
+        queries
+            .into_iter()
+            .filter(|q| {
+                let f = |d: &String| q.bytes().zip(d.bytes()).filter(|(c1, c2)| c1 != c2).count() <= 2;
+                dictionary.iter().any(f)
+            })
+            .collect()
     }
 }
 
