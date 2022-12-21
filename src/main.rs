@@ -576,6 +576,11 @@ mod code0842;
 mod code0843;
 mod code0844;
 mod code0845;
+mod code0846;
+mod code0847;
+mod code0848;
+mod code0849;
+mod code0850;
 
 mod code0876;
 
