@@ -39,7 +39,7 @@ impl Solution {
     pub fn add_two_numbers(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         let mut l1 = l1;
         let mut l2 = l2;
-        let mut head = Box::new(ListNode::new(0));
+        let mut head = Some(Box::new(ListNode::new(0)));
         let mut cur = &mut head;
         let mut carry = 0;
         while l1.is_some() || l2.is_some() {
@@ -53,30 +53,33 @@ impl Solution {
                 l2 = n.next;
             }
             carry = sum / 10;
-            cur.next = Some(Box::new(ListNode::new(sum % 10)));
-            cur = cur.next.as_mut().unwrap();
+            cur.as_mut()?.val = sum % 10;
+            cur.as_mut()?.next = Some(Box::new(ListNode::new(carry)));
+            cur = &mut cur.as_mut()?.next;
         }
-        if carry > 0 {
-            cur.next = Some(Box::new(ListNode::new(carry)));
+        if carry == 0 {
+            cur.take();
         }
-        head.next
+        head
     }
 }
 
 #[test]
-fn test() {
+fn test() -> Result<(), Box<dyn std::error::Error>> {
     let res = Solution::add_two_numbers(ListNode::from_vec(&[2, 4, 3]), ListNode::from_vec(&[5, 6, 4]));
-    let res = res.unwrap().to_vec();
+    let res = res.ok_or_else(|| "")?.to_vec();
     assert_eq!(res, &[7, 0, 8]);
 
     let res = Solution::add_two_numbers(ListNode::from_vec(&[0]), ListNode::from_vec(&[0]));
-    let res = res.unwrap().to_vec();
+    let res = res.ok_or_else(|| "")?.to_vec();
     assert_eq!(res, &[0]);
 
     let res = Solution::add_two_numbers(
         ListNode::from_vec(&[9, 9, 9, 9, 9, 9, 9]),
         ListNode::from_vec(&[9, 9, 9, 9]),
     );
-    let res = res.unwrap().to_vec();
+    let res = res.ok_or_else(|| "")?.to_vec();
     assert_eq!(res, &[8, 9, 9, 9, 0, 0, 0, 1]);
+
+    Ok(())
 }
