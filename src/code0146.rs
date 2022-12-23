@@ -131,68 +131,64 @@ impl ListNode {
     }
 }
 
-#[cfg(test)]
-mod test {
-    use super::*;
-    #[test]
-    fn test_with_sample_input_1_should_return_expected() {
-        let mut lru: LRUCache = LRUCache::new(2);
-        lru.put(1, 1);
-        lru.put(2, 2);
-        let expected0 = 1;
-        let actual0 = lru.get(1);
-        assert_eq!(expected0, actual0);
-        lru.put(3, 3);
-        let expected1 = -1;
-        let actual1 = lru.get(2);
-        assert_eq!(expected1, actual1);
-        lru.put(4, 4);
-        let expected2 = -1;
-        let actual2 = lru.get(1);
-        assert_eq!(expected2, actual2);
-        let expected3 = lru.get(3);
-        let actual3 = 3;
-        assert_eq!(expected3, actual3);
-        let expected4 = lru.get(4);
-        let actual4 = 4;
-        assert_eq!(expected4, actual4);
-    }
-    #[test]
-    fn test_with_test_case_10_should_return_expected() {
-        let mut lru: LRUCache = LRUCache::new(2);
-        lru.put(1, 0);
-        lru.put(2, 2);
-        let expected0 = 0;
-        let actual0 = lru.get(1);
-        assert_eq!(expected0, actual0);
-        lru.put(3, 3);
-        let expected1 = -1;
-        let actual1 = lru.get(2);
-        assert_eq!(expected1, actual1);
-        lru.put(4, 4);
-        let expected2 = -1;
-        let actual2 = lru.get(1);
-        assert_eq!(expected2, actual2);
-        let expected3 = lru.get(3);
-        let actual3 = 3;
-        assert_eq!(expected3, actual3);
-        let expected4 = lru.get(4);
-        let actual4 = 4;
-        assert_eq!(expected4, actual4);
-    }
-    #[test]
-    fn test_with_test_case_13_should_return_expected() {
-        let mut lru: LRUCache = LRUCache::new(1);
-        lru.put(2, 1);
-        let expected0 = 1;
-        let actual0 = lru.get(2);
-        assert_eq!(expected0, actual0);
-        lru.put(3, 2);
-        let expected1 = -1;
-        let actual1 = lru.get(2);
-        assert_eq!(expected1, actual1);
-        let expected2 = 2;
-        let actual2 = lru.get(3);
-        assert_eq!(expected2, actual2);
-    }
+#[test]
+fn test_with_sample_input_1_should_return_expected() {
+    let mut lru: LRUCache = LRUCache::new(2);
+    lru.put(1, 1);
+    lru.put(2, 2);
+    let expected0 = 1;
+    let actual0 = lru.get(1);
+    assert_eq!(expected0, actual0);
+    lru.put(3, 3);
+    let expected1 = -1;
+    let actual1 = lru.get(2);
+    assert_eq!(expected1, actual1);
+    lru.put(4, 4);
+    let expected2 = -1;
+    let actual2 = lru.get(1);
+    assert_eq!(expected2, actual2);
+    let expected3 = lru.get(3);
+    let actual3 = 3;
+    assert_eq!(expected3, actual3);
+    let expected4 = lru.get(4);
+    let actual4 = 4;
+    assert_eq!(expected4, actual4);
+}
+#[test]
+fn test_with_test_case_10_should_return_expected() {
+    let mut lru: LRUCache = LRUCache::new(2);
+    lru.put(1, 0);
+    lru.put(2, 2);
+    let expected0 = 0;
+    let actual0 = lru.get(1);
+    assert_eq!(expected0, actual0);
+    lru.put(3, 3);
+    let expected1 = -1;
+    let actual1 = lru.get(2);
+    assert_eq!(expected1, actual1);
+    lru.put(4, 4);
+    let expected2 = -1;
+    let actual2 = lru.get(1);
+    assert_eq!(expected2, actual2);
+    let expected3 = lru.get(3);
+    let actual3 = 3;
+    assert_eq!(expected3, actual3);
+    let expected4 = lru.get(4);
+    let actual4 = 4;
+    assert_eq!(expected4, actual4);
+}
+#[test]
+fn test_with_test_case_13_should_return_expected() {
+    let mut lru: LRUCache = LRUCache::new(1);
+    lru.put(2, 1);
+    let expected0 = 1;
+    let actual0 = lru.get(2);
+    assert_eq!(expected0, actual0);
+    lru.put(3, 2);
+    let expected1 = -1;
+    let actual1 = lru.get(2);
+    assert_eq!(expected1, actual1);
+    let expected2 = 2;
+    let actual2 = lru.get(3);
+    assert_eq!(expected2, actual2);
 }

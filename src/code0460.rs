@@ -132,22 +132,17 @@ impl LFUCache {
     }
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn test_1() {
-        let mut cache = LFUCache::new(2);
-        cache.put(1, 1);
-        cache.put(2, 2);
-        assert_eq!(cache.get(1), 1);
-        cache.put(3, 3);
-        assert_eq!(cache.get(2), -1);
-        assert_eq!(cache.get(3), 3);
-        cache.put(4, 4);
-        assert_eq!(cache.get(1), -1);
-        assert_eq!(cache.get(3), 3);
-        assert_eq!(cache.get(4), 4);
-    }
+#[test]
+fn test_1() {
+    let mut cache = LFUCache::new(2);
+    cache.put(1, 1);
+    cache.put(2, 2);
+    assert_eq!(cache.get(1), 1);
+    cache.put(3, 3);
+    assert_eq!(cache.get(2), -1);
+    assert_eq!(cache.get(3), 3);
+    cache.put(4, 4);
+    assert_eq!(cache.get(1), -1);
+    assert_eq!(cache.get(3), 3);
+    assert_eq!(cache.get(4), 4);
 }
