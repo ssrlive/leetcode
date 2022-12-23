@@ -54,3 +54,11 @@ impl Solution {
         recurse_my_pow(1.0, factor, n)
     }
 }
+
+#[test]
+fn test_my_pow() {
+    assert_eq!(Solution::my_pow(2.0, 10), 1024.0);
+    assert_eq!(Solution::my_pow(2.1, 3), 9.261000000000001);
+    assert_eq!(Solution::my_pow(2.0, -2), 0.25);
+    assert_eq!(Solution::my_pow(2.0, -2147483648), 0.0);
+}
