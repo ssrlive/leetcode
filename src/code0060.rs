@@ -2,7 +2,7 @@
 
 // 60. Permutation Sequence
 // https://leetcode.com/problems/permutation-sequence/
-// https://leetcode.com/problems/permutation-sequence/
+// https://leetcode.cn/problems/permutation-sequence/
 //
 // The set [1, 2, 3, ..., n] contains a total of n! unique permutations.
 //
