@@ -86,7 +86,8 @@ impl Solution {
     }
 }
 
-fn main() {
+#[test]
+fn test() {
     let board = vec![
         vec!['E', 'E', 'E', 'E', 'E'],
         vec!['E', 'E', 'M', 'E', 'E'],
@@ -95,7 +96,27 @@ fn main() {
     ];
     let click = vec![3, 0];
     let result = Solution::update_board(board, click);
-    for row in result {
-        println!("{:?}", row);
-    }
+    let expected = vec![
+        vec!['B', '1', 'E', '1', 'B'],
+        vec!['B', '1', 'M', '1', 'B'],
+        vec!['B', '1', '1', '1', 'B'],
+        vec!['B', 'B', 'B', 'B', 'B'],
+    ];
+    assert_eq!(result, expected);
+
+    let board = vec![
+        vec!['B', '1', 'E', '1', 'B'],
+        vec!['B', '1', 'M', '1', 'B'],
+        vec!['B', '1', '1', '1', 'B'],
+        vec!['B', 'B', 'B', 'B', 'B'],
+    ];
+    let click = vec![1, 2];
+    let result = Solution::update_board(board, click);
+    let expected = vec![
+        vec!['B', '1', 'E', '1', 'B'],
+        vec!['B', '1', 'X', '1', 'B'],
+        vec!['B', '1', '1', '1', 'B'],
+        vec!['B', 'B', 'B', 'B', 'B'],
+    ];
+    assert_eq!(result, expected);
 }
