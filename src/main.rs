@@ -723,6 +723,10 @@ mod code2511;
 mod code2512;
 mod code2513;
 mod code2514;
+mod code2515;
+mod code2516;
+mod code2517;
+mod code2518;
 
 fn main() {
     let mut problems = vec![
