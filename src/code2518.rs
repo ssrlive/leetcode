@@ -47,8 +47,9 @@ impl Solution {
                 return i64::from(sum > 0 && sum < k);
             }
             if dp[i][sum as usize] == 0 {
-                dp[i][sum as usize] =
-                    (1 + dfs(dp, nums, k, i + 1, sum) + dfs(dp, nums, k, i + 1, sum + nums[i])) % 1_000_000_007;
+                let v1 = dfs(dp, nums, k, i + 1, sum);
+                let v2 = dfs(dp, nums, k, i + 1, sum + nums[i]);
+                dp[i][sum as usize] = (1 + v1 + v2) % 1_000_000_007;
             }
             dp[i][sum as usize] - 1
         }
@@ -64,7 +65,8 @@ impl Solution {
             if nums.iter().sum::<i64>() < k * 2 {
                 return 0;
             }
-            (1_000_000_007 + cnt[nums.len()] - 2 * dfs(&mut dp, &nums, k, 0, 0)) % 1_000_000_007
+            let v0 = dfs(&mut dp, &nums, k, 0, 0);
+            (1_000_000_007 + cnt[nums.len()] - 2 * v0) % 1_000_000_007
         }
 
         _count_partitions(nums.iter().map(|&x| i64::from(x)).collect(), i64::from(k)) as i32
