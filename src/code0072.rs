@@ -48,7 +48,7 @@ impl Solution {
             return (len1 | len2) as i32;
         };
 
-        let mut a = vec![vec![0i32; (len2 + 1) as usize]; (len1 + 1) as usize];
+        let mut a = vec![vec![0i32; len2 + 1]; len1 + 1];
         for i in 0..=len1 {
             for j in 0..=len2 {
                 a[i][j] = if i == 0 || j == 0 {

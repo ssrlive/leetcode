@@ -116,7 +116,7 @@ impl Allocator {
                 i += 1;
             }
         }
-        count as i32
+        count
     }
 }
 

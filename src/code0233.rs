@@ -28,7 +28,7 @@ impl Solution {
 
         while i <= m {
             let divider: i128 = i * 10;
-            counter += (m / divider) * i + std::cmp::min(std::cmp::max(m % divider - i + 1, 0), i);
+            counter += (m / divider) * i + (m % divider - i + 1).clamp(0, i);
             i *= 10;
         }
         counter as i32

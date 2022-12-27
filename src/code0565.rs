@@ -59,7 +59,7 @@ impl Solution {
             max = std::cmp::max(max, count);
         }
 
-        max as i32
+        max
     }
 }
 

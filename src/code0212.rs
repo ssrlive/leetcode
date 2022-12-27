@@ -145,7 +145,7 @@ impl<'a> TrieNode<'a> {
             for &b in bytes {
                 let idx = alph_to_idx(b);
                 if current.children[idx].is_none() {
-                    current.children[idx] = Some(Box::new(Self::default()));
+                    current.children[idx] = Some(Box::default());
                 }
                 let next = current.children[idx].as_mut().unwrap().as_mut();
                 current = next;

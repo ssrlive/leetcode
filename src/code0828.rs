@@ -50,12 +50,12 @@ impl Solution {
             let c = (c - b'A') as usize;
             ret += (i - last[0][c]) * (last[0][c] - last[1][c]);
             last[1][c] = last[0][c];
-            last[0][c] = i as i32;
+            last[0][c] = i;
         }
         for c in 0..26 {
             ret += (s.len() as i32 - last[0][c]) * (last[0][c] - last[1][c]);
         }
-        ret as i32
+        ret
     }
 }
 

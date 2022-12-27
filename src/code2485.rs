@@ -37,12 +37,12 @@ struct Solution;
 impl Solution {
     pub fn pivot_integer(n: i32) -> i32 {
         fn sum_of_range(start: i32, end: i32) -> i32 {
-            (start..=end).map(|index| index as i32).sum::<i32>()
+            (start..=end).sum::<i32>()
         }
 
         for num in 0..=n {
-            if sum_of_range(0, num as i32) == sum_of_range(num as i32, n) {
-                return num as i32;
+            if sum_of_range(0, num) == sum_of_range(num, n) {
+                return num;
             }
         }
         -1

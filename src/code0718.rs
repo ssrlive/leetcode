@@ -41,7 +41,7 @@ impl Solution {
             }
         }
 
-        max as i32
+        max
     }
 }
 

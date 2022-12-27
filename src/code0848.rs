@@ -49,7 +49,7 @@ impl Solution {
         }
         let mut s = s.into_bytes();
         for i in 0..s.len() {
-            s[i] = ((s[i] - b'a' + shifts[i] as u8) % 26 + b'a') as u8;
+            s[i] = (s[i] - b'a' + shifts[i] as u8) % 26 + b'a';
         }
         String::from_utf8(s).unwrap_or_default()
     }

@@ -43,17 +43,17 @@ impl Solution {
             for j in 0..n as usize {
                 let mut mini = i64::MAX;
                 for i in 0..arri.len() {
-                    arrn[i] = dp[arri[i] as usize] * primes[i] as i64;
-                    mini = mini.min(arrn[i] as i64);
+                    arrn[i] = dp[arri[i] as usize] * primes[i];
+                    mini = mini.min(arrn[i]);
                 }
                 for i in 0..arri.len() {
-                    if mini == arrn[i] as i64 {
+                    if mini == arrn[i] {
                         dp[j + 1] = arrn[i];
                         arri[i] += 1;
                     }
                 }
             }
-            dp[n as usize - 1] as i64
+            dp[n as usize - 1]
         }
 
         let primes = primes.iter().map(|x| *x as i64).collect();

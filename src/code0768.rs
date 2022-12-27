@@ -51,7 +51,7 @@ impl Solution {
 
         for (index, num) in arr_float.iter().enumerate() {
             if num > &max {
-                max = *num as f32;
+                max = *num;
             }
             if arr_float_sorted[index] == max {
                 res += 1;

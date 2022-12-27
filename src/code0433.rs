@@ -61,7 +61,7 @@ impl Solution {
         queue.push_back((start, 0));
         while let Some((mut s, step)) = queue.pop_front() {
             if s == end {
-                return step as i32;
+                return step;
             }
             for i in 0..s.len() {
                 let c = s.as_bytes()[i];

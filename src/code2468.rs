@@ -90,12 +90,12 @@ impl Solution {
             }
 
             let mut finish = false;
-            if (msglen + stridx) as usize >= len {
+            if (msglen + stridx) >= len {
                 finish = true;
                 if limit <= (3 + pow + powlocal) {
                     return Vec::new();
                 }
-                msglen = len - stridx as usize;
+                msglen = len - stridx;
             }
             splits.push(String::from(&message[stridx..(stridx + msglen)]));
             stridx += msglen;

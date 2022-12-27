@@ -49,7 +49,7 @@ impl Solution {
         let value_diff = value_diff as i64;
         let mut bts = std::collections::BTreeSet::<i64>::new();
         for i in 0..nums.len() {
-            if i > index_diff as usize {
+            if i > index_diff {
                 bts.remove(&(nums[i - 1 - index_diff] as i64));
             }
             if bts

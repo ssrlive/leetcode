@@ -145,7 +145,7 @@ impl Solution {
                     permutation[0] as f64,
                     op_i,
                     calc(
-                        calc(permutation[1] as f64, op_j, permutation[2] as f64) as f64,
+                        calc(permutation[1] as f64, op_j, permutation[2] as f64),
                         op_k,
                         permutation[3] as f64,
                     ),

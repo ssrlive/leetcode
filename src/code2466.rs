@@ -48,7 +48,7 @@ impl Solution {
         let one = one as usize;
         let zero = zero as usize;
         let mut ans = 0;
-        let mut arr = vec![0; (high + 1) as usize];
+        let mut arr = vec![0; high + 1];
         arr[0] = 1;
         for i in 0..=high {
             if i >= zero {
