@@ -1,0 +1,256 @@
+#![allow(dead_code)]
+
+// 913. Cat and Mouse
+// https://leetcode.com/problems/cat-and-mouse/
+// https://leetcode.cn/problems/cat-and-mouse/
+//
+// A game on an undirected graph is played by two players, Mouse and Cat, who alternate turns.
+//
+// The graph is given as follows: graph[a] is a list of all nodes b such that ab is an edge of the graph.
+//
+// The mouse starts at node 1 and goes first, the cat starts at node 2 and goes second, and there is a hole at node 0.
+//
+// During each player's turn, they must travel along one edge of the graph that meets where they are.
+// For example, if the Mouse is at node 1, it must travel to any node in graph[1].
+//
+// Additionally, it is not allowed for the Cat to travel to the Hole (node 0.)
+//
+// Then, the game can end in three ways:
+//
+// If ever the Cat occupies the same node as the Mouse, the Cat wins.
+// If ever the Mouse reaches the Hole, the Mouse wins.
+// If ever a position is repeated (i.e., the players are in the same position as a previous turn,
+//     and it is the same player's turn to move), the game is a draw.
+// Given a graph, and assuming both players play optimally, return
+//
+// 1 if the mouse wins the game,
+// 2 if the cat wins the game, or
+// 0 if the game is a draw.
+//
+// Example 1:
+//
+// Input: graph = [[2,5],[3],[0,4,5],[1,4,5],[2,3],[0,2,3]]
+// Output: 0
+//
+// Example 2:
+//
+// Input: graph = [[1,3],[0],[3],[0,2]]
+// Output: 1
+//
+// Constraints:
+//
+// - 3 <= graph.length <= 50
+// - 1 <= graph[i].length < graph.length
+// - 0 <= graph[i][j] < graph.length
+// - graph[i][j] != i
+// - graph[i] is unique.
+// - The mouse and the cat can always move.
+//
+
+/*
+// cpp solution
+class Solution {
+public:
+    int catMouseGame(vector<vector<int>>& graph) {
+        int len = graph.size();
+        vector<vector<int>> dp[2];
+        vector<vector<int>> outdegree[2];
+        queue<vector<int>> q; // q of {turn, mouse position, cat position} for topological sort
+
+        dp[0] = vector<vector<int>>(len, vector<int>(len));
+        dp[1] = vector<vector<int>>(len, vector<int>(len));
+        outdegree[0] = vector<vector<int>>(len, vector<int>(len));
+        outdegree[1] = vector<vector<int>>(len, vector<int>(len));
+
+        // init dp and queue
+        for (int j = 0; j < len; ++j) {
+            dp[0][0][j] = dp[1][0][j] = 1;
+            q.push({0, 0, j});
+            q.push({1, 0, j});
+        }
+        for (int j = 1; j < len; ++j) {
+            dp[0][j][j] = dp[1][j][j] = 2;
+            q.push({0, j, j});
+            q.push({1, j, j});
+        }
+        // init outdegree
+        for (int i = 0; i < len; ++i) {
+            for (int j = 1; j < len; ++j) {
+                outdegree[0][i][j] = graph[i].size();
+                outdegree[1][i][j] = graph[j].size();
+            }
+        }
+        for (auto &v : graph[0]) {
+            for (int i = 0; i < len; ++i) {
+                outdegree[1][i][v]--;
+            }
+        }
+        // run the topological sort from queue
+        while (q.size()) {
+            auto turn = q.front()[0];
+            auto mouse = q.front()[1];
+            auto cat = q.front()[2];
+            q.pop();
+
+            if (turn == 0 && mouse == 1 && cat == 2) {
+                // the result has been inferenced
+                break;
+            }
+
+            if (turn == 0) { // mouse's turn
+                // v is the prev position of cat
+                for (auto &v : graph[cat]) {
+                    if (v == 0) {
+                        continue;
+                    }
+
+                    if (dp[1][mouse][v] > 0) {
+                        continue;
+                    }
+
+                    if (dp[turn][mouse][cat] == 2) {
+                        // cat wants to move from v to `cat` position, and thus cat wins
+                        dp[1][mouse][v] = 2;
+                        q.push({1, mouse, v});
+                        continue;
+                    }
+
+                    outdegree[1][mouse][v]--;
+                    if (outdegree[1][mouse][v] == 0) {
+                        dp[1][mouse][v] = 1;
+                        q.push({1, mouse, v});
+                    }
+                }
+            } else { // cat's turn
+                // v is the prev position of mouse
+                for (auto &v : graph[mouse]) {
+                    if (dp[0][v][cat] > 0) {
+                        continue;
+                    }
+
+                    if (dp[turn][mouse][cat] == 1) {
+                        // mouse wants to move from v to `mouse` position and thus mouse wins
+                        dp[0][v][cat] = 1;
+                        q.push({0, v, cat});
+                        continue;
+                    }
+
+                    outdegree[0][v][cat]--;
+                    if (outdegree[0][v][cat] == 0) {
+                        dp[0][v][cat] = 2;
+                        q.push({0, v, cat});
+                    }
+                }
+            }
+        }
+
+        return dp[0][1][2];
+    }
+};
+*/
+
+struct Solution;
+
+impl Solution {
+    pub fn cat_mouse_game(graph: Vec<Vec<i32>>) -> i32 {
+        use std::collections::VecDeque;
+        let len = graph.len();
+        let mut dp = vec![vec![vec![0; len]; len]; 2];
+        let mut outdegree = vec![vec![vec![0; len]; len]; 2];
+        let mut q = VecDeque::new();
+
+        for j in 0..len {
+            dp[0][0][j] = 1;
+            dp[1][0][j] = 1;
+            q.push_back((0, 0, j));
+            q.push_back((1, 0, j));
+        }
+        for j in 1..len {
+            dp[0][j][j] = 2;
+            dp[1][j][j] = 2;
+            q.push_back((0, j, j));
+            q.push_back((1, j, j));
+        }
+        for i in 0..len {
+            for j in 1..len {
+                outdegree[0][i][j] = graph[i].len() as i32;
+                outdegree[1][i][j] = graph[j].len() as i32;
+            }
+        }
+        for &v in &graph[0] {
+            for i in 0..len {
+                outdegree[1][i][v as usize] -= 1;
+            }
+        }
+        while let Some((turn, mouse, cat)) = q.pop_front() {
+            if turn == 0 && mouse == 1 && cat == 2 {
+                break;
+            }
+            if turn == 0 {
+                for &v in &graph[cat] {
+                    let v = v as usize;
+                    if v == 0 {
+                        continue;
+                    }
+                    if dp[1][mouse][v] > 0 {
+                        continue;
+                    }
+                    if dp[turn][mouse][cat] == 2 {
+                        dp[1][mouse][v] = 2;
+                        q.push_back((1, mouse, v));
+                        continue;
+                    }
+                    outdegree[1][mouse][v] -= 1;
+                    if outdegree[1][mouse][v] == 0 {
+                        dp[1][mouse][v] = 1;
+                        q.push_back((1, mouse, v));
+                    }
+                }
+            } else {
+                for &v in &graph[mouse] {
+                    let v = v as usize;
+                    if dp[0][v][cat] > 0 {
+                        continue;
+                    }
+                    if dp[turn][mouse][cat] == 1 {
+                        dp[0][v][cat] = 1;
+                        q.push_back((0, v, cat));
+                        continue;
+                    }
+                    outdegree[0][v][cat] -= 1;
+                    if outdegree[0][v][cat] == 0 {
+                        dp[0][v][cat] = 2;
+                        q.push_back((0, v, cat));
+                    }
+                }
+            }
+        }
+        dp[0][1][2]
+    }
+}
+
+#[test]
+fn test() {
+    let graph = vec![
+        vec![2, 5],
+        vec![3],
+        vec![0, 4, 5],
+        vec![1, 4, 5],
+        vec![2, 3],
+        vec![0, 2, 3],
+    ];
+    let res = 0;
+    assert_eq!(Solution::cat_mouse_game(graph), res);
+
+    let graph = vec![vec![1, 3], vec![0], vec![3], vec![0, 2]];
+    let res = 1;
+    assert_eq!(Solution::cat_mouse_game(graph), res);
+
+    let graph = vec![vec![1, 2, 3], vec![0], vec![0], vec![0]];
+    let res = 1;
+    assert_eq!(Solution::cat_mouse_game(graph), res);
+
+    let graph = vec![vec![1], vec![0, 2, 4], vec![1, 3, 4], vec![2], vec![1, 2]];
+    let res = 1;
+    assert_eq!(Solution::cat_mouse_game(graph), res);
+}
