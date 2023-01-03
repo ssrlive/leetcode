@@ -47,20 +47,16 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(
-        Solution::is_long_pressed_name("alex".to_string(), "aaleex".to_string()),
-        true
-    );
-    assert_eq!(
-        Solution::is_long_pressed_name("saeed".to_string(), "ssaaedd".to_string()),
-        false
-    );
-    assert_eq!(
-        Solution::is_long_pressed_name("leelee".to_string(), "lleeelee".to_string()),
-        true
-    );
-    assert_eq!(
-        Solution::is_long_pressed_name("laiden".to_string(), "laiden".to_string()),
-        true
-    );
+    let cases = vec![
+        ("alex", "aaleex", true),
+        ("saeed", "ssaaedd", false),
+        ("leelee", "lleeelee", true),
+        ("laiden", "laiden", true),
+    ];
+    let cases = cases
+        .into_iter()
+        .map(|(name, typed, expected)| (name.to_string(), typed.to_string(), expected));
+    for (name, typed, expected) in cases {
+        assert_eq!(Solution::is_long_pressed_name(name, typed), expected);
+    }
 }
