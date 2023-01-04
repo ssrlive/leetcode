@@ -4,191 +4,94 @@
 // https://leetcode.com/problems/lru-cache/
 // https://leetcode.cn/problems/lru-cache/
 //
+// Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.
+//
+// Implement the LRUCache class:
+//
+// LRUCache(int capacity) Initialize the LRU cache with positive size capacity.
+// int get(int key) Return the value of the key if the key exists, otherwise return -1.
+// void put(int key, int value) Update the value of the key if the key exists. Otherwise, add the key-value pair to the cache.
+//   If the number of keys exceeds the capacity from this operation, evict the least recently used key.
+//
+// The functions get and put must each run in O(1) average time complexity.
+//
+// Example 1:
+//
+// Input
+// ["LRUCache", "put", "put", "get", "put", "get", "put", "get", "get", "get"]
+// [[2], [1, 1], [2, 2], [1], [3, 3], [2], [4, 4], [1], [3], [4]]
+// Output
+// [null, null, null, 1, null, -1, null, -1, 3, 4]
+//
+// Explanation
+// LRUCache lRUCache = new LRUCache(2);
+// lRUCache.put(1, 1); // cache is {1=1}
+// lRUCache.put(2, 2); // cache is {1=1, 2=2}
+// lRUCache.get(1);    // return 1
+// lRUCache.put(3, 3); // LRU key was 2, evicts key 2, cache is {1=1, 3=3}
+// lRUCache.get(2);    // returns -1 (not found)
+// lRUCache.put(4, 4); // LRU key was 1, evicts key 1, cache is {4=4, 3=3}
+// lRUCache.get(1);    // return -1 (not found)
+// lRUCache.get(3);    // return 3
+// lRUCache.get(4);    // return 4
+//
+// Constraints:
+//
+// - 1 <= capacity <= 3000
+// - 0 <= key <= 10^4
+// - 0 <= value <= 10^5
+// - At most 2 * 10^5 calls will be made to get and put.
+//
 
-use std::cell::RefCell;
 use std::collections::HashMap;
-use std::rc::Rc;
 
-/// Time Complexities:
-///         `new()`:    O(1)
-///         `get()`:    O(1)
-///         `put()`:    O(1)
-/// Space Complexity:   O(`capacity`)
 struct LRUCache {
-    num_to_node: HashMap<i32, Rc<RefCell<ListNode>>>,
-    dll: DoublyLinkedList,
-    /// this is supposed to be a constant. However,
-    /// there is no easy way to enforce immutability(constant/readonly) at fields level till now,
-    /// or one has to rely on getters/setters
     capacity: usize,
+    map: HashMap<i32, i32>,
+    keys: Vec<i32>,
 }
 
 impl LRUCache {
     fn new(capacity: i32) -> Self {
-        let capacity: usize = capacity as usize;
-        Self {
-            /// the `HashMap::with_capacity()` rounds up to the nearest factor of 2
-            /// e.g.
-            /// capacity initialized    ->  actual capacity
-            /// 2, 3                    ->  4
-            /// 4                       ->  8
-            /// 8                       ->  16
-            num_to_node: HashMap::with_capacity(capacity + 1),
-            dll: DoublyLinkedList::new(),
-            capacity,
+        LRUCache {
+            capacity: capacity as usize,
+            map: HashMap::new(),
+            keys: Vec::new(),
         }
     }
 
     fn get(&mut self, key: i32) -> i32 {
-        if let Some(node) = self.num_to_node.get(&key) {
-            // to put the node at the head of DLL
-            self.dll.remove(node.clone());
-            self.dll.insert_at_head(node.clone());
-            // to return the value
-            return node.borrow().val;
+        if let Some(value) = self.map.get(&key) {
+            self.keys.retain(|&k| k != key);
+            self.keys.push(key);
+            *value
+        } else {
+            -1
         }
-        -1
     }
 
     fn put(&mut self, key: i32, value: i32) {
-        if let Some(node) = self.num_to_node.get(&key) {
-            // to update the value in the DLL
-            node.borrow_mut().val = value;
-            // to move the node at head
-            self.dll.remove(node.clone());
-            self.dll.insert_at_head(node.clone());
-        } else {
-            // to create a new node
-            let node: Rc<RefCell<ListNode>> = Rc::new(RefCell::new(ListNode::new(key, value)));
-            // to insert the entry into the hashmap
-            self.num_to_node.insert(key, node.clone());
-            // to insert the new node into the DLL
-            self.dll.insert_at_head(node);
-            // to trim the DLL and hashmap if there are more elements/caches than `capacity`
-            if self.capacity < self.num_to_node.len() {
-                let last = self.dll.get_last();
-                let key = last.borrow().key;
-                self.num_to_node.remove(&key);
-                self.dll.remove(last);
-            }
+        if self.map.contains_key(&key) {
+            self.keys.retain(|&k| k != key);
+        } else if self.keys.len() == self.capacity {
+            let k = self.keys.remove(0);
+            self.map.remove(&k);
         }
-    }
-}
-
-struct DoublyLinkedList {
-    dummy_head: Rc<RefCell<ListNode>>,
-    dummy_tail: Rc<RefCell<ListNode>>,
-}
-
-impl DoublyLinkedList {
-    pub fn new() -> Self {
-        let dummy_head: Rc<RefCell<ListNode>> = Rc::new(RefCell::new(ListNode::new(-1, -1)));
-        let dummy_tail: Rc<RefCell<ListNode>> = Rc::new(RefCell::new(ListNode::new(-1, -1)));
-        dummy_head.borrow_mut().next = Some(dummy_tail.clone());
-        dummy_tail.borrow_mut().prev = Some(dummy_head.clone());
-        Self { dummy_head, dummy_tail }
-    }
-    /// according to
-    /// 1. the current design
-    /// 2. the description of the problem: capacity >= 1
-    /// it is guaranteed that
-    /// 1. there always is any ListNode before the `dummy_tail`
-    /// 2. there always is at least one ListNodes, which is not the `dummy_head`, before the `dummy_tail`
-    pub fn get_last(&self) -> Rc<RefCell<ListNode>> {
-        self.dummy_tail.borrow().prev.clone().unwrap()
-    }
-    pub fn insert_at_head(&self, node: Rc<RefCell<ListNode>>) {
-        let next = self.dummy_head.borrow().next.clone().unwrap();
-        self.dummy_head.borrow_mut().next = Some(node.clone());
-        node.borrow_mut().prev = Some(self.dummy_head.clone());
-        node.borrow_mut().next = Some(next.clone());
-        next.borrow_mut().prev = Some(node);
-    }
-    pub fn remove(&self, node: Rc<RefCell<ListNode>>) -> Rc<RefCell<ListNode>> {
-        let prev = node.borrow().prev.clone().unwrap();
-        let next = node.borrow().next.clone().unwrap();
-        prev.borrow_mut().next = Some(next.clone());
-        next.borrow_mut().prev = Some(prev);
-        node
-    }
-}
-
-struct ListNode {
-    val: i32,
-    key: i32,
-    prev: Option<Rc<RefCell<ListNode>>>,
-    next: Option<Rc<RefCell<ListNode>>>,
-}
-
-impl ListNode {
-    pub fn new(key: i32, val: i32) -> Self {
-        Self {
-            key,
-            val,
-            prev: None,
-            next: None,
-        }
+        self.keys.push(key);
+        self.map.insert(key, value);
     }
 }
 
 #[test]
-fn test_with_sample_input_1_should_return_expected() {
-    let mut lru: LRUCache = LRUCache::new(2);
-    lru.put(1, 1);
-    lru.put(2, 2);
-    let expected0 = 1;
-    let actual0 = lru.get(1);
-    assert_eq!(expected0, actual0);
-    lru.put(3, 3);
-    let expected1 = -1;
-    let actual1 = lru.get(2);
-    assert_eq!(expected1, actual1);
-    lru.put(4, 4);
-    let expected2 = -1;
-    let actual2 = lru.get(1);
-    assert_eq!(expected2, actual2);
-    let expected3 = lru.get(3);
-    let actual3 = 3;
-    assert_eq!(expected3, actual3);
-    let expected4 = lru.get(4);
-    let actual4 = 4;
-    assert_eq!(expected4, actual4);
-}
-#[test]
-fn test_with_test_case_10_should_return_expected() {
-    let mut lru: LRUCache = LRUCache::new(2);
-    lru.put(1, 0);
-    lru.put(2, 2);
-    let expected0 = 0;
-    let actual0 = lru.get(1);
-    assert_eq!(expected0, actual0);
-    lru.put(3, 3);
-    let expected1 = -1;
-    let actual1 = lru.get(2);
-    assert_eq!(expected1, actual1);
-    lru.put(4, 4);
-    let expected2 = -1;
-    let actual2 = lru.get(1);
-    assert_eq!(expected2, actual2);
-    let expected3 = lru.get(3);
-    let actual3 = 3;
-    assert_eq!(expected3, actual3);
-    let expected4 = lru.get(4);
-    let actual4 = 4;
-    assert_eq!(expected4, actual4);
-}
-#[test]
-fn test_with_test_case_13_should_return_expected() {
-    let mut lru: LRUCache = LRUCache::new(1);
-    lru.put(2, 1);
-    let expected0 = 1;
-    let actual0 = lru.get(2);
-    assert_eq!(expected0, actual0);
-    lru.put(3, 2);
-    let expected1 = -1;
-    let actual1 = lru.get(2);
-    assert_eq!(expected1, actual1);
-    let expected2 = 2;
-    let actual2 = lru.get(3);
-    assert_eq!(expected2, actual2);
+fn test() {
+    let mut cache = LRUCache::new(2);
+    cache.put(1, 1);
+    cache.put(2, 2);
+    assert_eq!(cache.get(1), 1);
+    cache.put(3, 3);
+    assert_eq!(cache.get(2), -1);
+    cache.put(4, 4);
+    assert_eq!(cache.get(1), -1);
+    assert_eq!(cache.get(3), 3);
+    assert_eq!(cache.get(4), 4);
 }
