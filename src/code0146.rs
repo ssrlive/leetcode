@@ -43,42 +43,44 @@
 // - At most 2 * 10^5 calls will be made to get and put.
 //
 
-use std::collections::HashMap;
+use std::collections::VecDeque;
 
 struct LRUCache {
     capacity: usize,
-    map: HashMap<i32, i32>,
-    keys: Vec<i32>,
+    nodes: VecDeque<Node>,
+}
+
+struct Node {
+    key: i32,
+    value: i32,
 }
 
 impl LRUCache {
     fn new(capacity: i32) -> Self {
         LRUCache {
             capacity: capacity as usize,
-            map: HashMap::new(),
-            keys: Vec::new(),
+            nodes: VecDeque::new(),
         }
     }
 
     fn get(&mut self, key: i32) -> i32 {
-        if let Some(value) = self.map.get(&key) {
-            self.keys.retain(|&k| k != key);
-            self.keys.push(key);
-            *value
+        if let Some(index) = self.nodes.iter().position(|node| node.key == key) {
+            let node = self.nodes.remove(index).unwrap();
+            let value = node.value;
+            self.nodes.push_back(node);
+            value
         } else {
             -1
         }
     }
 
     fn put(&mut self, key: i32, value: i32) {
-        if self.map.contains_key(&key) {
-            self.keys.retain(|&k| k != key);
-        } else if self.keys.len() == self.capacity {
-            let k = self.keys.remove(0);
-            self.map.remove(&k);
+        if let Some(index) = self.nodes.iter().position(|node| node.key == key) {
+            self.nodes.remove(index);
+        } else if self.nodes.len() == self.capacity {
+            self.nodes.pop_front();
         }
-        self.keys.push(key);
-        self.map.insert(key, value);
+        self.nodes.push_back(Node { key, value });
     }
 }
 
