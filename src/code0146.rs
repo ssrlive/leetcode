@@ -50,6 +50,7 @@ struct LRUCache {
     nodes: VecDeque<Node>,
 }
 
+#[derive(Clone, Copy, Default, Debug, PartialEq, Eq)]
 struct Node {
     key: i32,
     value: i32,
@@ -66,9 +67,8 @@ impl LRUCache {
     fn get(&mut self, key: i32) -> i32 {
         if let Some(index) = self.nodes.iter().position(|node| node.key == key) {
             let node = self.nodes.remove(index).unwrap();
-            let value = node.value;
             self.nodes.push_back(node);
-            value
+            node.value
         } else {
             -1
         }
