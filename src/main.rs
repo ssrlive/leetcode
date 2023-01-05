@@ -789,8 +789,31 @@ mod code0972;
 mod code0973;
 mod code0974;
 mod code0975;
-
+mod code0976;
 mod code0977;
+mod code0978;
+mod code0979;
+mod code0980;
+mod code0981;
+mod code0982;
+mod code0983;
+mod code0984;
+mod code0985;
+mod code0986;
+mod code0987;
+mod code0988;
+mod code0989;
+mod code0990;
+mod code0991;
+mod code0992;
+mod code0993;
+mod code0994;
+mod code0995;
+mod code0996;
+mod code0997;
+mod code0998;
+mod code0999;
+mod code1000;
 
 mod code1047;
 
