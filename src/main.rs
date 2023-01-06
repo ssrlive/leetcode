@@ -816,6 +816,11 @@ mod code0997;
 mod code0998;
 mod code0999;
 mod code1000;
+mod code1001;
+mod code1002;
+mod code1003;
+mod code1004;
+mod code1005;
 
 mod code1047;
 
