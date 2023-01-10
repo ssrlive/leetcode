@@ -821,6 +821,26 @@ mod code1002;
 mod code1003;
 mod code1004;
 mod code1005;
+mod code1006;
+mod code1007;
+mod code1008;
+mod code1009;
+mod code1010;
+mod code1011;
+mod code1012;
+mod code1013;
+mod code1014;
+mod code1015;
+mod code1016;
+mod code1017;
+mod code1018;
+mod code1019;
+mod code1020;
+mod code1021;
+mod code1022;
+mod code1023;
+mod code1024;
+mod code1025;
 
 mod code1047;
 
