@@ -864,8 +864,27 @@ mod code1046;
 mod code1047;
 mod code1048;
 mod code1049;
-
+mod code1051;
+mod code1052;
+mod code1053;
+mod code1054;
 mod code1066;
+mod code1071;
+mod code1072;
+mod code1073;
+mod code1074;
+mod code1078;
+mod code1079;
+mod code1080;
+mod code1081;
+mod code1089;
+mod code1090;
+mod code1091;
+mod code1092;
+mod code1093;
+mod code1094;
+mod code1095;
+mod code1096;
 
 mod code2401;
 mod code2402;
