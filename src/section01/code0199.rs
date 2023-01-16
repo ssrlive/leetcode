@@ -8,7 +8,7 @@
 // return the values of the nodes you can see ordered from top to bottom.
 //
 
-use super::treenode::TreeNode;
+use crate::treenode::TreeNode;
 
 struct Solution;
 

@@ -5,7 +5,7 @@
 // https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/
 //
 
-use super::treenode::TreeNode;
+use crate::treenode::TreeNode;
 
 struct Solution;
 

@@ -25,7 +25,7 @@
 // You may not alter the values in the list's nodes, only nodes itself may be
 // changed.
 
-use super::listnode::ListNode;
+use crate::listnode::ListNode;
 
 pub struct Solution {}
 

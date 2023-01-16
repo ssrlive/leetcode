@@ -7,7 +7,7 @@
 // Given the head of a linked list, return the list after sorting it in ascending order.
 //
 
-use super::listnode::ListNode;
+use crate::listnode::ListNode;
 
 struct Solution;
 

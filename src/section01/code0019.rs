@@ -8,7 +8,7 @@
 //
 // Follow up: Could you do this in one pass?
 
-use super::listnode::ListNode;
+use crate::listnode::ListNode;
 
 struct Solution;
 

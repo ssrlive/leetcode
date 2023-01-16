@@ -14,7 +14,7 @@
 //
 // You may not modify the values in the list's nodes. Only nodes themselves may be changed.
 
-use super::listnode::ListNode;
+use crate::listnode::ListNode;
 
 struct Solution {}
 

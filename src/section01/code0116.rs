@@ -5,7 +5,7 @@
 // https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/
 //
 
-use super::treenode::TreeNode;
+use crate::treenode::TreeNode;
 
 struct Solution {}
 

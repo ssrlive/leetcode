@@ -10,7 +10,7 @@
 //
 // Return the head of the merged linked list.
 
-use super::listnode::ListNode;
+use crate::listnode::ListNode;
 
 struct Solution;
 

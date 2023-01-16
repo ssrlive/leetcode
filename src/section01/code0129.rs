@@ -14,7 +14,7 @@
 // A leaf node is a node with no children.
 //
 
-use super::treenode::TreeNode;
+use crate::treenode::TreeNode;
 
 struct Solution {}
 

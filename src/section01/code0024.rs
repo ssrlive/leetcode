@@ -8,7 +8,7 @@
 // You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)
 //
 
-use super::listnode::ListNode;
+use crate::listnode::ListNode;
 
 pub struct Solution {}
 

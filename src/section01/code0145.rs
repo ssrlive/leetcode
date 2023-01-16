@@ -7,7 +7,7 @@
 // Given the root of a binary tree, return the postorder traversal of its nodes' values.
 //
 
-use super::treenode::TreeNode;
+use crate::treenode::TreeNode;
 
 struct Solution {}
 

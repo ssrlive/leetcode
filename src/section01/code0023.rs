@@ -9,7 +9,7 @@
 // Merge all the linked-lists into one sorted linked-list and return it.
 //
 
-use super::listnode::ListNode;
+use crate::listnode::ListNode;
 
 pub struct Solution {}
 

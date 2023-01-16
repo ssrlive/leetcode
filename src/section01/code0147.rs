@@ -17,7 +17,7 @@
 // One element (red) is removed from the input data and inserted in-place into the sorted list with each iteration.
 //
 
-use super::listnode::ListNode;
+use crate::listnode::ListNode;
 
 struct Solution;
 

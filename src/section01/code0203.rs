@@ -9,7 +9,7 @@
 // and return the new head.
 //
 
-use super::listnode::ListNode;
+use crate::listnode::ListNode;
 
 pub struct Solution {}
 

@@ -7,7 +7,7 @@
 // Given the head of a singly linked list, reverse the list, and return the reversed list.
 //
 
-use super::listnode::ListNode;
+use crate::listnode::ListNode;
 
 struct Solution;
 

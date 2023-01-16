@@ -16,7 +16,7 @@
 // You may assume that next() calls will always be valid. That is, there will be at least a next number in the in-order traversal when next() is called.
 //
 
-use super::treenode::TreeNode;
+use crate::treenode::TreeNode;
 use std::cell::RefCell;
 use std::rc::Rc;
 

@@ -4,7 +4,7 @@
 // https://leetcode.com/problems/path-sum-ii/
 // https://leetcode.cn/problems/path-sum-ii/
 
-use super::treenode::TreeNode;
+use crate::treenode::TreeNode;
 
 struct Solution;
 

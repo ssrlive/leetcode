@@ -5,7 +5,7 @@
 // https://leetcode.cn/problems/partition-list/
 //
 
-use super::listnode::ListNode;
+use crate::listnode::ListNode;
 
 struct Solution;
 
