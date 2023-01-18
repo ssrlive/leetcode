@@ -1047,6 +1047,39 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 1201 | [Ugly Number III](src/section02/code1201.rs) | [link](https://leetcode.com/problems/ugly-number-iii/) | Medium | :heavy_check_mark: |
+| 1202 | [Smallest String With Swaps](src/section02/code1202.rs) | [link](https://leetcode.com/problems/smallest-string-with-swaps/) | Medium | :heavy_check_mark: |
+| 1203 | [Sort Items by Groups Respecting Dependencies](src/section02/code1203.rs) | [link](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/) | Hard | :heavy_check_mark: |
+| 1206 | [Design Skiplist](src/section02/code1206.rs) | [link](https://leetcode.com/problems/design-skiplist/) | Hard | :heavy_check_mark: |
+| 1207 | [Unique Number of Occurrences](src/section02/code1207.rs) | [link](https://leetcode.com/problems/unique-number-of-occurrences/) | Easy | :heavy_check_mark: |
+| 1208 | [Get Equal Substrings Within Budget](src/section02/code1208.rs) | [link](https://leetcode.com/problems/get-equal-substrings-within-budget/) | Medium | :heavy_check_mark: |
+| 1209 | [Remove All Adjacent Duplicates in String II](src/section02/code1209.rs) | [link](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/) | Medium | :heavy_check_mark: |
+| 1210 | [Minimum Moves to Reach Target with Rotations](src/section02/code1210.rs) | [link](https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/) | Hard | :heavy_check_mark: |
+| 1217 | [Minimum Cost to Move Chips to The Same Position](src/section02/code1217.rs) | [link](https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/) | Easy | :heavy_check_mark: |
+| 1218 | [Longest Arithmetic Subsequence of Given Difference](src/section02/code1218.rs) | [link](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/) | Medium | :heavy_check_mark: |
+| 1219 | [Path with Maximum Gold](src/section02/code1219.rs) | [link](https://leetcode.com/problems/path-with-maximum-gold/) | Medium | :heavy_check_mark: |
+| 1220 | [Count Vowels Permutation](src/section02/code1220.rs) | [link](https://leetcode.com/problems/count-vowels-permutation/) | Hard | :heavy_check_mark: |
+| 1221 | [Split a String in Balanced Strings](src/section02/code1221.rs) | [link](https://leetcode.com/problems/split-a-string-in-balanced-strings/) | Easy | :heavy_check_mark: |
+| 1222 | [Queens That Can Attack the King](src/section02/code1222.rs) | [link](https://leetcode.com/problems/queens-that-can-attack-the-king/) | Medium | :heavy_check_mark: |
+| 1223 | [Dice Roll Simulation](src/section02/code1223.rs) | [link](https://leetcode.com/problems/dice-roll-simulation/) | Medium | :heavy_check_mark: |
+| 1224 | [Maximum Equal Frequency](src/section02/code1224.rs) | [link](https://leetcode.com/problems/maximum-equal-frequency/) | Hard | :heavy_check_mark: |
+| 1226 | [The Dining Philosophers](src/section02/code1226.rs) | [link](https://leetcode.com/problems/the-dining-philosophers/) | Medium | :heavy_check_mark: |
+| 1227 | [Airplane Seat Assignment Probability](src/section02/code1227.rs) | [link](https://leetcode.com/problems/airplane-seat-assignment-probability/) | Medium | :heavy_check_mark: |
+| 1232 | [Check If It Is a Straight Line](src/section02/code1232.rs) | [link](https://leetcode.com/problems/check-if-it-is-a-straight-line/) | Easy | :heavy_check_mark: |
+| 1233 | [Remove Sub-Folders from the Filesystem](src/section02/code1233.rs) | [link](https://leetcode.com/problems/remove-sub-folders-from-the-filesystem/) | Medium | :heavy_check_mark: |
+| 1234 | [Replace the Substring for Balanced String](src/section02/code1234.rs) | [link](https://leetcode.com/problems/replace-the-substring-for-balanced-string/) | Medium | :heavy_check_mark: |
+| 1235 | [Maximum Profit in Job Scheduling](src/section02/code1235.rs) | [link](https://leetcode.com/problems/maximum-profit-in-job-scheduling/) | Hard | :heavy_check_mark: |
+| 1237 | [Find Positive Integer Solution for a Given Equation](src/section02/code1237.rs) | [link](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/) | Easy | :heavy_check_mark: |
+| 1238 | [Circular Permutation in Binary Representation](src/section02/code1238.rs) | [link](https://leetcode.com/problems/circular-permutation-in-binary-representation/) | Medium | :heavy_check_mark: |
+| 1239 | [Maximum Length of a Concatenated String with Unique Characters](src/section02/code1239.rs) | [link](https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/) | Medium | :heavy_check_mark: |
+| 1240 | [Tiling a Rectangle with the Fewest Squares](src/section02/code1240.rs) | [link](https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/) | Hard | :heavy_check_mark: |
+| 1247 | [Minimum Swaps to Make Strings Equal](src/section02/code1247.rs) | [link](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/) | Medium | :heavy_check_mark: |
+| 1248 | [Count Number of Nice Subarrays](src/section02/code1248.rs) | [link](https://leetcode.com/problems/count-number-of-nice-subarrays/) | Medium | :heavy_check_mark: |
+| 1249 | [Minimum Remove to Make Valid Parentheses](src/section02/code1249.rs) | [link](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | Medium | :heavy_check_mark: |
+| 1250 | [Check If It Is a Good Array](src/section02/code1250.rs) | [link](https://leetcode.com/problems/check-if-it-is-a-good-array/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
