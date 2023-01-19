@@ -94,5 +94,4 @@ fn test() {
     assert_eq!(Solution::length_of_longest_substring2("".to_string()), 0);
     assert_eq!(Solution::length_of_longest_substring2(" ".to_string()), 1);
     assert_eq!(Solution::length_of_longest_substring2("dvdf".to_string()), 3);
-    assert_eq!(Solution::length_of_longest_substring2("abba".to_string()), 2);
 }

@@ -8,8 +8,7 @@
 // of candidates where the chosen numbers sum to target. You may return the combinations in any order.
 //
 // The same number may be chosen from candidates an unlimited number of times. Two combinations are unique if the
-// frequency
-//  of at least one of the chosen numbers is different.
+// frequency of at least one of the chosen numbers is different.
 //
 // The test cases are generated such that the number of unique combinations that sum up to target is less than 150 combinations for the given input.
 //
@@ -43,25 +42,45 @@
 struct Solution;
 
 impl Solution {
-    pub fn combination_sum(nums: Vec<i32>, t: i32) -> Vec<Vec<i32>> {
-        fn dfs(nums: &Vec<i32>, res: &mut Vec<Vec<i32>>, temp: &mut Vec<i32>, t: i32, len: usize, i: usize) {
-            if t < 0 || i >= len {
-                return;
-            } else if t == 0 {
+    pub fn combination_sum(candidates: Vec<i32>, target: i32) -> Vec<Vec<i32>> {
+        let mut candidates = candidates;
+        candidates.sort_unstable();
+
+        // fn dfs(candidates: &Vec<i32>, res: &mut Vec<Vec<i32>>, temp: &mut Vec<i32>, t: i32, i: usize) -> Option<()> {
+        //     let x = *candidates.get(i)?;
+        //     match t.cmp(&0) {
+        //         std::cmp::Ordering::Equal => {
+        //             res.push(temp.clone());
+        //             return Some(());
+        //         }
+        //         std::cmp::Ordering::Less => return Some(()),
+        //         std::cmp::Ordering::Greater => (),
+        //     }
+        //     temp.push(x);
+        //     let _ = dfs(candidates, res, temp, t - x, i);
+        //     temp.pop();
+        //     let _ = dfs(candidates, res, temp, t, i + 1);
+        //     Some(())
+        // }
+
+        fn dfs2(candidates: &Vec<i32>, res: &mut Vec<Vec<i32>>, temp: &mut Vec<i32>, target: i32, index: usize) {
+            if target == 0 {
                 res.push(temp.clone());
                 return;
             }
-            let x = nums[i];
-            temp.push(x);
-            dfs(nums, res, temp, t - x, len, i);
-            temp.pop();
-            dfs(nums, res, temp, t, len, i + 1);
+            for (j, &val) in candidates.iter().enumerate().skip(index) {
+                if target < val {
+                    break;
+                }
+                temp.push(val);
+                dfs2(candidates, res, temp, target - val, j);
+                temp.pop();
+            }
         }
 
-        let len = nums.len();
         let mut res = Vec::with_capacity(100);
         let mut temp = Vec::with_capacity(100);
-        dfs(&nums, &mut res, &mut temp, t, len, 0);
+        dfs2(&candidates, &mut res, &mut temp, target, 0);
         res
     }
 }

@@ -28,10 +28,10 @@
 struct Solution;
 
 impl Solution {
-    pub fn permute_unique(mut nums: Vec<i32>) -> Vec<Vec<i32>> {
-        fn dfs(nums: &Vec<i32>, cur: &mut Vec<i32>, res: &mut Vec<Vec<i32>>, visited: &mut Vec<bool>) {
-            if cur.len() == nums.len() {
-                res.push(cur.clone());
+    pub fn permute_unique(nums: Vec<i32>) -> Vec<Vec<i32>> {
+        fn dfs(nums: &Vec<i32>, tmp: &mut Vec<i32>, res: &mut Vec<Vec<i32>>, visited: &mut Vec<bool>) {
+            if tmp.len() == nums.len() {
+                res.push(tmp.clone());
                 return;
             }
             for i in 0..nums.len() {
@@ -42,13 +42,14 @@ impl Solution {
                 if i > 0 && n == nums[i - 1] && !visited[i - 1] {
                     continue;
                 }
-                cur.push(n);
+                tmp.push(n);
                 visited[i] = true;
-                dfs(nums, cur, res, visited);
-                cur.pop();
+                dfs(nums, tmp, res, visited);
+                tmp.pop();
                 visited[i] = false;
             }
         }
+        let mut nums = nums;
         nums.sort();
         let mut res = vec![];
         dfs(&nums, &mut vec![], &mut res, &mut vec![false; nums.len()]);

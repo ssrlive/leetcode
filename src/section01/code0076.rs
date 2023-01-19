@@ -42,7 +42,7 @@
 struct Solution;
 
 impl Solution {
-    pub fn min_window(s: String, t: String) -> String {
+    pub fn min_window_2(s: String, t: String) -> String {
         let mut map = [0; 58];
         let mut n = 0_usize;
         for c in t.chars() {
@@ -75,11 +75,36 @@ impl Solution {
                 i += 1;
             }
         }
-        // println!("{:?}",candidate);
         match candidate {
             Some((a, b)) => s[a..b + 1].to_string(),
             None => "".to_string(),
         }
+    }
+
+    pub fn min_window(s: String, t: String) -> String {
+        let (mut c, b, mut ans, mut mi) = ([0; 60], s.as_bytes(), (0, 0), 1000000);
+        for x in t.chars() {
+            c[x as usize - 65] -= 1;
+        }
+        let (mut cnt, mut l) = (c.iter().filter(|&x| *x < 0).count(), 0);
+        for (r, &x) in b.iter().enumerate() {
+            c[x as usize - 65] += 1;
+            if c[x as usize - 65] == 0 {
+                cnt -= 1;
+            }
+            while cnt == 0 {
+                if r - l + 1 < mi {
+                    mi = r - l + 1;
+                    ans = (l, r + 1);
+                }
+                if c[b[l] as usize - 65] == 0 {
+                    cnt += 1;
+                }
+                c[b[l] as usize - 65] -= 1;
+                l += 1;
+            }
+        }
+        s[ans.0..ans.1].to_string()
     }
 }
 

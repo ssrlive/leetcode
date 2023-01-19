@@ -42,12 +42,12 @@ impl Solution {
         while low <= high {
             let mid = low + (high - low) / 2;
             match mid.cmp(&(x / mid)) {
+                Ordering::Equal => return mid,
                 Ordering::Greater => high = mid - 1,
                 Ordering::Less => {
                     low = mid + 1;
                     result = mid
                 }
-                Ordering::Equal => return mid,
             }
         }
         result

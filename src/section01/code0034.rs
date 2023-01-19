@@ -37,15 +37,12 @@ struct Solution;
 
 impl Solution {
     pub fn search_range(nums: Vec<i32>, target: i32) -> Vec<i32> {
-        // Find if target in nums
         if nums.binary_search(&target).is_ok() {
-            // Target present
             vec![
                 nums.partition_point(|&i| i < target) as i32,
                 nums.partition_point(|&i| i <= target) as i32 - 1,
             ]
         } else {
-            // Error, not found
             vec![-1, -1]
         }
     }

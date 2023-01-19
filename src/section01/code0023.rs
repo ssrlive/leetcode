@@ -59,10 +59,40 @@ impl Solution {
         });
         head
     }
+
+    pub fn merge_k_lists_3(lists: Vec<Option<Box<ListNode>>>) -> Option<Box<ListNode>> {
+        fn _merge_k_lists_3(mut lists: Vec<Option<Box<ListNode>>>) -> Option<Box<ListNode>> {
+            let f = |(_, x): &(usize, &Option<Box<ListNode>>)| x.as_ref().map_or(std::i32::MAX, |x| x.val);
+            let index = lists.iter().enumerate().min_by_key(f)?.0;
+            let mut head = lists[index].take()?;
+            lists[index] = head.next.take();
+            head.next = _merge_k_lists_3(lists);
+            Some(head)
+        }
+        _merge_k_lists_3(lists)
+    }
 }
 
 #[test]
 fn test_merge_k_lists() {
+    let lists = vec![
+        None,
+        ListNode::from_vec(&[1, 4, 5]),
+        ListNode::from_vec(&[1, 3, 4]),
+        ListNode::from_vec(&[2, 6]),
+    ];
+    let result = ListNode::from_vec(&[1, 1, 2, 3, 4, 4, 5, 6]);
+    assert_eq!(Solution::merge_k_lists_3(lists), result);
+
+    let lists = vec![
+        None,
+        ListNode::from_vec(&[1, 4, 5]),
+        ListNode::from_vec(&[1, 3, 4]),
+        ListNode::from_vec(&[2, 6]),
+    ];
+    let result = ListNode::from_vec(&[1, 1, 2, 3, 4, 4, 5, 6]);
+    assert_eq!(Solution::merge_k_lists(lists), result);
+
     let lists = vec![
         ListNode::from_vec(&[1, 4, 5]),
         ListNode::from_vec(&[1, 3, 4]),

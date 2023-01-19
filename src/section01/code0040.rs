@@ -42,18 +42,19 @@ struct Solution;
 
 impl Solution {
     pub fn combination_sum2(candidates: Vec<i32>, target: i32) -> Vec<Vec<i32>> {
-        fn dfs_helper(candidates: &Vec<i32>, cans: &mut Vec<i32>, res: &mut Vec<Vec<i32>>, target: i32, idx: usize) {
+        fn dfs_helper(candidates: &Vec<i32>, tmp: &mut Vec<i32>, res: &mut Vec<Vec<i32>>, target: i32, idx: usize) {
             match target {
-                0 => res.push(cans.clone()),
+                0 => res.push(tmp.clone()),
                 n if n < 0 => {}
                 _ => {
                     for i in idx..candidates.len() {
-                        if i > idx && candidates[i] == candidates[i - 1] {
+                        let val = candidates[i];
+                        if i > idx && val == candidates[i - 1] {
                             continue;
                         }
-                        cans.push(candidates[i]);
-                        dfs_helper(candidates, cans, res, target - candidates[i], i + 1);
-                        cans.pop();
+                        tmp.push(val);
+                        dfs_helper(candidates, tmp, res, target - val, i + 1);
+                        tmp.pop();
                     }
                 }
             }
