@@ -4,6 +4,8 @@
 // https://leetcode.com/problems/find-peak-element/
 // https://leetcode.cn/problems/find-peak-element/
 //
+// Medium
+//
 // A peak element is an element that is strictly greater than its neighbors.
 //
 // Given a 0-indexed integer array nums, find a peak element, and return its index.

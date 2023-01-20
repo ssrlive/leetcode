@@ -4,6 +4,8 @@
 // https://leetcode.com/problems/min-stack/
 // https://leetcode.cn/problems/min-stack/
 //
+// Medium
+//
 // Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 //
 // Implement the MinStack class:
@@ -15,48 +17,60 @@
 //
 // You must implement a solution with O(1) time complexity for each function.
 //
+// Example 1:
+//
+// Input
+// ["MinStack","push","push","push","getMin","pop","top","getMin"]
+// [[],[-2],[0],[-3],[],[],[],[]]
+//
+// Output
+// [null,null,null,null,-3,null,0,-2]
+//
+// Explanation
+// MinStack minStack = new MinStack();
+// minStack.push(-2);
+// minStack.push(0);
+// minStack.push(-3);
+// minStack.getMin(); // return -3
+// minStack.pop();
+// minStack.top();    // return 0
+// minStack.getMin(); // return -2
+//
+// Constraints:
+//
+// -2^31 <= val <= 2^31 - 1
+// Methods pop, top and getMin operations will always be called on non-empty stacks.
+// At most 3 * 10^4 calls will be made to push, pop, top, and getMin.
+//
 
 struct MinStack {
-    stack: Vec<i32>,
-    min: Vec<i32>,
+    stack: Vec<(i32, i32)>,
 }
 
 impl MinStack {
     fn new() -> Self {
-        MinStack {
-            stack: Vec::new(),
-            min: Vec::new(),
-        }
+        MinStack { stack: Vec::new() }
     }
 
     fn push(&mut self, val: i32) {
-        self.stack.push(val);
-
-        if let Some(&min) = self.min.last() {
-            if val <= min {
-                self.min.push(val);
-            }
+        let min = if let Some(&(_, min)) = self.stack.last() {
+            min.min(val)
         } else {
-            self.min.push(val);
-        }
+            val
+        };
+        self.stack.push((val, min));
     }
 
     fn pop(&mut self) {
-        if let Some(val) = self.stack.pop() {
-            if let Some(&min) = self.min.last() {
-                if val == min {
-                    self.min.pop();
-                }
-            }
-        }
+        self.stack.pop();
     }
 
     fn top(&self) -> i32 {
-        *self.stack.last().unwrap()
+        self.stack.last().unwrap().0
     }
 
     fn get_min(&self) -> i32 {
-        *self.min.last().unwrap()
+        self.stack.last().unwrap().1
     }
 }
 

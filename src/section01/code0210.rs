@@ -35,17 +35,27 @@
 
 struct Solution;
 
+/*
+ * 1. 通过邻接表构建图
+ * 2. 统计每个节点的入度
+ * 3. 将入度为 0 的节点入队
+ * 4. 从队列中取出节点，将其入度减 1，如果减 1 后入度为 0，则将其邻接节点入队
+ * 5. 重复 4，直到队列为空
+ * 6. 如果结果长度等于课程数，则返回结果，否则返回空数组
+*/
+
 impl Solution {
     pub fn find_order(num_courses: i32, prerequisites: Vec<Vec<i32>>) -> Vec<i32> {
-        let mut graph = vec![vec![]; num_courses as usize];
-        let mut in_degree = vec![0; num_courses as usize];
+        let num_courses = num_courses as usize;
+        let mut graph = vec![vec![]; num_courses];
+        let mut in_degree = vec![0; num_courses];
         for edge in prerequisites {
-            graph[edge[1] as usize].push(edge[0]);
+            graph[edge[1] as usize].push(edge[0] as usize);
             in_degree[edge[0] as usize] += 1;
         }
         let mut queue = Vec::new();
-        for i in 0..num_courses {
-            if in_degree[i as usize] == 0 {
+        for (i, &item) in in_degree.iter().enumerate().take(num_courses) {
+            if item == 0 {
                 queue.push(i);
             }
         }
@@ -53,15 +63,15 @@ impl Solution {
         while !queue.is_empty() {
             let node = queue.remove(0);
             result.push(node);
-            for &next in &graph[node as usize] {
-                in_degree[next as usize] -= 1;
-                if in_degree[next as usize] == 0 {
+            for &next in &graph[node] {
+                in_degree[next] -= 1;
+                if in_degree[next] == 0 {
                     queue.push(next);
                 }
             }
         }
-        if result.len() == num_courses as usize {
-            result
+        if result.len() == num_courses {
+            result.iter().map(|&x| x as i32).collect()
         } else {
             vec![]
         }
@@ -70,10 +80,16 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::find_order(2, vec![vec![1, 0]]), vec![0, 1]);
-    assert_eq!(
-        Solution::find_order(4, vec![vec![1, 0], vec![2, 0], vec![3, 1], vec![3, 2]]),
-        vec![0, 1, 2, 3]
-    );
-    assert_eq!(Solution::find_order(1, vec![]), vec![0]);
+    let cases = vec![
+        (2, vec![vec![1, 0]], vec![0, 1]),
+        (
+            4,
+            vec![vec![1, 0], vec![2, 0], vec![3, 1], vec![3, 2]],
+            vec![0, 1, 2, 3],
+        ),
+        (1, vec![], vec![0]),
+    ];
+    for (num_courses, prerequisites, expected) in cases {
+        assert_eq!(Solution::find_order(num_courses, prerequisites), expected);
+    }
 }
