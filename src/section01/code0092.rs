@@ -22,19 +22,21 @@ struct Solution;
 
 impl Solution {
     pub fn reverse_between(head: Option<Box<ListNode>>, left: i32, right: i32) -> Option<Box<ListNode>> {
+        let (left, right) = (left as usize, right as usize);
         if left == right {
             return head;
         }
         let mut stack = vec![];
         let mut next = head;
-        while let Some(mut this) = next {
-            stack.push(this.val);
-            next = this.next.take();
+        while let mut node @ Some(_) = next {
+            next = node.as_mut()?.next.take();
+            stack.push(node);
         }
-        stack[left as usize - 1..=right as usize - 1].reverse();
+        stack[left - 1..=right - 1].reverse();
         let mut next = None;
-        while let Some(val) = stack.pop() {
-            next = Some(Box::new(ListNode { next, val }));
+        while let Some(mut node) = stack.pop() {
+            node.as_mut()?.next = next;
+            next = node;
         }
         next
     }

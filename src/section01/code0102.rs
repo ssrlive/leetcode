@@ -40,11 +40,13 @@ impl Solution {
                 for _ in 0..queue.len() {
                     let node = queue.pop_front()?;
                     level.push(node.as_ref()?.borrow().val);
-                    if node.as_ref()?.borrow().left.is_some() {
-                        queue.push_back(node.as_ref()?.borrow().left.clone());
+                    let left = node.as_ref()?.borrow().left.clone();
+                    if left.is_some() {
+                        queue.push_back(left);
                     }
-                    if node.as_ref()?.borrow().right.is_some() {
-                        queue.push_back(node.as_ref()?.borrow().right.clone());
+                    let right = node.as_ref()?.borrow().right.clone();
+                    if right.is_some() {
+                        queue.push_back(right);
                     }
                 }
                 result.push(level);

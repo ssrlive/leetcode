@@ -52,6 +52,30 @@ impl Solution {
 
         res.into_iter().collect::<Vec<Vec<i32>>>()
     }
+
+    pub fn subsets_with_dup_2(nums: Vec<i32>) -> Vec<Vec<i32>> {
+        use std::collections::HashSet;
+        let mut res = HashSet::new();
+        fn _subsets_with_dup_2(nums: Vec<i32>, res: &mut HashSet<Vec<i32>>) -> Vec<Vec<i32>> {
+            let mut nums = nums;
+            if nums.is_empty() {
+                res.insert(vec![]);
+                return vec![vec![]];
+            }
+            let last = nums.pop().unwrap();
+            let remain_subsets = _subsets_with_dup_2(nums, res);
+            let mut mid = remain_subsets.clone();
+            for mut v in remain_subsets {
+                v.push(last);
+                v.sort_unstable();
+                res.insert(v.clone());
+                mid.push(v);
+            }
+            mid
+        }
+        let _ = _subsets_with_dup_2(nums, &mut res);
+        res.into_iter().collect::<Vec<Vec<i32>>>()
+    }
 }
 
 #[test]
@@ -65,7 +89,7 @@ fn test() {
     ];
 
     for (nums, expect) in cases {
-        let mut res = Solution::subsets_with_dup(nums);
+        let mut res = Solution::subsets_with_dup_2(nums);
         res.sort_unstable();
         assert_eq!(res, expect);
     }

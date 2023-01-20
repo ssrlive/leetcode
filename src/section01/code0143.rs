@@ -20,6 +20,40 @@ struct Solution {}
 
 impl Solution {
     pub fn reorder_list(head: &mut Option<Box<ListNode>>) {
+        fn _reorder_list(head: &mut Option<Box<ListNode>>) -> Option<()> {
+            let mut deque = std::collections::VecDeque::new();
+
+            if let Some(root) = head {
+                deque.push_back(root.next.take());
+                while let Some(node) = deque.back_mut()? {
+                    let next = node.next.take();
+                    if next.is_none() {
+                        break;
+                    }
+                    deque.push_back(next);
+                }
+            }
+
+            let mut current = head.as_mut()?;
+            while !deque.is_empty() {
+                if let Some(node) = deque.pop_back() {
+                    current.next = node;
+                    if deque.is_empty() {
+                        break;
+                    }
+                    current = current.next.as_mut()?;
+                }
+                if let Some(node) = deque.pop_front() {
+                    current.next = node;
+                    current = current.next.as_mut()?;
+                }
+            }
+            Some(())
+        }
+        _reorder_list(head);
+    }
+
+    pub fn reorder_list_2(head: &mut Option<Box<ListNode>>) {
         // Find how many nodes are in the list;
         let mut count = 0;
         let mut list = &*head;

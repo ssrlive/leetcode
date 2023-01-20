@@ -20,30 +20,22 @@ use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
     pub fn is_valid_bst(root: Option<Rc<RefCell<TreeNode>>>) -> bool {
-        fn validate(
-            n: Option<Rc<RefCell<TreeNode>>>,
-            min: Option<Rc<RefCell<TreeNode>>>,
-            max: Option<Rc<RefCell<TreeNode>>>,
-        ) -> bool {
-            match n {
-                None => true,
-                Some(n) => {
-                    if let Some(max) = max.clone() {
-                        if max.borrow().val <= n.borrow().val {
-                            return false;
-                        }
-                    }
-                    if let Some(min) = min.clone() {
-                        if min.borrow().val >= n.borrow().val {
-                            return false;
-                        }
-                    }
-                    validate(n.borrow().left.clone(), min, Some(n.clone()))
-                        && validate(n.borrow().right.clone(), Some(n.clone()), max)
-                }
+        type OptNode = Option<Rc<RefCell<TreeNode>>>;
+        fn validate(n: &OptNode, min: &OptNode, max: &OptNode) -> Option<bool> {
+            if n.is_none() {
+                return Some(true);
             }
+            let val = n.as_ref()?.borrow().val;
+            if max.is_some() && max.as_ref()?.borrow().val <= val {
+                return Some(false);
+            }
+            if min.is_some() && min.as_ref()?.borrow().val >= val {
+                return Some(false);
+            }
+            let v = validate(&n.as_ref()?.borrow().left, min, n)? && validate(&n.as_ref()?.borrow().right, n, max)?;
+            Some(v)
         }
-        validate(root, None, None)
+        validate(&root, &None, &None).unwrap_or_default()
     }
 }
 
