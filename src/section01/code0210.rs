@@ -4,6 +4,8 @@
 // https://leetcode.com/problems/course-schedule-ii/
 // https://leetcode.cn/problems/course-schedule-ii/
 //
+// Medium
+//
 // There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1.
 // You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you must
 //  take course bi first if you want to take course ai.
@@ -50,23 +52,26 @@ impl Solution {
         let mut graph = vec![vec![]; num_courses];
         let mut in_degree = vec![0; num_courses];
         for edge in prerequisites {
-            graph[edge[1] as usize].push(edge[0] as usize);
-            in_degree[edge[0] as usize] += 1;
+            let pre = edge[1] as usize;
+            let next = edge[0] as usize;
+            graph[pre].push(next);
+            in_degree[next] += 1;
         }
-        let mut queue = Vec::new();
+        let mut queue = std::collections::VecDeque::new();
         for (i, &item) in in_degree.iter().enumerate().take(num_courses) {
             if item == 0 {
-                queue.push(i);
+                queue.push_back(i);
             }
         }
         let mut result = Vec::new();
         while !queue.is_empty() {
-            let node = queue.remove(0);
+            let node = queue.pop_front().unwrap();
             result.push(node);
             for &next in &graph[node] {
-                in_degree[next] -= 1;
-                if in_degree[next] == 0 {
-                    queue.push(next);
+                let item = in_degree.get_mut(next).unwrap();
+                *item -= 1;
+                if *item == 0 {
+                    queue.push_back(next);
                 }
             }
         }

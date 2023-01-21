@@ -4,6 +4,8 @@
 // https://leetcode.com/problems/campus-bikes-ii/
 // https://leetcode.cn/problems/campus-bikes-ii/
 //
+// Medium
+//
 // On a campus represented as a 2D grid, there are N workers and M bikes, with N <= M. Each worker and bike is a 2D coordinate on this grid.
 //
 // We assign one unique bike to each worker so that the sum of the Manhattan distances between each worker and their assigned bike is minimized.

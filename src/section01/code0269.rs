@@ -4,6 +4,8 @@
 // https://leetcode.com/problems/alien-dictionary/
 // https://leetcode.cn/problems/alien-dictionary/
 //
+// Hard
+//
 // There is a new alien language which uses the latin alphabet. However, the order among letters are unknown to you.
 // You receive a list of non-empty words from the dictionary, where words are sorted lexicographically by the rules of this new language.
 // Derive the order of letters in this language.
@@ -119,15 +121,13 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words = vec!["wrt", "wrf", "er", "ett", "rftt"]
-        .iter()
-        .map(|s| s.to_string())
-        .collect();
-    assert_eq!(Solution::alien_order(words), "wertf".to_string());
-
-    let words = vec!["z", "x"].iter().map(|s| s.to_string()).collect();
-    assert_eq!(Solution::alien_order(words), "zx".to_string());
-
-    let words = vec!["z", "x", "z"].iter().map(|s| s.to_string()).collect();
-    assert_eq!(Solution::alien_order(words), "".to_string());
+    let cases = vec![
+        (vec!["wrt", "wrf", "er", "ett", "rftt"], "wertf"),
+        (vec!["z", "x"], "zx"),
+        (vec!["z", "x", "z"], ""),
+    ];
+    for (words, expected) in cases {
+        let words = words.iter().map(|s| s.to_string()).collect();
+        assert_eq!(Solution::alien_order(words), expected);
+    }
 }

@@ -4,6 +4,8 @@
 // https://leetcode.com/problems/implement-stack-using-queues/
 // https://leetcode.cn/problems/implement-stack-using-queues/
 //
+// Medium
+//
 // mplement a last-in-first-out (LIFO) stack using only two queues. The implemented stack
 // should support all the functions of a normal stack (push, top, pop, and empty).
 //
@@ -44,7 +46,8 @@
 // - At most 100 calls will be made to push, pop, top, and empty.
 // - All the calls to pop and top are valid.
 //
-// Follow-up: Can you implement the stack such that each operation is amortized O(1) time complexity? In other words, performing n operations will take overall O(n) time even if one of those operations may take longer.
+// Follow-up: Can you implement the stack such that each operation is amortized O(1) time complexity? In other words,
+//   performing n operations will take overall O(n) time even if one of those operations may take longer.
 //
 
 use std::collections::VecDeque;
@@ -63,13 +66,7 @@ impl MyStack {
     }
 
     fn pop(&mut self) -> i32 {
-        let mut temp = VecDeque::new();
-        while self.queue.len() > 1 {
-            temp.push_back(self.queue.pop_front().unwrap());
-        }
-        let result = self.queue.pop_front().unwrap();
-        self.queue = temp;
-        result
+        self.queue.pop_back().unwrap()
     }
 
     fn top(&self) -> i32 {

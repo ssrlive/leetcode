@@ -4,6 +4,8 @@
 // https://leetcode.com/problems/delete-node-in-a-linked-list/
 // https://leetcode.cn/problems/delete-node-in-a-linked-list/
 //
+// Medium
+//
 // There is a singly-linked list head and we want to delete a node node in it.
 //
 // You are given the node to be deleted node. You will not be given access to the first node of head.

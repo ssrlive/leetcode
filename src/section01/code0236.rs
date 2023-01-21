@@ -4,6 +4,8 @@
 // https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 // https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/
 //
+// Medium
+//
 // Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
 //
 // According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined
@@ -58,27 +60,48 @@ impl Solution {
         p: Option<Rc<RefCell<TreeNode>>>,
         q: Option<Rc<RefCell<TreeNode>>>,
     ) -> Option<Rc<RefCell<TreeNode>>> {
-        pub fn _lowest_common_ancestor(
-            root: Option<Rc<RefCell<TreeNode>>>,
-            p: Option<Rc<RefCell<TreeNode>>>,
-            q: Option<Rc<RefCell<TreeNode>>>,
-        ) -> Option<Rc<RefCell<TreeNode>>> {
+        type OptNode = Option<Rc<RefCell<TreeNode>>>;
+        fn post_order_traverse(node: OptNode, p: OptNode, q: OptNode) -> OptNode {
+            node.as_ref()?;
+            if node == p || node == q {
+                return node;
+            }
+            let left = post_order_traverse(node.as_ref()?.borrow().left.clone(), p.clone(), q.clone());
+            let right = post_order_traverse(node.as_ref()?.borrow().right.clone(), p, q);
+            match (left.is_some(), right.is_some()) {
+                (true, true) => node,
+                (false, false) => None,
+                (true, false) => left,
+                (false, true) => right,
+            }
+        }
+        post_order_traverse(root, p, q)
+    }
+
+    pub fn lowest_common_ancestor_2(
+        root: Option<Rc<RefCell<TreeNode>>>,
+        p: Option<Rc<RefCell<TreeNode>>>,
+        q: Option<Rc<RefCell<TreeNode>>>,
+    ) -> Option<Rc<RefCell<TreeNode>>> {
+        type OptNode = Option<Rc<RefCell<TreeNode>>>;
+        pub fn _lowest_common_ancestor(root: OptNode, p: OptNode, q: OptNode) -> OptNode {
             root.as_ref()?;
             if root == p || root == q {
                 return root;
             }
-            let rt = root.clone();
-            let l = _lowest_common_ancestor(rt?.as_ref().borrow().left.clone(), p.clone(), q.clone());
-            if l.is_some() {
-                let rt = root.clone();
-                let r = _lowest_common_ancestor(rt?.as_ref().borrow().right.clone(), p, q);
-                if r.is_some() {
+            let left0 = root.as_ref()?.borrow().left.clone();
+            let left = _lowest_common_ancestor(left0, p.clone(), q.clone());
+            if left.is_some() {
+                let right0 = root.as_ref()?.borrow().right.clone();
+                let right = _lowest_common_ancestor(right0, p, q);
+                if right.is_some() {
                     root
                 } else {
-                    l
+                    left
                 }
             } else {
-                _lowest_common_ancestor(root?.as_ref().borrow().right.clone(), p, q)
+                let right = root.as_ref()?.borrow().right.clone();
+                _lowest_common_ancestor(right, p, q)
             }
         }
 
@@ -87,31 +110,34 @@ impl Solution {
 }
 
 #[test]
-fn test_lowest_common_ancestor() -> Result<(), Box<dyn std::error::Error>> {
-    let root = TreeNode::from_vec(&[
-        Some(3),
-        Some(5),
-        Some(1),
-        Some(6),
-        Some(2),
-        Some(0),
-        Some(8),
-        None,
-        None,
-        Some(7),
-        Some(4),
-    ]);
+fn test_lowest_common_ancestor() {
+    fn test() -> Option<()> {
+        let root = TreeNode::from_vec(&[
+            Some(3),
+            Some(5),
+            Some(1),
+            Some(6),
+            Some(2),
+            Some(0),
+            Some(8),
+            None,
+            None,
+            Some(7),
+            Some(4),
+        ]);
 
-    let node5 = root.clone().ok_or("")?.borrow().find_node(5);
-    let node1 = root.clone().ok_or("")?.borrow().find_node(1);
-    let node4 = root.clone().ok_or("")?.borrow().find_node(4);
+        let node5 = root.as_ref()?.borrow().find_node(5);
+        let node1 = root.as_ref()?.borrow().find_node(1);
+        let node4 = root.as_ref()?.borrow().find_node(4);
 
-    let node = Solution::lowest_common_ancestor(root.clone(), node5.clone(), node1.clone());
-    let val = node.ok_or("")?.borrow().val;
-    assert_eq!(val, 3);
+        let node = Solution::lowest_common_ancestor(root.clone(), node5.clone(), node1.clone());
+        let val = node.as_ref()?.borrow().val;
+        assert_eq!(val, 3);
 
-    let node = Solution::lowest_common_ancestor(root.clone(), node5.clone(), node4.clone());
-    let val = node.ok_or("")?.borrow().val;
-    assert_eq!(val, 5);
-    Ok(())
+        let node = Solution::lowest_common_ancestor(root.clone(), node5.clone(), node4.clone());
+        let val = node.as_ref()?.borrow().val;
+        assert_eq!(val, 5);
+        Some(())
+    }
+    test().unwrap();
 }
