@@ -1080,6 +1080,17 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 1252 | [Cells with Odd Values in a Matrix](src/section02/code1252.rs) | [link](https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/) | Easy | :heavy_check_mark: |
+| 1253 | [Reconstruct a 2-Row Binary Matrix](src/section02/code1253.rs) | [link](https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/) | Medium | :heavy_check_mark: |
+| 1254 | [Number of Closed Islands](src/section02/code1254.rs) | [link](https://leetcode.com/problems/number-of-closed-islands/) | Medium | :heavy_check_mark: |
+| 1255 | [Maximum Score Words Formed by Letters](src/section02/code1255.rs) | [link](https://leetcode.com/problems/maximum-score-words-formed-by-letters/) | Hard | :heavy_check_mark: |
+| 1260 | [Shift 2D Grid](src/section02/code1260.rs) | [link](https://leetcode.com/problems/shift-2d-grid/) | Easy | :heavy_check_mark: |
+| 1261 | [Find Elements in a Contaminated Binary Tree](src/section02/code1261.rs) | [link](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/) | Medium | :heavy_check_mark: |
+| 1262 | [Greatest Sum Divisible by Three](src/section02/code1262.rs) | [link](https://leetcode.com/problems/greatest-sum-divisible-by-three/) | Medium | :heavy_check_mark: |
+| 1263 | [Minimum Moves to Move a Box to Their Target Location](src/section02/code1263.rs) | [link](https://leetcode.com/problems/minimum-moves-to-move-a-box-to-their-target-location/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
