@@ -1211,3 +1211,11 @@ cargo test
 | 2536 | [Increment Submatrices by One](src/section03/code2536.rs) | [link](https://leetcode.com/problems/increment-submatrices-by-one/) | Medium | :heavy_check_mark: |
 | 2537 | [Count the Number of Good Subarrays](src/section03/code2537.rs) | [link](https://leetcode.com/problems/count-the-number-of-good-subarrays/) | Medium | :heavy_check_mark: |
 | 2538 | [Difference Between Maximum and Minimum Price Sum](src/section03/code2538.rs) | [link](https://leetcode.com/problems/difference-between-maximum-and-minimum-price-sum/) | Hard | :heavy_check_mark: |
+| 2540 | [Minimum Common Value](src/section03/code2540.rs) | [link](https://leetcode.com/problems/minimum-common-value/) | Easy | :heavy_check_mark: |
+| 2541 | [Minimum Operations to Make Array Equal II](src/section03/code2541.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-array-equal-ii/) | Medium | :heavy_check_mark: |
+| 2542 | [Maximum Subsequence Score](src/section03/code2542.rs) | [link](https://leetcode.com/problems/maximum-subsequence-score/) | Medium | :heavy_check_mark: |
+| 2543 | [Check if Point Is Reachable](src/section03/code2543.rs) | [link](https://leetcode.com/problems/check-if-point-is-reachable/) | Hard | :heavy_check_mark: |
+| 2544 | [Alternating Digit Sum](src/section03/code2544.rs) | [link](https://leetcode.com/problems/alternating-digit-sum/) | Easy | :heavy_check_mark: |
+| 2545 | [Sort the Students by Their Kth Score](src/section03/code2545.rs) | [link](https://leetcode.com/problems/sort-the-students-by-their-kth-score/) | Medium | :heavy_check_mark: |
+| 2546 | [Apply Bitwise Operations to Make Strings Equal](src/section03/code2546.rs) | [link](https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/) | Medium | :heavy_check_mark: |
+| 2547 | [Minimum Cost to Split an Array](src/section03/code2547.rs) | [link](https://leetcode.com/problems/minimum-cost-to-split-an-array/) | Hard | :heavy_check_mark: |
