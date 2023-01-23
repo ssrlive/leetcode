@@ -1088,6 +1088,32 @@ cargo test
 | 1261 | [Find Elements in a Contaminated Binary Tree](src/section02/code1261.rs) | [link](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/) | Medium | :heavy_check_mark: |
 | 1262 | [Greatest Sum Divisible by Three](src/section02/code1262.rs) | [link](https://leetcode.com/problems/greatest-sum-divisible-by-three/) | Medium | :heavy_check_mark: |
 | 1263 | [Minimum Moves to Move a Box to Their Target Location](src/section02/code1263.rs) | [link](https://leetcode.com/problems/minimum-moves-to-move-a-box-to-their-target-location/) | Hard | :heavy_check_mark: |
+| 1266 | [Minimum Time Visiting All Points](src/section02/code1266.rs) | [link](https://leetcode.com/problems/minimum-time-visiting-all-points/) | Easy | :heavy_check_mark: |
+| 1267 | [Count Servers that Communicate](src/section02/code1267.rs) | [link](https://leetcode.com/problems/count-servers-that-communicate/) | Medium | :heavy_check_mark: |
+| 1268 | [Search Suggestions System](src/section02/code1268.rs) | [link](https://leetcode.com/problems/search-suggestions-system/) | Medium | :heavy_check_mark: |
+| 1269 | [Number of Ways to Stay in the Same Place After Some Steps](src/section02/code1269.rs) | [link](https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/) | Hard | :heavy_check_mark: |
+| 1275 | [Find Winner on a Tic Tac Toe Game](src/section02/code1275.rs) | [link](https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/) | Easy | :heavy_check_mark: |
+| 1276 | [Number of Burgers with No Waste of Ingredients](src/section02/code1276.rs) | [link](https://leetcode.com/problems/number-of-burgers-with-no-waste-of-ingredients/) | Medium | :heavy_check_mark: |
+| 1277 | [Count Square Submatrices with All Ones](src/section02/code1277.rs) | [link](https://leetcode.com/problems/count-square-submatrices-with-all-ones/) | Medium | :heavy_check_mark: |
+| 1278 | [Palindrome Partitioning III](src/section02/code1278.rs) | [link](https://leetcode.com/problems/palindrome-partitioning-iii/) | Hard | :heavy_check_mark: |
+| 1281 | [Subtract the Product and Sum of Digits of an Integer](src/section02/code1281.rs) | [link](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/) | Easy | :heavy_check_mark: |
+| 1282 | [Group the People Given the Group Size They Belong To](src/section02/code1282.rs) | [link](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/) | Medium | :heavy_check_mark: |
+| 1283 | [Find the Smallest Divisor Given a Threshold](src/section02/code1283.rs) | [link](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) | Medium | :heavy_check_mark: |
+| 1284 | [Minimum Number of Flips to Convert Binary Matrix to Zero Matrix](src/section02/code1284.rs) | [link](https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/) | Hard | :heavy_check_mark: |
+| 1286 | [Iterator for Combination](src/section02/code1286.rs) | [link](https://leetcode.com/problems/iterator-for-combination/) | Medium | :heavy_check_mark: |
+| 1287 | [Element Appearing More Than 25% In Sorted Array](src/section02/code1287.rs) | [link](https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/) | Easy | :heavy_check_mark: |
+| 1288 | [Remove Covered Intervals](src/section02/code1288.rs) | [link](https://leetcode.com/problems/remove-covered-intervals/) | Medium | :heavy_check_mark: |
+| 1289 | [Minimum Falling Path Sum II](src/section02/code1289.rs) | [link](https://leetcode.com/problems/minimum-falling-path-sum-ii/) | Hard | :heavy_check_mark: |
+| 1290 | [Convert Binary Number in a Linked List to Integer](src/section02/code1290.rs) | [link](https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/) | Easy | :heavy_check_mark: |
+| 1291 | [Sequential Digits](src/section02/code1291.rs) | [link](https://leetcode.com/problems/sequential-digits/) | Medium | :heavy_check_mark: |
+| 1292 | [Maximum Side Length of a Square with Sum Less than or Equal to Threshold](src/section02/code1292.rs) | [link](https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/) | Medium | :heavy_check_mark: |
+| 1293 | [Shortest Path in a Grid with Obstacles Elimination](src/section02/code1293.rs) | [link](https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/) | Hard | :heavy_check_mark: |
+| 1295 | [Find Numbers with Even Number of Digits](src/section02/code1295.rs) | [link](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) | Easy | :heavy_check_mark: |
+| 1296 | [Divide Array in Sets of K Consecutive Numbers](src/section02/code1296.rs) | [link](https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/) | Medium | :heavy_check_mark: |
+| 1297 | [Maximum Number of Occurrences of a Substring](src/section02/code1297.rs) | [link](https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/) | Hard | :heavy_check_mark: |
+| 1298 | [Maximum Candies You Can Get from Boxes](src/section02/code1298.rs) | [link](https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes/) | Hard | :heavy_check_mark: |
+| 1299 | [Replace Elements with Greatest Element on Right Side](src/section02/code1299.rs) | [link](https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/) | Easy | :heavy_check_mark: |
+| 1300 | [Sum of Mutated Array Closest to Target](src/section02/code1300.rs) | [link](https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/) | Medium | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
