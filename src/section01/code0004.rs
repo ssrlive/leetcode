@@ -34,6 +34,32 @@ struct Solution;
 
 impl Solution {
     pub fn find_median_sorted_arrays(nums1: Vec<i32>, nums2: Vec<i32>) -> f64 {
+        let merged_array_len = nums1.len() + nums2.len();
+        let (mut arr1_index, mut arr2_index) = (0, 0);
+        let target_index = merged_array_len / 2;
+        let (mut last, mut one_before) = (0, 0);
+
+        for _ in 0..=target_index {
+            one_before = last;
+            if arr1_index == nums1.len() {
+                last = nums2[arr2_index];
+                arr2_index += 1;
+            } else if arr2_index == nums2.len() || nums1[arr1_index] < nums2[arr2_index] {
+                last = nums1[arr1_index];
+                arr1_index += 1;
+            } else {
+                last = nums2[arr2_index];
+                arr2_index += 1;
+            }
+        }
+        if merged_array_len % 2 == 0 {
+            (last + one_before) as f64 / 2.0
+        } else {
+            last as f64
+        }
+    }
+
+    pub fn find_median_sorted_arrays_2(nums1: Vec<i32>, nums2: Vec<i32>) -> f64 {
         let mut nums = Vec::with_capacity(nums1.len() + nums2.len());
         nums.extend(nums1);
         nums.extend(nums2);
