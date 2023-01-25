@@ -1117,6 +1117,51 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 1301 | [Number of Paths with Max Score](src/section02/code1301.rs) | [link](https://leetcode.com/problems/number-of-paths-with-max-score/) | Hard | :heavy_check_mark: |
+| 1302 | [Deepest Leaves Sum](src/section02/code1302.rs) | [link](https://leetcode.com/problems/deepest-leaves-sum/) | Medium | :heavy_check_mark: |
+| 1304 | [Find N Unique Integers Sum up to Zero](src/section02/code1304.rs) | [link](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/) | Easy | :heavy_check_mark: |
+| 1305 | [All Elements in Two Binary Search Trees](src/section02/code1305.rs) | [link](https://leetcode.com/problems/all-elements-in-two-binary-search-trees/) | Medium | :heavy_check_mark: |
+| 1306 | [Jump Game III](src/section02/code1306.rs) | [link](https://leetcode.com/problems/jump-game-iii/) | Medium | :heavy_check_mark: |
+| 1307 | [Verbal Arithmetic Puzzle](src/section02/code1307.rs) | [link](https://leetcode.com/problems/verbal-arithmetic-puzzle/) | Hard | :heavy_check_mark: |
+| 1309 | [Decrypt String from Alphabet to Integer Mapping](src/section02/code1309.rs) | [link](https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/) | Easy | :heavy_check_mark: |
+| 1310 | [XOR Queries of a Subarray](src/section02/code1310.rs) | [link](https://leetcode.com/problems/xor-queries-of-a-subarray/) | Medium | :heavy_check_mark: |
+| 1311 | [Get Watched Videos by Your Friends](src/section02/code1311.rs) | [link](https://leetcode.com/problems/get-watched-videos-by-your-friends/) | Medium | :heavy_check_mark: |
+| 1312 | [Minimum Insertion Steps to Make a String Palindrome](src/section02/code1312.rs) | [link](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/) | Hard | :heavy_check_mark: |
+| 1313 | [Decompress Run-Length Encoded List](src/section02/code1313.rs) | [link](https://leetcode.com/problems/decompress-run-length-encoded-list/) | Easy | :heavy_check_mark: |
+| 1314 | [Matrix Block Sum](src/section02/code1314.rs) | [link](https://leetcode.com/problems/matrix-block-sum/) | Medium | :heavy_check_mark: |
+| 1315 | [Sum of Nodes with Even-Valued Grandparent](src/section02/code1315.rs) | [link](https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/) | Medium | :heavy_check_mark: |
+| 1316 | [Distinct Echo Substrings](src/section02/code1316.rs) | [link](https://leetcode.com/problems/distinct-echo-substrings/) | Hard | :heavy_check_mark: |
+| 1317 | [Convert Integer to the Sum of Two No-Zero Integers](src/section02/code1317.rs) | [link](https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/) | Easy | :heavy_check_mark: |
+| 1318 | [Minimum Flips to Make a OR b Equal to c](src/section02/code1318.rs) | [link](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/) | Medium | :heavy_check_mark: |
+| 1319 | [Number of Operations to Make Network Connected](src/section02/code1319.rs) | [link](https://leetcode.com/problems/number-of-operations-to-make-network-connected/) | Medium | :heavy_check_mark: |
+| 1320 | [Minimum Distance to Type a Word Using Two Fingers](src/section02/code1320.rs) | [link](https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/) | Hard | :heavy_check_mark: |
+| 1323 | [Maximum 69 Number](src/section02/code1323.rs) | [link](https://leetcode.com/problems/maximum-69-number/) | Easy | :heavy_check_mark: |
+| 1324 | [Print Words Vertically](src/section02/code1324.rs) | [link](https://leetcode.com/problems/print-words-vertically/) | Medium | :heavy_check_mark: |
+| 1325 | [Delete Leaves With a Given Value](src/section02/code1325.rs) | [link](https://leetcode.com/problems/delete-leaves-with-a-given-value/) | Medium | :heavy_check_mark: |
+| 1326 | [Minimum Number of Taps to Open to Water a Garden](src/section02/code1326.rs) | [link](https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/) | Hard | :heavy_check_mark: |
+| 1328 | [Break a Palindrome](src/section02/code1328.rs) | [link](https://leetcode.com/problems/break-a-palindrome/) | Medium | :heavy_check_mark: |
+| 1329 | [Sort the Matrix Diagonally](src/section02/code1329.rs) | [link](https://leetcode.com/problems/sort-the-matrix-diagonally/) | Medium | :heavy_check_mark: |
+| 1330 | [Reverse Subarray To Maximize Array Value](src/section02/code1330.rs) | [link](https://leetcode.com/problems/reverse-subarray-to-maximize-array-value/) | Hard | :heavy_check_mark: |
+| 1331 | [Rank Transform of an Array](src/section02/code1331.rs) | [link](https://leetcode.com/problems/rank-transform-of-an-array/) | Easy | :heavy_check_mark: |
+| 1332 | [Remove Palindromic Subsequences](src/section02/code1332.rs) | [link](https://leetcode.com/problems/remove-palindromic-subsequences/) | Easy | :heavy_check_mark: |
+| 1333 | [Filter Restaurants by Vegan-Friendly, Price and Distance](src/section02/code1333.rs) | [link](https://leetcode.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance/) | Medium | :heavy_check_mark: |
+| 1334 | [Find the City With the Smallest Number of Neighbors at a Threshold Distance](src/section02/code1334.rs) | [link](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | Medium | :heavy_check_mark: |
+| 1335 | [Minimum Difficulty of a Job Schedule](src/section02/code1335.rs) | [link](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/) | Hard | :heavy_check_mark: |
+| 1337 | [The K Weakest Rows in a Matrix](src/section02/code1337.rs) | [link](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/) | Easy | :heavy_check_mark: |
+| 1338 | [Reduce Array Size to The Half](src/section02/code1338.rs) | [link](https://leetcode.com/problems/reduce-array-size-to-the-half/) | Medium | :heavy_check_mark: |
+| 1339 | [Maximum Product of Splitted Binary Tree](src/section02/code1339.rs) | [link](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/) | Medium | :heavy_check_mark: |
+| 1340 | [Jump Game V](src/section02/code1340.rs) | [link](https://leetcode.com/problems/jump-game-v/) | Hard | :heavy_check_mark: |
+| 1342 | [Number of Steps to Reduce a Number to Zero](src/section02/code1342.rs) | [link](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/) | Easy | :heavy_check_mark: |
+| 1343 | [Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](src/section02/code1343.rs) | [link](https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | Medium | :heavy_check_mark: |
+| 1344 | [Angle Between Hands of a Clock](src/section02/code1344.rs) | [link](https://leetcode.com/problems/angle-between-hands-of-a-clock/) | Medium | :heavy_check_mark: |
+| 1345 | [Jump Game IV](src/section02/code1345.rs) | [link](https://leetcode.com/problems/jump-game-iv/) | Hard | :heavy_check_mark: |
+| 1346 | [Check If N and Its Double Exist](src/section02/code1346.rs) | [link](https://leetcode.com/problems/check-if-n-and-its-double-exist/) | Easy | :heavy_check_mark: |
+| 1347 | [Minimum Number of Steps to Make Two Strings Anagram](src/section02/code1347.rs) | [link](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/) | Medium | :heavy_check_mark: |
+| 1348 | [Tweet Counts Per Frequency](src/section02/code1348.rs) | [link](https://leetcode.com/problems/tweet-counts-per-frequency/) | Medium | :heavy_check_mark: |
+| 1349 | [Maximum Students Taking Exam](src/section02/code1349.rs) | [link](https://leetcode.com/problems/maximum-students-taking-exam/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
