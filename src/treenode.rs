@@ -161,10 +161,9 @@ impl TreeNode {
 #[test]
 fn test_tree_node() -> Result<(), Box<dyn std::error::Error>> {
     let root = TreeNode::from_vec(&[Some(1), Some(2), Some(3), Some(4), Some(5), Some(6)]);
-    let out_arr = TreeNode::to_vec(&root);
     let root2 = root.as_ref().ok_or("")?.borrow();
     let expected = vec![Some(1), Some(2), Some(3), Some(4), Some(5), Some(6)];
-    assert_eq!(out_arr, expected);
+    assert_eq!(TreeNode::to_vec(&root), expected);
     assert_eq!(root2.to_string(), "1, 2, 3, 4, 5, 6");
     assert_eq!(TreeNode::preorder_traversal(&root), vec![1, 2, 4, 5, 3, 6]);
     assert_eq!(TreeNode::inorder_traversal(&root), vec![4, 2, 5, 1, 6, 3]);
