@@ -85,10 +85,10 @@ fn test() {
         None,
         Some(9),
     ];
-    assert_eq!(res.as_ref().unwrap().borrow().to_vec(), expected);
+    assert_eq!(TreeNode::to_vec(&res), expected);
 
     let root = TreeNode::from_vec(&[Some(5), Some(1), Some(7)]);
     let res = Solution::increasing_bst(root);
     let expected = vec![Some(1), None, Some(5), None, Some(7)];
-    assert_eq!(res.as_ref().unwrap().borrow().to_vec(), expected);
+    assert_eq!(TreeNode::to_vec(&res), expected);
 }

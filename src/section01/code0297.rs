@@ -124,6 +124,6 @@ fn test() -> Result<(), Box<dyn std::error::Error>> {
     let data = codec.serialize(root);
     assert_eq!(data, "1,2,3,null,null,4,5");
     let root = codec.deserialize(data);
-    assert_eq!(root.as_ref().ok_or("")?.borrow().to_vec(), v);
+    assert_eq!(TreeNode::to_vec(&root), v);
     Ok(())
 }

@@ -77,7 +77,7 @@ fn test() -> Result<(), Box<dyn std::error::Error>> {
         Some(8),
     ]);
     let root = Solution::convert_bst(root);
-    let root = root.as_ref().ok_or("")?.borrow().to_vec();
+    let root = TreeNode::to_vec(&root);
     assert_eq!(
         root,
         vec![

@@ -53,7 +53,7 @@ fn test_build_tree() -> Result<(), Box<dyn std::error::Error>> {
     let postorder = vec![9, 15, 7, 20, 3];
     let root = Solution::build_tree(inorder, postorder);
     assert_eq!(
-        root.ok_or("")?.borrow().to_vec(),
+        TreeNode::to_vec(&root),
         vec![Some(3), Some(9), Some(20), None, None, Some(15), Some(7)]
     );
     Ok(())

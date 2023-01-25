@@ -97,7 +97,7 @@ fn test() {
     ];
     for (traversal, expected) in cases {
         let root = Solution::recover_from_preorder(traversal.to_string());
-        let result = root.as_ref().unwrap().borrow().to_vec();
+        let result = TreeNode::to_vec(&root);
         assert_eq!(result, expected);
     }
 }

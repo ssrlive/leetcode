@@ -116,13 +116,13 @@ fn test() {
         Some(7),
         Some(4),
     ]);
-    let target = root.as_ref().unwrap().borrow().find_node(5);
+    let target = TreeNode::find_node(&root, 5);
     let k = 2;
     let ans = vec![7, 4, 1];
     assert_eq!(Solution::distance_k(root, target, k), ans);
 
     let root = TreeNode::from_vec(&[Some(1)]);
-    let target = root.as_ref().unwrap().borrow().find_node(1);
+    let target = TreeNode::find_node(&root, 1);
     let k = 3;
     let ans: Vec<i32> = Vec::new();
     assert_eq!(Solution::distance_k(root, target, k), ans);

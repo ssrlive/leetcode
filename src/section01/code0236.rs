@@ -126,9 +126,9 @@ fn test_lowest_common_ancestor() {
             Some(4),
         ]);
 
-        let node5 = root.as_ref()?.borrow().find_node(5);
-        let node1 = root.as_ref()?.borrow().find_node(1);
-        let node4 = root.as_ref()?.borrow().find_node(4);
+        let node5 = TreeNode::find_node(&root, 5);
+        let node1 = TreeNode::find_node(&root, 1);
+        let node4 = TreeNode::find_node(&root, 4);
 
         let node = Solution::lowest_common_ancestor(root.clone(), node5.clone(), node1.clone());
         let val = node.as_ref()?.borrow().val;

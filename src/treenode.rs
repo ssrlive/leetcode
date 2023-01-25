@@ -56,19 +56,18 @@ impl TreeNode {
         root
     }
 
-    pub fn to_vec(&self) -> Vec<Option<i32>> {
+    pub fn to_vec(root: &Option<Rc<RefCell<TreeNode>>>) -> Vec<Option<i32>> {
         let mut v = Vec::new();
         let mut queue = std::collections::VecDeque::new();
-        queue.push_back(Some(Rc::new(RefCell::new(self.clone()))));
-        while !queue.is_empty() {
-            if let Some(node) = queue.pop_front() {
-                if let Some(node) = node {
-                    v.push(Some(node.borrow().val));
-                    queue.push_back(node.borrow().left.clone());
-                    queue.push_back(node.borrow().right.clone());
-                } else {
-                    v.push(None);
-                }
+        queue.push_back(root.clone());
+        while let Some(node) = queue.pop_front() {
+            if node.is_some() {
+                let node = node.as_ref().unwrap().borrow();
+                v.push(Some(node.val));
+                queue.push_back(node.left.clone());
+                queue.push_back(node.right.clone());
+            } else {
+                v.push(None);
             }
         }
         while let Some(None) = v.last() {
@@ -78,7 +77,8 @@ impl TreeNode {
     }
 
     fn _to_string(&self) -> String {
-        let v = self.to_vec();
+        let node = Some(Rc::new(RefCell::new(self.clone())));
+        let v = TreeNode::to_vec(&node);
         let mut s = String::new();
         for (i, item) in v.iter().enumerate() {
             if i > 0 {
@@ -93,7 +93,7 @@ impl TreeNode {
         s
     }
 
-    pub fn preorder_traversal(&self) -> Vec<i32> {
+    pub fn preorder_traversal(root: &Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
         fn helper(node: &Option<Rc<RefCell<TreeNode>>>, ret: &mut Vec<i32>) {
             if let Some(v) = node {
                 let v = v.borrow();
@@ -104,11 +104,11 @@ impl TreeNode {
         }
 
         let mut ret = vec![];
-        helper(&Some(Rc::new(RefCell::new(self.clone()))), &mut ret);
+        helper(root, &mut ret);
         ret
     }
 
-    pub fn inorder_traversal(&self) -> Vec<i32> {
+    pub fn inorder_traversal(root: &Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
         fn helper(node: &Option<Rc<RefCell<TreeNode>>>, ret: &mut Vec<i32>) {
             if let Some(v) = node {
                 let v = v.borrow();
@@ -119,11 +119,11 @@ impl TreeNode {
         }
 
         let mut ret = vec![];
-        helper(&Some(Rc::new(RefCell::new(self.clone()))), &mut ret);
+        helper(root, &mut ret);
         ret
     }
 
-    pub fn postorder_traversal(&self) -> Vec<i32> {
+    pub fn postorder_traversal(root: &Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
         fn helper(node: &Option<Rc<RefCell<TreeNode>>>, ret: &mut Vec<i32>) {
             if let Some(v) = node {
                 let v = v.borrow();
@@ -134,40 +134,40 @@ impl TreeNode {
         }
 
         let mut ret = vec![];
-        helper(&Some(Rc::new(RefCell::new(self.clone()))), &mut ret);
+        helper(root, &mut ret);
         ret
     }
 
-    pub fn find_node(&self, val: i32) -> Option<Rc<RefCell<TreeNode>>> {
+    pub fn find_node(root: &Option<Rc<RefCell<TreeNode>>>, val: i32) -> Option<Rc<RefCell<TreeNode>>> {
         fn helper(node: &Option<Rc<RefCell<TreeNode>>>, val: i32) -> Option<Rc<RefCell<TreeNode>>> {
-            if let Some(v) = node {
-                let v = v.borrow();
-                if v.val == val {
-                    return Some(Rc::new(RefCell::new(v.clone())));
+            if node.is_some() {
+                if node.as_ref()?.borrow().val == val {
+                    return node.clone();
                 }
-                if let Some(node) = helper(&v.left, val) {
-                    return Some(node);
+                if let node @ Some(_) = helper(&node.as_ref()?.borrow().left, val) {
+                    return node;
                 }
-                if let Some(node) = helper(&v.right, val) {
-                    return Some(node);
+                if let node @ Some(_) = helper(&node.as_ref()?.borrow().right, val) {
+                    return node;
                 }
             }
             None
         }
 
-        helper(&Some(Rc::new(RefCell::new(self.clone()))), val)
+        helper(root, val)
     }
 }
 
 #[test]
 fn test_tree_node() -> Result<(), Box<dyn std::error::Error>> {
     let root = TreeNode::from_vec(&[Some(1), Some(2), Some(3), Some(4), Some(5), Some(6)]);
-    let root = root.as_ref().ok_or("")?.borrow();
+    let out_arr = TreeNode::to_vec(&root);
+    let root2 = root.as_ref().ok_or("")?.borrow();
     let expected = vec![Some(1), Some(2), Some(3), Some(4), Some(5), Some(6)];
-    assert_eq!(root.to_vec(), expected);
-    assert_eq!(root.to_string(), "1, 2, 3, 4, 5, 6");
-    assert_eq!(root.preorder_traversal(), vec![1, 2, 4, 5, 3, 6]);
-    assert_eq!(root.inorder_traversal(), vec![4, 2, 5, 1, 6, 3]);
-    assert_eq!(root.postorder_traversal(), vec![4, 5, 2, 6, 3, 1]);
+    assert_eq!(out_arr, expected);
+    assert_eq!(root2.to_string(), "1, 2, 3, 4, 5, 6");
+    assert_eq!(TreeNode::preorder_traversal(&root), vec![1, 2, 4, 5, 3, 6]);
+    assert_eq!(TreeNode::inorder_traversal(&root), vec![4, 2, 5, 1, 6, 3]);
+    assert_eq!(TreeNode::postorder_traversal(&root), vec![4, 5, 2, 6, 3, 1]);
     Ok(())
 }

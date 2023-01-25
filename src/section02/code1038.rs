@@ -78,7 +78,7 @@ fn test() {
         Some(8),
     ]);
     let root = Solution::bst_to_gst(root);
-    let root = root.as_ref().unwrap().borrow().to_vec();
+    let root = TreeNode::to_vec(&root);
     assert_eq!(
         root,
         vec![
@@ -102,6 +102,6 @@ fn test() {
 
     let root = TreeNode::from_vec(&[Some(0), None, Some(1)]);
     let root = Solution::bst_to_gst(root);
-    let root = root.as_ref().unwrap().borrow().to_vec();
+    let root = TreeNode::to_vec(&root);
     assert_eq!(root, vec![Some(1), None, Some(1)]);
 }

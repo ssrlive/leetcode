@@ -45,7 +45,7 @@ impl Solution {
 #[test]
 fn test_sorted_array_to_bst() -> Result<(), Box<dyn std::error::Error>> {
     let root = Solution::sorted_array_to_bst(vec![-10, -3, 0, 5, 9]);
-    let res = root.ok_or("")?.borrow().to_vec();
+    let res = TreeNode::to_vec(&root);
     assert_eq!(res, vec![Some(0), Some(-3), Some(9), Some(-10), None, Some(5)]);
     Ok(())
 }

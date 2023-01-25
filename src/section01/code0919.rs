@@ -88,7 +88,7 @@ fn test() {
     assert_eq!(obj.insert(3), 1);
     assert_eq!(obj.insert(4), 2);
     let expected = vec![Some(1), Some(2), Some(3), Some(4)];
-    assert_eq!(obj.get_root().unwrap().borrow().to_vec(), expected);
+    assert_eq!(TreeNode::to_vec(&obj.get_root()), expected);
 
     let mut obj = CBTInserter::new(TreeNode::from_vec(&[
         Some(1),
@@ -101,5 +101,5 @@ fn test() {
     assert_eq!(obj.insert(7), 3);
     assert_eq!(obj.insert(8), 4);
     let expected = vec![Some(1), Some(2), Some(3), Some(4), Some(5), Some(6), Some(7), Some(8)];
-    assert_eq!(obj.get_root().unwrap().borrow().to_vec(), expected);
+    assert_eq!(TreeNode::to_vec(&obj.get_root()), expected);
 }
