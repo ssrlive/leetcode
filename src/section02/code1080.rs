@@ -41,29 +41,33 @@ use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
     pub fn sufficient_subset(root: Option<Rc<RefCell<TreeNode>>>, limit: i32) -> Option<Rc<RefCell<TreeNode>>> {
-        root.as_ref()?;
-        let val = root.as_ref()?.borrow().val;
-        if root.as_ref()?.borrow().left.is_none() && root.as_ref()?.borrow().right.is_none() {
-            if val < limit {
-                return None;
-            } else {
-                return root;
+        type OptNode = Option<Rc<RefCell<TreeNode>>>;
+        fn _sufficient_subset(node: OptNode, limit: i32) -> OptNode {
+            node.as_ref()?;
+            let val = node.as_ref()?.borrow().val;
+            let mut left = node.as_ref()?.borrow_mut().left.take();
+            let mut right = node.as_ref()?.borrow_mut().right.take();
+            if left.is_none() && right.is_none() {
+                if val < limit {
+                    return None;
+                } else {
+                    return node;
+                }
             }
+            if left.is_some() {
+                left = _sufficient_subset(left, limit - val);
+            }
+            if right.is_some() {
+                right = _sufficient_subset(right, limit - val);
+            }
+            if left.is_none() && right.is_none() {
+                return None;
+            }
+            node.as_ref()?.borrow_mut().left = left;
+            node.as_ref()?.borrow_mut().right = right;
+            node
         }
-        if root.as_ref()?.borrow().left.is_some() {
-            let left = Solution::sufficient_subset(root.as_ref()?.borrow_mut().left.take(), limit - val);
-            root.as_ref()?.borrow_mut().left = left;
-        }
-        if root.as_ref()?.borrow().right.is_some() {
-            let right = Solution::sufficient_subset(root.as_ref()?.borrow_mut().right.take(), limit - val);
-            root.as_ref()?.borrow_mut().right = right;
-        }
-
-        if root.as_ref()?.borrow().left.is_none() && root.as_ref()?.borrow().right.is_none() {
-            None
-        } else {
-            root
-        }
+        _sufficient_subset(root, limit)
     }
 }
 
