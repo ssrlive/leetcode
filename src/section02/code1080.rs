@@ -54,12 +54,8 @@ impl Solution {
                     return node;
                 }
             }
-            if left.is_some() {
-                left = _sufficient_subset(left, limit - val);
-            }
-            if right.is_some() {
-                right = _sufficient_subset(right, limit - val);
-            }
+            left = _sufficient_subset(left, limit - val);
+            right = _sufficient_subset(right, limit - val);
             if left.is_none() && right.is_none() {
                 return None;
             }
