@@ -14,7 +14,8 @@ pub struct TreeNode {
 
 impl std::fmt::Display for TreeNode {
     fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
-        write!(f, "{}", self._to_string())
+        let node = Some(Rc::new(RefCell::new(self.clone())));
+        write!(f, "{}", TreeNode::to_string(&node))
     }
 }
 
@@ -39,17 +40,20 @@ impl TreeNode {
         let mut i = 1;
         while i < v.len() {
             let node = queue.pop_front()?;
+            let mut node = node.as_ref()?.borrow_mut();
             if let Some(val) = v.get(i)? {
-                node.as_ref()?.borrow_mut().left = Some(Rc::new(RefCell::new(TreeNode::new(*val))));
-                queue.push_back(node.as_ref()?.borrow().left.clone());
+                let left = Some(Rc::new(RefCell::new(TreeNode::new(*val))));
+                node.left = left.clone();
+                queue.push_back(left);
             }
             i += 1;
             if i >= v.len() {
                 break;
             }
             if let Some(val) = v.get(i)? {
-                node.as_ref()?.borrow_mut().right = Some(Rc::new(RefCell::new(TreeNode::new(*val))));
-                queue.push_back(node.as_ref()?.borrow().right.clone());
+                let right = Some(Rc::new(RefCell::new(TreeNode::new(*val))));
+                node.right = right.clone();
+                queue.push_back(right);
             }
             i += 1;
         }
@@ -76,20 +80,29 @@ impl TreeNode {
         v
     }
 
-    fn _to_string(&self) -> String {
-        let node = Some(Rc::new(RefCell::new(self.clone())));
-        let v = TreeNode::to_vec(&node);
+    pub fn from_string(s: &str) -> Option<Rc<RefCell<TreeNode>>> {
+        let s = s.trim();
+        if s.is_empty() {
+            return None;
+        }
+        let s = s.trim_start_matches('[').trim_end_matches(']');
+        let f = |x: &str| x.trim().parse::<i32>().ok();
+        let v: Vec<_> = s.split(',').map(f).collect();
+        TreeNode::from_vec(&v)
+    }
+
+    pub fn to_string(node: &Option<Rc<RefCell<TreeNode>>>) -> String {
+        let v = TreeNode::to_vec(node);
         let mut s = String::new();
+        s.push('[');
         for (i, item) in v.iter().enumerate() {
             if i > 0 {
                 s.push_str(", ");
             }
-            if item.is_none() {
-                s.push_str("null");
-            } else {
-                s.push_str(&item.unwrap_or_default().to_string());
-            }
+            let item = item.map(|x| x.to_string()).unwrap_or_else(|| "null".to_string());
+            s.push_str(item.as_str());
         }
+        s.push(']');
         s
     }
 
@@ -140,20 +153,15 @@ impl TreeNode {
 
     pub fn find_node(root: &Option<Rc<RefCell<TreeNode>>>, val: i32) -> Option<Rc<RefCell<TreeNode>>> {
         fn helper(node: &Option<Rc<RefCell<TreeNode>>>, val: i32) -> Option<Rc<RefCell<TreeNode>>> {
-            if node.is_some() {
-                if node.as_ref()?.borrow().val == val {
-                    return node.clone();
-                }
-                if let node @ Some(_) = helper(&node.as_ref()?.borrow().left, val) {
-                    return node;
-                }
-                if let node @ Some(_) = helper(&node.as_ref()?.borrow().right, val) {
-                    return node;
-                }
+            let node_ref = node.as_ref()?.borrow();
+            if node_ref.val == val {
+                return node.clone();
             }
-            None
+            if let left @ Some(_) = helper(&node_ref.left, val) {
+                return left;
+            }
+            helper(&node_ref.right, val)
         }
-
         helper(root, val)
     }
 }
@@ -161,12 +169,16 @@ impl TreeNode {
 #[test]
 fn test_tree_node() -> Result<(), Box<dyn std::error::Error>> {
     let root = TreeNode::from_vec(&[Some(1), Some(2), Some(3), Some(4), Some(5), Some(6)]);
-    let root2 = root.as_ref().ok_or("")?.borrow();
+    // let root2 = root.as_ref().ok_or("")?.borrow();
     let expected = vec![Some(1), Some(2), Some(3), Some(4), Some(5), Some(6)];
     assert_eq!(TreeNode::to_vec(&root), expected);
-    assert_eq!(root2.to_string(), "1, 2, 3, 4, 5, 6");
+    assert_eq!(root.as_ref().ok_or("")?.borrow().to_string(), "[1, 2, 3, 4, 5, 6]");
     assert_eq!(TreeNode::preorder_traversal(&root), vec![1, 2, 4, 5, 3, 6]);
     assert_eq!(TreeNode::inorder_traversal(&root), vec![4, 2, 5, 1, 6, 3]);
     assert_eq!(TreeNode::postorder_traversal(&root), vec![4, 5, 2, 6, 3, 1]);
+
+    let root = TreeNode::from_string("[1, 2, 3, 4, null, 5, 6]");
+    assert_eq!(TreeNode::to_string(&root), "[1, 2, 3, 4, null, 5, 6]");
+
     Ok(())
 }
