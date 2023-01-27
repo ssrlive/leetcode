@@ -1162,6 +1162,21 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 1351 | [Count Negative Numbers in a Sorted Matrix](src/section02/code1351.rs) | [link](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/) | Easy | :heavy_check_mark: |
+| 1352 | [Product of the Last K Numbers](src/section02/code1352.rs) | [link](https://leetcode.com/problems/product-of-the-last-k-numbers/) | Medium | :heavy_check_mark: |
+| 1353 | [Maximum Number of Events That Can Be Attended](src/section02/code1353.rs) | [link](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/) | Medium | :heavy_check_mark: |
+| 1354 | [Construct Target Array With Multiple Sums](src/section02/code1354.rs) | [link](https://leetcode.com/problems/construct-target-array-with-multiple-sums/) | Hard | :heavy_check_mark: |
+| 1356 | [Sort Integers by The Number of 1 Bits](src/section02/code1356.rs) | [link](https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/) | Easy | :heavy_check_mark: |
+| 1357 | [Apply Discount Every n Orders](src/section02/code1357.rs) | [link](https://leetcode.com/problems/apply-discount-every-n-orders/) | Medium | :heavy_check_mark: |
+| 1358 | [Number of Substrings Containing All Three Characters](src/section02/code1358.rs) | [link](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/) | Medium | :heavy_check_mark: |
+| 1359 | [Count All Valid Pickup and Delivery Options](src/section02/code1359.rs) | [link](https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/) | Hard | :heavy_check_mark: |
+| 1360 | [Number of Days Between Two Dates](src/section02/code1360.rs) | [link](https://leetcode.com/problems/number-of-days-between-two-dates/) | Easy | :heavy_check_mark: |
+| 1361 | [Validate Binary Tree Nodes](src/section02/code1361.rs) | [link](https://leetcode.com/problems/validate-binary-tree-nodes/) | Medium | :heavy_check_mark: |
+| 1362 | [Closest Divisors](src/section02/code1362.rs) | [link](https://leetcode.com/problems/closest-divisors/) | Medium | :heavy_check_mark: |
+| 1363 | [Largest Multiple of Three](src/section02/code1363.rs) | [link](https://leetcode.com/problems/largest-multiple-of-three/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
