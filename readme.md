@@ -1174,6 +1174,18 @@ cargo test
 | 1361 | [Validate Binary Tree Nodes](src/section02/code1361.rs) | [link](https://leetcode.com/problems/validate-binary-tree-nodes/) | Medium | :heavy_check_mark: |
 | 1362 | [Closest Divisors](src/section02/code1362.rs) | [link](https://leetcode.com/problems/closest-divisors/) | Medium | :heavy_check_mark: |
 | 1363 | [Largest Multiple of Three](src/section02/code1363.rs) | [link](https://leetcode.com/problems/largest-multiple-of-three/) | Hard | :heavy_check_mark: |
+| 1365 | [How Many Numbers Are Smaller Than the Current Number](src/section02/code1365.rs) | [link](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/) | Easy | :heavy_check_mark: |
+| 1366 | [Rank Teams by Votes](src/section02/code1366.rs) | [link](https://leetcode.com/problems/rank-teams-by-votes/) | Medium | :heavy_check_mark: |
+| 1367 | [Linked List in Binary Tree](src/section02/code1367.rs) | [link](https://leetcode.com/problems/linked-list-in-binary-tree/) | Medium | :heavy_check_mark: |
+| 1368 | [Minimum Cost to Make at Least One Valid Path in a Grid](src/section02/code1368.rs) | [link](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/) | Hard | :heavy_check_mark: |
+| 1370 | [Increasing Decreasing String](src/section02/code1370.rs) | [link](https://leetcode.com/problems/increasing-decreasing-string/) | Easy | :heavy_check_mark: |
+| 1371 | [Find the Longest Substring Containing Vowels in Even Counts](src/section02/code1371.rs) | [link](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/) | Medium | :heavy_check_mark: |
+| 1372 | [Longest ZigZag Path in a Binary Tree](src/section02/code1372.rs) | [link](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/) | Medium | :heavy_check_mark: |
+| 1373 | [Maximum Sum BST in Binary Tree](src/section02/code1373.rs) | [link](https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/) | Hard | :heavy_check_mark: |
+| 1374 | [Generate a String With Characters That Have Odd Counts](src/section02/code1374.rs) | [link](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/) | Easy | :heavy_check_mark: |
+| 1375 | [Bulb Switcher III](src/section02/code1375.rs) | [link](https://leetcode.com/problems/bulb-switcher-iii/) | Medium | :heavy_check_mark: |
+| 1376 | [Time Needed to Inform All Employees](src/section02/code1376.rs) | [link](https://leetcode.com/problems/time-needed-to-inform-all-employees/) | Medium | :heavy_check_mark: |
+| 1377 | [Frog Position After T Seconds](src/section02/code1377.rs) | [link](https://leetcode.com/problems/frog-position-after-t-seconds/) | Hard | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
