@@ -65,13 +65,7 @@ impl Solution {
         ranges.push((l, n));
         ranges
             .into_iter()
-            .map(|(l, h)| {
-                if l == h {
-                    format!("{}", l)
-                } else {
-                    format!("{}->{}", l, h)
-                }
-            })
+            .map(|(l, h)| if l == h { format!("{l}") } else { format!("{l}->{h}") })
             .collect()
     }
 }

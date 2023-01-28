@@ -65,7 +65,7 @@ impl Solution {
         for i in 0..10 {
             cows += std::cmp::min(secret_counts[i], guess_counts[i]);
         }
-        format!("{}A{}B", bulls, cows)
+        format!("{bulls}A{cows}B")
     }
 }
 

@@ -35,7 +35,7 @@ impl Solution {
             if c.contains(&b) {
                 return i as i32;
             }
-            c = format!("{}{}", c, a);
+            c = format!("{c}{a}");
         }
         -1
     }

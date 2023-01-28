@@ -69,7 +69,7 @@ impl Solution {
         for i in 1..s.len() {
             for x in &candidates(&s[..i]) {
                 for y in &candidates(&s[i..]) {
-                    answer.push(format!("({}, {})", x, y));
+                    answer.push(format!("({x}, {y})"));
                 }
             }
         }

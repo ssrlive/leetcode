@@ -129,6 +129,6 @@ fn main() {
     let max_lengh = problems.iter().map(|x| x.1.len()).max().unwrap();
     for (i, (num, name, url)) in problems.iter().enumerate() {
         let padding = " ".repeat(max_lengh - name.len());
-        println!("{:>2?}: {:>4?} \"{}\" {}{}", i, num, name, padding, url);
+        println!("{i:>2?}: {num:>4?} \"{name}\" {padding}{url}");
     }
 }

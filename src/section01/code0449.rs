@@ -46,7 +46,7 @@ impl Codec {
             return "".to_string();
         }
         let nodes = Self::pre_order_traversal(&root);
-        format!("{:?}", nodes)
+        format!("{nodes:?}")
     }
 
     pub fn pre_order_traversal(root: &Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {

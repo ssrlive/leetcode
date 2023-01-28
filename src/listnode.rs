@@ -48,7 +48,7 @@ impl std::fmt::Display for ListNode {
                 s.push_str(" -> ");
             }
         }
-        write!(f, "{}", s)
+        write!(f, "{s}")
     }
 }
 

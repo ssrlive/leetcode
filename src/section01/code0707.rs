@@ -105,7 +105,7 @@ impl MyLinkedList {
 
     fn add_at_tail(&mut self, val: i32) {
         if self._add_at_tail(val).is_none() {
-            println!("invalid val: {}", val);
+            println!("invalid val: {val}");
         }
     }
     fn _add_at_tail(&mut self, val: i32) -> Option<()> {
@@ -123,7 +123,7 @@ impl MyLinkedList {
 
     pub fn add_at_index(&mut self, index: i32, val: i32) {
         if self._add_at_index(index, val).is_none() {
-            println!("invalid index: {}", index);
+            println!("invalid index: {index}");
         }
     }
     fn _add_at_index(&mut self, index: i32, val: i32) -> Option<()> {
@@ -156,7 +156,7 @@ impl MyLinkedList {
 
     pub fn delete_at_index(&mut self, index: i32) {
         if self._delete_at_index(index).is_none() {
-            println!("invalid index: {}", index);
+            println!("invalid index: {index}");
         }
     }
     fn _delete_at_index(&mut self, index: i32) -> Option<()> {

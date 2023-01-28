@@ -175,7 +175,7 @@ impl Solution {
                 if k.is_empty() {
                     f_num = vec![val.to_string()];
                 } else {
-                    res.push(format!("{}*{}", val, k));
+                    res.push(format!("{val}*{k}"));
                 }
             }
             res.extend(f_num);

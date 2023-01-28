@@ -62,7 +62,7 @@ impl Solution {
                     let content = &content[..content.len() - 1];
                     map.entry(content.to_string())
                         .or_insert_with(Vec::new)
-                        .push(format!("{}/{}", dir, file_name));
+                        .push(format!("{dir}/{file_name}"));
                 }
             }
             let r = map.into_iter().filter(|(_, v)| v.len() > 1).map(|(_, v)| v).collect();

@@ -133,14 +133,14 @@ impl std::str::FromStr for NestedInteger {
 impl std::fmt::Display for NestedInteger {
     fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
         match self {
-            NestedInteger::Int(i) => write!(f, "{}", i),
+            NestedInteger::Int(i) => write!(f, "{i}"),
             NestedInteger::List(list) => {
                 write!(f, "[")?;
                 for (i, ni) in list.iter().enumerate() {
                     if i > 0 {
                         write!(f, ",")?;
                     }
-                    write!(f, "{}", ni)?;
+                    write!(f, "{ni}")?;
                 }
                 write!(f, "]")
             }

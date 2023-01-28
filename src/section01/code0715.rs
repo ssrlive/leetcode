@@ -55,7 +55,7 @@ impl RangeModule {
 
     fn add_range(&mut self, left: i32, right: i32) {
         if self._add_range(left, right).is_none() {
-            println!("add_range({}, {}) failed", left, right);
+            println!("add_range({left}, {right}) failed");
         }
     }
     fn _add_range(&mut self, left: i32, right: i32) -> Option<()> {
@@ -102,7 +102,7 @@ impl RangeModule {
 
     fn remove_range(&mut self, left: i32, right: i32) {
         if self._remove_range(left, right).is_none() {
-            println!("remove_range({}, {}) failed", left, right);
+            println!("remove_range({left}, {right}) failed");
         }
     }
     fn _remove_range(&mut self, left: i32, right: i32) -> Option<()> {

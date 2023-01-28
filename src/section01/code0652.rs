@@ -80,7 +80,7 @@ impl Solution {
                 }
                 str_to_node_and_count.insert(s.clone(), (node, count));
 
-                println!("s = {}", s);
+                println!("s = {s}");
 
                 Some(s)
             }

@@ -43,7 +43,7 @@ impl Solution {
         for i in 0i32..12 {
             for j in 0i32..60 {
                 if (i.count_ones() + j.count_ones()) == nu {
-                    result.push(format!("{}:{:02}", i, j));
+                    result.push(format!("{i}:{j:02}"));
                 }
             }
         }

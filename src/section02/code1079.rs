@@ -55,10 +55,10 @@ impl Solution {
                 for (c, num1) in &map {
                     if let Some(num2) = smap.get(c) {
                         if num2 < num1 {
-                            new_set.insert(format!("{}{}", s, c));
+                            new_set.insert(format!("{s}{c}"));
                         }
                     } else {
-                        new_set.insert(format!("{}{}", s, c));
+                        new_set.insert(format!("{s}{c}"));
                     }
                 }
             }

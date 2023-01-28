@@ -40,21 +40,21 @@ impl Solution {
         let right = &(*root).borrow().right;
         let val = (*root).borrow().val;
         match (left, right) {
-            (None, None) => vec![format!("{}", val)],
+            (None, None) => vec![format!("{val}")],
             (Some(n), None) | (None, Some(n)) => {
                 let mut output = Vec::<String>::new();
                 for s in Solution::binary_tree_paths(Some(n.clone())) {
-                    output.push(format!("{}->{}", val, s));
+                    output.push(format!("{val}->{s}"));
                 }
                 output
             }
             (Some(n_left), Some(n_right)) => {
                 let mut output = Vec::<String>::new();
                 for s in Solution::binary_tree_paths(Some(n_left.clone())).as_slice() {
-                    output.push(format!("{}->{}", val, s));
+                    output.push(format!("{val}->{s}"));
                 }
                 for s in Solution::binary_tree_paths(Some(n_right.clone())).as_slice() {
-                    output.push(format!("{}->{}", val, s));
+                    output.push(format!("{val}->{s}"));
                 }
                 output
             }

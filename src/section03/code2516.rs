@@ -63,7 +63,7 @@ impl Solution {
             }
 
             ret = ret.min(i - 1 + n - j);
-            println!["ret: {}", ret];
+            println!["ret: {ret}"];
             if i == 1 {
                 break;
             }

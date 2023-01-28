@@ -55,7 +55,7 @@ impl Solution {
             }
         }
         for (k, _) in mp {
-            println!("{}", k);
+            println!("{k}");
             count += 1;
         }
         count

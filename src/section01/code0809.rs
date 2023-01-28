@@ -60,11 +60,11 @@ impl Solution {
         }
 
         let orig_freq = get_freq(&s);
-        println!("orig_freq = {:?}", orig_freq);
+        println!("orig_freq = {orig_freq:?}");
         let mut num_of_expressive_words = 0;
         for word in words.iter() {
             let query_freq = get_freq(word);
-            println!("query_freq = {:?}", query_freq);
+            println!("query_freq = {query_freq:?}");
             if orig_freq.len() != query_freq.len() {
                 continue;
             }

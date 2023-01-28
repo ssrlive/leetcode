@@ -218,7 +218,7 @@ impl Skiplist {
             }
         }
         for t in table.iter().rev() {
-            println!("{:?}", t);
+            println!("{t:?}");
         }
     }
 }

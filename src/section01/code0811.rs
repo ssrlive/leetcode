@@ -55,7 +55,7 @@ impl Solution {
                     }
                 }
             }
-            let f = |(domain, count): (&String, &i32)| format!("{} {}", count, domain);
+            let f = |(domain, count): (&String, &i32)| format!("{count} {domain}");
             let v = map.iter().map(f).collect();
             Some(v)
         }
