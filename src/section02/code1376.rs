@@ -38,12 +38,12 @@
 // -    1 <= n <= 10^5
 // -    0 <= headID < n
 // -    manager.length == n
-//     0 <= manager[i] < n
-//     manager[headID] == -1
-//     informTime.length == n
-//     0 <= informTime[i] <= 1000
-//     informTime[i] == 0 if employee i has no subordinates.
-//     It is guaranteed that all the employees can be informed.
+// -    0 <= manager[i] < n
+// -    manager[headID] == -1
+// -    informTime.length == n
+// -    0 <= informTime[i] <= 1000
+// -    informTime[i] == 0 if employee i has no subordinates.
+// -    It is guaranteed that all the employees can be informed.
 //
 
 struct Solution;

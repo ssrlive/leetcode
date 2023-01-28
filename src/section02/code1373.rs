@@ -49,12 +49,13 @@ impl Solution {
         fn dfs(node: &Option<Rc<RefCell<TreeNode>>>, max_sum: &mut i32) -> (i32, i32, i32) {
             if node.is_some() {
                 let node = node.as_ref().unwrap().borrow();
+                let val = node.val;
                 let (left_min, left_max, left_sum) = dfs(&node.left, max_sum);
                 let (right_min, right_max, right_sum) = dfs(&node.right, max_sum);
-                if (node.left.is_none() || left_max < node.val) && (node.right.is_none() || right_min > node.val) {
-                    let sum = left_sum + right_sum + node.val;
+                if (node.left.is_none() || left_max < val) && (node.right.is_none() || right_min > val) {
+                    let sum = left_sum + right_sum + val;
                     *max_sum = (*max_sum).max(sum);
-                    (left_min.min(node.val), right_max.max(node.val), sum)
+                    (left_min.min(val), right_max.max(val), sum)
                 } else {
                     (i32::MIN, i32::MAX, 0)
                 }
