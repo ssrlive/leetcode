@@ -1186,6 +1186,24 @@ cargo test
 | 1375 | [Bulb Switcher III](src/section02/code1375.rs) | [link](https://leetcode.com/problems/bulb-switcher-iii/) | Medium | :heavy_check_mark: |
 | 1376 | [Time Needed to Inform All Employees](src/section02/code1376.rs) | [link](https://leetcode.com/problems/time-needed-to-inform-all-employees/) | Medium | :heavy_check_mark: |
 | 1377 | [Frog Position After T Seconds](src/section02/code1377.rs) | [link](https://leetcode.com/problems/frog-position-after-t-seconds/) | Hard | :heavy_check_mark: |
+| 1379 | [Find a Corresponding Node of a Binary Tree in a Clone of That Tree](src/section02/code1379.rs) | [link](https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/) | Medium | :heavy_check_mark: |
+| 1380 | [Lucky Numbers in a Matrix](src/section02/code1380.rs) | [link](https://leetcode.com/problems/lucky-numbers-in-a-matrix/) | Easy | :heavy_check_mark: |
+| 1381 | [Design a Stack With Increment Operation](src/section02/code1381.rs) | [link](https://leetcode.com/problems/design-a-stack-with-increment-operation/) | Medium | :heavy_check_mark: |
+| 1382 | [Balance a Binary Search Tree](src/section02/code1382.rs) | [link](https://leetcode.com/problems/balance-a-binary-search-tree/) | Medium | :heavy_check_mark: |
+| 1383 | [Maximum Performance of a Team](src/section02/code1383.rs) | [link](https://leetcode.com/problems/maximum-performance-of-a-team/) | Hard | :heavy_check_mark: |
+| 1385 | [Find the Distance Value Between Two Arrays](src/section02/code1385.rs) | [link](https://leetcode.com/problems/find-the-distance-value-between-two-arrays/) | Easy | :heavy_check_mark: |
+| 1386 | [Cinema Seat Allocation](src/section02/code1386.rs) | [link](https://leetcode.com/problems/cinema-seat-allocation/) | Medium | :heavy_check_mark: |
+| 1387 | [Sort Integers by The Power Value](src/section02/code1387.rs) | [link](https://leetcode.com/problems/sort-integers-by-the-power-value/) | Medium | :heavy_check_mark: |
+| 1388 | [Pizza With 3n Slices](src/section02/code1388.rs) | [link](https://leetcode.com/problems/pizza-with-3n-slices/) | Hard | :heavy_check_mark: |
+| 1390 | [Four Divisors](src/section02/code1390.rs) | [link](https://leetcode.com/problems/four-divisors/) | Medium | :heavy_check_mark: |
+| 1391 | [Check if There is a Valid Path in a Grid](src/section02/code1391.rs) | [link](https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/) | Medium | :heavy_check_mark: |
+| 1392 | [Longest Happy Prefix](src/section02/code1392.rs) | [link](https://leetcode.com/problems/longest-happy-prefix/) | Hard | :heavy_check_mark: |
+| 1394 | [Find Lucky Integer in an Array](src/section02/code1394.rs) | [link](https://leetcode.com/problems/find-lucky-integer-in-an-array/) | Easy | :heavy_check_mark: |
+| 1395 | [Count Number of Teams](src/section02/code1395.rs) | [link](https://leetcode.com/problems/count-number-of-teams/) | Medium | :heavy_check_mark: |
+| 1396 | [Design Underground System](src/section02/code1396.rs) | [link](https://leetcode.com/problems/design-underground-system/) | Medium | :heavy_check_mark: |
+| 1397 | [Find All Good Strings](src/section02/code1397.rs) | [link](https://leetcode.com/problems/find-all-good-strings/) | Hard | :heavy_check_mark: |
+| 1399 | [Count Largest Group](src/section02/code1399.rs) | [link](https://leetcode.com/problems/count-largest-group/) | Easy | :heavy_check_mark: |
+| 1400 | [Construct K Palindrome Strings](src/section02/code1400.rs) | [link](https://leetcode.com/problems/construct-k-palindrome-strings/) | Medium | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
