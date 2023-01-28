@@ -1207,6 +1207,19 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 1401 | [Circle and Rectangle Overlapping](src/section02/code1401.rs) | [link](https://leetcode.com/problems/circle-and-rectangle-overlapping/) | Medium | :heavy_check_mark: |
+| 1402 | [Reducing Dishes](src/section02/code1402.rs) | [link](https://leetcode.com/problems/reducing-dishes/) | Hard | :heavy_check_mark: |
+| 1403 | [Minimum Subsequence in Non-Increasing Order](src/section02/code1403.rs) | [link](https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/) | Easy | :heavy_check_mark: |
+| 1404 | [Number of Steps to Reduce a Number in Binary Representation to One](src/section02/code1404.rs) | [link](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) | Medium | :heavy_check_mark: |
+| 1405 | [Longest Happy String](src/section02/code1405.rs) | [link](https://leetcode.com/problems/longest-happy-string/) | Medium | :heavy_check_mark: |
+| 1406 | [Stone Game III](src/section02/code1406.rs) | [link](https://leetcode.com/problems/stone-game-iii/) | Hard | :heavy_check_mark: |
+| 1408 | [String Matching in an Array](src/section02/code1408.rs) | [link](https://leetcode.com/problems/string-matching-in-an-array/) | Easy | :heavy_check_mark: |
+| 1409 | [Queries on a Permutation With Key](src/section02/code1409.rs) | [link](https://leetcode.com/problems/queries-on-a-permutation-with-key/) | Medium | :heavy_check_mark: |
+| 1410 | [HTML Entity Parser](src/section02/code1410.rs) | [link](https://leetcode.com/problems/html-entity-parser/) | Medium | :heavy_check_mark: |
+| 1411 | [Number of Ways to Paint N × 3 Grid](src/section02/code1411.rs) | [link](https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
