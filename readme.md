@@ -1217,6 +1217,35 @@ cargo test
 | 1409 | [Queries on a Permutation With Key](src/section02/code1409.rs) | [link](https://leetcode.com/problems/queries-on-a-permutation-with-key/) | Medium | :heavy_check_mark: |
 | 1410 | [HTML Entity Parser](src/section02/code1410.rs) | [link](https://leetcode.com/problems/html-entity-parser/) | Medium | :heavy_check_mark: |
 | 1411 | [Number of Ways to Paint N × 3 Grid](src/section02/code1411.rs) | [link](https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/) | Hard | :heavy_check_mark: |
+| 1413 | [Minimum Value to Get Positive Step by Step Sum](src/section02/code1413.rs) | [link](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/) | Easy | :heavy_check_mark: |
+| 1414 | [Find the Minimum Number of Fibonacci Numbers Whose Sum Is K](src/section02/code1414.rs) | [link](https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/) | Medium | :heavy_check_mark: |
+| 1415 | [The k-th Lexicographical String of All Happy Strings of Length n](src/section02/code1415.rs) | [link](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | Medium | :heavy_check_mark: |
+| 1416 | [Restore The Array](src/section02/code1416.rs) | [link](https://leetcode.com/problems/restore-the-array/) | Hard | :heavy_check_mark: |
+| 1417 | [Reformat The String](src/section02/code1417.rs) | [link](https://leetcode.com/problems/reformat-the-string/) | Easy | :heavy_check_mark: |
+| 1418 | [Display Table of Food Orders in a Restaurant](src/section02/code1418.rs) | [link](https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant/) | Medium | :heavy_check_mark: |
+| 1419 | [Minimum Number of Frogs Croaking](src/section02/code1419.rs) | [link](https://leetcode.com/problems/minimum-number-of-frogs-croaking/) | Medium | :heavy_check_mark: |
+| 1420 | [Build Array Where You Can Find The Maximum Exactly K Comparisons](src/section02/code1420.rs) | [link](https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/) | Hard | :heavy_check_mark: |
+| 1422 | [Maximum Score After Splitting a String](src/section02/code1422.rs) | [link](https://leetcode.com/problems/maximum-score-after-splitting-a-string/) | Easy | :heavy_check_mark: |
+| 1423 | [Maximum Points You Can Obtain from Cards](src/section02/code1423.rs) | [link](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/) | Medium | :heavy_check_mark: |
+| 1424 | [Diagonal Traverse II](src/section02/code1424.rs) | [link](https://leetcode.com/problems/diagonal-traverse-ii/) | Medium | :heavy_check_mark: |
+| 1425 | [Constrained Subsequence Sum](src/section02/code1425.rs) | [link](https://leetcode.com/problems/constrained-subsequence-sum/) | Hard | :heavy_check_mark: |
+| 1431 | [Kids With the Greatest Number of Candies](src/section02/code1431.rs) | [link](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/) | Easy | :heavy_check_mark: |
+| 1432 | [Max Difference You Can Get From Changing an Integer](src/section02/code1432.rs) | [link](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/) | Medium | :heavy_check_mark: |
+| 1433 | [Check If a String Can Break Another String](src/section02/code1433.rs) | [link](https://leetcode.com/problems/check-if-a-string-can-break-another-string/) | Medium | :heavy_check_mark: |
+| 1434 | [Number of Ways to Wear Different Hats to Each Other](src/section02/code1434.rs) | [link](https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/) | Hard | :heavy_check_mark: |
+| 1436 | [Destination City](src/section02/code1436.rs) | [link](https://leetcode.com/problems/destination-city/) | Easy | :heavy_check_mark: |
+| 1437 | [Check If All 1's Are at Least Length K Places Away](src/section02/code1437.rs) | [link](https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/) | Medium | :heavy_check_mark: |
+| 1438 | [Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](src/section02/code1438.rs) | [link](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | Medium | :heavy_check_mark: |
+| 1439 | [Find the Kth Smallest Sum of a Matrix With Sorted Rows](src/section02/code1439.rs) | [link](https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/) | Hard | :heavy_check_mark: |
+| 1441 | [Build an Array With Stack Operations](src/section02/code1441.rs) | [link](https://leetcode.com/problems/build-an-array-with-stack-operations/) | Easy | :heavy_check_mark: |
+| 1442 | [Count Triplets That Can Form Two Arrays of Equal XOR](src/section02/code1442.rs) | [link](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/) | Medium | :heavy_check_mark: |
+| 1443 | [Minimum Time to Collect All Apples in a Tree](src/section02/code1443.rs) | [link](https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/) | Medium | :heavy_check_mark: |
+| 1444 | [Number of Ways of Cutting a Pizza](src/section02/code1444.rs) | [link](https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/) | Hard | :heavy_check_mark: |
+| 1446 | [Consecutive Characters](src/section02/code1446.rs) | [link](https://leetcode.com/problems/consecutive-characters/) | Easy | :heavy_check_mark: |
+| 1447 | [Simplified Fractions](src/section02/code1447.rs) | [link](https://leetcode.com/problems/simplified-fractions/) | Medium | :heavy_check_mark: |
+| 1448 | [Count Good Nodes in Binary Tree](src/section02/code1448.rs) | [link](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | Medium | :heavy_check_mark: |
+| 1449 | [Form Largest Integer With Digits That Add up to Target](src/section02/code1449.rs) | [link](https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/) | Hard | :heavy_check_mark: |
+| 1450 | [Number of Students Doing Homework at a Given Time](src/section02/code1450.rs) | [link](https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/) | Easy | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
