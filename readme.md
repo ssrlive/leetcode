@@ -1377,3 +1377,7 @@ cargo test
 | 2545 | [Sort the Students by Their Kth Score](src/section03/code2545.rs) | [link](https://leetcode.com/problems/sort-the-students-by-their-kth-score/) | Medium | :heavy_check_mark: |
 | 2546 | [Apply Bitwise Operations to Make Strings Equal](src/section03/code2546.rs) | [link](https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/) | Medium | :heavy_check_mark: |
 | 2547 | [Minimum Cost to Split an Array](src/section03/code2547.rs) | [link](https://leetcode.com/problems/minimum-cost-to-split-an-array/) | Hard | :heavy_check_mark: |
+| 2549 | [Count Distinct Numbers on Board](src/section03/code2549.rs) | [link](https://leetcode.com/problems/count-distinct-numbers-on-board/) | Easy | :heavy_check_mark: |
+| 2550 | [Count Collisions of Monkeys on a Polygon](src/section03/code2550.rs) | [link](https://leetcode.com/problems/count-collisions-of-monkeys-on-a-polygon/) | Medium | :heavy_check_mark: |
+| 2551 | [Put Marbles in Bags](src/section03/code2551.rs) | [link](https://leetcode.com/problems/put-marbles-in-bags/) | Hard | :heavy_check_mark: |
+| 2552 | [Count Increasing Quadruplets](src/section03/code2552.rs) | [link](https://leetcode.com/problems/count-increasing-quadruplets/) | Hard | :heavy_check_mark: |
