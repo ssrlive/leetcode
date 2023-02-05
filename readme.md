@@ -1249,6 +1249,22 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 1451 | [Rearrange Words in a Sentence](src/section02/code1451.rs) | [link](https://leetcode.com/problems/rearrange-words-in-a-sentence/) | Medium | :heavy_check_mark: |
+| 1452 | [People Whose List of Favorite Companies Is Not a Subset of Another List](src/section02/code1452.rs) | [link](https://leetcode.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list/) | Medium | :heavy_check_mark: |
+| 1453 | [Maximum Number of Darts Inside of a Circular Dartboard](src/section02/code1453.rs) | [link](https://leetcode.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard/) | Hard | :heavy_check_mark: |
+| 1455 | [Check If a Word Occurs As a Prefix of Any Word in a Sentence](src/section02/code1455.rs) | [link](https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/) | Easy | :heavy_check_mark: |
+| 1456 | [Maximum Number of Vowels in a Substring of Given Length](src/section02/code1456.rs) | [link](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | Medium | :heavy_check_mark: |
+| 1457 | [Pseudo-Palindromic Paths in a Binary Tree](src/section02/code1457.rs) | [link](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/) | Medium | :heavy_check_mark: |
+| 1458 | [Max Dot Product of Two Subsequences](src/section02/code1458.rs) | [link](https://leetcode.com/problems/max-dot-product-of-two-subsequences/) | Hard | :heavy_check_mark: |
+| 1460 | [Make Two Arrays Equal by Reversing Sub-arrays](src/section02/code1460.rs) | [link](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/) | Easy | :heavy_check_mark: |
+| 1461 | [Check If a String Contains All Binary Codes of Size K](src/section02/code1461.rs) | [link](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/) | Medium | :heavy_check_mark: |
+| 1462 | [Course Schedule IV](src/section02/code1462.rs) | [link](https://leetcode.com/problems/course-schedule-iv/) | Medium | :heavy_check_mark: |
+| 1463 | [Cherry Pickup II](src/section02/code1463.rs) | [link](https://leetcode.com/problems/cherry-pickup-ii/) | Hard | :heavy_check_mark: |
+| 1464 | [Maximum Product of Two Elements in an Array](src/section02/code1464.rs) | [link](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/) | Easy | :heavy_check_mark: |
+| 1465 | [Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts](src/section02/code1465.rs) | [link](https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/) | Medium | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
