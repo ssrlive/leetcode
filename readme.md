@@ -1381,3 +1381,11 @@ cargo test
 | 2550 | [Count Collisions of Monkeys on a Polygon](src/section03/code2550.rs) | [link](https://leetcode.com/problems/count-collisions-of-monkeys-on-a-polygon/) | Medium | :heavy_check_mark: |
 | 2551 | [Put Marbles in Bags](src/section03/code2551.rs) | [link](https://leetcode.com/problems/put-marbles-in-bags/) | Hard | :heavy_check_mark: |
 | 2552 | [Count Increasing Quadruplets](src/section03/code2552.rs) | [link](https://leetcode.com/problems/count-increasing-quadruplets/) | Hard | :heavy_check_mark: |
+| 2553 | [Separate the Digits in an Array](src/section03/code2553.rs) | [link](https://leetcode.com/problems/separate-the-digits-in-an-array/) | Easy | :heavy_check_mark: |
+| 2554 | [Maximum Number of Integers to Choose From a Range I](src/section03/code2554.rs) | [link](https://leetcode.com/problems/maximum-number-of-integers-to-choose-from-a-range-i/) | Medium | :heavy_check_mark: |
+| 2555 | [Maximize Win From Two Segments](src/section03/code2555.rs) | [link](https://leetcode.com/problems/maximize-win-from-two-segments/) | Medium | :heavy_check_mark: |
+| 2556 | [Disconnect Path in a Binary Matrix by at Most One Flip](src/section03/code2556.rs) | [link](https://leetcode.com/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/) | Medium | :heavy_check_mark: |
+| 2558 | [Take Gifts From the Richest Pile](src/section03/code2558.rs) | [link](https://leetcode.com/problems/take-gifts-from-the-richest-pile/) | Easy | :heavy_check_mark: |
+| 2559 | [Count Vowel Strings in Ranges](src/section03/code2559.rs) | [link](https://leetcode.com/problems/count-vowel-strings-in-ranges/) | Medium | :heavy_check_mark: |
+| 2560 | [House Robber IV](src/section03/code2560.rs) | [link](https://leetcode.com/problems/house-robber-iv/) | Medium | :heavy_check_mark: |
+| 2561 | [Rearranging Fruits](src/section03/code2561.rs) | [link](https://leetcode.com/problems/rearranging-fruits/) | Hard | :heavy_check_mark: |
