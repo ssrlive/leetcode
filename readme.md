@@ -1262,6 +1262,33 @@ cargo test
 | 1463 | [Cherry Pickup II](src/section02/code1463.rs) | [link](https://leetcode.com/problems/cherry-pickup-ii/) | Hard | :heavy_check_mark: |
 | 1464 | [Maximum Product of Two Elements in an Array](src/section02/code1464.rs) | [link](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/) | Easy | :heavy_check_mark: |
 | 1465 | [Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts](src/section02/code1465.rs) | [link](https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/) | Medium | :heavy_check_mark: |
+| 1466 | [Reorder Routes to Make All Paths Lead to the City Zero](src/section02/code1466.rs) | [link](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/) | Medium | :heavy_check_mark: |
+| 1467 | [Probability of a Two Boxes Having The Same Number of Distinct Balls](src/section02/code1467.rs) | [link](https://leetcode.com/problems/probability-of-a-two-boxes-having-the-same-number-of-distinct-balls/) | Hard | :heavy_check_mark: |
+| 1470 | [Shuffle the Array](src/section02/code1470.rs) | [link](https://leetcode.com/problems/shuffle-the-array/) | Easy | :heavy_check_mark: |
+| 1471 | [The k Strongest Values in an Array](src/section02/code1471.rs) | [link](https://leetcode.com/problems/the-k-strongest-values-in-an-array/) | Medium | :heavy_check_mark: |
+| 1472 | [Design Browser History](src/section02/code1472.rs) | [link](https://leetcode.com/problems/design-browser-history/) | Medium | :heavy_check_mark: |
+| 1473 | [Paint House III](src/section02/code1473.rs) | [link](https://leetcode.com/problems/paint-house-iii/) | Hard | :heavy_check_mark: |
+| 1475 | [Final Prices With a Special Discount in a Shop](src/section02/code1475.rs) | [link](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/) | Easy | :heavy_check_mark: |
+| 1476 | [Subrectangle Queries](src/section02/code1476.rs) | [link](https://leetcode.com/problems/subrectangle-queries/) | Medium | :heavy_check_mark: |
+| 1477 | [Find Two Non-overlapping Sub-arrays Each With Target Sum](src/section02/code1477.rs) | [link](https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium | :heavy_check_mark: |
+| 1478 | [Allocate Mailboxes](src/section02/code1478.rs) | [link](https://leetcode.com/problems/allocate-mailboxes/) | Hard | :heavy_check_mark: |
+| 1480 | [Running Sum of 1d Array](src/section02/code1480.rs) | [link](https://leetcode.com/problems/running-sum-of-1d-array/) | Easy | :heavy_check_mark: |
+| 1481 | [Least Number of Unique Integers after K Removals](src/section02/code1481.rs) | [link](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/) | Medium | :heavy_check_mark: |
+| 1482 | [Minimum Number of Days to Make m Bouquets](src/section02/code1482.rs) | [link](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/) | Medium | :heavy_check_mark: |
+| 1483 | [Kth Ancestor of a Tree Node](src/section02/code1483.rs) | [link](https://leetcode.com/problems/kth-ancestor-of-a-tree-node/) | Hard | :heavy_check_mark: |
+| 1484 | [Group Sold Products by The Date](src/section02/code1484.rs) | [link](https://leetcode.com/problems/group-sold-products-by-the-date/) | Easy | :heavy_check_mark: |
+| 1486 | [XOR Operation in an Array](src/section02/code1486.rs) | [link](https://leetcode.com/problems/xor-operation-in-an-array/) | Easy | :heavy_check_mark: |
+| 1487 | [Making File Names Unique](src/section02/code1487.rs) | [link](https://leetcode.com/problems/making-file-names-unique/) | Medium | :heavy_check_mark: |
+| 1488 | [Avoid Flood in The City](src/section02/code1488.rs) | [link](https://leetcode.com/problems/avoid-flood-in-the-city/) | Medium | :heavy_check_mark: |
+| 1489 | [Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](src/section02/code1489.rs) | [link](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/) | Hard | :heavy_check_mark: |
+| 1491 | [Average Salary Excluding the Minimum and Maximum Salary](src/section02/code1491.rs) | [link](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/) | Easy | :heavy_check_mark: |
+| 1492 | [The kth Factor of n](src/section02/code1492.rs) | [link](https://leetcode.com/problems/the-kth-factor-of-n/) | Medium | :heavy_check_mark: |
+| 1493 | [Longest Subarray of 1's After Deleting One Element](src/section02/code1493.rs) | [link](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) | Medium | :heavy_check_mark: |
+| 1494 | [Parallel Courses II](src/section02/code1494.rs) | [link](https://leetcode.com/problems/parallel-courses-ii/) | Hard | :heavy_check_mark: |
+| 1496 | [Path Crossing](src/section02/code1496.rs) | [link](https://leetcode.com/problems/path-crossing/) | Easy | :heavy_check_mark: |
+| 1497 | [Check If Array Pairs Are Divisible by k](src/section02/code1497.rs) | [link](https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/) | Medium | :heavy_check_mark: |
+| 1498 | [Number of Subsequences That Satisfy the Given Sum Condition](src/section02/code1498.rs) | [link](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/) | Medium | :heavy_check_mark: |
+| 1499 | [Max Value of Equation](src/section02/code1499.rs) | [link](https://leetcode.com/problems/max-value-of-equation/) | Hard | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
