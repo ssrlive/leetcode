@@ -1304,6 +1304,19 @@ cargo test
 | 1513 | [Number of Substrings With Only 1s](src/section02/code1513.rs) | [link](https://leetcode.com/problems/number-of-substrings-with-only-1s/) | Medium | :heavy_check_mark: |
 | 1514 | [Path with Maximum Probability](src/section02/code1514.rs) | [link](https://leetcode.com/problems/path-with-maximum-probability/) | Medium | :heavy_check_mark: |
 | 1515 | [Best Position for a Service Centre](src/section02/code1515.rs) | [link](https://leetcode.com/problems/best-position-for-a-service-centre/) | Hard | :heavy_check_mark: |
+| 1518 | [Water Bottles](src/section02/code1518.rs) | [link](https://leetcode.com/problems/water-bottles/) | Easy | :heavy_check_mark: |
+| 1519 | [Number of Nodes in the Sub-Tree With the Same Label](src/section02/code1519.rs) | [link](https://leetcode.com/problems/number-of-nodes-in-the-sub-tree-with-the-same-label/) | Medium | :heavy_check_mark: |
+| 1520 | [Maximum Number of Non-Overlapping Substrings](src/section02/code1520.rs) | [link](https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings/) | Hard | :heavy_check_mark: |
+| 1521 | [Find a Value of a Mysterious Function Closest to Target](src/section02/code1521.rs) | [link](https://leetcode.com/problems/find-a-value-of-a-mysterious-function-closest-to-target/) | Hard | :heavy_check_mark: |
+| 1523 | [Count Odd Numbers in an Interval Range](src/section02/code1523.rs) | [link](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/) | Easy | :heavy_check_mark: |
+| 1524 | [Number of Sub-arrays With Odd Sum](src/section02/code1524.rs) | [link](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/) | Medium | :heavy_check_mark: |
+| 1525 | [Number of Good Ways to Split a String](src/section02/code1525.rs) | [link](https://leetcode.com/problems/number-of-good-ways-to-split-a-string/) | Medium | :heavy_check_mark: |
+| 1526 | [Minimum Number of Increments on Subarrays to Form a Target Array](src/section02/code1526.rs) | [link](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/) | Hard | :heavy_check_mark: |
+| 1527 | [Patients With a Condition](src/section02/code1527.rs) | [link](https://leetcode.com/problems/patients-with-a-condition/) | Easy | :heavy_check_mark: |
+| 1528 | [Shuffle String](src/section02/code1528.rs) | [link](https://leetcode.com/problems/shuffle-string/) | Easy | :heavy_check_mark: |
+| 1529 | [Minimum Suffix Flips](src/section02/code1529.rs) | [link](https://leetcode.com/problems/minimum-suffix-flips/) | Medium | :heavy_check_mark: |
+| 1530 | [Number of Good Leaf Nodes Pairs](src/section02/code1530.rs) | [link](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/) | Medium | :heavy_check_mark: |
+| 1531 | [String Compression II](src/section02/code1531.rs) | [link](https://leetcode.com/problems/string-compression-ii/) | Hard | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
