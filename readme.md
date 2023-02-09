@@ -1292,6 +1292,21 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 1502 | [Can Make Arithmetic Progression From Sequence](src/section02/code1502.rs) | [link](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/) | Easy | :heavy_check_mark: |
+| 1503 | [Last Moment Before All Ants Fall Out of a Plank](src/section02/code1503.rs) | [link](https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/) | Medium | :heavy_check_mark: |
+| 1504 | [Count Submatrices With All Ones](src/section02/code1504.rs) | [link](https://leetcode.com/problems/count-submatrices-with-all-ones/) | Medium | :heavy_check_mark: |
+| 1505 | [Minimum Possible Integer After at Most K Adjacent Swaps On Digits](src/section02/code1505.rs) | [link](https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/) | Hard | :heavy_check_mark: |
+| 1507 | [Reformat Date](src/section02/code1507.rs) | [link](https://leetcode.com/problems/reformat-date/) | Easy | :heavy_check_mark: |
+| 1508 | [Range Sum of Sorted Subarray Sums](src/section02/code1508.rs) | [link](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/) | Medium | :heavy_check_mark: |
+| 1509 | [Minimum Difference Between Largest and Smallest Value in Three Moves](src/section02/code1509.rs) | [link](https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/) | Medium | :heavy_check_mark: |
+| 1510 | [Stone Game IV](src/section02/code1510.rs) | [link](https://leetcode.com/problems/stone-game-iv/) | Hard | :heavy_check_mark: |
+| 1512 | [Number of Good Pairs](src/section02/code1512.rs) | [link](https://leetcode.com/problems/number-of-good-pairs/) | Easy | :heavy_check_mark: |
+| 1513 | [Number of Substrings With Only 1s](src/section02/code1513.rs) | [link](https://leetcode.com/problems/number-of-substrings-with-only-1s/) | Medium | :heavy_check_mark: |
+| 1514 | [Path with Maximum Probability](src/section02/code1514.rs) | [link](https://leetcode.com/problems/path-with-maximum-probability/) | Medium | :heavy_check_mark: |
+| 1515 | [Best Position for a Service Centre](src/section02/code1515.rs) | [link](https://leetcode.com/problems/best-position-for-a-service-centre/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
