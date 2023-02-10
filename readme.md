@@ -1317,6 +1317,19 @@ cargo test
 | 1529 | [Minimum Suffix Flips](src/section02/code1529.rs) | [link](https://leetcode.com/problems/minimum-suffix-flips/) | Medium | :heavy_check_mark: |
 | 1530 | [Number of Good Leaf Nodes Pairs](src/section02/code1530.rs) | [link](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/) | Medium | :heavy_check_mark: |
 | 1531 | [String Compression II](src/section02/code1531.rs) | [link](https://leetcode.com/problems/string-compression-ii/) | Hard | :heavy_check_mark: |
+| 1534 | [Count Good Triplets](src/section02/code1534.rs) | [link](https://leetcode.com/problems/count-good-triplets/) | Easy | :heavy_check_mark: |
+| 1535 | [Find the Winner of an Array Game](src/section02/code1535.rs) | [link](https://leetcode.com/problems/find-the-winner-of-an-array-game/) | Medium | :heavy_check_mark: |
+| 1536 | [Minimum Swaps to Arrange a Binary Grid](src/section02/code1536.rs) | [link](https://leetcode.com/problems/minimum-swaps-to-arrange-a-binary-grid/) | Medium | :heavy_check_mark: |
+| 1537 | [Get the Maximum Score](src/section02/code1537.rs) | [link](https://leetcode.com/problems/get-the-maximum-score/) | Hard | :heavy_check_mark: |
+| 1539 | [Kth Missing Positive Number](src/section02/code1539.rs) | [link](https://leetcode.com/problems/kth-missing-positive-number/) | Easy | :heavy_check_mark: |
+| 1540 | [Can Convert String in K Moves](src/section02/code1540.rs) | [link](https://leetcode.com/problems/can-convert-string-in-k-moves/) | Medium | :heavy_check_mark: |
+| 1541 | [Minimum Insertions to Balance a Parentheses String](src/section02/code1541.rs) | [link](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/) | Medium | :heavy_check_mark: |
+| 1542 | [Find Longest Awesome Substring](src/section02/code1542.rs) | [link](https://leetcode.com/problems/find-longest-awesome-substring/) | Hard | :heavy_check_mark: |
+| 1544 | [Make The String Great](src/section02/code1544.rs) | [link](https://leetcode.com/problems/make-the-string-great/) | Easy | :heavy_check_mark: |
+| 1545 | [Find Kth Bit in Nth Binary String](src/section02/code1545.rs) | [link](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/) | Medium | :heavy_check_mark: |
+| 1546 | [Maximum Number of Non-Overlapping Subarrays With Sum Equals Target](src/section02/code1546.rs) | [link](https://leetcode.com/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/) | Medium | :heavy_check_mark: |
+| 1547 | [Minimum Cost to Cut a Stick](src/section02/code1547.rs) | [link](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/) | Hard | :heavy_check_mark: |
+| 1550 | [Three Consecutive Odds](src/section02/code1550.rs) | [link](https://leetcode.com/problems/three-consecutive-odds/) | Easy | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
