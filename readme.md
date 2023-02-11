@@ -1333,6 +1333,24 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 1551 | [Minimum Operations to Make Array Equal](src/section02/code1551.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-array-equal/) | Medium | :heavy_check_mark: |
+| 1552 | [Magnetic Force Between Two Balls](src/section02/code1552.rs) | [link](https://leetcode.com/problems/magnetic-force-between-two-balls/) | Medium | :heavy_check_mark: |
+| 1553 | [Minimum Number of Days to Eat N Oranges](src/section02/code1553.rs) | [link](https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/) | Hard | :heavy_check_mark: |
+| 1556 | [Thousand Separator](src/section02/code1556.rs) | [link](https://leetcode.com/problems/thousand-separator/) | Easy | :heavy_check_mark: |
+| 1557 | [Minimum Number of Vertices to Reach All Nodes](src/section02/code1557.rs) | [link](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/) | Medium | :heavy_check_mark: |
+| 1558 | [Minimum Numbers of Function Calls to Make Target Array](src/section02/code1558.rs) | [link](https://leetcode.com/problems/minimum-numbers-of-function-calls-to-make-target-array/) | Medium | :heavy_check_mark: |
+| 1559 | [Detect Cycles in 2D Grid](src/section02/code1559.rs) | [link](https://leetcode.com/problems/detect-cycles-in-2d-grid/) | Hard | :heavy_check_mark: |
+| 1560 | [Most Visited Sector in a Circular Track](src/section02/code1560.rs) | [link](https://leetcode.com/problems/most-visited-sector-in-a-circular-track/) | Easy | :heavy_check_mark: |
+| 1561 | [Maximum Number of Coins You Can Get](src/section02/code1561.rs) | [link](https://leetcode.com/problems/maximum-number-of-coins-you-can-get/) | Medium | :heavy_check_mark: |
+| 1562 | [Find Latest Group of Size M](src/section02/code1562.rs) | [link](https://leetcode.com/problems/find-latest-group-of-size-m/) | Medium | :heavy_check_mark: |
+| 1563 | [Stone Game V](src/section02/code1563.rs) | [link](https://leetcode.com/problems/stone-game-v/) | Hard | :heavy_check_mark: |
+| 1566 | [Detect Pattern of Length M Repeated K or More Times](src/section02/code1566.rs) | [link](https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/) | Easy | :heavy_check_mark: |
+| 1567 | [Maximum Length of Subarray With Positive Product](src/section02/code1567.rs) | [link](https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/) | Medium | :heavy_check_mark: |
+| 1568 | [Minimum Number of Days to Disconnect Island](src/section02/code1568.rs) | [link](https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/) | Hard | :heavy_check_mark: |
+| 1569 | [Number of Ways to Reorder Array to Get Same BST](src/section02/code1569.rs) | [link](https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
