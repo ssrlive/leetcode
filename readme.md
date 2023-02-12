@@ -1348,6 +1348,29 @@ cargo test
 | 1567 | [Maximum Length of Subarray With Positive Product](src/section02/code1567.rs) | [link](https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/) | Medium | :heavy_check_mark: |
 | 1568 | [Minimum Number of Days to Disconnect Island](src/section02/code1568.rs) | [link](https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/) | Hard | :heavy_check_mark: |
 | 1569 | [Number of Ways to Reorder Array to Get Same BST](src/section02/code1569.rs) | [link](https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/) | Hard | :heavy_check_mark: |
+| 1572 | [Matrix Diagonal Sum](src/section02/code1572.rs) | [link](https://leetcode.com/problems/matrix-diagonal-sum/) | Easy | :heavy_check_mark: |
+| 1573 | [Number of Ways to Split a String](src/section02/code1573.rs) | [link](https://leetcode.com/problems/number-of-ways-to-split-a-string/) | Medium | :heavy_check_mark: |
+| 1574 | [Shortest Subarray to be Removed to Make Array Sorted](src/section02/code1574.rs) | [link](https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/) | Medium | :heavy_check_mark: |
+| 1575 | [Count All Possible Routes](src/section02/code1575.rs) | [link](https://leetcode.com/problems/count-all-possible-routes/) | Hard | :heavy_check_mark: |
+| 1576 | [Replace All ?'s to Avoid Consecutive Repeating Characters](src/section02/code1576.rs) | [link](https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/) | Easy | :heavy_check_mark: |
+| 1577 | [Number of Ways Where Square of Number Is Equal to Product of Two Numbers](src/section02/code1577.rs) | [link](https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/) | Medium | :heavy_check_mark: |
+| 1578 | [Minimum Deletion Cost to Avoid Repeating Letters](src/section02/code1578.rs) | [link](https://leetcode.com/problems/minimum-deletion-cost-to-avoid-repeating-letters/) | Medium | :heavy_check_mark: |
+| 1579 | [Remove Max Number of Edges to Keep Graph Fully Traversable](src/section02/code1579.rs) | [link](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/) | Hard | :heavy_check_mark: |
+| 1582 | [Special Positions in a Binary Matrix](src/section02/code1582.rs) | [link](https://leetcode.com/problems/special-positions-in-a-binary-matrix/) | Easy | :heavy_check_mark: |
+| 1583 | [Count Unhappy Friends](src/section02/code1583.rs) | [link](https://leetcode.com/problems/count-unhappy-friends/) | Medium | :heavy_check_mark: |
+| 1584 | [Min Cost to Connect All Points](src/section02/code1584.rs) | [link](https://leetcode.com/problems/min-cost-to-connect-all-points/) | Medium | :heavy_check_mark: |
+| 1585 | [Check If String Is Transformable With Substring Sort Operations](src/section02/code1585.rs) | [link](https://leetcode.com/problems/check-if-string-is-transformable-with-substring-sort-operations/) | Medium | :heavy_check_mark: |
+| 1588 | [Sum of All Odd Length Subarrays](src/section02/code1588.rs) | [link](https://leetcode.com/problems/sum-of-all-odd-length-subarrays/) | Easy | :heavy_check_mark: |
+| 1589 | [Maximum Sum Obtained of Any Permutation](src/section02/code1589.rs) | [link](https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/) | Medium | :heavy_check_mark: |
+| 1590 | [Make Sum Divisible by P](src/section02/code1590.rs) | [link](https://leetcode.com/problems/make-sum-divisible-by-p/) | Medium | :heavy_check_mark: |
+| 1591 | [Strange Printer II](src/section02/code1591.rs) | [link](https://leetcode.com/problems/strange-printer-ii/) | Hard | :heavy_check_mark: |
+| 1592 | [Rearrange Spaces Between Words](src/section02/code1592.rs) | [link](https://leetcode.com/problems/rearrange-spaces-between-words/) | Easy | :heavy_check_mark: |
+| 1593 | [Split a String Into the Max Number of Unique Substrings](src/section02/code1593.rs) | [link](https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings/) | Medium | :heavy_check_mark: |
+| 1594 | [Maximum Non Negative Product in a Matrix](src/section02/code1594.rs) | [link](https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix/) | Medium | :heavy_check_mark: |
+| 1595 | [Minimum Cost to Connect Two Groups of Points](src/section02/code1595.rs) | [link](https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points/) | Hard | :heavy_check_mark: |
+| 1598 | [Crawler Log Folder](src/section02/code1598.rs) | [link](https://leetcode.com/problems/crawler-log-folder/) | Easy | :heavy_check_mark: |
+| 1599 | [Maximum Profit of Operating a Centennial Wheel](src/section02/code1599.rs) | [link](https://leetcode.com/problems/maximum-profit-of-operating-a-centennial-wheel/) | Medium | :heavy_check_mark: |
+| 1600 | [Throne Inheritance](src/section02/code1600.rs) | [link](https://leetcode.com/problems/throne-inheritance/) | Medium | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
