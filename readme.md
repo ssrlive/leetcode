@@ -1514,3 +1514,7 @@ cargo test
 | 2559 | [Count Vowel Strings in Ranges](src/section03/code2559.rs) | [link](https://leetcode.com/problems/count-vowel-strings-in-ranges/) | Medium | :heavy_check_mark: |
 | 2560 | [House Robber IV](src/section03/code2560.rs) | [link](https://leetcode.com/problems/house-robber-iv/) | Medium | :heavy_check_mark: |
 | 2561 | [Rearranging Fruits](src/section03/code2561.rs) | [link](https://leetcode.com/problems/rearranging-fruits/) | Hard | :heavy_check_mark: |
+| 2562 | [Find the Array Concatenation Value](src/section03/code2562.rs) | [link](https://leetcode.com/problems/find-the-array-concatenation-value/) | Easy | :heavy_check_mark: |
+| 2563 | [Count the Number of Fair Pairs](src/section03/code2563.rs) | [link](https://leetcode.com/problems/count-the-number-of-fair-pairs/) | Medium | :heavy_check_mark: |
+| 2564 | [Substring XOR Queries](src/section03/code2564.rs) | [link](https://leetcode.com/problems/substring-xor-queries/) | Medium | :heavy_check_mark: |
+| 2565 | [Subsequence With the Minimum Score](src/section03/code2565.rs) | [link](https://leetcode.com/problems/subsequence-with-the-minimum-score/) | Hard | :heavy_check_mark: |

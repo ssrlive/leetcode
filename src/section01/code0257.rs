@@ -35,10 +35,10 @@ impl Solution {
         if root.is_none() {
             return vec![];
         }
-        let root = root.unwrap();
-        let left = &(*root).borrow().left;
-        let right = &(*root).borrow().right;
-        let val = (*root).borrow().val;
+        let root = root.as_ref().unwrap().borrow();
+        let left = &root.left;
+        let right = &root.right;
+        let val = root.val;
         match (left, right) {
             (None, None) => vec![format!("{val}")],
             (Some(n), None) | (None, Some(n)) => {
