@@ -1374,6 +1374,30 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 1601 | [Maximum Number of Achievable Transfer Requests](src/section02/code1601.rs) | [link](https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/) | Hard | :heavy_check_mark: |
+| 1603 | [Design Parking System](src/section02/code1603.rs) | [link](https://leetcode.com/problems/design-parking-system/) | Easy | :heavy_check_mark: |
+| 1604 | [Alert Using Same Key-Card Three or More Times in a One Hour Period](src/section02/code1604.rs) | [link](https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period/) | Medium | :heavy_check_mark: |
+| 1605 | [Find Valid Matrix Given Row and Column Sums](src/section02/code1605.rs) | [link](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/) | Medium | :heavy_check_mark: |
+| 1606 | [Find Servers That Handled Most Number of Requests](src/section02/code1606.rs) | [link](https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/) | Hard | :heavy_check_mark: |
+| 1608 | [Special Array With X Elements Greater Than or Equal X](src/section02/code1608.rs) | [link](https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/) | Easy | :heavy_check_mark: |
+| 1609 | [Even Odd Tree](src/section02/code1609.rs) | [link](https://leetcode.com/problems/even-odd-tree/) | Medium | :heavy_check_mark: |
+| 1610 | [Maximum Number of Visible Points](src/section02/code1610.rs) | [link](https://leetcode.com/problems/maximum-number-of-visible-points/) | Hard | :heavy_check_mark: |
+| 1611 | [Minimum One Bit Operations to Make Integers Zero](src/section02/code1611.rs) | [link](https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/) | Hard | :heavy_check_mark: |
+| 1614 | [Maximum Nesting Depth of the Parentheses](src/section02/code1614.rs) | [link](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/) | Easy | :heavy_check_mark: |
+| 1615 | [Maximal Network Rank](src/section02/code1615.rs) | [link](https://leetcode.com/problems/maximal-network-rank/) | Medium | :heavy_check_mark: |
+| 1616 | [Split Two Strings to Make Palindrome](src/section02/code1616.rs) | [link](https://leetcode.com/problems/split-two-strings-to-make-palindrome/) | Medium | :heavy_check_mark: |
+| 1617 | [Count Subtrees With Max Distance Between Cities](src/section02/code1617.rs) | [link](https://leetcode.com/problems/count-subtrees-with-max-distance-between-cities/) | Hard | :heavy_check_mark: |
+| 1619 | [Mean of Array After Removing Some Elements](src/section02/code1619.rs) | [link](https://leetcode.com/problems/mean-of-array-after-removing-some-elements/) | Easy | :heavy_check_mark: |
+| 1620 | [Coordinate With Maximum Network Quality](src/section02/code1620.rs) | [link](https://leetcode.com/problems/coordinate-with-maximum-network-quality/) | Medium | :heavy_check_mark: |
+| 1621 | [Number of Sets of K Non-Overlapping Line Segments](src/section02/code1621.rs) | [link](https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/) | Hard | :heavy_check_mark: |
+| 1622 | [Fancy Sequence](src/section02/code1622.rs) | [link](https://leetcode.com/problems/fancy-sequence/) | Medium | :heavy_check_mark: |
+| 1624 | [Largest Substring Between Two Equal Characters](src/section02/code1624.rs) | [link](https://leetcode.com/problems/largest-substring-between-two-equal-characters/) | Easy | :heavy_check_mark: |
+| 1625 | [Lexicographically Smallest String After Applying Operations](src/section02/code1625.rs) | [link](https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations/) | Medium | :heavy_check_mark: |
+| 1626 | [Best Team With No Conflicts](src/section02/code1626.rs) | [link](https://leetcode.com/problems/best-team-with-no-conflicts/) | Medium | :heavy_check_mark: |
+| 1627 | [Graph Connectivity With Threshold](src/section02/code1627.rs) | [link](https://leetcode.com/problems/graph-connectivity-with-threshold/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
