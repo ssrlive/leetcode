@@ -1395,6 +1395,22 @@ cargo test
 | 1625 | [Lexicographically Smallest String After Applying Operations](src/section02/code1625.rs) | [link](https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations/) | Medium | :heavy_check_mark: |
 | 1626 | [Best Team With No Conflicts](src/section02/code1626.rs) | [link](https://leetcode.com/problems/best-team-with-no-conflicts/) | Medium | :heavy_check_mark: |
 | 1627 | [Graph Connectivity With Threshold](src/section02/code1627.rs) | [link](https://leetcode.com/problems/graph-connectivity-with-threshold/) | Hard | :heavy_check_mark: |
+| 1629 | [Slowest Key](src/section02/code1629.rs) | [link](https://leetcode.com/problems/slowest-key/) | Easy | :heavy_check_mark: |
+| 1630 | [Arithmetic Subarrays](src/section02/code1630.rs) | [link](https://leetcode.com/problems/arithmetic-subarrays/) | Medium | :heavy_check_mark: |
+| 1631 | [Path With Minimum Effort](src/section02/code1631.rs) | [link](https://leetcode.com/problems/path-with-minimum-effort/) | Medium | :heavy_check_mark: |
+| 1632 | [Rank Transform of a Matrix](src/section02/code1632.rs) | [link](https://leetcode.com/problems/rank-transform-of-a-matrix/) | Hard | :heavy_check_mark: |
+| 1636 | [Sort Array by Increasing Frequency](src/section02/code1636.rs) | [link](https://leetcode.com/problems/sort-array-by-increasing-frequency/) | Easy | :heavy_check_mark: |
+| 1637 | [Widest Vertical Area Between Two Points Containing No Points](src/section02/code1637.rs) | [link](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/) | Medium | :heavy_check_mark: |
+| 1638 | [Count Substrings That Differ by One Character](src/section02/code1638.rs) | [link](https://leetcode.com/problems/count-substrings-that-differ-by-one-character/) | Medium | :heavy_check_mark: |
+| 1639 | [Number of Ways to Form a Target String Given a Dictionary](src/section02/code1639.rs) | [link](https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/) | Hard | :heavy_check_mark: |
+| 1640 | [Check Array Formation Through Concatenation](src/section02/code1640.rs) | [link](https://leetcode.com/problems/check-array-formation-through-concatenation/) | Easy | :heavy_check_mark: |
+| 1641 | [Count Sorted Vowel Strings](src/section02/code1641.rs) | [link](https://leetcode.com/problems/count-sorted-vowel-strings/) | Medium | :heavy_check_mark: |
+| 1642 | [Furthest Building You Can Reach](src/section02/code1642.rs) | [link](https://leetcode.com/problems/furthest-building-you-can-reach/) | Medium | :heavy_check_mark: |
+| 1643 | [Kth Smallest Instructions](src/section02/code1643.rs) | [link](https://leetcode.com/problems/kth-smallest-instructions/) | Hard | :heavy_check_mark: |
+| 1646 | [Get Maximum in Generated Array](src/section02/code1646.rs) | [link](https://leetcode.com/problems/get-maximum-in-generated-array/) | Easy | :heavy_check_mark: |
+| 1647 | [Minimum Deletions to Make Character Frequencies Unique](src/section02/code1647.rs) | [link](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/) | Medium | :heavy_check_mark: |
+| 1648 | [Sell Diminishing-Valued Colored Balls](src/section02/code1648.rs) | [link](https://leetcode.com/problems/sell-diminishing-valued-colored-balls/) | Medium | :heavy_check_mark: |
+| 1649 | [Create Sorted Array through Instructions](src/section02/code1649.rs) | [link](https://leetcode.com/problems/create-sorted-array-through-instructions/) | Hard | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
