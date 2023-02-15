@@ -1431,6 +1431,22 @@ cargo test
 | 1673 | [Find the Most Competitive Subsequence](src/section02/code1673.rs) | [link](https://leetcode.com/problems/find-the-most-competitive-subsequence/) | Medium | :heavy_check_mark: |
 | 1674 | [Minimum Moves to Make Array Complementary](src/section02/code1674.rs) | [link](https://leetcode.com/problems/minimum-moves-to-make-array-complementary/) | Medium | :heavy_check_mark: |
 | 1675 | [Minimize Deviation in Array](src/section02/code1675.rs) | [link](https://leetcode.com/problems/minimize-deviation-in-array/) | Hard | :heavy_check_mark: |
+| 1678 | [Goal Parser Interpretation](src/section02/code1678.rs) | [link](https://leetcode.com/problems/goal-parser-interpretation/) | Easy | :heavy_check_mark: |
+| 1679 | [Max Number of K-Sum Pairs](src/section02/code1679.rs) | [link](https://leetcode.com/problems/max-number-of-k-sum-pairs/) | Medium | :heavy_check_mark: |
+| 1680 | [Concatenation of Consecutive Binary Numbers](src/section02/code1680.rs) | [link](https://leetcode.com/problems/concatenation-of-consecutive-binary-numbers/) | Medium | :heavy_check_mark: |
+| 1681 | [Minimum Incompatibility](src/section02/code1681.rs) | [link](https://leetcode.com/problems/minimum-incompatibility/) | Hard | :heavy_check_mark: |
+| 1684 | [Count the Number of Consistent Strings](src/section02/code1684.rs) | [link](https://leetcode.com/problems/count-the-number-of-consistent-strings/) | Easy | :heavy_check_mark: |
+| 1685 | [Sum of Absolute Differences in a Sorted Array](src/section02/code1685.rs) | [link](https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/) | Medium | :heavy_check_mark: |
+| 1686 | [Stone Game VI](src/section02/code1686.rs) | [link](https://leetcode.com/problems/stone-game-vi/) | Medium | :heavy_check_mark: |
+| 1687 | [Delivering Boxes from Storage to Ports](src/section02/code1687.rs) | [link](https://leetcode.com/problems/delivering-boxes-from-storage-to-ports/) | Hard | :heavy_check_mark: |
+| 1688 | [Count of Matches in Tournament](src/section02/code1688.rs) | [link](https://leetcode.com/problems/count-of-matches-in-tournament/) | Easy | :heavy_check_mark: |
+| 1689 | [Partitioning Into Minimum Number Of Deci-Binary Numbers](src/section02/code1689.rs) | [link](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/) | Medium | :heavy_check_mark: |
+| 1690 | [Stone Game VII](src/section02/code1690.rs) | [link](https://leetcode.com/problems/stone-game-vii/) | Medium | :heavy_check_mark: |
+| 1694 | [Reformat Phone Number](src/section02/code1694.rs) | [link](https://leetcode.com/problems/reformat-phone-number/) | Easy | :heavy_check_mark: |
+| 1695 | [Maximum Erasure Value](src/section02/code1695.rs) | [link](https://leetcode.com/problems/maximum-erasure-value/) | Medium | :heavy_check_mark: |
+| 1696 | [Jump Game VI](src/section02/code1696.rs) | [link](https://leetcode.com/problems/jump-game-vi/) | Medium | :heavy_check_mark: |
+| 1697 | [Checking Existence of Edge Length Limited Paths](src/section02/code1697.rs) | [link](https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/) | Hard | :heavy_check_mark: |
+| 1700 | [Number of Students Unable to Eat Lunch](src/section02/code1700.rs) | [link](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/) | Easy | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
