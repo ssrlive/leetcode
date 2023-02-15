@@ -1411,6 +1411,26 @@ cargo test
 | 1647 | [Minimum Deletions to Make Character Frequencies Unique](src/section02/code1647.rs) | [link](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/) | Medium | :heavy_check_mark: |
 | 1648 | [Sell Diminishing-Valued Colored Balls](src/section02/code1648.rs) | [link](https://leetcode.com/problems/sell-diminishing-valued-colored-balls/) | Medium | :heavy_check_mark: |
 | 1649 | [Create Sorted Array through Instructions](src/section02/code1649.rs) | [link](https://leetcode.com/problems/create-sorted-array-through-instructions/) | Hard | :heavy_check_mark: |
+| 1652 | [Defuse the Bomb](src/section02/code1652.rs) | [link](https://leetcode.com/problems/defuse-the-bomb/) | Easy | :heavy_check_mark: |
+| 1653 | [Minimum Deletions to Make String Balanced](src/section02/code1653.rs) | [link](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/) | Medium | :heavy_check_mark: |
+| 1654 | [Minimum Jumps to Reach Home](src/section02/code1654.rs) | [link](https://leetcode.com/problems/minimum-jumps-to-reach-home/) | Hard | :heavy_check_mark: |
+| 1655 | [Distribute Repeating Integers](src/section02/code1655.rs) | [link](https://leetcode.com/problems/distribute-repeating-integers/) | Hard | :heavy_check_mark: |
+| 1656 | [Design an Ordered Stream](src/section02/code1656.rs) | [link](https://leetcode.com/problems/design-an-ordered-stream/) | Easy | :heavy_check_mark: |
+| 1657 | [Determine if Two Strings Are Close](src/section02/code1657.rs) | [link](https://leetcode.com/problems/determine-if-two-strings-are-close/) | Medium | :heavy_check_mark: |
+| 1658 | [Minimum Operations to Reduce X to Zero](src/section02/code1658.rs) | [link](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/) | Medium | :heavy_check_mark: |
+| 1659 | [Maximize Grid Happiness](src/section02/code1659.rs) | [link](https://leetcode.com/problems/maximize-grid-happiness/) | Hard | :heavy_check_mark: |
+| 1662 | [Check If Two String Arrays are Equivalent](src/section02/code1662.rs) | [link](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/) | Easy | :heavy_check_mark: |
+| 1663 | [Smallest String With A Given Numeric Value](src/section02/code1663.rs) | [link](https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/) | Medium | :heavy_check_mark: |
+| 1664 | [Ways to Make a Fair Array](src/section02/code1664.rs) | [link](https://leetcode.com/problems/ways-to-make-a-fair-array/) | Medium | :heavy_check_mark: |
+| 1665 | [Minimum Initial Energy to Finish Tasks](src/section02/code1665.rs) | [link](https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/) | Hard | :heavy_check_mark: |
+| 1668 | [Maximum Repeating Substring](src/section02/code1668.rs) | [link](https://leetcode.com/problems/maximum-repeating-substring/) | Easy | :heavy_check_mark: |
+| 1669 | [Merge In Between Linked Lists](src/section02/code1669.rs) | [link](https://leetcode.com/problems/merge-in-between-linked-lists/) | Medium | :heavy_check_mark: |
+| 1670 | [Design Front Middle Back Queue](src/section02/code1670.rs) | [link](https://leetcode.com/problems/design-front-middle-back-queue/) | Medium | :heavy_check_mark: |
+| 1671 | [Minimum Number of Removals to Make Mountain Array](src/section02/code1671.rs) | [link](https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/) | Hard | :heavy_check_mark: |
+| 1672 | [Richest Customer Wealth](src/section02/code1672.rs) | [link](https://leetcode.com/problems/richest-customer-wealth/) | Easy | :heavy_check_mark: |
+| 1673 | [Find the Most Competitive Subsequence](src/section02/code1673.rs) | [link](https://leetcode.com/problems/find-the-most-competitive-subsequence/) | Medium | :heavy_check_mark: |
+| 1674 | [Minimum Moves to Make Array Complementary](src/section02/code1674.rs) | [link](https://leetcode.com/problems/minimum-moves-to-make-array-complementary/) | Medium | :heavy_check_mark: |
+| 1675 | [Minimize Deviation in Array](src/section02/code1675.rs) | [link](https://leetcode.com/problems/minimize-deviation-in-array/) | Hard | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
