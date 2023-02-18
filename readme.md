@@ -1450,6 +1450,47 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 1701 | [Average Waiting Time](src/section02/code1701.rs) | [link](https://leetcode.com/problems/average-waiting-time/) | Medium | :heavy_check_mark: |
+| 1702 | [Maximum Binary String After Change](src/section02/code1702.rs) | [link](https://leetcode.com/problems/maximum-binary-string-after-change/) | Medium | :heavy_check_mark: |
+| 1703 | [Minimum Adjacent Swaps for K Consecutive Ones](src/section02/code1703.rs) | [link](https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/) | Hard | :heavy_check_mark: |
+| 1704 | [Determine if String Halves Are Alike](src/section02/code1704.rs) | [link](https://leetcode.com/problems/determine-if-string-halves-are-alike/) | Easy | :heavy_check_mark: |
+| 1705 | [Maximum Number of Eaten Apples](src/section02/code1705.rs) | [link](https://leetcode.com/problems/maximum-number-of-eaten-apples/) | Medium | :heavy_check_mark: |
+| 1706 | [Where Will the Ball Fall](src/section02/code1706.rs) | [link](https://leetcode.com/problems/where-will-the-ball-fall/) | Medium | :heavy_check_mark: |
+| 1707 | [Maximum XOR With an Element From Array](src/section02/code1707.rs) | [link](https://leetcode.com/problems/maximum-xor-with-an-element-from-array/) | Hard | :heavy_check_mark: |
+| 1710 | [Maximum Units on a Truck](src/section02/code1710.rs) | [link](https://leetcode.com/problems/maximum-units-on-a-truck/) | Easy | :heavy_check_mark: |
+| 1711 | [Count Good Meals](src/section02/code1711.rs) | [link](https://leetcode.com/problems/count-good-meals/) | Medium | :heavy_check_mark: |
+| 1712 | [Ways to Split Array Into Three Subarrays](src/section02/code1712.rs) | [link](https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/) | Medium | :heavy_check_mark: |
+| 1713 | [Minimum Operations to Make a Subsequence](src/section02/code1713.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-a-subsequence/) | Hard | :heavy_check_mark: |
+| 1716 | [Calculate Money in Leetcode Bank](src/section02/code1716.rs) | [link](https://leetcode.com/problems/calculate-money-in-leetcode-bank/) | Easy | :heavy_check_mark: |
+| 1717 | [Maximum Score From Removing Substrings](src/section02/code1717.rs) | [link](https://leetcode.com/problems/maximum-score-from-removing-substrings/) | Medium | :heavy_check_mark: |
+| 1718 | [Construct the Lexicographically Largest Valid Sequence](src/section02/code1718.rs) | [link](https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence/) | Medium | :heavy_check_mark: |
+| 1719 | [Number Of Ways To Reconstruct A Tree](src/section02/code1719.rs) | [link](https://leetcode.com/problems/number-of-ways-to-reconstruct-a-tree/) | Hard | :heavy_check_mark: |
+| 1720 | [Decode XORed Array](src/section02/code1720.rs) | [link](https://leetcode.com/problems/decode-xored-array/) | Easy | :heavy_check_mark: |
+| 1721 | [Swapping Nodes in a Linked List](src/section02/code1721.rs) | [link](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/) | Medium | :heavy_check_mark: |
+| 1722 | [Minimize Hamming Distance After Swap Operations](src/section02/code1722.rs) | [link](https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/) | Medium | :heavy_check_mark: |
+| 1723 | [Find Minimum Time to Finish All Jobs](src/section02/code1723.rs) | [link](https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs/) | Hard | :heavy_check_mark: |
+| 1725 | [Number Of Rectangles That Can Form The Largest Square](src/section02/code1725.rs) | [link](https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/) | Easy | :heavy_check_mark: |
+| 1726 | [Tuple with Same Product](src/section02/code1726.rs) | [link](https://leetcode.com/problems/tuple-with-same-product/) | Medium | :heavy_check_mark: |
+| 1727 | [Largest Submatrix With Rearrangements](src/section02/code1727.rs) | [link](https://leetcode.com/problems/largest-submatrix-with-rearrangements/) | Medium | :heavy_check_mark: |
+| 1728 | [Cat and Mouse II](src/section02/code1728.rs) | [link](https://leetcode.com/problems/cat-and-mouse-ii/) | Hard | :heavy_check_mark: |
+| 1732 | [Find the Highest Altitude](src/section02/code1732.rs) | [link](https://leetcode.com/problems/find-the-highest-altitude/) | Easy | :heavy_check_mark: |
+| 1733 | [Minimum Number of People to Teach](src/section02/code1733.rs) | [link](https://leetcode.com/problems/minimum-number-of-people-to-teach/) | Medium | :heavy_check_mark: |
+| 1734 | [Decode XORed Permutation](src/section02/code1734.rs) | [link](https://leetcode.com/problems/decode-xored-permutation/) | Medium | :heavy_check_mark: |
+| 1735 | [Count Ways to Make Array With Product](src/section02/code1735.rs) | [link](https://leetcode.com/problems/count-ways-to-make-array-with-product/) | Hard | :heavy_check_mark: |
+| 1736 | [Latest Time by Replacing Hidden Digits](src/section02/code1736.rs) | [link](https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/) | Easy | :heavy_check_mark: |
+| 1737 | [Change Minimum Characters to Satisfy One of Three Conditions](src/section02/code1737.rs) | [link](https://leetcode.com/problems/change-minimum-characters-to-satisfy-one-of-three-conditions/) | Medium | :heavy_check_mark: |
+| 1738 | [Find Kth Largest XOR Coordinate Value](src/section02/code1738.rs) | [link](https://leetcode.com/problems/find-kth-largest-xor-coordinate-value/) | Medium | :heavy_check_mark: |
+| 1739 | [Building Boxes](src/section02/code1739.rs) | [link](https://leetcode.com/problems/building-boxes/) | Hard | :heavy_check_mark: |
+| 1742 | [Maximum Number of Balls in a Box](src/section02/code1742.rs) | [link](https://leetcode.com/problems/maximum-number-of-balls-in-a-box/) | Easy | :heavy_check_mark: |
+| 1743 | [Restore the Array From Adjacent Pairs](src/section02/code1743.rs) | [link](https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/) | Medium | :heavy_check_mark: |
+| 1744 | [Can You Eat Your Favorite Candy on Your Favorite Day?](src/section02/code1744.rs) | [link](https://leetcode.com/problems/can-you-eat-your-favorite-candy-on-your-favorite-day/) | Medium | :heavy_check_mark: |
+| 1745 | [Palindrome Partitioning IV](src/section02/code1745.rs) | [link](https://leetcode.com/problems/palindrome-partitioning-iv/) | Hard | :heavy_check_mark: |
+| 1748 | [Sum of Unique Elements](src/section02/code1748.rs) | [link](https://leetcode.com/problems/sum-of-unique-elements/) | Easy | :heavy_check_mark: |
+| 1749 | [Maximum Absolute Sum of Any Subarray](src/section02/code1749.rs) | [link](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/) | Medium | :heavy_check_mark: |
+| 1750 | [Minimum Length of String After Deleting Similar Ends](src/section02/code1750.rs) | [link](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/) | Medium | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
