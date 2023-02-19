@@ -3,12 +3,12 @@
 /*
 
 // 1744. Can You Eat Your Favorite Candy on Your Favorite Day?
-Medium
-103
-293
-Companies
-
-You are given a (0-indexed) array of positive integers candiesCount where candiesCount[i] represents the number of candies of the ith type you have. You are also given a 2D array queries where queries[i] = [favoriteTypei, favoriteDayi, dailyCapi].
+// https://leetcode.com/problems/can-you-eat-your-favorite-candy-on-your-favorite-day/
+// https://leetcode.cn/problems/can-you-eat-your-favorite-candy-on-your-favorite-day/
+//
+// Medium
+//
+// You are given a (0-indexed) array of positive integers candiesCount where candiesCount[i] represents the number of candies of the ith type you have. You are also given a 2D array queries where queries[i] = [favoriteTypei, favoriteDayi, dailyCapi].
 
 You play a game with the following rules:
 

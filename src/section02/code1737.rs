@@ -3,12 +3,12 @@
 /*
 
 // 1737. Change Minimum Characters to Satisfy One of Three Conditions
-Medium
-279
-304
-Companies
-
-You are given two strings a and b that consist of lowercase letters. In one operation, you can change any character in a or b to any lowercase letter.
+// https://leetcode.com/problems/change-minimum-characters-to-satisfy-one-of-three-conditions/
+// https://leetcode.cn/problems/change-minimum-characters-to-satisfy-one-of-three-conditions/
+//
+// Medium
+//
+// You are given two strings a and b that consist of lowercase letters. In one operation, you can change any character in a or b to any lowercase letter.
 
 Your goal is to satisfy one of the following three conditions:
 

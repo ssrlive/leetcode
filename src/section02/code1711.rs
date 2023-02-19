@@ -3,12 +3,12 @@
 /*
 
 // 1711. Count Good Meals
-Medium
-833
-222
-Companies
-
-A good meal is a meal that contains exactly two different food items with a sum of deliciousness equal to a power of two.
+// https://leetcode.com/problems/count-good-meals/
+// https://leetcode.cn/problems/count-good-meals/
+//
+// Medium
+//
+// A good meal is a meal that contains exactly two different food items with a sum of deliciousness equal to a power of two.
 
 You can pick any two different foods to make a good meal.
 

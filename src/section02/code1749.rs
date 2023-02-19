@@ -3,12 +3,12 @@
 /*
 
 // 1749. Maximum Absolute Sum of Any Subarray
-Medium
-1K
-15
-Companies
-
-You are given an integer array nums. The absolute sum of a subarray [numsl, numsl+1, ..., numsr-1, numsr] is abs(numsl + numsl+1 + ... + numsr-1 + numsr).
+// https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/
+// https://leetcode.cn/problems/maximum-absolute-sum-of-any-subarray/
+//
+// Medium
+//
+// You are given an integer array nums. The absolute sum of a subarray [numsl, numsl+1, ..., numsr-1, numsr] is abs(numsl + numsl+1 + ... + numsr-1 + numsr).
 
 Return the maximum absolute sum of any (possibly empty) subarray of nums.
 

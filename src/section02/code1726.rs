@@ -3,12 +3,12 @@
 /*
 
 // 1726. Tuple with Same Product
-Medium
-533
-25
-Companies
-
-Given an array nums of distinct positive integers, return the number of tuples (a, b, c, d) such that a * b = c * d where a, b, c, and d are elements of nums, and a != b != c != d.
+// https://leetcode.com/problems/tuple-with-same-product/
+// https://leetcode.cn/problems/tuple-with-same-product/
+//
+// Medium
+//
+// Given an array nums of distinct positive integers, return the number of tuples (a, b, c, d) such that a * b = c * d where a, b, c, and d are elements of nums, and a != b != c != d.
 
 Example 1:
 

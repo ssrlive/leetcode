@@ -3,12 +3,12 @@
 /*
 
 // 1738. Find Kth Largest XOR Coordinate Value
-Medium
-419
-62
-Companies
-
-You are given a 2D matrix of size m x n, consisting of non-negative integers. You are also given an integer k.
+// https://leetcode.com/problems/find-kth-largest-xor-coordinate-value/
+// https://leetcode.cn/problems/find-kth-largest-xor-coordinate-value/
+//
+// Medium
+//
+// You are given a 2D matrix of size m x n, consisting of non-negative integers. You are also given an integer k.
 
 The value of coordinate (a, b) of the matrix is the XOR of all matrix[i][j] where 0 <= i <= a < m and 0 <= j <= b < n (0-indexed).
 

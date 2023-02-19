@@ -3,12 +3,12 @@
 /*
 
 // 1720. Decode XORed Array
-Easy
-1.2K
-182
-Companies
-
-There is a hidden integer array arr that consists of n non-negative integers.
+// https://leetcode.com/problems/decode-xored-array/
+// https://leetcode.cn/problems/decode-xored-array/
+//
+// Easy
+//
+// There is a hidden integer array arr that consists of n non-negative integers.
 
 It was encoded into another integer array encoded of length n - 1, such that encoded[i] = arr[i] XOR arr[i + 1]. For example, if arr = [1,0,2,1], then encoded = [1,2,3].
 

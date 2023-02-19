@@ -3,12 +3,12 @@
 /*
 
 // 1743. Restore the Array From Adjacent Pairs
-Medium
-866
-17
-Companies
-
-There is an integer array nums that consists of n unique elements, but you have forgotten it. However, you do remember every pair of adjacent elements in nums.
+// https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/
+// https://leetcode.cn/problems/restore-the-array-from-adjacent-pairs/
+//
+// Medium
+//
+// There is an integer array nums that consists of n unique elements, but you have forgotten it. However, you do remember every pair of adjacent elements in nums.
 
 You are given a 2D integer array adjacentPairs of size n - 1 where each adjacentPairs[i] = [ui, vi] indicates that the elements ui and vi are adjacent in nums.
 

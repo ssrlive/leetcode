@@ -3,12 +3,12 @@
 /*
 
 // 1739. Building Boxes
-Hard
-252
-42
-Companies
-
-You have a cubic storeroom where the width, length, and height of the room are all equal to n units. You are asked to place n boxes in this room where each box is a cube of unit side length. There are however some rules to placing the boxes:
+// https://leetcode.com/problems/building-boxes/
+// https://leetcode.cn/problems/building-boxes/
+//
+// Hard
+//
+// You have a cubic storeroom where the width, length, and height of the room are all equal to n units. You are asked to place n boxes in this room where each box is a cube of unit side length. There are however some rules to placing the boxes:
 
     You can place the boxes anywhere on the floor.
     If box x is placed on top of the box y, then each side of the four vertical sides of the box y must either be adjacent to another box or to a wall.

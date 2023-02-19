@@ -3,12 +3,12 @@
 /*
 
 // 1712. Ways to Split Array Into Three Subarrays
-Medium
-1.2K
-92
-Companies
-
-A split of an integer array is good if:
+// https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/
+// https://leetcode.cn/problems/ways-to-split-array-into-three-subarrays/
+//
+// Medium
+//
+// A split of an integer array is good if:
 
     The array is split into three non-empty contiguous subarrays - named left, mid, right respectively from left to right.
     The sum of the elements in left is less than or equal to the sum of the elements in mid, and the sum of the elements in mid is less than or equal to the sum of the elements in right.

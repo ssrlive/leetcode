@@ -3,12 +3,12 @@
 /*
 
 // 1710. Maximum Units on a Truck
-Easy
-3.4K
-188
-Companies
-
-You are assigned to put some amount of boxes onto one truck. You are given a 2D array boxTypes, where boxTypes[i] = [numberOfBoxesi, numberOfUnitsPerBoxi]:
+// https://leetcode.com/problems/maximum-units-on-a-truck/
+// https://leetcode.cn/problems/maximum-units-on-a-truck/
+//
+// Easy
+//
+// You are assigned to put some amount of boxes onto one truck. You are given a 2D array boxTypes, where boxTypes[i] = [numberOfBoxesi, numberOfUnitsPerBoxi]:
 
     numberOfBoxesi is the number of boxes of type i.
     numberOfUnitsPerBoxi is the number of units in each box of the type i.

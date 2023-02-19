@@ -3,12 +3,12 @@
 /*
 
 // 1745. Palindrome Partitioning IV
-Hard
-765
-20
-Companies
-
-Given a string s, return true if it is possible to split the string s into three non-empty palindromic substrings. Otherwise, return false.​​​​​
+// https://leetcode.com/problems/palindrome-partitioning-iv/
+// https://leetcode.cn/problems/palindrome-partitioning-iv/
+//
+// Hard
+//
+// Given a string s, return true if it is possible to split the string s into three non-empty palindromic substrings. Otherwise, return false.​​​​​
 
 A string is said to be palindrome if it the same string when reversed.
 

@@ -3,12 +3,12 @@
 /*
 
 // 1713. Minimum Operations to Make a Subsequence
-Hard
-557
-9
-Companies
-
-You are given an array target that consists of distinct integers and another integer array arr that can have duplicates.
+// https://leetcode.com/problems/minimum-operations-to-make-a-subsequence/
+// https://leetcode.cn/problems/minimum-operations-to-make-a-subsequence/
+//
+// Hard
+//
+// You are given an array target that consists of distinct integers and another integer array arr that can have duplicates.
 
 In one operation, you can insert any integer at any position in arr. For example, if arr = [1,4,1,2], you can add 3 in the middle and make it [1,4,3,1,2]. Note that you can insert the integer at the very beginning or end of the array.
 

@@ -3,12 +3,12 @@
 /*
 
 // 1721. Swapping Nodes in a Linked List
-Medium
-3.6K
-122
-Companies
-
-You are given the head of a linked list, and an integer k.
+// https://leetcode.com/problems/swapping-nodes-in-a-linked-list/
+// https://leetcode.cn/problems/swapping-nodes-in-a-linked-list/
+//
+// Medium
+//
+// You are given the head of a linked list, and an integer k.
 
 Return the head of the linked list after swapping the values of the kth node from the beginning and the kth node from the end (the list is 1-indexed).
 

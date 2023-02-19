@@ -3,12 +3,12 @@
 /*
 
 // 1748. Sum of Unique Elements
-Easy
-1.1K
-24
-Companies
-
-You are given an integer array nums. The unique elements of an array are the elements that appear exactly once in the array.
+// https://leetcode.com/problems/sum-of-unique-elements/
+// https://leetcode.cn/problems/sum-of-unique-elements/
+//
+// Easy
+//
+// You are given an integer array nums. The unique elements of an array are the elements that appear exactly once in the array.
 
 Return the sum of all the unique elements of nums.
 

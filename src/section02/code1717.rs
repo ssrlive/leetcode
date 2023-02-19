@@ -3,12 +3,12 @@
 /*
 
 // 1717. Maximum Score From Removing Substrings
-Medium
-529
-29
-Companies
-
-You are given a string s and two integers x and y. You can perform two types of operations any number of times.
+// https://leetcode.com/problems/maximum-score-from-removing-substrings/
+// https://leetcode.cn/problems/maximum-score-from-removing-substrings/
+//
+// Medium
+//
+// You are given a string s and two integers x and y. You can perform two types of operations any number of times.
 
     Remove substring "ab" and gain x points.
         For example, when removing "ab" from "cabxbae" it becomes "cxbae".

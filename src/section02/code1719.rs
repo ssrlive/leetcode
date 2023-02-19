@@ -3,12 +3,12 @@
 /*
 
 // 1719. Number Of Ways To Reconstruct A Tree
-Hard
-181
-128
-Companies
-
-You are given an array pairs, where pairs[i] = [xi, yi], and:
+// https://leetcode.com/problems/number-of-ways-to-reconstruct-a-tree/
+// https://leetcode.cn/problems/number-of-ways-to-reconstruct-a-tree/
+//
+// Hard
+//
+// You are given an array pairs, where pairs[i] = [xi, yi], and:
 
     There are no duplicates.
     xi < yi

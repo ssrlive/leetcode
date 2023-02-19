@@ -3,12 +3,12 @@
 /*
 
 // 1701. Average Waiting Time
-Medium
-419
-45
-Companies
-
-There is a restaurant with a single chef. You are given an array customers, where customers[i] = [arrivali, timei]:
+// https://leetcode.com/problems/average-waiting-time/
+// https://leetcode.cn/problems/average-waiting-time/
+//
+// Medium
+//
+// There is a restaurant with a single chef. You are given an array customers, where customers[i] = [arrivali, timei]:
 
     arrivali is the arrival time of the ith customer. The arrival times are sorted in non-decreasing order.
     timei is the time needed to prepare the order of the ith customer.

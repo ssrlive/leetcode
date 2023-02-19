@@ -3,12 +3,12 @@
 /*
 
 // 1702. Maximum Binary String After Change
-Medium
-419
-42
-Companies
-
-You are given a binary string binary consisting of only 0's or 1's. You can apply each of the following operations any number of times:
+// https://leetcode.com/problems/maximum-binary-string-after-change/
+// https://leetcode.cn/problems/maximum-binary-string-after-change/
+//
+// Medium
+//
+// You are given a binary string binary consisting of only 0's or 1's. You can apply each of the following operations any number of times:
 
     Operation 1: If the number contains the substring "00", you can replace it with "10".
         For example, "00010" -> "10010"

@@ -3,12 +3,12 @@
 /*
 
 // 1750. Minimum Length of String After Deleting Similar Ends
-Medium
-370
-24
-Companies
-
-Given a string s consisting only of characters 'a', 'b', and 'c'. You are asked to apply the following algorithm on the string any number of times:
+// https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/
+// https://leetcode.cn/problems/minimum-length-of-string-after-deleting-similar-ends/
+//
+// Medium
+//
+// Given a string s consisting only of characters 'a', 'b', and 'c'. You are asked to apply the following algorithm on the string any number of times:
 
     Pick a non-empty prefix from the string s where all the characters in the prefix are equal.
     Pick a non-empty suffix from the string s where all the characters in this suffix are equal.

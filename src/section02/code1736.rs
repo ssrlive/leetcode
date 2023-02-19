@@ -3,12 +3,12 @@
 /*
 
 // 1736. Latest Time by Replacing Hidden Digits
-Easy
-288
-147
-Companies
-
-You are given a string time in the form of  hh:mm, where some of the digits in the string are hidden (represented by ?).
+// https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/
+// https://leetcode.cn/problems/latest-time-by-replacing-hidden-digits/
+//
+// Easy
+//
+// You are given a string time in the form of  hh:mm, where some of the digits in the string are hidden (represented by ?).
 
 The valid times are those inclusively between 00:00 and 23:59.
 

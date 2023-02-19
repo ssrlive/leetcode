@@ -3,12 +3,12 @@
 /*
 
 // 1718. Construct the Lexicographically Largest Valid Sequence
-Medium
-453
-39
-Companies
-
-Given an integer n, find a sequence that satisfies all of the following:
+// https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence/
+// https://leetcode.cn/problems/construct-the-lexicographically-largest-valid-sequence/
+//
+// Medium
+//
+// Given an integer n, find a sequence that satisfies all of the following:
 
     The integer 1 occurs once in the sequence.
     Each integer between 2 and n occurs twice in the sequence.
