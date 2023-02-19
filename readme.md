@@ -1621,6 +1621,9 @@ cargo test
 | 2547 | [Minimum Cost to Split an Array](src/section03/code2547.rs) | [link](https://leetcode.com/problems/minimum-cost-to-split-an-array/) | Hard | :heavy_check_mark: |
 | 2549 | [Count Distinct Numbers on Board](src/section03/code2549.rs) | [link](https://leetcode.com/problems/count-distinct-numbers-on-board/) | Easy | :heavy_check_mark: |
 | 2550 | [Count Collisions of Monkeys on a Polygon](src/section03/code2550.rs) | [link](https://leetcode.com/problems/count-collisions-of-monkeys-on-a-polygon/) | Medium | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2551 | [Put Marbles in Bags](src/section03/code2551.rs) | [link](https://leetcode.com/problems/put-marbles-in-bags/) | Hard | :heavy_check_mark: |
 | 2552 | [Count Increasing Quadruplets](src/section03/code2552.rs) | [link](https://leetcode.com/problems/count-increasing-quadruplets/) | Hard | :heavy_check_mark: |
 | 2553 | [Separate the Digits in an Array](src/section03/code2553.rs) | [link](https://leetcode.com/problems/separate-the-digits-in-an-array/) | Easy | :heavy_check_mark: |
@@ -1635,3 +1638,11 @@ cargo test
 | 2563 | [Count the Number of Fair Pairs](src/section03/code2563.rs) | [link](https://leetcode.com/problems/count-the-number-of-fair-pairs/) | Medium | :heavy_check_mark: |
 | 2564 | [Substring XOR Queries](src/section03/code2564.rs) | [link](https://leetcode.com/problems/substring-xor-queries/) | Medium | :heavy_check_mark: |
 | 2565 | [Subsequence With the Minimum Score](src/section03/code2565.rs) | [link](https://leetcode.com/problems/subsequence-with-the-minimum-score/) | Hard | :heavy_check_mark: |
+| 2566 | [Maximum Difference by Remapping a Digit](src/section03/code2566.rs) | [link](https://leetcode.com/problems/maximum-difference-by-remapping-a-digit/) | Easy | :heavy_check_mark: |
+| 2567 | [Minimum Score by Changing Two Elements](src/section03/code2567.rs) | [link](https://leetcode.com/problems/minimum-score-by-changing-two-elements/) | Medium | :heavy_check_mark: |
+| 2568 | [Minimum Impossible OR](src/section03/code2568.rs) | [link](https://leetcode.com/problems/minimum-impossible-or/) | Hard | :heavy_check_mark: |
+| 2569 | [Handling Sum Queries After Update](src/section03/code2569.rs) | [link](https://leetcode.com/problems/handling-sum-queries-after-update/) | Medium | :heavy_check_mark: |
+| 2570 | [Merge Two 2D Arrays by Summing Values](src/section03/code2570.rs) | [link](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) | Medium | :heavy_check_mark: |
+| 2571 | [Minimum Operations to Reduce an Integer to 0](src/section03/code2571.rs) | [link](https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/) | Medium | :heavy_check_mark: |
+| 2572 | [Count the Number of Square-Free Subsets](src/section03/code2572.rs) | [link](https://leetcode.com/problems/count-the-number-of-square-free-subsets/) | Hard | :heavy_check_mark: |
+| 2573 | [Find the String with LCP](src/section03/code2573.rs) | [link](https://leetcode.com/problems/find-the-string-with-lcp/) | Medium | :heavy_check_mark: |
