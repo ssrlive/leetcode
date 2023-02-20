@@ -1491,6 +1491,22 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 1751 | [Maximum Number of Events That Can Be Attended II](src/section02/code1751.rs) | [link](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/) | Hard | :heavy_check_mark: |
+| 1752 | [Check if Array Is Sorted and Rotated](src/section02/code1752.rs) | [link](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/) | Easy | :heavy_check_mark: |
+| 1753 | [Maximum Score From Removing Stones](src/section02/code1753.rs) | [link](https://leetcode.com/problems/maximum-score-from-removing-stones/) | Medium | :heavy_check_mark: |
+| 1754 | [Largest Merge Of Two Strings](src/section02/code1754.rs) | [link](https://leetcode.com/problems/largest-merge-of-two-strings/) | Medium | :heavy_check_mark: |
+| 1755 | [Closest Subsequence Sum](src/section02/code1755.rs) | [link](https://leetcode.com/problems/closest-subsequence-sum/) | Hard | :heavy_check_mark: |
+| 1758 | [Minimum Changes To Make Alternating Binary String](src/section02/code1758.rs) | [link](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/) | Easy | :heavy_check_mark: |
+| 1759 | [Count Number of Homogenous Substrings](src/section02/code1759.rs) | [link](https://leetcode.com/problems/count-number-of-homogenous-substrings/) | Medium | :heavy_check_mark: |
+| 1760 | [Minimum Limit of Balls in a Bag](src/section02/code1760.rs) | [link](https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/) | Medium | :heavy_check_mark: |
+| 1761 | [Minimum Degree of a Connected Trio in a Graph](src/section02/code1761.rs) | [link](https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph/) | Hard | :heavy_check_mark: |
+| 1763 | [Longest Nice Substring](src/section02/code1763.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Easy | :heavy_check_mark: |
+| 1764 | [Form Array by Concatenating Subarrays of Another Array](src/section02/code1764.rs) | [link](https://leetcode.com/problems/form-array-by-concatenating-subarrays-of-another-array/) | Medium | :heavy_check_mark: |
+| 1765 | [Map of Highest Peak](src/section02/code1765.rs) | [link](https://leetcode.com/problems/map-of-highest-peak/) | Medium | :heavy_check_mark: |
+| 1766 | [Tree of Coprimes](src/section02/code1766.rs) | [link](https://leetcode.com/problems/tree-of-coprimes/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
