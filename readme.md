@@ -1504,6 +1504,31 @@ cargo test
 | 1764 | [Form Array by Concatenating Subarrays of Another Array](src/section02/code1764.rs) | [link](https://leetcode.com/problems/form-array-by-concatenating-subarrays-of-another-array/) | Medium | :heavy_check_mark: |
 | 1765 | [Map of Highest Peak](src/section02/code1765.rs) | [link](https://leetcode.com/problems/map-of-highest-peak/) | Medium | :heavy_check_mark: |
 | 1766 | [Tree of Coprimes](src/section02/code1766.rs) | [link](https://leetcode.com/problems/tree-of-coprimes/) | Hard | :heavy_check_mark: |
+| 1768 | [Merge Strings Alternately](src/section02/code1768.rs) | [link](https://leetcode.com/problems/merge-strings-alternately/) | Easy | :heavy_check_mark: |
+| 1769 | [Minimum Number of Operations to Move All Balls to Each Box](src/section02/code1769.rs) | [link](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/) | Medium | :heavy_check_mark: |
+| 1770 | [Maximum Score from Performing Multiplication Operations](src/section02/code1770.rs) | [link](https://leetcode.com/problems/maximum-score-from-performing-multiplication-operations/) | Medium | :heavy_check_mark: |
+| 1771 | [Maximize Palindrome Length From Subsequences](src/section02/code1771.rs) | [link](https://leetcode.com/problems/maximize-palindrome-length-from-subsequences/) | Hard | :heavy_check_mark: |
+| 1773 | [Count Items Matching a Rule](src/section02/code1773.rs) | [link](https://leetcode.com/problems/count-items-matching-a-rule/) | Easy | :heavy_check_mark: |
+| 1774 | [Closest Dessert Cost](src/section02/code1774.rs) | [link](https://leetcode.com/problems/closest-dessert-cost/) | Medium | :heavy_check_mark: |
+| 1775 | [Equal Sum Arrays With Minimum Number of Operations](src/section02/code1775.rs) | [link](https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/) | Medium | :heavy_check_mark: |
+| 1776 | [Car Fleet II](src/section02/code1776.rs) | [link](https://leetcode.com/problems/car-fleet-ii/) | Hard | :heavy_check_mark: |
+| 1779 | [Find Nearest Point That Has the Same X or Y Coordinate](src/section02/code1779.rs) | [link](https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/) | Easy | :heavy_check_mark: |
+| 1780 | [Check if Number is a Sum of Powers of Three](src/section02/code1780.rs) | [link](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/) | Medium | :heavy_check_mark: |
+| 1781 | [Sum of Beauty in the Array](src/section02/code1781.rs) | [link](https://leetcode.com/problems/sum-of-beauty-in-the-array/) | Medium | :heavy_check_mark: |
+| 1782 | [Count Pairs Of Nodes](src/section02/code1782.rs) | [link](https://leetcode.com/problems/count-pairs-of-nodes/) | Hard | :heavy_check_mark: |
+| 1784 | [Check if Binary String Has at Most One Segment of Ones](src/section02/code1784.rs) | [link](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/) | Easy | :heavy_check_mark: |
+| 1785 | [Minimum Elements to Add to Form a Given Sum](src/section02/code1785.rs) | [link](https://leetcode.com/problems/minimum-elements-to-add-to-form-a-given-sum/) | Medium | :heavy_check_mark: |
+| 1786 | [Number of Restricted Paths From First to Last Node](src/section02/code1786.rs) | [link](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/) | Hard | :heavy_check_mark: |
+| 1787 | [Make the XOR of All Segments Equal to Zero](src/section02/code1787.rs) | [link](https://leetcode.com/problems/make-the-xor-of-all-segments-equal-to-zero/) | Hard | :heavy_check_mark: |
+| 1790 | [Check if One String Swap Can Make Strings Equal](src/section02/code1790.rs) | [link](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/) | Easy | :heavy_check_mark: |
+| 1791 | [Find Center of Star Graph](src/section02/code1791.rs) | [link](https://leetcode.com/problems/find-center-of-star-graph/) | Easy | :heavy_check_mark: |
+| 1792 | [Maximum Average Pass Ratio](src/section02/code1792.rs) | [link](https://leetcode.com/problems/maximum-average-pass-ratio/) | Medium | :heavy_check_mark: |
+| 1793 | [Maximum Score of a Good Subarray](src/section02/code1793.rs) | [link](https://leetcode.com/problems/maximum-score-of-a-good-subarray/) | Hard | :heavy_check_mark: |
+| 1796 | [Second Largest Digit in a String](src/section02/code1796.rs) | [link](https://leetcode.com/problems/second-largest-digit-in-a-string/) | Easy | :heavy_check_mark: |
+| 1797 | [Design Authentication Manager](src/section02/code1797.rs) | [link](https://leetcode.com/problems/design-authentication-manager/) | Medium | :heavy_check_mark: |
+| 1798 | [Maximum Number of Consecutive Values You Can Make](src/section02/code1798.rs) | [link](https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/) | Medium | :heavy_check_mark: |
+| 1799 | [Maximize Score After N Operations](src/section02/code1799.rs) | [link](https://leetcode.com/problems/maximize-score-after-n-operations/) | Hard | :heavy_check_mark: |
+| 1800 | [Maximum Ascending Subarray Sum](src/section02/code1800.rs) | [link](https://leetcode.com/problems/maximum-ascending-subarray-sum/) | Easy | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
