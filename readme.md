@@ -1551,6 +1551,25 @@ cargo test
 | 1823 | [Find the Winner of the Circular Game](src/section02/code1823.rs) | [link](https://leetcode.com/problems/find-the-winner-of-the-circular-game/) | Medium | :heavy_check_mark: |
 | 1824 | [Minimum Sideway Jumps](src/section02/code1824.rs) | [link](https://leetcode.com/problems/minimum-sideway-jumps/) | Medium | :heavy_check_mark: |
 | 1825 | [Finding MK Average](src/section02/code1825.rs) | [link](https://leetcode.com/problems/finding-mk-average/) | Hard | :heavy_check_mark: |
+| 1827 | [Minimum Operations to Make the Array Increasing](src/section02/code1827.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/) | Easy | :heavy_check_mark: |
+| 1828 | [Queries on Number of Points Inside a Circle](src/section02/code1828.rs) | [link](https://leetcode.com/problems/queries-on-number-of-points-inside-a-circle/) | Medium | :heavy_check_mark: |
+| 1829 | [Maximum XOR for Each Query](src/section02/code1829.rs) | [link](https://leetcode.com/problems/maximum-xor-for-each-query/) | Medium | :heavy_check_mark: |
+| 1830 | [Minimum Number of Operations to Make String Sorted](src/section02/code1830.rs) | [link](https://leetcode.com/problems/minimum-number-of-operations-to-make-string-sorted/) | Hard | :heavy_check_mark: |
+| 1832 | [Check if the Sentence Is Pangram](src/section02/code1832.rs) | [link](https://leetcode.com/problems/check-if-the-sentence-is-pangram/) | Easy | :heavy_check_mark: |
+| 1833 | [Maximum Ice Cream Bars](src/section02/code1833.rs) | [link](https://leetcode.com/problems/maximum-ice-cream-bars/) | Medium | :heavy_check_mark: |
+| 1834 | [Single-Threaded CPU](src/section02/code1834.rs) | [link](https://leetcode.com/problems/single-threaded-cpu/) | Medium | :heavy_check_mark: |
+| 1835 | [Find XOR Sum of All Pairs Bitwise AND](src/section02/code1835.rs) | [link](https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/) | Hard | :heavy_check_mark: |
+| 1837 | [Sum of Digits in Base K](src/section02/code1837.rs) | [link](https://leetcode.com/problems/sum-of-digits-in-base-k/) | Easy | :heavy_check_mark: |
+| 1838 | [Frequency of the Most Frequent Element](src/section02/code1838.rs) | [link](https://leetcode.com/problems/frequency-of-the-most-frequent-element/) | Medium | :heavy_check_mark: |
+| 1839 | [Longest Substring Of All Vowels in Order](src/section02/code1839.rs) | [link](https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/) | Medium | :heavy_check_mark: |
+| 1840 | [Maximum Building Height](src/section02/code1840.rs) | [link](https://leetcode.com/problems/maximum-building-height/) | Hard | :heavy_check_mark: |
+| 1844 | [Replace All Digits with Characters](src/section02/code1844.rs) | [link](https://leetcode.com/problems/replace-all-digits-with-characters/) | Easy | :heavy_check_mark: |
+| 1845 | [Seat Reservation Manager](src/section02/code1845.rs) | [link](https://leetcode.com/problems/seat-reservation-manager/) | Medium | :heavy_check_mark: |
+| 1846 | [Maximum Element After Decreasing and Rearranging](src/section02/code1846.rs) | [link](https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/) | Medium | :heavy_check_mark: |
+| 1847 | [Closest Room](src/section02/code1847.rs) | [link](https://leetcode.com/problems/closest-room/) | Hard | :heavy_check_mark: |
+| 1848 | [Minimum Distance to the Target Element](src/section02/code1848.rs) | [link](https://leetcode.com/problems/minimum-distance-to-the-target-element/) | Easy | :heavy_check_mark: |
+| 1849 | [Splitting a String Into Descending Consecutive Values](src/section02/code1849.rs) | [link](https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/) | Medium | :heavy_check_mark: |
+| 1850 | [Minimum Adjacent Swaps to Reach the Kth Smallest Number](src/section02/code1850.rs) | [link](https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number/) | Hard | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
