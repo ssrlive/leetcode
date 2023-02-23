@@ -1532,6 +1532,28 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 1801 | [Number of Orders in the Backlog](src/section02/code1801.rs) | [link](https://leetcode.com/problems/number-of-orders-in-the-backlog/) | Medium | :heavy_check_mark: |
+| 1802 | [Maximum Value at a Given Index in a Bounded Array](src/section02/code1802.rs) | [link](https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/) | Medium | :heavy_check_mark: |
+| 1803 | [Count Pairs With XOR in a Range](src/section02/code1803.rs) | [link](https://leetcode.com/problems/count-pairs-with-xor-in-a-range/) | Hard | :heavy_check_mark: |
+| 1805 | [Number of Different Integers in a String](src/section02/code1805.rs) | [link](https://leetcode.com/problems/number-of-different-integers-in-a-string/) | Easy | :heavy_check_mark: |
+| 1806 | [Minimum Number of Operations to Reinitialize a Permutation](src/section02/code1806.rs) | [link](https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/) | Medium | :heavy_check_mark: |
+| 1807 | [Evaluate the Bracket Pairs of a String](src/section02/code1807.rs) | [link](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/) | Medium | :heavy_check_mark: |
+| 1808 | [Maximize Number of Nice Divisors](src/section02/code1808.rs) | [link](https://leetcode.com/problems/maximize-number-of-nice-divisors/) | Hard | :heavy_check_mark: |
+| 1812 | [Determine Color of a Chessboard Square](src/section02/code1812.rs) | [link](https://leetcode.com/problems/determine-color-of-a-chessboard-square/) | Easy | :heavy_check_mark: |
+| 1813 | [Sentence Similarity III](src/section02/code1813.rs) | [link](https://leetcode.com/problems/sentence-similarity-iii/) | Medium | :heavy_check_mark: |
+| 1814 | [Count Nice Pairs in an Array](src/section02/code1814.rs) | [link](https://leetcode.com/problems/count-nice-pairs-in-an-array/) | Medium | :heavy_check_mark: |
+| 1815 | [Maximum Number of Groups Getting Fresh Donuts](src/section02/code1815.rs) | [link](https://leetcode.com/problems/maximum-number-of-groups-getting-fresh-donuts/) | Hard | :heavy_check_mark: |
+| 1816 | [Truncate Sentence](src/section02/code1816.rs) | [link](https://leetcode.com/problems/truncate-sentence/) | Easy | :heavy_check_mark: |
+| 1817 | [Finding the Users Active Minutes](src/section02/code1817.rs) | [link](https://leetcode.com/problems/finding-the-users-active-minutes/) | Medium | :heavy_check_mark: |
+| 1818 | [Minimum Absolute Sum Difference](src/section02/code1818.rs) | [link](https://leetcode.com/problems/minimum-absolute-sum-difference/) | Medium | :heavy_check_mark: |
+| 1819 | [Number of Different Subsequences GCDs](src/section02/code1819.rs) | [link](https://leetcode.com/problems/number-of-different-subsequences-gcds/) | Hard | :heavy_check_mark: |
+| 1822 | [Sign of the Product of an Array](src/section02/code1822.rs) | [link](https://leetcode.com/problems/sign-of-the-product-of-an-array/) | Easy | :heavy_check_mark: |
+| 1823 | [Find the Winner of the Circular Game](src/section02/code1823.rs) | [link](https://leetcode.com/problems/find-the-winner-of-the-circular-game/) | Medium | :heavy_check_mark: |
+| 1824 | [Minimum Sideway Jumps](src/section02/code1824.rs) | [link](https://leetcode.com/problems/minimum-sideway-jumps/) | Medium | :heavy_check_mark: |
+| 1825 | [Finding MK Average](src/section02/code1825.rs) | [link](https://leetcode.com/problems/finding-mk-average/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
