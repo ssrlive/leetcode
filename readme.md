@@ -1573,6 +1573,26 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 1851 | [Minimum Interval to Include Each Query](src/section03/code1851.rs) | [link](https://leetcode.com/problems/minimum-interval-to-include-each-query/) | Hard | :heavy_check_mark: |
+| 1854 | [Maximum Population Year](src/section03/code1854.rs) | [link](https://leetcode.com/problems/maximum-population-year/) | Easy | :heavy_check_mark: |
+| 1855 | [Maximum Distance Between a Pair of Values](src/section03/code1855.rs) | [link](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/) | Medium | :heavy_check_mark: |
+| 1856 | [Maximum Subarray Min-Product](src/section03/code1856.rs) | [link](https://leetcode.com/problems/maximum-subarray-min-product/) | Medium | :heavy_check_mark: |
+| 1857 | [Largest Color Value in a Directed Graph](src/section03/code1857.rs) | [link](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) | Hard | :heavy_check_mark: |
+| 1859 | [Sorting the Sentence](src/section03/code1859.rs) | [link](https://leetcode.com/problems/sorting-the-sentence/) | Easy | :heavy_check_mark: |
+| 1860 | [Incremental Memory Leak](src/section03/code1860.rs) | [link](https://leetcode.com/problems/incremental-memory-leak/) | Medium | :heavy_check_mark: |
+| 1861 | [Rotating the Box](src/section03/code1861.rs) | [link](https://leetcode.com/problems/rotating-the-box/) | Medium | :heavy_check_mark: |
+| 1862 | [Sum of Floored Pairs](src/section03/code1862.rs) | [link](https://leetcode.com/problems/sum-of-floored-pairs/) | Hard | :heavy_check_mark: |
+| 1863 | [Sum of All Subset XOR Totals](src/section03/code1863.rs) | [link](https://leetcode.com/problems/sum-of-all-subset-xor-totals/) | Medium | :heavy_check_mark: |
+| 1864 | [Minimum Number of Swaps to Make the Binary String Alternating](src/section03/code1864.rs) | [link](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/) | Medium | :heavy_check_mark: |
+| 1865 | [Finding Pairs With a Certain Sum](src/section03/code1865.rs) | [link](https://leetcode.com/problems/finding-pairs-with-a-certain-sum/) | Medium | :heavy_check_mark: |
+| 1866 | [Number of Ways to Rearrange Sticks With K Sticks Visible](src/section03/code1866.rs) | [link](https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/) | Hard | :heavy_check_mark: |
+| 1869 | [Longer Contiguous Segments of Ones than Zeros](src/section03/code1869.rs) | [link](https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/) | Easy | :heavy_check_mark: |
+| 1870 | [Minimum Speed to Arrive on Time](src/section03/code1870.rs) | [link](https://leetcode.com/problems/minimum-speed-to-arrive-on-time/) | Medium | :heavy_check_mark: |
+| 1871 | [Jump Game VII](src/section03/code1871.rs) | [link](https://leetcode.com/problems/jump-game-vii/) | Medium | :heavy_check_mark: |
+| 1872 | [Stone Game VIII](src/section03/code1872.rs) | [link](https://leetcode.com/problems/stone-game-viii/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
