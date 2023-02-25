@@ -1,5 +1,7 @@
 # Solutions of Leetcode problems in rust
 
+This repository contains my solutions of [Leetcode](https://leetcode.com/) problems in rust. The solutions are organized by sections and problems. Each problem is implemented in a separate file. The test cases are also included in the same file.
+
 To run the code, you need to [install rust](https://rustup.rs/) first. Then run the test suits from the terminal:
 
 ```bash
@@ -1590,6 +1592,27 @@ cargo test
 | 1870 | [Minimum Speed to Arrive on Time](src/section03/code1870.rs) | [link](https://leetcode.com/problems/minimum-speed-to-arrive-on-time/) | Medium | :heavy_check_mark: |
 | 1871 | [Jump Game VII](src/section03/code1871.rs) | [link](https://leetcode.com/problems/jump-game-vii/) | Medium | :heavy_check_mark: |
 | 1872 | [Stone Game VIII](src/section03/code1872.rs) | [link](https://leetcode.com/problems/stone-game-viii/) | Hard | :heavy_check_mark: |
+| 1876 | [Substrings of Size Three with Distinct Characters](src/section03/code1876.rs) | [link](https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/) | Easy | :heavy_check_mark: |
+| 1877 | [Minimize Maximum Pair Sum in Array](src/section03/code1877.rs) | [link](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/) | Medium | :heavy_check_mark: |
+| 1878 | [Get Biggest Three Rhombus Sums in a Grid](src/section03/code1878.rs) | [link](https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/) | Medium | :heavy_check_mark: |
+| 1879 | [Minimum XOR Sum of Two Arrays](src/section03/code1879.rs) | [link](https://leetcode.com/problems/minimum-xor-sum-of-two-arrays/) | Medium | :heavy_check_mark: |
+| 1880 | [Check if Word Equals Summation of Two Words](src/section03/code1880.rs) | [link](https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/) | Easy | :heavy_check_mark: |
+| 1881 | [Maximum Value after Insertion](src/section03/code1881.rs) | [link](https://leetcode.com/problems/maximum-value-after-insertion/) | Medium | :heavy_check_mark: |
+| 1882 | [Process Tasks Using Servers](src/section03/code1882.rs) | [link](https://leetcode.com/problems/process-tasks-using-servers/) | Hard | :heavy_check_mark: |
+| 1883 | [Minimum Skips to Arrive at Meeting On Time](src/section03/code1883.rs) | [link](https://leetcode.com/problems/minimum-skips-to-arrive-at-meeting-on-time/) | Hard | :heavy_check_mark: |
+| 1884 | [Egg Drop With 2 Eggs and N Floors](src/section03/code1884.rs) | [link](https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/) | Hard | :heavy_check_mark: |
+| 1886 | [Determine Whether Matrix Can Be Obtained By Rotation](src/section03/code1886.rs) | [link](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/) | Easy | :heavy_check_mark: |
+| 1887 | [Reduction Operations to Make the Array Elements Equal](src/section03/code1887.rs) | [link](https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/) | Medium | :heavy_check_mark: |
+| 1888 | [Minimum Number of Flips to Make the Binary String Alternating](src/section03/code1888.rs) | [link](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium | :heavy_check_mark: |
+| 1889 | [Minimum Space Wasted From Packaging](src/section03/code1889.rs) | [link](https://leetcode.com/problems/minimum-space-wasted-from-packaging/) | Medium | :heavy_check_mark: |
+| 1893 | [Check if All the Integers in a Range Are Covered](src/section03/code1893.rs) | [link](https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/) | Easy | :heavy_check_mark: |
+| 1894 | [Find the Student that Will Replace the Chalk](src/section03/code1894.rs) | [link](https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/) | Medium | :heavy_check_mark: |
+| 1895 | [Largest Magic Square](src/section03/code1895.rs) | [link](https://leetcode.com/problems/largest-magic-square/) | Hard | :heavy_check_mark: |
+| 1896 | [Minimum Cost to Change the Final Value of Expression](src/section03/code1896.rs) | [link](https://leetcode.com/problems/minimum-cost-to-change-the-final-value-of-expression/) | Hard | :heavy_check_mark: |
+| 1897 | [Redistribute Characters to Make All Strings Equal](src/section03/code1897.rs) | [link](https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/) | Easy | :heavy_check_mark: |
+| 1898 | [Maximum Number of Removable Characters](src/section03/code1898.rs) | [link](https://leetcode.com/problems/maximum-number-of-removable-characters/) | Medium | :heavy_check_mark: |
+| 1899 | [Merge Triplets to Form Target Triplet](src/section03/code1899.rs) | [link](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/) | Medium | :heavy_check_mark: |
+| 1900 | [The Earliest and Latest Rounds Where Players Compete](src/section03/code1900.rs) | [link](https://leetcode.com/problems/the-earliest-and-latest-rounds-where-players-compete/) | Medium | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
