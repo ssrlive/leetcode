@@ -1771,3 +1771,7 @@ cargo test
 | 2571 | [Minimum Operations to Reduce an Integer to 0](src/section03/code2571.rs) | [link](https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/) | Medium | :heavy_check_mark: |
 | 2572 | [Count the Number of Square-Free Subsets](src/section03/code2572.rs) | [link](https://leetcode.com/problems/count-the-number-of-square-free-subsets/) | Hard | :heavy_check_mark: |
 | 2573 | [Find the String with LCP](src/section03/code2573.rs) | [link](https://leetcode.com/problems/find-the-string-with-lcp/) | Medium | :heavy_check_mark: |
+| 2574 | [Left and Right Sum Differences](src/section03/code2574.rs) | [link](https://leetcode.com/problems/left-and-right-sum-differences/) | Easy | :heavy_check_mark: |
+| 2575 | [Find the Divisibility Array of a String](src/section03/code2575.rs) | [link](https://leetcode.com/problems/find-the-divisibility-array-of-a-string/) | Medium | :heavy_check_mark: |
+| 2576 | [Find the Maximum Number of Marked Indices)](src/section03/code2576.rs) | [link](https://leetcode.com/problems/find-the-maximum-number-of-marked-indices/) | Medium | :heavy_check_mark: |
+| 2577 | [Minimum Time to Visit a Cell In a Grid](src/section03/code2577.rs) | [link](https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/) | Hard | :heavy_check_mark: |
