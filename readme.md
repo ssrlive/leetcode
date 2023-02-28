@@ -1629,6 +1629,18 @@ cargo test
 | 1914 | [Cyclically Rotating a Grid](src/section03/code1914.rs) | [link](https://leetcode.com/problems/cyclically-rotating-a-grid/) | Medium | :heavy_check_mark: |
 | 1915 | [Number of Wonderful Substrings](src/section03/code1915.rs) | [link](https://leetcode.com/problems/number-of-wonderful-substrings/) | Medium | :heavy_check_mark: |
 | 1916 | [Count Substrings That Differ by One Character](src/section03/code1916.rs) | [link](https://leetcode.com/problems/count-substrings-that-differ-by-one-character/) | Medium | :heavy_check_mark: |
+| 1920 | [Build Array from Permutation](src/section03/code1920.rs) | [link](https://leetcode.com/problems/build-array-from-permutation/) | Easy | :heavy_check_mark: |
+| 1921 | [Eliminate Maximum Number of Monsters](src/section03/code1921.rs) | [link](https://leetcode.com/problems/eliminate-maximum-number-of-monsters/) | Medium | :heavy_check_mark: |
+| 1922 | [Count Good Numbers](src/section03/code1922.rs) | [link](https://leetcode.com/problems/count-good-numbers/) | Medium | :heavy_check_mark: |
+| 1923 | [Longest Common Subpath](src/section03/code1923.rs) | [link](https://leetcode.com/problems/longest-common-subpath/) | Hard | :heavy_check_mark: |
+| 1925 | [Count Square Sum Triples](src/section03/code1925.rs) | [link](https://leetcode.com/problems/count-square-sum-triples/) | Easy | :heavy_check_mark: |
+| 1926 | [Nearest Exit from Entrance in Maze](src/section03/code1926.rs) | [link](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/) | Medium | :heavy_check_mark: |
+| 1927 | [Sum Game](src/section03/code1927.rs) | [link](https://leetcode.com/problems/sum-game/) | Medium | :heavy_check_mark: |
+| 1928 | [Minimum Cost to Reach Destination in Time](src/section03/code1928.rs) | [link](https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/) | Hard | :heavy_check_mark: |
+| 1929 | [Concatenation of Array](src/section03/code1929.rs) | [link](https://leetcode.com/problems/concatenation-of-array/) | Easy | :heavy_check_mark: |
+| 1930 | [Unique Length-3 Palindromic Subsequences](src/section03/code1930.rs) | [link](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/) | Medium | :heavy_check_mark: |
+| 1931 | [Painting a Grid With Three Different Colors](src/section03/code1931.rs) | [link](https://leetcode.com/problems/painting-a-grid-with-three-different-colors/) | Hard | :heavy_check_mark: |
+| 1932 | [Merge BSTs to Create Single BST](src/section03/code1932.rs) | [link](https://leetcode.com/problems/merge-bsts-to-create-single-bst/) | Hard | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
