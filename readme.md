@@ -1616,6 +1616,22 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 1901 | [Find a Peak Element II](src/section03/code1901.rs) | [link](https://leetcode.com/problems/find-a-peak-element-ii/) | Medium | :heavy_check_mark: |
+| 1903 | [Largest Odd Number in String](src/section03/code1903.rs) | [link](https://leetcode.com/problems/largest-odd-number-in-string/) | Medium | :heavy_check_mark: |
+| 1904 | [The Number of Full Rounds You Have Played](src/section03/code1904.rs) | [link](https://leetcode.com/problems/the-number-of-full-rounds-you-have-played/) | Medium | :heavy_check_mark: |
+| 1905 | [Count Sub Islands](src/section03/code1905.rs) | [link](https://leetcode.com/problems/count-sub-islands/) | Medium | :heavy_check_mark: |
+| 1906 | [Minimum Absolute Difference Queries](src/section03/code1906.rs) | [link](https://leetcode.com/problems/minimum-absolute-difference-queries/) | Medium | :heavy_check_mark: |
+| 1909 | [Remove One Element to Make the Array Strictly Increasing](src/section03/code1909.rs) | [link](https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/) | Medium | :heavy_check_mark: |
+| 1910 | [Remove All Occurrences of a Substring](src/section03/code1910.rs) | [link](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/) | Medium | :heavy_check_mark: |
+| 1911 | [Maximum Alternating Subsequence Sum](src/section03/code1911.rs) | [link](https://leetcode.com/problems/maximum-alternating-subsequence-sum/) | Medium | :heavy_check_mark: |
+| 1912 | [Maximum Product Difference Between Two Pairs](src/section03/code1912.rs) | [link](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/) | Easy | :heavy_check_mark: |
+| 1913 | [Maximum Product Difference Between Two Pairs](src/section03/code1913.rs) | [link](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/) | Easy | :heavy_check_mark: |
+| 1914 | [Cyclically Rotating a Grid](src/section03/code1914.rs) | [link](https://leetcode.com/problems/cyclically-rotating-a-grid/) | Medium | :heavy_check_mark: |
+| 1915 | [Number of Wonderful Substrings](src/section03/code1915.rs) | [link](https://leetcode.com/problems/number-of-wonderful-substrings/) | Medium | :heavy_check_mark: |
+| 1916 | [Count Substrings That Differ by One Character](src/section03/code1916.rs) | [link](https://leetcode.com/problems/count-substrings-that-differ-by-one-character/) | Medium | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
