@@ -1697,6 +1697,16 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 2001 | [Number of Pairs of Interchangeable Rectangles](src/section03/code2001.rs) | [link](https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/) | Medium | :heavy_check_mark: |
+| 2002 | [Maximum Product of the Length of Two Palindromic Subsequences](src/section03/code2002.rs) | [link](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/) | Medium | :heavy_check_mark: |
+| 2003 | [Smallest Missing Genetic Value in Each Subtree](src/section03/code2003.rs) | [link](https://leetcode.com/problems/smallest-missing-genetic-value-in-each-subtree/) | Hard | :heavy_check_mark: |
+| 2006 | [Count Number of Pairs With Absolute Difference K](src/section03/code2006.rs) | [link](https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/) | Easy | :heavy_check_mark: |
+| 2007 | [Find Original Array From Doubled Array](src/section03/code2007.rs) | [link](https://leetcode.com/problems/find-original-array-from-doubled-array/) | Medium | :heavy_check_mark: |
+| 2008 | [Maximum Earnings From Taxi](src/section03/code2008.rs) | [link](https://leetcode.com/problems/maximum-earnings-from-taxi/) | Hard | :heavy_check_mark: |
+| 2009 | [Minimum Number of Operations to Make Array Continuous](src/section03/code2009.rs) | [link](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/) | Medium | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
