@@ -1668,6 +1668,19 @@ cargo test
 | 1962 | [Remove Stones to Minimize the Total](src/section02/code1962.rs) | [link](https://leetcode.com/problems/remove-stones-to-minimize-the-total/) | Medium | :heavy_check_mark: |
 | 1963 | [Minimum Number of Swaps to Make the String Balanced](src/section02/code1963.rs) | [link](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/) | Medium | :heavy_check_mark: |
 | 1964 | [Find the Longest Valid Obstacle Course at Each Position](src/section02/code1964.rs) | [link](https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/) | Hard | :heavy_check_mark: |
+| 1967 | [Number of Strings That Appear as Substrings in Word](src/section02/code1967.rs) | [link](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/) | Easy | :heavy_check_mark: |
+| 1968 | [Array With Elements Not Equal to Average of Neighbors](src/section02/code1968.rs) | [link](https://leetcode.com/problems/array-with-elements-not-equal-to-average-of-neighbors/) | Easy | :heavy_check_mark: |
+| 1969 | [Minimum Non-Zero Product of the Array Elements](src/section02/code1969.rs) | [link](https://leetcode.com/problems/minimum-non-zero-product-of-the-array-elements/) | Medium | :heavy_check_mark: |
+| 1970 | [Last Day Where You Can Still Cross](src/section02/code1970.rs) | [link](https://leetcode.com/problems/last-day-where-you-can-still-cross/) | Hard | :heavy_check_mark: |
+| 1971 | [Find if Path Exists in Graph](src/section02/code1971.rs) | [link](https://leetcode.com/problems/find-if-path-exists-in-graph/) | Medium | :heavy_check_mark: |
+| 1974 | [Minimum Time to Type Word Using Special Typewriter](src/section02/code1974.rs) | [link](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/) | Easy | :heavy_check_mark: |
+| 1975 | [Maximum Matrix Sum](src/section02/code1975.rs) | [link](https://leetcode.com/problems/maximum-matrix-sum/) | Medium | :heavy_check_mark: |
+| 1976 | [Number of Ways to Arrive at Destination](src/section02/code1976.rs) | [link](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/) | Hard | :heavy_check_mark: |
+| 1977 | [Number of Ways to Separate Numbers](src/section02/code1977.rs) | [link](https://leetcode.com/problems/number-of-ways-to-separate-numbers/) | Hard | :heavy_check_mark: |
+| 1979 | [Find Greatest Common Divisor of Array](src/section02/code1979.rs) | [link](https://leetcode.com/problems/find-greatest-common-divisor-of-array/) | Easy | :heavy_check_mark: |
+| 1980 | [Find Unique Binary String](src/section02/code1980.rs) | [link](https://leetcode.com/problems/find-unique-binary-string/) | Medium | :heavy_check_mark: |
+| 1981 | [Minimize the Difference Between Target and Chosen Elements](src/section02/code1981.rs) | [link](https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements/) | Medium | :heavy_check_mark: |
+| 1982 | [Find Array Given Subset Sums](src/section02/code1982.rs) | [link](https://leetcode.com/problems/find-array-given-subset-sums/) | Hard | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
