@@ -1575,72 +1575,84 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
-| 1851 | [Minimum Interval to Include Each Query](src/section03/code1851.rs) | [link](https://leetcode.com/problems/minimum-interval-to-include-each-query/) | Hard | :heavy_check_mark: |
-| 1854 | [Maximum Population Year](src/section03/code1854.rs) | [link](https://leetcode.com/problems/maximum-population-year/) | Easy | :heavy_check_mark: |
-| 1855 | [Maximum Distance Between a Pair of Values](src/section03/code1855.rs) | [link](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/) | Medium | :heavy_check_mark: |
-| 1856 | [Maximum Subarray Min-Product](src/section03/code1856.rs) | [link](https://leetcode.com/problems/maximum-subarray-min-product/) | Medium | :heavy_check_mark: |
-| 1857 | [Largest Color Value in a Directed Graph](src/section03/code1857.rs) | [link](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) | Hard | :heavy_check_mark: |
-| 1859 | [Sorting the Sentence](src/section03/code1859.rs) | [link](https://leetcode.com/problems/sorting-the-sentence/) | Easy | :heavy_check_mark: |
-| 1860 | [Incremental Memory Leak](src/section03/code1860.rs) | [link](https://leetcode.com/problems/incremental-memory-leak/) | Medium | :heavy_check_mark: |
-| 1861 | [Rotating the Box](src/section03/code1861.rs) | [link](https://leetcode.com/problems/rotating-the-box/) | Medium | :heavy_check_mark: |
-| 1862 | [Sum of Floored Pairs](src/section03/code1862.rs) | [link](https://leetcode.com/problems/sum-of-floored-pairs/) | Hard | :heavy_check_mark: |
-| 1863 | [Sum of All Subset XOR Totals](src/section03/code1863.rs) | [link](https://leetcode.com/problems/sum-of-all-subset-xor-totals/) | Medium | :heavy_check_mark: |
-| 1864 | [Minimum Number of Swaps to Make the Binary String Alternating](src/section03/code1864.rs) | [link](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/) | Medium | :heavy_check_mark: |
-| 1865 | [Finding Pairs With a Certain Sum](src/section03/code1865.rs) | [link](https://leetcode.com/problems/finding-pairs-with-a-certain-sum/) | Medium | :heavy_check_mark: |
-| 1866 | [Number of Ways to Rearrange Sticks With K Sticks Visible](src/section03/code1866.rs) | [link](https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/) | Hard | :heavy_check_mark: |
-| 1869 | [Longer Contiguous Segments of Ones than Zeros](src/section03/code1869.rs) | [link](https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/) | Easy | :heavy_check_mark: |
-| 1870 | [Minimum Speed to Arrive on Time](src/section03/code1870.rs) | [link](https://leetcode.com/problems/minimum-speed-to-arrive-on-time/) | Medium | :heavy_check_mark: |
-| 1871 | [Jump Game VII](src/section03/code1871.rs) | [link](https://leetcode.com/problems/jump-game-vii/) | Medium | :heavy_check_mark: |
-| 1872 | [Stone Game VIII](src/section03/code1872.rs) | [link](https://leetcode.com/problems/stone-game-viii/) | Hard | :heavy_check_mark: |
-| 1876 | [Substrings of Size Three with Distinct Characters](src/section03/code1876.rs) | [link](https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/) | Easy | :heavy_check_mark: |
-| 1877 | [Minimize Maximum Pair Sum in Array](src/section03/code1877.rs) | [link](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/) | Medium | :heavy_check_mark: |
-| 1878 | [Get Biggest Three Rhombus Sums in a Grid](src/section03/code1878.rs) | [link](https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/) | Medium | :heavy_check_mark: |
-| 1879 | [Minimum XOR Sum of Two Arrays](src/section03/code1879.rs) | [link](https://leetcode.com/problems/minimum-xor-sum-of-two-arrays/) | Medium | :heavy_check_mark: |
-| 1880 | [Check if Word Equals Summation of Two Words](src/section03/code1880.rs) | [link](https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/) | Easy | :heavy_check_mark: |
-| 1881 | [Maximum Value after Insertion](src/section03/code1881.rs) | [link](https://leetcode.com/problems/maximum-value-after-insertion/) | Medium | :heavy_check_mark: |
-| 1882 | [Process Tasks Using Servers](src/section03/code1882.rs) | [link](https://leetcode.com/problems/process-tasks-using-servers/) | Hard | :heavy_check_mark: |
-| 1883 | [Minimum Skips to Arrive at Meeting On Time](src/section03/code1883.rs) | [link](https://leetcode.com/problems/minimum-skips-to-arrive-at-meeting-on-time/) | Hard | :heavy_check_mark: |
-| 1884 | [Egg Drop With 2 Eggs and N Floors](src/section03/code1884.rs) | [link](https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/) | Hard | :heavy_check_mark: |
-| 1886 | [Determine Whether Matrix Can Be Obtained By Rotation](src/section03/code1886.rs) | [link](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/) | Easy | :heavy_check_mark: |
-| 1887 | [Reduction Operations to Make the Array Elements Equal](src/section03/code1887.rs) | [link](https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/) | Medium | :heavy_check_mark: |
-| 1888 | [Minimum Number of Flips to Make the Binary String Alternating](src/section03/code1888.rs) | [link](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium | :heavy_check_mark: |
-| 1889 | [Minimum Space Wasted From Packaging](src/section03/code1889.rs) | [link](https://leetcode.com/problems/minimum-space-wasted-from-packaging/) | Medium | :heavy_check_mark: |
-| 1893 | [Check if All the Integers in a Range Are Covered](src/section03/code1893.rs) | [link](https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/) | Easy | :heavy_check_mark: |
-| 1894 | [Find the Student that Will Replace the Chalk](src/section03/code1894.rs) | [link](https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/) | Medium | :heavy_check_mark: |
-| 1895 | [Largest Magic Square](src/section03/code1895.rs) | [link](https://leetcode.com/problems/largest-magic-square/) | Hard | :heavy_check_mark: |
-| 1896 | [Minimum Cost to Change the Final Value of Expression](src/section03/code1896.rs) | [link](https://leetcode.com/problems/minimum-cost-to-change-the-final-value-of-expression/) | Hard | :heavy_check_mark: |
-| 1897 | [Redistribute Characters to Make All Strings Equal](src/section03/code1897.rs) | [link](https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/) | Easy | :heavy_check_mark: |
-| 1898 | [Maximum Number of Removable Characters](src/section03/code1898.rs) | [link](https://leetcode.com/problems/maximum-number-of-removable-characters/) | Medium | :heavy_check_mark: |
-| 1899 | [Merge Triplets to Form Target Triplet](src/section03/code1899.rs) | [link](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/) | Medium | :heavy_check_mark: |
-| 1900 | [The Earliest and Latest Rounds Where Players Compete](src/section03/code1900.rs) | [link](https://leetcode.com/problems/the-earliest-and-latest-rounds-where-players-compete/) | Medium | :heavy_check_mark: |
+| 1851 | [Minimum Interval to Include Each Query](src/section02/code1851.rs) | [link](https://leetcode.com/problems/minimum-interval-to-include-each-query/) | Hard | :heavy_check_mark: |
+| 1854 | [Maximum Population Year](src/section02/code1854.rs) | [link](https://leetcode.com/problems/maximum-population-year/) | Easy | :heavy_check_mark: |
+| 1855 | [Maximum Distance Between a Pair of Values](src/section02/code1855.rs) | [link](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/) | Medium | :heavy_check_mark: |
+| 1856 | [Maximum Subarray Min-Product](src/section02/code1856.rs) | [link](https://leetcode.com/problems/maximum-subarray-min-product/) | Medium | :heavy_check_mark: |
+| 1857 | [Largest Color Value in a Directed Graph](src/section02/code1857.rs) | [link](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/) | Hard | :heavy_check_mark: |
+| 1859 | [Sorting the Sentence](src/section02/code1859.rs) | [link](https://leetcode.com/problems/sorting-the-sentence/) | Easy | :heavy_check_mark: |
+| 1860 | [Incremental Memory Leak](src/section02/code1860.rs) | [link](https://leetcode.com/problems/incremental-memory-leak/) | Medium | :heavy_check_mark: |
+| 1861 | [Rotating the Box](src/section02/code1861.rs) | [link](https://leetcode.com/problems/rotating-the-box/) | Medium | :heavy_check_mark: |
+| 1862 | [Sum of Floored Pairs](src/section02/code1862.rs) | [link](https://leetcode.com/problems/sum-of-floored-pairs/) | Hard | :heavy_check_mark: |
+| 1863 | [Sum of All Subset XOR Totals](src/section02/code1863.rs) | [link](https://leetcode.com/problems/sum-of-all-subset-xor-totals/) | Medium | :heavy_check_mark: |
+| 1864 | [Minimum Number of Swaps to Make the Binary String Alternating](src/section02/code1864.rs) | [link](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/) | Medium | :heavy_check_mark: |
+| 1865 | [Finding Pairs With a Certain Sum](src/section02/code1865.rs) | [link](https://leetcode.com/problems/finding-pairs-with-a-certain-sum/) | Medium | :heavy_check_mark: |
+| 1866 | [Number of Ways to Rearrange Sticks With K Sticks Visible](src/section02/code1866.rs) | [link](https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/) | Hard | :heavy_check_mark: |
+| 1869 | [Longer Contiguous Segments of Ones than Zeros](src/section02/code1869.rs) | [link](https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/) | Easy | :heavy_check_mark: |
+| 1870 | [Minimum Speed to Arrive on Time](src/section02/code1870.rs) | [link](https://leetcode.com/problems/minimum-speed-to-arrive-on-time/) | Medium | :heavy_check_mark: |
+| 1871 | [Jump Game VII](src/section02/code1871.rs) | [link](https://leetcode.com/problems/jump-game-vii/) | Medium | :heavy_check_mark: |
+| 1872 | [Stone Game VIII](src/section02/code1872.rs) | [link](https://leetcode.com/problems/stone-game-viii/) | Hard | :heavy_check_mark: |
+| 1876 | [Substrings of Size Three with Distinct Characters](src/section02/code1876.rs) | [link](https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/) | Easy | :heavy_check_mark: |
+| 1877 | [Minimize Maximum Pair Sum in Array](src/section02/code1877.rs) | [link](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/) | Medium | :heavy_check_mark: |
+| 1878 | [Get Biggest Three Rhombus Sums in a Grid](src/section02/code1878.rs) | [link](https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/) | Medium | :heavy_check_mark: |
+| 1879 | [Minimum XOR Sum of Two Arrays](src/section02/code1879.rs) | [link](https://leetcode.com/problems/minimum-xor-sum-of-two-arrays/) | Medium | :heavy_check_mark: |
+| 1880 | [Check if Word Equals Summation of Two Words](src/section02/code1880.rs) | [link](https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/) | Easy | :heavy_check_mark: |
+| 1881 | [Maximum Value after Insertion](src/section02/code1881.rs) | [link](https://leetcode.com/problems/maximum-value-after-insertion/) | Medium | :heavy_check_mark: |
+| 1882 | [Process Tasks Using Servers](src/section02/code1882.rs) | [link](https://leetcode.com/problems/process-tasks-using-servers/) | Hard | :heavy_check_mark: |
+| 1883 | [Minimum Skips to Arrive at Meeting On Time](src/section02/code1883.rs) | [link](https://leetcode.com/problems/minimum-skips-to-arrive-at-meeting-on-time/) | Hard | :heavy_check_mark: |
+| 1884 | [Egg Drop With 2 Eggs and N Floors](src/section02/code1884.rs) | [link](https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/) | Hard | :heavy_check_mark: |
+| 1886 | [Determine Whether Matrix Can Be Obtained By Rotation](src/section02/code1886.rs) | [link](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/) | Easy | :heavy_check_mark: |
+| 1887 | [Reduction Operations to Make the Array Elements Equal](src/section02/code1887.rs) | [link](https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/) | Medium | :heavy_check_mark: |
+| 1888 | [Minimum Number of Flips to Make the Binary String Alternating](src/section02/code1888.rs) | [link](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium | :heavy_check_mark: |
+| 1889 | [Minimum Space Wasted From Packaging](src/section02/code1889.rs) | [link](https://leetcode.com/problems/minimum-space-wasted-from-packaging/) | Medium | :heavy_check_mark: |
+| 1893 | [Check if All the Integers in a Range Are Covered](src/section02/code1893.rs) | [link](https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/) | Easy | :heavy_check_mark: |
+| 1894 | [Find the Student that Will Replace the Chalk](src/section02/code1894.rs) | [link](https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/) | Medium | :heavy_check_mark: |
+| 1895 | [Largest Magic Square](src/section02/code1895.rs) | [link](https://leetcode.com/problems/largest-magic-square/) | Hard | :heavy_check_mark: |
+| 1896 | [Minimum Cost to Change the Final Value of Expression](src/section02/code1896.rs) | [link](https://leetcode.com/problems/minimum-cost-to-change-the-final-value-of-expression/) | Hard | :heavy_check_mark: |
+| 1897 | [Redistribute Characters to Make All Strings Equal](src/section02/code1897.rs) | [link](https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/) | Easy | :heavy_check_mark: |
+| 1898 | [Maximum Number of Removable Characters](src/section02/code1898.rs) | [link](https://leetcode.com/problems/maximum-number-of-removable-characters/) | Medium | :heavy_check_mark: |
+| 1899 | [Merge Triplets to Form Target Triplet](src/section02/code1899.rs) | [link](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/) | Medium | :heavy_check_mark: |
+| 1900 | [The Earliest and Latest Rounds Where Players Compete](src/section02/code1900.rs) | [link](https://leetcode.com/problems/the-earliest-and-latest-rounds-where-players-compete/) | Medium | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
-| 1901 | [Find a Peak Element II](src/section03/code1901.rs) | [link](https://leetcode.com/problems/find-a-peak-element-ii/) | Medium | :heavy_check_mark: |
-| 1903 | [Largest Odd Number in String](src/section03/code1903.rs) | [link](https://leetcode.com/problems/largest-odd-number-in-string/) | Medium | :heavy_check_mark: |
-| 1904 | [The Number of Full Rounds You Have Played](src/section03/code1904.rs) | [link](https://leetcode.com/problems/the-number-of-full-rounds-you-have-played/) | Medium | :heavy_check_mark: |
-| 1905 | [Count Sub Islands](src/section03/code1905.rs) | [link](https://leetcode.com/problems/count-sub-islands/) | Medium | :heavy_check_mark: |
-| 1906 | [Minimum Absolute Difference Queries](src/section03/code1906.rs) | [link](https://leetcode.com/problems/minimum-absolute-difference-queries/) | Medium | :heavy_check_mark: |
-| 1909 | [Remove One Element to Make the Array Strictly Increasing](src/section03/code1909.rs) | [link](https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/) | Medium | :heavy_check_mark: |
-| 1910 | [Remove All Occurrences of a Substring](src/section03/code1910.rs) | [link](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/) | Medium | :heavy_check_mark: |
-| 1911 | [Maximum Alternating Subsequence Sum](src/section03/code1911.rs) | [link](https://leetcode.com/problems/maximum-alternating-subsequence-sum/) | Medium | :heavy_check_mark: |
-| 1912 | [Maximum Product Difference Between Two Pairs](src/section03/code1912.rs) | [link](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/) | Easy | :heavy_check_mark: |
-| 1913 | [Maximum Product Difference Between Two Pairs](src/section03/code1913.rs) | [link](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/) | Easy | :heavy_check_mark: |
-| 1914 | [Cyclically Rotating a Grid](src/section03/code1914.rs) | [link](https://leetcode.com/problems/cyclically-rotating-a-grid/) | Medium | :heavy_check_mark: |
-| 1915 | [Number of Wonderful Substrings](src/section03/code1915.rs) | [link](https://leetcode.com/problems/number-of-wonderful-substrings/) | Medium | :heavy_check_mark: |
-| 1916 | [Count Substrings That Differ by One Character](src/section03/code1916.rs) | [link](https://leetcode.com/problems/count-substrings-that-differ-by-one-character/) | Medium | :heavy_check_mark: |
-| 1920 | [Build Array from Permutation](src/section03/code1920.rs) | [link](https://leetcode.com/problems/build-array-from-permutation/) | Easy | :heavy_check_mark: |
-| 1921 | [Eliminate Maximum Number of Monsters](src/section03/code1921.rs) | [link](https://leetcode.com/problems/eliminate-maximum-number-of-monsters/) | Medium | :heavy_check_mark: |
-| 1922 | [Count Good Numbers](src/section03/code1922.rs) | [link](https://leetcode.com/problems/count-good-numbers/) | Medium | :heavy_check_mark: |
-| 1923 | [Longest Common Subpath](src/section03/code1923.rs) | [link](https://leetcode.com/problems/longest-common-subpath/) | Hard | :heavy_check_mark: |
-| 1925 | [Count Square Sum Triples](src/section03/code1925.rs) | [link](https://leetcode.com/problems/count-square-sum-triples/) | Easy | :heavy_check_mark: |
-| 1926 | [Nearest Exit from Entrance in Maze](src/section03/code1926.rs) | [link](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/) | Medium | :heavy_check_mark: |
-| 1927 | [Sum Game](src/section03/code1927.rs) | [link](https://leetcode.com/problems/sum-game/) | Medium | :heavy_check_mark: |
-| 1928 | [Minimum Cost to Reach Destination in Time](src/section03/code1928.rs) | [link](https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/) | Hard | :heavy_check_mark: |
-| 1929 | [Concatenation of Array](src/section03/code1929.rs) | [link](https://leetcode.com/problems/concatenation-of-array/) | Easy | :heavy_check_mark: |
-| 1930 | [Unique Length-3 Palindromic Subsequences](src/section03/code1930.rs) | [link](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/) | Medium | :heavy_check_mark: |
-| 1931 | [Painting a Grid With Three Different Colors](src/section03/code1931.rs) | [link](https://leetcode.com/problems/painting-a-grid-with-three-different-colors/) | Hard | :heavy_check_mark: |
-| 1932 | [Merge BSTs to Create Single BST](src/section03/code1932.rs) | [link](https://leetcode.com/problems/merge-bsts-to-create-single-bst/) | Hard | :heavy_check_mark: |
+| 1901 | [Find a Peak Element II](src/section02/code1901.rs) | [link](https://leetcode.com/problems/find-a-peak-element-ii/) | Medium | :heavy_check_mark: |
+| 1903 | [Largest Odd Number in String](src/section02/code1903.rs) | [link](https://leetcode.com/problems/largest-odd-number-in-string/) | Medium | :heavy_check_mark: |
+| 1904 | [The Number of Full Rounds You Have Played](src/section02/code1904.rs) | [link](https://leetcode.com/problems/the-number-of-full-rounds-you-have-played/) | Medium | :heavy_check_mark: |
+| 1905 | [Count Sub Islands](src/section02/code1905.rs) | [link](https://leetcode.com/problems/count-sub-islands/) | Medium | :heavy_check_mark: |
+| 1906 | [Minimum Absolute Difference Queries](src/section02/code1906.rs) | [link](https://leetcode.com/problems/minimum-absolute-difference-queries/) | Medium | :heavy_check_mark: |
+| 1909 | [Remove One Element to Make the Array Strictly Increasing](src/section02/code1909.rs) | [link](https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/) | Medium | :heavy_check_mark: |
+| 1910 | [Remove All Occurrences of a Substring](src/section02/code1910.rs) | [link](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/) | Medium | :heavy_check_mark: |
+| 1911 | [Maximum Alternating Subsequence Sum](src/section02/code1911.rs) | [link](https://leetcode.com/problems/maximum-alternating-subsequence-sum/) | Medium | :heavy_check_mark: |
+| 1912 | [Maximum Product Difference Between Two Pairs](src/section02/code1912.rs) | [link](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/) | Easy | :heavy_check_mark: |
+| 1913 | [Maximum Product Difference Between Two Pairs](src/section02/code1913.rs) | [link](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/) | Easy | :heavy_check_mark: |
+| 1914 | [Cyclically Rotating a Grid](src/section02/code1914.rs) | [link](https://leetcode.com/problems/cyclically-rotating-a-grid/) | Medium | :heavy_check_mark: |
+| 1915 | [Number of Wonderful Substrings](src/section02/code1915.rs) | [link](https://leetcode.com/problems/number-of-wonderful-substrings/) | Medium | :heavy_check_mark: |
+| 1916 | [Count Substrings That Differ by One Character](src/section02/code1916.rs) | [link](https://leetcode.com/problems/count-substrings-that-differ-by-one-character/) | Medium | :heavy_check_mark: |
+| 1920 | [Build Array from Permutation](src/section02/code1920.rs) | [link](https://leetcode.com/problems/build-array-from-permutation/) | Easy | :heavy_check_mark: |
+| 1921 | [Eliminate Maximum Number of Monsters](src/section02/code1921.rs) | [link](https://leetcode.com/problems/eliminate-maximum-number-of-monsters/) | Medium | :heavy_check_mark: |
+| 1922 | [Count Good Numbers](src/section02/code1922.rs) | [link](https://leetcode.com/problems/count-good-numbers/) | Medium | :heavy_check_mark: |
+| 1923 | [Longest Common Subpath](src/section02/code1923.rs) | [link](https://leetcode.com/problems/longest-common-subpath/) | Hard | :heavy_check_mark: |
+| 1925 | [Count Square Sum Triples](src/section02/code1925.rs) | [link](https://leetcode.com/problems/count-square-sum-triples/) | Easy | :heavy_check_mark: |
+| 1926 | [Nearest Exit from Entrance in Maze](src/section02/code1926.rs) | [link](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/) | Medium | :heavy_check_mark: |
+| 1927 | [Sum Game](src/section02/code1927.rs) | [link](https://leetcode.com/problems/sum-game/) | Medium | :heavy_check_mark: |
+| 1928 | [Minimum Cost to Reach Destination in Time](src/section02/code1928.rs) | [link](https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/) | Hard | :heavy_check_mark: |
+| 1929 | [Concatenation of Array](src/section02/code1929.rs) | [link](https://leetcode.com/problems/concatenation-of-array/) | Easy | :heavy_check_mark: |
+| 1930 | [Unique Length-3 Palindromic Subsequences](src/section02/code1930.rs) | [link](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/) | Medium | :heavy_check_mark: |
+| 1931 | [Painting a Grid With Three Different Colors](src/section02/code1931.rs) | [link](https://leetcode.com/problems/painting-a-grid-with-three-different-colors/) | Hard | :heavy_check_mark: |
+| 1932 | [Merge BSTs to Create Single BST](src/section02/code1932.rs) | [link](https://leetcode.com/problems/merge-bsts-to-create-single-bst/) | Hard | :heavy_check_mark: |
+| 1935 | [Maximum Number of Words You Can Type](src/section02/code1935.rs) | [link](https://leetcode.com/problems/maximum-number-of-words-you-can-type/) | Easy | :heavy_check_mark: |
+| 1936 | [Add Minimum Number of Rungs](src/section02/code1936.rs) | [link](https://leetcode.com/problems/add-minimum-number-of-rungs/) | Medium | :heavy_check_mark: |
+| 1937 | [Maximum Number of Points with Cost](src/section02/code1937.rs) | [link](https://leetcode.com/problems/maximum-number-of-points-with-cost/) | Hard | :heavy_check_mark: |
+| 1938 | [Maximum Genetic Difference Query](src/section02/code1938.rs) | [link](https://leetcode.com/problems/maximum-genetic-difference-query/) | Hard | :heavy_check_mark: |
+| 1941 | [Check if All Characters Have Equal Number of Occurrences](src/section02/code1941.rs) | [link](https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/) | Easy | :heavy_check_mark: |
+| 1942 | [The Number of the Smallest Unoccupied Chair](src/section02/code1942.rs) | [link](https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/) | Medium | :heavy_check_mark: |
+| 1943 | [Describe the Painting](src/section02/code1943.rs) | [link](https://leetcode.com/problems/describe-the-painting/) | Medium | :heavy_check_mark: |
+| 1944 | [Number of Visible People in a Queue](src/section02/code1944.rs) | [link](https://leetcode.com/problems/number-of-visible-people-in-a-queue/) | Hard | :heavy_check_mark: |
+| 1945 | [Sum of Digits of String After Convert](src/section02/code1945.rs) | [link](https://leetcode.com/problems/sum-of-digits-of-string-after-convert/) | Easy | :heavy_check_mark: |
+| 1946 | [Largest Number After Mutating Substring](src/section02/code1946.rs) | [link](https://leetcode.com/problems/largest-number-after-mutating-substring/) | Medium | :heavy_check_mark: |
+| 1947 | [Maximum Compatibility Score Sum](src/section02/code1947.rs) | [link](https://leetcode.com/problems/maximum-compatibility-score-sum/) | Hard | :heavy_check_mark: |
+| 1948 | [Delete Duplicate Folders in System](src/section02/code1948.rs) | [link](https://leetcode.com/problems/delete-duplicate-folders-in-system/) | Hard | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
