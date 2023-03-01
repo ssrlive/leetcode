@@ -1656,6 +1656,21 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 1952 | [Three Divisors](src/section02/code1952.rs) | [link](https://leetcode.com/problems/three-divisors/) | Easy | :heavy_check_mark: |
+| 1953 | [Maximum Number of Weeks for Which You Can Work](src/section02/code1953.rs) | [link](https://leetcode.com/problems/maximum-number-of-weeks-for-which-you-can-work/) | Medium | :heavy_check_mark: |
+| 1954 | [Minimum Garden Perimeter to Collect Enough Apples](src/section02/code1954.rs) | [link](https://leetcode.com/problems/minimum-garden-perimeter-to-collect-enough-apples/) | Medium | :heavy_check_mark: |
+| 1955 | [Count Number of Special Subsequences](src/section02/code1955.rs) | [link](https://leetcode.com/problems/count-number-of-special-subsequences/) | Hard | :heavy_check_mark: |
+| 1957 | [Delete Characters to Make Fancy String](src/section02/code1957.rs) | [link](https://leetcode.com/problems/delete-characters-to-make-fancy-string/) | Easy | :heavy_check_mark: |
+| 1958 | [Check if Move is Legal](src/section02/code1958.rs) | [link](https://leetcode.com/problems/check-if-move-is-legal/) | Medium | :heavy_check_mark: |
+| 1959 | [Minimum Total Space Wasted With K Resizing Operations](src/section02/code1959.rs) | [link](https://leetcode.com/problems/minimum-total-space-wasted-with-k-resizing-operations/) | Hard | :heavy_check_mark: |
+| 1960 | [Maximum Product of the Length of Two Palindromic Subsequences](src/section02/code1960.rs) | [link](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/) | Medium | :heavy_check_mark: |
+| 1961 | [Check If String Is a Prefix of Array](src/section02/code1961.rs) | [link](https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/) | Easy | :heavy_check_mark: |
+| 1962 | [Remove Stones to Minimize the Total](src/section02/code1962.rs) | [link](https://leetcode.com/problems/remove-stones-to-minimize-the-total/) | Medium | :heavy_check_mark: |
+| 1963 | [Minimum Number of Swaps to Make the String Balanced](src/section02/code1963.rs) | [link](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/) | Medium | :heavy_check_mark: |
+| 1964 | [Find the Longest Valid Obstacle Course at Each Position](src/section02/code1964.rs) | [link](https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
