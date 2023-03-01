@@ -1681,6 +1681,19 @@ cargo test
 | 1980 | [Find Unique Binary String](src/section02/code1980.rs) | [link](https://leetcode.com/problems/find-unique-binary-string/) | Medium | :heavy_check_mark: |
 | 1981 | [Minimize the Difference Between Target and Chosen Elements](src/section02/code1981.rs) | [link](https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements/) | Medium | :heavy_check_mark: |
 | 1982 | [Find Array Given Subset Sums](src/section02/code1982.rs) | [link](https://leetcode.com/problems/find-array-given-subset-sums/) | Hard | :heavy_check_mark: |
+| 1984 | [Minimum Difference Between Highest and Lowest of K Scores](src/section02/code1984.rs) | [link](https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) | Easy | :heavy_check_mark: |
+| 1985 | [Find the Kth Largest Integer in the Array](src/section02/code1985.rs) | [link](https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/) | Medium | :heavy_check_mark: |
+| 1986 | [Minimum Number of Work Sessions to Finish the Tasks](src/section02/code1986.rs) | [link](https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/) | Hard | :heavy_check_mark: |
+| 1987 | [Number of Unique Good Subsequences](src/section02/code1987.rs) | [link](https://leetcode.com/problems/number-of-unique-good-subsequences/) | Medium | :heavy_check_mark: |
+| 1991 | [Find the Middle Index in Array](src/section02/code1991.rs) | [link](https://leetcode.com/problems/find-the-middle-index-in-array/) | Easy | :heavy_check_mark: |
+| 1992 | [Find All Groups of Farmland](src/section02/code1992.rs) | [link](https://leetcode.com/problems/find-all-groups-of-farmland/) | Medium | :heavy_check_mark: |
+| 1993 | [Operations on Tree](src/section02/code1993.rs) | [link](https://leetcode.com/problems/operations-on-tree/) | Hard | :heavy_check_mark: |
+| 1994 | [The Number of Good Subsets](src/section02/code1994.rs) | [link](https://leetcode.com/problems/the-number-of-good-subsets/) | Hard | :heavy_check_mark: |
+| 1995 | [Count Special Quadruplets](src/section02/code1995.rs) | [link](https://leetcode.com/problems/count-special-quadruplets/) | Easy | :heavy_check_mark: |
+| 1996 | [The Number of Weak Characters in the Game](src/section02/code1996.rs) | [link](https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/) | Medium | :heavy_check_mark: |
+| 1997 | [First Day Where You Have Been in All the Rooms](src/section02/code1997.rs) | [link](https://leetcode.com/problems/first-day-where-you-have-been-in-all-the-rooms/) | Hard | :heavy_check_mark: |
+| 1998 | [GCD Sort of an Array](src/section02/code1998.rs) | [link](https://leetcode.com/problems/gcd-sort-of-an-array/) | Medium | :heavy_check_mark: |
+| 2000 | [Reverse Prefix of Word](src/section02/code2000.rs) | [link](https://leetcode.com/problems/reverse-prefix-of-word/) | Easy | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
