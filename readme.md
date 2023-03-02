@@ -1704,6 +1704,22 @@ cargo test
 | 2007 | [Find Original Array From Doubled Array](src/section03/code2007.rs) | [link](https://leetcode.com/problems/find-original-array-from-doubled-array/) | Medium | :heavy_check_mark: |
 | 2008 | [Maximum Earnings From Taxi](src/section03/code2008.rs) | [link](https://leetcode.com/problems/maximum-earnings-from-taxi/) | Hard | :heavy_check_mark: |
 | 2009 | [Minimum Number of Operations to Make Array Continuous](src/section03/code2009.rs) | [link](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/) | Medium | :heavy_check_mark: |
+| 2011 | [Final Value of Variable After Performing Operations](src/section03/code2011.rs) | [link](https://leetcode.com/problems/final-value-of-variable-after-performing-operations/) | Easy | :heavy_check_mark: |
+| 2012 | [Sum of Beauty in the Array](src/section03/code2012.rs) | [link](https://leetcode.com/problems/sum-of-beauty-in-the-array/) | Medium | :heavy_check_mark: |
+| 2013 | [Detect Squares](src/section03/code2013.rs) | [link](https://leetcode.com/problems/detect-squares/) | Medium | :heavy_check_mark: |
+| 2014 | [Longest Subsequence Repeated K Times](src/section03/code2014.rs) | [link](https://leetcode.com/problems/longest-subsequence-repeated-k-times/) | Hard | :heavy_check_mark: |
+| 2016 | [Maximum Difference Between Increasing Elements](src/section03/code2016.rs) | [link](https://leetcode.com/problems/maximum-difference-between-increasing-elements/) | Easy | :heavy_check_mark: |
+| 2017 | [Grid Game](src/section03/code2017.rs) | [link](https://leetcode.com/problems/grid-game/) | Medium | :heavy_check_mark: |
+| 2018 | [Check If Word Can Be Placed In Crossword](src/section03/code2018.rs) | [link](https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/) | Medium | :heavy_check_mark: |
+| 2019 | [The Score of Students Solving Math Expression](src/section03/code2019.rs) | [link](https://leetcode.com/problems/the-score-of-students-solving-math-expression/) | Hard | :heavy_check_mark: |
+| 2022 | [Convert 1D Array Into 2D Array](src/section03/code2022.rs) | [link](https://leetcode.com/problems/convert-1d-array-into-2d-array/) | Easy | :heavy_check_mark: |
+| 2023 | [Number of Pairs of Strings With Concatenation Equal to Target](src/section03/code2023.rs) | [link](https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/) | Medium | :heavy_check_mark: |
+| 2024 | [Maximize the confusion of an exam](src/section03/code2024.rs) | [link](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/) | Medium | :heavy_check_mark: |
+| 2025 | [Maximum Number of Ways to Partition an Array](src/section03/code2025.rs) | [link](https://leetcode.com/problems/maximum-number-of-ways-to-partition-an-array/) | Hard | :heavy_check_mark: |
+| 2027 | [Minimum Moves to Convert String](src/section03/code2027.rs) | [link](https://leetcode.com/problems/minimum-moves-to-convert-string/) | Easy | :heavy_check_mark: |
+| 2028 | [Find Missing Observations](src/section03/code2028.rs) | [link](https://leetcode.com/problems/find-missing-observations/) | Medium | :heavy_check_mark: |
+| 2029 | [Stone Game IX](src/section03/code2029.rs) | [link](https://leetcode.com/problems/stone-game-ix/) | Hard | :heavy_check_mark: |
+| 2030 | [Smallest K-Length Subsequence with Occurrences of a Letter](src/section03/code2030.rs) | [link](https://leetcode.com/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter/) | Medium | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
