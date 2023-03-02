@@ -1739,6 +1739,17 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 2053 | [Kth Distinct String in an Array](src/section03/code2053.rs) | [link](https://leetcode.com/problems/kth-distinct-string-in-an-array/) | Medium | :heavy_check_mark: |
+| 2054 | [Two Best Non-Overlapping Events](src/section03/code2054.rs) | [link](https://leetcode.com/problems/two-best-non-overlapping-events/) | Hard | :heavy_check_mark: |
+| 2055 | [Plates Between Candles](src/section03/code2055.rs) | [link](https://leetcode.com/problems/plates-between-candles/) | Medium | :heavy_check_mark: |
+| 2056 | [Number of Valid Move Combinations On Chessboard](src/section03/code2056.rs) | [link](https://leetcode.com/problems/number-of-valid-move-combinations-on-chessboard/) | Hard | :heavy_check_mark: |
+| 2057 | [Smallest Index With Equal Value](src/section03/code2057.rs) | [link](https://leetcode.com/problems/smallest-index-with-equal-value/) | Medium | :heavy_check_mark: |
+| 2058 | [Find the Minimum and Maximum Number of Nodes Between Critical Points](src/section03/code2058.rs) | [link](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/) | Medium | :heavy_check_mark: |
+| 2059 | [Minimum Operations to Convert Number](src/section03/code2059.rs) | [link](https://leetcode.com/problems/minimum-operations-to-convert-number/) | Medium | :heavy_check_mark: |
+| 2060 | [Check if an Original String Exists Given Two Encoded Strings](src/section03/code2060.rs) | [link](https://leetcode.com/problems/check-if-an-original-string-exists-given-two-encoded-strings/) | Medium | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |

@@ -37,6 +37,14 @@ mod code2047;
 mod code2048;
 mod code2049;
 mod code2050;
+mod code2053;
+mod code2054;
+mod code2055;
+mod code2056;
+mod code2057;
+mod code2058;
+mod code2059;
+mod code2060;
 
 mod code2401;
 mod code2402;
