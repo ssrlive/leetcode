@@ -1720,6 +1720,22 @@ cargo test
 | 2028 | [Find Missing Observations](src/section03/code2028.rs) | [link](https://leetcode.com/problems/find-missing-observations/) | Medium | :heavy_check_mark: |
 | 2029 | [Stone Game IX](src/section03/code2029.rs) | [link](https://leetcode.com/problems/stone-game-ix/) | Hard | :heavy_check_mark: |
 | 2030 | [Smallest K-Length Subsequence with Occurrences of a Letter](src/section03/code2030.rs) | [link](https://leetcode.com/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter/) | Medium | :heavy_check_mark: |
+| 2032 | [Two Out of Three](src/section03/code2032.rs) | [link](https://leetcode.com/problems/two-out-of-three/) | Easy | :heavy_check_mark: |
+| 2033 | [Minimum Operations to Make a Uni-Value Grid](src/section03/code2033.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/) | Medium | :heavy_check_mark: |
+| 2034 | [Stock Price Fluctuation](src/section03/code2034.rs) | [link](https://leetcode.com/problems/stock-price-fluctuation/) | Hard | :heavy_check_mark: |
+| 2035 | [Partition Array Into Two Arrays to Minimize Sum Difference](src/section03/code2035.rs) | [link](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/) | Medium | :heavy_check_mark: |
+| 2037 | [Minimum Number of Moves to Seat Everyone](src/section03/code2037.rs) | [link](https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/) | Medium | :heavy_check_mark: |
+| 2038 | [Remove Colored Pieces if Both Neighbors are the Same Color](src/section03/code2038.rs) | [link](https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/) | Medium | :heavy_check_mark: |
+| 2039 | [The Time When the Network Becomes Idle](src/section03/code2039.rs) | [link](https://leetcode.com/problems/the-time-when-the-network-becomes-idle/) | Hard | :heavy_check_mark: |
+| 2040 | [Kth Smallest Product of Two Sorted Arrays](src/section03/code2040.rs) | [link](https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/) | Hard | :heavy_check_mark: |
+| 2042 | [Check if Numbers Are Ascending in a Sentence](src/section03/code2042.rs) | [link](https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence/) | Easy | :heavy_check_mark: |
+| 2043 | [Simple Bank System](src/section03/code2043.rs) | [link](https://leetcode.com/problems/simple-bank-system/) | Medium | :heavy_check_mark: |
+| 2044 | [Count Number of Maximum Bitwise-OR Subsets](src/section03/code2044.rs) | [link](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/) | Hard | :heavy_check_mark: |
+| 2045 | [Second Minimum Time to Reach Destination](src/section03/code2045.rs) | [link](https://leetcode.com/problems/second-minimum-time-to-reach-destination/) | Medium | :heavy_check_mark: |
+| 2047 | [Number of Valid Words in a Sentence](src/section03/code2047.rs) | [link](https://leetcode.com/problems/number-of-valid-words-for-each-puzzle/) | Medium | :heavy_check_mark: |
+| 2048 | [Next Greater Numberically Balanced Number](src/section03/code2048.rs) | [link](https://leetcode.com/problems/next-greater-numberically-balanced-number/) | Medium | :heavy_check_mark: |
+| 2049 | [Count Nodes With the Highest Score](src/section03/code2049.rs) | [link](https://leetcode.com/problems/count-nodes-with-the-highest-score/) | Hard | :heavy_check_mark: |
+| 2050 | [Parallel Courses III](src/section03/code2050.rs) | [link](https://leetcode.com/problems/parallel-courses-iii/) | Hard | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
