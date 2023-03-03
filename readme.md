@@ -1763,6 +1763,20 @@ cargo test
 | 2079 | [Watering Plants](src/section03/code2079.rs) | [link](https://leetcode.com/problems/watering-plants/) | Medium | :heavy_check_mark: |
 | 2080 | [Range Frequency Queries](src/section03/code2080.rs) | [link](https://leetcode.com/problems/range-frequency-queries/) | Medium | :heavy_check_mark: |
 | 2081 | [Sum of k-Mirror Numbers](src/section03/code2081.rs) | [link](https://leetcode.com/problems/sum-of-k-mirror-numbers/) | Medium | :heavy_check_mark: |
+| 2085 | [Count Common Words With One Occurrence](src/section03/code2085.rs) | [link](https://leetcode.com/problems/count-common-words-with-one-occurrence/) | Medium | :heavy_check_mark: |
+| 2086 | [Minimum Number of Food Buckets to Feed the Hamsters](src/section03/code2086.rs) | [link](https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/) | Medium | :heavy_check_mark: |
+| 2087 | [Minimum Cost Homecoming of a Robot in a Grid](src/section03/code2087.rs) | [link](https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/) | Medium | :heavy_check_mark: |
+| 2088 | [Count Fertile Pyramids in a Land](src/section03/code2088.rs) | [link](https://leetcode.com/problems/count-fertile-pyramids-in-a-land/) | Medium | :heavy_check_mark: |
+| 2089 | [Find Target Indices After Sorting Array](src/section03/code2089.rs) | [link](https://leetcode.com/problems/find-target-indices-after-sorting-array/) | Medium | :heavy_check_mark: |
+| 2090 | [K Radius Subarray Averages](src/section03/code2090.rs) | [link](https://leetcode.com/problems/k-radius-subarray-averages/) | Medium | :heavy_check_mark: |
+| 2091 | [Removing Minimum and Maximum From Array](src/section03/code2091.rs) | [link](https://leetcode.com/problems/removing-minimum-and-maximum-from-array/) | Medium | :heavy_check_mark: |
+| 2092 | [Find All People With Secret](src/section03/code2092.rs) | [link](https://leetcode.com/problems/find-all-people-with-secret/) | Medium | :heavy_check_mark: |
+| 2094 | [Finding 3-Digit Even Numbers](src/section03/code2094.rs) | [link](https://leetcode.com/problems/finding-3-digit-even-numbers/) | Medium | :heavy_check_mark: |
+| 2095 | [Delete the Middle Node of a Linked List](src/section03/code2095.rs) | [link](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) | Medium | :heavy_check_mark: |
+| 2096 | [Step-By-Step Directions From a Binary Tree Node to Another](src/section03/code2096.rs) | [link](https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/) | Medium | :heavy_check_mark: |
+| 2097 | [Valid Arrangement of Pairs](src/section03/code2097.rs) | [link](https://leetcode.com/problems/valid-arrangement-of-pairs/) | Medium | :heavy_check_mark: |
+| 2099 | [Find Subsequence of Length K With the Largest Sum](src/section03/code2099.rs) | [link](https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/) | Medium | :heavy_check_mark: |
+| 2100 | [Find Good Days to Rob the Bank](src/section03/code2100.rs) | [link](https://leetcode.com/problems/find-good-days-to-rob-the-bank/) | Medium | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
