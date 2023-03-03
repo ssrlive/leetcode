@@ -1780,6 +1780,19 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 2101 | [Detonate the Maximum Bombs](src/section03/code2101.rs) | [link](https://leetcode.com/problems/detonate-the-maximum-bombs/) | Medium | :heavy_check_mark: |
+| 2102 | [Sequentially Ordinal Rank Tracker](src/section03/code2102.rs) | [link](https://leetcode.com/problems/sequentially-ordinal-rank-tracker/) | Medium | :heavy_check_mark: |
+| 2103 | [Rings and Rods](src/section03/code2103.rs) | [link](https://leetcode.com/problems/rings-and-rods/) | Medium | :heavy_check_mark: |
+| 2104 | [Sum of Subarray Ranges](src/section03/code2104.rs) | [link](https://leetcode.com/problems/sum-of-subarray-ranges/) | Medium | :heavy_check_mark: |
+| 2105 | [Watering Plants II](src/section03/code2105.rs) | [link](https://leetcode.com/problems/watering-plants-ii/) | Medium | :heavy_check_mark: |
+| 2106 | [Maximum Fruits Harvested After at Most K Steps](src/section03/code2106.rs) | [link](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/) | Medium | :heavy_check_mark: |
+| 2108 | [Find First Palindromic String in the Array](src/section03/code2108.rs) | [link](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/) | Medium | :heavy_check_mark: |
+| 2109 | [Adding Spaces to a String](src/section03/code2109.rs) | [link](https://leetcode.com/problems/adding-spaces-to-a-string/) | Medium | :heavy_check_mark: |
+| 2110 | [Number of Smooth Descent Periods of a Stock](src/section03/code2110.rs) | [link](https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/) | Medium | :heavy_check_mark: |
+| 2111 | [Minimum Operations to Make the Array K-Increasing](src/section03/code2111.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-the-array-k-increasing/) | Medium | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |

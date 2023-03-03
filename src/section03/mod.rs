@@ -75,6 +75,16 @@ mod code2096;
 mod code2097;
 mod code2099;
 mod code2100;
+mod code2101;
+mod code2102;
+mod code2103;
+mod code2104;
+mod code2105;
+mod code2106;
+mod code2108;
+mod code2109;
+mod code2110;
+mod code2111;
 
 mod code2401;
 mod code2402;
