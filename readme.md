@@ -1747,6 +1747,22 @@ cargo test
 | 2058 | [Find the Minimum and Maximum Number of Nodes Between Critical Points](src/section03/code2058.rs) | [link](https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/) | Medium | :heavy_check_mark: |
 | 2059 | [Minimum Operations to Convert Number](src/section03/code2059.rs) | [link](https://leetcode.com/problems/minimum-operations-to-convert-number/) | Medium | :heavy_check_mark: |
 | 2060 | [Check if an Original String Exists Given Two Encoded Strings](src/section03/code2060.rs) | [link](https://leetcode.com/problems/check-if-an-original-string-exists-given-two-encoded-strings/) | Medium | :heavy_check_mark: |
+| 2062 | [Count Vowel Substrings of a String](src/section03/code2062.rs) | [link](https://leetcode.com/problems/count-vowel-substrings-of-a-string/) | Medium | :heavy_check_mark: |
+| 2063 | [Vowels of All Substrings](src/section03/code2063.rs) | [link](https://leetcode.com/problems/vowels-of-all-substrings/) | Medium | :heavy_check_mark: |
+| 2064 | [Minimized Maximum of Products Distributed to Any Store](src/section03/code2064.rs) | [link](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/) | Hard | :heavy_check_mark: |
+| 2065 | [Maximum Path Quality of a Graph](src/section03/code2065.rs) | [link](https://leetcode.com/problems/maximum-path-quality-of-a-graph/) | Hard | :heavy_check_mark: |
+| 2068 | [Check Whether Two Strings are Almost Equivalent](src/section03/code2068.rs) | [link](https://leetcode.com/problems/check-whether-two-strings-are-almost-equivalent/) | Easy | :heavy_check_mark: |
+| 2069 | [Walking Robot Simulation II](src/section03/code2069.rs) | [link](https://leetcode.com/problems/walking-robot-simulation-ii/) | Medium | :heavy_check_mark: |
+| 2070 | [Most Beautiful Item for Each Query](src/section03/code2070.rs) | [link](https://leetcode.com/problems/most-beautiful-item-for-each-query/) | Medium | :heavy_check_mark: |
+| 2071 | [Maximum Number of Tasks You Can Assign](src/section03/code2071.rs) | [link](https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/) | Hard | :x: |
+| 2073 | [Time Needed to Buy Tickets](src/section03/code2073.rs) | [link](https://leetcode.com/problems/time-needed-to-buy-tickets/) | Medium | :heavy_check_mark: |
+| 2074 | [Reverse Nodes in Even Length Groups](src/section03/code2074.rs) | [link](https://leetcode.com/problems/reverse-nodes-in-even-length-groups/) | Medium | :heavy_check_mark: |
+| 2075 | [Decode the Slanted Ciphertext](src/section03/code2075.rs) | [link](https://leetcode.com/problems/decode-the-slanted-ciphertext/) | Medium | :heavy_check_mark: |
+| 2076 | [Process Restricted Friend Requests](src/section03/code2076.rs) | [link](https://leetcode.com/problems/process-restricted-friend-requests/) | Medium | :heavy_check_mark: |
+| 2078 | [Two Furthest Houses With Different Colors](src/section03/code2078.rs) | [link](https://leetcode.com/problems/two-furthest-houses-with-different-colors/) | Medium | :heavy_check_mark: |
+| 2079 | [Watering Plants](src/section03/code2079.rs) | [link](https://leetcode.com/problems/watering-plants/) | Medium | :heavy_check_mark: |
+| 2080 | [Range Frequency Queries](src/section03/code2080.rs) | [link](https://leetcode.com/problems/range-frequency-queries/) | Medium | :heavy_check_mark: |
+| 2081 | [Sum of k-Mirror Numbers](src/section03/code2081.rs) | [link](https://leetcode.com/problems/sum-of-k-mirror-numbers/) | Medium | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
