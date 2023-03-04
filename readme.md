@@ -1790,6 +1790,22 @@ cargo test
 | 2109 | [Adding Spaces to a String](src/section03/code2109.rs) | [link](https://leetcode.com/problems/adding-spaces-to-a-string/) | Medium | :heavy_check_mark: |
 | 2110 | [Number of Smooth Descent Periods of a Stock](src/section03/code2110.rs) | [link](https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/) | Medium | :heavy_check_mark: |
 | 2111 | [Minimum Operations to Make the Array K-Increasing](src/section03/code2111.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-the-array-k-increasing/) | Medium | :heavy_check_mark: |
+| 2114 | [Maximum Number of Words Found in Sentences](src/section03/code2114.rs) | [link](https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/) | Medium | :heavy_check_mark: |
+| 2115 | [Find All Possible Recipes from Given Supplies](src/section03/code2115.rs) | [link](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/) | Medium | :heavy_check_mark: |
+| 2116 | [Check if a Parentheses String Can Be Valid](src/section03/code2116.rs) | [link](https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/) | Medium | :heavy_check_mark: |
+| 2117 | [Abbreviating the Product of a Range](src/section03/code2117.rs) | [link](https://leetcode.com/problems/abbreviating-the-product-of-a-range/) | Medium | :heavy_check_mark: |
+| 2119 | [A Number After a Double Reversal](src/section03/code2119.rs) | [link](https://leetcode.com/problems/a-number-after-a-double-reversal/) | Medium | :heavy_check_mark: |
+| 2120 | [Execution of All Suffix Instructions Staying in a Grid](src/section03/code2120.rs) | [link](https://leetcode.com/problems/execution-of-all-suffix-instructions-staying-in-a-grid/) | Medium | :heavy_check_mark: |
+| 2121 | [Intervals Between Identical Elements](src/section03/code2121.rs) | [link](https://leetcode.com/problems/intervals-between-identical-elements/) | Medium | :heavy_check_mark: |
+| 2122 | [Recover the Original Array](src/section03/code2122.rs) | [link](https://leetcode.com/problems/recover-the-original-array/) | Medium | :heavy_check_mark: |
+| 2124 | [Check if All A's Appears Before All B's](src/section03/code2124.rs) | [link](https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/) | Medium | :heavy_check_mark: |
+| 2125 | [Number of Laser Beams in a Bank](src/section03/code2125.rs) | [link](https://leetcode.com/problems/number-of-laser-beams-in-a-bank/) | Medium | :heavy_check_mark: |
+| 2126 | [Destroying Asteroids](src/section03/code2126.rs) | [link](https://leetcode.com/problems/destroying-asteroids/) | Medium | :heavy_check_mark: |
+| 2127 | [Maximum Employees to Be Invited to a Meeting](src/section03/code2127.rs) | [link](https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/) | Medium | :heavy_check_mark: |
+| 2129 | [Capitalize the Title](src/section03/code2129.rs) | [link](https://leetcode.com/problems/capitalize-the-title/) | Medium | :heavy_check_mark: |
+| 2130 | [Maximum Twin Sum of a Linked List](src/section03/code2130.rs) | [link](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) | Medium | :heavy_check_mark: |
+| 2131 | [Longest Palindrome by Concatenating Two Letter Words](src/section03/code2131.rs) | [link](https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/) | Medium | :heavy_check_mark: |
+| 2132 | [Stamping the Grid](src/section03/code2132.rs) | [link](https://leetcode.com/problems/stamping-the-grid/) | Medium | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
