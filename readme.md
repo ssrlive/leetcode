@@ -1824,6 +1824,22 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 2151 | [Maximum Good People Based on Statements](src/section03/code2151.rs) | [link](https://leetcode.com/problems/maximum-good-people-based-on-statements/) | Medium | :heavy_check_mark: |
+| 2154 | [Keep Multiplying Found Values by Two](src/section03/code2154.rs) | [link](https://leetcode.com/problems/keep-multiplying-found-values-by-two/) | Medium | :heavy_check_mark: |
+| 2155 | [All Divisions With the Highest Score of a Binary Array](src/section03/code2155.rs) | [link](https://leetcode.com/problems/all-divisions-with-the-highest-score-of-a-binary-array/) | Medium | :heavy_check_mark: |
+| 2156 | [Find Substring With Given Hash Value](src/section03/code2156.rs) | [link](https://leetcode.com/problems/find-substring-with-given-hash-value/) | Medium | :heavy_check_mark: |
+| 2157 | [Groups of Strings](src/section03/code2157.rs) | [link](https://leetcode.com/problems/groups-of-strings/) | Medium | :heavy_check_mark: |
+| 2160 | [Minimum Sum of Four Digit Number After Splitting Digits](src/section03/code2160.rs) | [link](https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/) | Medium | :heavy_check_mark: |
+| 2161 | [Partition Array According to Given Pivot](src/section03/code2161.rs) | [link](https://leetcode.com/problems/partition-array-according-to-given-pivot/) | Medium | :heavy_check_mark: |
+| 2162 | [Minimum Cost to Set Cooking Time](src/section03/code2162.rs) | [link](https://leetcode.com/problems/minimum-cost-to-set-cooking-time/) | Medium | :heavy_check_mark: |
+| 2163 | [Minimum Difference in Sums After Removal of Elements](src/section03/code2163.rs) | [link](https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/) | Medium | :heavy_check_mark: |
+| 2164 | [Sort Even and Odd Indices Independently](src/section03/code2164.rs) | [link](https://leetcode.com/problems/sort-even-and-odd-indices-independently/) | Medium | :heavy_check_mark: |
+| 2165 | [Smallest Value of the Rearranged Number](src/section03/code2165.rs) | [link](https://leetcode.com/problems/smallest-value-of-the-rearranged-number/) | Medium | :heavy_check_mark: |
+| 2166 | [Design Bitset](src/section03/code2166.rs) | [link](https://leetcode.com/problems/design-bitset/) | Medium | :heavy_check_mark: |
+| 2167 | [Minimum Time to Remove All Cars Containing Illegal Goods](src/section03/code2167.rs) | [link](https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/) | Medium | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
