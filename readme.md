@@ -1806,6 +1806,21 @@ cargo test
 | 2130 | [Maximum Twin Sum of a Linked List](src/section03/code2130.rs) | [link](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) | Medium | :heavy_check_mark: |
 | 2131 | [Longest Palindrome by Concatenating Two Letter Words](src/section03/code2131.rs) | [link](https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/) | Medium | :heavy_check_mark: |
 | 2132 | [Stamping the Grid](src/section03/code2132.rs) | [link](https://leetcode.com/problems/stamping-the-grid/) | Medium | :heavy_check_mark: |
+| 2133 | [Check if Every Row and Column Contains All Numbers](src/section03/code2133.rs) | [link](https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/) | Medium | :heavy_check_mark: |
+| 2134 | [Minimum Swaps to Group All 1's Together II](src/section03/code2134.rs) | [link](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/) | Medium | :heavy_check_mark: |
+| 2135 | [Count Words Obtained After Adding a Letter](src/section03/code2135.rs) | [link](https://leetcode.com/problems/count-words-obtained-after-adding-a-letter/) | Medium | :heavy_check_mark: |
+| 2136 | [Earliest Possible Day of Full Bloom](src/section03/code2136.rs) | [link](https://leetcode.com/problems/earliest-possible-day-of-full-bloom/) | Medium | :heavy_check_mark: |
+| 2138 | [Divide a String Into Groups of Size k](src/section03/code2138.rs) | [link](https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/) | Medium | :heavy_check_mark: |
+| 2139 | [Minimum Moves to Reach Target Score](src/section03/code2139.rs) | [link](https://leetcode.com/problems/minimum-moves-to-reach-target-score/) | Medium | :heavy_check_mark: |
+| 2140 | [Solving Questions With Brainpower](src/section03/code2140.rs) | [link](https://leetcode.com/problems/solving-questions-with-brainpower/) | Medium | :heavy_check_mark: |
+| 2141 | [Maximum Running Time of N Computers](src/section03/code2141.rs) | [link](https://leetcode.com/problems/maximum-running-time-of-n-computers/) | Medium | :heavy_check_mark: |
+| 2144 | [Minimum Cost of Buying Candies With Discount](src/section03/code2144.rs) | [link](https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/) | Medium | :heavy_check_mark: |
+| 2145 | [Count the Hidden Sequences](src/section03/code2145.rs) | [link](https://leetcode.com/problems/count-the-hidden-sequences/) | Medium | :heavy_check_mark: |
+| 2146 | [K Highest Ranked Items Within a Price Range](src/section03/code2146.rs) | [link](https://leetcode.com/problems/k-highest-ranked-items-within-a-price-range/) | Medium | :heavy_check_mark: |
+| 2147 | [Number of Ways to Divide a Long Corridor](src/section03/code2147.rs) | [link](https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor/) | Medium | :heavy_check_mark: |
+| 2148 | [Count Elements With Strictly Smaller and Greater Elements](src/section03/code2148.rs) | [link](https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/) | Medium | :heavy_check_mark: |
+| 2149 | [Rearrange Array Elements by Sign](src/section03/code2149.rs) | [link](https://leetcode.com/problems/rearrange-array-elements-by-sign/) | Medium | :heavy_check_mark: |
+| 2150 | [Find All Lonely Numbers in the Array](src/section03/code2150.rs) | [link](https://leetcode.com/problems/find-all-lonely-numbers-in-the-array/) | Easy | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
