@@ -1837,6 +1837,18 @@ cargo test
 | 2165 | [Smallest Value of the Rearranged Number](src/section03/code2165.rs) | [link](https://leetcode.com/problems/smallest-value-of-the-rearranged-number/) | Medium | :heavy_check_mark: |
 | 2166 | [Design Bitset](src/section03/code2166.rs) | [link](https://leetcode.com/problems/design-bitset/) | Medium | :heavy_check_mark: |
 | 2167 | [Minimum Time to Remove All Cars Containing Illegal Goods](src/section03/code2167.rs) | [link](https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/) | Medium | :heavy_check_mark: |
+| 2169 | [Count Operations to Obtain Zero](src/section03/code2169.rs) | [link](https://leetcode.com/problems/count-operations-to-obtain-zero/) | Medium | :heavy_check_mark: |
+| 2170 | [Minimum Operations to Make the Array Alternating](src/section03/code2170.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/) | Medium | :heavy_check_mark: |
+| 2171 | [Removing Minimum Number of Magic Beans](src/section03/code2171.rs) | [link](https://leetcode.com/problems/removing-minimum-number-of-magic-beans/) | Medium | :heavy_check_mark: |
+| 2172 | [Maximum AND Sum of Array](src/section03/code2172.rs) | [link](https://leetcode.com/problems/maximum-and-sum-of-array/) | Medium | :heavy_check_mark: |
+| 2176 | [Count Equal and Divisible Pairs in an Array](src/section03/code2176.rs) | [link](https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array/) | Medium | :heavy_check_mark: |
+| 2177 | [Find Three Consecutive Integers That Sum to a Given Number](src/section03/code2177.rs) | [link](https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/) | Medium | :heavy_check_mark: |
+| 2178 | [Maximum Split of Positive Even Integers](src/section03/code2178.rs) | [link](https://leetcode.com/problems/maximum-split-of-positive-even-integers/) | Medium | :heavy_check_mark: |
+| 2179 | [Count Good Triplets in an Array](src/section03/code2179.rs) | [link](https://leetcode.com/problems/count-good-triplets-in-an-array/) | Medium | :heavy_check_mark: |
+| 2180 | [Count Integers With Even Digit Sum](src/section03/code2180.rs) | [link](https://leetcode.com/problems/count-integers-with-even-digit-sum/) | Medium | :heavy_check_mark: |
+| 2181 | [Merge Nodes in Between Zeros](src/section03/code2181.rs) | [link](https://leetcode.com/problems/merge-nodes-in-between-zeros/) | Medium | :heavy_check_mark: |
+| 2182 | [Construct String With Repeat Limit](src/section03/code2182.rs) | [link](https://leetcode.com/problems/construct-string-with-repeat-limit/) | Medium | :heavy_check_mark: |
+| 2183 | [Count Array Pairs Divisible by K](src/section03/code2183.rs) | [link](https://leetcode.com/problems/count-array-pairs-divisible-by-k/) | Medium | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
