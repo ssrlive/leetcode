@@ -1849,6 +1849,19 @@ cargo test
 | 2181 | [Merge Nodes in Between Zeros](src/section03/code2181.rs) | [link](https://leetcode.com/problems/merge-nodes-in-between-zeros/) | Medium | :heavy_check_mark: |
 | 2182 | [Construct String With Repeat Limit](src/section03/code2182.rs) | [link](https://leetcode.com/problems/construct-string-with-repeat-limit/) | Medium | :heavy_check_mark: |
 | 2183 | [Count Array Pairs Divisible by K](src/section03/code2183.rs) | [link](https://leetcode.com/problems/count-array-pairs-divisible-by-k/) | Medium | :heavy_check_mark: |
+| 2185 | [Counting Words With a Given Prefix](src/section03/code2185.rs) | [link](https://leetcode.com/problems/counting-words-with-a-given-prefix/) | Medium | :heavy_check_mark: |
+| 2186 | [Minimum Number of Steps to Make Two Strings Anagram II](src/section03/code2186.rs) | [link](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/) | Medium | :heavy_check_mark: |
+| 2187 | [Minimum Time to Complete Trips](src/section03/code2187.rs) | [link](https://leetcode.com/problems/minimum-time-to-complete-trips/) | Medium | :heavy_check_mark: |
+| 2188 | [Minimum Time to Finish the Race](src/section03/code2188.rs) | [link](https://leetcode.com/problems/minimum-time-to-finish-the-race/) | Medium | :heavy_check_mark: |
+| 2190 | [Most Frequent Number Following Key In an Array](src/section03/code2190.rs) | [link](https://leetcode.com/problems/most-frequent-number-following-key-in-an-array/) | Medium | :heavy_check_mark: |
+| 2191 | [Sort the Jumbled Numbers](src/section03/code2191.rs) | [link](https://leetcode.com/problems/sort-the-jumbled-numbers/) | Medium | :heavy_check_mark: |
+| 2192 | [All Ancestors of a Node in a Directed Acyclic Graph](src/section03/code2192.rs) | [link](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/) | Medium | :heavy_check_mark: |
+| 2193 | [Minimum Number of Moves to Make Palindrome](src/section03/code2193.rs) | [link](https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/) | Medium | :heavy_check_mark: |
+| 2194 | [Cells in a Range on an Excel Sheet](src/section03/code2194.rs) | [link](https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/) | Medium | :heavy_check_mark: |
+| 2195 | [Append K Integers With Minimal Sum](src/section03/code2195.rs) | [link](https://leetcode.com/problems/append-k-integers-with-minimal-sum/) | Medium | :heavy_check_mark: |
+| 2196 | [Create Binary Tree From Descriptions](src/section03/code2196.rs) | [link](https://leetcode.com/problems/create-binary-tree-from-descriptions/) | Medium | :heavy_check_mark: |
+| 2197 | [Replace Non-Coprime Numbers in Array](src/section03/code2197.rs) | [link](https://leetcode.com/problems/replace-non-coprime-numbers-in-array/) | Medium | :heavy_check_mark: |
+| 2200 | [Find All K-Distant Indices in an Array](src/section03/code2200.rs) | [link](https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/) | Medium | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
