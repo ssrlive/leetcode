@@ -1865,6 +1865,32 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 2201 | [Count Artifacts That Can Be Extracted](src/section03/code2201.rs) | [link](https://leetcode.com/problems/count-artifacts-that-can-be-extracted/) | Medium | :heavy_check_mark: |
+| 2202 | [Maximize the Topmost Element After K Moves](src/section03/code2202.rs) | [link](https://leetcode.com/problems/maximize-the-topmost-element-after-k-moves/) | Medium | :heavy_check_mark: |
+| 2203 | [Minimum Weighted Subgraph With the Required Paths](src/section03/code2203.rs) | [link](https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths/) | Medium | :heavy_check_mark: |
+| 2206 | [Divide Array Into Equal Pairs](src/section03/code2206.rs) | [link](https://leetcode.com/problems/divide-array-into-equal-pairs/) | Medium | :heavy_check_mark: |
+| 2207 | [Maximize Number of Subsequences in a String](src/section03/code2207.rs) | [link](https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/) | Medium | :heavy_check_mark: |
+| 2208 | [Minimum Operations to Halve Array Sum](src/section03/code2208.rs) | [link](https://leetcode.com/problems/minimum-operations-to-halve-array-sum/) | Medium | :heavy_check_mark: |
+| 2209 | [Minimum White Tiles After Covering With Carpets](src/section03/code2209.rs) | [link](https://leetcode.com/problems/minimum-white-tiles-after-covering-with-carpets/) | Medium | :heavy_check_mark: |
+| 2210 | [Count Hills and Valleys in an Array](src/section03/code2210.rs) | [link](https://leetcode.com/problems/count-hills-and-valleys-in-an-array/) | Medium | :heavy_check_mark: |
+| 2211 | [Count Collisions on a Road](src/section03/code2211.rs) | [link](https://leetcode.com/problems/count-collisions-on-a-road/) | Medium | :heavy_check_mark: |
+| 2212 | [Maximum Points in an Archery Competition](src/section03/code2212.rs) | [link](https://leetcode.com/problems/maximum-points-in-an-archery-competition/) | Medium | :heavy_check_mark: |
+| 2213 | [Longest Substring of One Repeating Character](src/section03/code2213.rs) | [link](https://leetcode.com/problems/longest-substring-of-one-repeating-character/) | Medium | :heavy_check_mark: |
+| 2215 | [Find the Difference of Two Arrays](src/section03/code2215.rs) | [link](https://leetcode.com/problems/find-the-difference-of-two-arrays/) | Medium | :heavy_check_mark: |
+| 2216 | [Minimum Deletions to Make Array Beautiful](src/section03/code2216.rs) | [link](https://leetcode.com/problems/minimum-deletions-to-make-array-beautiful/) | Medium | :heavy_check_mark: |
+| 2217 | [Find Palindrome With Fixed Length](src/section03/code2217.rs) | [link](https://leetcode.com/problems/find-palindrome-with-fixed-length/) | Medium | :heavy_check_mark: |
+| 2218 | [Maximum Value of K Coins From Piles](src/section03/code2218.rs) | [link](https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/) | Medium | :heavy_check_mark: |
+| 2220 | [Minimum Bit Flips to Convert Number](src/section03/code2220.rs) | [link](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/) | Medium | :heavy_check_mark: |
+| 2221 | [Find Triangular Sum of an Array](src/section03/code2221.rs) | [link](https://leetcode.com/problems/find-triangular-sum-of-an-array/) | Medium | :heavy_check_mark: |
+| 2222 | [Number of Ways to Select Buildings](src/section03/code2222.rs) | [link](https://leetcode.com/problems/number-of-ways-to-select-buildings/) | Medium | :heavy_check_mark: |
+| 2223 | [Sum of Scores of Built Strings](src/section03/code2223.rs) | [link](https://leetcode.com/problems/sum-of-scores-of-built-strings/) | Medium | :heavy_check_mark: |
+| 2224 | [Minimum Number of Operations to Convert Time](src/section03/code2224.rs) | [link](https://leetcode.com/problems/minimum-number-of-operations-to-convert-time/) | Medium | :heavy_check_mark: |
+| 2225 | [Find Players With Zero or One Losses](src/section03/code2225.rs) | [link](https://leetcode.com/problems/find-players-with-zero-or-one-losses/) | Medium | :heavy_check_mark: |
+| 2226 | [Maximum Candies Allocated to K Children](src/section03/code2226.rs) | [link](https://leetcode.com/problems/maximum-candies-allocated-to-k-children/) | Medium | :heavy_check_mark: |
+| 2227 | [Encrypt and Decrypt Strings](src/section03/code2227.rs) | [link](https://leetcode.com/problems/encrypt-and-decrypt-strings/) | Medium | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
