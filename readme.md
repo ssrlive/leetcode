@@ -1929,6 +1929,24 @@ cargo test
 | 2274 | [Maximum Consecutive Floors Without Special Floors](src/section03/code2274.rs) | [link](https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/) | Medium | :heavy_check_mark: |
 | 2275 | [Largest Combination With Bitwise AND Greater Than Zero](src/section03/code2275.rs) | [link](https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/) | Medium | :heavy_check_mark: |
 | 2276 | [Count Integers in Intervals](src/section03/code2276.rs) | [link](https://leetcode.com/problems/count-integers-in-intervals/) | Medium | :heavy_check_mark: |
+| 2278 | [Percentage of Letter in String](src/section03/code2278.rs) | [link](https://leetcode.com/problems/percentage-of-letter-in-string/) | Medium | :heavy_check_mark: |
+| 2279 | [Maximum Bags With Full Capacity of Rocks](src/section03/code2279.rs) | [link](https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/) | Medium | :heavy_check_mark: |
+| 2280 | [Minimum Lines to Represent a Line Chart](src/section03/code2280.rs) | [link](https://leetcode.com/problems/minimum-lines-to-represent-a-line-chart/) | Medium | :heavy_check_mark: |
+| 2281 | [Sum of Total Strength of Wizards](src/section03/code2281.rs) | [link](https://leetcode.com/problems/sum-of-total-strength-of-wizards/) | Medium | :heavy_check_mark: |
+| 2283 | [Check if Number Has Equal Digit Count and Digit Value](src/section03/code2283.rs) | [link](https://leetcode.com/problems/check-if-number-has-equal-digit-count-and-digit-value/) | Medium | :heavy_check_mark: |
+| 2284 | [Sender With Largest Word Count](src/section03/code2284.rs) | [link](https://leetcode.com/problems/sender-with-largest-word-count/) | Medium | :heavy_check_mark: |
+| 2285 | [Maximum Total Importance of Roads](src/section03/code2285.rs) | [link](https://leetcode.com/problems/maximum-total-importance-of-roads/) | Medium | :heavy_check_mark: |
+| 2286 | [Booking Concert Tickets in Groups](src/section03/code2286.rs) | [link](https://leetcode.com/problems/booking-concert-tickets-in-groups/) | Medium | :heavy_check_mark: |
+| 2287 | [Rearrange Characters to Make Target String](src/section03/code2287.rs) | [link](https://leetcode.com/problems/rearrange-characters-to-make-target-string/) | Medium | :heavy_check_mark: |
+| 2288 | [Apply Discount to Prices](src/section03/code2288.rs) | [link](https://leetcode.com/problems/apply-discount-to-prices/) | Medium | :heavy_check_mark: |
+| 2289 | [Steps to Make Array Non-decreasing](src/section03/code2289.rs) | [link](https://leetcode.com/problems/steps-to-make-array-non-decreasing/) | Medium | :heavy_check_mark: |
+| 2290 | [Minimum Obstacle Removal to Reach Corner](src/section03/code2290.rs) | [link](https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/) | Medium | :heavy_check_mark: |
+| 2293 | [Min Max Game](src/section03/code2293.rs) | [link](https://leetcode.com/problems/min-max-game/) | Medium | :heavy_check_mark: |
+| 2294 | [Partition Array Such That Maximum Difference Is K](src/section03/code2294.rs) | [link](https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/) | Medium | :heavy_check_mark: |
+| 2295 | [Replace Elements in an Array](src/section03/code2295.rs) | [link](https://leetcode.com/problems/replace-elements-in-an-array/) | Medium | :heavy_check_mark: |
+| 2296 | [Design a Text Editor](src/section03/code2296.rs) | [link](https://leetcode.com/problems/design-a-text-editor/) | Medium | :heavy_check_mark: |
+| 2299 | [Strong Password Checker II](src/section03/code2299.rs) | [link](https://leetcode.com/problems/strong-password-checker-ii/) | Hard | :heavy_check_mark: |
+| 2300 | [Successful Pairs of Spells and Potions](src/section03/code2300.rs) | [link](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/) | Medium | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
