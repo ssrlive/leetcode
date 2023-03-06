@@ -1888,6 +1888,23 @@ cargo test
 | 2225 | [Find Players With Zero or One Losses](src/section03/code2225.rs) | [link](https://leetcode.com/problems/find-players-with-zero-or-one-losses/) | Medium | :heavy_check_mark: |
 | 2226 | [Maximum Candies Allocated to K Children](src/section03/code2226.rs) | [link](https://leetcode.com/problems/maximum-candies-allocated-to-k-children/) | Medium | :heavy_check_mark: |
 | 2227 | [Encrypt and Decrypt Strings](src/section03/code2227.rs) | [link](https://leetcode.com/problems/encrypt-and-decrypt-strings/) | Medium | :heavy_check_mark: |
+| 2231 | [Largest Number After Digit Swaps by Parity](src/section03/code2231.rs) | [link](https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/) | Medium | :heavy_check_mark: |
+| 2232 | [Minimize Result by Adding Parentheses to Expression](src/section03/code2232.rs) | [link](https://leetcode.com/problems/minimize-result-by-adding-parentheses-to-expression/) | Medium | :heavy_check_mark: |
+| 2233 | [Maximum Product After K Increments](src/section03/code2233.rs) | [link](https://leetcode.com/problems/maximum-product-after-k-increments/) | Medium | :heavy_check_mark: |
+| 2234 | [Maximum Total Beauty of the Gardens](src/section03/code2234.rs) | [link](https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/) | Medium | :heavy_check_mark: |
+| 2235 | [Add Two Integers](src/section03/code2235.rs) | [link](https://leetcode.com/problems/add-two-integers/) | Medium | :heavy_check_mark: |
+| 2236 | [Root Equals Sum of Children](src/section03/code2236.rs) | [link](https://leetcode.com/problems/root-equals-sum-of-children/) | Medium | :heavy_check_mark: |
+| 2239 | [Find Closest Number to Zero](src/section03/code2239.rs) | [link](https://leetcode.com/problems/find-closest-number-to-zero/) | Medium | :heavy_check_mark: |
+| 2240 | [Number of Ways to Buy Pens and Pencils](src/section03/code2240.rs) | [link](https://leetcode.com/problems/number-of-ways-to-buy-pens-and-pencils/) | Medium | :heavy_check_mark: |
+| 2241 | [Design an ATM Machine](src/section03/code2241.rs) | [link](https://leetcode.com/problems/design-an-atm-machine/) | Medium | :heavy_check_mark: |
+| 2242 | [Maximum Score of a Node Sequence](src/section03/code2242.rs) | [link](https://leetcode.com/problems/maximum-score-of-a-node-sequence/) | Hard | :heavy_check_mark: |
+| 2243 | [Calculate Digit Sum of a String](src/section03/code2243.rs) | [link](https://leetcode.com/problems/calculate-digit-sum-of-a-string/) | Medium | :heavy_check_mark: |
+| 2244 | [Minimum Rounds to Complete All Tasks](src/section03/code2244.rs) | [link](https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/) | Medium | :heavy_check_mark: |
+| 2245 | [Maximum Trailing Zeros in a Cornered Path](src/section03/code2245.rs) | [link](https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/) | Medium | :heavy_check_mark: |
+| 2246 | [Longest Path With Different Adjacent Characters](src/section03/code2246.rs) | [link](https://leetcode.com/problems/longest-path-with-different-adjacent-characters/) | Medium | :heavy_check_mark: |
+| 2248 | [Intersection of Multiple Arrays](src/section03/code2248.rs) | [link](https://leetcode.com/problems/intersection-of-multiple-arrays/) | Medium | :heavy_check_mark: |
+| 2249 | [Count Lattice Points Inside a Circle](src/section03/code2249.rs) | [link](https://leetcode.com/problems/count-lattice-points-inside-a-circle/) | Medium | :heavy_check_mark: |
+| 2250 | [Count Number of Rectangles Containing Each Point](src/section03/code2250.rs) | [link](https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/) | Medium | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
