@@ -1908,6 +1908,30 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 2251 | [Number of Flowers in Full Bloom](src/section03/code2251.rs) | [link](https://leetcode.com/problems/number-of-flowers-in-full-bloom/) | Medium | :heavy_check_mark: |
+| 2255 | [Count Prefixes of a Given String](src/section03/code2255.rs) | [link](https://leetcode.com/problems/count-prefixes-of-a-given-string/) | Medium | :heavy_check_mark: |
+| 2256 | [Minimum Average Difference](src/section03/code2256.rs) | [link](https://leetcode.com/problems/minimum-average-difference/) | Medium | :heavy_check_mark: |
+| 2257 | [Count Unguarded Cells in the Grid](src/section03/code2257.rs) | [link](https://leetcode.com/problems/count-unguarded-cells-in-the-grid/) | Medium | :heavy_check_mark: |
+| 2258 | [Escape the Spreading Fire](src/section03/code2258.rs) | [link](https://leetcode.com/problems/escape-the-spreading-fire/) | Medium | :heavy_check_mark: |
+| 2259 | [Remove Digit From Number to Maximize Result](src/section03/code2259.rs) | [link](https://leetcode.com/problems/remove-digit-from-number-to-maximize-result/) | Medium | :heavy_check_mark: |
+| 2260 | [Minimum Consecutive Cards to Pick Up](src/section03/code2260.rs) | [link](https://leetcode.com/problems/minimum-consecutive-cards-to-pick-up/) | Medium | :heavy_check_mark: |
+| 2261 | [K Divisible Elements Subarrays](src/section03/code2261.rs) | [link](https://leetcode.com/problems/k-divisible-elements-subarrays/) | Medium | :heavy_check_mark: |
+| 2262 | [Total Appeal of A String](src/section03/code2262.rs) | [link](https://leetcode.com/problems/total-appeal-of-a-string/) | Medium | :heavy_check_mark: |
+| 2264 | [Largest 3-Same-Digit Number in String](src/section03/code2264.rs) | [link](https://leetcode.com/problems/largest-3-same-digit-number-in-string/) | Medium | :heavy_check_mark: |
+| 2265 | [Count Nodes Equal to Average of Subtree](src/section03/code2265.rs) | [link](https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/) | Medium | :heavy_check_mark: |
+| 2266 | [Count Number of Texts](src/section03/code2266.rs) | [link](https://leetcode.com/problems/count-number-of-texts/) | Medium | :heavy_check_mark: |
+| 2267 | [Check if There Is a Valid Parentheses String Path](src/section03/code2267.rs) | [link](https://leetcode.com/problems/check-if-there-is-a-valid-parentheses-string-path/) | Medium | :heavy_check_mark: |
+| 2269 | [Find the K-Beauty of a Number](src/section03/code2269.rs) | [link](https://leetcode.com/problems/find-the-k-beauty-of-a-number/) | Medium | :heavy_check_mark: |
+| 2270 | [Number of Ways to Split Array](src/section03/code2270.rs) | [link](https://leetcode.com/problems/number-of-ways-to-split-array/) | Medium | :heavy_check_mark: |
+| 2271 | [Maximum White Tiles Covered by a Carpet](src/section03/code2271.rs) | [link](https://leetcode.com/problems/maximum-white-tiles-covered-by-a-carpet/) | Medium | :heavy_check_mark: |
+| 2272 | [Substring With Largest Variance](src/section03/code2272.rs) | [link](https://leetcode.com/problems/substring-with-largest-variance/) | Medium | :heavy_check_mark: |
+| 2273 | [Find Resultant Array After Removing Anagrams](src/section03/code2273.rs) | [link](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/) | Medium | :heavy_check_mark: |
+| 2274 | [Maximum Consecutive Floors Without Special Floors](src/section03/code2274.rs) | [link](https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/) | Medium | :heavy_check_mark: |
+| 2275 | [Largest Combination With Bitwise AND Greater Than Zero](src/section03/code2275.rs) | [link](https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/) | Medium | :heavy_check_mark: |
+| 2276 | [Count Integers in Intervals](src/section03/code2276.rs) | [link](https://leetcode.com/problems/count-integers-in-intervals/) | Medium | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
