@@ -2011,6 +2011,24 @@ cargo test
 | 2374 | [Node With Highest Edge Score](src/section03/code2374.rs) | [link](https://leetcode.com/problems/node-with-highest-edge-score/) | Medium | :heavy_check_mark: |
 | 2375 | [Construct Smallest Number From DI String](src/section03/code2375.rs) | [link](https://leetcode.com/problems/construct-smallest-number-from-di-string/) | Medium | :heavy_check_mark: |
 | 2376 | [Count Special Integers](src/section03/code2376.rs) | [link](https://leetcode.com/problems/count-special-integers/) | Medium | :heavy_check_mark: |
+| 2379 | [Minimum Recolors to Get K Consecutive Black Blocks](src/section03/code2379.rs) | [link](https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/) | Medium | :heavy_check_mark: |
+| 2380 | [Time Needed to Rearrange a Binary String](src/section03/code2380.rs) | [link](https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/) | Medium | :heavy_check_mark: |
+| 2381 | [Shifting Letters II](src/section03/code2381.rs) | [link](https://leetcode.com/problems/shifting-letters-ii/) | Medium | :heavy_check_mark: |
+| 2382 | [Maximum Segment Sum After Removals](src/section03/code2382.rs) | [link](https://leetcode.com/problems/maximum-segment-sum-after-removals/) | Medium | :heavy_check_mark: |
+| 2383 | [Minimum Hours of Training to Win a Competition](src/section03/code2383.rs) | [link](https://leetcode.com/problems/minimum-hours-of-training-to-win-a-competition/) | Medium | :heavy_check_mark: |
+| 2384 | [Largest Palindromic Number](src/section03/code2384.rs) | [link](https://leetcode.com/problems/largest-palindromic-number/) | Medium | :heavy_check_mark: |
+| 2385 | [Amount of Time for Binary Tree to Be Infected](src/section03/code2385.rs) | [link](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/) | Medium | :heavy_check_mark: |
+| 2386 | [Find the K-Sum of an Array](src/section03/code2386.rs) | [link](https://leetcode.com/problems/find-the-k-sum-of-an-array/) | Medium | :heavy_check_mark: |
+| 2389 | [Longest Subsequence With Limited Sum](src/section03/code2389.rs) | [link](https://leetcode.com/problems/longest-subsequence-with-limited-sum/) | Medium | :heavy_check_mark: |
+| 2390 | [Removing Stars From a String](src/section03/code2390.rs) | [link](https://leetcode.com/problems/removing-stars-from-a-string/) | Medium | :heavy_check_mark: |
+| 2391 | [Minimum Amount of Time to Collect Garbage](src/section03/code2391.rs) | [link](https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/) | Medium | :heavy_check_mark: |
+| 2392 | [Build a Matrix With Conditions](src/section03/code2392.rs) | [link](https://leetcode.com/problems/build-a-matrix-with-conditions/) | Medium | :heavy_check_mark: |
+| 2395 | [Find Subarrays With Equal Sum](src/section03/code2395.rs) | [link](https://leetcode.com/problems/find-subarrays-with-equal-sum/) | Medium | :heavy_check_mark: |
+| 2396 | [Strictly Palindromic Number](src/section03/code2396.rs) | [link](https://leetcode.com/problems/strictly-palindromic-numbers/) | Medium | :heavy_check_mark: |
+| 2397 | [Maximum Rows Covered by Columns](src/section03/code2397.rs) | [link](https://leetcode.com/problems/maximum-rows-covered-by-columns/) | Medium | :heavy_check_mark: |
+| 2398 | [Maximum Number of Robots Within Budget](src/section03/code2398.rs) | [link](https://leetcode.com/problems/maximum-number-of-robots-within-budget/) | Medium | :heavy_check_mark: |
+| 2399 | [Check Distances Between Same Letters](src/section03/code2399.rs) | [link](https://leetcode.com/problems/check-distances-between-same-letters/) | Medium | :heavy_check_mark: |
+| 2400 | [Number of Ways to Reach a Position After Exactly k Steps](src/section03/code2400.rs) | [link](https://leetcode.com/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/) | Medium | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
