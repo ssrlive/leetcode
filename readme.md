@@ -1991,6 +1991,29 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 2351 | [First Letter to Appear Twice](src/section03/code2351.rs) | [link](https://leetcode.com/problems/first-letter-to-appear-twice/) | Medium | :heavy_check_mark: |
+| 2352 | [Equal Row and Column Pairs](src/section03/code2352.rs) | [link](https://leetcode.com/problems/equal-row-and-column-pairs/) | Medium | :heavy_check_mark: |
+| 2353 | [Design a Food Rating System](src/section03/code2353.rs) | [link](https://leetcode.com/problems/design-a-food-rating-system/) | Medium | :heavy_check_mark: |
+| 2354 | [Number of Excellent Pairs](src/section03/code2354.rs) | [link](https://leetcode.com/problems/number-of-excellent-pairs/) | Medium | :heavy_check_mark: |
+| 2357 | [Make Array Zero by Subtracting Equal Amounts](src/section03/code2357.rs) | [link](https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/) | Medium | :heavy_check_mark: |
+| 2358 | [Maximum Number of Groups Entering a Competition](src/section03/code2358.rs) | [link](https://leetcode.com/problems/maximum-number-of-groups-entering-a-competition/) | Medium | :heavy_check_mark: |
+| 2359 | [Find Closest Node to Given Two Nodes](src/section03/code2359.rs) | [link](https://leetcode.com/problems/find-closest-node-to-given-two-nodes/) | Medium | :heavy_check_mark: |
+| 2360 | [Longest Cycle in a Graph](src/section03/code2360.rs) | [link](https://leetcode.com/problems/longest-cycle-in-a-graph/) | Medium | :heavy_check_mark: |
+| 2363 | [Merge Similar Items](src/section03/code2363.rs) | [link](https://leetcode.com/problems/merge-similar-items/) | Medium | :heavy_check_mark: |
+| 2364 | [Count Number of Bad Pairs](src/section03/code2364.rs) | [link](https://leetcode.com/problems/count-number-of-bad-pairs/) | Medium | :heavy_check_mark: |
+| 2365 | [Task Scheduler II](src/section03/code2365.rs) | [link](https://leetcode.com/problems/task-scheduler-ii/) | Medium | :heavy_check_mark: |
+| 2366 | [Minimum Replacements to Sort the Array](src/section03/code2366.rs) | [link](https://leetcode.com/problems/minimum-replacements-to-sort-the-array/) | Medium | :heavy_check_mark: |
+| 2367 | [Number of Arithmetic Triplets](src/section03/code2367.rs) | [link](https://leetcode.com/problems/number-of-arithmetic-triplets/) | Medium | :heavy_check_mark: |
+| 2368 | [Reachable Nodes With Restrictions](src/section03/code2368.rs) | [link](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/) | Medium | :heavy_check_mark: |
+| 2369 | [Check if There is a Valid Partition For The Array](src/section03/code2369.rs) | [link](https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/) | Medium | :heavy_check_mark: |
+| 2370 | [Longest Ideal Subsequence](src/section03/code2370.rs) | [link](https://leetcode.com/problems/longest-ideal-subsequence/) | Medium | :heavy_check_mark: |
+| 2373 | [Largest Local Values in a Matrix](src/section03/code2373.rs) | [link](https://leetcode.com/problems/largest-local-values-in-a-matrix/) | Medium | :heavy_check_mark: |
+| 2374 | [Node With Highest Edge Score](src/section03/code2374.rs) | [link](https://leetcode.com/problems/node-with-highest-edge-score/) | Medium | :heavy_check_mark: |
+| 2375 | [Construct Smallest Number From DI String](src/section03/code2375.rs) | [link](https://leetcode.com/problems/construct-smallest-number-from-di-string/) | Medium | :heavy_check_mark: |
+| 2376 | [Count Special Integers](src/section03/code2376.rs) | [link](https://leetcode.com/problems/count-special-integers/) | Medium | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
