@@ -1950,6 +1950,31 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 2301 | [Match Substring After Replacement](src/section03/code2301.rs) | [link](https://leetcode.com/problems/match-substring-after-replacement/) | Medium | :heavy_check_mark: |
+| 2302 | [Count Subarrays With Score Less Than K](src/section03/code2302.rs) | [link](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/) | Medium | :heavy_check_mark: |
+| 2303 | [Calculate Amount Paid in Taxes](src/section03/code2303.rs) | [link](https://leetcode.com/problems/calculate-amount-paid-in-taxes/) | Medium | :heavy_check_mark: |
+| 2304 | [Minimum Path Cost in a Grid](src/section03/code2304.rs) | [link](https://leetcode.com/problems/minimum-path-cost-in-a-grid/) | Medium | :heavy_check_mark: |
+| 2305 | [Fair Distribution of Cookies](src/section03/code2305.rs) | [link](https://leetcode.com/problems/fair-distribution-of-cookies/) | Medium | :heavy_check_mark: |
+| 2306 | [Naming a Company](src/section03/code2306.rs) | [link](https://leetcode.com/problems/naming-a-company/) | Medium | :heavy_check_mark: |
+| 2309 | [Greatest English Letter in Upper and Lower Case](src/section03/code2309.rs) | [link](https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/) | Medium | :heavy_check_mark: |
+| 2310 | [Sum of Numbers With Units Digit K](src/section03/code2310.rs) | [link](https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/) | Medium | :heavy_check_mark: |
+| 2311 | [Longest Binary Subsequence Less Than or Equal to K](src/section03/code2311.rs) | [link](https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/) | Medium | :heavy_check_mark: |
+| 2312 | [Selling Pieces of Wood](src/section03/code2312.rs) | [link](https://leetcode.com/problems/selling-pieces-of-wood/) | Medium | :heavy_check_mark: |
+| 2315 | [Count Asterisks](src/section03/code2315.rs) | [link](https://leetcode.com/problems/count-asterisks/) | Medium | :heavy_check_mark: |
+| 2316 | [Count Unreachable Pairs of Nodes in an Undirected Graph](src/section03/code2316.rs) | [link](https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/) | Medium | :heavy_check_mark: |
+| 2317 | [Maximum XOR After Operations](src/section03/code2317.rs) | [link](https://leetcode.com/problems/maximum-xor-after-operations/) | Medium | :heavy_check_mark: |
+| 2318 | [Number of Distinct Roll Sequences](src/section03/code2318.rs) | [link](https://leetcode.com/problems/number-of-distinct-roll-sequences/) | Medium | :heavy_check_mark: |
+| 2319 | [Check if Matrix Is X-Matrix](src/section03/code2319.rs) | [link](https://leetcode.com/problems/check-if-matrix-is-x-matrix/) | Medium | :heavy_check_mark: |
+| 2320 | [Count Number of Ways to Place Houses](src/section03/code2320.rs) | [link](https://leetcode.com/problems/count-number-of-ways-to-place-houses/) | Medium | :heavy_check_mark: |
+| 2321 | [Maximum Score Of Spliced Array](src/section03/code2321.rs) | [link](https://leetcode.com/problems/maximum-score-of-spliced-array/) | Medium | :heavy_check_mark: |
+| 2322 | [Minimum Score After Removals on a Tree](src/section03/code2322.rs) | [link](https://leetcode.com/problems/minimum-score-after-removals-on-a-tree/) | Medium | :heavy_check_mark: |
+| 2325 | [Decode the Message](src/section03/code2325.rs) | [link](https://leetcode.com/problems/decode-the-message/) | Medium | :heavy_check_mark: |
+| 2326 | [Spiral Matrix IV](src/section03/code2326.rs) | [link](https://leetcode.com/problems/spiral-matrix-iv/) | Medium | :heavy_check_mark: |
+| 2327 | [Number of People Aware of a Secret](src/section03/code2327.rs) | [link](https://leetcode.com/problems/number-of-people-aware-of-a-secret/) | Medium | :heavy_check_mark: |
+| 2328 | [Number of Increasing Paths in a Grid](src/section03/code2328.rs) | [link](https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/) | Medium | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2401 | [Longest Nice Subarray](src/section03/code2401.rs) | [link](https://leetcode.com/problems/longest-nice-substring/) | Medium | :heavy_check_mark: |
 | 2402 | [Meeting Rooms III](src/section03/code2402.rs) | [link](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | :heavy_check_mark: |
 | 2404 | [Most Frequent Even Element](src/section03/code2404.rs) | [link](https://leetcode.com/problems/most-frequent-even-element/) | Easy | :heavy_check_mark: |
