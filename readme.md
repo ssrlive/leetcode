@@ -1972,6 +1972,22 @@ cargo test
 | 2326 | [Spiral Matrix IV](src/section03/code2326.rs) | [link](https://leetcode.com/problems/spiral-matrix-iv/) | Medium | :heavy_check_mark: |
 | 2327 | [Number of People Aware of a Secret](src/section03/code2327.rs) | [link](https://leetcode.com/problems/number-of-people-aware-of-a-secret/) | Medium | :heavy_check_mark: |
 | 2328 | [Number of Increasing Paths in a Grid](src/section03/code2328.rs) | [link](https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/) | Medium | :heavy_check_mark: |
+| 2331 | [Evaluate Boolean Binary Tree](src/section03/code2331.rs) | [link](https://leetcode.com/problems/evaluate-boolean-binary-tree/) | Medium | :heavy_check_mark: |
+| 2332 | [The Latest Time to Catch a Bus](src/section03/code2332.rs) | [link](https://leetcode.com/problems/the-latest-time-to-catch-a-bus/) | Medium | :heavy_check_mark: |
+| 2333 | [Minimum Sum of Squared Difference](src/section03/code2333.rs) | [link](https://leetcode.com/problems/minimum-sum-of-squared-difference/) | Medium | :heavy_check_mark: |
+| 2334 | [Subarray With Elements Greater Than Varying Threshold](src/section03/code2334.rs) | [link](https://leetcode.com/problems/subarray-with-elements-greater-than-varying-threshold/) | Medium | :heavy_check_mark: |
+| 2335 | [Minimum Amount of Time to Fill Cups](src/section03/code2335.rs) | [link](https://leetcode.com/problems/minimum-amount-of-time-to-fill-cups/) | Medium | :heavy_check_mark: |
+| 2336 | [Smallest Number in Infinite Set](src/section03/code2336.rs) | [link](https://leetcode.com/problems/smallest-number-in-infinite-set/) | Medium | :heavy_check_mark: |
+| 2337 | [Move Pieces to Obtain a String](src/section03/code2337.rs) | [link](https://leetcode.com/problems/move-pieces-to-obtain-a-string/) | Medium | :heavy_check_mark: |
+| 2338 | [Count the Number of Ideal Arrays](src/section03/code2338.rs) | [link](https://leetcode.com/problems/count-the-number-of-ideal-arrays/) | Medium | :heavy_check_mark: |
+| 2341 | [Maximum Number of Pairs in Array](src/section03/code2341.rs) | [link](https://leetcode.com/problems/maximum-number-of-pairs-in-array/) | Medium | :heavy_check_mark: |
+| 2342 | [Max Sum of a Pair With Equal Sum of Digits](src/section03/code2342.rs) | [link](https://leetcode.com/problems/max-sum-of-a-pair-with-equal-sum-of-digits/) | Medium | :heavy_check_mark: |
+| 2343 | [Query Kth Smallest Trimmed Number](src/section03/code2343.rs) | [link](https://leetcode.com/problems/query-kth-smallest-trimmed-number/) | Medium | :heavy_check_mark: |
+| 2344 | [Minimum Deletions to Make Array Divisible](src/section03/code2344.rs) | [link](https://leetcode.com/problems/minimum-deletions-to-make-array-divisible/) | Medium | :heavy_check_mark: |
+| 2347 | [Best Poker Hand](src/section03/code2347.rs) | [link](https://leetcode.com/problems/best-poker-hand/) | Medium | :heavy_check_mark: |
+| 2348 | [Number of Zero-Filled Subarrays](src/section03/code2348.rs) | [link](https://leetcode.com/problems/number-of-zero-filled-subarrays/) | Medium | :heavy_check_mark: |
+| 2349 | [Design a Number Container System](src/section03/code2349.rs) | [link](https://leetcode.com/problems/design-a-number-container-system/) | Medium | :heavy_check_mark: |
+| 2350 | [Shortest Impossible Sequence of Rolls](src/section03/code2350.rs) | [link](https://leetcode.com/problems/shortest-impossible-sequence-of-rolls/) | Medium | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
