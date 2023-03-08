@@ -54,107 +54,58 @@ Constraints:
     0 <= tasks[i], workers[j], strength <= 10^9
 */
 
-/*
-class Solution {
-public:
-    int maxTaskAssign(vector<int>& tasks, vector<int>& workers, int pills, int strength) {
-        int n = tasks.size();
-        int m = workers.size();
-        sort(tasks.begin(), tasks.end());
-        map<int,int> count;
-        for(auto &strength : workers) count[strength]++;
-        int l = 0, r = n, ans = 0;
-        while(l<=r){
-            int mid  = l + (r-l)/2;
-            int chk  = check(tasks,mid,count,pills,strength);
-            if(chk) {
-                ans = mid;
-                l   = mid+1;
-            }
-            else {
-                r = mid-1;
-            }
-        }
-        return ans;
-    }
-    int check(vector<int> &tasks, int take, map<int,int> count, int pills, int power){
-        while(take>=1 && count.size()){
-            auto it = count.end(); --it;
-            if(tasks[take-1] <= it->first) {}
-            else if(pills) {
-                it = count.lower_bound(tasks[take-1]-power);
-                if(it==count.end()) return 0;
-                --pills;
-            }
-            else return 0;
-            --take;
-            (it->second)--;
-            if(it->second == 0)
-                count.erase(it);
-        }
-        return take==0;
-    }
-};
- */
-
 struct Solution;
 
 impl Solution {
     pub fn max_task_assign(tasks: Vec<i32>, workers: Vec<i32>, pills: i32, strength: i32) -> i32 {
-        use std::collections::BTreeMap;
-        fn check(tasks: &[i32], mut take: usize, mut count: BTreeMap<i32, i32>, mut pills: i32, power: i32) -> bool {
-            while take >= 1 && !count.is_empty() {
-                let mut idx = count.len() - 1;
-                let mut it = count.iter_mut().nth(idx).unwrap();
-                if tasks[take - 1] <= *it.0 {
-                } else if pills > 0 {
-                    let v = tasks[take - 1] - power;
-                    let it2 = lower_bound(&count, &v);
-                    if it2.is_err() {
+        use std::collections::VecDeque;
+
+        fn check(tasks: &[i32], workers: &[i32], pills: i32, strength: i32, k: usize) -> bool {
+            let mut pills = pills;
+            if k > workers.len() {
+                return false;
+            }
+            let mut t = 0;
+            let mut q = VecDeque::new();
+            for i in (0..k).rev() {
+                if q.is_empty() && t < k {
+                    q.push_front(tasks[t]);
+                    t += 1;
+                }
+                if *q.back().unwrap() <= workers[i] {
+                    q.pop_back();
+                } else {
+                    if pills == 0 {
                         return false;
                     }
-                    idx = it2.unwrap();
-                    it = count.iter_mut().nth(idx).unwrap();
+                    if *q.back().unwrap() > workers[i] + strength {
+                        return false;
+                    }
+                    while t < k && tasks[t] <= workers[i] + strength {
+                        q.push_front(tasks[t]);
+                        t += 1;
+                    }
+                    q.pop_front();
                     pills -= 1;
-                } else {
-                    return false;
-                }
-                take -= 1;
-                *it.1 -= 1;
-                let (it_0, it_1) = (*it.0, *it.1);
-                if it_1 == 0 {
-                    count.remove(&it_0);
                 }
             }
-            take == 0
+            true
         }
 
-        fn lower_bound<K: Ord, V>(btm: &BTreeMap<K, V>, x: &K) -> Result<usize, usize> {
-            use std::cmp::Ordering::Less;
-            btm.iter().position(|(k, _)| k.cmp(x) != Less).ok_or(btm.len())
-        }
-
+        let (mut l, mut r) = (0, tasks.len());
         let mut tasks = tasks;
-        let n = tasks.len();
+        let mut workers = workers;
         tasks.sort();
-        let mut count = BTreeMap::new();
-        for strength in workers {
-            *count.entry(strength).or_insert(0) += 1;
-        }
-        let mut l = 0;
-        let mut r = n;
-        let mut ans = 0;
-        while l <= r {
-            let mid = l + (r - l) / 2;
-            let chk = check(&tasks, mid, count.clone(), pills, strength);
-            if chk {
-                ans = mid;
-                l = mid + 1;
+        workers.sort_by(|a, b| b.cmp(a));
+        while l < r {
+            let mid = (l + r + 1) / 2;
+            if check(&tasks, &workers, pills, strength, mid) {
+                l = mid;
             } else {
                 r = mid - 1;
             }
         }
-        ans as i32
+        l as i32
     }
 }
 

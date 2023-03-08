@@ -1754,7 +1754,7 @@ cargo test
 | 2068 | [Check Whether Two Strings are Almost Equivalent](src/section03/code2068.rs) | [link](https://leetcode.com/problems/check-whether-two-strings-are-almost-equivalent/) | Easy | :heavy_check_mark: |
 | 2069 | [Walking Robot Simulation II](src/section03/code2069.rs) | [link](https://leetcode.com/problems/walking-robot-simulation-ii/) | Medium | :heavy_check_mark: |
 | 2070 | [Most Beautiful Item for Each Query](src/section03/code2070.rs) | [link](https://leetcode.com/problems/most-beautiful-item-for-each-query/) | Medium | :heavy_check_mark: |
-| 2071 | [Maximum Number of Tasks You Can Assign](src/section03/code2071.rs) | [link](https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/) | Hard | :x: |
+| 2071 | [Maximum Number of Tasks You Can Assign](src/section03/code2071.rs) | [link](https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/) | Hard | :heavy_check_mark: |
 | 2073 | [Time Needed to Buy Tickets](src/section03/code2073.rs) | [link](https://leetcode.com/problems/time-needed-to-buy-tickets/) | Medium | :heavy_check_mark: |
 | 2074 | [Reverse Nodes in Even Length Groups](src/section03/code2074.rs) | [link](https://leetcode.com/problems/reverse-nodes-in-even-length-groups/) | Medium | :heavy_check_mark: |
 | 2075 | [Decode the Slanted Ciphertext](src/section03/code2075.rs) | [link](https://leetcode.com/problems/decode-the-slanted-ciphertext/) | Medium | :heavy_check_mark: |
