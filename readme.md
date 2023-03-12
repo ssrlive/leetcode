@@ -2199,3 +2199,7 @@ cargo test
 | 2583 | [Kth Largest Sum in a Binary Tree](src/section03/code2583.rs) | [link](https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/) | Hard | :heavy_check_mark: |
 | 2584 | [Split the Array to Make Coprime Products](src/section03/code2584.rs) | [link](https://leetcode.com/problems/split-the-array-to-make-coprime-products/) | Hard | :heavy_check_mark: |
 | 2585 | [Number of Ways to Earn Points](src/section03/code2585.rs) | [link](https://leetcode.com/problems/number-of-ways-to-earn-points/) | Hard | :heavy_check_mark: |
+| 2586 | [Count the Number of Vowel Strings in Range](src/section03/code2586.rs) | [link](https://leetcode.com/problems/count-the-number-of-vowel-strings-in-range/) | Medium | :heavy_check_mark: |
+| 2587 | [Rearrange Array to Maximize Prefix Score](src/section03/code2587.rs) | [link](https://leetcode.com/problems/rearrange-array-to-maximize-prefix-score/) | Hard | :heavy_check_mark: |
+| 2588 | [Count the Number of Beautiful Subarrays](src/section03/code2588.rs) | [link](https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/) | Medium | :heavy_check_mark: |
+| 2589 | [Minimum Time to Complete All Tasks](src/section03/code2589.rs) | [link](https://leetcode.com/problems/minimum-time-to-complete-all-tasks/) | Hard | :heavy_check_mark: |
