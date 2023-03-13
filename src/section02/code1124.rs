@@ -35,9 +35,8 @@ impl Solution {
     pub fn longest_wpi(hours: Vec<i32>) -> i32 {
         let mut res = 0;
         let mut score = 0;
-        let n = hours.len();
         let mut seen = std::collections::HashMap::new();
-        for (i, &hour) in hours.iter().enumerate().take(n) {
+        for (i, &hour) in hours.iter().enumerate() {
             score += if hour > 8 { 1 } else { -1 };
             if score > 0 {
                 res = i + 1;

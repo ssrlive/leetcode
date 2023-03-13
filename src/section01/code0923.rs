@@ -60,7 +60,7 @@ impl Solution {
                 }
                 memo[tot as usize] += 1;
             }
-            for &item in arr.iter().take(n).skip(i + 1) {
+            for &item in arr.iter().skip(i + 1) {
                 let v3 = item;
                 if target < v3 {
                     continue;

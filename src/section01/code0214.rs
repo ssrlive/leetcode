@@ -38,7 +38,7 @@ impl Solution {
         let s_bytes = s.as_bytes();
         let mut shash = s_bytes[0] as i64 - 'a' as i64 + 1;
         let mut rhash = s_bytes[0] as i64 - 'a' as i64 + 1;
-        for (i, item) in s_bytes.iter().enumerate().take(s.len()).skip(1) {
+        for (i, item) in s_bytes.iter().enumerate().skip(1) {
             shash = (shash + (*item as i64 - 'a' as i64 + 1) * pnos) % m;
             rhash = (rhash * prime + (*item as i64 - 'a' as i64 + 1)) % m;
             pnos = (pnos * prime) % m;

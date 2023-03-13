@@ -49,7 +49,7 @@ impl Solution {
         let limit = 1 << n;
         let mut map = HashMap::new();
         map.insert(0, 0);
-        for &nums1_i in nums1.iter().take(n) {
+        for &nums1_i in nums1.iter() {
             let mut new_map = HashMap::new();
             let v1 = nums1_i;
             for (j, &nums2_j) in nums2.iter().enumerate().take(n) {

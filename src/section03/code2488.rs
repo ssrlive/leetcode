@@ -40,7 +40,6 @@ struct Solution;
 impl Solution {
     pub fn number_of_subarrays(nums: Vec<i32>, k: i32) -> i32 {
         use std::collections::HashMap;
-        let n = nums.len();
         let mut i = 0;
         while nums[i] != k {
             i += 1;
@@ -50,7 +49,7 @@ impl Solution {
 
         let mut cnt = 0;
         *right.entry(cnt).or_default() += 1;
-        for &item in nums.iter().take(n).skip(i + 1) {
+        for &item in nums.iter().skip(i + 1) {
             cnt += if item > k { 1 } else { -1 };
             *right.entry(cnt).or_default() += 1;
         }

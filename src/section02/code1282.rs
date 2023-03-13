@@ -42,11 +42,10 @@ struct Solution;
 
 impl Solution {
     pub fn group_the_people(group_sizes: Vec<i32>) -> Vec<Vec<i32>> {
-        let n = group_sizes.len();
         let mut result = vec![];
         let mut memo = vec![vec![]; 501];
 
-        for (i, &item) in group_sizes.iter().enumerate().take(n) {
+        for (i, &item) in group_sizes.iter().enumerate() {
             let num = item as usize;
             memo[num].push(i as i32);
             if memo[num].len() == num {

@@ -40,7 +40,7 @@ impl Solution {
         let mut max = std::i32::MIN;
         for i in 0..m {
             let mut sums = vec![0; n];
-            for item in matrix.iter().take(m).skip(i) {
+            for item in matrix.iter().skip(i) {
                 for (c, v) in sums.iter_mut().enumerate() {
                     *v += item[c];
                 }

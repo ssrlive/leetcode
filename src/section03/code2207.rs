@@ -68,7 +68,7 @@ impl Solution {
         }
         let mut memo1 = 0;
         let mut memo2 = 0;
-        for &s_i in s.iter().take(n) {
+        for &s_i in s.iter() {
             if s_i == p1 {
                 memo1 += 1;
             }

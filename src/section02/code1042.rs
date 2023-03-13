@@ -59,7 +59,7 @@ impl Solution {
             for &j in &graph[i] {
                 used[colors[j] as usize] = true;
             }
-            for (c, &item) in used.iter().enumerate().take(4 + 1).skip(1) {
+            for (c, &item) in used.iter().enumerate().skip(1) {
                 if !item {
                     colors[i] = c as i32;
                     break;

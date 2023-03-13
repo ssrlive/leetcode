@@ -79,7 +79,7 @@ impl Solution {
             }
             let mut states = HashMap::new();
             let mut state_id = vec![0; max_value + 1];
-            for (i, state_id_i) in state_id.iter_mut().enumerate().take(max_value + 1).skip(1) {
+            for (i, state_id_i) in state_id.iter_mut().enumerate().skip(1) {
                 let mut state = Vec::new();
                 let mut n = i;
                 while n != 1 {

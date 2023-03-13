@@ -43,12 +43,11 @@ struct Solution;
 
 impl Solution {
     pub fn maximum_tastiness(price: Vec<i32>, k: i32) -> i32 {
-        fn check(data: &Vec<i32>, k: i32, mid: i32) -> bool {
-            let n = data.len();
+        fn check(data: &[i32], k: i32, mid: i32) -> bool {
             let mut last = data[0];
             let mut k = k - 1;
 
-            for &item in data.iter().take(n) {
+            for &item in data.iter() {
                 if item < last + mid {
                     continue;
                 }

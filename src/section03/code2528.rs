@@ -58,7 +58,7 @@ impl Solution {
             let (n, mut sum, mut k) = (stations.len(), 0, k);
             let (mut left, mut right) = (0, r as usize);
 
-            for &station in stations.iter().take(right + 1).skip(left) {
+            for &station in stations.iter().skip(left).take(right + 1) {
                 sum += station as i64;
             }
             for i in 0..n {

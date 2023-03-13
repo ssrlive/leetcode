@@ -44,8 +44,8 @@ impl Solution {
     pub fn closest_to_target(arr: Vec<i32>, target: i32) -> i32 {
         let len = arr.len();
         let mut tab = vec![vec![]; 30];
-        for (i, &item0) in arr.iter().enumerate().take(len) {
-            for (j, item) in tab.iter_mut().enumerate().take(30) {
+        for (i, &item0) in arr.iter().enumerate() {
+            for (j, item) in tab.iter_mut().enumerate() {
                 if (item0 >> j) & 1 == 1 {
                     item.push(i);
                 }

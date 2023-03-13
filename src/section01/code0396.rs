@@ -43,7 +43,7 @@ impl Solution {
         let n = nums.len();
         let mut sum = 0;
         let mut f = 0;
-        for (i, item) in nums.iter().enumerate().take(n) {
+        for (i, item) in nums.iter().enumerate() {
             sum += *item;
             f += i as i32 * *item;
         }

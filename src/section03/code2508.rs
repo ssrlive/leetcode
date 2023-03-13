@@ -73,7 +73,7 @@ impl Solution {
         }
 
         let mut odd_list = vec![];
-        for (i, &item) in node_degree.iter().enumerate().take(n as usize + 1) {
+        for (i, &item) in node_degree.iter().enumerate() {
             if item % 2 == 1 {
                 odd_list.push(i);
             }

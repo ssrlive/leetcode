@@ -39,7 +39,7 @@ impl Solution {
         let mut stack = vec![];
         let k = k as usize;
         let n = nums.len();
-        for (i, &num) in nums.iter().enumerate().take(n) {
+        for (i, &num) in nums.iter().enumerate() {
             while !stack.is_empty() && stack[stack.len() - 1] > num && stack.len() - 1 + n - i >= k {
                 stack.pop();
             }

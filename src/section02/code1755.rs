@@ -53,7 +53,7 @@ impl Solution {
 
         let (mut v1, mut v2) = (vec![0; sz1], vec![0; sz2]);
 
-        for (i, v1_i) in v1.iter_mut().enumerate().take(sz1) {
+        for (i, v1_i) in v1.iter_mut().enumerate() {
             for (k, &num) in nums.iter().enumerate().take(m1) {
                 if i & (1 << k) > 0 {
                     *v1_i += num as i64;
@@ -61,7 +61,7 @@ impl Solution {
             }
         }
 
-        for (i, v2_i) in v2.iter_mut().enumerate().take(sz2) {
+        for (i, v2_i) in v2.iter_mut().enumerate() {
             for k in 0..m2 {
                 if i & (1 << k) > 0 {
                     *v2_i += nums[m1 + k] as i64;

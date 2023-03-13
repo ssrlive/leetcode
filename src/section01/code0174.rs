@@ -30,7 +30,7 @@ impl Solution {
         let m = dungeon.len();
         let n = dungeon[0].len();
         let mut dp = vec![vec![0; n + 1]; m + 1];
-        for item in dp.iter_mut().take(m + 1) {
+        for item in dp.iter_mut() {
             item[n] = i32::MAX;
         }
         for j in 0..=n {

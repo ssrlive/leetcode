@@ -61,7 +61,7 @@ impl Solution {
         let mut parent_state = vec![0; s];
         dp[0] = 0;
         for i in 0..(1 << req_skills.len()) {
-            for (j, &item) in people_skill.iter().enumerate().take(people.len()) {
+            for (j, &item) in people_skill.iter().enumerate() {
                 if dp[i] == std::i32::MAX {
                     continue;
                 }

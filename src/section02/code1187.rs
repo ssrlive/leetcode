@@ -50,7 +50,7 @@ impl Solution {
         }
         g[0] = 0;
         for i in 1..m {
-            for (j, &item) in arr2.iter().enumerate().take(n) {
+            for (j, &item) in arr2.iter().enumerate() {
                 if item > arr1[i - 1] {
                     f[i][j] = std::cmp::min(g[i - 1], std::i32::MAX - 1) + 1;
                 }
@@ -63,7 +63,7 @@ impl Solution {
             } else {
                 g[i] = std::i32::MAX;
             }
-            for (j, &item) in arr2.iter().enumerate().take(n) {
+            for (j, &item) in arr2.iter().enumerate() {
                 if item < arr1[i] {
                     g[i] = std::cmp::min(g[i], f[i - 1][j]);
                 }

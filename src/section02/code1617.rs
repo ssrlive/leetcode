@@ -68,9 +68,9 @@ impl Solution {
         for s in 0_i32..(1 << n) {
             let k = s.count_ones() as i32;
             let (mut e, mut d) = (0_i32, 0_i32);
-            for (i, item) in g.iter().enumerate().take(n as usize) {
+            for (i, item) in g.iter().enumerate() {
                 if s & (1 << i) != 0 {
-                    for (j, &item_j) in item.iter().enumerate().take(n as usize).skip(i + 1) {
+                    for (j, &item_j) in item.iter().enumerate().skip(i + 1) {
                         if s & (1 << j) != 0 {
                             e += i32::from(g[i][j] == 1);
                             d = d.max(item_j);

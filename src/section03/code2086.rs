@@ -65,7 +65,7 @@ impl Solution {
                 s[i + 1] = '.';
             }
         }
-        for &s_i in s.iter().take(n - 1).skip(1) {
+        for &s_i in s.iter().skip(1) {
             if s_i == 'H' {
                 count += 1;
             }

@@ -54,7 +54,7 @@ impl Solution {
         for i in 0..n {
             let mut cnt = 0;
             let mut key = "".to_string();
-            for &num in nums.iter().take(n).skip(i) {
+            for &num in nums.iter().skip(i) {
                 if num % p == 0 {
                     cnt += 1;
                     if cnt > k {

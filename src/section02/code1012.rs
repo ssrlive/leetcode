@@ -54,7 +54,7 @@ impl Solution {
         }
 
         let mut seen = std::collections::HashSet::new();
-        for (i, &digit) in digits.iter().enumerate().take(len) {
+        for (i, &digit) in digits.iter().enumerate() {
             for j in i32::from(i == 0)..digit {
                 if !seen.contains(&j) {
                     res += _a(9 - i as i32, len as i32 - i as i32 - 1);

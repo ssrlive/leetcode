@@ -43,8 +43,8 @@ impl Solution {
         houses.sort();
         let n = houses.len();
         let mut dp = vec![vec![0; n]; n];
-        for (i, item) in dp.iter_mut().enumerate().take(n) {
-            for (j, item0) in item.iter_mut().enumerate().take(n).skip(i) {
+        for (i, item) in dp.iter_mut().enumerate() {
+            for (j, item0) in item.iter_mut().enumerate().skip(i) {
                 let mid = (i + j) / 2;
                 for k in i..=j {
                     *item0 += (houses[k] - houses[mid]).abs();

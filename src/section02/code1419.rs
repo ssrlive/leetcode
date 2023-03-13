@@ -53,7 +53,7 @@ impl Solution {
             return -1;
         }
 
-        for (i, &item) in s.iter().enumerate().take(n) {
+        for (i, &item) in s.iter().enumerate() {
             match item {
                 'c' => ques[0].push_back(i),
                 'r' => ques[1].push_back(i),
@@ -97,7 +97,7 @@ impl Solution {
         let mut result = 0;
         let mut temp = 0;
 
-        for item in memo.iter().take(n) {
+        for item in memo.iter() {
             temp += item.0;
             result = result.max(temp);
             temp -= item.1;

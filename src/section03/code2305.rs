@@ -61,7 +61,7 @@ impl Solution {
         dp[0][..(1 << n)].copy_from_slice(&cost[..(1 << n)]);
         for i in 1..k {
             for c1 in 0..1 << n {
-                for (c2, &cost_c2) in cost.iter().enumerate().take(1 << n) {
+                for (c2, &cost_c2) in cost.iter().enumerate() {
                     if (c1 & c2) == 0 {
                         dp[i][c1 | c2] = dp[i][c1 | c2].min(dp[i - 1][c1].max(cost_c2))
                     }

@@ -48,7 +48,7 @@ impl Solution {
             let mut row = row.iter().map(|x| *x as usize).collect::<Vec<usize>>();
             let mut index = std::collections::HashMap::new();
             let m = row.len();
-            for (i, &item) in row.iter().enumerate().take(m) {
+            for (i, &item) in row.iter().enumerate() {
                 index.insert(item, i);
             }
             let mut swaps = 0;

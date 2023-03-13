@@ -57,9 +57,9 @@ impl Solution {
         const INF: i32 = 15;
         let n = tasks.len();
         let mut s = vec![0; 1 << n];
-        for (mask, s_mask) in s.iter_mut().enumerate().take(1 << n) {
+        for (mask, s_mask) in s.iter_mut().enumerate() {
             let mut cur = 0;
-            for (i, &task) in tasks.iter().enumerate().take(n) {
+            for (i, &task) in tasks.iter().enumerate() {
                 if (mask >> i) & 1 == 1 {
                     cur += task;
                 }

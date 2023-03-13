@@ -68,7 +68,7 @@ impl Solution {
             let mid = (left + right) / 2;
             let mut bouquets = 0;
             let mut flowers = 0;
-            for &item in bloom_day.iter().take(n) {
+            for &item in bloom_day.iter() {
                 if item <= mid {
                     flowers += 1;
                     if flowers == k {

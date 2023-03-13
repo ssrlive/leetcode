@@ -66,8 +66,8 @@ impl Solution {
         }
 
         let mut prerequisites = vec![0; 1 << n];
-        for (i, prerequisite) in prerequisites.iter_mut().enumerate().take(1 << n) {
-            for (j, &item) in dependency.iter().enumerate().take(n) {
+        for (i, prerequisite) in prerequisites.iter_mut().enumerate() {
+            for (j, &item) in dependency.iter().enumerate() {
                 if i & (1 << j) != 0 {
                     *prerequisite |= item;
                 }

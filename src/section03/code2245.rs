@@ -89,7 +89,7 @@ impl Solution {
         }
 
         let mut prime_count = vec![Counts::default(); 1001];
-        for (i, item) in prime_count.iter_mut().enumerate().take(1000 + 1).skip(2) {
+        for (i, item) in prime_count.iter_mut().enumerate().skip(2) {
             let mut count_2 = 0;
             let mut count_5 = 0;
             let mut k = i;

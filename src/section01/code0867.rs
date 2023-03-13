@@ -31,13 +31,12 @@ struct Solution;
 
 impl Solution {
     pub fn transpose(matrix: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
-        let i_len = matrix.len();
         let j_len = matrix[0].len();
         let mut result = Vec::new();
 
         for j in 0..j_len {
             let mut temp = Vec::new();
-            for item in matrix.iter().take(i_len) {
+            for item in matrix.iter() {
                 temp.push(item[j]);
             }
             result.push(temp);

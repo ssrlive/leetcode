@@ -72,7 +72,7 @@ impl Solution {
             }
         }
         let mut tot = 0;
-        for &result_i in result.iter().take(12) {
+        for &result_i in result.iter() {
             tot += result_i;
         }
         result[11] += num_arrows - tot;

@@ -47,15 +47,28 @@ struct Solution;
 
 impl Solution {
     pub fn vowel_strings(words: Vec<String>, left: i32, right: i32) -> i32 {
-        let mut ans = 0;
-        for i in left..=right {
-            let word = words[i as usize].chars().collect::<Vec<char>>();
-            let v = ['a', 'e', 'i', 'o', 'u'];
-            if v.contains(&word[0]) && v.contains(&word[word.len() - 1]) {
-                ans += 1;
-            }
-        }
-        ans
+        let v = ['a', 'e', 'i', 'o', 'u'];
+
+        // let mut ans = 0;
+        // for i in left..=right {
+        //     let word = words[i as usize].chars().collect::<Vec<char>>();
+        //     if v.contains(&word[0]) && v.contains(&word[word.len() - 1]) {
+        //         ans += 1;
+        //     }
+        // }
+        // ans
+
+        // (left..=right)
+        //     .map(|i| words[i as usize].chars().collect::<Vec<char>>())
+        //     .filter(|word| v.contains(&word[0]) && v.contains(&word[word.len() - 1]))
+        //     .count() as i32
+
+        words
+            .iter()
+            .skip(left as usize)
+            .take((right - left + 1) as usize)
+            .filter(|word| word.starts_with(v) && word.ends_with(v))
+            .count() as i32
     }
 }
 

@@ -55,7 +55,7 @@ impl Solution {
         let (w, n, m) = (word.chars().collect::<Vec<_>>(), b.len(), b[0].len());
         let mut f = vec![vec![true; m + 2]; n + 2];
 
-        for item in f.iter_mut().take(n + 2) {
+        for item in f.iter_mut() {
             item[0] = false;
             item[m + 1] = false;
         }

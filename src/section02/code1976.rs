@@ -79,7 +79,7 @@ impl Solution {
         let mut pq = BinaryHeap::new();
         let mut count = vec![0; n];
         count[0] = 1;
-        for (i, &dist_i) in dist.iter().enumerate().take(n) {
+        for (i, &dist_i) in dist.iter().enumerate() {
             pq.push(Reverse((dist_i, i)));
         }
         while let Some(Reverse((_, u))) = pq.pop() {

@@ -41,7 +41,7 @@ impl Solution {
         let mut row = vec![0; m];
         let mut col = vec![0; n];
         for i in 0..m {
-            for (j, item_c) in col.iter_mut().enumerate().take(n) {
+            for (j, item_c) in col.iter_mut().enumerate() {
                 if mat[i][j] == 1 {
                     row[i] += 1;
                     *item_c += 1;
@@ -50,7 +50,7 @@ impl Solution {
         }
         let mut ans = 0;
         for i in 0..m {
-            for (j, &item_c) in col.iter().enumerate().take(n) {
+            for (j, &item_c) in col.iter().enumerate() {
                 if mat[i][j] == 1 && row[i] == 1 && item_c == 1 {
                     ans += 1;
                 }

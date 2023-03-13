@@ -47,7 +47,7 @@ impl Solution {
     pub fn diagonal_sum(mat: Vec<Vec<i32>>) -> i32 {
         let mut sum = 0;
         let n = mat.len();
-        for (i, item) in mat.iter().enumerate().take(n) {
+        for (i, item) in mat.iter().enumerate() {
             sum += item[i];
             sum += item[n - i - 1];
         }

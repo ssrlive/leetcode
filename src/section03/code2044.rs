@@ -56,7 +56,7 @@ impl Solution {
         let mut map = HashMap::new();
         for i in 0..limit {
             let mut temp = 0i32;
-            for (j, &num) in nums.iter().enumerate().take(n) {
+            for (j, &num) in nums.iter().enumerate() {
                 if i >> j & 1 == 1 {
                     temp |= num;
                 }

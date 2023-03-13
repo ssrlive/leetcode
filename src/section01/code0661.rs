@@ -44,8 +44,8 @@ impl Solution {
     pub fn image_smoother(img: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
         let mut result = vec![vec![0; img[0].len()]; img.len()];
 
-        for (i, items) in result.iter_mut().enumerate().take(img.len()) {
-            for (j, item) in items.iter_mut().enumerate().take(img[0].len()) {
+        for (i, items) in result.iter_mut().enumerate() {
+            for (j, item) in items.iter_mut().enumerate() {
                 let mut sum = 0;
                 let mut count = 0;
 

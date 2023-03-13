@@ -60,11 +60,10 @@ impl Solution {
             (x * 100000000.0).floor() / 100000000.0
         }
 
-        let n = dist.len();
         let max_possible_skips = dist.len() - 1;
         let time: Vec<f64> = dist.into_iter().map(|d| (d as f64) / (speed as f64)).collect();
         let mut dp: Vec<f64> = vec![time[0]; max_possible_skips + 1];
-        for &time_i in time.iter().take(n).skip(1) {
+        for &time_i in time.iter().skip(1) {
             for j in (1..=max_possible_skips).rev() {
                 let opt1 = dp[j].ceil() + time_i;
                 let opt2 = trim_minor_tail(dp[j - 1] + time_i);

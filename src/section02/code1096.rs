@@ -151,7 +151,7 @@ impl Solution {
         }
 
         let mut balance = 0;
-        for (i, &item) in t.iter().enumerate().take(n) {
+        for (i, &item) in t.iter().enumerate() {
             if item == '{' {
                 balance += 1;
             }

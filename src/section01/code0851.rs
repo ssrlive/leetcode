@@ -65,7 +65,7 @@ impl Solution {
             adj[v[1] as usize].push(v[0] as usize);
         }
         let mut ans = vec![0; n];
-        for (i, item) in ans.iter_mut().enumerate().take(n) {
+        for (i, item) in ans.iter_mut().enumerate() {
             let mut visit = vec![false; n];
             let mut ind = i;
             dfs(&adj, &mut visit, &quiet, i, &mut ind);

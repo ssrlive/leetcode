@@ -12,7 +12,7 @@ impl Solution {
         let s = s.as_bytes();
         let t = t.as_bytes();
         let mut dp = vec![vec![0; t.len() + 1]; s.len() + 1];
-        for item in dp.iter_mut().take(s.len() + 1) {
+        for item in dp.iter_mut() {
             item[0] = 1;
         }
         for i in 1..=s.len() {

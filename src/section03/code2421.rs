@@ -78,7 +78,7 @@ impl Solution {
         let mut parent: Vec<_> = (0..n).collect();
         let mut counts = vec![];
         let mut ret = n;
-        for &item in vals.iter().take(n) {
+        for &item in vals.iter() {
             counts.push((item, 1));
         }
 

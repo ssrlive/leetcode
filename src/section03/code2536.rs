@@ -45,14 +45,14 @@ impl Solution {
 
         for q in queries {
             let (x, y, u, v) = (q[0] as usize, q[1] as usize, q[2] as usize, q[3] as usize);
-            for item in data.iter_mut().take(u + 1).skip(x) {
+            for item in data.iter_mut().skip(x).take(u + 1) {
                 item[y] += 1;
                 item[v + 1] -= 1;
             }
         }
 
         let mut ret = vec![];
-        for item in data.iter().take(n) {
+        for item in data.iter() {
             let mut v = vec![];
             let mut sum = 0;
             for &item2 in item.iter().take(n) {

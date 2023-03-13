@@ -55,7 +55,7 @@ impl Solution {
     pub fn sum_odd_length_subarrays(arr: Vec<i32>) -> i32 {
         let n = arr.len();
         let mut ans = 0;
-        for (i, &item) in arr.iter().enumerate().take(n) {
+        for (i, &item) in arr.iter().enumerate() {
             let l = i + 1;
             let r = n - i;
             let l_odd = (l + 1) / 2;

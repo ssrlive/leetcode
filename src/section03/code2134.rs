@@ -54,8 +54,8 @@ impl Solution {
     pub fn min_swaps(nums: Vec<i32>) -> i32 {
         let mut nums = nums;
         let n = nums.len();
-        let mut count = 0usize;
-        for &num in nums.iter().take(n) {
+        let mut count = 0;
+        for &num in nums.iter() {
             count += num as usize;
         }
         for i in 0..n {

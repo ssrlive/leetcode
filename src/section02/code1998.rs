@@ -74,7 +74,7 @@ impl Solution {
         };
 
         let mut primes: HashMap<usize, Vec<usize>> = HashMap::new();
-        for (i, &num) in nums.iter().enumerate().take(len) {
+        for (i, &num) in nums.iter().enumerate() {
             let prime_set = prime_set(num as usize);
             for p in prime_set {
                 (*primes.entry(p).or_default()).push(i);

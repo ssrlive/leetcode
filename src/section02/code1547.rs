@@ -53,7 +53,7 @@ impl Solution {
         cuts.sort_unstable();
         let m = cuts.len();
         let mut dp = vec![vec![0; m]; m];
-        for (i, item) in dp.iter_mut().enumerate().take(m) {
+        for (i, item) in dp.iter_mut().enumerate() {
             item[i] = 0;
         }
         for (i, item) in dp.iter_mut().enumerate().take(m - 1) {

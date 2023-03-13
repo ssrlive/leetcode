@@ -61,7 +61,7 @@ impl Solution {
         let mut res = String::new();
         let space = spaces / (n - 1);
         let extra = spaces % (n - 1);
-        for (i, word) in words.iter().enumerate().take(n) {
+        for (i, word) in words.iter().enumerate() {
             res.push_str(word);
             if i < n - 1 {
                 res.push_str(&" ".repeat(space));

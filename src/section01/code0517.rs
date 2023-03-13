@@ -53,7 +53,7 @@ impl Solution {
         let avg = sum / n as i32;
         let mut ans = 0;
         let mut cnt = 0;
-        for &item in machines.iter().take(n) {
+        for &item in machines.iter() {
             cnt += item - avg;
             ans = std::cmp::max(ans, std::cmp::max(item - avg, cnt.abs()));
         }

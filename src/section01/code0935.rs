@@ -63,7 +63,7 @@ impl Solution {
             curr = next.clone();
         }
         let mut ans = 0;
-        for &item in next.iter().take(10) {
+        for &item in next.iter() {
             ans = (ans + item) % MOD;
         }
         ans as _

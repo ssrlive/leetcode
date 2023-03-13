@@ -47,7 +47,7 @@ impl Solution {
         }
         let mut max = 0;
         let mut ans = 0;
-        for &item in count.iter().take(37) {
+        for &item in count.iter() {
             match item.cmp(&max) {
                 std::cmp::Ordering::Greater => {
                     max = item;

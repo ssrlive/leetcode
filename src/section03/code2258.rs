@@ -64,8 +64,8 @@ impl Solution {
         let (m, n) = (grid.len(), grid[0].len());
         let mut fire: VecDeque<(usize, usize)> = VecDeque::new();
         let mut person: VecDeque<(usize, usize)> = VecDeque::new();
-        for (i, grid_i) in grid.iter().enumerate().take(m) {
-            for (j, &grid_i_j) in grid_i.iter().enumerate().take(n) {
+        for (i, grid_i) in grid.iter().enumerate() {
+            for (j, &grid_i_j) in grid_i.iter().enumerate() {
                 if grid_i_j == 1 {
                     fire.push_back((i, j));
                 }

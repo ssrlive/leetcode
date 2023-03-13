@@ -43,7 +43,7 @@ impl Solution {
             freq[x as usize] += 1;
         }
         let mut ans = -1;
-        for (i, &item) in freq.iter().enumerate().take(500 + 1).skip(1) {
+        for (i, &item) in freq.iter().enumerate().skip(1) {
             if item == i {
                 ans = i as i32;
             }

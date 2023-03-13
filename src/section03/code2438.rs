@@ -59,7 +59,7 @@ impl Solution {
         let mut lookup = vec![vec![0; m]; m];
         for i in 0..m {
             lookup[i][i] = powers[i];
-            for (j, &item) in powers.iter().enumerate().take(m).skip(i + 1) {
+            for (j, &item) in powers.iter().enumerate().skip(i + 1) {
                 lookup[i][j] = ((item as i64 * lookup[i][j - 1] as i64) % Q) as i32;
             }
         }

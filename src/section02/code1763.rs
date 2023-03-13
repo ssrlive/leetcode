@@ -47,7 +47,7 @@ impl Solution {
         for i in 0..(s.len() - 1) {
             let (mut lower_mask, mut upper_mask) = (0u32, 0u32);
 
-            for (j, &sb_j) in sb.iter().enumerate().take(s.len()).skip(i) {
+            for (j, &sb_j) in sb.iter().enumerate().skip(i) {
                 match sb_j >= b'a' {
                     true => lower_mask |= 1 << (sb_j - b'a'),
                     false => upper_mask |= 1 << (sb_j - b'A'),

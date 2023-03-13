@@ -57,7 +57,7 @@ impl Solution {
             }
             let mut temp = mask;
             let mut flag = 1;
-            for (j, &item_j) in vec.iter().enumerate().take(10) {
+            for (j, &item_j) in vec.iter().enumerate() {
                 let mut num = nums[i];
                 let mut count = 0;
                 while num % item_j == 0 {

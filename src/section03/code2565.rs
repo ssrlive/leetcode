@@ -70,7 +70,7 @@ impl Solution {
         }
 
         j = 0;
-        for (i, &item) in s.iter().enumerate().take(ss) {
+        for (i, &item) in s.iter().enumerate() {
             if j < ts as i32 && t[j as usize] == item {
                 while k < ts as i32 && dp[k as usize] <= i as i32 {
                     k += 1;

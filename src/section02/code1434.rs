@@ -72,7 +72,7 @@ impl Solution {
 
         let n = hats.len();
         let mut h2p = vec![vec![]; 41];
-        for (i, item) in hats.iter().enumerate().take(n) {
+        for (i, item) in hats.iter().enumerate() {
             for &hat in item {
                 h2p[hat as usize].push(i);
             }

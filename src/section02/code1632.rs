@@ -56,8 +56,8 @@ impl Solution {
         let mut matrix = matrix;
         let (m, n) = (matrix.len(), matrix[0].len());
         let mut group_by_value = BTreeMap::new();
-        for (r, item_r) in matrix.iter().enumerate().take(m) {
-            for (c, &item_c) in item_r.iter().enumerate().take(n) {
+        for (r, item_r) in matrix.iter().enumerate() {
+            for (c, &item_c) in item_r.iter().enumerate() {
                 group_by_value
                     .entry(item_c)
                     .or_insert(vec![])

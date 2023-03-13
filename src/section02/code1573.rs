@@ -51,7 +51,7 @@ impl Solution {
         let mut one = 0;
         let mod_num = 1_000_000_007;
         let ans;
-        for &item in s.iter().take(n) {
+        for &item in s.iter() {
             if item == b'1' {
                 one += 1;
             }
@@ -64,7 +64,7 @@ impl Solution {
             let count_of_one = one / 3;
             let (mut index1, mut index1end, mut index2, mut index2end) = (-1, -1, -1, -1);
             let mut count = 0;
-            for (i, &item) in s.iter().enumerate().take(n) {
+            for (i, &item) in s.iter().enumerate() {
                 if item == b'1' {
                     count += 1;
                 }

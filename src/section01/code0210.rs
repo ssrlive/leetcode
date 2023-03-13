@@ -58,7 +58,7 @@ impl Solution {
             in_degree[next] += 1;
         }
         let mut queue = std::collections::VecDeque::new();
-        for (i, &item) in in_degree.iter().enumerate().take(num_courses) {
+        for (i, &item) in in_degree.iter().enumerate() {
             if item == 0 {
                 queue.push_back(i);
             }

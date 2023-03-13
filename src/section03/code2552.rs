@@ -41,11 +41,11 @@ impl Solution {
     pub fn count_quadruplets(nums: Vec<i32>) -> i64 {
         let n = nums.len();
         let mut lessthan = vec![vec![0; n + 1]; n + 1];
-        for item in lessthan.iter_mut().take(n + 1) {
+        for item in lessthan.iter_mut() {
             item[0] = 0;
         }
         for i in 1..=n {
-            for (j, item) in lessthan.iter_mut().enumerate().take(n + 1) {
+            for (j, item) in lessthan.iter_mut().enumerate() {
                 item[i] = item[i - 1] + (nums[i - 1] < j as i32) as i32;
             }
         }

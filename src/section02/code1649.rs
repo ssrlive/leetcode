@@ -87,9 +87,8 @@ impl Solution {
 
         let mut c = vec![0; 100001];
         let mut res = 0;
-        let n = instructions.len();
         let mod_num = 1_000_000_007;
-        for (i, &item) in instructions.iter().enumerate().take(n) {
+        for (i, &item) in instructions.iter().enumerate() {
             let v1 = get(&c, item - 1);
             let v2 = i as i32 - get(&c, item);
             res = (res + v1.min(v2)) % mod_num;

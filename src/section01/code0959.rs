@@ -78,12 +78,12 @@ impl Solution {
             for c in g.chars() {
                 let mut data = vec![vec![0; 3]; 3];
                 if c == '/' {
-                    for (i, item) in data.iter_mut().enumerate().take(3) {
+                    for (i, item) in data.iter_mut().enumerate() {
                         item[2 - i] = 1;
                     }
                 }
                 if c == '\\' {
-                    for (i, item) in data.iter_mut().enumerate().take(3) {
+                    for (i, item) in data.iter_mut().enumerate() {
                         item[i] = 1;
                     }
                 }

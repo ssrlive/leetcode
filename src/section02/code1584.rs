@@ -59,7 +59,7 @@ impl Solution {
             }
             visited[i] = true;
             ans += d;
-            for (j, &item) in visited.iter().enumerate().take(n) {
+            for (j, &item) in visited.iter().enumerate() {
                 if !item {
                     heap.push(Reverse((dist[i][j], j)));
                 }

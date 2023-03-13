@@ -64,8 +64,8 @@ impl Solution {
         let n = grid[0].len();
         let k = k as usize;
         let mut tmp = vec![vec![0; n]; m];
-        for (i, item) in grid.iter().enumerate().take(m) {
-            for (j, &item2) in item.iter().enumerate().take(n) {
+        for (i, item) in grid.iter().enumerate() {
+            for (j, &item2) in item.iter().enumerate() {
                 let idx = (i * n + j + k) % (m * n);
                 tmp[idx / n][idx % n] = item2;
             }

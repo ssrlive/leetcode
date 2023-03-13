@@ -54,7 +54,7 @@ impl Solution {
         for pile in piles {
             let p = prefix(pile);
             let old = vals.clone();
-            for (l, val) in vals.iter_mut().enumerate().take(k as usize + 1).skip(1) {
+            for (l, val) in vals.iter_mut().enumerate().skip(1) {
                 let mut current_max = *old.get(l).unwrap();
                 for i in 1..=(l.min(p.len())) {
                     let v = old.get(l - i).unwrap() + p.get(i - 1).unwrap();

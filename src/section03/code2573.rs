@@ -55,7 +55,7 @@ impl Solution {
             if c > 26 {
                 return "".to_string();
             }
-            for (j, arr_j) in arr.iter_mut().enumerate().skip(i).take(n) {
+            for (j, arr_j) in arr.iter_mut().enumerate().skip(i) {
                 if lcp[i][j] > 0 {
                     *arr_j = c;
                 }

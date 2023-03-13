@@ -39,7 +39,7 @@ impl Solution {
         let s = s.as_bytes();
         let n = s.len();
         let mut dp = vec![vec![0; n]; n];
-        for (i, item) in dp.iter_mut().enumerate().take(n) {
+        for (i, item) in dp.iter_mut().enumerate() {
             item[i] = 1;
         }
         for i in (0..n).rev() {

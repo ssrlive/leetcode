@@ -44,8 +44,8 @@ impl Solution {
             }
         }
         let mut ans = vec![vec![0; n]; m];
-        for (i, item) in ans.iter_mut().enumerate().take(m) {
-            for (j, item2) in item.iter_mut().enumerate().take(n) {
+        for (i, item) in ans.iter_mut().enumerate() {
+            for (j, item2) in item.iter_mut().enumerate() {
                 let r1 = (i as i32 - k).max(0) as usize;
                 let c1 = (j as i32 - k).max(0) as usize;
                 let r2 = (i as i32 + k + 1).min(m as i32) as usize;

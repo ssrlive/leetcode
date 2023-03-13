@@ -48,7 +48,7 @@ impl Solution {
         let mut c = vec![0; grid.len()];
         let mut r = vec![0; grid[0].len()];
         for i in 0..grid.len() {
-            for (j, item) in r.iter_mut().enumerate().take(grid[i].len()) {
+            for (j, item) in r.iter_mut().enumerate() {
                 if grid[i][j] == 1 {
                     c[i] += 1;
                     *item += 1;
@@ -57,7 +57,7 @@ impl Solution {
         }
         let mut ans = 0;
         for i in 0..grid.len() {
-            for (j, &item) in r.iter().enumerate().take(grid[i].len()) {
+            for (j, &item) in r.iter().enumerate() {
                 if grid[i][j] == 1 && (c[i] > 1 || item > 1) {
                     ans += 1;
                 }

@@ -46,11 +46,10 @@ impl Solution {
 
         let mut arr = map.into_iter().collect::<Vec<(i32, i32)>>();
         arr.sort();
-        let n = arr.len();
 
         let mut memo = vec![];
         let mut last = -1;
-        for &item in arr.iter().take(n) {
+        for &item in arr.iter() {
             let (v, num) = item;
             if last + 1 != v {
                 memo.push(vec![]);

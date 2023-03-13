@@ -44,14 +44,14 @@ impl Solution {
         let mut min_row = vec![i32::MAX; matrix.len()];
         let mut max_col = vec![i32::MIN; matrix[0].len()];
         for i in 0..matrix.len() {
-            for (j, item) in max_col.iter_mut().enumerate().take(matrix[0].len()) {
+            for (j, item) in max_col.iter_mut().enumerate() {
                 min_row[i] = min_row[i].min(matrix[i][j]);
                 *item = (*item).max(matrix[i][j]);
             }
         }
         let mut res = vec![];
         for i in 0..matrix.len() {
-            for (j, &item) in max_col.iter().enumerate().take(matrix[0].len()) {
+            for (j, &item) in max_col.iter().enumerate() {
                 if matrix[i][j] == min_row[i] && matrix[i][j] == item {
                     res.push(matrix[i][j]);
                 }

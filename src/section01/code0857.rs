@@ -38,7 +38,7 @@ struct Solution;
 impl Solution {
     pub fn mincost_to_hire_workers(quality: Vec<i32>, wage: Vec<i32>, k: i32) -> f64 {
         let n = quality.len();
-        let mut v = Vec::new();
+        let mut v = Vec::with_capacity(n);
         for i in 0..n {
             let r = wage[i] as f64 / quality[i] as f64;
             v.push((r, quality[i] as f64));
@@ -48,7 +48,7 @@ impl Solution {
         let mut pq = std::collections::BinaryHeap::new();
         let mut qs = 0.0;
         let mut ans = std::f64::MAX;
-        for item in v.iter().take(n) {
+        for item in v.iter() {
             qs += item.1;
             pq.push(item.1 as i64);
             if pq.len() > k as usize {

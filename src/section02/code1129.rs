@@ -75,7 +75,7 @@ impl Solution {
         }
 
         let mut result = vec![-1; n];
-        for (i, item) in result.iter_mut().enumerate().take(n) {
+        for (i, item) in result.iter_mut().enumerate() {
             let av = bfs(&g, 0, i);
             let bv = bfs(&g, n, i);
 

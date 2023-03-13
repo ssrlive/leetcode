@@ -52,7 +52,7 @@ impl Solution {
         let n = nums.len();
         let mut count = 0;
         let mut btreemap = BTreeMap::new();
-        for &num in nums.iter().take(n).skip(1) {
+        for &num in nums.iter().skip(1) {
             *btreemap.entry(num).or_insert(0) += 1;
         }
 

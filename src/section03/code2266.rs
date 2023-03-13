@@ -72,13 +72,12 @@ impl Solution {
         }
 
         let s = pressed_keys.chars().collect::<Vec<char>>();
-        let n = s.len();
         let mut stack = vec![(1, false)];
         let mut last = s[0];
         if last == '7' || last == '9' {
             stack[0].1 = true;
         }
-        for &s_i in s.iter().take(n).skip(1) {
+        for &s_i in s.iter().skip(1) {
             if last != s_i {
                 last = s_i;
                 if last == '7' || last == '9' {

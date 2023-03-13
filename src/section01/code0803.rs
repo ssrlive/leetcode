@@ -105,7 +105,7 @@ impl Solution {
         for i in 0..m {
             for j in 0..n {
                 if grid[i][j] > 0 {
-                    for item in dirs.iter().take(4) {
+                    for item in dirs.iter() {
                         let x = i as i32 + item[0];
                         let y = j as i32 + item[1];
                         if x > -1 && x < m as i32 && y > -1 && y < n as i32 && grid[x as usize][y as usize] > 0 {
@@ -122,7 +122,7 @@ impl Solution {
                 let _i = hits[i][0] as usize;
                 let _j = hits[i][1] as usize;
                 let mut flag = usize::from(_i == 0);
-                for item in dirs.iter().take(4) {
+                for item in dirs.iter() {
                     let x = _i as i32 + item[0];
                     let y = _j as i32 + item[1];
                     if x > -1 && x < m as i32 && y > -1 && y < n as i32 && grid[x as usize][y as usize] > 0 {

@@ -91,7 +91,7 @@ struct UnionFind {
 impl UnionFind {
     fn new(n: usize) -> Self {
         let mut parents = vec![0; n];
-        for (i, item) in parents.iter_mut().enumerate().take(n) {
+        for (i, item) in parents.iter_mut().enumerate() {
             *item = i;
         }
         UnionFind { parents }

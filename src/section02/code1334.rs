@@ -54,7 +54,7 @@ struct Solution;
 impl Solution {
     pub fn find_the_city(n: i32, edges: Vec<Vec<i32>>, distance_threshold: i32) -> i32 {
         let mut graph = vec![vec![std::i32::MAX; n as usize]; n as usize];
-        for (i, item) in graph.iter_mut().enumerate().take(n as usize) {
+        for (i, item) in graph.iter_mut().enumerate() {
             item[i] = 0;
         }
         for edge in edges {
@@ -72,9 +72,9 @@ impl Solution {
         }
         let mut min = std::i32::MAX;
         let mut res = 0;
-        for (i, item) in graph.iter().enumerate().take(n as usize) {
+        for (i, item) in graph.iter().enumerate() {
             let mut count = 0;
-            for &item2 in item.iter().take(n as usize) {
+            for &item2 in item.iter() {
                 if item2 <= distance_threshold {
                     count += 1;
                 }
