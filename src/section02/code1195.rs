@@ -46,71 +46,129 @@
 // 1 <= n <= 50
 //
 
-/*
-// cpp solution
-class FizzBuzz {
-public:
-    explicit FizzBuzz(int n): n(n), i(1), mutex(), condition() {}
+use std::sync::{Arc, Barrier};
 
-    void fizz(std::function<void()> printFizz) {
-        auto predicate = [](int v) { return (v % 3 == 0) && (v % 5 != 0); };
-        auto printer = [printFizz](int) { printFizz(); };
-        run(printer, predicate);
-    }
+struct FizzBuzz {
+    n: i32,
+    barrier: Arc<Barrier>,
+}
 
-    void buzz(std::function<void()> printBuzz) {
-        auto predicate = [](int v) { return (v % 3 != 0) && (v % 5 == 0); };
-        auto printer = [printBuzz](int) { printBuzz(); };
-        run(printer, predicate);
-    }
-
-    void fizzbuzz(std::function<void()> printFizzBuzz) {
-        auto predicate = [](int v) { return (v % 3 == 0) && (v % 5 == 0); };
-        auto printer = [printFizzBuzz](int) { printFizzBuzz(); };
-        run(printer, predicate);
-    }
-
-    void number(std::function<void(int)> printNumber) {
-        auto predicate = [](int v) { return (v % 3 != 0) && (v % 5 != 0); };
-        run(printNumber, predicate);
-    }
-
-private:
-    int n;
-    int i;
-    std::mutex mutex;
-    std::condition_variable condition;
-
-    template <typename Printer, typename Predicate>
-    void run(Printer printer, Predicate predicate) {
-        for (;;) {
-            int v = 0;
-            {
-                std::unique_lock<std::mutex> lock(mutex);
-                condition.wait(lock, [this, predicate]() {
-                    return (i > n) || predicate(i);
-                });
-                if (i > n) {
-                    break;
-                }
-                v = i;
-            }
-            printer(v);
-            {
-                std::unique_lock<std::mutex> lock(mutex);
-                i++;
-            }
-            condition.notify_all();
+impl FizzBuzz {
+    fn new(n: i32) -> Self {
+        Self {
+            n,
+            barrier: Arc::new(Barrier::new(4)),
         }
     }
-};
 
-// rust solution can't pass. I don't know how to implement it in rust.
-*/
+    fn fizz(&self, print_fizz: impl Fn()) {
+        for i in 1..=self.n {
+            if i % 3 == 0 && i % 5 != 0 {
+                print_fizz();
+            }
+            self.barrier.wait();
+        }
+    }
 
-struct FizzBuzz {}
+    fn buzz(&self, print_buzz: impl Fn()) {
+        for i in 1..=self.n {
+            if i % 3 != 0 && i % 5 == 0 {
+                print_buzz();
+            }
+            self.barrier.wait();
+        }
+    }
 
-impl FizzBuzz {}
+    fn fizzbuzz(&self, print_fizzbuzz: impl Fn()) {
+        for i in 1..=self.n {
+            if i % 3 == 0 && i % 5 == 0 {
+                print_fizzbuzz();
+            }
+            self.barrier.wait();
+        }
+    }
+
+    fn number(&self, print_number: impl Fn(i32)) {
+        for i in 1..=self.n {
+            if i % 3 != 0 && i % 5 != 0 {
+                print_number(i);
+            }
+            self.barrier.wait();
+        }
+    }
+}
 
 #[test]
-fn test() {}
+fn test() {
+    use std::sync::Mutex;
+
+    #[derive(Debug, PartialEq, Clone)]
+    enum FizzBuzzValue {
+        Fizz,
+        Buzz,
+        FizzBuzz,
+        Number(i32),
+    }
+
+    fn test_fizz_buzz(n: i32) -> Vec<FizzBuzzValue> {
+        let result0 = Arc::new(Mutex::new(Vec::new()));
+
+        let fizz_buzz = Arc::new(FizzBuzz::new(n));
+
+        let fizz = fizz_buzz.clone();
+        let result = result0.clone();
+        let t1 = std::thread::spawn(move || fizz.fizz(|| result.lock().unwrap().push(FizzBuzzValue::Fizz)));
+
+        let buzz = fizz_buzz.clone();
+        let result = result0.clone();
+        let t2 = std::thread::spawn(move || buzz.buzz(|| result.lock().unwrap().push(FizzBuzzValue::Buzz)));
+
+        let fizzbuzz = fizz_buzz.clone();
+        let result = result0.clone();
+        let t3 = std::thread::spawn(move || fizzbuzz.fizzbuzz(|| result.lock().unwrap().push(FizzBuzzValue::FizzBuzz)));
+
+        let number = fizz_buzz;
+        let result = result0.clone();
+        let t4 = std::thread::spawn(move || number.number(|x| result.lock().unwrap().push(FizzBuzzValue::Number(x))));
+
+        t1.join().unwrap();
+        t2.join().unwrap();
+        t3.join().unwrap();
+        t4.join().unwrap();
+
+        let v = result0.lock().unwrap().clone();
+        v
+    }
+
+    assert_eq!(
+        test_fizz_buzz(15),
+        vec![
+            FizzBuzzValue::Number(1),
+            FizzBuzzValue::Number(2),
+            FizzBuzzValue::Fizz,
+            FizzBuzzValue::Number(4),
+            FizzBuzzValue::Buzz,
+            FizzBuzzValue::Fizz,
+            FizzBuzzValue::Number(7),
+            FizzBuzzValue::Number(8),
+            FizzBuzzValue::Fizz,
+            FizzBuzzValue::Buzz,
+            FizzBuzzValue::Number(11),
+            FizzBuzzValue::Fizz,
+            FizzBuzzValue::Number(13),
+            FizzBuzzValue::Number(14),
+            FizzBuzzValue::FizzBuzz,
+        ]
+    );
+
+    assert_eq!(
+        test_fizz_buzz(5),
+        vec![
+            FizzBuzzValue::Number(1),
+            FizzBuzzValue::Number(2),
+            FizzBuzzValue::Fizz,
+            FizzBuzzValue::Number(4),
+            FizzBuzzValue::Buzz,
+        ]
+    );
+}

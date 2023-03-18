@@ -1044,7 +1044,7 @@ cargo test
 | 1190 | [Reverse Substrings Between Each Pair of Parentheses](src/section02/code1190.rs) | [link](https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/) | Medium | :heavy_check_mark: |
 | 1191 | [K-Concatenation Maximum Sum](src/section02/code1191.rs) | [link](https://leetcode.com/problems/k-concatenation-maximum-sum/) | Medium | :heavy_check_mark: |
 | 1192 | [Critical Connections in a Network](src/section02/code1192.rs) | [link](https://leetcode.com/problems/critical-connections-in-a-network/) | Hard | :heavy_check_mark: |
-| 1195 | [Fizz Buzz Multithreaded](src/section02/code1195.rs) | [link](https://leetcode.com/problems/fizz-buzz-multithreaded/) | Medium | :x: |
+| 1195 | [Fizz Buzz Multithreaded](src/section02/code1195.rs) | [link](https://leetcode.com/problems/fizz-buzz-multithreaded/) | Medium | :heavy_check_mark: |
 | 1200 | [Minimum Absolute Difference](src/section02/code1200.rs) | [link](https://leetcode.com/problems/minimum-absolute-difference/) | Easy | :heavy_check_mark: |
 
 | # | Title | Link | Difficulty | Solution |
