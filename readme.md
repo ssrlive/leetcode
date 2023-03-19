@@ -2207,3 +2207,7 @@ cargo test
 | 2592 | [Maximize Greatness of an Array](src/section03/code2592.rs) | [link](https://leetcode.com/problems/maximize-greatness-of-an-array/) | Hard | :heavy_check_mark: |
 | 2593 | [Find Score of an Array After Marking All Elements](src/section03/code2593.rs) | [link](https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/) | Medium | :heavy_check_mark: |
 | 2594 | [Minimum Time to Repair Cars](src/section03/code2594.rs) | [link](https://leetcode.com/problems/minimum-time-to-repair-cars/) | Medium | :heavy_check_mark: |
+| 2595 | [Number of Even and Odd Bits](src/section03/code2595.rs) | [link](https://leetcode.com/problems/number-of-even-and-odd-bits/) | Medium | :heavy_check_mark: |
+| 2596 | [Check Knight Tour Configuration](src/section03/code2596.rs) | [link](https://leetcode.com/problems/check-knight-tour-configuration/) | Medium | :heavy_check_mark: |
+| 2597 | [The Number of Beautiful Subsets](src/section03/code2597.rs) | [link](https://leetcode.com/problems/the-number-of-beautiful-subsets/) | Hard | :heavy_check_mark: |
+| 2598 | [Smallest Missing Non-negative Integer After Operations](src/section03/code2598.rs) | [link](https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/) | Medium | :heavy_check_mark: |
