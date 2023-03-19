@@ -2203,3 +2203,7 @@ cargo test
 | 2587 | [Rearrange Array to Maximize Prefix Score](src/section03/code2587.rs) | [link](https://leetcode.com/problems/rearrange-array-to-maximize-prefix-score/) | Hard | :heavy_check_mark: |
 | 2588 | [Count the Number of Beautiful Subarrays](src/section03/code2588.rs) | [link](https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/) | Medium | :heavy_check_mark: |
 | 2589 | [Minimum Time to Complete All Tasks](src/section03/code2589.rs) | [link](https://leetcode.com/problems/minimum-time-to-complete-all-tasks/) | Hard | :heavy_check_mark: |
+| 2591 | [Distribute Money to Maximum Children](src/section03/code2591.rs) | [link](https://leetcode.com/problems/distribute-money-to-maximum-children/) | Medium | :heavy_check_mark: |
+| 2592 | [Maximize Greatness of an Array](src/section03/code2592.rs) | [link](https://leetcode.com/problems/maximize-greatness-of-an-array/) | Hard | :heavy_check_mark: |
+| 2593 | [Find Score of an Array After Marking All Elements](src/section03/code2593.rs) | [link](https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/) | Medium | :heavy_check_mark: |
+| 2594 | [Minimum Time to Repair Cars](src/section03/code2594.rs) | [link](https://leetcode.com/problems/minimum-time-to-repair-cars/) | Medium | :heavy_check_mark: |

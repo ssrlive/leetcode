@@ -471,3 +471,7 @@ mod code2586;
 mod code2587;
 mod code2588;
 mod code2589;
+mod code2591;
+mod code2592;
+mod code2593;
+mod code2594;
