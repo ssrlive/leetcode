@@ -2211,3 +2211,7 @@ cargo test
 | 2596 | [Check Knight Tour Configuration](src/section03/code2596.rs) | [link](https://leetcode.com/problems/check-knight-tour-configuration/) | Medium | :heavy_check_mark: |
 | 2597 | [The Number of Beautiful Subsets](src/section03/code2597.rs) | [link](https://leetcode.com/problems/the-number-of-beautiful-subsets/) | Hard | :heavy_check_mark: |
 | 2598 | [Smallest Missing Non-negative Integer After Operations](src/section03/code2598.rs) | [link](https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/) | Medium | :heavy_check_mark: |
+| 2600 | [K Items With the Maximum Sum](src/section03/code2600.rs) | [link](https://leetcode.com/problems/k-items-with-the-maximum-sum/) | Medium | :heavy_check_mark: |
+| 2601 | [Prime Subtraction Operation](src/section03/code2601.rs) | [link](https://leetcode.com/problems/prime-subtraction-operation/) | Medium | :heavy_check_mark: |
+| 2602 | [Minimum Operations to Make All Array Elements Equal](src/section03/code2602.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/) | Medium | :heavy_check_mark: |
+| 2603 | [Collect Coins in a Tree](src/section03/code2603.rs) | [link](https://leetcode.com/problems/collect-coins-in-a-tree/) | Medium | :heavy_check_mark: |
