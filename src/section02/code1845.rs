@@ -55,7 +55,7 @@ impl SeatManager {
     fn new(n: i32) -> Self {
         assert!(n > 0);
         Self {
-            free: BinaryHeap::from((1..=n).into_iter().map(Reverse).collect::<Vec<_>>()),
+            free: BinaryHeap::from((1..=n).map(Reverse).collect::<Vec<_>>()),
         }
     }
 

@@ -69,7 +69,7 @@ impl Solution {
         let mut f = (0, 0);
         let mut b = (0, 0);
         let n = num.len();
-        let s = num.chars().into_iter().collect::<Vec<char>>();
+        let s = num.chars().collect::<Vec<char>>();
         for i in 0..n / 2 {
             helper(&mut f, s[i]);
             helper(&mut b, s[n - 1 - i]);

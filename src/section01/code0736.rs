@@ -134,7 +134,7 @@ impl Solution {
         let begin = expr.chars().next()?;
         if begin == '(' {
             Some(1)
-        } else if ('a'..='z').contains(&begin) {
+        } else if begin.is_ascii_lowercase() {
             Some(2)
         } else {
             Some(3)

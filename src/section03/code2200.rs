@@ -54,7 +54,7 @@ impl Solution {
             start = (end + 1).max(idx - k);
             end = l.min(idx + k);
 
-            (start..=end).into_iter().for_each(|x| res.push(x));
+            (start..=end).for_each(|x| res.push(x));
             if end == l {
                 break;
             }

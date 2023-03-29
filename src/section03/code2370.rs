@@ -47,12 +47,7 @@ impl Solution {
         let mut count = [0; 26];
         for c in s.as_bytes() {
             let i = *c as usize - 'a' as usize;
-            count[i] = (i.saturating_sub(k)..=(25.min(i + k)))
-                .into_iter()
-                .map(|x| count[x])
-                .max()
-                .unwrap()
-                + 1;
+            count[i] = (i.saturating_sub(k)..=(25.min(i + k))).map(|x| count[x]).max().unwrap() + 1;
         }
         *count.iter().max().unwrap()
     }

@@ -51,7 +51,7 @@ impl Solution {
     pub fn deck_revealed_increasing(deck: Vec<i32>) -> Vec<i32> {
         use std::collections::VecDeque;
 
-        let mut deq: VecDeque<_> = (0..deck.len()).into_iter().collect();
+        let mut deq: VecDeque<_> = (0..deck.len()).collect();
 
         // init answer
         let mut ans = vec![0; deck.len()];

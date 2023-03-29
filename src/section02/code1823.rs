@@ -50,7 +50,7 @@ struct Solution;
 
 impl Solution {
     pub fn find_the_winner(n: i32, k: i32) -> i32 {
-        let mut arr = (1..=n).into_iter().collect::<Vec<i32>>();
+        let mut arr = (1..=n).collect::<Vec<i32>>();
         let mut ci = 0;
         while 1 < arr.len() {
             ci = (ci + k as usize - 1) % arr.len();

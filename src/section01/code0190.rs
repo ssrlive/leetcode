@@ -19,7 +19,7 @@ struct Solution {}
 impl Solution {
     pub fn reverse_bits(x: u32) -> u32 {
         let mut x = x;
-        (0..32).into_iter().fold(0, |mut ans, _| {
+        (0..32).fold(0, |mut ans, _| {
             ans = (ans << 1) | (x & 1);
             x >>= 1;
             ans

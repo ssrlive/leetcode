@@ -130,7 +130,7 @@ impl Solution {
                         if s_i_byte == b'>' {
                             break;
                         }
-                        if !(b'A'..=b'Z').contains(&s_i_byte) {
+                        if !s_i_byte.is_ascii_uppercase() {
                             return Some(false);
                         }
                         t.push(s_i_byte as char);
@@ -150,7 +150,7 @@ impl Solution {
                         if s_i_byte == b'>' {
                             break;
                         }
-                        if !(b'A'..=b'Z').contains(&s_i_byte) {
+                        if !s_i_byte.is_ascii_uppercase() {
                             return Some(false);
                         }
                         t.push(s_i_byte as char);

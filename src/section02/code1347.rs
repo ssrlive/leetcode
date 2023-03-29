@@ -51,7 +51,7 @@ impl Solution {
             *freqs.entry(ch).or_insert(0) -= 1;
         }
 
-        freqs.values().into_iter().filter(|&&item| item > 0).sum()
+        freqs.values().filter(|&&item| item > 0).sum()
     }
 }
 

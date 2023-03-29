@@ -46,12 +46,10 @@ impl Solution {
         use std::collections::*;
         let mut s1 = sentence1
             .split(' ')
-            .into_iter()
             .map(|v| v.to_string())
             .collect::<VecDeque<String>>();
         let mut s2 = sentence2
             .split(' ')
-            .into_iter()
             .map(|v| v.to_string())
             .collect::<VecDeque<String>>();
         if s1.len() < s2.len() {

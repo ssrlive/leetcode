@@ -45,8 +45,8 @@ struct Solution;
 impl Solution {
     pub fn maximum_subsequence_count(text: String, pattern: String) -> i64 {
         let n = text.len();
-        let s = text.chars().into_iter().collect::<Vec<char>>();
-        let p = pattern.chars().into_iter().collect::<Vec<char>>();
+        let s = text.chars().collect::<Vec<char>>();
+        let p = pattern.chars().collect::<Vec<char>>();
         let (p1, p2) = (p[0], p[1]);
         if p1 == p2 {
             let mut count = 0;

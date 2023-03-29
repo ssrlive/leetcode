@@ -36,7 +36,7 @@ impl Solution {
         }
 
         let mut memo = vec![false; n + 1];
-        let mut s = s.chars().into_iter().collect::<Vec<char>>();
+        let mut s = s.chars().collect::<Vec<char>>();
         s.reverse();
         let m = s.len();
         for i in 0..m {

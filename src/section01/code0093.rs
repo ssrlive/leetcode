@@ -52,9 +52,7 @@ impl Solution {
                 return;
             }
 
-            let lengths = (1..=std::cmp::min(3, str.len() - start))
-                .into_iter()
-                .filter(|len| is_valid(&str[start..start + len]));
+            let lengths = (1..=std::cmp::min(3, str.len() - start)).filter(|len| is_valid(&str[start..start + len]));
             for len in lengths {
                 parts.push(&str[start..start + len]);
                 backtrace(parts, str, start + len, results);

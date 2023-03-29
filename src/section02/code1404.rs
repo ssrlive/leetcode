@@ -53,7 +53,7 @@ impl Solution {
         use std::collections::*;
         let mut result = 0;
         let f = |v: char| if v == '1' { 1 } else { 0 };
-        let mut s = s.chars().into_iter().map(f).collect::<VecDeque<u8>>();
+        let mut s = s.chars().map(f).collect::<VecDeque<u8>>();
         while s.len() > 1 {
             let li = s.len() - 1;
             if s[li] == 1 {
