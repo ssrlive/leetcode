@@ -2212,6 +2212,17 @@ cargo test
 | 2597 | [The Number of Beautiful Subsets](src/section03/code2597.rs) | [link](https://leetcode.com/problems/the-number-of-beautiful-subsets/) | Hard | :heavy_check_mark: |
 | 2598 | [Smallest Missing Non-negative Integer After Operations](src/section03/code2598.rs) | [link](https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/) | Medium | :heavy_check_mark: |
 | 2600 | [K Items With the Maximum Sum](src/section03/code2600.rs) | [link](https://leetcode.com/problems/k-items-with-the-maximum-sum/) | Medium | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2601 | [Prime Subtraction Operation](src/section03/code2601.rs) | [link](https://leetcode.com/problems/prime-subtraction-operation/) | Medium | :heavy_check_mark: |
 | 2602 | [Minimum Operations to Make All Array Elements Equal](src/section03/code2602.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/) | Medium | :heavy_check_mark: |
-| 2603 | [Collect Coins in a Tree](src/section03/code2603.rs) | [link](https://leetcode.com/problems/collect-coins-in-a-tree/) | Medium | :heavy_check_mark: |
+| 2603 | [Collect Coins in a Tree](src/section03/code2603.rs) | [link](https://leetcode.com/problems/collect-coins-in-a-tree/) | Hard | :heavy_check_mark: |
+| 2605 | [Form Smallest Number From Two Digit Arrays](src/section03/code2605.rs) | [link](https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/) | Easy | :heavy_check_mark: |
+| 2606 | [Find the Substring With Maximum Cost](src/section03/code2606.rs) | [link](https://leetcode.com/problems/find-the-substring-with-maximum-cost/) | Medium | :heavy_check_mark: |
+| 2607 | [Make K-Subarray Sums Equal](src/section03/code2607.rs) | [link](https://leetcode.com/problems/make-k-subarray-sums-equal/) | Medium | :heavy_check_mark: |
+| 2608 | [Shortest Cycle in a Graph](src/section03/code2608.rs) | [link](https://leetcode.com/problems/shortest-cycle-in-a-graph/) | Hard | :heavy_check_mark: |
+| 2609 | [Find the Longest Balanced Substring of a Binary String](src/section03/code2609.rs) | [link](https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/) | Easy | :heavy_check_mark: |
+| 2610 | [Convert an Array Into a 2D Array With Conditions](src/section03/code2610.rs) | [link](https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/) | Medium | :heavy_check_mark: |
+| 2611 | [Mice and Cheese](src/section03/code2611.rs) | [link](https://leetcode.com/problems/mice-and-cheese/) | Medium | :heavy_check_mark: |
+| 2612 | [Minimum Reverse Operations](src/section03/code2612.rs) | [link](https://leetcode.com/problems/minimum-reverse-operations/) | Hard | :heavy_check_mark: |
