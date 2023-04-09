@@ -2226,3 +2226,7 @@ cargo test
 | 2610 | [Convert an Array Into a 2D Array With Conditions](src/section03/code2610.rs) | [link](https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/) | Medium | :heavy_check_mark: |
 | 2611 | [Mice and Cheese](src/section03/code2611.rs) | [link](https://leetcode.com/problems/mice-and-cheese/) | Medium | :heavy_check_mark: |
 | 2612 | [Minimum Reverse Operations](src/section03/code2612.rs) | [link](https://leetcode.com/problems/minimum-reverse-operations/) | Hard | :heavy_check_mark: |
+| 2614 | [Prime In Diagonal](src/section03/code2614.rs) | [link](https://leetcode.com/problems/prime-in-diagonal/) | Medium | :heavy_check_mark: |
+| 2615 | [Sum of Distances](src/section03/code2615.rs) | [link](https://leetcode.com/problems/sum-of-distances/) | Hard | :heavy_check_mark: |
+| 2616 | [Minimize the Maximum Difference of Pairs](src/section03/code2616.rs) | [link](https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/) | Medium | :heavy_check_mark: |
+| 2617 | [Minimum Number of Visited Cells in a Grid](src/section03/code2617.rs) | [link](https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/) | Hard | :heavy_check_mark: |
