@@ -50,6 +50,7 @@ mod code1051;
 mod code1052;
 mod code1053;
 mod code1054;
+mod code1061;
 mod code1066;
 mod code1071;
 mod code1072;
