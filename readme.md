@@ -2230,3 +2230,7 @@ cargo test
 | 2615 | [Sum of Distances](src/section03/code2615.rs) | [link](https://leetcode.com/problems/sum-of-distances/) | Hard | :heavy_check_mark: |
 | 2616 | [Minimize the Maximum Difference of Pairs](src/section03/code2616.rs) | [link](https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/) | Medium | :heavy_check_mark: |
 | 2617 | [Minimum Number of Visited Cells in a Grid](src/section03/code2617.rs) | [link](https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/) | Hard | :heavy_check_mark: |
+| 2639 | [Find the Width of Columns of a Grid](src/section03/code2639.rs) | [link](https://leetcode.com/problems/find-the-width-of-columns-of-a-grid/) | Easy | :heavy_check_mark: |
+| 2640 | [Find the Score of All Prefixes of an Array](src/section03/code2640.rs) | [link](https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/) | Medium | :heavy_check_mark: |
+| 2641 | [Cousins in Binary Tree II](src/section03/code2641.rs) | [link](https://leetcode.com/problems/cousins-in-binary-tree-ii/) | Medium | :heavy_check_mark: |
+| 2642 | [Design Graph With Shortest Path Calculator](src/section03/code2642.rs) | [link](https://leetcode.com/problems/design-graph-with-shortest-path-calculator/) | Hard | :heavy_check_mark: |
