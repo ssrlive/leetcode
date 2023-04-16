@@ -2234,3 +2234,7 @@ cargo test
 | 2640 | [Find the Score of All Prefixes of an Array](src/section03/code2640.rs) | [link](https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/) | Medium | :heavy_check_mark: |
 | 2641 | [Cousins in Binary Tree II](src/section03/code2641.rs) | [link](https://leetcode.com/problems/cousins-in-binary-tree-ii/) | Medium | :heavy_check_mark: |
 | 2642 | [Design Graph With Shortest Path Calculator](src/section03/code2642.rs) | [link](https://leetcode.com/problems/design-graph-with-shortest-path-calculator/) | Hard | :heavy_check_mark: |
+| 2643 | [Row With Maximum Ones](src/section03/code2643.rs) | [link](https://leetcode.com/problems/row-with-maximum-ones/) | Easy | :heavy_check_mark: |
+| 2644 | [Find the Maximum Divisibility Score](src/section03/code2644.rs) | [link](https://leetcode.com/problems/find-the-maximum-divisibility-score/) | Easy | :heavy_check_mark: |
+| 2645 | [Minimum Additions to Make Valid String](src/section03/code2645.rs) | [link](https://leetcode.com/problems/minimum-additions-to-make-valid-string/) | Medium | :heavy_check_mark: |
+| 2646 | [Minimize the Total Price of the Trips](src/section03/code2646.rs) | [link](https://leetcode.com/problems/minimize-the-total-price-of-the-trips/) | Hard | :heavy_check_mark: |
