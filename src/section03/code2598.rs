@@ -53,10 +53,10 @@ impl Solution {
             m[((value + n % value) % value) as usize] += 1;
         }
         for i in 0..nums.len() {
-            if m[(i % value as usize)] == 0 {
+            if m[i % value as usize] == 0 {
                 return i as i32;
             }
-            m[(i % value as usize)] -= 1;
+            m[i % value as usize] -= 1;
         }
         nums.len() as i32
     }

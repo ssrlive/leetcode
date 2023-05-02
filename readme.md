@@ -2238,3 +2238,18 @@ cargo test
 | 2644 | [Find the Maximum Divisibility Score](src/section03/code2644.rs) | [link](https://leetcode.com/problems/find-the-maximum-divisibility-score/) | Easy | :heavy_check_mark: |
 | 2645 | [Minimum Additions to Make Valid String](src/section03/code2645.rs) | [link](https://leetcode.com/problems/minimum-additions-to-make-valid-string/) | Medium | :heavy_check_mark: |
 | 2646 | [Minimize the Total Price of the Trips](src/section03/code2646.rs) | [link](https://leetcode.com/problems/minimize-the-total-price-of-the-trips/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
+| 2651 | [Calculate Delayed Arrival Time](src/section03/code2651.rs) | [link](https://leetcode.com/problems/calculate-delayed-arrival-time/) | Easy | :heavy_check_mark: |
+| 2652 | [Sum Multiples](src/section03/code2652.rs) | [link](https://leetcode.com/problems/sum-multiples/) | Easy | :heavy_check_mark: |
+| 2653 | [Sliding Subarray Beauty](src/section03/code2653.rs) | [link](https://leetcode.com/problems/sliding-subarray-beauty/) | Medium | :heavy_check_mark: |
+| 2654 | [Minimum Number of Operations to Make All Array Elements Equal to 1](src/section03/code2654.rs) | [link](https://leetcode.com/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/) | Medium | :heavy_check_mark: |
+| 2656 | [Maximum Sum With Exactly K Elements](src/section03/code2656.rs) | [link](https://leetcode.com/problems/maximum-sum-with-exactly-k-elements/) | Easy | :heavy_check_mark: |
+| 2657 | [Find the Prefix Common Array of Two Arrays](src/section03/code2657.rs) | [link](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/) | Medium | :heavy_check_mark: |
+| 2658 | [Maximum Number of Fish in a Grid](src/section03/code2658.rs) | [link](https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/) | Medium | :heavy_check_mark: |
+| 2659 | [Make Array Empty](src/section03/code2659.rs) | [link](https://leetcode.com/problems/make-array-empty/) | Hard | :heavy_check_mark: |
+| 2660 | [Determine the Winner of a Bowling Game](src/section03/code2660.rs) | [link](https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/) | Easy | :heavy_check_mark: |
+| 2661 | [First Completely Painted Row or Column](src/section03/code2661.rs) | [link](https://leetcode.com/problems/first-completely-painted-row-or-column/) | Medium | :heavy_check_mark: |
+| 2662 | [Minimum Cost of a Path With Special Roads](src/section03/code2662.rs) | [link](https://leetcode.com/problems/minimum-cost-of-a-path-with-special-roads/) | Medium | :heavy_check_mark: |
+| 2663 | [Lexicographically Smallest Beautiful String](src/section03/code2663.rs) | [link](https://leetcode.com/problems/lexicographically-smallest-beautiful-string/) | Hard | :heavy_check_mark: |
