@@ -9,6 +9,7 @@ cargo test
 ```
 
 ## Problems
+
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
 | 1 | [Two Sum](src/section01/code0001.rs) | [link](https://leetcode.com/problems/two-sum/) | Easy | :heavy_check_mark: |
