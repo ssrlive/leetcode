@@ -175,11 +175,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![4, 1, 8, 7], true),
-        (vec![1, 2, 1, 2], false),
-        (vec![1, 3, 2, 6], true),
-    ];
+    let cases = vec![(vec![4, 1, 8, 7], true), (vec![1, 2, 1, 2], false), (vec![1, 3, 2, 6], true)];
     for (cards, expected) in cases {
         assert_eq!(Solution::judge_point24(cards), expected);
     }

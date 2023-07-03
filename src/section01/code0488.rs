@@ -134,10 +134,7 @@ impl Solution {
 
 #[test]
 fn test_find_min_step() {
-    assert_eq!(
-        Solution::find_min_step("YYRGWRBYGGBGBGWY".to_string(), "BWGRY".to_string()),
-        -1
-    );
+    assert_eq!(Solution::find_min_step("YYRGWRBYGGBGBGWY".to_string(), "BWGRY".to_string()), -1);
     assert_eq!(Solution::find_min_step("RRWWRRBBRR".to_string(), "WB".to_string()), 2);
     assert_eq!(Solution::find_min_step("WWBBWBBWW".to_string(), "BB".to_string()), -1);
     assert_eq!(Solution::find_min_step("RRWWRRW".to_string(), "RR".to_string()), 2);

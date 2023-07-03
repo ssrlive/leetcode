@@ -68,10 +68,7 @@ fn test() {
     let cases = vec![
         ("1 box has 3 blue 4 red 6 green and 12 yellow marbles", true),
         ("hello world 5 x 5", false),
-        (
-            "sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s",
-            false,
-        ),
+        ("sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s", false),
     ];
     for (s, expected) in cases {
         assert_eq!(Solution::are_numbers_ascending(s.to_string()), expected);

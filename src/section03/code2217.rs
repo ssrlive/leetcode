@@ -43,18 +43,10 @@ impl Solution {
         fn generate_palindromes(pos: i32, len: u32) -> i64 {
             if len % 2 == 0 {
                 let left_half = (pos - 1) + 10_i32.pow((len - 1) / 2);
-                format!(
-                    "{}{}",
-                    left_half,
-                    left_half.to_string().chars().rev().collect::<String>()
-                )
+                format!("{}{}", left_half, left_half.to_string().chars().rev().collect::<String>())
             } else {
                 let left_half = (pos - 1) + 10_i32.pow((len - 1) / 2);
-                format!(
-                    "{}{}",
-                    left_half,
-                    &left_half.to_string().chars().rev().collect::<String>()[1..]
-                )
+                format!("{}{}", left_half, &left_half.to_string().chars().rev().collect::<String>()[1..])
             }
             .parse::<i64>()
             .unwrap()

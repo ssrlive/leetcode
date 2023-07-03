@@ -62,15 +62,7 @@ impl Solution {
 #[test]
 fn test_level_order() {
     assert_eq!(
-        Solution::level_order(TreeNode::from_vec(&[
-            Some(3),
-            Some(9),
-            Some(20),
-            None,
-            None,
-            Some(15),
-            Some(7)
-        ])),
+        Solution::level_order(TreeNode::from_vec(&[Some(3), Some(9), Some(20), None, None, Some(15), Some(7)])),
         vec![vec![3], vec![9, 20], vec![15, 7]]
     );
 }

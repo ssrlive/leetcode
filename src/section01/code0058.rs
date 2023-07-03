@@ -43,11 +43,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("Hello World", 5),
-        ("   fly me   to   the moon  ", 4),
-        ("luffy is still joyboy", 6),
-    ];
+    let cases = vec![("Hello World", 5), ("   fly me   to   the moon  ", 4), ("luffy is still joyboy", 6)];
     for (s, expected) in cases {
         assert_eq!(Solution::length_of_last_word(s.to_string()), expected);
     }

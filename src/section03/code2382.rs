@@ -68,16 +68,8 @@ impl Solution {
         s.insert((sum[n], -1, n as i32));
 
         for r in remove_queries {
-            let left = if let Some(a) = cuts.range(..r).rev().next() {
-                *a
-            } else {
-                0
-            };
-            let right = if let Some(a) = cuts.range(r..).next() {
-                *a
-            } else {
-                n as i32
-            };
+            let left = if let Some(a) = cuts.range(..r).rev().next() { *a } else { 0 };
+            let right = if let Some(a) = cuts.range(r..).next() { *a } else { n as i32 };
             let total = sum[right as usize] - sum[(left + 1) as usize];
 
             s.remove(&(total, left, right));

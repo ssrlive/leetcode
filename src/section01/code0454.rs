@@ -59,9 +59,6 @@ impl Solution {
 
 #[test]
 fn test_four_sum_count() {
-    assert_eq!(
-        Solution::four_sum_count(vec![1, 2], vec![-2, -1], vec![-1, 2], vec![0, 2]),
-        2
-    );
+    assert_eq!(Solution::four_sum_count(vec![1, 2], vec![-2, -1], vec![-1, 2], vec![0, 2]), 2);
     assert_eq!(Solution::four_sum_count(vec![0], vec![0], vec![0], vec![0]), 1);
 }

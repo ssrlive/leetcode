@@ -78,9 +78,7 @@ impl Solution {
 fn test() {
     assert_eq!(Solution::count_palindromic_subsequences("bccb".to_string()), 6);
     assert_eq!(
-        Solution::count_palindromic_subsequences(
-            "abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba".to_string()
-        ),
+        Solution::count_palindromic_subsequences("abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba".to_string()),
         104860361
     );
 }

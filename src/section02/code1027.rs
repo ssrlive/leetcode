@@ -70,11 +70,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![3, 6, 9, 12], 4),
-        (vec![9, 4, 7, 2, 10], 3),
-        (vec![20, 1, 15, 3, 10, 5, 8], 4),
-    ];
+    let cases = vec![(vec![3, 6, 9, 12], 4), (vec![9, 4, 7, 2, 10], 3), (vec![20, 1, 15, 3, 10, 5, 8], 4)];
     for (nums, expected) in cases {
         assert_eq!(Solution::longest_arith_seq_length(nums), expected);
     }

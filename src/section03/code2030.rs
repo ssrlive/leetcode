@@ -86,15 +86,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("leet", 3, 'e', 1, "eet"),
-        ("leetcode", 4, 'e', 2, "ecde"),
-        ("bb", 2, 'b', 2, "bb"),
-    ];
+    let cases = vec![("leet", 3, 'e', 1, "eet"), ("leetcode", 4, 'e', 2, "ecde"), ("bb", 2, 'b', 2, "bb")];
     for (s, k, letter, repetition, expected) in cases {
-        assert_eq!(
-            Solution::smallest_subsequence(s.to_string(), k, letter, repetition),
-            expected
-        );
+        assert_eq!(Solution::smallest_subsequence(s.to_string(), k, letter, repetition), expected);
     }
 }

@@ -81,30 +81,16 @@ impl Solution {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            "fool3e7bar",
-            "leet",
-            vec![vec!['e', '3'], vec!['t', '7'], vec!['t', '8']],
-            true,
-        ),
+        ("fool3e7bar", "leet", vec![vec!['e', '3'], vec!['t', '7'], vec!['t', '8']], true),
         ("fooleetbar", "f00l", vec![vec!['o', '0']], false),
         (
             "Fool33tbaR",
             "leetd",
-            vec![
-                vec!['e', '3'],
-                vec!['t', '7'],
-                vec!['t', '8'],
-                vec!['d', 'b'],
-                vec!['p', 'b'],
-            ],
+            vec![vec!['e', '3'], vec!['t', '7'], vec!['t', '8'], vec!['d', 'b'], vec!['p', 'b']],
             true,
         ),
     ];
     for (s, sub, mappings, expected) in cases {
-        assert_eq!(
-            Solution::match_replacement(s.to_string(), sub.to_string(), mappings),
-            expected
-        );
+        assert_eq!(Solution::match_replacement(s.to_string(), sub.to_string(), mappings), expected);
     }
 }

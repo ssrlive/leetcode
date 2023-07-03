@@ -59,15 +59,7 @@ struct Solution;
 
 impl Solution {
     pub fn minimum_score(nums: Vec<i32>, edges: Vec<Vec<i32>>) -> i32 {
-        fn dfs(
-            dp: &mut Vec<i32>,
-            last: &mut Vec<i32>,
-            nums: &Vec<i32>,
-            al: &Vec<Vec<i32>>,
-            i: usize,
-            p: i32,
-            ids: &mut i32,
-        ) -> i32 {
+        fn dfs(dp: &mut Vec<i32>, last: &mut Vec<i32>, nums: &Vec<i32>, al: &Vec<Vec<i32>>, i: usize, p: i32, ids: &mut i32) -> i32 {
             let mut res = nums[i];
             for j in al[i].iter() {
                 if *j != p {
@@ -93,11 +85,7 @@ impl Solution {
         let all = dfs(&mut dp, &mut last, &nums, &al, 0, -1, &mut ids);
         for i in 0..edges.len() {
             for j in i + 1..edges.len() {
-                let p1 = if j < last[i] as usize {
-                    all ^ dp[i]
-                } else {
-                    all ^ dp[i] ^ dp[j]
-                };
+                let p1 = if j < last[i] as usize { all ^ dp[i] } else { all ^ dp[i] ^ dp[j] };
                 let p2 = if j < last[i] as usize { dp[i] ^ dp[j] } else { dp[i] };
                 let arr = [p1, p2, dp[j]];
                 let max = arr.iter().max().unwrap();
@@ -112,11 +100,7 @@ impl Solution {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            vec![1, 5, 5, 4, 11],
-            vec![vec![0, 1], vec![1, 2], vec![1, 3], vec![3, 4]],
-            9,
-        ),
+        (vec![1, 5, 5, 4, 11], vec![vec![0, 1], vec![1, 2], vec![1, 3], vec![3, 4]], 9),
         (
             vec![5, 5, 2, 4, 4, 2],
             vec![vec![0, 1], vec![1, 2], vec![5, 2], vec![4, 3], vec![1, 3]],

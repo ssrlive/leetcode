@@ -32,9 +32,7 @@ struct Solution;
 
 impl Solution {
     pub fn count_negatives(grid: Vec<Vec<i32>>) -> i32 {
-        grid.into_iter()
-            .map(|x| x.iter().filter(|&&y| y < 0).count() as i32)
-            .sum::<i32>()
+        grid.into_iter().map(|x| x.iter().filter(|&&y| y < 0).count() as i32).sum::<i32>()
     }
 
     pub fn count_negatives_2(grid: Vec<Vec<i32>>) -> i32 {
@@ -52,12 +50,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let grid = vec![
-        vec![4, 3, 2, -1],
-        vec![3, 2, 1, -1],
-        vec![1, 1, -1, -2],
-        vec![-1, -1, -2, -3],
-    ];
+    let grid = vec![vec![4, 3, 2, -1], vec![3, 2, 1, -1], vec![1, 1, -1, -2], vec![-1, -1, -2, -3]];
     assert_eq!(Solution::count_negatives(grid), 8);
 
     let grid = vec![vec![3, 2], vec![1, 0]];

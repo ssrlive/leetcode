@@ -62,10 +62,7 @@ impl Solution {
 fn test() {
     let cases = vec![
         (vec![vec![3, 2, 1], vec![1, 7, 6], vec![2, 7, 7]], 1),
-        (
-            vec![vec![3, 1, 2, 2], vec![1, 4, 4, 5], vec![2, 4, 2, 2], vec![2, 4, 2, 2]],
-            3,
-        ),
+        (vec![vec![3, 1, 2, 2], vec![1, 4, 4, 5], vec![2, 4, 2, 2], vec![2, 4, 2, 2]], 3),
     ];
     for (grid, expect) in cases {
         assert_eq!(Solution::equal_pairs(grid), expect);

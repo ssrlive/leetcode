@@ -62,15 +62,7 @@ struct Solution;
 
 impl Solution {
     pub fn maximal_path_quality(values: Vec<i32>, edges: Vec<Vec<i32>>, max_time: i32) -> i32 {
-        fn dfs(
-            al: &Vec<Vec<(usize, i32)>>,
-            vis: &mut Vec<i32>,
-            vals: &Vec<i32>,
-            i: usize,
-            time: i32,
-            val: i32,
-            max_val: &mut i32,
-        ) -> i32 {
+        fn dfs(al: &Vec<Vec<(usize, i32)>>, vis: &mut Vec<i32>, vals: &Vec<i32>, i: usize, time: i32, val: i32, max_val: &mut i32) -> i32 {
             vis[i] += 1;
             let val = val + if vis[i] == 1 { vals[i] } else { 0 };
             if i == 0 {
@@ -99,18 +91,8 @@ impl Solution {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            vec![0, 32, 10, 43],
-            vec![vec![0, 1, 10], vec![1, 2, 15], vec![0, 3, 10]],
-            49,
-            75,
-        ),
-        (
-            vec![5, 10, 15, 20],
-            vec![vec![0, 1, 10], vec![1, 2, 10], vec![0, 3, 10]],
-            30,
-            25,
-        ),
+        (vec![0, 32, 10, 43], vec![vec![0, 1, 10], vec![1, 2, 15], vec![0, 3, 10]], 49, 75),
+        (vec![5, 10, 15, 20], vec![vec![0, 1, 10], vec![1, 2, 10], vec![0, 3, 10]], 30, 25),
         (
             vec![1, 2, 3, 4],
             vec![vec![0, 1, 10], vec![1, 2, 11], vec![2, 3, 12], vec![1, 3, 13]],

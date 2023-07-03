@@ -71,11 +71,7 @@ impl Solution {
 fn test() {
     let cases = vec![
         (vec![3, 8], vec![4, 7], vec![vec![3, 0], vec![1, 7]]),
-        (
-            vec![5, 7, 10],
-            vec![8, 6, 8],
-            vec![vec![5, 0, 0], vec![3, 4, 0], vec![0, 2, 8]],
-        ),
+        (vec![5, 7, 10], vec![8, 6, 8], vec![vec![5, 0, 0], vec![3, 4, 0], vec![0, 2, 8]]),
     ];
     for (row_sum, col_sum, expect) in cases {
         assert_eq!(Solution::restore_matrix(row_sum, col_sum), expect);

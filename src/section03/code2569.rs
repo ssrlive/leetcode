@@ -73,8 +73,7 @@ impl Solution {
                 tree[n] = b - a + 1 - tree[n];
                 return tree[n];
             }
-            tree[n] = update_tree(2 * n, a, (a + b) / 2, i, j, tree, lazy)
-                + update_tree(2 * n + 1, (a + b) / 2 + 1, b, i, j, tree, lazy);
+            tree[n] = update_tree(2 * n, a, (a + b) / 2, i, j, tree, lazy) + update_tree(2 * n + 1, (a + b) / 2 + 1, b, i, j, tree, lazy);
             tree[n]
         }
 

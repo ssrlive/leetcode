@@ -38,15 +38,14 @@ impl Solution {
         use std::collections::HashMap;
         let n = arr.len();
         // Count frequencies
-        let (map, max_freq) = arr.into_iter().fold(
-            (HashMap::<i32, usize>::with_capacity(n), 0),
-            |(mut map, max_freq), value| {
+        let (map, max_freq) = arr
+            .into_iter()
+            .fold((HashMap::<i32, usize>::with_capacity(n), 0), |(mut map, max_freq), value| {
                 let entry = map.entry(value).or_default();
                 *entry += 1;
                 let freq = *entry;
                 (map, max_freq.max(freq))
-            },
-        );
+            });
         // Bucket sort
         let freqs = map.into_iter().fold(vec![0; max_freq + 1], |mut freqs, (_, freq)| {
             freqs[freq] += 1;

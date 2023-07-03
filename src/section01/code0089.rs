@@ -61,8 +61,5 @@ fn test() {
     assert_eq!(Solution::gray_code(1), vec![0, 1]);
     assert_eq!(Solution::gray_code(2), vec![0, 1, 3, 2]);
     assert_eq!(Solution::gray_code(3), vec![0, 1, 3, 2, 6, 7, 5, 4]);
-    assert_eq!(
-        Solution::gray_code(4),
-        vec![0, 1, 3, 2, 6, 7, 5, 4, 12, 13, 15, 14, 10, 11, 9, 8]
-    );
+    assert_eq!(Solution::gray_code(4), vec![0, 1, 3, 2, 6, 7, 5, 4, 12, 13, 15, 14, 10, 11, 9, 8]);
 }

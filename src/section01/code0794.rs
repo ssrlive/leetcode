@@ -71,9 +71,7 @@ impl Solution {
                 if board[i].chars().all(|c| c == 'O') {
                     o_wins = true;
                 }
-                if board[0].chars().nth(i)? == board[1].chars().nth(i)?
-                    && board[1].chars().nth(i)? == board[2].chars().nth(i)?
-                {
+                if board[0].chars().nth(i)? == board[1].chars().nth(i)? && board[1].chars().nth(i)? == board[2].chars().nth(i)? {
                     if board[0].chars().nth(i)? == 'X' {
                         x_wins = true;
                     } else if board[0].chars().nth(i)? == 'O' {
@@ -81,18 +79,14 @@ impl Solution {
                     }
                 }
             }
-            if board[0].chars().next()? == board[1].chars().nth(1)?
-                && board[1].chars().nth(1)? == board[2].chars().nth(2)?
-            {
+            if board[0].chars().next()? == board[1].chars().nth(1)? && board[1].chars().nth(1)? == board[2].chars().nth(2)? {
                 if board[0].starts_with('X') {
                     x_wins = true;
                 } else if board[0].starts_with('O') {
                     o_wins = true;
                 }
             }
-            if board[0].chars().nth(2)? == board[1].chars().nth(1)?
-                && board[1].chars().nth(1)? == board[2].chars().next()?
-            {
+            if board[0].chars().nth(2)? == board[1].chars().nth(1)? && board[1].chars().nth(1)? == board[2].chars().next()? {
                 if board[0].chars().nth(2)? == 'X' {
                     x_wins = true
                 } else if board[0].chars().nth(2)? == 'O' {

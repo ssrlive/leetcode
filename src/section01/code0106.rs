@@ -26,11 +26,7 @@ use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
     pub fn build_tree(inorder: Vec<i32>, postorder: Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {
-        fn build_tree_recursive(
-            inorder: &mut Vec<i32>,
-            postorder: &mut Vec<i32>,
-            bound: Option<i32>,
-        ) -> Option<Rc<RefCell<TreeNode>>> {
+        fn build_tree_recursive(inorder: &mut Vec<i32>, postorder: &mut Vec<i32>, bound: Option<i32>) -> Option<Rc<RefCell<TreeNode>>> {
             if inorder.is_empty() || (bound.is_some() && *inorder.last()? == bound?) {
                 return None;
             }

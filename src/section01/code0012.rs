@@ -66,16 +66,14 @@ impl Solution {
             (1, "I"),
         ];
         let mut num = num;
-        CHEAT_CODES
-            .iter()
-            .fold(String::with_capacity(10), |mut roman, (value, codes)| {
-                if num >= *value {
-                    let quo = num / *value;
-                    roman.push_str(&codes.repeat(quo as usize));
-                    num -= quo * *value;
-                }
-                roman
-            })
+        CHEAT_CODES.iter().fold(String::with_capacity(10), |mut roman, (value, codes)| {
+            if num >= *value {
+                let quo = num / *value;
+                roman.push_str(&codes.repeat(quo as usize));
+                num -= quo * *value;
+            }
+            roman
+        })
     }
 }
 

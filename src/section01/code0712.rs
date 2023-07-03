@@ -89,8 +89,5 @@ impl Solution {
 #[test]
 fn test() {
     assert_eq!(Solution::minimum_delete_sum("sea".to_string(), "eat".to_string()), 231);
-    assert_eq!(
-        Solution::minimum_delete_sum("delete".to_string(), "leet".to_string()),
-        403
-    );
+    assert_eq!(Solution::minimum_delete_sum("delete".to_string(), "leet".to_string()), 403);
 }

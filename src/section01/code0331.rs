@@ -55,11 +55,7 @@ impl Solution {
         let mut stack = Vec::new();
         for s in preorder.split(',') {
             stack.push(s);
-            while stack.len() >= 3
-                && stack[stack.len() - 1] == "#"
-                && stack[stack.len() - 2] == "#"
-                && stack[stack.len() - 3] != "#"
-            {
+            while stack.len() >= 3 && stack[stack.len() - 1] == "#" && stack[stack.len() - 2] == "#" && stack[stack.len() - 3] != "#" {
                 stack.pop();
                 stack.pop();
                 stack.pop();
@@ -72,10 +68,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(
-        Solution::is_valid_serialization("9,3,4,#,#,1,#,#,2,#,6,#,#".to_string()),
-        true
-    );
+    assert_eq!(Solution::is_valid_serialization("9,3,4,#,#,1,#,#,2,#,6,#,#".to_string()), true);
     assert_eq!(Solution::is_valid_serialization("1,#".to_string()), false);
     assert_eq!(Solution::is_valid_serialization("9,#,#,1".to_string()), false);
 }

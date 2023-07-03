@@ -67,11 +67,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("a1c1e1", "abcdef"),
-        ("a1b2c3d4e", "abbdcfdhe"),
-        ("a1b2c3d4e5", "abbdcfdhej"),
-    ];
+    let cases = vec![("a1c1e1", "abcdef"), ("a1b2c3d4e", "abbdcfdhe"), ("a1b2c3d4e5", "abbdcfdhej")];
     for (s, expect) in cases {
         assert_eq!(Solution::replace_digits(s.to_string()), expect);
     }

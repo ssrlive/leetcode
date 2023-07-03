@@ -63,9 +63,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(
-        Solution::make_largest_special("11011000".to_string()),
-        "11100100".to_string()
-    );
+    assert_eq!(Solution::make_largest_special("11011000".to_string()), "11100100".to_string());
     assert_eq!(Solution::make_largest_special("10".to_string()), "10".to_string());
 }

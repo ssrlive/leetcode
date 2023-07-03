@@ -65,9 +65,6 @@ fn test_erase_overlap_intervals() {
         Solution::erase_overlap_intervals(vec![vec![1, 2], vec![2, 3], vec![3, 4], vec![1, 3]]),
         1
     );
-    assert_eq!(
-        Solution::erase_overlap_intervals(vec![vec![1, 2], vec![1, 2], vec![1, 2]]),
-        2
-    );
+    assert_eq!(Solution::erase_overlap_intervals(vec![vec![1, 2], vec![1, 2], vec![1, 2]]), 2);
     assert_eq!(Solution::erase_overlap_intervals(vec![vec![1, 2], vec![2, 3]]), 0);
 }

@@ -55,25 +55,11 @@ impl Solution {
 #[test]
 fn test() {
     assert_eq!(
-        Solution::reconstruct_queue(vec![
-            vec![7, 0],
-            vec![4, 4],
-            vec![7, 1],
-            vec![5, 0],
-            vec![6, 1],
-            vec![5, 2]
-        ]),
+        Solution::reconstruct_queue(vec![vec![7, 0], vec![4, 4], vec![7, 1], vec![5, 0], vec![6, 1], vec![5, 2]]),
         vec![vec![5, 0], vec![7, 0], vec![5, 2], vec![6, 1], vec![4, 4], vec![7, 1]]
     );
     assert_eq!(
-        Solution::reconstruct_queue(vec![
-            vec![6, 0],
-            vec![5, 0],
-            vec![4, 0],
-            vec![3, 2],
-            vec![2, 2],
-            vec![1, 4]
-        ]),
+        Solution::reconstruct_queue(vec![vec![6, 0], vec![5, 0], vec![4, 0], vec![3, 2], vec![2, 2], vec![1, 4]]),
         vec![vec![4, 0], vec![5, 0], vec![2, 2], vec![3, 2], vec![1, 4], vec![6, 0]]
     );
 }

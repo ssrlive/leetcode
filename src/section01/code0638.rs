@@ -64,12 +64,7 @@ impl Solution {
         }
         true
     }
-    fn solve(
-        price: &Vec<i32>,
-        special: &Vec<Vec<i32>>,
-        needs: &Vec<i32>,
-        dp: &mut std::collections::HashMap<String, i32>,
-    ) -> i32 {
+    fn solve(price: &Vec<i32>, special: &Vec<Vec<i32>>, needs: &Vec<i32>, dp: &mut std::collections::HashMap<String, i32>) -> i32 {
         let k = needs.iter().map(|i| i.to_string()).collect::<Vec<_>>().join(",");
         if let Some(&v) = dp.get(&k) {
             return v;

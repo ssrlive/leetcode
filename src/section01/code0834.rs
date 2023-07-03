@@ -55,13 +55,7 @@ impl Solution {
         let mut count = vec![1; n];
         let mut visited = vec![false; n];
 
-        fn dfs1(
-            graph: &Vec<Vec<usize>>,
-            u: usize,
-            visited: &mut Vec<bool>,
-            count: &mut Vec<usize>,
-            ans: &mut Vec<i32>,
-        ) {
+        fn dfs1(graph: &Vec<Vec<usize>>, u: usize, visited: &mut Vec<bool>, count: &mut Vec<usize>, ans: &mut Vec<i32>) {
             visited[u] = true;
             for &v in &graph[u] {
                 if !visited[v] {
@@ -72,13 +66,7 @@ impl Solution {
             }
         }
 
-        fn dfs2(
-            graph: &Vec<Vec<usize>>,
-            u: usize,
-            visited: &mut Vec<bool>,
-            count: &mut Vec<usize>,
-            ans: &mut Vec<i32>,
-        ) {
+        fn dfs2(graph: &Vec<Vec<usize>>, u: usize, visited: &mut Vec<bool>, count: &mut Vec<usize>, ans: &mut Vec<i32>) {
             visited[u] = true;
             for &v in &graph[u] {
                 if !visited[v] {

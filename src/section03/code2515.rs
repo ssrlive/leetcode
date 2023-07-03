@@ -50,11 +50,7 @@ struct Solution;
 impl Solution {
     pub fn closet_target(words: Vec<String>, target: String, start_index: i32) -> i32 {
         let mut result = -1;
-        for i in words
-            .iter()
-            .enumerate()
-            .filter_map(|(i, w)| (w == &target).then_some(i as i32))
-        {
+        for i in words.iter().enumerate().filter_map(|(i, w)| (w == &target).then_some(i as i32)) {
             let min_pos = i.min(start_index);
             let max_pos = i.max(start_index);
             let dist = (max_pos - min_pos).min((words.len() as i32 - max_pos) + min_pos);
@@ -73,9 +69,6 @@ fn test() {
     ];
     for (words, target, start_index, expected) in cases {
         let words = words.into_iter().map(|s| s.to_string()).collect();
-        assert_eq!(
-            Solution::closet_target(words, target.to_string(), start_index),
-            expected
-        );
+        assert_eq!(Solution::closet_target(words, target.to_string(), start_index), expected);
     }
 }

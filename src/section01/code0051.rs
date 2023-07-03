@@ -66,10 +66,7 @@ impl Solution {
 fn test() {
     let n = 4;
     let output = Solution::solve_n_queens(n);
-    let expected = vec![
-        vec![".Q..", "...Q", "Q...", "..Q."],
-        vec!["..Q.", "Q...", "...Q", ".Q.."],
-    ];
+    let expected = vec![vec![".Q..", "...Q", "Q...", "..Q."], vec!["..Q.", "Q...", "...Q", ".Q.."]];
     assert_eq!(output, expected);
 
     let n = 1;

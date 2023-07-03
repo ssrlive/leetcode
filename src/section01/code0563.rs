@@ -78,16 +78,6 @@ fn test_find_tilt() {
     let root = TreeNode::from_vec(&[Some(4), Some(2), Some(9), Some(3), Some(5), None, Some(7)]);
     assert_eq!(Solution::find_tilt(root), 15);
 
-    let root = TreeNode::from_vec(&[
-        Some(21),
-        Some(7),
-        Some(14),
-        Some(1),
-        Some(1),
-        Some(2),
-        Some(2),
-        Some(3),
-        Some(3),
-    ]);
+    let root = TreeNode::from_vec(&[Some(21), Some(7), Some(14), Some(1), Some(1), Some(2), Some(2), Some(3), Some(3)]);
     assert_eq!(Solution::find_tilt(root), 9);
 }

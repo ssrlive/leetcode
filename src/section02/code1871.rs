@@ -75,11 +75,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("011010", 2, 3, true),
-        ("01101110", 2, 3, false),
-        ("0000000000", 2, 3, true),
-    ];
+    let cases = vec![("011010", 2, 3, true), ("01101110", 2, 3, false), ("0000000000", 2, 3, true)];
     for (s, mi, ma, ex) in cases {
         assert_eq!(Solution::can_reach(s.to_string(), mi, ma), ex);
     }

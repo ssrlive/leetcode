@@ -57,48 +57,15 @@ fn test_rotate_right() {
         Solution::rotate_right(ListNode::from_vec(&[0, 1, 2]), 4),
         ListNode::from_vec(&[2, 0, 1])
     );
-    assert_eq!(
-        Solution::rotate_right(ListNode::from_vec(&[1, 2]), 1),
-        ListNode::from_vec(&[2, 1])
-    );
-    assert_eq!(
-        Solution::rotate_right(ListNode::from_vec(&[1, 2]), 2),
-        ListNode::from_vec(&[1, 2])
-    );
-    assert_eq!(
-        Solution::rotate_right(ListNode::from_vec(&[1, 2]), 3),
-        ListNode::from_vec(&[2, 1])
-    );
-    assert_eq!(
-        Solution::rotate_right(ListNode::from_vec(&[1, 2]), 4),
-        ListNode::from_vec(&[1, 2])
-    );
-    assert_eq!(
-        Solution::rotate_right(ListNode::from_vec(&[1, 2]), 5),
-        ListNode::from_vec(&[2, 1])
-    );
-    assert_eq!(
-        Solution::rotate_right(ListNode::from_vec(&[1, 2]), 6),
-        ListNode::from_vec(&[1, 2])
-    );
-    assert_eq!(
-        Solution::rotate_right(ListNode::from_vec(&[1, 2]), 7),
-        ListNode::from_vec(&[2, 1])
-    );
-    assert_eq!(
-        Solution::rotate_right(ListNode::from_vec(&[1, 2]), 8),
-        ListNode::from_vec(&[1, 2])
-    );
-    assert_eq!(
-        Solution::rotate_right(ListNode::from_vec(&[1, 2]), 9),
-        ListNode::from_vec(&[2, 1])
-    );
-    assert_eq!(
-        Solution::rotate_right(ListNode::from_vec(&[1, 2]), 10),
-        ListNode::from_vec(&[1, 2])
-    );
-    assert_eq!(
-        Solution::rotate_right(ListNode::from_vec(&[1, 2]), 11),
-        ListNode::from_vec(&[2, 1])
-    );
+    assert_eq!(Solution::rotate_right(ListNode::from_vec(&[1, 2]), 1), ListNode::from_vec(&[2, 1]));
+    assert_eq!(Solution::rotate_right(ListNode::from_vec(&[1, 2]), 2), ListNode::from_vec(&[1, 2]));
+    assert_eq!(Solution::rotate_right(ListNode::from_vec(&[1, 2]), 3), ListNode::from_vec(&[2, 1]));
+    assert_eq!(Solution::rotate_right(ListNode::from_vec(&[1, 2]), 4), ListNode::from_vec(&[1, 2]));
+    assert_eq!(Solution::rotate_right(ListNode::from_vec(&[1, 2]), 5), ListNode::from_vec(&[2, 1]));
+    assert_eq!(Solution::rotate_right(ListNode::from_vec(&[1, 2]), 6), ListNode::from_vec(&[1, 2]));
+    assert_eq!(Solution::rotate_right(ListNode::from_vec(&[1, 2]), 7), ListNode::from_vec(&[2, 1]));
+    assert_eq!(Solution::rotate_right(ListNode::from_vec(&[1, 2]), 8), ListNode::from_vec(&[1, 2]));
+    assert_eq!(Solution::rotate_right(ListNode::from_vec(&[1, 2]), 9), ListNode::from_vec(&[2, 1]));
+    assert_eq!(Solution::rotate_right(ListNode::from_vec(&[1, 2]), 10), ListNode::from_vec(&[1, 2]));
+    assert_eq!(Solution::rotate_right(ListNode::from_vec(&[1, 2]), 11), ListNode::from_vec(&[2, 1]));
 }

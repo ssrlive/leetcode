@@ -66,11 +66,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![1, 6, 5], 5, 6, 2),
-        (vec![1, 2, 3, 4, 5, 6, 7], 8, 1, 0),
-        (vec![11], 7, 50, 7),
-    ];
+    let cases = vec![(vec![1, 6, 5], 5, 6, 2), (vec![1, 2, 3, 4, 5, 6, 7], 8, 1, 0), (vec![11], 7, 50, 7)];
     for (banned, n, max_sum, expected) in cases {
         assert_eq!(Solution::max_count(banned, n, max_sum), expected);
     }

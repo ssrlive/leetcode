@@ -78,16 +78,8 @@ impl Solution {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            vec![8, 9, 4, 0, 2, 1, 3, 5, 7, 6],
-            vec![991, 338, 38],
-            vec![338, 38, 991],
-        ),
-        (
-            vec![0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
-            vec![789, 456, 123],
-            vec![123, 456, 789],
-        ),
+        (vec![8, 9, 4, 0, 2, 1, 3, 5, 7, 6], vec![991, 338, 38], vec![338, 38, 991]),
+        (vec![0, 1, 2, 3, 4, 5, 6, 7, 8, 9], vec![789, 456, 123], vec![123, 456, 789]),
     ];
     for (mapping, nums, expected) in cases {
         assert_eq!(Solution::sort_jumbled(mapping, nums), expected);

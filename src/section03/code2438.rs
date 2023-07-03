@@ -63,10 +63,7 @@ impl Solution {
                 lookup[i][j] = ((item as i64 * lookup[i][j - 1] as i64) % Q) as i32;
             }
         }
-        queries
-            .into_iter()
-            .map(|v| lookup[v[0] as usize][v[1] as usize])
-            .collect()
+        queries.into_iter().map(|v| lookup[v[0] as usize][v[1] as usize]).collect()
     }
 }
 

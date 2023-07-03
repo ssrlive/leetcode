@@ -69,10 +69,7 @@ impl Solution {
                 uf.union(z as usize, x as usize);
             }
         }
-        queries
-            .iter()
-            .map(|q| uf.find(q[0] as usize) == uf.find(q[1] as usize))
-            .collect()
+        queries.iter().map(|q| uf.find(q[0] as usize) == uf.find(q[1] as usize)).collect()
     }
 }
 

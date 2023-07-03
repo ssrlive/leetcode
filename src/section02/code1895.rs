@@ -45,10 +45,8 @@ impl Solution {
         let mut pre_sum_col = vec![vec![0; (m + 1) as usize]; n as usize];
         for r in 0..m {
             for c in 0..n {
-                pre_sum_row[r as usize][c as usize + 1] =
-                    pre_sum_row[r as usize][c as usize] + grid[r as usize][c as usize];
-                pre_sum_col[c as usize][r as usize + 1] =
-                    pre_sum_col[c as usize][r as usize] + grid[r as usize][c as usize];
+                pre_sum_row[r as usize][c as usize + 1] = pre_sum_row[r as usize][c as usize] + grid[r as usize][c as usize];
+                pre_sum_col[c as usize][r as usize + 1] = pre_sum_col[c as usize][r as usize] + grid[r as usize][c as usize];
             }
         }
         for k in (2..=m.min(n)).rev() {
@@ -102,12 +100,7 @@ impl Solution {
 fn test() {
     let cases = vec![
         (
-            vec![
-                vec![7, 1, 4, 5, 6],
-                vec![2, 5, 1, 6, 4],
-                vec![1, 5, 4, 3, 2],
-                vec![1, 2, 7, 3, 4],
-            ],
+            vec![vec![7, 1, 4, 5, 6], vec![2, 5, 1, 6, 4], vec![1, 5, 4, 3, 2], vec![1, 2, 7, 3, 4]],
             3,
         ),
         (vec![vec![5, 1, 3, 1], vec![9, 3, 3, 1], vec![1, 3, 3, 8]], 2),

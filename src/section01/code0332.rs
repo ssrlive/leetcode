@@ -43,10 +43,7 @@ impl Solution {
 
         let mut graph: HashMap<&str, BinaryHeap<Reverse<&str>>> = HashMap::new();
         for ticket in tickets.iter() {
-            graph
-                .entry(&ticket[0])
-                .or_insert_with(BinaryHeap::new)
-                .push(Reverse(&ticket[1]));
+            graph.entry(&ticket[0]).or_insert_with(BinaryHeap::new).push(Reverse(&ticket[1]));
         }
         let mut answer: Vec<String> = Vec::with_capacity(tickets.len() + 1);
         let mut stack: Vec<&str> = vec!["JFK"];

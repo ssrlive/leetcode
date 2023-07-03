@@ -60,9 +60,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(
-        Solution::largest_time_from_digits(vec![1, 2, 3, 4]),
-        "23:41".to_string()
-    );
+    assert_eq!(Solution::largest_time_from_digits(vec![1, 2, 3, 4]), "23:41".to_string());
     assert_eq!(Solution::largest_time_from_digits(vec![5, 5, 5, 5]), "".to_string());
 }

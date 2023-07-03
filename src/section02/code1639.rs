@@ -76,10 +76,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec!["acca", "bbbb", "caca"], "aba", 6),
-        (vec!["abba", "baab"], "bab", 4),
-    ];
+    let cases = vec![(vec!["acca", "bbbb", "caca"], "aba", 6), (vec!["abba", "baab"], "bab", 4)];
     for (words, target, expected) in cases {
         let words = words.iter().map(|s| s.to_string()).collect();
         let target = target.to_string();

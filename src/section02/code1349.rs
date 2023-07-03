@@ -103,13 +103,7 @@ fn test() {
     ];
     let res = 4;
     assert_eq!(Solution::max_students(seats), res);
-    let seats = vec![
-        vec!['.', '#'],
-        vec!['#', '#'],
-        vec!['#', '.'],
-        vec!['#', '#'],
-        vec!['.', '#'],
-    ];
+    let seats = vec![vec!['.', '#'], vec!['#', '#'], vec!['#', '.'], vec!['#', '#'], vec!['.', '#']];
     let res = 3;
     assert_eq!(Solution::max_students(seats), res);
     let seats = vec![

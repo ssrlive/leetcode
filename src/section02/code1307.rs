@@ -79,14 +79,7 @@ impl Solution {
 
             if addend {
                 if assigned {
-                    can_solve(
-                        equation,
-                        result,
-                        row + 1,
-                        col,
-                        carry + (solution[&digit] as u32),
-                        solution,
-                    )
+                    can_solve(equation, result, row + 1, col, carry + (solution[&digit] as u32), solution)
                 } else {
                     let used: HashSet<&u8> = HashSet::from_iter(solution.values());
                     let unused: Vec<u8> = (0..=9).filter(|x| !used.contains(x)).collect();

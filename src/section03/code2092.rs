@@ -92,31 +92,16 @@ impl Solution {
             }
             left = right;
         }
-        know_secret
-            .into_iter()
-            .enumerate()
-            .filter(|x| x.1)
-            .map(|x| x.0 as i32)
-            .collect()
+        know_secret.into_iter().enumerate().filter(|x| x.1).map(|x| x.0 as i32).collect()
     }
 }
 
 #[test]
 fn test() {
     let cases = vec![
-        (
-            6,
-            vec![vec![1, 2, 5], vec![2, 3, 8], vec![1, 5, 10]],
-            1,
-            vec![0, 1, 2, 3, 5],
-        ),
+        (6, vec![vec![1, 2, 5], vec![2, 3, 8], vec![1, 5, 10]], 1, vec![0, 1, 2, 3, 5]),
         (4, vec![vec![3, 1, 3], vec![1, 2, 2], vec![0, 3, 3]], 3, vec![0, 1, 3]),
-        (
-            5,
-            vec![vec![3, 4, 2], vec![1, 2, 1], vec![2, 3, 1]],
-            1,
-            vec![0, 1, 2, 3, 4],
-        ),
+        (5, vec![vec![3, 4, 2], vec![1, 2, 1], vec![2, 3, 1]], 1, vec![0, 1, 2, 3, 4]),
     ];
     for (n, meetings, first_person, expect) in cases {
         assert_eq!(Solution::find_all_people(n, meetings, first_person), expect);

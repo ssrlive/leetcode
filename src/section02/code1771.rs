@@ -107,9 +107,6 @@ fn test() {
         ("a", "a", 2),
     ];
     for (word1, word2, expected) in cases {
-        assert_eq!(
-            Solution::longest_palindrome(word1.to_string(), word2.to_string()),
-            expected
-        );
+        assert_eq!(Solution::longest_palindrome(word1.to_string(), word2.to_string()), expected);
     }
 }

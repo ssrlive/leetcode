@@ -96,9 +96,7 @@ impl Solution {
             Ok(num_children_with_desired_amount_new)
         }
 
-        _dist_money(money as u32, children as u32, 8, 4)
-            .map(|x| x as i32)
-            .unwrap_or(-1)
+        _dist_money(money as u32, children as u32, 8, 4).map(|x| x as i32).unwrap_or(-1)
     }
 }
 

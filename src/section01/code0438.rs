@@ -64,12 +64,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(
-        Solution::find_anagrams("cbaebabacd".to_string(), "abc".to_string()),
-        vec![0, 6]
-    );
-    assert_eq!(
-        Solution::find_anagrams("abab".to_string(), "ab".to_string()),
-        vec![0, 1, 2]
-    );
+    assert_eq!(Solution::find_anagrams("cbaebabacd".to_string(), "abc".to_string()), vec![0, 6]);
+    assert_eq!(Solution::find_anagrams("abab".to_string(), "ab".to_string()), vec![0, 1, 2]);
 }

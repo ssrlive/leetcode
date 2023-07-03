@@ -70,12 +70,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("IIIDIDDD", "123549876"),
-        ("DDD", "4321"),
-        ("IIII", "12345"),
-        ("DDDD", "54321"),
-    ];
+    let cases = vec![("IIIDIDDD", "123549876"), ("DDD", "4321"), ("IIII", "12345"), ("DDDD", "54321")];
     for (pattern, expected) in cases {
         assert_eq!(Solution::smallest_number(pattern.to_string()), expected.to_string());
     }

@@ -45,9 +45,7 @@ impl Solution {
 
         impl UnionFind {
             fn new(n: usize) -> Self {
-                Self {
-                    parent: (0..n).collect(),
-                }
+                Self { parent: (0..n).collect() }
             }
             fn union(&mut self, x: usize, y: usize) {
                 let x = self.find(x);

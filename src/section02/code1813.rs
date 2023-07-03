@@ -44,14 +44,8 @@ struct Solution;
 impl Solution {
     pub fn are_sentences_similar(sentence1: String, sentence2: String) -> bool {
         use std::collections::*;
-        let mut s1 = sentence1
-            .split(' ')
-            .map(|v| v.to_string())
-            .collect::<VecDeque<String>>();
-        let mut s2 = sentence2
-            .split(' ')
-            .map(|v| v.to_string())
-            .collect::<VecDeque<String>>();
+        let mut s1 = sentence1.split(' ').map(|v| v.to_string()).collect::<VecDeque<String>>();
+        let mut s2 = sentence2.split(' ').map(|v| v.to_string()).collect::<VecDeque<String>>();
         if s1.len() < s2.len() {
             std::mem::swap(&mut s1, &mut s2);
         }
@@ -84,9 +78,6 @@ fn test() {
         ("Luky", "Lucccky", false),
     ];
     for (s1, s2, expected) in cases {
-        assert_eq!(
-            Solution::are_sentences_similar(s1.to_string(), s2.to_string()),
-            expected
-        );
+        assert_eq!(Solution::are_sentences_similar(s1.to_string(), s2.to_string()), expected);
     }
 }

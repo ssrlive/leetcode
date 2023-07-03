@@ -79,11 +79,7 @@ impl Solution {
 fn test() {
     let cases = vec![
         (vec![vec![-2, 0], vec![2, 0], vec![0, 2], vec![0, -2]], 2, 4),
-        (
-            vec![vec![-3, 0], vec![3, 0], vec![2, 6], vec![5, 4], vec![0, 9], vec![7, 8]],
-            5,
-            5,
-        ),
+        (vec![vec![-3, 0], vec![3, 0], vec![2, 6], vec![5, 4], vec![0, 9], vec![7, 8]], 5, 5),
     ];
     for (darts, r, expected) in cases {
         assert_eq!(Solution::num_points(darts, r), expected);

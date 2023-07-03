@@ -40,12 +40,7 @@ use crate::listnode::ListNode;
 struct Solution;
 
 impl Solution {
-    pub fn merge_in_between(
-        list1: Option<Box<ListNode>>,
-        a: i32,
-        b: i32,
-        list2: Option<Box<ListNode>>,
-    ) -> Option<Box<ListNode>> {
+    pub fn merge_in_between(list1: Option<Box<ListNode>>, a: i32, b: i32, list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         let mut list1 = list1;
         let mut cur1 = &mut list1;
         for _ in 0..a - 1 {

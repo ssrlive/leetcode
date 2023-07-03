@@ -98,10 +98,7 @@ impl Node {
     }
 
     fn merge(left_node: Rc<RefCell<Node>>, right_node: Rc<RefCell<Node>>) -> Node {
-        let mut longest_substring_len = std::cmp::max(
-            left_node.borrow().longest_substring_len,
-            right_node.borrow().longest_substring_len,
-        );
+        let mut longest_substring_len = std::cmp::max(left_node.borrow().longest_substring_len, right_node.borrow().longest_substring_len);
         let merge_len = if left_node.borrow().right_char == right_node.borrow().left_char {
             left_node.borrow().right_char_rep_len + right_node.borrow().left_char_rep_len
         } else {

@@ -93,18 +93,7 @@ fn test() {
     let sub_root = TreeNode::from_vec(&[Some(4), Some(1), Some(2)]);
     assert_eq!(Solution::is_subtree(root, sub_root), true);
 
-    let root = TreeNode::from_vec(&[
-        Some(3),
-        Some(4),
-        Some(5),
-        Some(1),
-        Some(2),
-        None,
-        None,
-        None,
-        None,
-        Some(0),
-    ]);
+    let root = TreeNode::from_vec(&[Some(3), Some(4), Some(5), Some(1), Some(2), None, None, None, None, Some(0)]);
     let sub_root = TreeNode::from_vec(&[Some(4), Some(1), Some(2)]);
     assert_eq!(Solution::is_subtree(root, sub_root), false);
 }

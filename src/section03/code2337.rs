@@ -79,11 +79,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("_L__R__R_", "L______RR", true),
-        ("R_L_", "__LR", false),
-        ("_R", "R_", false),
-    ];
+    let cases = vec![("_L__R__R_", "L______RR", true), ("R_L_", "__LR", false), ("_R", "R_", false)];
     for (start, target, expected) in cases {
         assert_eq!(Solution::can_change(start.to_string(), target.to_string()), expected);
     }

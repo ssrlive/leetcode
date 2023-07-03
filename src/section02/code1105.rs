@@ -62,8 +62,7 @@ impl Solution {
                 max_height_this_level = std::cmp::max(max_height_this_level, *book.last().unwrap());
 
                 let prev_height: i32 = if j == 0 { 0 } else { *heights.get(j - 1).unwrap_or(&0) };
-                *heights.get_mut(i).unwrap() =
-                    std::cmp::min(*heights.get(i).unwrap(), prev_height + max_height_this_level);
+                *heights.get_mut(i).unwrap() = std::cmp::min(*heights.get(i).unwrap(), prev_height + max_height_this_level);
             }
         }
 
@@ -75,15 +74,7 @@ impl Solution {
 fn test() {
     let cases = vec![
         (
-            vec![
-                vec![1, 1],
-                vec![2, 3],
-                vec![2, 3],
-                vec![1, 1],
-                vec![1, 1],
-                vec![1, 1],
-                vec![1, 2],
-            ],
+            vec![vec![1, 1], vec![2, 3], vec![2, 3], vec![1, 1], vec![1, 1], vec![1, 1], vec![1, 2]],
             4,
             6,
         ),

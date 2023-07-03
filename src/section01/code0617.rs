@@ -35,10 +35,7 @@ struct Solution;
 use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
-    pub fn merge_trees(
-        root1: Option<Rc<RefCell<TreeNode>>>,
-        root2: Option<Rc<RefCell<TreeNode>>>,
-    ) -> Option<Rc<RefCell<TreeNode>>> {
+    pub fn merge_trees(root1: Option<Rc<RefCell<TreeNode>>>, root2: Option<Rc<RefCell<TreeNode>>>) -> Option<Rc<RefCell<TreeNode>>> {
         match (root1, root2) {
             (Some(node1), Some(node2)) => {
                 let mut node1 = node1.borrow_mut();

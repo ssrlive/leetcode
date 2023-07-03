@@ -96,12 +96,7 @@ impl Solution {
         }
 
         let max_r = *requests.iter().max().unwrap();
-        requests
-            .iter()
-            .enumerate()
-            .filter(|x| *x.1 == max_r)
-            .map(|x| x.0 as i32)
-            .collect()
+        requests.iter().enumerate().filter(|x| *x.1 == max_r).map(|x| x.0 as i32).collect()
     }
 }
 

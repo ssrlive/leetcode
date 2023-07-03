@@ -156,13 +156,7 @@ impl<'a> TrieNode<'a> {
     }
 }
 
-fn traverse<'a>(
-    pos: (usize, usize),
-    board: &Board<u8>,
-    visited: &mut Board<bool>,
-    found: &mut HashSet<&'a str>,
-    trie: &TrieNode<'a>,
-) {
+fn traverse<'a>(pos: (usize, usize), board: &Board<u8>, visited: &mut Board<bool>, found: &mut HashSet<&'a str>, trie: &TrieNode<'a>) {
     let c = board[pos];
     if let Some(ref next) = trie.children[alph_to_idx(c)] {
         let next = next.as_ref();

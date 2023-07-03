@@ -73,11 +73,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![1, 1, 1, 6, 1, 1, 1], 3),
-        (vec![1, 8, 3, 8, 3], 4),
-        (vec![0, 1], 1),
-    ];
+    let cases = vec![(vec![1, 1, 1, 6, 1, 1, 1], 3), (vec![1, 8, 3, 8, 3], 4), (vec![0, 1], 1)];
     for (colors, expected) in cases {
         assert_eq!(Solution::max_distance(colors), expected);
     }

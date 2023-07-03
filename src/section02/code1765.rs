@@ -65,11 +65,7 @@ impl Solution {
             let mut next = Vec::new();
             for (i, j) in queue {
                 for &(x, y) in &[(i - 1, j), (i + 1, j), (i, j - 1), (i, j + 1)] {
-                    if x >= 0
-                        && x < is_water.len() as i32
-                        && y >= 0
-                        && y < is_water[0].len() as i32
-                        && height[x as usize][y as usize] == -1
+                    if x >= 0 && x < is_water.len() as i32 && y >= 0 && y < is_water[0].len() as i32 && height[x as usize][y as usize] == -1
                     {
                         height[x as usize][y as usize] = level;
                         next.push((x, y));

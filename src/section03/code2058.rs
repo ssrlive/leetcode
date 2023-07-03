@@ -69,8 +69,7 @@ impl Solution {
             let n = temp.len();
             let mut memo = vec![];
             for i in 1..n - 1 {
-                if (temp[i] < temp[i + 1] && temp[i] < temp[i - 1]) || (temp[i] > temp[i + 1] && temp[i] > temp[i - 1])
-                {
+                if (temp[i] < temp[i + 1] && temp[i] < temp[i - 1]) || (temp[i] > temp[i + 1] && temp[i] > temp[i - 1]) {
                     memo.push(i);
                 }
             }

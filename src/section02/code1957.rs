@@ -67,12 +67,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("leeetcode", "leetcode"),
-        ("aaabaaaa", "aabaa"),
-        ("aab", "aab"),
-        ("aaaaa", "aa"),
-    ];
+    let cases = vec![("leeetcode", "leetcode"), ("aaabaaaa", "aabaa"), ("aab", "aab"), ("aaaaa", "aa")];
     for (s, expect) in cases {
         assert_eq!(Solution::make_fancy_string(s.to_string()), expect);
     }

@@ -61,12 +61,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("book", true),
-        ("textbook", false),
-        ("MerryChristmas", false),
-        ("AbCdEfGh", true),
-    ];
+    let cases = vec![("book", true), ("textbook", false), ("MerryChristmas", false), ("AbCdEfGh", true)];
     for (s, expected) in cases {
         assert_eq!(Solution::halves_are_alike(s.to_string()), expected);
     }

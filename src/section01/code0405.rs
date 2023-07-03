@@ -39,9 +39,7 @@ impl Solution {
 
         let mut n = num as u32;
         let mut res = Vec::new();
-        let map = [
-            '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f',
-        ];
+        let map = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'];
 
         while n > 0 {
             res.push(map[(n % 16) as usize]);

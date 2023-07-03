@@ -68,10 +68,7 @@ impl Solution {
         let mut ans = 0;
         for i in 0..n {
             for j in 0..n {
-                let len = std::cmp::min(
-                    left[i][j],
-                    std::cmp::min(right[i][j], std::cmp::min(up[i][j], down[i][j])),
-                );
+                let len = std::cmp::min(left[i][j], std::cmp::min(right[i][j], std::cmp::min(up[i][j], down[i][j])));
                 ans = std::cmp::max(ans, len);
             }
         }

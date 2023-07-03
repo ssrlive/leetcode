@@ -58,14 +58,7 @@ impl Solution {
     pub fn count_routes(locations: Vec<i32>, start: i32, finish: i32, fuel: i32) -> i32 {
         let locations = locations.iter().map(|&x| x as i64).collect();
         let mut dp = vec![vec![-1; 201]; 101];
-        Self::helper(
-            &locations,
-            locations.len(),
-            start as usize,
-            finish as usize,
-            fuel as i64,
-            &mut dp,
-        ) as _
+        Self::helper(&locations, locations.len(), start as usize, finish as usize, fuel as i64, &mut dp) as _
     }
 
     fn helper(locations: &Vec<i64>, n: usize, s: usize, e: usize, f: i64, dp: &mut Vec<Vec<i64>>) -> i64 {

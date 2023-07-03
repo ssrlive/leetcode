@@ -67,11 +67,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("11111222223", 3, "135"),
-        ("00000000", 3, "000"),
-        ("123456789", 3, "126"),
-    ];
+    let cases = vec![("11111222223", 3, "135"), ("00000000", 3, "000"), ("123456789", 3, "126")];
     for (s, k, expected) in cases {
         assert_eq!(Solution::digit_sum(s.to_string(), k), expected);
     }

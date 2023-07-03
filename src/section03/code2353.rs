@@ -75,10 +75,7 @@ impl FoodRatings {
         let mut rate_lists: HashMap<String, BTreeSet<(usize, usize)>> = HashMap::new();
         for i in 0..foods.len() {
             food_index.insert(foods[i].clone(), i);
-            rate_lists
-                .entry(cuisines[i].clone())
-                .or_default()
-                .insert((ratings[i] as usize, i));
+            rate_lists.entry(cuisines[i].clone()).or_default().insert((ratings[i] as usize, i));
         }
         Self {
             foods,

@@ -52,10 +52,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![vec![1, 4], vec![3, 6], vec![2, 8]], 2),
-        (vec![vec![1, 4], vec![2, 3]], 1),
-    ];
+    let cases = vec![(vec![vec![1, 4], vec![3, 6], vec![2, 8]], 2), (vec![vec![1, 4], vec![2, 3]], 1)];
     for (intervals, expected) in cases {
         assert_eq!(Solution::remove_covered_intervals(intervals), expected);
     }

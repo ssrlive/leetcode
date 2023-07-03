@@ -193,10 +193,7 @@ fn test() {
     let s = "[-123,[456,[789]]]".to_string();
     let expected = NestedInteger::List(vec![
         NestedInteger::Int(-123),
-        NestedInteger::List(vec![
-            NestedInteger::Int(456),
-            NestedInteger::List(vec![NestedInteger::Int(789)]),
-        ]),
+        NestedInteger::List(vec![NestedInteger::Int(456), NestedInteger::List(vec![NestedInteger::Int(789)])]),
     ]);
     assert_eq!(Solution::deserialize(s), expected);
 
@@ -204,11 +201,7 @@ fn test() {
     let expected = NestedInteger::List(vec![
         NestedInteger::Int(123),
         NestedInteger::Int(456),
-        NestedInteger::List(vec![
-            NestedInteger::Int(788),
-            NestedInteger::Int(799),
-            NestedInteger::Int(833),
-        ]),
+        NestedInteger::List(vec![NestedInteger::Int(788), NestedInteger::Int(799), NestedInteger::Int(833)]),
         NestedInteger::List(vec![NestedInteger::List(vec![])]),
         NestedInteger::Int(10),
         NestedInteger::List(vec![]),

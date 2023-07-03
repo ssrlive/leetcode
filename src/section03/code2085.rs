@@ -61,11 +61,7 @@ impl Solution {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            vec!["leetcode", "is", "amazing", "as", "is"],
-            vec!["amazing", "leetcode", "is"],
-            2,
-        ),
+        (vec!["leetcode", "is", "amazing", "as", "is"], vec!["amazing", "leetcode", "is"], 2),
         (vec!["b", "bb", "bbb"], vec!["a", "aa", "aaa"], 0),
         (vec!["a", "ab"], vec!["a", "a", "a", "ab"], 1),
     ];

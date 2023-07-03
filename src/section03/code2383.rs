@@ -54,12 +54,7 @@ Constraints:
 struct Solution;
 
 impl Solution {
-    pub fn min_number_of_hours(
-        initial_energy: i32,
-        initial_experience: i32,
-        energy: Vec<i32>,
-        experience: Vec<i32>,
-    ) -> i32 {
+    pub fn min_number_of_hours(initial_energy: i32, initial_experience: i32, energy: Vec<i32>, experience: Vec<i32>) -> i32 {
         let delta_energy = 0.max(energy.iter().sum::<i32>() - initial_energy + 1);
         let (mut delta_exp, mut exp) = (0, initial_experience);
         experience.iter().for_each(|&e| match e < exp {
@@ -75,10 +70,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (5, 3, vec![1, 4, 3, 2], vec![2, 6, 3, 1], 8),
-        (2, 4, vec![1], vec![3], 0),
-    ];
+    let cases = vec![(5, 3, vec![1, 4, 3, 2], vec![2, 6, 3, 1], 8), (2, 4, vec![1], vec![3], 0)];
     for (i, exp, energy, experience, expected) in cases {
         assert_eq!(Solution::min_number_of_hours(i, exp, energy, experience), expected);
     }

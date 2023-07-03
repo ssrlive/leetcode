@@ -37,7 +37,6 @@ struct Solution;
 impl Solution {
     pub fn max_freq(s: String, max_letters: i32, min_size: i32, max_size: i32) -> i32 {
         use std::collections::*;
-        let ss = s.clone();
         let s = s.chars().collect::<Vec<char>>();
         let n = s.len();
         let mut map = HashMap::new();
@@ -56,7 +55,7 @@ impl Solution {
             }
 
             if count <= max_letters {
-                *map.entry(&ss[0..i]).or_insert(0) += 1;
+                *map.entry(&s[0..i]).or_insert(0) += 1;
             }
 
             for j in i..n {
@@ -73,7 +72,7 @@ impl Solution {
                 memo[ci] += 1;
 
                 if count <= max_letters {
-                    *map.entry(&ss[j - i + 1..=j]).or_insert(0) += 1;
+                    *map.entry(&s[j - i + 1..=j]).or_insert(0) += 1;
                 }
             }
         }
@@ -95,9 +94,6 @@ fn test() {
         ("abcde", 2, 3, 3, 0),
     ];
     for (s, max_letters, min_size, max_size, expect) in cases {
-        assert_eq!(
-            Solution::max_freq(s.to_string(), max_letters, min_size, max_size),
-            expect
-        );
+        assert_eq!(Solution::max_freq(s.to_string(), max_letters, min_size, max_size), expect);
     }
 }

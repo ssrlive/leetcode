@@ -75,11 +75,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![6, 2, 3, 4, 5, 5], 18),
-        (vec![7, 7, 7, 7, 7, 7, 7], 28),
-        (vec![4], 0),
-    ];
+    let cases = vec![(vec![6, 2, 3, 4, 5, 5], 18), (vec![7, 7, 7, 7, 7, 7, 7], 28), (vec![4], 0)];
     for (stone_value, expected) in cases {
         assert_eq!(Solution::stone_game_v(stone_value), expected);
     }

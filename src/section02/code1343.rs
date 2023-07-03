@@ -57,8 +57,5 @@ impl Solution {
 #[test]
 fn test() {
     assert_eq!(Solution::num_of_subarrays(vec![2, 2, 2, 2, 5, 5, 5, 8], 3, 4), 3);
-    assert_eq!(
-        Solution::num_of_subarrays(vec![11, 13, 17, 23, 29, 31, 7, 5, 2, 3], 3, 5),
-        6
-    );
+    assert_eq!(Solution::num_of_subarrays(vec![11, 13, 17, 23, 29, 31, 7, 5, 2, 3], 3, 5), 6);
 }

@@ -66,7 +66,6 @@ fn test() {
 
     let sentence = "The quick brown fox jumped over the lazy dog".to_string();
     let expected =
-        "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa"
-            .to_string();
+        "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa".to_string();
     assert_eq!(Solution::to_goat_latin(sentence), expected);
 }

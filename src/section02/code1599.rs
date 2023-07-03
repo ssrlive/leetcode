@@ -103,11 +103,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![8, 3], 5, 6, 3),
-        (vec![10, 9, 6], 6, 4, 7),
-        (vec![3, 4, 0, 5, 1], 1, 92, -1),
-    ];
+    let cases = vec![(vec![8, 3], 5, 6, 3), (vec![10, 9, 6], 6, 4, 7), (vec![3, 4, 0, 5, 1], 1, 92, -1)];
     for (c, b, r, e) in cases {
         assert_eq!(Solution::min_operations_max_profit(c, b, r), e);
     }

@@ -78,15 +78,7 @@ impl Solution {
 #[test]
 fn test() {
     assert_eq!(
-        Solution::smallest_from_leaf(TreeNode::from_vec(&[
-            Some(0),
-            Some(1),
-            Some(2),
-            Some(3),
-            Some(4),
-            Some(3),
-            Some(4)
-        ])),
+        Solution::smallest_from_leaf(TreeNode::from_vec(&[Some(0), Some(1), Some(2), Some(3), Some(4), Some(3), Some(4)])),
         "dba".to_string()
     );
     assert_eq!(

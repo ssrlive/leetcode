@@ -106,27 +106,9 @@ fn test() {
             "Fried Chicken".to_string(),
             "Water".to_string(),
         ],
-        vec![
-            "3".to_string(),
-            "0".to_string(),
-            "2".to_string(),
-            "1".to_string(),
-            "0".to_string(),
-        ],
-        vec![
-            "5".to_string(),
-            "0".to_string(),
-            "1".to_string(),
-            "0".to_string(),
-            "1".to_string(),
-        ],
-        vec![
-            "10".to_string(),
-            "1".to_string(),
-            "0".to_string(),
-            "0".to_string(),
-            "0".to_string(),
-        ],
+        vec!["3".to_string(), "0".to_string(), "2".to_string(), "1".to_string(), "0".to_string()],
+        vec!["5".to_string(), "0".to_string(), "1".to_string(), "0".to_string(), "1".to_string()],
+        vec!["10".to_string(), "1".to_string(), "0".to_string(), "0".to_string(), "0".to_string()],
     ];
     assert_eq!(result, expected);
 
@@ -139,11 +121,7 @@ fn test() {
     ];
     let result = Solution::display_table(orders);
     let expected = vec![
-        vec![
-            "Table".to_string(),
-            "Canadian Waffles".to_string(),
-            "Fried Chicken".to_string(),
-        ],
+        vec!["Table".to_string(), "Canadian Waffles".to_string(), "Fried Chicken".to_string()],
         vec!["1".to_string(), "2".to_string(), "0".to_string()],
         vec!["12".to_string(), "0".to_string(), "3".to_string()],
     ];

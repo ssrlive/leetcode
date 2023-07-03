@@ -35,12 +35,8 @@ impl Solution {
                 for j in i + 1..points.len() {
                     for k in j + 1..points.len() {
                         let area = 0.5
-                            * ((points[i][0] * points[j][1]
-                                + points[j][0] * points[k][1]
-                                + points[k][0] * points[i][1])
-                                - (points[i][1] * points[j][0]
-                                    + points[j][1] * points[k][0]
-                                    + points[k][1] * points[i][0]))
+                            * ((points[i][0] * points[j][1] + points[j][0] * points[k][1] + points[k][0] * points[i][1])
+                                - (points[i][1] * points[j][0] + points[j][1] * points[k][0] + points[k][1] * points[i][0]))
                                 .abs() as f64;
                         if area > max_area {
                             max_area = area;

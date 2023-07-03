@@ -72,12 +72,7 @@ impl Solution {
 fn test() {
     let cases = vec![
         (
-            vec![
-                "Hello userTwooo",
-                "Hi userThree",
-                "Wonderful day Alice",
-                "Nice day userThree",
-            ],
+            vec!["Hello userTwooo", "Hi userThree", "Wonderful day Alice", "Nice day userThree"],
             vec!["Alice", "userTwo", "userThree", "Alice"],
             "Alice",
         ),

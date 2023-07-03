@@ -52,13 +52,7 @@ impl Solution {
         num.chars()
             .zip(num.chars().skip(1))
             .zip(num.chars().skip(2))
-            .filter_map(|((a, b), c)| {
-                if a == b && b == c {
-                    Some(format!("{}{}{}", a, b, c))
-                } else {
-                    None
-                }
-            })
+            .filter_map(|((a, b), c)| if a == b && b == c { Some(format!("{}{}{}", a, b, c)) } else { None })
             .max()
             .unwrap_or_default()
     }

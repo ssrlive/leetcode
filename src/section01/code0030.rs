@@ -55,13 +55,12 @@ impl Solution {
         if k > n {
             return vec![];
         }
-        let mut map = words.iter().fold(
-            std::collections::HashMap::<&[u8], (usize, usize)>::new(),
-            |mut map, word| {
+        let mut map = words
+            .iter()
+            .fold(std::collections::HashMap::<&[u8], (usize, usize)>::new(), |mut map, word| {
                 map.entry(word.as_bytes()).or_default().0 += 1;
                 map
-            },
-        );
+            });
         let mut map_is_reset = true;
         let mut rez = vec![];
         for i in 0..k {
@@ -116,12 +115,7 @@ fn test() {
     assert_eq!(rez, vec![0, 9]);
 
     let s = "wordgoodgoodgoodbestword".to_string();
-    let words = vec![
-        "word".to_string(),
-        "good".to_string(),
-        "best".to_string(),
-        "word".to_string(),
-    ];
+    let words = vec!["word".to_string(), "good".to_string(), "best".to_string(), "word".to_string()];
     let rez = Solution::find_substring(s, words);
     assert_eq!(rez, vec![]);
 

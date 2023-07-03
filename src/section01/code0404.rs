@@ -54,15 +54,7 @@ impl Solution {
 #[test]
 fn test() {
     assert_eq!(
-        Solution::sum_of_left_leaves(TreeNode::from_vec(&[
-            Some(3),
-            Some(9),
-            Some(20),
-            None,
-            None,
-            Some(15),
-            Some(7)
-        ])),
+        Solution::sum_of_left_leaves(TreeNode::from_vec(&[Some(3), Some(9), Some(20), None, None, Some(15), Some(7)])),
         24
     );
     assert_eq!(Solution::sum_of_left_leaves(TreeNode::from_vec(&[Some(1)])), 0);

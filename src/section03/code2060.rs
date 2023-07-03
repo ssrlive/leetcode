@@ -78,14 +78,7 @@ impl Solution {
         let mut memo: Vec<Vec<Vec<Option<bool>>>> = vec![vec![vec![None; 2000]; len2 + 1]; len1 + 1];
         Self::dfs(0, 0, 0, &chs1, &chs2, &mut memo)
     }
-    fn dfs(
-        idx1: usize,
-        idx2: usize,
-        diff: i16,
-        chs1: &Vec<char>,
-        chs2: &Vec<char>,
-        memo: &mut Vec<Vec<Vec<Option<bool>>>>,
-    ) -> bool {
+    fn dfs(idx1: usize, idx2: usize, diff: i16, chs1: &Vec<char>, chs2: &Vec<char>, memo: &mut Vec<Vec<Vec<Option<bool>>>>) -> bool {
         const RADIX: u32 = 10;
         let len1: usize = chs1.len();
         let len2: usize = chs2.len();
@@ -95,28 +88,15 @@ impl Solution {
         if let Some(m) = memo[idx1][idx2][(diff + 1000) as usize] {
             return m;
         }
-        if idx1 < len1
-            && idx2 < len2
-            && diff == 0
-            && chs1[idx1] == chs2[idx2]
-            && Self::dfs(idx1 + 1, idx2 + 1, 0, chs1, chs2, memo)
-        {
+        if idx1 < len1 && idx2 < len2 && diff == 0 && chs1[idx1] == chs2[idx2] && Self::dfs(idx1 + 1, idx2 + 1, 0, chs1, chs2, memo) {
             memo[idx1][idx2][1000] = Some(true);
             return true;
         }
-        if idx1 < len1
-            && !chs1[idx1].is_digit(RADIX)
-            && diff > 0
-            && Self::dfs(idx1 + 1, idx2, diff - 1, chs1, chs2, memo)
-        {
+        if idx1 < len1 && !chs1[idx1].is_digit(RADIX) && diff > 0 && Self::dfs(idx1 + 1, idx2, diff - 1, chs1, chs2, memo) {
             memo[idx1][idx2][(diff + 1000) as usize] = Some(true);
             return true;
         }
-        if idx2 < len2
-            && !chs2[idx2].is_digit(RADIX)
-            && diff < 0
-            && Self::dfs(idx1, idx2 + 1, diff + 1, chs1, chs2, memo)
-        {
+        if idx2 < len2 && !chs2[idx2].is_digit(RADIX) && diff < 0 && Self::dfs(idx1, idx2 + 1, diff + 1, chs1, chs2, memo) {
             memo[idx1][idx2][(diff + 1000) as usize] = Some(true);
             return true;
         }

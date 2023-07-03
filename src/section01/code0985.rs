@@ -48,19 +48,16 @@ impl Solution {
                     None
                 }
             })
-            .scan(
-                nums.iter().filter(|num| **num % 2 == 0).sum::<i32>(),
-                |sum, (val, index)| {
-                    if nums[index] % 2 == 0 {
-                        *sum -= nums[index]
-                    }
-                    nums[index] += val;
-                    if nums[index] % 2 == 0 {
-                        *sum += nums[index]
-                    }
-                    Some(*sum)
-                },
-            )
+            .scan(nums.iter().filter(|num| **num % 2 == 0).sum::<i32>(), |sum, (val, index)| {
+                if nums[index] % 2 == 0 {
+                    *sum -= nums[index]
+                }
+                nums[index] += val;
+                if nums[index] % 2 == 0 {
+                    *sum += nums[index]
+                }
+                Some(*sum)
+            })
             .collect()
     }
 }

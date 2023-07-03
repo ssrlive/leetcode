@@ -52,10 +52,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("998244353", 3, vec![1, 1, 0, 0, 0, 1, 1, 0, 0]),
-        ("1010", 10, vec![0, 1, 0, 1]),
-    ];
+    let cases = vec![("998244353", 3, vec![1, 1, 0, 0, 0, 1, 1, 0, 0]), ("1010", 10, vec![0, 1, 0, 1])];
     for (word, m, expect) in cases {
         assert_eq!(Solution::divisibility_array(word.to_string(), m), expect);
     }

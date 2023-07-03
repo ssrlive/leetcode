@@ -67,14 +67,7 @@ impl Solution {
 #[test]
 fn test() {
     let grid = vec![vec![5, 3], vec![4, 0], vec![2, 1]];
-    let move_cost = vec![
-        vec![9, 8],
-        vec![1, 5],
-        vec![10, 12],
-        vec![18, 6],
-        vec![2, 4],
-        vec![14, 3],
-    ];
+    let move_cost = vec![vec![9, 8], vec![1, 5], vec![10, 12], vec![18, 6], vec![2, 4], vec![14, 3]];
     assert_eq!(Solution::min_path_cost(grid, move_cost), 17);
     let grid = vec![vec![5, 1, 2], vec![4, 0, 3]];
     let move_cost = vec![

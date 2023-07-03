@@ -74,10 +74,7 @@ struct Solution;
 use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
-    pub fn intersect(
-        quad_tree1: Option<Rc<RefCell<Node>>>,
-        quad_tree2: Option<Rc<RefCell<Node>>>,
-    ) -> Option<Rc<RefCell<Node>>> {
+    pub fn intersect(quad_tree1: Option<Rc<RefCell<Node>>>, quad_tree2: Option<Rc<RefCell<Node>>>) -> Option<Rc<RefCell<Node>>> {
         if quad_tree1.is_none() {
             return quad_tree2;
         }
@@ -98,14 +95,8 @@ impl Solution {
                 quad_tree1
             };
         }
-        let tl = Solution::intersect(
-            quad_tree1.as_ref()?.borrow().top_left(),
-            quad_tree2.as_ref()?.borrow().top_left(),
-        );
-        let tr = Solution::intersect(
-            quad_tree1.as_ref()?.borrow().top_right(),
-            quad_tree2.as_ref()?.borrow().top_right(),
-        );
+        let tl = Solution::intersect(quad_tree1.as_ref()?.borrow().top_left(), quad_tree2.as_ref()?.borrow().top_left());
+        let tr = Solution::intersect(quad_tree1.as_ref()?.borrow().top_right(), quad_tree2.as_ref()?.borrow().top_right());
         let bl = Solution::intersect(
             quad_tree1.as_ref()?.borrow().bottom_left(),
             quad_tree2.as_ref()?.borrow().bottom_left(),

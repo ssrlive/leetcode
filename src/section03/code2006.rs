@@ -60,11 +60,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![1, 2, 2, 1], 1, 4),
-        (vec![1, 3], 3, 0),
-        (vec![3, 2, 1, 5, 4], 2, 3),
-    ];
+    let cases = vec![(vec![1, 2, 2, 1], 1, 4), (vec![1, 3], 3, 0), (vec![3, 2, 1, 5, 4], 2, 3)];
     for (nums, k, expected) in cases {
         assert_eq!(Solution::count_k_difference(nums, k), expected);
     }

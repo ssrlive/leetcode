@@ -89,8 +89,8 @@ fn test() {
     assert_eq!(Solution::construct_distanced_sequence(n), res);
     let n = 20;
     let res = vec![
-        20, 18, 19, 15, 13, 17, 10, 16, 7, 5, 3, 14, 12, 3, 5, 7, 10, 13, 15, 18, 20, 19, 17, 16, 12, 14, 11, 9, 4, 6,
-        8, 2, 4, 2, 1, 6, 9, 11, 8,
+        20, 18, 19, 15, 13, 17, 10, 16, 7, 5, 3, 14, 12, 3, 5, 7, 10, 13, 15, 18, 20, 19, 17, 16, 12, 14, 11, 9, 4, 6, 8, 2, 4, 2, 1, 6, 9,
+        11, 8,
     ];
     assert_eq!(Solution::construct_distanced_sequence(n), res);
 }

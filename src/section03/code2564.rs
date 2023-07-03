@@ -89,11 +89,7 @@ impl Solution {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            "101101".to_string(),
-            vec![vec![0, 5], vec![1, 2]],
-            vec![vec![0, 2], vec![2, 3]],
-        ),
+        ("101101".to_string(), vec![vec![0, 5], vec![1, 2]], vec![vec![0, 2], vec![2, 3]]),
         ("0101".to_string(), vec![vec![12, 8]], vec![vec![-1, -1]]),
         ("1".to_string(), vec![vec![4, 5]], vec![vec![0, 0]]),
     ];

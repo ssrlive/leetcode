@@ -70,9 +70,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(
-        Solution::optimal_division(vec![1000, 100, 10, 2]),
-        "1000/(100/10/2)".to_string()
-    );
+    assert_eq!(Solution::optimal_division(vec![1000, 100, 10, 2]), "1000/(100/10/2)".to_string());
     assert_eq!(Solution::optimal_division(vec![2, 3, 4]), "2/(3/4)".to_string());
 }

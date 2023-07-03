@@ -62,12 +62,7 @@ impl Solution {
             for (dx, dy) in dirs {
                 let mut nx = x as i32;
                 let mut ny = y as i32;
-                while nx >= 0
-                    && nx < maze.len() as i32
-                    && ny >= 0
-                    && ny < maze[0].len() as i32
-                    && maze[nx as usize][ny as usize] == 0
-                {
+                while nx >= 0 && nx < maze.len() as i32 && ny >= 0 && ny < maze[0].len() as i32 && maze[nx as usize][ny as usize] == 0 {
                     nx += dx;
                     ny += dy;
                 }

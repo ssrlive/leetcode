@@ -41,10 +41,7 @@ impl Solution {
         let mut bus_stop_bus_route = HashMap::new();
         for (route_index, bus_route) in routes.iter().enumerate() {
             for bus_stop in bus_route {
-                bus_stop_bus_route
-                    .entry(*bus_stop)
-                    .or_insert_with(HashSet::new)
-                    .insert(route_index);
+                bus_stop_bus_route.entry(*bus_stop).or_insert_with(HashSet::new).insert(route_index);
             }
         }
 

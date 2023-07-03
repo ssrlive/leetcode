@@ -45,13 +45,10 @@ struct Solution;
 impl Solution {
     pub fn min_deletions(s: String) -> i32 {
         use std::collections::HashSet;
-        let counts = s
-            .as_bytes()
-            .iter()
-            .fold([0; (b'z' - b'a' + 1) as usize], |mut counts, b| {
-                counts[(*b - b'a') as usize] += 1;
-                counts
-            });
+        let counts = s.as_bytes().iter().fold([0; (b'z' - b'a' + 1) as usize], |mut counts, b| {
+            counts[(*b - b'a') as usize] += 1;
+            counts
+        });
         let mut set = HashSet::new();
         let mut deletions = 0;
         for count in counts {

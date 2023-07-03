@@ -46,8 +46,7 @@ impl Solution {
         use std::collections::HashMap;
         let mut hm = HashMap::new();
         for w in &words {
-            *hm.entry(w.bytes().fold(0_u32, |acc, u| acc | 1 << (u - b'a')))
-                .or_insert(0) += 1;
+            *hm.entry(w.bytes().fold(0_u32, |acc, u| acc | 1 << (u - b'a'))).or_insert(0) += 1;
         }
         let f = |p: &String| {
             let first = 1 << (p.as_bytes()[0] - b'a');

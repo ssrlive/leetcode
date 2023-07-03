@@ -47,15 +47,7 @@ impl Solution {
     pub fn get_length_of_optimal_compression(s: String, k: i32) -> i32 {
         use std::collections::HashMap;
 
-        fn dp(
-            s: &[u8],
-            k: usize,
-            i: usize,
-            last: u8,
-            cnt: usize,
-            j: usize,
-            memo: &mut HashMap<(usize, u8, usize, usize), i32>,
-        ) -> i32 {
+        fn dp(s: &[u8], k: usize, i: usize, last: u8, cnt: usize, j: usize, memo: &mut HashMap<(usize, u8, usize, usize), i32>) -> i32 {
             if i == s.len() {
                 0
             } else if let Some(additional_len) = memo.get(&(i, last, cnt, j)) {

@@ -62,11 +62,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("G()(al)", "Goal"),
-        ("G()()()()(al)", "Gooooal"),
-        ("(al)G(al)()()G", "alGalooG"),
-    ];
+    let cases = vec![("G()(al)", "Goal"), ("G()()()()(al)", "Gooooal"), ("(al)G(al)()()G", "alGalooG")];
     for (command, expected) in cases {
         assert_eq!(Solution::interpret(command.to_string()), expected);
     }

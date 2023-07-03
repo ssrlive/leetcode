@@ -43,9 +43,7 @@ impl Solution {
         let (l1, l2) = (str1.len(), str2.len());
         let l = gcd(l1, l2);
 
-        if sb1.iter().enumerate().all(|(i, &b1)| b1 == sb2[i % l])
-            && sb2.iter().enumerate().all(|(i, &b2)| b2 == sb1[i % l])
-        {
+        if sb1.iter().enumerate().all(|(i, &b1)| b1 == sb2[i % l]) && sb2.iter().enumerate().all(|(i, &b2)| b2 == sb1[i % l]) {
             String::from_utf8(sb1[..l].to_vec()).unwrap()
         } else {
             "".to_string()

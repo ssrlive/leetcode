@@ -72,12 +72,7 @@ struct Solution;
 impl Solution {
     pub fn color_border(grid: Vec<Vec<i32>>, row: i32, col: i32, color: i32) -> Vec<Vec<i32>> {
         fn dfs(grid: &mut Vec<Vec<i32>>, r: i32, c: i32, cl: i32) {
-            if r < 0
-                || r >= grid.len() as i32
-                || c < 0
-                || c >= grid[r as usize].len() as i32
-                || grid[r as usize][c as usize] != cl
-            {
+            if r < 0 || r >= grid.len() as i32 || c < 0 || c >= grid[r as usize].len() as i32 || grid[r as usize][c as usize] != cl {
                 return;
             }
             grid[r as usize][c as usize] = -cl;
@@ -114,13 +109,7 @@ impl Solution {
 fn test() {
     let cases = vec![
         (vec![vec![1, 1], vec![1, 2]], 0, 0, 3, vec![vec![3, 3], vec![3, 2]]),
-        (
-            vec![vec![1, 2, 2], vec![2, 3, 2]],
-            0,
-            1,
-            3,
-            vec![vec![1, 3, 3], vec![2, 3, 3]],
-        ),
+        (vec![vec![1, 2, 2], vec![2, 3, 2]], 0, 1, 3, vec![vec![1, 3, 3], vec![2, 3, 3]]),
         (
             vec![vec![1, 1, 1], vec![1, 1, 1], vec![1, 1, 1]],
             1,

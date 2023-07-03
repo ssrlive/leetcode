@@ -54,10 +54,7 @@ impl Solution {
             map.entry(pair[1]).or_insert(vec![]).push(pair[0]);
             map.entry(pair[0]).or_insert(vec![]).push(pair[1]);
         }
-        let start = map
-            .iter()
-            .find_map(|(k, v)| if v.len() == 1 { Some(*k) } else { None })
-            .unwrap();
+        let start = map.iter().find_map(|(k, v)| if v.len() == 1 { Some(*k) } else { None }).unwrap();
         let mut stack = vec![start];
         let mut seen = std::collections::HashSet::new();
         let mut result = vec![];

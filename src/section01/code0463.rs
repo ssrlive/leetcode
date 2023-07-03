@@ -60,12 +60,7 @@ impl Solution {
 #[test]
 fn test_island_perimeter() {
     assert_eq!(
-        Solution::island_perimeter(vec![
-            vec![0, 1, 0, 0],
-            vec![1, 1, 1, 0],
-            vec![0, 1, 0, 0],
-            vec![1, 1, 0, 0]
-        ]),
+        Solution::island_perimeter(vec![vec![0, 1, 0, 0], vec![1, 1, 1, 0], vec![0, 1, 0, 0], vec![1, 1, 0, 0]]),
         16
     );
     assert_eq!(Solution::island_perimeter(vec![vec![1]]), 4);

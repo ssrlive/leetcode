@@ -59,12 +59,7 @@ impl Solution {
         Solution::can_i_win_helper(max_choosable_integer, desired_total, 0, &mut memo)
     }
 
-    fn can_i_win_helper(
-        max_choosable_integer: i32,
-        desired_total: i32,
-        used: i32,
-        memo: &mut Vec<Vec<Option<bool>>>,
-    ) -> bool {
+    fn can_i_win_helper(max_choosable_integer: i32, desired_total: i32, used: i32, memo: &mut Vec<Vec<Option<bool>>>) -> bool {
         if desired_total <= 0 {
             return false;
         }
@@ -75,9 +70,7 @@ impl Solution {
 
         for i in 0..max_choosable_integer {
             let mask = 1 << i;
-            if used & mask == 0
-                && !Solution::can_i_win_helper(max_choosable_integer, desired_total - i - 1, used | mask, memo)
-            {
+            if used & mask == 0 && !Solution::can_i_win_helper(max_choosable_integer, desired_total - i - 1, used | mask, memo) {
                 memo[desired_total as usize][used as usize] = Some(true);
                 return true;
             }

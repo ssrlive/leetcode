@@ -123,9 +123,6 @@ fn test() {
         ),
     ];
     for (source, target, allowed_swaps, expected) in cases {
-        assert_eq!(
-            Solution::minimum_hamming_distance(source, target, allowed_swaps),
-            expected
-        );
+        assert_eq!(Solution::minimum_hamming_distance(source, target, allowed_swaps), expected);
     }
 }

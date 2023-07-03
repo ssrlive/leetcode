@@ -51,12 +51,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(
-        Solution::find_longest_chain(vec![vec![1, 2], vec![2, 3], vec![3, 4]]),
-        2
-    );
-    assert_eq!(
-        Solution::find_longest_chain(vec![vec![1, 2], vec![7, 8], vec![4, 5]]),
-        3
-    );
+    assert_eq!(Solution::find_longest_chain(vec![vec![1, 2], vec![2, 3], vec![3, 4]]), 2);
+    assert_eq!(Solution::find_longest_chain(vec![vec![1, 2], vec![7, 8], vec![4, 5]]), 3);
 }

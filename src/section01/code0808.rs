@@ -50,10 +50,7 @@ impl Solution {
             if memo[a as usize][b as usize] > 0.0 {
                 return memo[a as usize][b as usize];
             }
-            let val = step(a - 100, b, memo)
-                + step(a - 75, b - 25, memo)
-                + step(a - 50, b - 50, memo)
-                + step(a - 25, b - 75, memo);
+            let val = step(a - 100, b, memo) + step(a - 75, b - 25, memo) + step(a - 50, b - 50, memo) + step(a - 25, b - 75, memo);
             memo[a as usize][b as usize] = 0.25 * val;
             memo[a as usize][b as usize]
         }

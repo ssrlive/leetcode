@@ -91,14 +91,8 @@ impl Solution {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            vec!["alex", "loves", "leetcode"],
-            vec!["alexlovesleetcode", "lovesalexleetcode"],
-        ),
-        (
-            vec!["catg", "ctaagt", "gcta", "ttca", "atgcatc"],
-            vec!["gctaagttcatgcatc"],
-        ),
+        (vec!["alex", "loves", "leetcode"], vec!["alexlovesleetcode", "lovesalexleetcode"]),
+        (vec!["catg", "ctaagt", "gcta", "ttca", "atgcatc"], vec!["gctaagttcatgcatc"]),
     ];
 
     for (words, expected) in cases {

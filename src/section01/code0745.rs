@@ -81,10 +81,7 @@ impl WordFilter {
             suffix_root.insert(&w.chars().rev().collect::<String>(), i.to_owned());
         }
 
-        Self {
-            prefix_root,
-            suffix_root,
-        }
+        Self { prefix_root, suffix_root }
     }
 
     fn f(&mut self, prefix: String, suffix: String) -> i32 {

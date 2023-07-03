@@ -87,10 +87,7 @@ fn test() {
     let cases = vec![
         (vec![vec![3, 4], vec![4, 5], vec![5]], 1),
         (vec![vec![3, 5, 1], vec![3, 5]], 4),
-        (
-            vec![vec![1, 2, 3, 4], vec![1, 2, 3, 4], vec![1, 2, 3, 4], vec![1, 2, 3, 4]],
-            24,
-        ),
+        (vec![vec![1, 2, 3, 4], vec![1, 2, 3, 4], vec![1, 2, 3, 4], vec![1, 2, 3, 4]], 24),
     ];
     for (hats, expected) in cases {
         assert_eq!(Solution::number_ways(hats), expected);

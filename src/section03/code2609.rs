@@ -58,13 +58,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("01000111", 6),
-        ("00111", 4),
-        ("111", 0),
-        ("01110011", 4),
-        ("0111001101110011", 4),
-    ];
+    let cases = vec![("01000111", 6), ("00111", 4), ("111", 0), ("01110011", 4), ("0111001101110011", 4)];
     for (s, expect) in cases {
         assert_eq!(Solution::find_the_longest_balanced_substring(s.to_string()), expect);
     }

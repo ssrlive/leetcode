@@ -80,11 +80,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![3, 6, 1, 2, 5], 2, 2),
-        (vec![1, 2, 3], 1, 2),
-        (vec![2, 2, 4, 5], 0, 3),
-    ];
+    let cases = vec![(vec![3, 6, 1, 2, 5], 2, 2), (vec![1, 2, 3], 1, 2), (vec![2, 2, 4, 5], 0, 3)];
     for (nums, k, expected) in cases {
         assert_eq!(Solution::partition_array(nums, k), expected);
     }

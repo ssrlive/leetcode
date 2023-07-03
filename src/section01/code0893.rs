@@ -59,11 +59,7 @@ impl Solution {
             even.sort();
             let mut odd = odd.chars().collect::<Vec<char>>();
             odd.sort();
-            let key = format!(
-                "{}#{}",
-                even.into_iter().collect::<String>(),
-                odd.into_iter().collect::<String>()
-            );
+            let key = format!("{}#{}", even.into_iter().collect::<String>(), odd.into_iter().collect::<String>());
             *map.entry(key).or_insert(0) += 1;
         }
         map.len() as i32

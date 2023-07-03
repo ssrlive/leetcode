@@ -57,11 +57,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![2, 3, 4, 7, 11], 5, 9),
-        (vec![1, 2, 3, 4], 2, 6),
-        (vec![1, 2, 3, 4], 3, 7),
-    ];
+    let cases = vec![(vec![2, 3, 4, 7, 11], 5, 9), (vec![1, 2, 3, 4], 2, 6), (vec![1, 2, 3, 4], 3, 7)];
     for (arr, k, expected) in cases {
         assert_eq!(Solution::find_kth_positive(arr, k), expected);
     }

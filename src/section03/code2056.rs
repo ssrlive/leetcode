@@ -62,13 +62,7 @@ impl Solution {
         let dir = [[0, 1], [1, 0], [0, -1], [-1, 0], [1, 1], [1, -1], [-1, -1], [-1, 1]];
         let mut b = [[[0; 8]; 8]; 4];
 
-        fn _count_combinations(
-            pieces: &[String],
-            pos: &[Vec<i32>],
-            p: usize,
-            dir: &[[i32; 2]],
-            b: &mut [[[i32; 8]; 8]; 4],
-        ) -> i32 {
+        fn _count_combinations(pieces: &[String], pos: &[Vec<i32>], p: usize, dir: &[[i32; 2]], b: &mut [[[i32; 8]; 8]; 4]) -> i32 {
             if p >= pieces.len() {
                 return 1;
             }

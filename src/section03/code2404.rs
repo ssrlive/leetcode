@@ -46,10 +46,7 @@ impl Solution {
             map.entry(x).and_modify(|x| *x += 1).or_insert(0);
         });
 
-        map.into_iter()
-            .max_by_key(|&(k, v)| (v, Reverse(k)))
-            .unwrap_or((-1, 0))
-            .0
+        map.into_iter().max_by_key(|&(k, v)| (v, Reverse(k))).unwrap_or((-1, 0)).0
     }
 }
 

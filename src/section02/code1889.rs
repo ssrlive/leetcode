@@ -107,11 +107,7 @@ fn test() {
     let cases = vec![
         (vec![2, 3, 5], vec![vec![4, 8], vec![2, 8]], 6),
         (vec![2, 3, 5], vec![vec![1, 4], vec![2, 3], vec![3, 4]], -1),
-        (
-            vec![3, 5, 8, 10, 11, 12],
-            vec![vec![12], vec![11, 9], vec![10, 5, 14]],
-            9,
-        ),
+        (vec![3, 5, 8, 10, 11, 12], vec![vec![12], vec![11, 9], vec![10, 5, 14]], 9),
     ];
     for (packages, boxes, expected) in cases {
         assert_eq!(Solution::min_wasted_space(packages, boxes), expected);

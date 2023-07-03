@@ -62,11 +62,7 @@ impl Solution {
                 let mut letters = letters.clone();
                 let mut invalid = false;
                 for (c, count_needed) in w.iter() {
-                    let letters_remaining = if letters.contains_key(c) {
-                        *letters.get(c).unwrap()
-                    } else {
-                        0
-                    };
+                    let letters_remaining = if letters.contains_key(c) { *letters.get(c).unwrap() } else { 0 };
                     if &letters_remaining < count_needed {
                         invalid = true;
                         break;
@@ -98,10 +94,7 @@ impl Solution {
                     *map.entry(w).or_insert(0) += 1;
                 }
 
-                let w_score = map
-                    .iter()
-                    .map(|(c, count)| count * scores_map.get(c).unwrap())
-                    .sum::<u8>() as i32;
+                let w_score = map.iter().map(|(c, count)| count * scores_map.get(c).unwrap()).sum::<u8>() as i32;
 
                 (map, w_score)
             })
@@ -122,25 +115,19 @@ fn test() {
         (
             vec!["dog", "cat", "dad", "good"],
             vec!['a', 'a', 'c', 'd', 'd', 'd', 'g', 'o', 'o'],
-            vec![
-                1, 0, 9, 5, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            ],
+            vec![1, 0, 9, 5, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
             23,
         ),
         (
             vec!["xxxz", "ax", "bx", "cx"],
             vec!['z', 'a', 'b', 'c', 'x', 'x', 'x'],
-            vec![
-                4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 10,
-            ],
+            vec![4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 10],
             27,
         ),
         (
             vec!["leetcode"],
             vec!['l', 'e', 't', 'c', 'o', 'd'],
-            vec![
-                0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
-            ],
+            vec![0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
             0,
         ),
     ];

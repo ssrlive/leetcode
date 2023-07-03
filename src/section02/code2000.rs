@@ -48,15 +48,7 @@ impl Solution {
     pub fn reverse_prefix(word: String, ch: char) -> String {
         let sb = word.as_bytes();
         match sb.iter().position(|&b| b == ch as u8) {
-            Some(pos) => String::from_utf8(
-                sb[..pos + 1]
-                    .iter()
-                    .rev()
-                    .chain(sb[pos + 1..].iter())
-                    .cloned()
-                    .collect::<Vec<_>>(),
-            )
-            .unwrap(),
+            Some(pos) => String::from_utf8(sb[..pos + 1].iter().rev().chain(sb[pos + 1..].iter()).cloned().collect::<Vec<_>>()).unwrap(),
             None => word,
         }
     }
@@ -64,11 +56,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("abcdefd", 'd', "dcbaefd"),
-        ("xyxzxe", 'z', "zxyxxe"),
-        ("abcd", 'z', "abcd"),
-    ];
+    let cases = vec![("abcdefd", 'd', "dcbaefd"), ("xyxzxe", 'z', "zxyxxe"), ("abcd", 'z', "abcd")];
     for (word, ch, expect) in cases {
         assert_eq!(Solution::reverse_prefix(word.to_string(), ch), expect);
     }

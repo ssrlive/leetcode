@@ -114,21 +114,13 @@ impl Solution {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            vec![2, 3, 3, 2],
-            vec![vec![0, 1], vec![1, 2], vec![1, 3]],
-            vec![-1, 0, 0, 1],
-        ),
+        (vec![2, 3, 3, 2], vec![vec![0, 1], vec![1, 2], vec![1, 3]], vec![-1, 0, 0, 1]),
         (
             vec![5, 6, 10, 2, 3, 6, 15],
             vec![vec![0, 1], vec![0, 2], vec![1, 3], vec![1, 4], vec![2, 5], vec![2, 6]],
             vec![-1, 0, -1, 0, 0, 0, -1],
         ),
-        (
-            vec![6, 2, 3, 6],
-            vec![vec![0, 1], vec![1, 2], vec![2, 3]],
-            vec![-1, -1, 1, -1],
-        ),
+        (vec![6, 2, 3, 6], vec![vec![0, 1], vec![1, 2], vec![2, 3]], vec![-1, -1, 1, -1]),
     ];
     for (nums, edges, expect) in cases {
         assert_eq!(Solution::get_coprimes(nums, edges), expect);

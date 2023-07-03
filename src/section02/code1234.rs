@@ -53,12 +53,7 @@ impl Solution {
         }
         for j in 0..n {
             count[s[j] as usize] -= 1;
-            while i < n
-                && count['Q' as usize] <= k
-                && count['W' as usize] <= k
-                && count['E' as usize] <= k
-                && count['R' as usize] <= k
-            {
+            while i < n && count['Q' as usize] <= k && count['W' as usize] <= k && count['E' as usize] <= k && count['R' as usize] <= k {
                 res = res.min((1 + j - i) as i32);
                 count[s[i] as usize] += 1;
                 i += 1;

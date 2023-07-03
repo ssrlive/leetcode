@@ -61,12 +61,8 @@ impl Solution {
                 if let Some(node) = node {
                     let node = node.borrow();
                     let val = node.val;
-                    map.entry(val)
-                        .and_modify(|v| v.push(prev_val))
-                        .or_insert_with(|| vec![prev_val]);
-                    map.entry(prev_val)
-                        .and_modify(|v| v.push(val))
-                        .or_insert_with(|| vec![val]);
+                    map.entry(val).and_modify(|v| v.push(prev_val)).or_insert_with(|| vec![prev_val]);
+                    map.entry(prev_val).and_modify(|v| v.push(val)).or_insert_with(|| vec![val]);
                     stack.push((node.left.clone(), val));
                     stack.push((node.right.clone(), val));
                 }

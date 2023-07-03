@@ -49,10 +49,7 @@ struct Solution;
 
 impl Solution {
     pub fn smallest_index_with_equal_value(nums: Vec<i32>) -> i32 {
-        nums.iter()
-            .zip(0..)
-            .position(|(x, i)| i % 10 == *x)
-            .map_or(-1, |i| i as i32)
+        nums.iter().zip(0..).position(|(x, i)| i % 10 == *x).map_or(-1, |i| i as i32)
     }
 }
 
@@ -60,8 +57,5 @@ impl Solution {
 fn test() {
     assert_eq!(Solution::smallest_index_with_equal_value(vec![0, 1, 2]), 0);
     assert_eq!(Solution::smallest_index_with_equal_value(vec![4, 3, 2, 1]), 2);
-    assert_eq!(
-        Solution::smallest_index_with_equal_value(vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 0]),
-        -1
-    );
+    assert_eq!(Solution::smallest_index_with_equal_value(vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 0]), -1);
 }

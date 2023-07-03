@@ -80,9 +80,7 @@ impl Solution {
             .map(|c| c.to_digit(10))
             .take_while(Option::is_some)
             .flatten()
-            .fold(0, |acc, digit| {
-                acc.saturating_mul(10).saturating_add(sign * digit as i32)
-            })
+            .fold(0, |acc, digit| acc.saturating_mul(10).saturating_add(sign * digit as i32))
     }
 }
 

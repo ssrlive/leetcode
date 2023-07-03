@@ -88,10 +88,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let equations = vec![
-        vec!["a".to_string(), "b".to_string()],
-        vec!["b".to_string(), "c".to_string()],
-    ];
+    let equations = vec![vec!["a".to_string(), "b".to_string()], vec!["b".to_string(), "c".to_string()]];
     let values = vec![2.0, 3.0];
     let queries = vec![
         vec!["a".to_string(), "c".to_string()],

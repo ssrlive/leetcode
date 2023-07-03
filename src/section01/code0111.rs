@@ -70,15 +70,7 @@ impl Solution {
 #[test]
 fn test_min_depth() {
     assert_eq!(
-        Solution::min_depth(TreeNode::from_vec(&[
-            Some(3),
-            Some(9),
-            Some(20),
-            None,
-            None,
-            Some(15),
-            Some(7)
-        ])),
+        Solution::min_depth(TreeNode::from_vec(&[Some(3), Some(9), Some(20), None, None, Some(15), Some(7)])),
         2
     );
     assert_eq!(

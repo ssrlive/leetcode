@@ -52,10 +52,7 @@ struct ExamRoom {
 
 impl ExamRoom {
     fn new(n: i32) -> Self {
-        ExamRoom {
-            n,
-            seats: BTreeSet::new(),
-        }
+        ExamRoom { n, seats: BTreeSet::new() }
     }
 
     fn seat(&mut self) -> i32 {

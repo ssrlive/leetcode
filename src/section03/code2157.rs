@@ -104,10 +104,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec!["a", "b", "ab", "cde"], vec![2, 3]),
-        (vec!["a", "ab", "abc"], vec![1, 3]),
-    ];
+    let cases = vec![(vec!["a", "b", "ab", "cde"], vec![2, 3]), (vec!["a", "ab", "abc"], vec![1, 3])];
     for (words, expected) in cases {
         let words: Vec<String> = words.into_iter().map(|s| s.to_string()).collect();
         assert_eq!(Solution::group_strings(words), expected);

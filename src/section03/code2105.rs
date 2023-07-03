@@ -97,11 +97,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![2, 2, 3, 3], 5, 5, 1),
-        (vec![2, 2, 3, 3], 3, 4, 2),
-        (vec![5], 10, 8, 0),
-    ];
+    let cases = vec![(vec![2, 2, 3, 3], 5, 5, 1), (vec![2, 2, 3, 3], 3, 4, 2), (vec![5], 10, 8, 0)];
     for (plants, capacity_a, capacity_b, expected) in cases {
         assert_eq!(Solution::minimum_refill(plants, capacity_a, capacity_b), expected);
     }

@@ -72,11 +72,7 @@ impl DiningPhilosophers {
     ) {
         let left = philosopher as usize;
         let right = ((philosopher + 1) % 5) as usize;
-        let (first, second) = if philosopher % 2 == 0 {
-            (left, right)
-        } else {
-            (right, left)
-        };
+        let (first, second) = if philosopher % 2 == 0 { (left, right) } else { (right, left) };
         let _f = self.forks[first].lock();
         let _s = self.forks[second].lock();
         pick_left_fork();

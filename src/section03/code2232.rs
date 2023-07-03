@@ -70,11 +70,7 @@ impl Solution {
             for j in 1..m {
                 let left = if i == 0 { 1 } else { a[0..i].parse::<i32>().unwrap() };
                 let middle = a[i..n].parse::<i32>().unwrap() + b[0..j + 1].parse::<i32>().unwrap();
-                let right = if j == m - 1 {
-                    1
-                } else {
-                    b[j + 1..m].parse::<i32>().unwrap()
-                };
+                let right = if j == m - 1 { 1 } else { b[j + 1..m].parse::<i32>().unwrap() };
                 if left * middle * right < maxi {
                     maxi = left * middle * right;
                     ans = a[0..i].to_string() + "(" + &a[i..n] + &b[0..j + 1] + ")" + &b[j + 1..m];

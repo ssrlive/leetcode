@@ -90,13 +90,7 @@ fn test() {
             vec![vec![0, 1], vec![2, 2], vec![1, 4]],
             7,
         ),
-        (
-            3,
-            3,
-            vec![vec![1, 1]],
-            vec![vec![0, 1], vec![1, 0], vec![2, 1], vec![1, 2]],
-            4,
-        ),
+        (3, 3, vec![vec![1, 1]], vec![vec![0, 1], vec![1, 0], vec![2, 1], vec![1, 2]], 4),
     ];
     for (m, n, guards, walls, expected) in cases {
         assert_eq!(Solution::count_unguarded(m, n, guards, walls), expected);

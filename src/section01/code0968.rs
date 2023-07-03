@@ -51,9 +51,7 @@ impl Solution {
                     (State::HasCamera, n) => (State::Covered, n),
                 },
                 (Some(child1), Some(child2)) => match (dfs(child1), dfs(child2)) {
-                    ((State::Uncovered, n1), (_, n2)) | ((_, n1), (State::Uncovered, n2)) => {
-                        (State::HasCamera, n1 + n2 + 1)
-                    }
+                    ((State::Uncovered, n1), (_, n2)) | ((_, n1), (State::Uncovered, n2)) => (State::HasCamera, n1 + n2 + 1),
                     ((State::HasCamera, n1), (_, n2)) | ((_, n1), (State::HasCamera, n2)) => (State::Covered, n1 + n2),
                     ((_, n1), (_, n2)) => (State::Uncovered, n1 + n2),
                 },

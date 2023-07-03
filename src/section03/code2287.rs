@@ -77,9 +77,6 @@ fn test() {
         ("abbaccaddaeea", "aaaaa", 1),
     ];
     for (s, target, expected) in cases {
-        assert_eq!(
-            Solution::rearrange_characters(s.to_string(), target.to_string()),
-            expected
-        );
+        assert_eq!(Solution::rearrange_characters(s.to_string(), target.to_string()), expected);
     }
 }

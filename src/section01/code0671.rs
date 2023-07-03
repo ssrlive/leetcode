@@ -50,11 +50,7 @@ use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
     pub fn find_second_minimum_value(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
-        fn recursive_helper(
-            node: &Option<Rc<RefCell<TreeNode>>>,
-            min: &mut Option<i32>,
-            second_min: &mut Option<i32>,
-        ) -> Option<()> {
+        fn recursive_helper(node: &Option<Rc<RefCell<TreeNode>>>, min: &mut Option<i32>, second_min: &mut Option<i32>) -> Option<()> {
             if let Some(node) = node {
                 let val = node.borrow().val;
                 if min.is_none() || val < (*min)? {

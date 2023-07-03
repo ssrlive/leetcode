@@ -65,15 +65,7 @@ impl Solution {
 #[test]
 fn test_zigzag_level_order() {
     assert_eq!(
-        Solution::zigzag_level_order(TreeNode::from_vec(&vec![
-            Some(3),
-            Some(9),
-            Some(20),
-            None,
-            None,
-            Some(15),
-            Some(7)
-        ])),
+        Solution::zigzag_level_order(TreeNode::from_vec(&vec![Some(3), Some(9), Some(20), None, None, Some(15), Some(7)])),
         vec![vec![3], vec![20, 9], vec![15, 7]]
     );
 }

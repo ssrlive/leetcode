@@ -42,14 +42,7 @@
 struct Solution;
 
 impl Solution {
-    fn solve(
-        stickers: &Vec<String>,
-        i: usize,
-        target: &String,
-        mask: i32,
-        the_mask: i32,
-        matrix: &mut Vec<Vec<i32>>,
-    ) -> Option<i32> {
+    fn solve(stickers: &Vec<String>, i: usize, target: &String, mask: i32, the_mask: i32, matrix: &mut Vec<Vec<i32>>) -> Option<i32> {
         if mask == the_mask {
             return Some(0);
         }

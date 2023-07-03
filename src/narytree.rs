@@ -14,10 +14,7 @@ pub struct Node {
 impl Node {
     #[inline]
     pub fn new(val: i32) -> Self {
-        Node {
-            val,
-            children: Vec::new(),
-        }
+        Node { val, children: Vec::new() }
     }
 
     pub fn from_vec(v: Vec<Option<i32>>) -> Option<Rc<RefCell<Node>>> {

@@ -78,11 +78,7 @@ fn test() {
     let cases = vec![
         (4, vec![vec![1, 2], vec![1, 3], vec![2, 4]], true),
         (3, vec![vec![1, 2], vec![1, 3], vec![2, 3]], false),
-        (
-            5,
-            vec![vec![1, 2], vec![2, 3], vec![3, 4], vec![4, 5], vec![1, 5]],
-            false,
-        ),
+        (5, vec![vec![1, 2], vec![2, 3], vec![3, 4], vec![4, 5], vec![1, 5]], false),
     ];
     for (n, dislikes, expected) in cases {
         assert_eq!(Solution::possible_bipartition(n, dislikes), expected);

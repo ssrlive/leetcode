@@ -50,10 +50,8 @@ impl Solution {
         const MAX_MASS: i32 = 100;
         const MAX_DIM: i32 = 10_000;
         const MAX_VOL: i64 = 1_000_000_000;
-        let is_bulky = length >= MAX_DIM
-            || width >= MAX_DIM
-            || height >= MAX_DIM
-            || (length as i64) * (width as i64) * (height as i64) >= MAX_VOL;
+        let is_bulky =
+            length >= MAX_DIM || width >= MAX_DIM || height >= MAX_DIM || (length as i64) * (width as i64) * (height as i64) >= MAX_VOL;
 
         let is_heavy = mass >= MAX_MASS;
         match (is_bulky, is_heavy) {
@@ -67,10 +65,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (1000, 35, 700, 300, "Heavy".to_string()),
-        (200, 50, 800, 50, "Neither".to_string()),
-    ];
+    let cases = vec![(1000, 35, 700, 300, "Heavy".to_string()), (200, 50, 800, 50, "Neither".to_string())];
     for (length, width, height, mass, expected) in cases {
         assert_eq!(Solution::categorize_box(length, width, height, mass), expected);
     }

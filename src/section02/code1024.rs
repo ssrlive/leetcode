@@ -88,11 +88,7 @@ impl Solution {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            vec![vec![0, 2], vec![4, 6], vec![8, 10], vec![1, 9], vec![1, 5], vec![5, 9]],
-            10,
-            3,
-        ),
+        (vec![vec![0, 2], vec![4, 6], vec![8, 10], vec![1, 9], vec![1, 5], vec![5, 9]], 10, 3),
         (vec![vec![0, 1], vec![1, 2]], 5, -1),
         (
             vec![

@@ -67,14 +67,7 @@ impl Solution {
         ans
     }
 
-    fn dfs(
-        u: usize,
-        visited: &mut Vec<bool>,
-        count: &mut Vec<Vec<i32>>,
-        graph: &Vec<Vec<usize>>,
-        labels: &[u8],
-        ans: &mut Vec<i32>,
-    ) {
+    fn dfs(u: usize, visited: &mut Vec<bool>, count: &mut Vec<Vec<i32>>, graph: &Vec<Vec<usize>>, labels: &[u8], ans: &mut Vec<i32>) {
         visited[u] = true;
         let c = labels[u] - b'a';
         count[u][c as usize] += 1;

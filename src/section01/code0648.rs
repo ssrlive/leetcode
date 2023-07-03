@@ -114,18 +114,12 @@ fn test() {
     let expected = "a a b c".to_string();
     assert_eq!(Solution::replace_words(dictionary, sentence), expected);
 
-    let dictionary = vec!["a", "aa", "aaa", "aaaa"]
-        .into_iter()
-        .map(|s| s.to_string())
-        .collect();
+    let dictionary = vec!["a", "aa", "aaa", "aaaa"].into_iter().map(|s| s.to_string()).collect();
     let sentence = "a aa a aaaa aaa aaa aaa aaaaaa bbb baba ababa".to_string();
     let expected = "a a a a a a a a bbb baba a".to_string();
     assert_eq!(Solution::replace_words(dictionary, sentence), expected);
 
-    let dictionary = vec!["catt", "cat", "bat", "rat"]
-        .into_iter()
-        .map(|s| s.to_string())
-        .collect();
+    let dictionary = vec!["catt", "cat", "bat", "rat"].into_iter().map(|s| s.to_string()).collect();
     let sentence = "the cattle was rattled by the battery".to_string();
     let expected = "the cat was rat by the bat".to_string();
     assert_eq!(Solution::replace_words(dictionary, sentence), expected);

@@ -69,12 +69,7 @@ impl Robot {
     fn new(width: i32, height: i32) -> Self {
         Robot {
             dir: vec![vec![1, 0], vec![0, 1], vec![-1, 0], vec![0, -1]],
-            dir_str: vec![
-                "East".to_string(),
-                "North".to_string(),
-                "West".to_string(),
-                "South".to_string(),
-            ],
+            dir_str: vec!["East".to_string(), "North".to_string(), "West".to_string(), "South".to_string()],
             pos: vec![0, 0],
             w: width,
             h: height,

@@ -130,8 +130,5 @@ fn test_serialize() {
     let root = TreeNode::from_vec(&[Some(2), Some(1), Some(3)]);
     let ans = "[2, 1, 3]";
     assert_eq!(codec.serialize(root), ans);
-    assert_eq!(
-        codec.deserialize(ans.to_string()),
-        TreeNode::from_vec(&[Some(2), Some(1), Some(3)])
-    );
+    assert_eq!(codec.deserialize(ans.to_string()), TreeNode::from_vec(&[Some(2), Some(1), Some(3)]));
 }

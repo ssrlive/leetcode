@@ -38,12 +38,7 @@
 struct Solution;
 
 impl Solution {
-    pub fn count_days_together(
-        arrive_alice: String,
-        leave_alice: String,
-        arrive_bob: String,
-        leave_bob: String,
-    ) -> i32 {
+    pub fn count_days_together(arrive_alice: String, leave_alice: String, arrive_bob: String, leave_bob: String) -> i32 {
         const MONTHS: [i32; 12] = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
         let parse_num_date = |s: String| -> i32 {
@@ -65,10 +60,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("08-15", "08-18", "08-16", "08-19", 3),
-        ("10-01", "10-31", "11-01", "12-31", 0),
-    ];
+    let cases = vec![("08-15", "08-18", "08-16", "08-19", 3), ("10-01", "10-31", "11-01", "12-31", 0)];
     for (arrive_alice, leave_alice, arrive_bob, leave_bob, ex) in cases {
         let a_a = arrive_alice.to_string();
         let l_a = leave_alice.to_string();

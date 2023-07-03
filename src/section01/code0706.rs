@@ -44,9 +44,7 @@ struct MyHashMap {
 
 impl MyHashMap {
     fn new() -> Self {
-        Self {
-            data: vec![-1; 1000001],
-        }
+        Self { data: vec![-1; 1000001] }
     }
 
     fn put(&mut self, key: i32, value: i32) {

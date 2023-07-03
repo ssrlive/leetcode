@@ -59,11 +59,7 @@ impl Solution {
         for i in stack {
             invalid[i] = true;
         }
-        s.chars()
-            .enumerate()
-            .filter(|(i, _)| !invalid[*i])
-            .map(|(_, c)| c)
-            .collect()
+        s.chars().enumerate().filter(|(i, _)| !invalid[*i]).map(|(_, c)| c).collect()
     }
 }
 

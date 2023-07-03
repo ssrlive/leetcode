@@ -58,12 +58,7 @@ impl Solution {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            "alice is a good girl she is a good student",
-            "a",
-            "good",
-            vec!["girl", "student"],
-        ),
+        ("alice is a good girl she is a good student", "a", "good", vec!["girl", "student"]),
         ("we will we will rock you", "we", "will", vec!["we", "rock"]),
     ];
     for (text, first, second, expect) in cases {

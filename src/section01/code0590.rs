@@ -89,8 +89,5 @@ fn test() {
         None,
         Some(14),
     ]);
-    assert_eq!(
-        Solution::postorder(root),
-        vec![2, 6, 14, 11, 7, 3, 12, 8, 4, 13, 9, 10, 5, 1]
-    );
+    assert_eq!(Solution::postorder(root), vec![2, 6, 14, 11, 7, 3, 12, 8, 4, 13, 9, 10, 5, 1]);
 }

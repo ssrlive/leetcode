@@ -165,10 +165,7 @@ fn test() {
         vec!["Mary", "mary@mail.com"],
         vec!["John", "johnnybravo@mail.com"],
     ];
-    let accounts = accounts
-        .iter()
-        .map(|v| v.iter().map(|s| s.to_string()).collect())
-        .collect();
+    let accounts = accounts.iter().map(|v| v.iter().map(|s| s.to_string()).collect()).collect();
     let mut result = Solution::accounts_merge2(accounts);
     result.sort();
     let expected = vec![
@@ -185,10 +182,7 @@ fn test() {
         vec!["Hanzo", "Hanzo3@m.co", "Hanzo1@m.co", "Hanzo0@m.co"],
         vec!["Fern", "Fern5@m.co", "Fern1@m.co", "Fern0@m.co"],
     ];
-    let accounts = accounts
-        .iter()
-        .map(|v| v.iter().map(|s| s.to_string()).collect())
-        .collect();
+    let accounts = accounts.iter().map(|v| v.iter().map(|s| s.to_string()).collect()).collect();
     let mut result = Solution::accounts_merge2(accounts);
     result.sort();
     let expected = vec![

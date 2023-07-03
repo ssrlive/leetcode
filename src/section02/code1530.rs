@@ -88,11 +88,7 @@ fn test() {
     let cases = vec![
         (TreeNode::from_string("[1,2,3,null,4]"), 3, 1),
         (TreeNode::from_string("[1,2,3,4,5,6,7]"), 3, 2),
-        (
-            TreeNode::from_string("[7,1,4,6,null,5,3,null,null,null,null,null,2]"),
-            3,
-            1,
-        ),
+        (TreeNode::from_string("[7,1,4,6,null,5,3,null,null,null,null,null,2]"), 3, 1),
     ];
     for (root, distance, expected) in cases {
         assert_eq!(Solution::count_pairs(root, distance), expected);

@@ -31,10 +31,7 @@ use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
     pub fn increasing_bst(root: Option<Rc<RefCell<TreeNode>>>) -> Option<Rc<RefCell<TreeNode>>> {
-        fn inorder(
-            root: Option<Rc<RefCell<TreeNode>>>,
-            tmp: Option<Rc<RefCell<TreeNode>>>,
-        ) -> Option<Rc<RefCell<TreeNode>>> {
+        fn inorder(root: Option<Rc<RefCell<TreeNode>>>, tmp: Option<Rc<RefCell<TreeNode>>>) -> Option<Rc<RefCell<TreeNode>>> {
             if let Some(node) = root.clone() {
                 let mut node = node.borrow_mut();
                 let res = inorder(node.left.take(), root);

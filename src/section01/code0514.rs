@@ -78,8 +78,5 @@ impl Solution {
 #[test]
 fn test() {
     assert_eq!(Solution::find_rotate_steps("godding".to_string(), "gd".to_string()), 4);
-    assert_eq!(
-        Solution::find_rotate_steps("godding".to_string(), "godding".to_string()),
-        13
-    );
+    assert_eq!(Solution::find_rotate_steps("godding".to_string(), "godding".to_string()), 13);
 }

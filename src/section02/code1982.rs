@@ -87,11 +87,7 @@ fn test() {
     let cases = vec![
         (3, vec![-3, -2, -1, 0, 0, 1, 2, 3], vec![1, 2, -3]),
         (2, vec![0, 0, 0, 0], vec![0, 0]),
-        (
-            4,
-            vec![0, 0, 5, 5, 4, -1, 4, 9, 9, -1, 4, 3, 4, 8, 3, 8],
-            vec![0, -1, 4, 5],
-        ),
+        (4, vec![0, 0, 5, 5, 4, -1, 4, 9, 9, -1, 4, 3, 4, 8, 3, 8], vec![0, -1, 4, 5]),
     ];
     for (n, sums, expect) in cases {
         assert_eq!(Solution::recover_array(n, sums), expect);

@@ -72,17 +72,6 @@ fn test() {
     let root = TreeNode::from_vec(&[Some(2), Some(1), Some(3)]);
     assert_eq!(Solution::find_bottom_left_value(root), 1);
 
-    let root = TreeNode::from_vec(&[
-        Some(1),
-        Some(2),
-        Some(3),
-        Some(4),
-        None,
-        Some(5),
-        Some(6),
-        None,
-        None,
-        Some(7),
-    ]);
+    let root = TreeNode::from_vec(&[Some(1), Some(2), Some(3), Some(4), None, Some(5), Some(6), None, None, Some(7)]);
     assert_eq!(Solution::find_bottom_left_value(root), 7);
 }

@@ -47,11 +47,7 @@ impl Solution {
         }
         nums2
             .into_iter()
-            .filter_map(|n| {
-                hm.get_mut(&n)
-                    .filter(|v| !v.is_empty())
-                    .map_or_else(|| remain.pop(), |v| v.pop())
-            })
+            .filter_map(|n| hm.get_mut(&n).filter(|v| !v.is_empty()).map_or_else(|| remain.pop(), |v| v.pop()))
             .collect()
     }
 }

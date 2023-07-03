@@ -62,11 +62,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("abc", "xya", true),
-        ("abe", "acd", false),
-        ("leetcodee", "interview", true),
-    ];
+    let cases = vec![("abc", "xya", true), ("abe", "acd", false), ("leetcodee", "interview", true)];
     for (s1, s2, expected) in cases {
         assert_eq!(Solution::check_if_can_break(s1.to_string(), s2.to_string()), expected);
     }

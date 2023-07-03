@@ -49,8 +49,7 @@ impl Solution {
         let mut sum = vec![vec![0; pizza[0].len() + 1]; pizza.len() + 1];
         for i in (0..pizza.len()).rev() {
             for j in (0..pizza[0].len()).rev() {
-                sum[i][j] = sum[i + 1][j] + sum[i][j + 1] - sum[i + 1][j + 1]
-                    + (pizza[i].chars().nth(j).unwrap() == 'A') as i32;
+                sum[i][j] = sum[i + 1][j] + sum[i][j + 1] - sum[i + 1][j + 1] + (pizza[i].chars().nth(j).unwrap() == 'A') as i32;
             }
         }
         for (i, item) in sum.iter().enumerate().take(pizza.len()) {

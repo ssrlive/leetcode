@@ -69,8 +69,7 @@ impl Solution {
         use std::collections::HashMap;
 
         fn node_deep_copy(node: &OptNode) -> OptNode {
-            node.as_ref()
-                .map(|rc| Rc::new(RefCell::new(Node::new(rc.borrow().val))))
+            node.as_ref().map(|rc| Rc::new(RefCell::new(Node::new(rc.borrow().val))))
         }
 
         fn dfs(node: &OptNode, visited: &mut HashMap<i32, OptNode>) -> OptNode {

@@ -92,11 +92,7 @@ fn test() {
     let cases = vec![
         ("abaca", vec![vec![0, 1], vec![0, 2], vec![2, 3], vec![3, 4]], 3),
         ("a", vec![vec![0, 0]], -1),
-        (
-            "aabbab",
-            vec![vec![5, 2], vec![5, 1], vec![3, 4], vec![3, 2], vec![4, 1]],
-            2,
-        ),
+        ("aabbab", vec![vec![5, 2], vec![5, 1], vec![3, 4], vec![3, 2], vec![4, 1]], 2),
     ];
     for (colors, edges, expected) in cases {
         assert_eq!(Solution::largest_path_value(colors.to_string(), edges), expected);

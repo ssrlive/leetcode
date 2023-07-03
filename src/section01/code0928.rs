@@ -50,13 +50,7 @@ impl Solution {
     pub fn min_malware_spread(graph: Vec<Vec<i32>>, initial: Vec<i32>) -> i32 {
         use std::collections::HashSet;
 
-        fn dfs(
-            start: i32,
-            graph: &Vec<Vec<i32>>,
-            visited: &mut HashSet<i32>,
-            visited_count: &mut Vec<i32>,
-            initial: &HashSet<i32>,
-        ) {
+        fn dfs(start: i32, graph: &Vec<Vec<i32>>, visited: &mut HashSet<i32>, visited_count: &mut Vec<i32>, initial: &HashSet<i32>) {
             if !visited.contains(&start) {
                 visited.insert(start);
                 visited_count[start as usize] += 1;

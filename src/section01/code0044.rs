@@ -59,9 +59,7 @@ impl Solution {
                 Pattern::Empty => s.is_empty(),
                 Pattern::ManyOrNone if s.is_empty() => is_match_bytes(s, &p[1..], dp),
                 Pattern::ManyOrNone => {
-                    is_match_single(s, Pattern::SingleAny, p, dp)
-                        || is_match_bytes(&s[1..], p, dp)
-                        || is_match_bytes(s, &p[1..], dp)
+                    is_match_single(s, Pattern::SingleAny, p, dp) || is_match_bytes(&s[1..], p, dp) || is_match_bytes(s, &p[1..], dp)
                 }
                 single => is_match_single(s, single, p, dp),
             };

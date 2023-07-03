@@ -55,11 +55,7 @@ impl Solution {
         num_idx.sort_unstable_by_key(|(_, x)| **x);
 
         let mut idx = vec![false; nums.len()];
-        num_idx
-            .into_iter()
-            .rev()
-            .take(k as usize)
-            .for_each(|(i, _)| idx[i] = true);
+        num_idx.into_iter().rev().take(k as usize).for_each(|(i, _)| idx[i] = true);
 
         nums.into_iter()
             .enumerate()

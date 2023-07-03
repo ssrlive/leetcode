@@ -99,10 +99,7 @@ impl Solution {
 #[test]
 fn test() {
     let expected = vec![vec!["", "1", ""], vec!["2", "", ""]];
-    let expected: Vec<Vec<String>> = expected
-        .iter()
-        .map(|v| v.iter().map(|s| s.to_string()).collect())
-        .collect();
+    let expected: Vec<Vec<String>> = expected.iter().map(|v| v.iter().map(|s| s.to_string()).collect()).collect();
     let root = TreeNode::from_vec(&[Some(1), Some(2)]);
     assert_eq!(Solution::print_tree(root), expected);
 
@@ -111,10 +108,7 @@ fn test() {
         vec!["", "2", "", "", "", "3", ""],
         vec!["", "", "4", "", "", "", ""],
     ];
-    let expected: Vec<Vec<String>> = expected
-        .iter()
-        .map(|v| v.iter().map(|s| s.to_string()).collect())
-        .collect();
+    let expected: Vec<Vec<String>> = expected.iter().map(|v| v.iter().map(|s| s.to_string()).collect()).collect();
     let root = TreeNode::from_vec(&[Some(1), Some(2), Some(3), None, Some(4)]);
     assert_eq!(Solution::print_tree(root), expected);
 
@@ -124,10 +118,7 @@ fn test() {
         vec!["", "3", "", "", "", "", "", "", "", "", "", "", "", "", ""],
         vec!["4", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
     ];
-    let expected: Vec<Vec<String>> = expected
-        .iter()
-        .map(|v| v.iter().map(|s| s.to_string()).collect())
-        .collect();
+    let expected: Vec<Vec<String>> = expected.iter().map(|v| v.iter().map(|s| s.to_string()).collect()).collect();
     let root = TreeNode::from_vec(&[Some(1), Some(2), Some(5), Some(3), None, None, None, Some(4)]);
     assert_eq!(Solution::print_tree(root), expected);
 }

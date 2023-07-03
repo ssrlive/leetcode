@@ -76,16 +76,8 @@ impl Solution {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            vec![vec![1, 2], vec![2, 3], vec![2, 5]],
-            vec![vec![2, 1], vec![1, 4]],
-            vec![2, 1],
-        ),
-        (
-            vec![vec![1, 1], vec![2, 2], vec![3, 3]],
-            vec![vec![1, 3], vec![1, 1]],
-            vec![1, 3],
-        ),
+        (vec![vec![1, 2], vec![2, 3], vec![2, 5]], vec![vec![2, 1], vec![1, 4]], vec![2, 1]),
+        (vec![vec![1, 1], vec![2, 2], vec![3, 3]], vec![vec![1, 3], vec![1, 1]], vec![1, 3]),
     ];
     for (rectangles, points, expected) in cases {
         assert_eq!(Solution::count_rectangles(rectangles, points), expected);

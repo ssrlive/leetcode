@@ -50,14 +50,9 @@ impl Solution {
                     let s: String = if i == 0 {
                         v.iter().collect()
                     } else {
-                        v[..i]
-                            .iter()
-                            .chain(std::iter::once(&'.'))
-                            .chain(v[i..].iter())
-                            .collect()
+                        v[..i].iter().chain(std::iter::once(&'.')).chain(v[i..].iter()).collect()
                     };
-                    if (s != "0" && s.starts_with('0') && !s.starts_with("0.")) || (s.contains('.') && s.ends_with('0'))
-                    {
+                    if (s != "0" && s.starts_with('0') && !s.starts_with("0.")) || (s.contains('.') && s.ends_with('0')) {
                         None
                     } else {
                         Some(s)
@@ -89,14 +84,7 @@ fn test() {
     result.sort();
     assert_eq!(
         result,
-        vec![
-            "(0, 1.23)",
-            "(0, 12.3)",
-            "(0, 123)",
-            "(0.1, 2.3)",
-            "(0.1, 23)",
-            "(0.12, 3)"
-        ]
+        vec!["(0, 1.23)", "(0, 12.3)", "(0, 123)", "(0.1, 2.3)", "(0.1, 23)", "(0.12, 3)"]
     );
 
     let s = "(00011)".to_string();

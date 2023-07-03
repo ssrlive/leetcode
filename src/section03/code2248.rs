@@ -38,9 +38,7 @@ impl Solution {
     pub fn intersection(nums: Vec<Vec<i32>>) -> Vec<i32> {
         let l = nums.len();
         let mut counter = [0; 1001];
-        nums.iter()
-            .flat_map(|v| v.iter())
-            .for_each(|v| counter[*v as usize] += 1);
+        nums.iter().flat_map(|v| v.iter()).for_each(|v| counter[*v as usize] += 1);
         counter
             .iter()
             .zip(0..)
@@ -52,10 +50,7 @@ impl Solution {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            vec![vec![3, 1, 2, 4, 5], vec![1, 2, 3, 4], vec![3, 4, 5, 6]],
-            vec![3, 4],
-        ),
+        (vec![vec![3, 1, 2, 4, 5], vec![1, 2, 3, 4], vec![3, 4, 5, 6]], vec![3, 4]),
         (vec![vec![1, 2, 3], vec![4, 5, 6]], vec![]),
     ];
     for (nums, expect) in cases {

@@ -60,10 +60,7 @@ impl Solution {
                 (x - levels[i] - 1) * i as i32 + carrybitted,
                 (levels[i] + 1) * i as i32 + nocarrybitted,
             );
-            let nocarry = std::cmp::min(
-                (x - levels[i]) * i as i32 + carrybitted,
-                (levels[i]) * i as i32 + nocarrybitted,
-            );
+            let nocarry = std::cmp::min((x - levels[i]) * i as i32 + carrybitted, (levels[i]) * i as i32 + nocarrybitted);
             carrybitted = carry;
             nocarrybitted = nocarry;
         }

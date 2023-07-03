@@ -106,10 +106,7 @@ fn test() {
     ];
     for (req_skills, people, expected) in cases {
         let req_skills = req_skills.iter().map(|s| s.to_string()).collect();
-        let people = people
-            .iter()
-            .map(|person| person.iter().map(|s| s.to_string()).collect())
-            .collect();
+        let people = people.iter().map(|person| person.iter().map(|s| s.to_string()).collect()).collect();
         assert_eq!(Solution::smallest_sufficient_team(req_skills, people), expected);
     }
 }

@@ -52,10 +52,10 @@ impl Solution {
         for i in 1..=m {
             for j in 1..=n {
                 for l in 0..k {
-                    dp[i][j][(l + grid[i - 1][j - 1] as usize) % k] =
-                        ((dp[i][j][(l + grid[i - 1][j - 1] as usize) % k] + dp[i - 1][j][l]) % MOD
-                            + (dp[i][j][(l + grid[i - 1][j - 1] as usize) % k] + dp[i][j - 1][l]) % MOD)
-                            % MOD;
+                    dp[i][j][(l + grid[i - 1][j - 1] as usize) % k] = ((dp[i][j][(l + grid[i - 1][j - 1] as usize) % k] + dp[i - 1][j][l])
+                        % MOD
+                        + (dp[i][j][(l + grid[i - 1][j - 1] as usize) % k] + dp[i][j - 1][l]) % MOD)
+                        % MOD;
                 }
             }
         }

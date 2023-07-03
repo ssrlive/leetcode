@@ -95,15 +95,7 @@ impl Solution {
     }
 
     #[allow(clippy::too_many_arguments)]
-    fn dfs(
-        dp: &mut Vec<Vec<i32>>,
-        mp: &Vec<i32>,
-        adj: &Vec<Vec<i32>>,
-        pos: usize,
-        price: &Vec<i32>,
-        can_take: bool,
-        last: i32,
-    ) -> i32 {
+    fn dfs(dp: &mut Vec<Vec<i32>>, mp: &Vec<i32>, adj: &Vec<Vec<i32>>, pos: usize, price: &Vec<i32>, can_take: bool, last: i32) -> i32 {
         if dp[pos][can_take as usize] != -1 {
             return dp[pos][can_take as usize];
         }

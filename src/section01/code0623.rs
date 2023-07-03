@@ -81,18 +81,7 @@ fn test() {
     let root = TreeNode::from_vec(&[Some(4), Some(2), Some(6), Some(3), Some(1), Some(5)]);
     let val = 1;
     let depth = 2;
-    let expected = TreeNode::from_vec(&[
-        Some(4),
-        Some(1),
-        Some(1),
-        Some(2),
-        None,
-        None,
-        Some(6),
-        Some(3),
-        Some(1),
-        Some(5),
-    ]);
+    let expected = TreeNode::from_vec(&[Some(4), Some(1), Some(1), Some(2), None, None, Some(6), Some(3), Some(1), Some(5)]);
     assert_eq!(Solution::add_one_row(root, val, depth), expected);
 
     let root = TreeNode::from_vec(&[Some(4), Some(2), None, Some(3), Some(1)]);

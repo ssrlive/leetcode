@@ -65,15 +65,7 @@ impl Solution {
 #[test]
 fn test_is_balanced() {
     assert_eq!(
-        Solution::is_balanced(TreeNode::from_vec(&[
-            Some(3),
-            Some(9),
-            Some(20),
-            None,
-            None,
-            Some(15),
-            Some(7)
-        ])),
+        Solution::is_balanced(TreeNode::from_vec(&[Some(3), Some(9), Some(20), None, None, Some(15), Some(7)])),
         true
     );
     assert_eq!(

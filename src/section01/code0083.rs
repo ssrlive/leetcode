@@ -97,21 +97,15 @@ fn test_delete_duplicates() {
         ListNode::from_vec(&[1, 2, 3])
     );
     assert_eq!(
-        Solution::delete_duplicates(ListNode::from_vec(&[
-            1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3
-        ])),
+        Solution::delete_duplicates(ListNode::from_vec(&[1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3])),
         ListNode::from_vec(&[1, 2, 3])
     );
     assert_eq!(
-        Solution::delete_duplicates(ListNode::from_vec(&[
-            1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3
-        ])),
+        Solution::delete_duplicates(ListNode::from_vec(&[1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3])),
         ListNode::from_vec(&[1, 2, 3])
     );
     assert_eq!(
-        Solution::delete_duplicates(ListNode::from_vec(&[
-            1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3
-        ])),
+        Solution::delete_duplicates(ListNode::from_vec(&[1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3])),
         ListNode::from_vec(&[1, 2, 3])
     );
 }

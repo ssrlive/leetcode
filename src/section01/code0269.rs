@@ -76,12 +76,7 @@ impl Solution {
             }
         }
 
-        fn dfs(
-            c: &char,
-            map: &mut HashMap<char, Vec<char>>,
-            visited: &mut HashMap<char, i32>,
-            sb: &mut String,
-        ) -> bool {
+        fn dfs(c: &char, map: &mut HashMap<char, Vec<char>>, visited: &mut HashMap<char, i32>, sb: &mut String) -> bool {
             if *visited.get(c).unwrap() == 1 {
                 return true;
             }

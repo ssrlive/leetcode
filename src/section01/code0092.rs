@@ -48,8 +48,5 @@ fn test_reverse_between() {
         Solution::reverse_between(ListNode::from_vec(&[1, 2, 3, 4, 5]), 2, 4),
         ListNode::from_vec(&[1, 4, 3, 2, 5])
     );
-    assert_eq!(
-        Solution::reverse_between(ListNode::from_vec(&[5]), 1, 1),
-        ListNode::from_vec(&[5])
-    );
+    assert_eq!(Solution::reverse_between(ListNode::from_vec(&[5]), 1, 1), ListNode::from_vec(&[5]));
 }

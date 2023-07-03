@@ -89,8 +89,5 @@ fn test_median_sliding_window() {
         vec![2.0, 3.0, 3.0, 3.0, 2.0, 3.0, 2.0]
     );
     assert_eq!(Solution::median_sliding_window(vec![1], 1), vec![1.0]);
-    assert_eq!(
-        Solution::median_sliding_window(vec![i32::MAX, i32::MAX], 2),
-        vec![2147483647.0]
-    );
+    assert_eq!(Solution::median_sliding_window(vec![i32::MAX, i32::MAX], 2), vec![2147483647.0]);
 }

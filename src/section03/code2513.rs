@@ -71,13 +71,7 @@ impl Solution {
 
         while left < right {
             let mid = left + (right - left) / 2;
-            if valid(
-                divisor1 as i64,
-                divisor2 as i64,
-                unique_cnt1 as i64,
-                unique_cnt2 as i64,
-                mid as i64,
-            ) {
+            if valid(divisor1 as i64, divisor2 as i64, unique_cnt1 as i64, unique_cnt2 as i64, mid as i64) {
                 right = mid;
             } else {
                 left = mid + 1;

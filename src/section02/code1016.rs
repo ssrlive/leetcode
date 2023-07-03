@@ -68,12 +68,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("0110", 3, true),
-        ("0110", 4, false),
-        ("0110", 5, false),
-        ("0110", 6, false),
-    ];
+    let cases = vec![("0110", 3, true), ("0110", 4, false), ("0110", 5, false), ("0110", 6, false)];
     for (s, n, expected) in cases {
         assert_eq!(Solution::query_string(s.to_string(), n), expected);
     }

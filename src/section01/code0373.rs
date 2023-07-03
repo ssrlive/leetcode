@@ -42,11 +42,8 @@ impl Solution {
     pub fn k_smallest_pairs(nums1: Vec<i32>, nums2: Vec<i32>, k: i32) -> Vec<Vec<i32>> {
         let mut res: Vec<Vec<i32>> = Vec::new();
         let (n1, n2) = (nums1.len(), nums2.len());
-        let mut heap = std::collections::BinaryHeap::from(
-            (0..n1)
-                .map(|x| (-nums1[x] - nums2[0], x, 0))
-                .collect::<Vec<(i32, usize, usize)>>(),
-        );
+        let mut heap =
+            std::collections::BinaryHeap::from((0..n1).map(|x| (-nums1[x] - nums2[0], x, 0)).collect::<Vec<(i32, usize, usize)>>());
         while let Some((_, i, j)) = heap.pop() {
             res.push(vec![nums1[i], nums2[j]]);
             if res.len() == k as usize {
@@ -70,8 +67,5 @@ fn test() {
         Solution::k_smallest_pairs(vec![1, 1, 2], vec![1, 2, 3], 2),
         vec![vec![1, 1], vec![1, 1]]
     );
-    assert_eq!(
-        Solution::k_smallest_pairs(vec![1, 2], vec![3], 3),
-        vec![vec![1, 3], vec![2, 3]]
-    );
+    assert_eq!(Solution::k_smallest_pairs(vec![1, 2], vec![3], 3), vec![vec![1, 3], vec![2, 3]]);
 }

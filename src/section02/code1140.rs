@@ -52,9 +52,8 @@ impl Solution {
                 false => (index..piles.len()).fold(0, |acc, i| acc + piles[i]),
             };
 
-            cache[index][m] = tot
-                - (1..min(2 * m + 1, piles.len() - index))
-                    .fold(tot, |acc, i| min(acc, calc(index + i, max(i, m), cache, piles)));
+            cache[index][m] =
+                tot - (1..min(2 * m + 1, piles.len() - index)).fold(tot, |acc, i| min(acc, calc(index + i, max(i, m), cache, piles)));
 
             cache[index][m]
         }

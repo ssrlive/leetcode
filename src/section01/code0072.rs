@@ -68,8 +68,5 @@ impl Solution {
 #[test]
 fn test() {
     assert_eq!(Solution::min_distance("horse".to_string(), "ros".to_string()), 3);
-    assert_eq!(
-        Solution::min_distance("intention".to_string(), "execution".to_string()),
-        5
-    );
+    assert_eq!(Solution::min_distance("intention".to_string(), "execution".to_string()), 5);
 }

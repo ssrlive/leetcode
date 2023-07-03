@@ -39,11 +39,7 @@ use std::rc::Rc;
 impl Solution {
     pub fn construct_from_pre_post(preorder: Vec<i32>, postorder: Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {
         use std::collections::HashMap;
-        fn helper(
-            post: &mut HashMap<i32, usize>,
-            preorder: &Vec<i32>,
-            pre_idx: &mut usize,
-        ) -> Option<Rc<RefCell<TreeNode>>> {
+        fn helper(post: &mut HashMap<i32, usize>, preorder: &Vec<i32>, pre_idx: &mut usize) -> Option<Rc<RefCell<TreeNode>>> {
             let cur = preorder[*pre_idx];
             let mut n = TreeNode::new(cur);
             *pre_idx += 1;

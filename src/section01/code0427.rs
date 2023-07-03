@@ -68,10 +68,7 @@ use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
     pub fn construct(grid: Vec<Vec<i32>>) -> Option<Rc<RefCell<Node>>> {
-        let grid: Vec<Vec<bool>> = grid
-            .iter()
-            .map(|row| row.iter().map(|&val| val != 0).collect())
-            .collect();
+        let grid: Vec<Vec<bool>> = grid.iter().map(|row| row.iter().map(|&val| val != 0).collect()).collect();
         Self::helper(&grid, 0, 0, grid.len())
     }
 

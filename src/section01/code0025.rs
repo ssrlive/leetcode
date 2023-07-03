@@ -70,12 +70,6 @@ fn test_reverse_k_group() {
         Solution::reverse_k_group(ListNode::from_vec(&[1, 2, 3, 4, 5]), 1),
         ListNode::from_vec(&[1, 2, 3, 4, 5])
     );
-    assert_eq!(
-        Solution::reverse_k_group(ListNode::from_vec(&[1]), 1),
-        ListNode::from_vec(&[1])
-    );
-    assert_eq!(
-        Solution::reverse_k_group(ListNode::from_vec(&[]), 1),
-        ListNode::from_vec(&[])
-    );
+    assert_eq!(Solution::reverse_k_group(ListNode::from_vec(&[1]), 1), ListNode::from_vec(&[1]));
+    assert_eq!(Solution::reverse_k_group(ListNode::from_vec(&[]), 1), ListNode::from_vec(&[]));
 }

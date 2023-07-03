@@ -109,14 +109,6 @@ fn test() {
         vec![6, 7, 1, 4, 5],
         vec![5, 1, 1, 2, 4],
     ];
-    let res = vec![
-        vec![0, 4],
-        vec![1, 3],
-        vec![1, 4],
-        vec![2, 2],
-        vec![3, 0],
-        vec![3, 1],
-        vec![4, 0],
-    ];
+    let res = vec![vec![0, 4], vec![1, 3], vec![1, 4], vec![2, 2], vec![3, 0], vec![3, 1], vec![4, 0]];
     assert_eq!(Solution::pacific_atlantic(heights), res);
 }

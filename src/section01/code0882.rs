@@ -96,13 +96,7 @@ fn test() {
     let n = 4;
     assert_eq!(Solution::reachable_nodes(edges, max_moves, n), 23);
 
-    let edges = vec![
-        vec![1, 2, 4],
-        vec![1, 4, 5],
-        vec![1, 3, 1],
-        vec![2, 3, 4],
-        vec![3, 4, 5],
-    ];
+    let edges = vec![vec![1, 2, 4], vec![1, 4, 5], vec![1, 3, 1], vec![2, 3, 4], vec![3, 4, 5]];
     let max_moves = 17;
     let n = 5;
     assert_eq!(Solution::reachable_nodes(edges, max_moves, n), 1);

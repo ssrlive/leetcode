@@ -78,10 +78,7 @@ fn test() {
         ("  this   is  a sentence ", "this   is   a   sentence"),
         (" practice   makes   perfect", "practice   makes   perfect "),
         ("hello   world", "hello   world"),
-        (
-            "  walks  udp package   into  bar a",
-            "walks  udp  package  into  bar  a ",
-        ),
+        ("  walks  udp package   into  bar a", "walks  udp  package  into  bar  a "),
         ("a", "a"),
     ];
     for (text, expected) in cases {

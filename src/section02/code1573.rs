@@ -90,11 +90,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("10101".to_string(), 4),
-        ("1001".to_string(), 0),
-        ("0000".to_string(), 3),
-    ];
+    let cases = vec![("10101".to_string(), 4), ("1001".to_string(), 0), ("0000".to_string(), 3)];
     for (s, expected) in cases {
         assert_eq!(Solution::num_ways(s), expected);
     }

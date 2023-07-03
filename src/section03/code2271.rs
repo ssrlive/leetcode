@@ -70,11 +70,7 @@ impl Solution {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            vec![vec![1, 5], vec![10, 11], vec![12, 18], vec![20, 25], vec![30, 32]],
-            10,
-            9,
-        ),
+        (vec![vec![1, 5], vec![10, 11], vec![12, 18], vec![20, 25], vec![30, 32]], 10, 9),
         (vec![vec![10, 11], vec![1, 1]], 2, 2),
     ];
     for (tiles, carpet_len, expected) in cases {

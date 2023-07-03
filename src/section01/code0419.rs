@@ -58,10 +58,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    let board = vec![
-        vec!['X', '.', '.', 'X'],
-        vec!['.', '.', '.', 'X'],
-        vec!['.', '.', '.', 'X'],
-    ];
+    let board = vec![vec!['X', '.', '.', 'X'], vec!['.', '.', '.', 'X'], vec!['.', '.', '.', 'X']];
     assert_eq!(Solution::count_battleships(board), 2);
 }

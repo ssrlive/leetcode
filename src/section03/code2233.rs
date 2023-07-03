@@ -62,11 +62,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![0, 4], 5, 20),
-        (vec![6, 3, 3, 2], 2, 216),
-        (vec![1, 2, 3, 4], 4, 144),
-    ];
+    let cases = vec![(vec![0, 4], 5, 20), (vec![6, 3, 3, 2], 2, 216), (vec![1, 2, 3, 4], 4, 144)];
     for (nums, k, expected) in cases {
         assert_eq!(Solution::maximum_product(nums, k), expected);
     }

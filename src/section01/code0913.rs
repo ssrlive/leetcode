@@ -129,14 +129,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let graph = vec![
-        vec![2, 5],
-        vec![3],
-        vec![0, 4, 5],
-        vec![1, 4, 5],
-        vec![2, 3],
-        vec![0, 2, 3],
-    ];
+    let graph = vec![vec![2, 5], vec![3], vec![0, 4, 5], vec![1, 4, 5], vec![2, 3], vec![0, 2, 3]];
     let res = 0;
     assert_eq!(Solution::cat_mouse_game(graph), res);
 

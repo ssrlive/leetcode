@@ -64,9 +64,6 @@ fn test() {
         ("leet code", "lt", 1),
     ];
     for (text, broken_letters, expect) in cases {
-        assert_eq!(
-            Solution::can_be_typed_words(text.to_string(), broken_letters.to_string()),
-            expect
-        );
+        assert_eq!(Solution::can_be_typed_words(text.to_string(), broken_letters.to_string()), expect);
     }
 }

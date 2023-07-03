@@ -95,11 +95,9 @@ impl Solution {
 
                 let right_i64 = right as i64;
 
-                let left_sum =
-                    (MOD + pm_l[pivot + 1] - pm_l[left] - left_i64 * (ps_l[pivot + 1] - ps_l[left]) % MOD) % MOD;
+                let left_sum = (MOD + pm_l[pivot + 1] - pm_l[left] - left_i64 * (ps_l[pivot + 1] - ps_l[left]) % MOD) % MOD;
 
-                let right_sum =
-                    (MOD + pm_r[pivot + 1] - pm_r[right] - (n_i64 - right_i64) * (ps_r[pivot + 1] - ps_r[right])) % MOD;
+                let right_sum = (MOD + pm_r[pivot + 1] - pm_r[right] - (n_i64 - right_i64) * (ps_r[pivot + 1] - ps_r[right])) % MOD;
 
                 let all_sum = (left_sum * (right_i64 - pivot_i64) + right_sum * (pivot_i64 - left_i64 + 1)) % MOD;
 

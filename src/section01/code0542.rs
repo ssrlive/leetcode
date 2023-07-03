@@ -54,12 +54,7 @@ impl Solution {
                 let (i, j) = queue.pop_front().unwrap();
                 for (di, dj) in &[(0, 1), (0, -1), (1, 0), (-1, 0)] {
                     let (ni, nj) = (i as i32 + di, j as i32 + dj);
-                    if ni >= 0
-                        && ni < mat.len() as i32
-                        && nj >= 0
-                        && nj < mat[0].len() as i32
-                        && result[ni as usize][nj as usize] == -1
-                    {
+                    if ni >= 0 && ni < mat.len() as i32 && nj >= 0 && nj < mat[0].len() as i32 && result[ni as usize][nj as usize] == -1 {
                         result[ni as usize][nj as usize] = distance;
                         queue.push_back((ni as usize, nj as usize));
                     }

@@ -61,12 +61,6 @@ fn test() {
     assert_eq!(Solution::all_paths_source_target(graph), res);
 
     let graph = vec![vec![4, 3, 1], vec![3, 2, 4], vec![3], vec![4], vec![]];
-    let res = vec![
-        vec![0, 4],
-        vec![0, 3, 4],
-        vec![0, 1, 3, 4],
-        vec![0, 1, 2, 3, 4],
-        vec![0, 1, 4],
-    ];
+    let res = vec![vec![0, 4], vec![0, 3, 4], vec![0, 1, 3, 4], vec![0, 1, 2, 3, 4], vec![0, 1, 4]];
     assert_eq!(Solution::all_paths_source_target(graph), res);
 }

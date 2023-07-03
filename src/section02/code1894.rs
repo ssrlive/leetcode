@@ -70,11 +70,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![5, 1, 5], 22, 0),
-        (vec![3, 4, 1, 2], 25, 1),
-        (vec![3, 4, 1, 2], 26, 1),
-    ];
+    let cases = vec![(vec![5, 1, 5], 22, 0), (vec![3, 4, 1, 2], 25, 1), (vec![3, 4, 1, 2], 26, 1)];
     for (chalk, k, expected) in cases {
         assert_eq!(Solution::chalk_replacer(chalk, k), expected);
     }

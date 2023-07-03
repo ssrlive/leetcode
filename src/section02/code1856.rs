@@ -97,10 +97,7 @@ impl Solution {
         }
         let mut max_product: u64 = 0;
         for i in 0..len_n {
-            max_product = std::cmp::max(
-                max_product,
-                get_sum(left_bound[i], right_bound[i], &prefix_sums) * (nums[i] as u64),
-            );
+            max_product = std::cmp::max(max_product, get_sum(left_bound[i], right_bound[i], &prefix_sums) * (nums[i] as u64));
         }
         (max_product % MOD) as i32
     }

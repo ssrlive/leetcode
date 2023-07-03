@@ -76,11 +76,7 @@ fn test() {
             vec![2, 1, 4, 3, 9, 6],
             vec![2, 2, 2, 1, 4, 3, 3, 9, 6, 7, 19],
         ),
-        (
-            vec![28, 6, 22, 8, 44, 17],
-            vec![22, 28, 8, 6],
-            vec![22, 28, 8, 6, 17, 44],
-        ),
+        (vec![28, 6, 22, 8, 44, 17], vec![22, 28, 8, 6], vec![22, 28, 8, 6, 17, 44]),
     ];
     for (arr1, arr2, expected) in cases {
         assert_eq!(Solution::relative_sort_array(arr1, arr2), expected);

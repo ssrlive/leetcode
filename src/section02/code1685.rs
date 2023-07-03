@@ -55,10 +55,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![2, 3, 5], vec![4, 3, 5]),
-        (vec![1, 4, 6, 8, 10], vec![24, 15, 13, 15, 21]),
-    ];
+    let cases = vec![(vec![2, 3, 5], vec![4, 3, 5]), (vec![1, 4, 6, 8, 10], vec![24, 15, 13, 15, 21])];
     for (nums, ex) in cases {
         assert_eq!(Solution::get_sum_absolute_differences(nums), ex);
     }

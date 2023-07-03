@@ -36,20 +36,12 @@ struct Solution;
 
 impl Solution {
     pub fn max_sum(grid: Vec<Vec<i32>>) -> i32 {
-        let ends: Vec<Vec<i32>> = grid
-            .iter()
-            .map(|row| row.windows(3).map(|e| e.iter().sum()).collect())
-            .collect();
+        let ends: Vec<Vec<i32>> = grid.iter().map(|row| row.windows(3).map(|e| e.iter().sum()).collect()).collect();
         let middles: Vec<Vec<i32>> = grid.iter().map(|row| row.windows(3).map(|e| e[1]).collect()).collect();
         ends.iter()
             .zip(middles.iter().skip(1))
             .zip(ends.iter().skip(2))
-            .flat_map(|((top, middle), bottom)| {
-                top.iter()
-                    .zip(middle.iter())
-                    .zip(bottom.iter())
-                    .map(|((t, m), b)| *t + *m + *b)
-            })
+            .flat_map(|((top, middle), bottom)| top.iter().zip(middle.iter()).zip(bottom.iter()).map(|((t, m), b)| *t + *m + *b))
             .max()
             .unwrap()
     }

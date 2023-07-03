@@ -94,11 +94,7 @@ fn test() {
             vec![vec![0, 1], vec![1, 2], vec![2, 3], vec![0, 2], vec![1, 3], vec![2, 4]],
             24,
         ),
-        (
-            vec![9, 20, 6, 4, 11, 12],
-            vec![vec![0, 3], vec![5, 3], vec![2, 4], vec![1, 3]],
-            -1,
-        ),
+        (vec![9, 20, 6, 4, 11, 12], vec![vec![0, 3], vec![5, 3], vec![2, 4], vec![1, 3]], -1),
     ];
     for (scores, edges, expected) in cases {
         assert_eq!(Solution::maximum_score(scores, edges), expected);

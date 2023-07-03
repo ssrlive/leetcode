@@ -90,14 +90,6 @@ fn test() {
     assert_eq!(Solution::collect_the_coins(coins, edges), 2);
 
     let coins = vec![0, 0, 0, 1, 1, 0, 0, 1];
-    let edges = vec![
-        vec![0, 1],
-        vec![0, 2],
-        vec![1, 3],
-        vec![1, 4],
-        vec![2, 5],
-        vec![5, 6],
-        vec![5, 7],
-    ];
+    let edges = vec![vec![0, 1], vec![0, 2], vec![1, 3], vec![1, 4], vec![2, 5], vec![5, 6], vec![5, 7]];
     assert_eq!(Solution::collect_the_coins(coins, edges), 2);
 }

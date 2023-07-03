@@ -60,8 +60,7 @@ impl Solution {
         for left in (0..m).rev() {
             for right in (0..m - left).rev() {
                 let multiplier = multipliers[left + right];
-                dp_curr[right] = (dp_prev[right] + multiplier * nums[left])
-                    .max(dp_curr[right + 1] + multiplier * nums[n - right - 1]);
+                dp_curr[right] = (dp_prev[right] + multiplier * nums[left]).max(dp_curr[right + 1] + multiplier * nums[n - right - 1]);
             }
             std::mem::swap(&mut dp_prev, &mut dp_curr);
         }

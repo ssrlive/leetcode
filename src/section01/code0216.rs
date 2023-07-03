@@ -66,10 +66,7 @@ impl Solution {
 #[test]
 fn test_combination_sum3() {
     assert_eq!(Solution::combination_sum3(3, 7), vec![vec![1, 2, 4]]);
-    assert_eq!(
-        Solution::combination_sum3(3, 9),
-        vec![vec![1, 2, 6], vec![1, 3, 5], vec![2, 3, 4]]
-    );
+    assert_eq!(Solution::combination_sum3(3, 9), vec![vec![1, 2, 6], vec![1, 3, 5], vec![2, 3, 4]]);
     assert_eq!(Solution::combination_sum3(4, 1), Vec::<Vec<i32>>::new());
     assert_eq!(Solution::combination_sum3(3, 2), Vec::<Vec<i32>>::new());
     assert_eq!(Solution::combination_sum3(9, 45), vec![vec![1, 2, 3, 4, 5, 6, 7, 8, 9]]);

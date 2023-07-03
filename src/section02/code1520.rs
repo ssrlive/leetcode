@@ -103,10 +103,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("adefaddaccc", vec!["e", "f", "ccc"]),
-        ("abbaccd", vec!["bb", "cc", "d"]),
-    ];
+    let cases = vec![("adefaddaccc", vec!["e", "f", "ccc"]), ("abbaccd", vec!["bb", "cc", "d"])];
     for (s, expect) in cases {
         let ans = Solution::max_num_of_substrings(s.to_string());
         assert_eq!(ans, expect);

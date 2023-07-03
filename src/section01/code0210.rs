@@ -87,11 +87,7 @@ impl Solution {
 fn test() {
     let cases = vec![
         (2, vec![vec![1, 0]], vec![0, 1]),
-        (
-            4,
-            vec![vec![1, 0], vec![2, 0], vec![3, 1], vec![3, 2]],
-            vec![0, 1, 2, 3],
-        ),
+        (4, vec![vec![1, 0], vec![2, 0], vec![3, 1], vec![3, 2]], vec![0, 1, 2, 3]),
         (1, vec![], vec![0]),
     ];
     for (num_courses, prerequisites, expected) in cases {

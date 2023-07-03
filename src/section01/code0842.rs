@@ -80,11 +80,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("1101111", vec![11, 0, 11, 11]),
-        ("112358130", vec![]),
-        ("0123", vec![]),
-    ];
+    let cases = vec![("1101111", vec![11, 0, 11, 11]), ("112358130", vec![]), ("0123", vec![])];
     for (num, want) in cases {
         assert_eq!(Solution::split_into_fibonacci(num.to_string()), want);
     }

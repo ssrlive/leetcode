@@ -110,10 +110,7 @@ impl Solution {
                     }
                 }
             }
-            let edges = edges
-                .into_iter()
-                .map(|map| map.into_iter().collect::<Vec<_>>())
-                .collect::<Vec<_>>();
+            let edges = edges.into_iter().map(|map| map.into_iter().collect::<Vec<_>>()).collect::<Vec<_>>();
             (state_id, edges)
         }
 

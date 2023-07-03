@@ -87,22 +87,8 @@ impl Solution {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            3,
-            vec![vec![0, 1], vec![1, 2], vec![0, 2]],
-            vec![0.5, 0.5, 0.2],
-            0,
-            2,
-            0.25000,
-        ),
-        (
-            3,
-            vec![vec![0, 1], vec![1, 2], vec![0, 2]],
-            vec![0.5, 0.5, 0.3],
-            0,
-            2,
-            0.30000,
-        ),
+        (3, vec![vec![0, 1], vec![1, 2], vec![0, 2]], vec![0.5, 0.5, 0.2], 0, 2, 0.25000),
+        (3, vec![vec![0, 1], vec![1, 2], vec![0, 2]], vec![0.5, 0.5, 0.3], 0, 2, 0.30000),
         (3, vec![vec![0, 1]], vec![0.5], 0, 2, 0.00000),
     ];
     for (n, edges, succ_prob, start, end, expect) in cases {

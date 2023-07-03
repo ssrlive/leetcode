@@ -77,13 +77,7 @@ impl Solution {
 #[test]
 fn test() {
     let s = "abcda".to_string();
-    let queries = vec![
-        vec![3, 3, 0],
-        vec![1, 2, 0],
-        vec![0, 3, 1],
-        vec![0, 3, 2],
-        vec![0, 4, 1],
-    ];
+    let queries = vec![vec![3, 3, 0], vec![1, 2, 0], vec![0, 3, 1], vec![0, 3, 2], vec![0, 4, 1]];
     let result = vec![true, false, false, true, true];
     assert_eq!(Solution::can_make_pali_queries(s, queries), result);
 

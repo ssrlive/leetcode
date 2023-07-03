@@ -101,38 +101,22 @@ impl Solution {
 fn test() {
     let cases = vec![
         (
-            vec![
-                vec!['A', 'B', 'C', 'E'],
-                vec!['S', 'F', 'C', 'S'],
-                vec!['A', 'D', 'E', 'E'],
-            ],
+            vec![vec!['A', 'B', 'C', 'E'], vec!['S', 'F', 'C', 'S'], vec!['A', 'D', 'E', 'E']],
             "ABCCED",
             true,
         ),
         (
-            vec![
-                vec!['A', 'B', 'C', 'E'],
-                vec!['S', 'F', 'C', 'S'],
-                vec!['A', 'D', 'E', 'E'],
-            ],
+            vec![vec!['A', 'B', 'C', 'E'], vec!['S', 'F', 'C', 'S'], vec!['A', 'D', 'E', 'E']],
             "SEE",
             true,
         ),
         (
-            vec![
-                vec!['A', 'B', 'C', 'E'],
-                vec!['S', 'F', 'C', 'S'],
-                vec!['A', 'D', 'E', 'E'],
-            ],
+            vec![vec!['A', 'B', 'C', 'E'], vec!['S', 'F', 'C', 'S'], vec!['A', 'D', 'E', 'E']],
             "ABCB",
             false,
         ),
         (
-            vec![
-                vec!['A', 'B', 'C', 'E'],
-                vec!['S', 'F', 'E', 'S'],
-                vec!['A', 'D', 'E', 'E'],
-            ],
+            vec![vec!['A', 'B', 'C', 'E'], vec!['S', 'F', 'E', 'S'], vec!['A', 'D', 'E', 'E']],
             "ABCESEEEFS",
             true,
         ),

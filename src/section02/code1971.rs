@@ -74,13 +74,7 @@ impl Solution {
 fn test() {
     let cases = vec![
         (3, vec![vec![0, 1], vec![1, 2], vec![2, 0]], 0, 2, true),
-        (
-            6,
-            vec![vec![0, 1], vec![0, 2], vec![3, 5], vec![5, 4], vec![4, 3]],
-            0,
-            5,
-            false,
-        ),
+        (6, vec![vec![0, 1], vec![0, 2], vec![3, 5], vec![5, 4], vec![4, 3]], 0, 5, false),
     ];
     for (n, edges, source, destination, expected) in cases {
         assert_eq!(Solution::valid_path(n, edges, source, destination), expected);

@@ -82,10 +82,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(
-        Solution::decode_at_index(String::from("leet2code3"), 10),
-        String::from("o")
-    );
+    assert_eq!(Solution::decode_at_index(String::from("leet2code3"), 10), String::from("o"));
     assert_eq!(Solution::decode_at_index(String::from("ha22"), 5), String::from("h"));
     assert_eq!(
         Solution::decode_at_index(String::from("a2345678999999999999999"), 1),

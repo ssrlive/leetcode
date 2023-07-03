@@ -16,12 +16,7 @@ struct Solution;
 
 impl Solution {
     pub fn can_finish(num_courses: i32, prerequisites: Vec<Vec<i32>>) -> bool {
-        fn has_cycle(
-            i: i32,
-            graph: &std::collections::HashMap<i32, Vec<i32>>,
-            visited: &mut Vec<bool>,
-            visiting: &mut Vec<bool>,
-        ) -> bool {
+        fn has_cycle(i: i32, graph: &std::collections::HashMap<i32, Vec<i32>>, visited: &mut Vec<bool>, visiting: &mut Vec<bool>) -> bool {
             if visiting[i as usize] {
                 return true;
             }
@@ -63,33 +58,19 @@ fn test_can_finish() {
     assert_eq!(Solution::can_finish(3, vec![vec![1, 0], vec![1, 2], vec![0, 1]]), false);
     assert_eq!(Solution::can_finish(3, vec![vec![1, 0], vec![2, 0], vec![0, 1]]), false);
     assert_eq!(Solution::can_finish(3, vec![vec![1, 0], vec![2, 0], vec![0, 2]]), false);
-    assert_eq!(
-        Solution::can_finish(3, vec![vec![1, 0], vec![2, 0], vec![0, 1], vec![2, 1]]),
-        false
-    );
+    assert_eq!(Solution::can_finish(3, vec![vec![1, 0], vec![2, 0], vec![0, 1], vec![2, 1]]), false);
     assert_eq!(
         Solution::can_finish(3, vec![vec![1, 0], vec![2, 0], vec![0, 1], vec![2, 1], vec![1, 2]]),
         false
     );
     assert_eq!(
-        Solution::can_finish(
-            3,
-            vec![vec![1, 0], vec![2, 0], vec![0, 1], vec![2, 1], vec![1, 2], vec![2, 1]]
-        ),
+        Solution::can_finish(3, vec![vec![1, 0], vec![2, 0], vec![0, 1], vec![2, 1], vec![1, 2], vec![2, 1]]),
         false
     );
     assert_eq!(
         Solution::can_finish(
             3,
-            vec![
-                vec![1, 0],
-                vec![2, 0],
-                vec![0, 1],
-                vec![2, 1],
-                vec![1, 2],
-                vec![2, 1],
-                vec![1, 0]
-            ]
+            vec![vec![1, 0], vec![2, 0], vec![0, 1], vec![2, 1], vec![1, 2], vec![2, 1], vec![1, 0]]
         ),
         false
     );

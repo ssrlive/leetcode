@@ -76,12 +76,7 @@ impl Solution {
         while let Some((i, j, len)) = queue.pop_front() {
             for &(di, dj) in &dir {
                 let (x, y) = (add(i as i32, di), add(j as i32, dj));
-                if x >= 0
-                    && y >= 0
-                    && x < maze.len() as i32
-                    && y < maze[0].len() as i32
-                    && maze[x as usize][y as usize] == '.'
-                {
+                if x >= 0 && y >= 0 && x < maze.len() as i32 && y < maze[0].len() as i32 && maze[x as usize][y as usize] == '.' {
                     if x == 0 || y == 0 || x == maze.len() as i32 - 1 || y == maze[0].len() as i32 - 1 {
                         return len + 1;
                     }

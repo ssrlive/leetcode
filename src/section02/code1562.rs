@@ -77,11 +77,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![3, 5, 1, 2, 4], 1, 4),
-        (vec![3, 1, 5, 4, 2], 2, -1),
-        (vec![1], 1, 1),
-    ];
+    let cases = vec![(vec![3, 5, 1, 2, 4], 1, 4), (vec![3, 1, 5, 4, 2], 2, -1), (vec![1], 1, 1)];
     for (arr, m, expected) in cases {
         assert_eq!(Solution::find_latest_step(arr, m), expected);
     }

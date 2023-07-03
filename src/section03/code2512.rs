@@ -80,10 +80,7 @@ impl Solution {
 fn test() {
     let positive_feedback = vec!["smart".to_string(), "brilliant".to_string(), "studious".to_string()];
     let negative_feedback = vec!["not".to_string()];
-    let report = vec![
-        "this student is studious".to_string(),
-        "the student is smart".to_string(),
-    ];
+    let report = vec!["this student is studious".to_string(), "the student is smart".to_string()];
     let student_id = vec![1, 2];
     let k = 2;
     let ret = Solution::top_students(positive_feedback, negative_feedback, report, student_id, k);
@@ -91,10 +88,7 @@ fn test() {
 
     let positive_feedback = vec!["smart".to_string(), "brilliant".to_string(), "studious".to_string()];
     let negative_feedback = vec!["not".to_string()];
-    let report = vec![
-        "this student is not studious".to_string(),
-        "the student is smart".to_string(),
-    ];
+    let report = vec!["this student is not studious".to_string(), "the student is smart".to_string()];
     let student_id = vec![1, 2];
     let k = 2;
     let ret = Solution::top_students(positive_feedback, negative_feedback, report, student_id, k);
@@ -115,9 +109,7 @@ fn test() {
         "d vhg qlj khj wlinrrgcm qq f jp zsmhkjokmb rjstbhe",
     ];
     let report = report.iter().map(|s| s.to_string()).collect();
-    let student_id = vec![
-        96537918, 589204657, 765963609, 613766496, 43871615, 189209587, 239084671, 908938263,
-    ];
+    let student_id = vec![96537918, 589204657, 765963609, 613766496, 43871615, 189209587, 239084671, 908938263];
     let k = 3;
     let ret = Solution::top_students(positive_feedback, negative_feedback, report, student_id, k);
     assert_eq!(ret, vec![239084671, 589204657, 43871615]);

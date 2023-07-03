@@ -65,19 +65,12 @@ impl Solution {
             } else if idx < 7 {
                 row[idx] = *[row[idx - 1] + costs[0], costs[1], costs[2]].iter().min().unwrap();
             } else if (6..30).contains(&idx) {
-                row[idx] = *[row[idx - 1] + costs[0], row[idx - 7] + costs[1], costs[2]]
+                row[idx] = *[row[idx - 1] + costs[0], row[idx - 7] + costs[1], costs[2]].iter().min().unwrap()
+            } else {
+                row[idx] = *[costs[0] + row[idx - 1], costs[1] + row[idx - 7], costs[2] + row[idx - 30]]
                     .iter()
                     .min()
-                    .unwrap()
-            } else {
-                row[idx] = *[
-                    costs[0] + row[idx - 1],
-                    costs[1] + row[idx - 7],
-                    costs[2] + row[idx - 30],
-                ]
-                .iter()
-                .min()
-                .unwrap();
+                    .unwrap();
             }
         }
         row[*max_day as usize]

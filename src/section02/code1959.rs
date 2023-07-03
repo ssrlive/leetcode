@@ -66,13 +66,7 @@ impl Solution {
         Solution::cal_min_space_used(0, k, &nums, &total, &mut memo) - actual_space_used
     }
 
-    pub fn cal_min_space_used(
-        idx: usize,
-        k: i32,
-        nums: &Vec<i32>,
-        total: &Vec<Vec<i32>>,
-        memo: &mut Vec<Vec<i32>>,
-    ) -> i32 {
+    pub fn cal_min_space_used(idx: usize, k: i32, nums: &Vec<i32>, total: &Vec<Vec<i32>>, memo: &mut Vec<Vec<i32>>) -> i32 {
         let n = nums.len();
         if idx == n {
             return 0;
@@ -95,11 +89,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![10, 20], 0, 10),
-        (vec![10, 20, 30], 1, 10),
-        (vec![10, 20, 15, 30, 20], 2, 15),
-    ];
+    let cases = vec![(vec![10, 20], 0, 10), (vec![10, 20, 30], 1, 10), (vec![10, 20, 15, 30, 20], 2, 15)];
     for (nums, k, expected) in cases {
         assert_eq!(Solution::min_space_wasted_k_resizing(nums, k), expected);
     }

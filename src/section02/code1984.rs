@@ -47,10 +47,7 @@ impl Solution {
     pub fn minimum_difference(nums: Vec<i32>, k: i32) -> i32 {
         let mut nums = nums;
         nums.sort_unstable();
-        nums.windows(k as usize)
-            .map(|pair| pair[(k - 1) as usize] - pair[0])
-            .min()
-            .unwrap()
+        nums.windows(k as usize).map(|pair| pair[(k - 1) as usize] - pair[0]).min().unwrap()
     }
 }
 

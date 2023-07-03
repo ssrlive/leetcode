@@ -106,11 +106,7 @@ fn test() {
         ),
         (
             vec!["bread", "sandwich", "burger"],
-            vec![
-                vec!["yeast", "flour"],
-                vec!["bread", "meat"],
-                vec!["sandwich", "meat", "bread"],
-            ],
+            vec![vec!["yeast", "flour"], vec!["bread", "meat"], vec!["sandwich", "meat", "bread"]],
             vec!["yeast", "flour", "meat"],
             vec!["bread", "sandwich", "burger"],
         ),

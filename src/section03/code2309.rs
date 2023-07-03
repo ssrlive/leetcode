@@ -48,12 +48,7 @@ impl Solution {
     pub fn greatest_letter(s: String) -> String {
         let mut counter = [false; 58];
         s.bytes().for_each(|b| counter[(b - b'A') as usize] = true);
-        match counter[..26]
-            .iter()
-            .enumerate()
-            .filter(|&(i, &val)| val && counter[i + 32])
-            .max()
-        {
+        match counter[..26].iter().enumerate().filter(|&(i, &val)| val && counter[i + 32]).max() {
             Some((i, _)) => ((i as u8 + b'A') as char).to_string(),
             None => "".to_string(),
         }
@@ -62,13 +57,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("lEeTcOdE", "E"),
-        ("arRAzFif", "R"),
-        ("AbCdEfGhIjK", ""),
-        ("aA", "A"),
-        ("aAa", "A"),
-    ];
+    let cases = vec![("lEeTcOdE", "E"), ("arRAzFif", "R"), ("AbCdEfGhIjK", ""), ("aA", "A"), ("aAa", "A")];
     for (s, expect) in cases {
         assert_eq!(Solution::greatest_letter(s.to_string()), expect);
     }

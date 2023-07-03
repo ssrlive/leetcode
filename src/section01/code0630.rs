@@ -67,12 +67,7 @@ impl Solution {
 #[test]
 fn test() {
     assert_eq!(
-        Solution::schedule_course(vec![
-            vec![100, 200],
-            vec![200, 1300],
-            vec![1000, 1250],
-            vec![2000, 3200]
-        ]),
+        Solution::schedule_course(vec![vec![100, 200], vec![200, 1300], vec![1000, 1250], vec![2000, 3200]]),
         3
     );
     assert_eq!(Solution::schedule_course(vec![vec![1, 2]]), 1);

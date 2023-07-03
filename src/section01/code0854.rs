@@ -59,8 +59,7 @@ impl Solution {
                 for j in matches {
                     let mut s1 = s1.to_vec();
                     s1.swap(i, j);
-                    result = result
-                        .min(1 + _k_similarity(String::from_utf8(s1).ok()?, String::from_utf8(s2.to_vec()).ok()?)?);
+                    result = result.min(1 + _k_similarity(String::from_utf8(s1).ok()?, String::from_utf8(s2.to_vec()).ok()?)?);
                 }
                 return Some(result);
             }

@@ -81,16 +81,7 @@ impl Solution {
     }
 
     #[allow(clippy::too_many_arguments)]
-    fn dfs(
-        m: i32,
-        n: i32,
-        p: i32,
-        in_: i32,
-        ex: i32,
-        mask_in: i32,
-        mask_ex: i32,
-        dp: &mut Vec<Vec<Vec<Vec<Vec<i32>>>>>,
-    ) -> i32 {
+    fn dfs(m: i32, n: i32, p: i32, in_: i32, ex: i32, mask_in: i32, mask_ex: i32, dp: &mut Vec<Vec<Vec<Vec<Vec<i32>>>>>) -> i32 {
         let i = p / n;
         let j = p % n;
         if i >= m {

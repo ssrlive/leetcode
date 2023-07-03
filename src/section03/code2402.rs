@@ -81,11 +81,7 @@ impl Solution {
             cnt[r as usize] += 1;
             mts.push(Reverse((off + meeting[1] as i64, r)));
         }
-        cnt.iter()
-            .enumerate()
-            .max_by_key(|(idx, &c)| (c, n as usize - idx))
-            .unwrap()
-            .0 as i32
+        cnt.iter().enumerate().max_by_key(|(idx, &c)| (c, n as usize - idx)).unwrap().0 as i32
     }
 }
 

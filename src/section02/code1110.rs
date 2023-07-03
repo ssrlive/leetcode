@@ -38,11 +38,7 @@ impl Solution {
     pub fn del_nodes(root: Option<Rc<RefCell<TreeNode>>>, to_delete: Vec<i32>) -> Vec<Option<Rc<RefCell<TreeNode>>>> {
         use std::collections::HashSet;
 
-        fn collect(
-            root: &mut Option<Rc<RefCell<TreeNode>>>,
-            ret: &mut Vec<Option<Rc<RefCell<TreeNode>>>>,
-            s: &HashSet<i32>,
-        ) {
+        fn collect(root: &mut Option<Rc<RefCell<TreeNode>>>, ret: &mut Vec<Option<Rc<RefCell<TreeNode>>>>, s: &HashSet<i32>) {
             let mut node = root.as_ref().unwrap().borrow_mut();
 
             if node.left.is_some() {
@@ -101,10 +97,7 @@ fn test() {
     let ret = Solution::del_nodes(root, to_delete);
     let mut ret = ret.iter().map(|x| TreeNode::to_vec(x)).collect::<Vec<_>>();
     ret.sort();
-    assert_eq!(
-        ret,
-        vec![vec![Some(1), Some(2), None, Some(4)], vec![Some(6)], vec![Some(7)]]
-    );
+    assert_eq!(ret, vec![vec![Some(1), Some(2), None, Some(4)], vec![Some(6)], vec![Some(7)]]);
 
     let root = TreeNode::from_vec(&[Some(1), Some(2), Some(4), None, Some(3)]);
     let to_delete = vec![3];

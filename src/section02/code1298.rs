@@ -116,9 +116,6 @@ fn test() {
         ),
     ];
     for (status, candies, keys, contained_boxes, initial_boxes, expect) in cases {
-        assert_eq!(
-            Solution::max_candies(status, candies, keys, contained_boxes, initial_boxes),
-            expect
-        );
+        assert_eq!(Solution::max_candies(status, candies, keys, contained_boxes, initial_boxes), expect);
     }
 }

@@ -60,9 +60,7 @@ impl Solution {
 
             let s_simple = { cnt_max == 1 };
             let s_single = cnt_min == 1 && n == cnt_histogram[cnt_max] * cnt_max + 1;
-            let s_over = {
-                cnt_max > 1 && cnt_histogram[cnt_max] == 1 && n == cnt_histogram[cnt_max - 1] * (cnt_max - 1) + cnt_max
-            };
+            let s_over = { cnt_max > 1 && cnt_histogram[cnt_max] == 1 && n == cnt_histogram[cnt_max - 1] * (cnt_max - 1) + cnt_max };
             if s_simple || s_single || s_over {
                 max_len = n as i32;
             }

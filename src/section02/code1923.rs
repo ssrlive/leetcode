@@ -136,11 +136,7 @@ fn test() {
         (5, vec![vec![0, 1, 2, 3, 4], vec![2, 3, 4], vec![4, 0, 1, 2, 3]], 2),
         (3, vec![vec![0], vec![1], vec![2]], 0),
         (5, vec![vec![0, 1, 2, 3, 4], vec![4, 3, 2, 1, 0]], 1),
-        (
-            5,
-            vec![vec![0, 1, 2, 3, 4], vec![4, 3, 2, 1, 0], vec![0, 1, 2, 3, 4]],
-            1,
-        ),
+        (5, vec![vec![0, 1, 2, 3, 4], vec![4, 3, 2, 1, 0], vec![0, 1, 2, 3, 4]], 1),
     ];
     for (n, paths, expected) in cases {
         assert_eq!(Solution::longest_common_subpath(n, paths), expected);

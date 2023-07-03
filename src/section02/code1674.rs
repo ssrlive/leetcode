@@ -72,11 +72,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![1, 2, 4, 3], 4, 1),
-        (vec![1, 2, 2, 1], 2, 2),
-        (vec![1, 2, 1, 2], 2, 0),
-    ];
+    let cases = vec![(vec![1, 2, 4, 3], 4, 1), (vec![1, 2, 2, 1], 2, 2), (vec![1, 2, 1, 2], 2, 0)];
     for (nums, limit, expected) in cases {
         assert_eq!(Solution::min_moves(nums, limit), expected);
     }

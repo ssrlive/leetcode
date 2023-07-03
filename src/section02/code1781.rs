@@ -38,12 +38,10 @@ impl Solution {
         fn beauty(s: &str) -> i32 {
             let mut counts = vec![0; 26];
             s.chars().for_each(|c| counts[c as usize - 'a' as usize] += 1);
-            let (min, max) = counts
-                .into_iter()
-                .fold((i32::MAX, i32::MIN), |(min, max), value| match value {
-                    0 => (min, max),
-                    _ => (min.min(value), max.max(value)),
-                });
+            let (min, max) = counts.into_iter().fold((i32::MAX, i32::MIN), |(min, max), value| match value {
+                0 => (min, max),
+                _ => (min.min(value), max.max(value)),
+            });
             max - min
         }
 

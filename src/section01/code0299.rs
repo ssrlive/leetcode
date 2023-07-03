@@ -71,12 +71,6 @@ impl Solution {
 
 #[test]
 fn test_get_hint() {
-    assert_eq!(
-        Solution::get_hint("1807".to_string(), "7810".to_string()),
-        "1A3B".to_string()
-    );
-    assert_eq!(
-        Solution::get_hint("1123".to_string(), "0111".to_string()),
-        "1A1B".to_string()
-    );
+    assert_eq!(Solution::get_hint("1807".to_string(), "7810".to_string()), "1A3B".to_string());
+    assert_eq!(Solution::get_hint("1123".to_string(), "0111".to_string()), "1A1B".to_string());
 }

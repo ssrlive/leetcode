@@ -78,10 +78,7 @@ fn test() {
     ];
     for (queries, pattern, expected) in cases {
         assert_eq!(
-            Solution::camel_match(
-                queries.into_iter().map(|s| s.to_string()).collect(),
-                pattern.to_string()
-            ),
+            Solution::camel_match(queries.into_iter().map(|s| s.to_string()).collect(), pattern.to_string()),
             expected
         );
     }

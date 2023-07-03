@@ -65,10 +65,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![4, 2, 2, 2], vec![1, 4, 1, 2], 1),
-        (vec![2, 3, 4, 1], vec![3, 2, 5, 1], -1),
-    ];
+    let cases = vec![(vec![4, 2, 2, 2], vec![1, 4, 1, 2], 1), (vec![2, 3, 4, 1], vec![3, 2, 5, 1], -1)];
     for (basket1, basket2, expected) in cases {
         assert_eq!(Solution::min_cost(basket1, basket2), expected);
     }

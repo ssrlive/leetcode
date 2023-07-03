@@ -49,15 +49,7 @@ struct Solution;
 impl Solution {
     pub fn minimum_incompatibility(nums: Vec<i32>, k: i32) -> i32 {
         use std::collections::VecDeque;
-        fn dfs(
-            ind: usize,
-            nums: &Vec<i32>,
-            buckets: &mut Vec<VecDeque<i32>>,
-            k: usize,
-            bucket_len: usize,
-            total: i32,
-            res: &mut i32,
-        ) {
+        fn dfs(ind: usize, nums: &Vec<i32>, buckets: &mut Vec<VecDeque<i32>>, k: usize, bucket_len: usize, total: i32, res: &mut i32) {
             if ind == nums.len() {
                 *res = total;
                 return;

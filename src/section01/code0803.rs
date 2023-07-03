@@ -128,9 +128,7 @@ impl Solution {
                     if x > -1 && x < m as i32 && y > -1 && y < n as i32 && grid[x as usize][y as usize] > 0 {
                         if find_parents(&mut parents, c21(x as usize, y as usize)) < n {
                             flag = 1;
-                        } else if find_parents(&mut parents, c21(x as usize, y as usize))
-                            != find_parents(&mut parents, c21(_i, _j))
-                        {
+                        } else if find_parents(&mut parents, c21(x as usize, y as usize)) != find_parents(&mut parents, c21(_i, _j)) {
                             ret[i] += _size[find_parents(&mut parents, c21(x as usize, y as usize))];
                         }
                         union2(&mut parents, &mut _size, c21(x as usize, y as usize), c21(_i, _j));

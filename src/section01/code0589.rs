@@ -88,8 +88,5 @@ fn test() {
         None,
         Some(14),
     ]);
-    assert_eq!(
-        Solution::preorder(root),
-        vec![1, 2, 3, 6, 7, 11, 14, 4, 8, 12, 5, 9, 13, 10]
-    );
+    assert_eq!(Solution::preorder(root), vec![1, 2, 3, 6, 7, 11, 14, 4, 8, 12, 5, 9, 13, 10]);
 }

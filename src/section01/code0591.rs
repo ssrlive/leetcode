@@ -192,27 +192,19 @@ fn test() {
         true
     );
     assert_eq!(Solution::is_valid("<A>  <B> </A>   </B>".to_string()), false);
-    assert_eq!(
-        Solution::is_valid("<DIV>  div tag is not closed  <DIV>".to_string()),
-        false
-    );
+    assert_eq!(Solution::is_valid("<DIV>  div tag is not closed  <DIV>".to_string()), false);
     assert_eq!(Solution::is_valid("<DIV>  unmatched <  </DIV>".to_string()), false);
     assert_eq!(
         Solution::is_valid("<DIV> closed tags with invalid tag name  <b>123</b> </DIV>".to_string()),
         false
     );
     assert_eq!(
-        Solution::is_valid(
-            "<DIV> unmatched tags with invalid tag name  </1234567890> and <CDATA[[]]>  </DIV>".to_string()
-        ),
+        Solution::is_valid("<DIV> unmatched tags with invalid tag name  </1234567890> and <CDATA[[]]>  </DIV>".to_string()),
         false
     );
     assert_eq!(
         Solution::is_valid("<DIV>  unmatched start tag <B>  and unmatched end tag </C>  </DIV>".to_string()),
         false
     );
-    assert_eq!(
-        Solution::is_valid("<![CDATA[wahaha]]]><![CDATA[]> wahaha]]>".to_string()),
-        false
-    );
+    assert_eq!(Solution::is_valid("<![CDATA[wahaha]]]><![CDATA[]> wahaha]]>".to_string()), false);
 }

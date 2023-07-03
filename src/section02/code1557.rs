@@ -56,16 +56,8 @@ impl Solution {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            6,
-            vec![vec![0, 1], vec![0, 2], vec![2, 5], vec![3, 4], vec![4, 2]],
-            vec![0, 3],
-        ),
-        (
-            5,
-            vec![vec![0, 1], vec![2, 1], vec![3, 1], vec![1, 4], vec![2, 4]],
-            vec![0, 2, 3],
-        ),
+        (6, vec![vec![0, 1], vec![0, 2], vec![2, 5], vec![3, 4], vec![4, 2]], vec![0, 3]),
+        (5, vec![vec![0, 1], vec![2, 1], vec![3, 1], vec![1, 4], vec![2, 4]], vec![0, 2, 3]),
     ];
     for (n, edges, expected) in cases {
         assert_eq!(Solution::find_smallest_set_of_vertices(n, edges), expected);

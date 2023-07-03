@@ -116,9 +116,6 @@ impl Solution {
 #[test]
 fn test() {
     assert_eq!(Solution::fraction_addition("-1/2+1/2".to_string()), "0/1".to_string());
-    assert_eq!(
-        Solution::fraction_addition("-1/2+1/2+1/3".to_string()),
-        "1/3".to_string()
-    );
+    assert_eq!(Solution::fraction_addition("-1/2+1/2+1/3".to_string()), "1/3".to_string());
     assert_eq!(Solution::fraction_addition("1/3-1/2".to_string()), "-1/6".to_string());
 }

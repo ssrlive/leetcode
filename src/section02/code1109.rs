@@ -70,11 +70,7 @@ impl Solution {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            vec![vec![1, 2, 10], vec![2, 3, 20], vec![2, 5, 25]],
-            5,
-            vec![10, 55, 45, 25, 25],
-        ),
+        (vec![vec![1, 2, 10], vec![2, 3, 20], vec![2, 5, 25]], 5, vec![10, 55, 45, 25, 25]),
         (vec![vec![1, 2, 10], vec![2, 2, 15]], 2, vec![10, 25]),
     ];
     for (bookings, n, expect) in cases {

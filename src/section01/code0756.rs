@@ -53,21 +53,13 @@ impl Solution {
     pub fn pyramid_transition(bottom: String, allowed: Vec<String>) -> bool {
         let mut m = HashMap::new();
         for s in allowed {
-            m.entry(s[0..2].to_string())
-                .or_insert_with(Vec::new)
-                .push(s[2..3].to_string());
+            m.entry(s[0..2].to_string()).or_insert_with(Vec::new).push(s[2..3].to_string());
         }
         let mut failed_states = HashSet::new();
         Self::helper(&bottom, &m, 0, "", &mut failed_states)
     }
 
-    fn helper(
-        bottom: &str,
-        m: &HashMap<String, Vec<String>>,
-        start: usize,
-        next: &str,
-        failed_states: &mut HashSet<String>,
-    ) -> bool {
+    fn helper(bottom: &str, m: &HashMap<String, Vec<String>>, start: usize, next: &str, failed_states: &mut HashSet<String>) -> bool {
         if bottom.len() == 1 {
             return true;
         }
@@ -77,10 +69,7 @@ impl Solution {
         if failed_states.contains(&(bottom[start..].to_string() + "#" + next)) {
             return false;
         }
-        let v = m
-            .get(&(bottom[start..start + 2].to_string()))
-            .unwrap_or(&vec![])
-            .clone();
+        let v = m.get(&(bottom[start..start + 2].to_string())).unwrap_or(&vec![]).clone();
         for c in v.into_iter() {
             let next = next.to_string() + c.as_str();
             if Self::helper(bottom, m, start + 1, &next, failed_states) {
@@ -103,8 +92,7 @@ fn test() {
     assert_eq!(Solution::pyramid_transition("AAAA".to_string(), allowed), false);
 
     let allowed = vec![
-        "CBB", "ACB", "ABD", "CDB", "BDC", "CBC", "DBA", "DBB", "CAB", "BCB", "BCC", "BAA", "CCD", "BDD", "DDD", "CCA",
-        "CAA", "CCC", "CCB",
+        "CBB", "ACB", "ABD", "CDB", "BDC", "CBC", "DBA", "DBB", "CAB", "BCB", "BCC", "BAA", "CCD", "BDD", "DDD", "CCA", "CAA", "CCC", "CCB",
     ];
     let allowed = allowed.iter().map(|s| s.to_string()).collect();
     assert_eq!(Solution::pyramid_transition("CCC".to_string(), allowed), true);

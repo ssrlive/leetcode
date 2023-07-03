@@ -98,11 +98,6 @@ fn test() {
     let grid = vec![vec![1, 1, 1], vec![1, 1, 1]];
     assert_eq!(Solution::count_pyramids(grid), 2);
 
-    let grid = vec![
-        vec![1, 1, 1, 1, 0],
-        vec![1, 1, 1, 1, 1],
-        vec![1, 1, 1, 1, 1],
-        vec![0, 1, 0, 0, 1],
-    ];
+    let grid = vec![vec![1, 1, 1, 1, 0], vec![1, 1, 1, 1, 1], vec![1, 1, 1, 1, 1], vec![0, 1, 0, 0, 1]];
     assert_eq!(Solution::count_pyramids(grid), 13);
 }

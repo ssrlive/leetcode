@@ -112,10 +112,7 @@ impl Solution {
 fn test() {
     assert_eq!(Solution::number_to_words(1000), "One Thousand");
     assert_eq!(Solution::number_to_words(123), "One Hundred Twenty Three");
-    assert_eq!(
-        Solution::number_to_words(12345),
-        "Twelve Thousand Three Hundred Forty Five"
-    );
+    assert_eq!(Solution::number_to_words(12345), "Twelve Thousand Three Hundred Forty Five");
     assert_eq!(
         Solution::number_to_words(1234567),
         "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"

@@ -66,11 +66,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("(()())(())", "()()()"),
-        ("(()())(())(()(()))", "()()()()(())"),
-        ("()()", ""),
-    ];
+    let cases = vec![("(()())(())", "()()()"), ("(()())(())(()(()))", "()()()()(())"), ("()()", "")];
     for (s, expected) in cases {
         assert_eq!(Solution::remove_outer_parentheses(s.to_string()), expected);
     }

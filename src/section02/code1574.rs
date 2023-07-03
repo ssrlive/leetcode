@@ -72,11 +72,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![1, 2, 3, 10, 4, 2, 3, 5], 3),
-        (vec![5, 4, 3, 2, 1], 4),
-        (vec![1, 2, 3], 0),
-    ];
+    let cases = vec![(vec![1, 2, 3, 10, 4, 2, 3, 5], 3), (vec![5, 4, 3, 2, 1], 4), (vec![1, 2, 3], 0)];
     for (arr, expected) in cases {
         assert_eq!(Solution::find_length_of_shortest_subarray(arr), expected);
     }

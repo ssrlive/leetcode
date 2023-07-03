@@ -99,10 +99,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![0, 1, 3, 5, 6, 8, 12, 17], true),
-        (vec![0, 1, 2, 3, 4, 8, 9, 11], false),
-    ];
+    let cases = vec![(vec![0, 1, 3, 5, 6, 8, 12, 17], true), (vec![0, 1, 2, 3, 4, 8, 9, 11], false)];
     for (stones, expected) in cases {
         assert_eq!(Solution::can_cross(stones), expected);
     }

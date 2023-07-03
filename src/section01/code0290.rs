@@ -68,20 +68,8 @@ impl Solution {
 
 #[test]
 fn test_word_pattern() {
-    assert!(Solution::word_pattern(
-        "abba".to_string(),
-        "dog cat cat dog".to_string()
-    ));
-    assert!(Solution::word_pattern(
-        "abbc".to_string(),
-        "dog cat cat fish".to_string()
-    ));
-    assert!(!Solution::word_pattern(
-        "aaaa".to_string(),
-        "dog cat cat dog".to_string()
-    ));
-    assert!(!Solution::word_pattern(
-        "abba".to_string(),
-        "dog dog dog dog".to_string()
-    ));
+    assert!(Solution::word_pattern("abba".to_string(), "dog cat cat dog".to_string()));
+    assert!(Solution::word_pattern("abbc".to_string(), "dog cat cat fish".to_string()));
+    assert!(!Solution::word_pattern("aaaa".to_string(), "dog cat cat dog".to_string()));
+    assert!(!Solution::word_pattern("abba".to_string(), "dog dog dog dog".to_string()));
 }

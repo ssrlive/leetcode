@@ -78,9 +78,6 @@ impl Solution {
 fn test() {
     let cases = vec![("x", "y", true), ("xbdef", "xecab", false), ("ulacfd", "jizalu", true)];
     for (a, b, expected) in cases {
-        assert_eq!(
-            Solution::check_palindrome_formation(a.to_string(), b.to_string()),
-            expected
-        );
+        assert_eq!(Solution::check_palindrome_formation(a.to_string(), b.to_string()), expected);
     }
 }

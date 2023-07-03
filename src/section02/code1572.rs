@@ -62,10 +62,7 @@ impl Solution {
 fn test() {
     let cases = vec![
         (vec![vec![1, 2, 3], vec![4, 5, 6], vec![7, 8, 9]], 25),
-        (
-            vec![vec![1, 1, 1, 1], vec![1, 1, 1, 1], vec![1, 1, 1, 1], vec![1, 1, 1, 1]],
-            8,
-        ),
+        (vec![vec![1, 1, 1, 1], vec![1, 1, 1, 1], vec![1, 1, 1, 1], vec![1, 1, 1, 1]], 8),
         (vec![vec![5]], 5),
     ];
     for (mat, expected) in cases {

@@ -52,12 +52,7 @@
 struct Solution;
 
 impl Solution {
-    pub fn watched_videos_by_friends(
-        watched_videos: Vec<Vec<String>>,
-        friends: Vec<Vec<i32>>,
-        id: i32,
-        level: i32,
-    ) -> Vec<String> {
+    pub fn watched_videos_by_friends(watched_videos: Vec<Vec<String>>, friends: Vec<Vec<i32>>, id: i32, level: i32) -> Vec<String> {
         let mut visited = vec![false; friends.len()];
         let mut queue = vec![id as usize];
         visited[id as usize] = true;

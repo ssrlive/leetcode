@@ -85,11 +85,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![0, 1, 2, 3, 0], 2),
-        (vec![0, 1, 1, 3, 3, 0], 0),
-        (vec![0, 2, 1, 0, 3, 0], 2),
-    ];
+    let cases = vec![(vec![0, 1, 2, 3, 0], 2), (vec![0, 1, 1, 3, 3, 0], 0), (vec![0, 2, 1, 0, 3, 0], 2)];
     for (obstacles, expected) in cases {
         assert_eq!(Solution::min_side_jumps(obstacles), expected);
     }

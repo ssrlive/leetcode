@@ -27,11 +27,7 @@ impl Solution {
         });
         (0..n).rev().for_each(|i| {
             let p = prices[i];
-            bwd[i] = if i == n - 1 {
-                0
-            } else {
-                std::cmp::max(bwd[i + 1], s - p)
-            };
+            bwd[i] = if i == n - 1 { 0 } else { std::cmp::max(bwd[i + 1], s - p) };
             s = std::cmp::max(s, p);
         });
         (0..n).fold(0, |acc, i| std::cmp::max(fwd[i] + bwd[i], acc))

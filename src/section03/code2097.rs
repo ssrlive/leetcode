@@ -114,14 +114,8 @@ fn test() {
             vec![vec![5, 1], vec![4, 5], vec![11, 9], vec![9, 4]],
             vec![vec![4, 5], vec![5, 1], vec![9, 4], vec![11, 9]],
         ),
-        (
-            vec![vec![1, 3], vec![3, 2], vec![2, 1]],
-            vec![vec![1, 3], vec![2, 1], vec![3, 2]],
-        ),
-        (
-            vec![vec![1, 2], vec![1, 3], vec![2, 1]],
-            vec![vec![1, 2], vec![1, 3], vec![2, 1]],
-        ),
+        (vec![vec![1, 3], vec![3, 2], vec![2, 1]], vec![vec![1, 3], vec![2, 1], vec![3, 2]]),
+        (vec![vec![1, 2], vec![1, 3], vec![2, 1]], vec![vec![1, 2], vec![1, 3], vec![2, 1]]),
     ];
     for (pairs, expected) in cases {
         let mut v = Solution::valid_arrangement(pairs);

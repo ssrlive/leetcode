@@ -62,11 +62,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![1, 1, 0, 1], 3),
-        (vec![0, 1, 1, 1, 0, 1, 1, 0, 1], 5),
-        (vec![1, 1, 1], 2),
-    ];
+    let cases = vec![(vec![1, 1, 0, 1], 3), (vec![0, 1, 1, 1, 0, 1, 1, 0, 1], 5), (vec![1, 1, 1], 2)];
     for (nums, expected) in cases {
         assert_eq!(Solution::longest_subarray(nums), expected);
     }

@@ -120,12 +120,7 @@ fn test() {
             vec![vec![2, 1], vec![3, 2]],
             vec![vec![3, 0, 0], vec![0, 0, 1], vec![0, 2, 0]],
         ),
-        (
-            3,
-            vec![vec![1, 2], vec![2, 3], vec![3, 1], vec![2, 3]],
-            vec![vec![2, 1]],
-            vec![],
-        ),
+        (3, vec![vec![1, 2], vec![2, 3], vec![3, 1], vec![2, 3]], vec![vec![2, 1]], vec![]),
     ];
     for (k, row_conditions, col_conditions, expect) in cases {
         assert_eq!(Solution::build_matrix(k, row_conditions, col_conditions), expect);

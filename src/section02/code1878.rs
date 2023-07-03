@@ -80,8 +80,7 @@ impl Solution {
                     if left < 0 || right >= n as i32 || bot >= m as i32 {
                         continue;
                     }
-                    let sum = rd[i + k][left as usize] - rd[i][j] + ld[i + k][right as usize] - ld[i][j]
-                        + ld[bot as usize][j]
+                    let sum = rd[i + k][left as usize] - rd[i][j] + ld[i + k][right as usize] - ld[i][j] + ld[bot as usize][j]
                         - ld[i + k][left as usize]
                         + rd[bot as usize][j]
                         - rd[i + k][right as usize]

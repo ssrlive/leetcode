@@ -64,13 +64,7 @@ struct Solution;
 impl Solution {
     pub fn minimum_fuel_cost(roads: Vec<Vec<i32>>, seats: i32) -> i64 {
         use std::collections::HashMap;
-        fn dfs(
-            adj: &HashMap<usize, Vec<usize>>,
-            curr: usize,
-            visited: &mut Vec<bool>,
-            seats: i32,
-            ans: &mut i64,
-        ) -> Option<i32> {
+        fn dfs(adj: &HashMap<usize, Vec<usize>>, curr: usize, visited: &mut Vec<bool>, seats: i32, ans: &mut i64) -> Option<i32> {
             visited[curr] = true;
             let mut count = 1;
             let v = adj.get(&curr)?;

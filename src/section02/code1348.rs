@@ -69,13 +69,7 @@ impl TweetCounts {
         self.tweets.entry(tweet_name).or_insert_with(Vec::new).push(time);
     }
 
-    fn get_tweet_counts_per_frequency(
-        &self,
-        freq: String,
-        tweet_name: String,
-        start_time: i32,
-        end_time: i32,
-    ) -> Vec<i32> {
+    fn get_tweet_counts_per_frequency(&self, freq: String, tweet_name: String, start_time: i32, end_time: i32) -> Vec<i32> {
         let mut result = Vec::new();
         let mut chunk_size = 0;
         match freq.as_str() {

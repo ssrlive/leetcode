@@ -69,31 +69,22 @@ impl Solution {
             .map(|(node, &roads)| (roads, node as i32))
             .collect::<Vec<(i32, i32)>>();
         connections.sort();
-        let dict: HashMap<i32, i64> =
-            connections
-                .into_iter()
-                .enumerate()
-                .fold(HashMap::new(), |mut state, (num, (_, node))| {
-                    state.insert(node, (num + 1) as i64);
-                    state
-                });
-        roads
+        let dict: HashMap<i32, i64> = connections
             .into_iter()
-            .fold(0, |state, nodes| state + dict[&nodes[0]] + dict[&nodes[1]])
+            .enumerate()
+            .fold(HashMap::new(), |mut state, (num, (_, node))| {
+                state.insert(node, (num + 1) as i64);
+                state
+            });
+        roads.into_iter().fold(0, |state, nodes| state + dict[&nodes[0]] + dict[&nodes[1]])
     }
 }
 
 #[test]
 fn test() {
     assert_eq!(
-        Solution::maximum_importance(
-            5,
-            vec![vec![0, 1], vec![1, 2], vec![2, 3], vec![0, 2], vec![1, 3], vec![2, 4]]
-        ),
+        Solution::maximum_importance(5, vec![vec![0, 1], vec![1, 2], vec![2, 3], vec![0, 2], vec![1, 3], vec![2, 4]]),
         43
     );
-    assert_eq!(
-        Solution::maximum_importance(5, vec![vec![0, 3], vec![2, 4], vec![1, 3]]),
-        20
-    );
+    assert_eq!(Solution::maximum_importance(5, vec![vec![0, 3], vec![2, 4], vec![1, 3]]), 20);
 }

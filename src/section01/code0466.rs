@@ -65,12 +65,6 @@ impl Solution {
 
 #[test]
 fn test_get_max_repetitions() {
-    assert_eq!(
-        Solution::get_max_repetitions("acb".to_string(), 4, "ab".to_string(), 2),
-        2
-    );
-    assert_eq!(
-        Solution::get_max_repetitions("acb".to_string(), 1, "acb".to_string(), 1),
-        1
-    );
+    assert_eq!(Solution::get_max_repetitions("acb".to_string(), 4, "ab".to_string(), 2), 2);
+    assert_eq!(Solution::get_max_repetitions("acb".to_string(), 1, "acb".to_string(), 1), 1);
 }

@@ -58,10 +58,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![4, 3, 10, 9, 8], vec![10, 9]),
-        (vec![4, 4, 7, 6, 7], vec![7, 7, 6]),
-    ];
+    let cases = vec![(vec![4, 3, 10, 9, 8], vec![10, 9]), (vec![4, 4, 7, 6, 7], vec![7, 7, 6])];
     for (nums, want) in cases {
         assert_eq!(Solution::min_subsequence(nums), want);
     }

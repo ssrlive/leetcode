@@ -118,17 +118,7 @@ fn test() {
     let ret = Solution::tree_queries(root, queries);
     assert_eq!(ret, vec![2]);
 
-    let root = TreeNode::from_vec(&[
-        Some(5),
-        Some(8),
-        Some(9),
-        Some(2),
-        Some(1),
-        Some(3),
-        Some(7),
-        Some(4),
-        Some(6),
-    ]);
+    let root = TreeNode::from_vec(&[Some(5), Some(8), Some(9), Some(2), Some(1), Some(3), Some(7), Some(4), Some(6)]);
     let queries = vec![3, 2, 4, 8];
     let ret = Solution::tree_queries(root, queries);
     assert_eq!(ret, vec![3, 2, 3, 2]);

@@ -70,12 +70,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("xx", "yy", 1),
-        ("xy", "yx", 2),
-        ("xx", "xy", -1),
-        ("xxyyxyxyxx", "xyyxyxxxyx", 4),
-    ];
+    let cases = vec![("xx", "yy", 1), ("xy", "yx", 2), ("xx", "xy", -1), ("xxyyxyxyxx", "xyyxyxxxyx", 4)];
     for (s1, s2, expected) in cases {
         let s1 = s1.to_string();
         let s2 = s2.to_string();

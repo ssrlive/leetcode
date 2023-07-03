@@ -33,9 +33,7 @@ struct Solution;
 impl Solution {
     pub fn uncommon_from_sentences(s1: String, s2: String) -> Vec<String> {
         let mut map = std::collections::HashMap::new();
-        s1.split(' ')
-            .chain(s2.split(' '))
-            .for_each(|s| *map.entry(s).or_insert(0) += 1);
+        s1.split(' ').chain(s2.split(' ')).for_each(|s| *map.entry(s).or_insert(0) += 1);
         map.iter()
             .filter_map(|(key, val)| match *val == 1 {
                 true => Some((*key).to_string()),

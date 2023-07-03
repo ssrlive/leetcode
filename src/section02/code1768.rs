@@ -72,15 +72,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("abc", "pqr", "apbqcr"),
-        ("ab", "pqrs", "apbqrs"),
-        ("abcd", "pq", "apbqcd"),
-    ];
+    let cases = vec![("abc", "pqr", "apbqcr"), ("ab", "pqrs", "apbqrs"), ("abcd", "pq", "apbqcd")];
     for (word1, word2, expected) in cases {
-        assert_eq!(
-            Solution::merge_alternately(word1.to_owned(), word2.to_owned()),
-            expected
-        );
+        assert_eq!(Solution::merge_alternately(word1.to_owned(), word2.to_owned()), expected);
     }
 }

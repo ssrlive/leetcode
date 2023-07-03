@@ -58,12 +58,7 @@ impl Solution {
     pub fn minimum_time(n: i32, relations: Vec<Vec<i32>>, time: Vec<i32>) -> i32 {
         fn dfs(i: usize, depth: &mut [i32], graph: &[Vec<usize>], time: &[i32]) -> i32 {
             if depth[i] == -1 {
-                depth[i] = graph[i]
-                    .iter()
-                    .map(|&next| dfs(next, depth, graph, time))
-                    .max()
-                    .unwrap_or(0)
-                    + time[i];
+                depth[i] = graph[i].iter().map(|&next| dfs(next, depth, graph, time)).max().unwrap_or(0) + time[i];
             }
             depth[i]
         }

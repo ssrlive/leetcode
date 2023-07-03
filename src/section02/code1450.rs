@@ -57,12 +57,7 @@ fn test() {
         (vec![4], vec![4], 4, 1),
         (vec![4], vec![4], 5, 0),
         (vec![1, 1, 1, 1], vec![1, 3, 2, 4], 7, 0),
-        (
-            vec![9, 8, 7, 6, 5, 4, 3, 2, 1],
-            vec![10, 10, 10, 10, 10, 10, 10, 10, 10],
-            5,
-            5,
-        ),
+        (vec![9, 8, 7, 6, 5, 4, 3, 2, 1], vec![10, 10, 10, 10, 10, 10, 10, 10, 10], 5, 5),
     ];
     for (start_time, end_time, query_time, expected) in cases {
         assert_eq!(Solution::busy_student(start_time, end_time, query_time), expected);

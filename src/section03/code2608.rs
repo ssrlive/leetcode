@@ -82,15 +82,7 @@ impl Solution {
 #[test]
 fn test() {
     let n = 7;
-    let edges = vec![
-        vec![0, 1],
-        vec![1, 2],
-        vec![2, 0],
-        vec![3, 4],
-        vec![4, 5],
-        vec![5, 6],
-        vec![6, 3],
-    ];
+    let edges = vec![vec![0, 1], vec![1, 2], vec![2, 0], vec![3, 4], vec![4, 5], vec![5, 6], vec![6, 3]];
     assert_eq!(Solution::find_shortest_cycle(n, edges), 3);
 
     let n = 4;

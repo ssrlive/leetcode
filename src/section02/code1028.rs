@@ -77,23 +77,9 @@ fn test() {
         ),
         (
             "1-2--3---4-5--6---7",
-            vec![
-                Some(1),
-                Some(2),
-                Some(5),
-                Some(3),
-                None,
-                Some(6),
-                None,
-                Some(4),
-                None,
-                Some(7),
-            ],
+            vec![Some(1), Some(2), Some(5), Some(3), None, Some(6), None, Some(4), None, Some(7)],
         ),
-        (
-            "1-401--349---90--88",
-            vec![Some(1), Some(401), None, Some(349), Some(88), Some(90)],
-        ),
+        ("1-401--349---90--88", vec![Some(1), Some(401), None, Some(349), Some(88), Some(90)]),
     ];
     for (traversal, expected) in cases {
         let root = Solution::recover_from_preorder(traversal.to_string());

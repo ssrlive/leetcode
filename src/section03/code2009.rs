@@ -71,11 +71,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![4, 2, 5, 3], 0),
-        (vec![1, 2, 3, 5, 6], 1),
-        (vec![1, 10, 100, 1000], 3),
-    ];
+    let cases = vec![(vec![4, 2, 5, 3], 0), (vec![1, 2, 3, 5, 6], 1), (vec![1, 10, 100, 1000], 3)];
     for (nums, expected) in cases {
         assert_eq!(Solution::min_operations(nums), expected);
     }

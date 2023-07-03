@@ -65,13 +65,7 @@ impl Solution {
     pub fn root_count(edges: Vec<Vec<i32>>, guesses: Vec<Vec<i32>>, k: i32) -> i32 {
         use std::collections::HashSet;
 
-        fn back_tracking(
-            u: usize,
-            flag: &mut Vec<i32>,
-            graph: &Vec<Vec<usize>>,
-            cnt: &mut i32,
-            s: &HashSet<(usize, usize)>,
-        ) -> i32 {
+        fn back_tracking(u: usize, flag: &mut Vec<i32>, graph: &Vec<Vec<usize>>, cnt: &mut i32, s: &HashSet<(usize, usize)>) -> i32 {
             let mut ret = if *cnt >= 0 { 1 } else { 0 };
             flag[u] = 1;
             for v in &graph[u] {

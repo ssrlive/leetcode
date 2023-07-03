@@ -34,8 +34,5 @@ fn test_reverse_list() {
         Solution::reverse_list(ListNode::from_vec(&vec![1, 2])),
         ListNode::from_vec(&vec![2, 1])
     );
-    assert_eq!(
-        Solution::reverse_list(ListNode::from_vec(&vec![])),
-        ListNode::from_vec(&vec![])
-    );
+    assert_eq!(Solution::reverse_list(ListNode::from_vec(&vec![])), ListNode::from_vec(&vec![]));
 }

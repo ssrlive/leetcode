@@ -78,12 +78,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (1, 1, 7, "ccbccacc"),
-        (7, 1, 0, "aabaa"),
-        (2, 2, 1, "bacba"),
-        (7, 1, 1, "aacaabaa"),
-    ];
+    let cases = vec![(1, 1, 7, "ccbccacc"), (7, 1, 0, "aabaa"), (2, 2, 1, "bacba"), (7, 1, 1, "aacaabaa")];
     for (a, b, c, expect) in cases {
         assert_eq!(Solution::longest_diverse_string(a, b, c), expect);
     }

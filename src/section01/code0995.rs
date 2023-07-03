@@ -69,11 +69,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![0, 1, 0], 1, 2),
-        (vec![1, 1, 0], 2, -1),
-        (vec![0, 0, 0, 1, 0, 1, 1, 0], 3, 3),
-    ];
+    let cases = vec![(vec![0, 1, 0], 1, 2), (vec![1, 1, 0], 2, -1), (vec![0, 0, 0, 1, 0, 1, 1, 0], 3, 3)];
     for (nums, k, expected) in cases {
         assert_eq!(Solution::min_k_bit_flips(nums, k), expected);
     }

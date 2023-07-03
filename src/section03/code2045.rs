@@ -71,10 +71,7 @@ impl Solution {
         use std::collections::VecDeque;
         let n = n as usize;
         let mut adj_list: Vec<Vec<usize>> = vec![vec![]; n];
-        for (v, u) in edges
-            .into_iter()
-            .map(|edge| (edge[0] as usize - 1, edge[1] as usize - 1))
-        {
+        for (v, u) in edges.into_iter().map(|edge| (edge[0] as usize - 1, edge[1] as usize - 1)) {
             adj_list[v].push(u);
             adj_list[u].push(v);
         }

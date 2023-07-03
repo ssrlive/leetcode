@@ -61,9 +61,7 @@ impl Solution {
             .enumerate()
             .zip(sources.into_iter())
             .map(|((i, idx), src)| (i, idx as usize, src))
-            .filter(|(_, idx, src)| {
-                (s.len() - *idx) >= src.len() && s.iter().skip(*idx).zip(src.chars()).all(|(&ch, src_ch)| src_ch == ch)
-            })
+            .filter(|(_, idx, src)| (s.len() - *idx) >= src.len() && s.iter().skip(*idx).zip(src.chars()).all(|(&ch, src_ch)| src_ch == ch))
             .map(|(i, idx, src)| (i, idx, src.len()))
             .collect();
 

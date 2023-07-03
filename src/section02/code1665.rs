@@ -83,17 +83,7 @@ fn test() {
     let cases = vec![
         (vec![vec![1, 2], vec![2, 4], vec![4, 8]], 8),
         (vec![vec![1, 3], vec![2, 4], vec![10, 11], vec![10, 12], vec![8, 9]], 32),
-        (
-            vec![
-                vec![1, 7],
-                vec![2, 8],
-                vec![3, 9],
-                vec![4, 10],
-                vec![5, 11],
-                vec![6, 12],
-            ],
-            27,
-        ),
+        (vec![vec![1, 7], vec![2, 8], vec![3, 9], vec![4, 10], vec![5, 11], vec![6, 12]], 27),
     ];
     for (tasks, expected) in cases {
         assert_eq!(Solution::minimum_effort(tasks), expected);

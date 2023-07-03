@@ -71,43 +71,10 @@ fn test() -> Result<(), Box<dyn std::error::Error>> {
     assert_eq!(root.val, 1);
     assert_eq!(root.left.as_ref().ok_or("")?.borrow().val, 2);
     assert_eq!(root.right.as_ref().ok_or("")?.borrow().val, 3);
-    assert_eq!(
-        root.left
-            .as_ref()
-            .ok_or("")?
-            .borrow()
-            .left
-            .as_ref()
-            .ok_or("")?
-            .borrow()
-            .val,
-        4
-    );
-    assert_eq!(
-        root.left
-            .as_ref()
-            .ok_or("")?
-            .borrow()
-            .right
-            .as_ref()
-            .ok_or("")?
-            .borrow()
-            .val,
-        5
-    );
+    assert_eq!(root.left.as_ref().ok_or("")?.borrow().left.as_ref().ok_or("")?.borrow().val, 4);
+    assert_eq!(root.left.as_ref().ok_or("")?.borrow().right.as_ref().ok_or("")?.borrow().val, 5);
     assert_eq!(root.right.as_ref().ok_or("")?.borrow().left.as_ref(), None);
-    assert_eq!(
-        root.right
-            .as_ref()
-            .ok_or("")?
-            .borrow()
-            .right
-            .as_ref()
-            .ok_or("")?
-            .borrow()
-            .val,
-        7
-    );
+    assert_eq!(root.right.as_ref().ok_or("")?.borrow().right.as_ref().ok_or("")?.borrow().val, 7);
     assert_eq!(
         root.left
             .as_ref()
@@ -141,15 +108,7 @@ fn test() -> Result<(), Box<dyn std::error::Error>> {
         7
     );
     assert_eq!(
-        root.right
-            .as_ref()
-            .ok_or("")?
-            .borrow()
-            .right
-            .as_ref()
-            .ok_or("")?
-            .borrow()
-            .next,
+        root.right.as_ref().ok_or("")?.borrow().right.as_ref().ok_or("")?.borrow().next,
         None
     );
     assert_eq!(

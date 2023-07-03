@@ -46,13 +46,7 @@ struct Solution;
 
 impl Solution {
     pub fn max_genetic_difference(parents: Vec<i32>, queries: Vec<Vec<i32>>) -> Vec<i32> {
-        fn dfs(
-            adjacency_list: &[Vec<usize>],
-            queries: &HashMap<i32, Vec<(i32, usize)>>,
-            cur: i32,
-            trie: &mut Trie,
-            ans: &mut Vec<i32>,
-        ) {
+        fn dfs(adjacency_list: &[Vec<usize>], queries: &HashMap<i32, Vec<(i32, usize)>>, cur: i32, trie: &mut Trie, ans: &mut Vec<i32>) {
             trie.insert(cur);
             if let Some(list) = queries.get(&cur) {
                 for query in list {

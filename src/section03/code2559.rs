@@ -71,11 +71,7 @@ fn test() {
             vec![vec![0, 2], vec![1, 4], vec![1, 1]],
             vec![2, 3, 0],
         ),
-        (
-            vec!["a", "e", "i"],
-            vec![vec![0, 2], vec![0, 1], vec![2, 2]],
-            vec![3, 2, 1],
-        ),
+        (vec!["a", "e", "i"], vec![vec![0, 2], vec![0, 1], vec![2, 2]], vec![3, 2, 1]),
     ];
     for (words, queries, expect) in cases {
         let words = words.into_iter().map(|s| s.to_string()).collect();

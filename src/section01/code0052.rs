@@ -37,10 +37,7 @@ impl Solution {
         }
         let mut ret = 0;
         for i in 0..n {
-            if v.iter()
-                .enumerate()
-                .any(|(j, &q)| q == i || (v.len() - j) as i32 == (q - i).abs())
-            {
+            if v.iter().enumerate().any(|(j, &q)| q == i || (v.len() - j) as i32 == (q - i).abs()) {
                 continue;
             }
             v.push(i);

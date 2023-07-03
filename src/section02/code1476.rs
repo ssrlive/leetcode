@@ -103,8 +103,7 @@ impl SubrectangleQueries {
 
 #[test]
 fn test() {
-    let mut subrectangle_queries =
-        SubrectangleQueries::new(vec![vec![1, 2, 1], vec![4, 3, 4], vec![3, 2, 1], vec![1, 1, 1]]);
+    let mut subrectangle_queries = SubrectangleQueries::new(vec![vec![1, 2, 1], vec![4, 3, 4], vec![3, 2, 1], vec![1, 1, 1]]);
     assert_eq!(subrectangle_queries.get_value(0, 2), 1);
     subrectangle_queries.update_subrectangle(0, 0, 3, 2, 5);
     assert_eq!(subrectangle_queries.get_value(0, 2), 5);

@@ -123,8 +123,5 @@ impl Solution {
 fn test() {
     assert_eq!(Solution::count_of_atoms("H2O".to_string()), "H2O".to_string());
     assert_eq!(Solution::count_of_atoms("Mg(OH)2".to_string()), "H2MgO2".to_string());
-    assert_eq!(
-        Solution::count_of_atoms("K4(ON(SO3)2)2".to_string()),
-        "K4N2O14S4".to_string()
-    );
+    assert_eq!(Solution::count_of_atoms("K4(ON(SO3)2)2".to_string()), "K4N2O14S4".to_string());
 }

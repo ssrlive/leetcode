@@ -66,11 +66,7 @@ impl Solution {
         let mut students = students;
         seats.sort_unstable();
         students.sort_unstable();
-        seats
-            .iter()
-            .zip(students.iter())
-            .map(|(seat, stud)| (seat - stud).abs())
-            .sum()
+        seats.iter().zip(students.iter()).map(|(seat, stud)| (seat - stud).abs()).sum()
     }
 }
 

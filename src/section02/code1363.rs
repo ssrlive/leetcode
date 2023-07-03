@@ -61,10 +61,7 @@ impl Solution {
             if fin_res[0] == 0 {
                 return String::from("0");
             }
-            return fin_res
-                .iter()
-                .map(|a| ((*a + '0' as i32) as u8) as char)
-                .collect::<String>();
+            return fin_res.iter().map(|a| ((*a + '0' as i32) as u8) as char).collect::<String>();
         }
         if cnt_g1 > 0 && cnt_g1 % 3 == 0 && cnt_g2 % 3 == 2 {
             for _ in 0..(cnt_g1 - 1) {
@@ -172,9 +169,7 @@ impl Solution {
                 return String::from("0");
             }
         }
-        res.iter()
-            .map(|a| ((*a + '0' as i32) as u8) as char)
-            .collect::<String>()
+        res.iter().map(|a| ((*a + '0' as i32) as u8) as char).collect::<String>()
     }
 }
 

@@ -64,10 +64,7 @@ struct Solution;
 impl Solution {
     pub fn evaluate(s: String, knowledge: Vec<Vec<String>>) -> String {
         use std::collections::HashMap;
-        let knowledge: HashMap<String, String> = knowledge
-            .into_iter()
-            .map(|mut a| (a.swap_remove(0), a.swap_remove(0)))
-            .collect();
+        let knowledge: HashMap<String, String> = knowledge.into_iter().map(|mut a| (a.swap_remove(0), a.swap_remove(0))).collect();
         let mut out = String::new();
         let mut iter = s.split(&['(', ')']);
         while let Some(word) = iter.next() {

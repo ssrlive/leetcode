@@ -39,16 +39,8 @@ impl Solution {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            vec![vec![1, 3, 5, 7], vec![10, 11, 16, 20], vec![23, 30, 34, 60]],
-            3,
-            true,
-        ),
-        (
-            vec![vec![1, 3, 5, 7], vec![10, 11, 16, 20], vec![23, 30, 34, 60]],
-            13,
-            false,
-        ),
+        (vec![vec![1, 3, 5, 7], vec![10, 11, 16, 20], vec![23, 30, 34, 60]], 3, true),
+        (vec![vec![1, 3, 5, 7], vec![10, 11, 16, 20], vec![23, 30, 34, 60]], 13, false),
     ];
     for (matrix, target, expected) in cases {
         assert_eq!(Solution::search_matrix(matrix, target), expected);

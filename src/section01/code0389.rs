@@ -47,9 +47,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(
-        Solution::find_the_difference("abcd".to_string(), "abcde".to_string()),
-        'e'
-    );
+    assert_eq!(Solution::find_the_difference("abcd".to_string(), "abcde".to_string()), 'e');
     assert_eq!(Solution::find_the_difference("".to_string(), "y".to_string()), 'y');
 }

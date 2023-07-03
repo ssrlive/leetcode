@@ -52,8 +52,7 @@ impl Solution {
                 second.push(ch[1]);
             }
         });
-        first.iter().collect::<String>().parse::<i32>().unwrap()
-            + second.iter().collect::<String>().parse::<i32>().unwrap()
+        first.iter().collect::<String>().parse::<i32>().unwrap() + second.iter().collect::<String>().parse::<i32>().unwrap()
     }
 }
 

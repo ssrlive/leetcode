@@ -88,12 +88,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words = vec![
-        "Hello".to_string(),
-        "Alaska".to_string(),
-        "Dad".to_string(),
-        "Peace".to_string(),
-    ];
+    let words = vec!["Hello".to_string(), "Alaska".to_string(), "Dad".to_string(), "Peace".to_string()];
     let result = Solution::find_words(words);
     assert_eq!(result.len(), 2);
     assert_eq!(result[0], "Alaska");

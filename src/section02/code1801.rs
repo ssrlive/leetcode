@@ -71,11 +71,7 @@ impl Solution {
                     price *= -1;
                 }
 
-                Self {
-                    price,
-                    amount,
-                    order_type,
-                }
+                Self { price, amount, order_type }
             }
         }
 
@@ -148,12 +144,7 @@ fn test() {
     let cases = vec![
         (vec![vec![10, 5, 0], vec![15, 2, 1], vec![25, 1, 1], vec![30, 4, 0]], 6),
         (
-            vec![
-                vec![7, 1000000000, 1],
-                vec![15, 3, 0],
-                vec![5, 999999995, 0],
-                vec![5, 1, 1],
-            ],
+            vec![vec![7, 1000000000, 1], vec![15, 3, 0], vec![5, 999999995, 0], vec![5, 1, 1]],
             999999984,
         ),
     ];

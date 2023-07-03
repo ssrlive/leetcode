@@ -83,12 +83,6 @@ fn test() {
         None,
         Some(14),
     ]);
-    let res = vec![
-        vec![1],
-        vec![2, 3, 4, 5],
-        vec![6, 7, 8, 9, 10],
-        vec![11, 12, 13],
-        vec![14],
-    ];
+    let res = vec![vec![1], vec![2, 3, 4, 5], vec![6, 7, 8, 9, 10], vec![11, 12, 13], vec![14]];
     assert_eq!(Solution::level_order(root), res);
 }

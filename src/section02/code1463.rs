@@ -73,11 +73,7 @@ impl Solution {
                     cherries = std::cmp::max(cherries, dfs(r + 1, c1_nxt as usize, c2_nxt as usize, grid, memo));
                 }
             }
-            cherries += if c1 == c2 {
-                grid[r][c1]
-            } else {
-                grid[r][c1] + grid[r][c2]
-            };
+            cherries += if c1 == c2 { grid[r][c1] } else { grid[r][c1] + grid[r][c2] };
             memo[r][c1][c2] = Some(cherries);
             cherries
         }

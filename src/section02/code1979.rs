@@ -56,9 +56,9 @@ impl Solution {
             }
         }
 
-        let (min_val, max_val) = nums.iter().fold((i32::MAX, i32::MIN), |(min_val, max_val), &x| {
-            (min_val.min(x), max_val.max(x))
-        });
+        let (min_val, max_val) = nums
+            .iter()
+            .fold((i32::MAX, i32::MIN), |(min_val, max_val), &x| (min_val.min(x), max_val.max(x)));
 
         gcd(max_val, min_val)
     }

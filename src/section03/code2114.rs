@@ -52,11 +52,7 @@ impl Solution {
 fn test() {
     let cases = vec![
         (
-            vec![
-                "alice and bob love leetcode",
-                "i think so too",
-                "this is great thanks very much",
-            ],
+            vec!["alice and bob love leetcode", "i think so too", "this is great thanks very much"],
             6,
         ),
         (vec!["please wait", "continue to fight", "continue to win"], 3),

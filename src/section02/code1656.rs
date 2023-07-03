@@ -79,13 +79,7 @@ fn test() {
     let mut os = OrderedStream::new(5);
     assert_eq!(os.insert(3, "ccccc".to_string()), Vec::<String>::new());
     assert_eq!(os.insert(1, "aaaaa".to_string()), vec!["aaaaa".to_string()]);
-    assert_eq!(
-        os.insert(2, "bbbbb".to_string()),
-        vec!["bbbbb".to_string(), "ccccc".to_string()]
-    );
+    assert_eq!(os.insert(2, "bbbbb".to_string()), vec!["bbbbb".to_string(), "ccccc".to_string()]);
     assert_eq!(os.insert(5, "eeeee".to_string()), Vec::<String>::new());
-    assert_eq!(
-        os.insert(4, "ddddd".to_string()),
-        vec!["ddddd".to_string(), "eeeee".to_string()]
-    );
+    assert_eq!(os.insert(4, "ddddd".to_string()), vec!["ddddd".to_string(), "eeeee".to_string()]);
 }

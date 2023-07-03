@@ -76,16 +76,7 @@ fn test() {
     let cases = vec![
         (vec![vec![15, 96], vec![36, 2]], 17),
         (vec![vec![1, 3, 5], vec![4, 1, 1], vec![1, 5, 3]], 4),
-        (
-            vec![
-                vec![2, 5, 1],
-                vec![3, 4, 7],
-                vec![8, 1, 2],
-                vec![6, 2, 4],
-                vec![3, 8, 8],
-            ],
-            10,
-        ),
+        (vec![vec![2, 5, 1], vec![3, 4, 7], vec![8, 1, 2], vec![6, 2, 4], vec![3, 8, 8]], 10),
     ];
     for (cost, expected) in cases {
         assert_eq!(Solution::connect_two_groups(cost), expected);

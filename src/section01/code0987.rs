@@ -95,39 +95,15 @@ impl Solution {
 #[test]
 fn test() {
     assert_eq!(
-        Solution::vertical_traversal(TreeNode::from_vec(&[
-            Some(3),
-            Some(9),
-            Some(20),
-            None,
-            None,
-            Some(15),
-            Some(7)
-        ])),
+        Solution::vertical_traversal(TreeNode::from_vec(&[Some(3), Some(9), Some(20), None, None, Some(15), Some(7)])),
         vec![vec![9], vec![3, 15], vec![20], vec![7]]
     );
     assert_eq!(
-        Solution::vertical_traversal(TreeNode::from_vec(&[
-            Some(1),
-            Some(2),
-            Some(3),
-            Some(4),
-            Some(5),
-            Some(6),
-            Some(7)
-        ])),
+        Solution::vertical_traversal(TreeNode::from_vec(&[Some(1), Some(2), Some(3), Some(4), Some(5), Some(6), Some(7)])),
         vec![vec![4], vec![2], vec![1, 5, 6], vec![3], vec![7]]
     );
     assert_eq!(
-        Solution::vertical_traversal(TreeNode::from_vec(&[
-            Some(1),
-            Some(2),
-            Some(3),
-            Some(4),
-            Some(6),
-            Some(5),
-            Some(7)
-        ])),
+        Solution::vertical_traversal(TreeNode::from_vec(&[Some(1), Some(2), Some(3), Some(4), Some(6), Some(5), Some(7)])),
         vec![vec![4], vec![2], vec![1, 5, 6], vec![3], vec![7]]
     );
 }

@@ -48,8 +48,7 @@ impl Solution {
         for i in (0..cars.len()).rev() {
             while !stack.is_empty()
                 && (cars[i][1] <= cars[stack[stack.len() - 1]][1]
-                    || (stack.len() > 1
-                        && collision_time(&cars, i, stack[stack.len() - 1]) >= v[stack[stack.len() - 1]]))
+                    || (stack.len() > 1 && collision_time(&cars, i, stack[stack.len() - 1]) >= v[stack[stack.len() - 1]]))
             {
                 stack.pop();
             }

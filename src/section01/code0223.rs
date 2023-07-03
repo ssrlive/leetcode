@@ -34,8 +34,7 @@ impl Solution {
             - if ax1 >= bx2 || ax2 <= bx1 || ay1 >= by2 || ay2 <= by1 {
                 0
             } else {
-                (std::cmp::min(ax2, bx2) - std::cmp::max(ax1, bx1))
-                    * (std::cmp::min(ay2, by2) - std::cmp::max(ay1, by1))
+                (std::cmp::min(ax2, bx2) - std::cmp::max(ax1, bx1)) * (std::cmp::min(ay2, by2) - std::cmp::max(ay1, by1))
             }
     }
 }

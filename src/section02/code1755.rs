@@ -102,11 +102,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![5, -7, 3, 5], 6, 0),
-        (vec![7, -9, 15, -2], -5, 1),
-        (vec![1, 2, 3], -7, 7),
-    ];
+    let cases = vec![(vec![5, -7, 3, 5], 6, 0), (vec![7, -9, 15, -2], -5, 1), (vec![1, 2, 3], -7, 7)];
     for (nums, goal, expected) in cases {
         assert_eq!(Solution::min_abs_difference(nums, goal), expected);
     }

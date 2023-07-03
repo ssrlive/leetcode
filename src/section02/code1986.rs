@@ -89,11 +89,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![1, 2, 3], 3, 2),
-        (vec![3, 1, 3, 1, 1], 8, 2),
-        (vec![1, 2, 3, 4, 5], 15, 1),
-    ];
+    let cases = vec![(vec![1, 2, 3], 3, 2), (vec![3, 1, 3, 1, 1], 8, 2), (vec![1, 2, 3, 4, 5], 15, 1)];
     for (tasks, session_time, expect) in cases {
         assert_eq!(Solution::min_sessions(tasks, session_time), expect);
     }

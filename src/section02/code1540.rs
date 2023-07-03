@@ -70,11 +70,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("input", "ouput", 9, true),
-        ("abc", "bcd", 10, false),
-        ("aab", "bbb", 27, true),
-    ];
+    let cases = vec![("input", "ouput", 9, true), ("abc", "bcd", 10, false), ("aab", "bbb", 27, true)];
     for (s, t, k, expected) in cases {
         assert_eq!(Solution::can_convert_string(s.to_string(), t.to_string(), k), expected);
     }

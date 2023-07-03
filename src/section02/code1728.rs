@@ -92,16 +92,7 @@ impl Solution {
         }
 
         #[allow(clippy::too_many_arguments)]
-        fn dfs(
-            grid: &Vec<String>,
-            turn: i32,
-            c: i32,
-            m: i32,
-            f: i32,
-            cat_jump: i32,
-            mouse_jump: i32,
-            dp: &mut Vec<Vec<Vec<i32>>>,
-        ) -> bool {
+        fn dfs(grid: &Vec<String>, turn: i32, c: i32, m: i32, f: i32, cat_jump: i32, mouse_jump: i32, dp: &mut Vec<Vec<Vec<i32>>>) -> bool {
             if turn >= 0 && (m == f || dp[turn as usize][m as usize][c as usize] == 1) {
                 return true;
             }

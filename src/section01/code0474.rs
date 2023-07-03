@@ -58,10 +58,7 @@ impl Solution {
 
 #[test]
 fn test_find_max_form() {
-    let strs = vec!["10", "0001", "111001", "1", "0"]
-        .into_iter()
-        .map(|s| s.to_string())
-        .collect();
+    let strs = vec!["10", "0001", "111001", "1", "0"].into_iter().map(|s| s.to_string()).collect();
     assert_eq!(Solution::find_max_form(strs, 5, 3), 4);
 
     let strs = vec!["10", "0", "1"].into_iter().map(|s| s.to_string()).collect();

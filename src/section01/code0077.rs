@@ -48,11 +48,7 @@ impl Solution {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            4,
-            2,
-            vec![vec![1, 2], vec![1, 3], vec![1, 4], vec![2, 3], vec![2, 4], vec![3, 4]],
-        ),
+        (4, 2, vec![vec![1, 2], vec![1, 3], vec![1, 4], vec![2, 3], vec![2, 4], vec![3, 4]]),
         (1, 1, vec![vec![1]]),
     ];
     for (n, k, expect) in cases {

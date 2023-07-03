@@ -53,14 +53,7 @@ impl Solution {
 fn test_max_points() {
     assert_eq!(Solution::max_points(vec![vec![1, 1], vec![2, 2], vec![3, 3]]), 3);
     assert_eq!(
-        Solution::max_points(vec![
-            vec![1, 1],
-            vec![3, 2],
-            vec![5, 3],
-            vec![4, 1],
-            vec![2, 3],
-            vec![1, 4]
-        ]),
+        Solution::max_points(vec![vec![1, 1], vec![3, 2], vec![5, 3], vec![4, 1], vec![2, 3], vec![1, 4]]),
         4
     );
 }

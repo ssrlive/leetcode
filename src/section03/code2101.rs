@@ -57,12 +57,7 @@ impl Solution {
     pub fn maximum_detonation(bombs: Vec<Vec<i32>>) -> i32 {
         use std::collections::*;
 
-        fn dfs(
-            list: &Vec<Vec<usize>>,
-            current: usize,
-            visited: &mut HashSet<usize>,
-            all_visited: &mut HashSet<usize>,
-        ) -> usize {
+        fn dfs(list: &Vec<Vec<usize>>, current: usize, visited: &mut HashSet<usize>, all_visited: &mut HashSet<usize>) -> usize {
             visited.insert(current);
             let mut res = 1; // Detonates self
 

@@ -58,20 +58,10 @@ impl Solution {
 #[test]
 fn test() {
     let s = "iloveleetcode".to_string();
-    let words = vec![
-        "i".to_string(),
-        "love".to_string(),
-        "leetcode".to_string(),
-        "apples".to_string(),
-    ];
+    let words = vec!["i".to_string(), "love".to_string(), "leetcode".to_string(), "apples".to_string()];
     assert_eq!(Solution::is_prefix_string(s, words), true);
 
     let s = "iloveleetcode".to_string();
-    let words = vec![
-        "apples".to_string(),
-        "i".to_string(),
-        "love".to_string(),
-        "leetcode".to_string(),
-    ];
+    let words = vec!["apples".to_string(), "i".to_string(), "love".to_string(), "leetcode".to_string()];
     assert_eq!(Solution::is_prefix_string(s, words), false);
 }

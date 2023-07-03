@@ -62,9 +62,6 @@ impl Solution {
 
 #[test]
 fn test_max_envelopes() {
-    assert_eq!(
-        Solution::max_envelopes(vec![vec![5, 4], vec![6, 4], vec![6, 7], vec![2, 3]]),
-        3
-    );
+    assert_eq!(Solution::max_envelopes(vec![vec![5, 4], vec![6, 4], vec![6, 7], vec![2, 3]]), 3);
     assert_eq!(Solution::max_envelopes(vec![vec![1, 1], vec![1, 1], vec![1, 1]]), 1);
 }

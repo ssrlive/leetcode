@@ -48,15 +48,7 @@ fn test_inorder_traversal() {
         vec![2, 1, 3]
     );
     assert_eq!(
-        Solution::inorder_traversal(TreeNode::from_vec(&[
-            Some(1),
-            Some(2),
-            Some(3),
-            Some(4),
-            Some(5),
-            Some(6),
-            Some(7)
-        ])),
+        Solution::inorder_traversal(TreeNode::from_vec(&[Some(1), Some(2), Some(3), Some(4), Some(5), Some(6), Some(7)])),
         vec![4, 2, 5, 1, 6, 3, 7]
     );
     assert_eq!(

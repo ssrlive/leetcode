@@ -54,8 +54,5 @@ impl Solution {
 #[test]
 fn test() {
     assert_eq!(Solution::next_greater_elements(vec![1, 2, 1]), vec![2, -1, 2]);
-    assert_eq!(
-        Solution::next_greater_elements(vec![1, 2, 3, 4, 3]),
-        vec![2, 3, 4, -1, 4]
-    );
+    assert_eq!(Solution::next_greater_elements(vec![1, 2, 3, 4, 3]), vec![2, 3, 4, -1, 4]);
 }

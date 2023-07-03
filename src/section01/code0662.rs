@@ -81,18 +81,7 @@ fn test() {
     let root = TreeNode::from_vec(&[Some(1), Some(3), Some(2), Some(5), Some(3), None, Some(9)]);
     assert_eq!(Solution::width_of_binary_tree(root), 4);
 
-    let root = TreeNode::from_vec(&[
-        Some(1),
-        Some(3),
-        Some(2),
-        Some(5),
-        None,
-        None,
-        Some(9),
-        Some(6),
-        None,
-        Some(7),
-    ]);
+    let root = TreeNode::from_vec(&[Some(1), Some(3), Some(2), Some(5), None, None, Some(9), Some(6), None, Some(7)]);
     assert_eq!(Solution::width_of_binary_tree(root), 7);
 
     let root = TreeNode::from_vec(&[Some(1), Some(3), Some(2), Some(5)]);

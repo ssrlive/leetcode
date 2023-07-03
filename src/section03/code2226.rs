@@ -65,12 +65,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![5, 8, 6], 3, 5),
-        (vec![2, 5], 11, 0),
-        (vec![2, 5], 10, 0),
-        (vec![2, 5], 9, 0),
-    ];
+    let cases = vec![(vec![5, 8, 6], 3, 5), (vec![2, 5], 11, 0), (vec![2, 5], 10, 0), (vec![2, 5], 9, 0)];
     for (candies, k, expected) in cases {
         assert_eq!(Solution::maximum_candies(candies, k), expected);
     }

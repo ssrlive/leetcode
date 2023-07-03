@@ -92,13 +92,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let flights = vec![
-        vec![0, 1, 100],
-        vec![1, 2, 100],
-        vec![2, 0, 100],
-        vec![1, 3, 600],
-        vec![2, 3, 200],
-    ];
+    let flights = vec![vec![0, 1, 100], vec![1, 2, 100], vec![2, 0, 100], vec![1, 3, 600], vec![2, 3, 200]];
     assert_eq!(Solution::find_cheapest_price(4, flights, 0, 3, 1), 700);
 
     let flights = vec![vec![0, 1, 100], vec![1, 2, 100], vec![0, 2, 500]];

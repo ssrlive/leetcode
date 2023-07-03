@@ -95,12 +95,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("5489355142", 4, 2),
-        ("11112", 4, 4),
-        ("00123", 1, 1),
-        ("43987654", 7, 15),
-    ];
+    let cases = vec![("5489355142", 4, 2), ("11112", 4, 4), ("00123", 1, 1), ("43987654", 7, 15)];
     for (num, k, expected) in cases {
         assert_eq!(Solution::get_min_swaps(num.to_string(), k), expected);
     }

@@ -74,10 +74,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![vec![1, 2, 3], vec![4, 5, 6], vec![7, 8, 9]], 13),
-        (vec![vec![7]], 7),
-    ];
+    let cases = vec![(vec![vec![1, 2, 3], vec![4, 5, 6], vec![7, 8, 9]], 13), (vec![vec![7]], 7)];
     for (grid, expect) in cases {
         assert_eq!(Solution::min_falling_path_sum(grid), expect);
     }

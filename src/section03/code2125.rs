@@ -69,10 +69,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec!["011001", "000000", "010100", "001000"], 8),
-        (vec!["000", "111", "000"], 0),
-    ];
+    let cases = vec![(vec!["011001", "000000", "010100", "001000"], 8), (vec!["000", "111", "000"], 0)];
     for (bank, expect) in cases {
         let v = bank.into_iter().map(|x| x.to_string()).collect();
         assert_eq!(Solution::number_of_beams(v), expect);

@@ -80,14 +80,8 @@ impl Solution {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            vec!["pes", "fifa", "gta", "pes(2019)"],
-            vec!["pes", "fifa", "gta", "pes(2019)"],
-        ),
-        (
-            vec!["gta", "gta(1)", "gta", "avalon"],
-            vec!["gta", "gta(1)", "gta(2)", "avalon"],
-        ),
+        (vec!["pes", "fifa", "gta", "pes(2019)"], vec!["pes", "fifa", "gta", "pes(2019)"]),
+        (vec!["gta", "gta(1)", "gta", "avalon"], vec!["gta", "gta(1)", "gta(2)", "avalon"]),
         (
             vec!["onepiece", "onepiece(1)", "onepiece(2)", "onepiece(3)", "onepiece"],
             vec!["onepiece", "onepiece(1)", "onepiece(2)", "onepiece(3)", "onepiece(4)"],

@@ -77,8 +77,7 @@ impl Solution {
         }
         let mut n = n.as_mut()?.borrow_mut();
         n.val = l_sum[d] - sib_sum;
-        let sib_sum = n.left.as_ref().map(|n| n.borrow().val).unwrap_or(0)
-            + n.right.as_ref().map(|n| n.borrow().val).unwrap_or(0);
+        let sib_sum = n.left.as_ref().map(|n| n.borrow().val).unwrap_or(0) + n.right.as_ref().map(|n| n.borrow().val).unwrap_or(0);
         Solution::update_sum(l_sum, &mut n.left, sib_sum, d + 1);
         Solution::update_sum(l_sum, &mut n.right, sib_sum, d + 1);
         Some(())

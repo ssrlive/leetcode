@@ -42,11 +42,7 @@ impl Solution {
         let mut trie = Trie::new();
         let mut nums = nums;
         nums.sort();
-        let mut queries = queries
-            .into_iter()
-            .enumerate()
-            .map(|(i, q)| (q[1], q[0], i))
-            .collect::<Vec<_>>();
+        let mut queries = queries.into_iter().enumerate().map(|(i, q)| (q[1], q[0], i)).collect::<Vec<_>>();
         queries.sort();
         let mut v1 = vec![0; queries.len()];
         let mut st = 0;
@@ -127,16 +123,8 @@ impl Trie {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            vec![0, 1, 2, 3, 4],
-            vec![vec![3, 1], vec![1, 3], vec![5, 6]],
-            vec![3, 3, 7],
-        ),
-        (
-            vec![5, 2, 4, 6, 6, 3],
-            vec![vec![12, 4], vec![8, 1], vec![6, 3]],
-            vec![15, -1, 5],
-        ),
+        (vec![0, 1, 2, 3, 4], vec![vec![3, 1], vec![1, 3], vec![5, 6]], vec![3, 3, 7]),
+        (vec![5, 2, 4, 6, 6, 3], vec![vec![12, 4], vec![8, 1], vec![6, 3]], vec![15, -1, 5]),
     ];
     for (nums, queries, expect) in cases {
         assert_eq!(Solution::maximize_xor(nums, queries), expect);

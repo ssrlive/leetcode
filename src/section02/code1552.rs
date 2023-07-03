@@ -65,10 +65,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![1, 2, 3, 4, 7], 3, 3),
-        (vec![5, 4, 3, 2, 1, 1000000000], 2, 999999999),
-    ];
+    let cases = vec![(vec![1, 2, 3, 4, 7], 3, 3), (vec![5, 4, 3, 2, 1, 1000000000], 2, 999999999)];
     for (position, m, expected) in cases {
         assert_eq!(Solution::max_distance(position, m), expected);
     }

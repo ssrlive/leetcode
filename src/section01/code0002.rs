@@ -74,10 +74,7 @@ fn test() -> Result<(), Box<dyn std::error::Error>> {
     let res = res.ok_or_else(|| "")?.to_vec();
     assert_eq!(res, &[0]);
 
-    let res = Solution::add_two_numbers(
-        ListNode::from_vec(&[9, 9, 9, 9, 9, 9, 9]),
-        ListNode::from_vec(&[9, 9, 9, 9]),
-    );
+    let res = Solution::add_two_numbers(ListNode::from_vec(&[9, 9, 9, 9, 9, 9, 9]), ListNode::from_vec(&[9, 9, 9, 9]));
     let res = res.ok_or_else(|| "")?.to_vec();
     assert_eq!(res, &[8, 9, 9, 9, 0, 0, 0, 1]);
 

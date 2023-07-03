@@ -49,14 +49,8 @@ struct Solution;
 
 impl Solution {
     pub fn is_transformable(s: String, t: String) -> bool {
-        let s = s
-            .chars()
-            .map(|c| c.to_digit(10).unwrap() as usize)
-            .collect::<Vec<usize>>();
-        let t = t
-            .chars()
-            .map(|c| c.to_digit(10).unwrap() as usize)
-            .collect::<Vec<usize>>();
+        let s = s.chars().map(|c| c.to_digit(10).unwrap() as usize).collect::<Vec<usize>>();
+        let t = t.chars().map(|c| c.to_digit(10).unwrap() as usize).collect::<Vec<usize>>();
         let mut pos = vec![vec![]; 10];
         for i in 0..s.len() {
             pos[s[i]].push(i);
@@ -80,11 +74,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("84532", "34852", true),
-        ("34521", "23415", true),
-        ("12345", "12435", false),
-    ];
+    let cases = vec![("84532", "34852", true), ("34521", "23415", true), ("12345", "12435", false)];
     for (s, t, expected) in cases {
         assert_eq!(Solution::is_transformable(s.to_string(), t.to_string()), expected);
     }

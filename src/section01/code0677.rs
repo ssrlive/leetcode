@@ -55,11 +55,7 @@ impl MapSum {
     }
 
     fn sum(&self, prefix: String) -> i32 {
-        self.map
-            .iter()
-            .filter(|(k, _)| k.starts_with(&prefix))
-            .map(|(_, v)| v)
-            .sum()
+        self.map.iter().filter(|(k, _)| k.starts_with(&prefix)).map(|(_, v)| v).sum()
     }
 }
 

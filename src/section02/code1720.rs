@@ -49,10 +49,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![1, 2, 3], 1, vec![1, 0, 2, 1]),
-        (vec![6, 2, 7, 3], 4, vec![4, 2, 0, 7, 4]),
-    ];
+    let cases = vec![(vec![1, 2, 3], 1, vec![1, 0, 2, 1]), (vec![6, 2, 7, 3], 4, vec![4, 2, 0, 7, 4])];
     for (encoded, first, expected) in cases {
         assert_eq!(Solution::decode(encoded, first), expected);
     }

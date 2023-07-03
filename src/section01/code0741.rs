@@ -53,15 +53,7 @@ impl Solution {
             answer
         }
     }
-    fn solve(
-        grid: &Vec<Vec<i32>>,
-        r1: usize,
-        r2: usize,
-        c1: usize,
-        c2: usize,
-        n: usize,
-        dp: &mut Vec<Vec<Vec<i32>>>,
-    ) -> Option<i32> {
+    fn solve(grid: &Vec<Vec<i32>>, r1: usize, r2: usize, c1: usize, c2: usize, n: usize, dp: &mut Vec<Vec<Vec<i32>>>) -> Option<i32> {
         if r1 == n || r2 == n || c1 == n || c2 == n || grid[r1][c1] == -1 || grid[r2][c2] == -1 {
             return Some(std::i32::MIN);
         }

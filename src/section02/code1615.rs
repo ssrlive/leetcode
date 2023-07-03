@@ -71,16 +71,8 @@ impl Solution {
 fn test() {
     let cases = vec![
         (4, vec![vec![0, 1], vec![0, 3], vec![1, 2], vec![1, 3]], 4),
-        (
-            5,
-            vec![vec![0, 1], vec![0, 3], vec![1, 2], vec![1, 3], vec![2, 3], vec![2, 4]],
-            5,
-        ),
-        (
-            8,
-            vec![vec![0, 1], vec![1, 2], vec![2, 3], vec![2, 4], vec![5, 6], vec![5, 7]],
-            5,
-        ),
+        (5, vec![vec![0, 1], vec![0, 3], vec![1, 2], vec![1, 3], vec![2, 3], vec![2, 4]], 5),
+        (8, vec![vec![0, 1], vec![1, 2], vec![2, 3], vec![2, 4], vec![5, 6], vec![5, 7]], 5),
     ];
     for (n, roads, expected) in cases {
         assert_eq!(Solution::maximal_network_rank(n, roads), expected);

@@ -56,20 +56,13 @@ impl Solution {
             }
             stack.push((c, 1));
         }
-        stack
-            .into_iter()
-            .map(|(c, count)| c.to_string().repeat(count as usize))
-            .collect()
+        stack.into_iter().map(|(c, count)| c.to_string().repeat(count as usize)).collect()
     }
 }
 
 #[test]
 fn test() {
-    let cases = vec![
-        ("abcd", 2, "abcd"),
-        ("deeedbbcccbdaa", 3, "aa"),
-        ("pbbcggttciiippooaais", 2, "ps"),
-    ];
+    let cases = vec![("abcd", 2, "abcd"), ("deeedbbcccbdaa", 3, "aa"), ("pbbcggttciiippooaais", 2, "ps")];
     for (s, k, expected) in cases {
         let s = s.to_string();
         assert_eq!(Solution::remove_duplicates(s, k), expected);

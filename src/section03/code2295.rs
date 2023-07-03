@@ -89,11 +89,7 @@ impl Solution {
 #[test]
 fn test() {
     let cases = vec![
-        (
-            vec![1, 2, 4, 6],
-            vec![vec![1, 3], vec![4, 7], vec![6, 1]],
-            vec![3, 2, 7, 1],
-        ),
+        (vec![1, 2, 4, 6], vec![vec![1, 3], vec![4, 7], vec![6, 1]], vec![3, 2, 7, 1]),
         (vec![1, 2], vec![vec![1, 3], vec![2, 1], vec![3, 2]], vec![2, 1]),
     ];
     for (nums, operations, expect) in cases {

@@ -58,11 +58,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let cases = vec![
-        (vec![2, 3, 2], 2, 6),
-        (vec![5, 1, 1, 1], 0, 8),
-        (vec![1, 1, 1, 1], 0, 1),
-    ];
+    let cases = vec![(vec![2, 3, 2], 2, 6), (vec![5, 1, 1, 1], 0, 8), (vec![1, 1, 1, 1], 0, 1)];
     for (tickets, k, expected) in cases {
         assert_eq!(Solution::time_required_to_buy(tickets, k), expected);
     }

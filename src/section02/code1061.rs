@@ -56,13 +56,12 @@ impl Solution {
         base_str
             .chars()
             .scan(
-                Iterator::zip(s1.chars(), s2.chars()).fold(
-                    UnionFind::from((0..26usize).collect::<Vec<usize>>()),
-                    |uf, (c1, c2)| match (uf.find(ctu(c1)), uf.find(ctu(c2))) {
+                Iterator::zip(s1.chars(), s2.chars()).fold(UnionFind::from((0..26usize).collect::<Vec<usize>>()), |uf, (c1, c2)| {
+                    match (uf.find(ctu(c1)), uf.find(ctu(c2))) {
                         (h1, h2) if h1 > h2 => uf.union(h2, h1),
                         (h1, h2) => uf.union(h1, h2),
-                    },
-                ),
+                    }
+                }),
                 |m, c| Some(utc(m.find(ctu(c)))),
             )
             .collect()

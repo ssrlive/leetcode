@@ -58,10 +58,7 @@ impl Solution {
         let mut group_by_value = BTreeMap::new();
         for (r, item_r) in matrix.iter().enumerate() {
             for (c, &item_c) in item_r.iter().enumerate() {
-                group_by_value
-                    .entry(item_c)
-                    .or_insert(vec![])
-                    .push((r as i32, c as i32));
+                group_by_value.entry(item_c).or_insert(vec![]).push((r as i32, c as i32));
             }
         }
         let mut rank = vec![0; m + n];

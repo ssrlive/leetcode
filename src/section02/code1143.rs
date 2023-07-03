@@ -48,9 +48,7 @@ impl Solution {
 
         for i in (0..n1).rev() {
             for j in (0..n2).rev() {
-                dp_curr[j] = dp_prev[j]
-                    .max(dp_curr[j + 1])
-                    .max(dp_prev[j + 1] + i32::from(text1[i] == text2[j]));
+                dp_curr[j] = dp_prev[j].max(dp_curr[j + 1]).max(dp_prev[j + 1] + i32::from(text1[i] == text2[j]));
             }
             std::mem::swap(&mut dp_prev, &mut dp_curr);
         }

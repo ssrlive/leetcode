@@ -49,10 +49,7 @@ impl Solution {
         let n = stones.len();
         let mut i = 0;
         let mut low = n as i32;
-        let high = std::cmp::max(
-            stones[n - 1] - n as i32 + 2 - stones[1],
-            stones[n - 2] - stones[0] - n as i32 + 2,
-        );
+        let high = std::cmp::max(stones[n - 1] - n as i32 + 2 - stones[1], stones[n - 2] - stones[0] - n as i32 + 2);
         for j in 0..n {
             while stones[j] - stones[i] >= n as i32 {
                 i += 1;
