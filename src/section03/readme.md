@@ -568,3 +568,8 @@ cargo test
 | 2661 | [First Completely Painted Row or Column](code2661.rs) | [link](https://leetcode.com/problems/first-completely-painted-row-or-column/) | Medium | :heavy_check_mark: |
 | 2662 | [Minimum Cost of a Path With Special Roads](code2662.rs) | [link](https://leetcode.com/problems/minimum-cost-of-a-path-with-special-roads/) | Medium | :heavy_check_mark: |
 | 2663 | [Lexicographically Smallest Beautiful String](code2663.rs) | [link](https://leetcode.com/problems/lexicographically-smallest-beautiful-string/) | Hard | :heavy_check_mark: |
+| 2665 | [Counter II](code2665.rs) | [link](https://leetcode.com/problems/counter-ii/) | Easy | :heavy_check_mark: |
+| 2670 | [Find the Distinct Difference Array](code2670.rs) | [link](https://leetcode.com/problems/find-the-distinct-difference-array/) | Easy | :heavy_check_mark: |
+| 2671 | [Frequency Tracker](code2671.rs) | [link](https://leetcode.com/problems/frequency-tracker/) | Medium | :heavy_check_mark: |
+| 2672 | [Number of Adjacent Elements With the Same Color](code2672.rs) | [link](https://leetcode.com/problems/number-of-adjacent-elements-with-the-same-color/) | Medium | :heavy_check_mark: |
+| 2673 | [Make Costs of Paths Equal in a Binary Tree](code2673.rs) | [link](https://leetcode.com/problems/make-costs-of-paths-equal-in-a-binary-tree/) | Medium | :heavy_check_mark: |
