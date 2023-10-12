@@ -45,8 +45,8 @@ impl Solution {
     pub fn is_escape_possible(blocked: Vec<Vec<i32>>, source: Vec<i32>, target: Vec<i32>) -> bool {
         use std::collections::{HashSet, VecDeque};
         fn can_reach(source: &[i32], target: &[i32], num_blocked: i32, block: &HashSet<(i32, i32)>) -> bool {
-            let dx = vec![0, 0, 1, -1];
-            let dy = vec![1, -1, 0, 0];
+            let dx = [0, 0, 1, -1];
+            let dy = [1, -1, 0, 0];
             let max_area = num_blocked * (num_blocked - 1) / 2;
             let mut curr_area = 1;
             let mut visited = HashSet::new();

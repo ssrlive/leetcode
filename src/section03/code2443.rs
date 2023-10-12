@@ -55,9 +55,9 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::sum_of_number_and_reverse(443), true);
-    assert_eq!(Solution::sum_of_number_and_reverse(63), false);
-    assert_eq!(Solution::sum_of_number_and_reverse(181), true);
-    assert_eq!(Solution::sum_of_number_and_reverse(0), true);
-    assert_eq!(Solution::sum_of_number_and_reverse(1), false);
+    assert!(Solution::sum_of_number_and_reverse(443));
+    assert!(!Solution::sum_of_number_and_reverse(63));
+    assert!(Solution::sum_of_number_and_reverse(181));
+    assert!(Solution::sum_of_number_and_reverse(0));
+    assert!(!Solution::sum_of_number_and_reverse(1));
 }

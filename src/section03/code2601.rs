@@ -96,9 +96,9 @@ impl Solution {
 #[test]
 fn test() {
     let nums = vec![4, 9, 6, 10];
-    assert_eq!(Solution::prime_sub_operation(nums), true);
+    assert!(Solution::prime_sub_operation(nums));
     let nums = vec![6, 8, 11, 12];
-    assert_eq!(Solution::prime_sub_operation(nums), true);
+    assert!(Solution::prime_sub_operation(nums));
     let nums = vec![5, 8, 3];
-    assert_eq!(Solution::prime_sub_operation(nums), false);
+    assert!(!Solution::prime_sub_operation(nums));
 }

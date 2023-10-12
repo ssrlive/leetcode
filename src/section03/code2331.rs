@@ -72,8 +72,8 @@ impl Solution {
 #[test]
 fn test() {
     let root = TreeNode::from_string("[2,1,3,null,null,0,1]");
-    assert_eq!(Solution::evaluate_tree(root), true);
+    assert!(Solution::evaluate_tree(root));
 
     let root = TreeNode::from_string("[0]");
-    assert_eq!(Solution::evaluate_tree(root), false);
+    assert!(!Solution::evaluate_tree(root));
 }

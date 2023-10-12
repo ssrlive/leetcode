@@ -94,11 +94,11 @@ fn test() {
     let ret = Solution::top_students(positive_feedback, negative_feedback, report, student_id, k);
     assert_eq!(ret, vec![2, 1]);
 
-    let positive_feedback = vec!["fkeofjpc", "qq", "iio"];
+    let positive_feedback = ["fkeofjpc", "qq", "iio"];
     let positive_feedback = positive_feedback.iter().map(|s| s.to_string()).collect();
-    let negative_feedback = vec!["jdh", "khj", "eget", "rjstbhe", "yzyoatfyx", "wlinrrgcm"];
+    let negative_feedback = ["jdh", "khj", "eget", "rjstbhe", "yzyoatfyx", "wlinrrgcm"];
     let negative_feedback = negative_feedback.iter().map(|s| s.to_string()).collect();
-    let report = vec![
+    let report = [
         "rjstbhe eget kctxcoub urrmkhlmi yniqafy fkeofjpc iio yzyoatfyx khj iio",
         "gpnhgabl qq qq fkeofjpc dflidshdb qq iio khj qq yzyoatfyx",
         "tizpzhlbyb eget z rjstbhe iio jdh jdh iptxh qq rjstbhe",

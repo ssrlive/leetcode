@@ -50,7 +50,7 @@ struct Solution;
 
 impl Solution {
     pub fn count_balls(low_limit: i32, high_limit: i32) -> i32 {
-        let mut count = vec![0; 46];
+        let mut count = [0; 46];
         for i in low_limit..=high_limit {
             let mut sum = 0;
             let mut j = i;

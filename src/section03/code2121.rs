@@ -53,7 +53,7 @@ impl Solution {
         use std::collections::HashMap;
         let mut val_locs: HashMap<i32, Vec<usize>> = HashMap::new();
         for (idx, val) in arr.iter().enumerate() {
-            val_locs.entry(*val).or_insert(Vec::new()).push(idx);
+            val_locs.entry(*val).or_default().push(idx);
         }
         let mut ans: Vec<i64> = vec![0; arr.len()];
         for locs in val_locs.values() {

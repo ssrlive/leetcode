@@ -45,7 +45,7 @@ struct Solution;
 
 impl Solution {
     pub fn find_maximized_capital3(k: i32, w: i32, profits: Vec<i32>, capital: Vec<i32>) -> i32 {
-        let mut projects = capital.into_iter().zip(profits.into_iter()).collect::<Vec<_>>();
+        let mut projects = capital.into_iter().zip(profits).collect::<Vec<_>>();
         projects.sort_by_key(|&(_, c)| c);
         let mut heap = std::collections::BinaryHeap::new();
         let mut i = 0;
@@ -66,7 +66,7 @@ impl Solution {
 
     pub fn find_maximized_capital(k: i32, w: i32, profits: Vec<i32>, capital: Vec<i32>) -> i32 {
         let mut w = w;
-        let mut cache = capital.into_iter().zip(profits.into_iter()).collect::<Vec<_>>();
+        let mut cache = capital.into_iter().zip(profits).collect::<Vec<_>>();
         cache.sort_by_key(|&(c, _)| c);
         let mut index = 0;
         let mut max_heap = Vec::with_capacity(cache.len());

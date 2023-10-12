@@ -50,7 +50,7 @@ impl Solution {
             (a / 6 - b / 6).abs() + (a % 6 - b % 6).abs()
         }
 
-        let mut dp = vec![0; 26];
+        let mut dp = [0; 26];
         let mut res = 0;
         let mut save = 0;
         let n = word.len();

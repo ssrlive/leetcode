@@ -62,9 +62,9 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::is_reachable(6, 9), false);
-    assert_eq!(Solution::is_reachable(4, 7), true);
-    assert_eq!(Solution::is_reachable(1, 1), true);
-    assert_eq!(Solution::is_reachable(1, 2), true);
-    assert_eq!(Solution::is_reachable(1, 3), true);
+    assert!(!Solution::is_reachable(6, 9));
+    assert!(Solution::is_reachable(4, 7));
+    assert!(Solution::is_reachable(1, 1));
+    assert!(Solution::is_reachable(1, 2));
+    assert!(Solution::is_reachable(1, 3));
 }

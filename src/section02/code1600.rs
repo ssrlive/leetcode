@@ -84,7 +84,7 @@ impl ThroneInheritance {
     }
 
     fn birth(&mut self, parent_name: String, child_name: String) {
-        self.children.entry(parent_name).or_insert_with(Vec::new).push(child_name);
+        self.children.entry(parent_name).or_default().push(child_name);
     }
 
     fn death(&mut self, name: String) {

@@ -70,8 +70,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::stone_game_ix(vec![2, 1]), true);
-    assert_eq!(Solution::stone_game_ix(vec![2]), false);
-    assert_eq!(Solution::stone_game_ix(vec![5, 1, 2, 4, 3]), false);
-    assert_eq!(Solution::stone_game_ix(vec![1, 2, 3]), false);
+    assert!(Solution::stone_game_ix(vec![2, 1]));
+    assert!(!Solution::stone_game_ix(vec![2]));
+    assert!(!Solution::stone_game_ix(vec![5, 1, 2, 4, 3]));
+    assert!(!Solution::stone_game_ix(vec![1, 2, 3]));
 }

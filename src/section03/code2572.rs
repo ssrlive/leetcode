@@ -48,7 +48,7 @@ impl Solution {
     pub fn square_free_subsets(nums: Vec<i32>) -> i32 {
         fn dp(nums: &Vec<i64>, i: usize, mask: i64, memo: &mut Vec<Vec<i64>>) -> i64 {
             let mod_num = 1e9 as i64 + 7;
-            let vec = vec![2, 3, 5, 7, 11, 13, 17, 19, 23, 29];
+            let vec = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29];
             if i == nums.len() {
                 return 1;
             }

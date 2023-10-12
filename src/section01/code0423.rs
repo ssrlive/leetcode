@@ -32,7 +32,7 @@ impl Solution {
             *map.entry(c).or_insert(0) += 1;
         }
 
-        let mut digits = vec![0; 10];
+        let mut digits = [0; 10];
         digits[0] = *map.get(&'z').unwrap_or(&0);
         digits[2] = *map.get(&'w').unwrap_or(&0);
         digits[4] = *map.get(&'u').unwrap_or(&0);

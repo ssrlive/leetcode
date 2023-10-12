@@ -62,11 +62,11 @@ impl Solution {
 fn test() -> Result<(), Box<dyn std::error::Error>> {
     let head = ListNode::from_vec(&[5, 2, 13, 3, 8]);
     let head = Solution::remove_nodes_from_linked_list(head);
-    assert_eq!(head.as_ref().ok_or_else(|| "")?.to_vec(), vec![13, 8]);
+    assert_eq!(head.as_ref().ok_or("")?.to_vec(), vec![13, 8]);
 
     let head = ListNode::from_vec(&[1, 1, 1, 1]);
     let head = Solution::remove_nodes_from_linked_list(head);
-    assert_eq!(head.as_ref().ok_or_else(|| "")?.to_vec(), vec![1, 1, 1, 1]);
+    assert_eq!(head.as_ref().ok_or("")?.to_vec(), vec![1, 1, 1, 1]);
 
     Ok(())
 }

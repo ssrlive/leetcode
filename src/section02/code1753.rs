@@ -55,7 +55,7 @@ struct Solution;
 
 impl Solution {
     pub fn maximum_score(a: i32, b: i32, c: i32) -> i32 {
-        let mut arr = vec![a, b, c];
+        let mut arr = [a, b, c];
         arr.sort();
         let (a, b, c) = (arr[0], arr[1], arr[2]);
         let diff = c - b;

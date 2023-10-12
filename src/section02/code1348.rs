@@ -66,7 +66,7 @@ impl TweetCounts {
     }
 
     fn record_tweet(&mut self, tweet_name: String, time: i32) {
-        self.tweets.entry(tweet_name).or_insert_with(Vec::new).push(time);
+        self.tweets.entry(tweet_name).or_default().push(time);
     }
 
     fn get_tweet_counts_per_frequency(&self, freq: String, tweet_name: String, start_time: i32, end_time: i32) -> Vec<i32> {

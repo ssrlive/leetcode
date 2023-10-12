@@ -33,7 +33,7 @@ struct Solution;
 
 impl Solution {
     pub fn min_number(nums1: Vec<i32>, nums2: Vec<i32>) -> i32 {
-        let mut freq = vec![0; 10];
+        let mut freq = [0; 10];
         for i in 0..nums1.len() {
             freq[nums1[i] as usize] += 1;
         }

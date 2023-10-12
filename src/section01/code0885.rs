@@ -42,7 +42,7 @@ impl Solution {
         let mut r_start = r_start;
         let mut c_start = c_start;
         ans.push(vec![r_start, c_start]);
-        let direction = vec![(0, 1), (1, 0), (0, -1), (-1, 0)];
+        let direction = [(0, 1), (1, 0), (0, -1), (-1, 0)];
         while cnt < total {
             for _ in 0..step {
                 r_start += direction[i].0;

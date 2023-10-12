@@ -53,6 +53,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::digit_count("1210".to_string()), true);
-    assert_eq!(Solution::digit_count("030".to_string()), false);
+    assert!(Solution::digit_count("1210".to_string()));
+    assert!(!Solution::digit_count("030".to_string()));
 }

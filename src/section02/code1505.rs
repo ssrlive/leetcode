@@ -45,7 +45,7 @@ impl Solution {
         let num = num.into_bytes();
         let n = num.len();
         let mut res = Vec::with_capacity(n);
-        let mut q = vec![n; 10];
+        let mut q = [n; 10];
         for (i, &item) in num.iter().enumerate() {
             let d = (item - b'0') as usize;
             if q[d] == n {
@@ -53,7 +53,7 @@ impl Solution {
             }
         }
         let mut used = vec![false; n];
-        let mut q_used = vec![0; 10];
+        let mut q_used = [0; 10];
         for _ in 0..n {
             for d in 0..10_usize {
                 if q[d] == n {

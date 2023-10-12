@@ -59,7 +59,7 @@ impl Solution {
         let mut idxs: Vec<(usize, usize, usize)> = indices
             .into_iter()
             .enumerate()
-            .zip(sources.into_iter())
+            .zip(sources)
             .map(|((i, idx), src)| (i, idx as usize, src))
             .filter(|(_, idx, src)| (s.len() - *idx) >= src.len() && s.iter().skip(*idx).zip(src.chars()).all(|(&ch, src_ch)| src_ch == ch))
             .map(|(i, idx, src)| (i, idx, src.len()))

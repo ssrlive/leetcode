@@ -84,7 +84,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::is_it_possible("ac".to_string(), "b".to_string()), false);
-    assert_eq!(Solution::is_it_possible("abcc".to_string(), "aab".to_string()), true);
-    assert_eq!(Solution::is_it_possible("abcde".to_string(), "fghij".to_string()), true);
+    assert!(!Solution::is_it_possible("ac".to_string(), "b".to_string()));
+    assert!(Solution::is_it_possible("abcc".to_string(), "aab".to_string()));
+    assert!(Solution::is_it_possible("abcde".to_string(), "fghij".to_string()));
 }

@@ -74,18 +74,18 @@ impl Solution {
 
 #[test]
 fn test() {
-    let creators = vec!["alice", "bob", "alice", "chris"];
+    let creators = ["alice", "bob", "alice", "chris"];
     let creators = creators.iter().map(|s| s.to_string()).collect::<Vec<_>>();
-    let ids = vec!["one", "two", "three", "four"];
+    let ids = ["one", "two", "three", "four"];
     let ids = ids.iter().map(|s| s.to_string()).collect::<Vec<_>>();
     let views = vec![5, 10, 5, 4];
     let mut result = Solution::most_popular_creator(creators, ids, views);
     result.sort_unstable();
     assert_eq!(result, vec![vec!["alice", "one"], vec!["bob", "two"]]);
 
-    let creators = vec!["alice", "alice", "alice"];
+    let creators = ["alice", "alice", "alice"];
     let creators = creators.iter().map(|s| s.to_string()).collect::<Vec<_>>();
-    let ids = vec!["a", "b", "c"];
+    let ids = ["a", "b", "c"];
     let ids = ids.iter().map(|s| s.to_string()).collect::<Vec<_>>();
     let views = vec![1, 2, 2];
     let mut result = Solution::most_popular_creator(creators, ids, views);

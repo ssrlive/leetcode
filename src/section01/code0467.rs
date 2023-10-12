@@ -39,7 +39,7 @@ struct Solution;
 impl Solution {
     pub fn find_substring_in_wrapround_string(p: String) -> i32 {
         fn _find_substring_in_wrapround_string(p: String) -> Option<i32> {
-            let mut counts = vec![0; 26];
+            let mut counts = [0; 26];
             let mut len = 1;
             let p = p.as_bytes();
             for (i, ch) in p.iter().enumerate() {

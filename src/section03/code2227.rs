@@ -70,7 +70,7 @@ struct Encrypter {
 impl Encrypter {
     fn new(keys: Vec<char>, values: Vec<String>, dictionary: Vec<String>) -> Self {
         let mut value_map: [String; 26] = Default::default();
-        keys.into_iter().zip(values.into_iter()).for_each(
+        keys.into_iter().zip(values).for_each(
             #[inline]
             |(key, value)| value_map[(key as u8 - b'a') as usize] = value,
         );

@@ -90,7 +90,7 @@ impl Solution {
         }
 
         let mut result = vec![];
-        if let Some((_, arr)) = btreemap.iter().rev().next() {
+        if let Some((_, arr)) = btreemap.iter().next_back() {
             for &v in arr {
                 result.push(v);
             }

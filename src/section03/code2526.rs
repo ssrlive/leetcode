@@ -65,8 +65,8 @@ impl DataStream {
 #[test]
 fn test() {
     let mut data_stream = DataStream::new(4, 3);
-    assert_eq!(data_stream.consec(4), false);
-    assert_eq!(data_stream.consec(4), false);
-    assert_eq!(data_stream.consec(4), true);
-    assert_eq!(data_stream.consec(3), false);
+    assert!(!data_stream.consec(4));
+    assert!(!data_stream.consec(4));
+    assert!(data_stream.consec(4));
+    assert!(!data_stream.consec(3));
 }

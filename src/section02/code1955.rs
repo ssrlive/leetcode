@@ -62,7 +62,7 @@ struct Solution;
 
 impl Solution {
     pub fn count_special_subsequences(nums: Vec<i32>) -> i32 {
-        let mut dp = vec![0, 0, 0];
+        let mut dp = [0, 0, 0];
         let mod_ = 1_000_000_007;
         for &a in nums.iter() {
             let a = a as usize;

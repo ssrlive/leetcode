@@ -53,13 +53,13 @@ impl Solution {
 fn test() {
     let event1 = vec!["01:15".to_string(), "02:00".to_string()];
     let event2 = vec!["02:00".to_string(), "03:00".to_string()];
-    assert_eq!(Solution::have_conflict(event1, event2), true);
+    assert!(Solution::have_conflict(event1, event2));
 
     let event1 = vec!["01:00".to_string(), "02:00".to_string()];
     let event2 = vec!["01:20".to_string(), "03:00".to_string()];
-    assert_eq!(Solution::have_conflict(event1, event2), true);
+    assert!(Solution::have_conflict(event1, event2));
 
     let event1 = vec!["10:00".to_string(), "11:00".to_string()];
     let event2 = vec!["14:00".to_string(), "15:00".to_string()];
-    assert_eq!(Solution::have_conflict(event1, event2), false);
+    assert!(!Solution::have_conflict(event1, event2));
 }

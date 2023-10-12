@@ -163,6 +163,6 @@ fn test() {
     let mut bms = BookMyShow::new(2, 5);
     assert_eq!(bms.gather(4, 0), vec![0, 0]);
     assert_eq!(bms.gather(2, 0), vec![]);
-    assert_eq!(bms.scatter(5, 1), true);
-    assert_eq!(bms.scatter(5, 1), false);
+    assert!(bms.scatter(5, 1));
+    assert!(!bms.scatter(5, 1));
 }

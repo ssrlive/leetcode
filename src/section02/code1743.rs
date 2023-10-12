@@ -58,8 +58,7 @@ impl Solution {
         let mut stack = vec![start];
         let mut seen = std::collections::HashSet::new();
         let mut result = vec![];
-        while !stack.is_empty() {
-            let current = stack.pop().unwrap();
+        while let Some(current) = stack.pop() {
             result.push(current);
             seen.insert(current);
             for k in map.get(&current).unwrap() {

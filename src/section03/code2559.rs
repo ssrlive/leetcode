@@ -46,7 +46,7 @@ struct Solution;
 impl Solution {
     pub fn vowel_strings(words: Vec<String>, queries: Vec<Vec<i32>>) -> Vec<i32> {
         fn _vowel_strings(words: Vec<String>, queries: Vec<Vec<i32>>) -> Option<Vec<i32>> {
-            let vw = vec!['a', 'e', 'i', 'o', 'u'];
+            let vw = ['a', 'e', 'i', 'o', 'u'];
             let mut ps = vec![0];
             for w in words {
                 let w = w.chars().collect::<Vec<_>>();

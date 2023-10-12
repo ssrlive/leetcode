@@ -63,17 +63,17 @@ impl NumberContainers {
             v
         } else {
             self.dict.insert(index, number);
-            self.map.entry(number).or_insert(BTreeSet::new()).insert(index);
+            self.map.entry(number).or_default().insert(index);
             return;
         };
         self.dict.insert(index, number);
-        let entry = self.map.entry(v).or_insert(BTreeSet::new());
+        let entry = self.map.entry(v).or_default();
         if entry.len() == 1 {
             self.map.remove(&v);
         } else {
             entry.remove(&index);
         }
-        self.map.entry(number).or_insert(BTreeSet::new()).insert(index);
+        self.map.entry(number).or_default().insert(index);
     }
 
     fn find(&mut self, number: i32) -> i32 {

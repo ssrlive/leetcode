@@ -58,7 +58,7 @@ impl Solution {
             s = s.min(intervals[l.len()][0]);
             e = e.max(intervals[intervals.len() - r.len() - 1][1]);
         }
-        vec![l, &[[s, e].to_vec()], r].concat()
+        [l, &[[s, e].to_vec()], r].concat()
     }
 }
 

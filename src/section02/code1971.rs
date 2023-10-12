@@ -47,8 +47,8 @@ impl Solution {
         use std::collections::{HashMap, HashSet, VecDeque};
         let mut graph: HashMap<i32, HashSet<i32>> = HashMap::new();
         for head in edges {
-            graph.entry(head[0]).or_insert(HashSet::new()).insert(head[1]);
-            graph.entry(head[1]).or_insert(HashSet::new()).insert(head[0]);
+            graph.entry(head[0]).or_default().insert(head[1]);
+            graph.entry(head[1]).or_default().insert(head[0]);
         }
         let mut visited = HashSet::<i32>::new();
         let mut next_batch = VecDeque::<i32>::new();

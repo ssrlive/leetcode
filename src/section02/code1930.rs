@@ -56,7 +56,7 @@ impl Solution {
         let s = s.chars().collect::<Vec<char>>();
         let n = s.len();
         let mut result = 0;
-        let mut seen = vec![false; 26];
+        let mut seen = [false; 26];
         for i in 0..n {
             let ti = (s[i] as u8 - b'a') as usize;
             if seen[ti] {

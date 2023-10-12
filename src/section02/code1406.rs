@@ -53,7 +53,7 @@ struct Solution;
 impl Solution {
     pub fn stone_game_iii(stone_value: Vec<i32>) -> String {
         let n = stone_value.len();
-        let mut dp = vec![0; 4];
+        let mut dp = [0; 4];
         for i in (0..n).rev() {
             dp[i % 4] = i32::MIN;
             let (mut take, mut k) = (0, 0);

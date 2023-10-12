@@ -75,8 +75,7 @@ impl Solution {
                 ret.push(u as i32 + 1);
                 sk.push(u);
             }
-            while !sk.is_empty() {
-                let u = sk.pop().unwrap();
+            while let Some(u) = sk.pop() {
                 for v in &graph[u] {
                     in_degree[*v] -= 1;
                     if in_degree[*v] > 0 {

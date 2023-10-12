@@ -44,14 +44,13 @@ impl Solution {
     pub fn count_pairs(n: i32, edges: Vec<Vec<i32>>) -> i64 {
         use std::collections::HashMap;
         let n = n as usize;
-        let graph =
-            edges
-                .iter()
-                .flat_map(|edge| [[edge[0], edge[1]], [edge[1], edge[0]]])
-                .fold(HashMap::with_capacity(n), |mut g, edge| {
-                    g.entry(edge[0] as usize).or_insert(vec![]).push(edge[1] as usize);
-                    g
-                });
+        let graph = edges.iter().flat_map(|edge| [[edge[0], edge[1]], [edge[1], edge[0]]]).fold(
+            HashMap::with_capacity(n),
+            |mut g: HashMap<usize, Vec<usize>>, edge| {
+                g.entry(edge[0] as usize).or_default().push(edge[1] as usize);
+                g
+            },
+        );
         let mut visited: Vec<bool> = vec![false; n];
 
         fn dfs(curr: usize, parent: usize, graph: &HashMap<usize, Vec<usize>>, visited: &mut Vec<bool>) -> i64 {

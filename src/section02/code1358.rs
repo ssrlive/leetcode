@@ -39,7 +39,7 @@ struct Solution;
 impl Solution {
     pub fn number_of_substrings(s: String) -> i32 {
         let mut res = 0;
-        let mut count = vec![0; 3];
+        let mut count = [0; 3];
         let (mut left, mut right) = (0, 0);
         let s = s.as_bytes();
         while right < s.len() {

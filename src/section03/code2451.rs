@@ -67,11 +67,11 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words = vec!["adc", "wzy", "abc"];
+    let words = ["adc", "wzy", "abc"];
     let words = words.iter().map(|s| s.to_string()).collect();
     assert_eq!(Solution::odd_string(words), "abc".to_string());
 
-    let words = vec!["aaa", "bob", "ccc", "ddd"];
+    let words = ["aaa", "bob", "ccc", "ddd"];
     let words = words.iter().map(|s| s.to_string()).collect();
     assert_eq!(Solution::odd_string(words), "bob".to_string());
 }

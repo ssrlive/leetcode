@@ -47,7 +47,7 @@ struct Solution;
 
 impl Solution {
     pub fn repeat_limited_string(s: String, repeat_limit: i32) -> String {
-        let mut memo = vec![0; 26];
+        let mut memo = [0; 26];
         for c in s.chars() {
             memo[(c as u8 - b'a') as usize] += 1;
         }

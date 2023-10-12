@@ -35,7 +35,7 @@ struct Solution;
 
 impl Solution {
     pub fn count_largest_group(n: i32) -> i32 {
-        let mut count = vec![0; 37];
+        let mut count = [0; 37];
         for i in 1..=n {
             let mut sum = 0;
             let mut num = i;

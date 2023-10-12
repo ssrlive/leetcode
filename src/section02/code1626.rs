@@ -44,7 +44,7 @@ struct Solution;
 
 impl Solution {
     pub fn best_team_score(scores: Vec<i32>, ages: Vec<i32>) -> i32 {
-        let mut players = scores.into_iter().zip(ages.into_iter()).map(|(s, a)| (a, s)).collect::<Vec<_>>();
+        let mut players = scores.into_iter().zip(ages).map(|(s, a)| (a, s)).collect::<Vec<_>>();
         players.sort_unstable();
         let mut dp = vec![0; players.len()];
         let mut ans = 0;

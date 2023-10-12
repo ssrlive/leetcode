@@ -80,7 +80,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let root = TreeNode::from_vec(&vec![
+    let root = TreeNode::from_vec(&[
         Some(6),
         Some(2),
         Some(13),
@@ -101,7 +101,7 @@ fn test() {
     let result = Solution::closest_nodes(root, queries);
     assert_eq!(result, vec![vec![2, 2], vec![4, 6], vec![15, -1]]);
 
-    let root = TreeNode::from_vec(&vec![Some(4), None, Some(9)]);
+    let root = TreeNode::from_vec(&[Some(4), None, Some(9)]);
     let queries = vec![3];
     let result = Solution::closest_nodes(root, queries);
     assert_eq!(result, vec![vec![-1, 4]]);

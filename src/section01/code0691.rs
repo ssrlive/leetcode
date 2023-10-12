@@ -57,7 +57,7 @@ impl Solution {
             return Some(result);
         }
 
-        let mut __m = vec![0; 26];
+        let mut __m = [0; 26];
 
         for x in stickers[i].chars() {
             __m[x as usize - 'a' as usize] += 1;

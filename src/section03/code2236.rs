@@ -50,7 +50,7 @@ impl Solution {
 #[test]
 fn test() {
     let root = TreeNode::from_vec(&[Some(10), Some(4), Some(6)]);
-    assert_eq!(Solution::check_tree(root), true);
+    assert!(Solution::check_tree(root));
     let root = TreeNode::from_vec(&[Some(5), Some(3), Some(1)]);
-    assert_eq!(Solution::check_tree(root), false);
+    assert!(!Solution::check_tree(root));
 }

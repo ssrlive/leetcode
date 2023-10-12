@@ -79,7 +79,6 @@ impl Solution {
             }
         }
 
-        let head_a = head_a;
         change_sign(&head_a);
         let mut head_b = head_b;
         while let Some(node) = head_b {

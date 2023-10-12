@@ -62,14 +62,14 @@ impl Solution {
             ancestors: &mut HashMap<i32, Vec<(i32, i32)>>,
         ) {
             let mut max_level = -1;
-            for &cop in cops.entry(nums[i as usize]).or_insert(vec![]).iter() {
-                let v = ancestors.entry(cop).or_insert(vec![]);
+            for &cop in cops.entry(nums[i as usize]).or_default().iter() {
+                let v = ancestors.entry(cop).or_default();
                 if !v.is_empty() && v.last().unwrap().0 > max_level {
                     max_level = v.last().unwrap().0;
                     res[i as usize] = v.last().unwrap().1;
                 }
             }
-            ancestors.entry(nums[i as usize]).or_insert(vec![]).push((level, i));
+            ancestors.entry(nums[i as usize]).or_default().push((level, i));
             for &child in al[i as usize].iter() {
                 if child != parent {
                     traverse(nums, al, child, i, level + 1, res, cops, ancestors);

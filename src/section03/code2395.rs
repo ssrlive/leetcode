@@ -51,7 +51,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::find_subarrays(vec![4, 2, 4]), true);
-    assert_eq!(Solution::find_subarrays(vec![1, 2, 3, 4, 5]), false);
-    assert_eq!(Solution::find_subarrays(vec![0, 0, 0]), true);
+    assert!(Solution::find_subarrays(vec![4, 2, 4]));
+    assert!(!Solution::find_subarrays(vec![1, 2, 3, 4, 5]));
+    assert!(Solution::find_subarrays(vec![0, 0, 0]));
 }

@@ -117,9 +117,9 @@ impl Solution {
 #[test]
 fn test() {
     let edges = vec![vec![1, 2], vec![2, 3], vec![3, 4], vec![4, 2], vec![1, 4], vec![2, 5]];
-    assert_eq!(Solution::is_possible(5, edges), true);
-    assert_eq!(Solution::is_possible(4, vec![vec![1, 2], vec![3, 4]]), true);
+    assert!(Solution::is_possible(5, edges));
+    assert!(Solution::is_possible(4, vec![vec![1, 2], vec![3, 4]]));
 
     let edges = vec![vec![1, 2], vec![1, 3], vec![1, 4]];
-    assert_eq!(Solution::is_possible(4, edges), false);
+    assert!(!Solution::is_possible(4, edges));
 }

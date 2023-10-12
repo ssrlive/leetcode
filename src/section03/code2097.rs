@@ -63,7 +63,7 @@ impl Solution {
 
         for p in pairs {
             let (u, v) = (p[0], p[1]);
-            graph.entry(u).or_insert(vec![]).push(v);
+            graph.entry(u).or_default().push(v);
             *in_degree.entry(v).or_insert(0) += 1;
             *out_degree.entry(u).or_insert(0) += 1;
         }

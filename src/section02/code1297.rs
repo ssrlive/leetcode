@@ -44,7 +44,7 @@ impl Solution {
         let min = min_size as usize;
         let max = max_size as usize;
         for i in min..=max {
-            let mut memo = vec![0; 26];
+            let mut memo = [0; 26];
             let mut count = 0;
             for &item in s.iter().take(i) {
                 let ci = (item as u8 - b'a') as usize;

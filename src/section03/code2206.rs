@@ -51,6 +51,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::divide_array(vec![3, 2, 3, 2, 2, 2]), true);
-    assert_eq!(Solution::divide_array(vec![1, 2, 3, 4]), false);
+    assert!(Solution::divide_array(vec![3, 2, 3, 2, 2, 2]));
+    assert!(!Solution::divide_array(vec![1, 2, 3, 4]));
 }

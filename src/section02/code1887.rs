@@ -58,10 +58,10 @@ impl Solution {
         }
         let mut result = 0;
         while btreemap.keys().len() > 1 {
-            let (&key, &val1) = btreemap.iter().rev().next().unwrap();
+            let (&key, &val1) = btreemap.iter().next_back().unwrap();
             btreemap.remove(&key);
             result += val1;
-            let (&key, &val2) = btreemap.iter().rev().next().unwrap();
+            let (&key, &val2) = btreemap.iter().next_back().unwrap();
             btreemap.insert(key, val1 + val2);
         }
         result

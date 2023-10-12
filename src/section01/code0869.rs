@@ -27,14 +27,14 @@ struct Solution;
 
 impl Solution {
     pub fn reordered_power_of2(n: i32) -> bool {
-        let mut dict = vec![0; 10];
+        let mut dict = [0; 10];
         for c in n.to_string().chars() {
             dict[(c as u8 - b'0') as usize] += 1;
         }
 
         for i in 0..=30 {
             let v = 2usize.pow(i);
-            let mut memo = vec![0; 10];
+            let mut memo = [0; 10];
             for c in v.to_string().chars() {
                 memo[(c as u8 - b'0') as usize] += 1;
             }

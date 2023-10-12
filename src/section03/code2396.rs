@@ -64,8 +64,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::is_strictly_palindromic(9), false);
-    assert_eq!(Solution::is_strictly_palindromic(4), false);
-    assert_eq!(Solution::is_strictly_palindromic(5), false);
-    assert_eq!(Solution::is_strictly_palindromic(6), false);
+    assert!(!Solution::is_strictly_palindromic(9));
+    assert!(!Solution::is_strictly_palindromic(4));
+    assert!(!Solution::is_strictly_palindromic(5));
+    assert!(!Solution::is_strictly_palindromic(6));
 }

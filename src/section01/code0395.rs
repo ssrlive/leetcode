@@ -34,7 +34,7 @@ impl Solution {
         for i in 1..=26 {
             let mut left = 0;
             let mut right = 0;
-            let mut count = vec![0; 26];
+            let mut count = [0; 26];
             let mut unique = 0;
             let mut no_less_than_k = 0;
             while right < s.len() {

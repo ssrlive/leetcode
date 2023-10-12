@@ -36,7 +36,7 @@ struct Solution;
 
 impl Solution {
     pub fn custom_sort_string(order: String, s: String) -> String {
-        let mut buckets = vec![0; 26];
+        let mut buckets = [0; 26];
         for b in s.bytes() {
             buckets[(b - b'a') as usize] += 1;
         }

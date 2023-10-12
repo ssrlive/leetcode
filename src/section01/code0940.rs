@@ -37,7 +37,7 @@ struct Solution;
 
 impl Solution {
     pub fn distinct_subseq_ii(s: String) -> i32 {
-        let mut end = vec![0; 26];
+        let mut end = [0; 26];
         let mut res = 0;
         const MOD: i32 = 1_000_000_007;
         for c in s.chars() {

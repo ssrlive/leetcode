@@ -88,12 +88,12 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words = vec!["abc", "ab", "bc", "b"];
+    let words = ["abc", "ab", "bc", "b"];
     let words = words.iter().map(|s| s.to_string()).collect();
     let ans = vec![5, 4, 3, 2];
     assert_eq!(Solution::sum_prefix_scores(words), ans);
 
-    let words = vec!["abcd"];
+    let words = ["abcd"];
     let words = words.iter().map(|s| s.to_string()).collect();
     let ans = vec![4];
     assert_eq!(Solution::sum_prefix_scores(words), ans);

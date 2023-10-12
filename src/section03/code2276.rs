@@ -70,12 +70,12 @@ impl CountIntervals {
             return;
         }
         let (a, _) = self.mp.iter().next().unwrap();
-        let (_, b) = self.mp.iter().rev().next().unwrap();
+        let (_, b) = self.mp.iter().next_back().unwrap();
         if a - 1 > right || b + 1 < left {
             self.mp.insert(left, right);
             return;
         }
-        if let Some((&key, &value)) = self.mp.range(..left + 1).rev().next() {
+        if let Some((&key, &value)) = self.mp.range(..left + 1).next_back() {
             if value + 1 >= left {
                 if value > right {
                     self.cnt -= right - left + 1;

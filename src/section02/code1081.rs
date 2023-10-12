@@ -29,12 +29,12 @@ struct Solution;
 impl Solution {
     pub fn smallest_subsequence(s: String) -> String {
         use std::collections::VecDeque;
-        let mut count = vec![0; 26];
+        let mut count = [0; 26];
         for c in s.chars() {
             count[(c as u8 - b'a') as usize] += 1;
         }
 
-        let mut flag = vec![0; 26];
+        let mut flag = [0; 26];
         let mut sk = VecDeque::<char>::new();
 
         for c in s.chars() {

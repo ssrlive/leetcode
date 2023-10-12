@@ -73,7 +73,7 @@ impl ATM {
     }
 
     fn withdraw(&mut self, amount: i32) -> Vec<i32> {
-        let mut banknotes_count = vec![0; 5];
+        let mut banknotes_count = [0; 5];
         let mut amount = amount as i64;
         for (i, &x) in self.banknotes.iter().enumerate().rev() {
             let count = amount / [20, 50, 100, 200, 500][i];

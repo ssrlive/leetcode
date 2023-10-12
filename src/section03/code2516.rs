@@ -41,7 +41,7 @@ impl Solution {
 
         let (mut i, n) = (0, s.len());
         let s = s.chars().collect::<Vec<char>>();
-        let mut count = vec![0; 3];
+        let mut count = [0; 3];
 
         while i < n && (count[0] < k || count[1] < k || count[2] < k) {
             count[(s[i] as u8 - b'a') as usize] += 1;

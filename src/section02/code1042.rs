@@ -55,7 +55,7 @@ impl Solution {
         }
         let mut colors = vec![0; n];
         for i in 0..n {
-            let mut used = vec![false; 5];
+            let mut used = [false; 5];
             for &j in &graph[i] {
                 used[colors[j] as usize] = true;
             }

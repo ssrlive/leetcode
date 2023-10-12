@@ -50,7 +50,7 @@ struct Solution;
 impl Solution {
     pub fn number_of_unique_good_subsequences(binary: String) -> i32 {
         let mod_num = 1_000_000_007;
-        let mut dp = vec![0, 0];
+        let mut dp = [0, 0];
         for c in binary.chars() {
             dp[c as usize - '0' as usize] = (dp[0] + dp[1] + c as usize - '0' as usize) % mod_num;
         }

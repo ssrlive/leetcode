@@ -70,8 +70,8 @@ fn test() {
         vec![3, 18, 23, 14, 9],
         vec![24, 13, 2, 7, 22],
     ];
-    assert_eq!(Solution::check_valid_grid(grid), true);
+    assert!(Solution::check_valid_grid(grid));
 
     let grid = vec![vec![0, 3, 6], vec![5, 8, 1], vec![2, 7, 4]];
-    assert_eq!(Solution::check_valid_grid(grid), false);
+    assert!(!Solution::check_valid_grid(grid));
 }
