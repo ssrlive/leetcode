@@ -573,3 +573,11 @@ cargo test
 | 2671 | [Frequency Tracker](code2671.rs) | [link](https://leetcode.com/problems/frequency-tracker/) | Medium | :heavy_check_mark: |
 | 2672 | [Number of Adjacent Elements With the Same Color](code2672.rs) | [link](https://leetcode.com/problems/number-of-adjacent-elements-with-the-same-color/) | Medium | :heavy_check_mark: |
 | 2673 | [Make Costs of Paths Equal in a Binary Tree](code2673.rs) | [link](https://leetcode.com/problems/make-costs-of-paths-equal-in-a-binary-tree/) | Medium | :heavy_check_mark: |
+| 2678 | [Number of Senior Citizens](code2678.rs) | [link](https://leetcode.com/problems/number-of-senior-citizens/) | Easy | :heavy_check_mark: |
+| 2679 | [Sum in a Matrix](code2679.rs) | [link](https://leetcode.com/problems/sum-in-a-matrix/) | Medium | :heavy_check_mark: |
+| 2680 | [Maximum OR](code2680.rs) | [link](https://leetcode.com/problems/maximum-or/) | Medium | :heavy_check_mark: |
+| 2681 | [Power of Heroes](code2681.rs) | [link](https://leetcode.com/problems/power-of-heroes/) | Hard | :heavy_check_mark: |
+| 2682 | [Find the Losers of the Circular Game](code2682.rs) | [link](https://leetcode.com/problems/find-the-losers-of-the-circular-game/) | Easy | :heavy_check_mark: |
+| 2683 | [Neighboring Bitwise XOR](code2683.rs) | [link](https://leetcode.com/problems/neighboring-bitwise-xor/) | Medium | :heavy_check_mark: |
+| 2684 | [Maximum Number of Moves in a Grid](code2684.rs) | [link](https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/) | Medium | :heavy_check_mark: |
+| 2685 | [Count the Number of Complete Components](code2685.rs) | [link](https://leetcode.com/problems/count-the-number-of-complete-components/) | Medium | :heavy_check_mark: |
