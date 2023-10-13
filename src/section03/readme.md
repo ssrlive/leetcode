@@ -581,3 +581,7 @@ cargo test
 | 2683 | [Neighboring Bitwise XOR](code2683.rs) | [link](https://leetcode.com/problems/neighboring-bitwise-xor/) | Medium | :heavy_check_mark: |
 | 2684 | [Maximum Number of Moves in a Grid](code2684.rs) | [link](https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/) | Medium | :heavy_check_mark: |
 | 2685 | [Count the Number of Complete Components](code2685.rs) | [link](https://leetcode.com/problems/count-the-number-of-complete-components/) | Medium | :heavy_check_mark: |
+| 2696 | [Minimum String Length After Removing Substrings](code2696.rs) | [link](https://leetcode.com/problems/minimum-string-length-after-removing-substrings/) | Easy | :heavy_check_mark: |
+| 2697 | [Lexicographically Smallest Palindrome](code2697.rs) | [link](https://leetcode.com/problems/lexicographically-smallest-palindrome/) | Easy | :heavy_check_mark: |
+| 2698 | [Find the Punishment Number of an Integer](code2698.rs) | [link](https://leetcode.com/problems/find-the-punishment-number-of-an-integer/) | Medium | :heavy_check_mark: |
+| 2699 | [Modify Graph Edge Weights](code2699.rs) | [link](https://leetcode.com/problems/modify-graph-edge-weights/) | Hard | :heavy_check_mark: |
