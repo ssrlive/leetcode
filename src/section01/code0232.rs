@@ -76,5 +76,5 @@ fn test_my_queue() {
     queue.push(2);
     assert_eq!(queue.peek(), 1);
     assert_eq!(queue.pop(), 1);
-    assert_eq!(queue.empty(), false);
+    assert!(!queue.empty());
 }

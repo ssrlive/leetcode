@@ -82,13 +82,13 @@ impl Solution {
 fn test() {
     let head = ListNode::from_vec(&[4, 2, 8]);
     let root = TreeNode::from_string("[1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]");
-    assert_eq!(Solution::is_sub_path(head, root), true);
+    assert!(Solution::is_sub_path(head, root));
 
     let head = ListNode::from_vec(&[1, 4, 2, 6]);
     let root = TreeNode::from_string("[1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]");
-    assert_eq!(Solution::is_sub_path(head, root), true);
+    assert!(Solution::is_sub_path(head, root));
 
     let head = ListNode::from_vec(&[1, 4, 2, 6, 8]);
     let root = TreeNode::from_string("[1,4,4,null,2,2,null,1,null,6,8,null,null,null,null,1,3]");
-    assert_eq!(Solution::is_sub_path(head, root), false);
+    assert!(!Solution::is_sub_path(head, root));
 }

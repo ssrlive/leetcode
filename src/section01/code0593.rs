@@ -66,7 +66,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::valid_square(vec![0, 0], vec![1, 1], vec![1, 0], vec![0, 1]), true);
-    assert_eq!(Solution::valid_square(vec![0, 0], vec![1, 1], vec![1, 0], vec![0, 12]), false);
-    assert_eq!(Solution::valid_square(vec![1, 0], vec![-1, 0], vec![0, 1], vec![0, -1]), true);
+    assert!(Solution::valid_square(vec![0, 0], vec![1, 1], vec![1, 0], vec![0, 1]));
+    assert!(!Solution::valid_square(vec![0, 0], vec![1, 1], vec![1, 0], vec![0, 12]));
+    assert!(Solution::valid_square(vec![1, 0], vec![-1, 0], vec![0, 1], vec![0, -1]));
 }

@@ -100,9 +100,9 @@ impl Solution {
 #[test]
 fn test() {
     let target_grid = vec![vec![1, 1, 1, 1], vec![1, 2, 2, 1], vec![1, 2, 2, 1], vec![1, 1, 1, 1]];
-    assert_eq!(Solution::is_printable(target_grid), true);
+    assert!(Solution::is_printable(target_grid));
     let target_grid = vec![vec![1, 1, 1, 1], vec![1, 1, 3, 3], vec![1, 1, 3, 4], vec![5, 5, 1, 4]];
-    assert_eq!(Solution::is_printable(target_grid), true);
+    assert!(Solution::is_printable(target_grid));
     let target_grid = vec![vec![1, 2, 1], vec![2, 1, 2], vec![1, 2, 1]];
-    assert_eq!(Solution::is_printable(target_grid), false);
+    assert!(!Solution::is_printable(target_grid));
 }

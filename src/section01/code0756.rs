@@ -83,17 +83,17 @@ impl Solution {
 
 #[test]
 fn test() {
-    let allowed = vec!["BCC", "CDE", "CEA", "FFF"];
+    let allowed = ["BCC", "CDE", "CEA", "FFF"];
     let allowed = allowed.iter().map(|s| s.to_string()).collect();
-    assert_eq!(Solution::pyramid_transition("BCD".to_string(), allowed), true);
+    assert!(Solution::pyramid_transition("BCD".to_string(), allowed));
 
-    let allowed = vec!["AAB", "AAC", "BCD", "BBE", "DEF"];
+    let allowed = ["AAB", "AAC", "BCD", "BBE", "DEF"];
     let allowed = allowed.iter().map(|s| s.to_string()).collect();
-    assert_eq!(Solution::pyramid_transition("AAAA".to_string(), allowed), false);
+    assert!(!Solution::pyramid_transition("AAAA".to_string(), allowed));
 
     let allowed = vec![
         "CBB", "ACB", "ABD", "CDB", "BDC", "CBC", "DBA", "DBB", "CAB", "BCB", "BCC", "BAA", "CCD", "BDD", "DDD", "CCA", "CAA", "CCC", "CCB",
     ];
     let allowed = allowed.iter().map(|s| s.to_string()).collect();
-    assert_eq!(Solution::pyramid_transition("CCC".to_string(), allowed), true);
+    assert!(Solution::pyramid_transition("CCC".to_string(), allowed));
 }

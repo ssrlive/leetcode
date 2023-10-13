@@ -48,7 +48,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::square_is_white("a1".to_string()), false);
-    assert_eq!(Solution::square_is_white("h3".to_string()), true);
-    assert_eq!(Solution::square_is_white("c7".to_string()), false);
+    assert!(!Solution::square_is_white("a1".to_string()));
+    assert!(Solution::square_is_white("h3".to_string()));
+    assert!(!Solution::square_is_white("c7".to_string()));
 }

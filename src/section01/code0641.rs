@@ -133,13 +133,13 @@ impl MyCircularDeque {
 #[test]
 fn test() {
     let mut my_circular_deque = MyCircularDeque::new(3);
-    assert_eq!(my_circular_deque.insert_last(1), true);
-    assert_eq!(my_circular_deque.insert_last(2), true);
-    assert_eq!(my_circular_deque.insert_front(3), true);
-    assert_eq!(my_circular_deque.insert_front(4), false);
+    assert!(my_circular_deque.insert_last(1));
+    assert!(my_circular_deque.insert_last(2));
+    assert!(my_circular_deque.insert_front(3));
+    assert!(!my_circular_deque.insert_front(4));
     assert_eq!(my_circular_deque.get_rear(), 2);
-    assert_eq!(my_circular_deque.is_full(), true);
-    assert_eq!(my_circular_deque.delete_last(), true);
-    assert_eq!(my_circular_deque.insert_front(4), true);
+    assert!(my_circular_deque.is_full());
+    assert!(my_circular_deque.delete_last());
+    assert!(my_circular_deque.insert_front(4));
     assert_eq!(my_circular_deque.get_front(), 4);
 }

@@ -63,6 +63,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::asteroids_destroyed(10, vec![3, 9, 19, 5, 21]), true);
-    assert_eq!(Solution::asteroids_destroyed(5, vec![4, 9, 23, 4]), false);
+    assert!(Solution::asteroids_destroyed(10, vec![3, 9, 19, 5, 21]));
+    assert!(!Solution::asteroids_destroyed(5, vec![4, 9, 23, 4]));
 }

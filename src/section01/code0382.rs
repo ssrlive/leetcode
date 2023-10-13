@@ -70,7 +70,7 @@ impl Solution {
 fn test() {
     let head = ListNode::from_vec(&[1, 2, 3]);
     let solution = Solution::new(head);
-    let mut count = vec![0; 3];
+    let mut count = [0; 3];
     for _ in 0..1000 {
         let val = solution.get_random();
         count[val as usize - 1] += 1;

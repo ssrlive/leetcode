@@ -95,14 +95,14 @@ fn test() {
     let root = TreeNode::from_vec(&[Some(1), Some(2), Some(3), Some(4), Some(5), Some(6), Some(7)]);
     let to_delete = vec![3, 5];
     let ret = Solution::del_nodes(root, to_delete);
-    let mut ret = ret.iter().map(|x| TreeNode::to_vec(x)).collect::<Vec<_>>();
+    let mut ret = ret.iter().map(TreeNode::to_vec).collect::<Vec<_>>();
     ret.sort();
     assert_eq!(ret, vec![vec![Some(1), Some(2), None, Some(4)], vec![Some(6)], vec![Some(7)]]);
 
     let root = TreeNode::from_vec(&[Some(1), Some(2), Some(4), None, Some(3)]);
     let to_delete = vec![3];
     let ret = Solution::del_nodes(root, to_delete);
-    let mut ret = ret.iter().map(|x| TreeNode::to_vec(x)).collect::<Vec<_>>();
+    let mut ret = ret.iter().map(TreeNode::to_vec).collect::<Vec<_>>();
     ret.sort();
     assert_eq!(ret, vec![vec![Some(1), Some(2), Some(4)]]);
 }

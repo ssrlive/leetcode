@@ -67,18 +67,18 @@ impl Solution {
 fn test() {
     let cases = vec![
         (
-            ListNode::from_vec(&vec![0, 1, 2, 3, 4, 5]),
+            ListNode::from_vec(&[0, 1, 2, 3, 4, 5]),
             3,
             4,
-            ListNode::from_vec(&vec![1000000, 1000001, 1000002]),
-            ListNode::from_vec(&vec![0, 1, 2, 1000000, 1000001, 1000002, 5]),
+            ListNode::from_vec(&[1000000, 1000001, 1000002]),
+            ListNode::from_vec(&[0, 1, 2, 1000000, 1000001, 1000002, 5]),
         ),
         (
-            ListNode::from_vec(&vec![0, 1, 2, 3, 4, 5, 6]),
+            ListNode::from_vec(&[0, 1, 2, 3, 4, 5, 6]),
             2,
             5,
-            ListNode::from_vec(&vec![1000000, 1000001, 1000002, 1000003, 1000004]),
-            ListNode::from_vec(&vec![0, 1, 1000000, 1000001, 1000002, 1000003, 1000004, 6]),
+            ListNode::from_vec(&[1000000, 1000001, 1000002, 1000003, 1000004]),
+            ListNode::from_vec(&[0, 1, 1000000, 1000001, 1000002, 1000003, 1000004, 6]),
         ),
     ];
     for (list1, a, b, list2, e) in cases {

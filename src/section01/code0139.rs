@@ -33,10 +33,10 @@ impl Solution {
 fn test() {
     let s = "leetcode".to_string();
     let word_dict = vec!["leet".to_string(), "code".to_string()];
-    assert_eq!(Solution::word_break(s, word_dict), true);
+    assert!(Solution::word_break(s, word_dict));
     let s = "applepenapple".to_string();
     let word_dict = vec!["apple".to_string(), "pen".to_string()];
-    assert_eq!(Solution::word_break(s, word_dict), true);
+    assert!(Solution::word_break(s, word_dict));
     let s = "catsandog".to_string();
     let word_dict = vec![
         "cats".to_string(),
@@ -45,5 +45,5 @@ fn test() {
         "and".to_string(),
         "cat".to_string(),
     ];
-    assert_eq!(Solution::word_break(s, word_dict), false);
+    assert!(!Solution::word_break(s, word_dict));
 }

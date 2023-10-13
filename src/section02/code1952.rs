@@ -80,8 +80,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::is_three(2), false);
-    assert_eq!(Solution::is_three(4), true);
-    assert_eq!(Solution::is_three(9), true);
-    assert_eq!(Solution::is_three(27), false);
+    assert!(!Solution::is_three(2));
+    assert!(Solution::is_three(4));
+    assert!(Solution::is_three(9));
+    assert!(!Solution::is_three(27));
 }

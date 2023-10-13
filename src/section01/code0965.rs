@@ -58,7 +58,7 @@ impl Solution {
 #[test]
 fn test() {
     let root = TreeNode::from_vec(&[Some(1), Some(1), Some(1), Some(1), Some(1), None, Some(1)]);
-    assert_eq!(Solution::is_unival_tree(root), true);
+    assert!(Solution::is_unival_tree(root));
     let root = TreeNode::from_vec(&[Some(2), Some(2), Some(2), Some(5), Some(2)]);
-    assert_eq!(Solution::is_unival_tree(root), false);
+    assert!(!Solution::is_unival_tree(root));
 }

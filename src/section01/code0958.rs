@@ -58,8 +58,8 @@ impl Solution {
 #[test]
 fn test() {
     let root = TreeNode::from_vec(&[Some(1), Some(2), Some(3), Some(4), Some(5), Some(6)]);
-    assert_eq!(Solution::is_complete_tree(root), true);
+    assert!(Solution::is_complete_tree(root));
 
     let root = TreeNode::from_vec(&[Some(1), Some(2), Some(3), Some(4), Some(5), None, Some(7)]);
-    assert_eq!(Solution::is_complete_tree(root), false);
+    assert!(!Solution::is_complete_tree(root));
 }

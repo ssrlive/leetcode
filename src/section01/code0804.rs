@@ -69,7 +69,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words = vec!["gin", "zen", "gig", "msg"];
+    let words = ["gin", "zen", "gig", "msg"];
     let words = words.iter().map(|s| s.to_string()).collect();
     assert_eq!(Solution::unique_morse_representations(words), 2);
 

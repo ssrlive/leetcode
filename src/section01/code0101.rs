@@ -86,12 +86,22 @@ impl Solution {
 
 #[test]
 fn test_is_symmetric() {
-    assert_eq!(
-        Solution::is_symmetric_2(TreeNode::from_vec(&[Some(1), Some(2), Some(2), Some(3), Some(4), Some(4), Some(3)])),
-        true
-    );
-    assert_eq!(
-        Solution::is_symmetric_2(TreeNode::from_vec(&[Some(1), Some(2), Some(2), None, Some(3), None, Some(3)])),
-        false
-    );
+    assert!(Solution::is_symmetric_2(TreeNode::from_vec(&[
+        Some(1),
+        Some(2),
+        Some(2),
+        Some(3),
+        Some(4),
+        Some(4),
+        Some(3)
+    ])));
+    assert!(!Solution::is_symmetric_2(TreeNode::from_vec(&[
+        Some(1),
+        Some(2),
+        Some(2),
+        None,
+        Some(3),
+        None,
+        Some(3)
+    ])));
 }

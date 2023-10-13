@@ -68,7 +68,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::is_valid_serialization("9,3,4,#,#,1,#,#,2,#,6,#,#".to_string()), true);
-    assert_eq!(Solution::is_valid_serialization("1,#".to_string()), false);
-    assert_eq!(Solution::is_valid_serialization("9,#,#,1".to_string()), false);
+    assert!(Solution::is_valid_serialization("9,3,4,#,#,1,#,#,2,#,6,#,#".to_string()));
+    assert!(!Solution::is_valid_serialization("1,#".to_string()));
+    assert!(!Solution::is_valid_serialization("9,#,#,1".to_string()));
 }

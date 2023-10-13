@@ -89,14 +89,14 @@ fn test() {
         vec!['a', 'b', 'b', 'a'],
         vec!['a', 'a', 'a', 'a'],
     ];
-    assert_eq!(Solution::contains_cycle(grid), true);
+    assert!(Solution::contains_cycle(grid));
     let grid = vec![
         vec!['c', 'c', 'c', 'a'],
         vec!['c', 'd', 'c', 'c'],
         vec!['c', 'c', 'e', 'c'],
         vec!['f', 'c', 'c', 'c'],
     ];
-    assert_eq!(Solution::contains_cycle(grid), true);
+    assert!(Solution::contains_cycle(grid));
     let grid = vec![vec!['a', 'b', 'b'], vec!['b', 'z', 'b'], vec!['b', 'b', 'a']];
-    assert_eq!(Solution::contains_cycle(grid), false);
+    assert!(!Solution::contains_cycle(grid));
 }

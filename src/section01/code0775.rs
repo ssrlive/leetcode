@@ -63,7 +63,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::is_ideal_permutation(vec![1, 0, 2]), true);
-    assert_eq!(Solution::is_ideal_permutation(vec![1, 2, 0]), false);
-    assert_eq!(Solution::is_ideal_permutation(vec![0]), true);
+    assert!(Solution::is_ideal_permutation(vec![1, 0, 2]));
+    assert!(!Solution::is_ideal_permutation(vec![1, 2, 0]));
+    assert!(Solution::is_ideal_permutation(vec![0]));
 }

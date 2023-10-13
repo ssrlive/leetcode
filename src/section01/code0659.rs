@@ -85,7 +85,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::is_possible(vec![1, 2, 3, 3, 4, 5]), true);
-    assert_eq!(Solution::is_possible(vec![1, 2, 3, 3, 4, 4, 5, 5]), true);
-    assert_eq!(Solution::is_possible(vec![1, 2, 3, 4, 4, 5]), false);
+    assert!(Solution::is_possible(vec![1, 2, 3, 3, 4, 5]));
+    assert!(Solution::is_possible(vec![1, 2, 3, 3, 4, 4, 5, 5]));
+    assert!(!Solution::is_possible(vec![1, 2, 3, 4, 4, 5]));
 }

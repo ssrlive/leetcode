@@ -87,9 +87,9 @@ fn test() {
         Some(9),
         Some(8),
     ]);
-    assert_eq!(Solution::leaf_similar(root1, root2), true);
+    assert!(Solution::leaf_similar(root1, root2));
 
     let root1 = TreeNode::from_vec(&[Some(1), Some(2), Some(3)]);
     let root2 = TreeNode::from_vec(&[Some(1), Some(3), Some(2)]);
-    assert_eq!(Solution::leaf_similar(root1, root2), false);
+    assert!(!Solution::leaf_similar(root1, root2));
 }

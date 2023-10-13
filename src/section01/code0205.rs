@@ -38,8 +38,8 @@ impl Solution {
 
 #[test]
 fn test_is_isomorphic() {
-    assert_eq!(Solution::is_isomorphic("egg".to_string(), "add".to_string()), true);
-    assert_eq!(Solution::is_isomorphic("foo".to_string(), "bar".to_string()), false);
-    assert_eq!(Solution::is_isomorphic("paper".to_string(), "title".to_string()), true);
-    assert_eq!(Solution::is_isomorphic("ab".to_string(), "aa".to_string()), false);
+    assert!(Solution::is_isomorphic("egg".to_string(), "add".to_string()));
+    assert!(!Solution::is_isomorphic("foo".to_string(), "bar".to_string()));
+    assert!(Solution::is_isomorphic("paper".to_string(), "title".to_string()));
+    assert!(!Solution::is_isomorphic("ab".to_string(), "aa".to_string()));
 }

@@ -60,7 +60,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::check_string("aaabbb".to_string()), true);
-    assert_eq!(Solution::check_string("abab".to_string()), false);
-    assert_eq!(Solution::check_string("bbb".to_string()), true);
+    assert!(Solution::check_string("aaabbb".to_string()));
+    assert!(!Solution::check_string("abab".to_string()));
+    assert!(Solution::check_string("bbb".to_string()));
 }

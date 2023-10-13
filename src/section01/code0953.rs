@@ -57,13 +57,13 @@ impl Solution {
 fn test() {
     let words = vec!["hello".to_string(), "leetcode".to_string()];
     let order = "hlabcdefgijkmnopqrstuvwxyz".to_string();
-    assert_eq!(Solution::is_alien_sorted(words, order), true);
+    assert!(Solution::is_alien_sorted(words, order));
 
     let words = vec!["word".to_string(), "world".to_string(), "row".to_string()];
     let order = "worldabcefghijkmnpqstuvxyz".to_string();
-    assert_eq!(Solution::is_alien_sorted(words, order), false);
+    assert!(!Solution::is_alien_sorted(words, order));
 
     let words = vec!["apple".to_string(), "app".to_string()];
     let order = "abcdefghijklmnopqrstuvwxyz".to_string();
-    assert_eq!(Solution::is_alien_sorted(words, order), false);
+    assert!(!Solution::is_alien_sorted(words, order));
 }

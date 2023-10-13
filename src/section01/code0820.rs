@@ -54,7 +54,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words = vec!["time", "me", "bell"];
+    let words = ["time", "me", "bell"];
     let words = words.iter().map(|word| word.to_string()).collect::<Vec<_>>();
     let result = 10;
     assert_eq!(Solution::minimum_length_encoding(words), result);

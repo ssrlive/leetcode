@@ -48,7 +48,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::judge_square_sum(2147483600), true);
-    assert_eq!(Solution::judge_square_sum(5), true);
-    assert_eq!(Solution::judge_square_sum(3), false);
+    assert!(Solution::judge_square_sum(2147483600));
+    assert!(Solution::judge_square_sum(5));
+    assert!(!Solution::judge_square_sum(3));
 }

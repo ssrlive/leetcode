@@ -63,7 +63,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::check_overlap(1, 0, 0, 1, -1, 3, 1), true);
-    assert_eq!(Solution::check_overlap(1, 1, 1, 1, -3, 2, -1), false);
-    assert_eq!(Solution::check_overlap(1, 0, 0, -1, 0, 0, 1), true);
+    assert!(Solution::check_overlap(1, 0, 0, 1, -1, 3, 1));
+    assert!(!Solution::check_overlap(1, 1, 1, 1, -3, 2, -1));
+    assert!(Solution::check_overlap(1, 0, 0, -1, 0, 0, 1));
 }

@@ -135,17 +135,17 @@ fn test() {
     let mut range_module = RangeModule::new();
     range_module.add_range(10, 20);
     range_module.remove_range(14, 16);
-    assert_eq!(range_module.query_range(10, 14), true);
-    assert_eq!(range_module.query_range(13, 15), false);
-    assert_eq!(range_module.query_range(16, 17), true);
+    assert!(range_module.query_range(10, 14));
+    assert!(!range_module.query_range(13, 15));
+    assert!(range_module.query_range(16, 17));
 
     let mut range_module = RangeModule::new();
     range_module.add_range(10, 180);
     range_module.add_range(150, 200);
     range_module.add_range(250, 500);
-    assert_eq!(range_module.query_range(50, 100), true);
-    assert_eq!(range_module.query_range(180, 300), false);
-    assert_eq!(range_module.query_range(600, 1000), false);
+    assert!(range_module.query_range(50, 100));
+    assert!(!range_module.query_range(180, 300));
+    assert!(!range_module.query_range(600, 1000));
     range_module.remove_range(50, 150);
-    assert_eq!(range_module.query_range(50, 100), false);
+    assert!(!range_module.query_range(50, 100));
 }

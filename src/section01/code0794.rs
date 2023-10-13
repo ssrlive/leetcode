@@ -111,15 +111,15 @@ impl Solution {
 
 #[test]
 fn test() {
-    let board = vec!["O  ", "   ", "   "];
+    let board = ["O  ", "   ", "   "];
     let board = board.iter().map(|s| s.to_string()).collect();
-    assert_eq!(Solution::valid_tic_tac_toe(board), false);
+    assert!(!Solution::valid_tic_tac_toe(board));
 
-    let board = vec!["XOX", " X ", "   "];
+    let board = ["XOX", " X ", "   "];
     let board = board.iter().map(|s| s.to_string()).collect();
-    assert_eq!(Solution::valid_tic_tac_toe(board), false);
+    assert!(!Solution::valid_tic_tac_toe(board));
 
-    let board = vec!["XOX", "O O", "XOX"];
+    let board = ["XOX", "O O", "XOX"];
     let board = board.iter().map(|s| s.to_string()).collect();
-    assert_eq!(Solution::valid_tic_tac_toe(board), true);
+    assert!(Solution::valid_tic_tac_toe(board));
 }

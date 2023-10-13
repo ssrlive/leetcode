@@ -33,7 +33,7 @@ impl Solution {
 
 #[test]
 fn test() -> Result<(), Box<dyn std::error::Error>> {
-    let root = TreeNode::from_vec(&vec![Some(1), Some(2), Some(3), Some(4), Some(5), Some(6), Some(7)]);
+    let root = TreeNode::from_vec(&[Some(1), Some(2), Some(3), Some(4), Some(5), Some(6), Some(7)]);
     let root = Solution::connect(root);
 
     println!("{:#?}", root.ok_or("")?.borrow());

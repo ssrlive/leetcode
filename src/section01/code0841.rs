@@ -62,8 +62,8 @@ impl Solution {
 #[test]
 fn test() {
     let rooms = vec![vec![1], vec![2], vec![3], vec![]];
-    assert_eq!(Solution::can_visit_all_rooms(rooms), true);
+    assert!(Solution::can_visit_all_rooms(rooms));
 
     let rooms = vec![vec![1, 3], vec![3, 0, 1], vec![2], vec![0]];
-    assert_eq!(Solution::can_visit_all_rooms(rooms), false);
+    assert!(!Solution::can_visit_all_rooms(rooms));
 }

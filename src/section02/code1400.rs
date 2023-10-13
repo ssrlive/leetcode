@@ -57,7 +57,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::can_construct("annabelle".to_string(), 2), true);
-    assert_eq!(Solution::can_construct("leetcode".to_string(), 3), false);
-    assert_eq!(Solution::can_construct("true".to_string(), 4), true);
+    assert!(Solution::can_construct("annabelle".to_string(), 2));
+    assert!(!Solution::can_construct("leetcode".to_string(), 3));
+    assert!(Solution::can_construct("true".to_string(), 4));
 }

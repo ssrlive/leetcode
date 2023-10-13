@@ -35,25 +35,16 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(
-        Solution::is_same_tree(
-            TreeNode::from_vec(&[Some(1), Some(2), Some(3)]),
-            TreeNode::from_vec(&[Some(1), Some(2), Some(3)])
-        ),
-        true
-    );
-    assert_eq!(
-        Solution::is_same_tree(
-            TreeNode::from_vec(&[Some(1), Some(2)]),
-            TreeNode::from_vec(&[Some(1), None, Some(2)])
-        ),
-        false
-    );
-    assert_eq!(
-        Solution::is_same_tree(
-            TreeNode::from_vec(&[Some(1), Some(2), Some(1)]),
-            TreeNode::from_vec(&[Some(1), Some(1), Some(2)])
-        ),
-        false
-    );
+    assert!(Solution::is_same_tree(
+        TreeNode::from_vec(&[Some(1), Some(2), Some(3)]),
+        TreeNode::from_vec(&[Some(1), Some(2), Some(3)])
+    ));
+    assert!(!Solution::is_same_tree(
+        TreeNode::from_vec(&[Some(1), Some(2)]),
+        TreeNode::from_vec(&[Some(1), None, Some(2)])
+    ));
+    assert!(!Solution::is_same_tree(
+        TreeNode::from_vec(&[Some(1), Some(2), Some(1)]),
+        TreeNode::from_vec(&[Some(1), Some(1), Some(2)])
+    ));
 }

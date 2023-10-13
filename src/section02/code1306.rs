@@ -64,7 +64,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::can_reach(vec![4, 2, 3, 0, 3, 1, 2], 5), true);
-    assert_eq!(Solution::can_reach(vec![4, 2, 3, 0, 3, 1, 2], 0), true);
-    assert_eq!(Solution::can_reach(vec![3, 0, 2, 1, 2], 2), false);
+    assert!(Solution::can_reach(vec![4, 2, 3, 0, 3, 1, 2], 5));
+    assert!(Solution::can_reach(vec![4, 2, 3, 0, 3, 1, 2], 0));
+    assert!(!Solution::can_reach(vec![3, 0, 2, 1, 2], 2));
 }

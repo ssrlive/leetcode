@@ -78,22 +78,23 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(
-        Solution::is_rectangle_cover(vec![
-            vec![1, 1, 3, 3],
-            vec![3, 1, 4, 2],
-            vec![3, 2, 4, 4],
-            vec![1, 3, 2, 4],
-            vec![2, 3, 3, 4]
-        ]),
-        true
-    );
-    assert_eq!(
-        Solution::is_rectangle_cover(vec![vec![1, 1, 2, 3], vec![1, 3, 2, 4], vec![3, 1, 4, 2], vec![3, 2, 4, 4]]),
-        false
-    );
-    assert_eq!(
-        Solution::is_rectangle_cover(vec![vec![1, 1, 3, 3], vec![3, 1, 4, 2], vec![1, 3, 2, 4], vec![2, 2, 4, 4]]),
-        false
-    );
+    assert!(Solution::is_rectangle_cover(vec![
+        vec![1, 1, 3, 3],
+        vec![3, 1, 4, 2],
+        vec![3, 2, 4, 4],
+        vec![1, 3, 2, 4],
+        vec![2, 3, 3, 4]
+    ]));
+    assert!(!Solution::is_rectangle_cover(vec![
+        vec![1, 1, 2, 3],
+        vec![1, 3, 2, 4],
+        vec![3, 1, 4, 2],
+        vec![3, 2, 4, 4]
+    ]));
+    assert!(!Solution::is_rectangle_cover(vec![
+        vec![1, 1, 3, 3],
+        vec![3, 1, 4, 2],
+        vec![1, 3, 2, 4],
+        vec![2, 2, 4, 4]
+    ]));
 }

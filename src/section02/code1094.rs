@@ -62,9 +62,9 @@ impl Solution {
 fn test() {
     let trips = vec![vec![2, 1, 5], vec![3, 3, 7]];
     let capacity = 4;
-    assert_eq!(Solution::car_pooling(trips, capacity), false);
+    assert!(!Solution::car_pooling(trips, capacity));
 
     let trips = vec![vec![2, 1, 5], vec![3, 3, 7]];
     let capacity = 5;
-    assert_eq!(Solution::car_pooling(trips, capacity), true);
+    assert!(Solution::car_pooling(trips, capacity));
 }

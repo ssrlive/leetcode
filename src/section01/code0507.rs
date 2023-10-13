@@ -51,6 +51,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::check_perfect_number(28), true);
-    assert_eq!(Solution::check_perfect_number(7), false);
+    assert!(Solution::check_perfect_number(28));
+    assert!(!Solution::check_perfect_number(7));
 }

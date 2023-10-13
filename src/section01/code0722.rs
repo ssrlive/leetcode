@@ -121,7 +121,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let source = vec![
+    let source = [
         "/*Test program */",
         "int main()",
         "{ ",
@@ -138,7 +138,7 @@ fn test() {
     let expected = vec!["int main()", "{ ", "  ", "int a, b, c;", "a = b + c;", "}"];
     assert_eq!(Solution::remove_comments(source), expected);
 
-    let source = vec!["a/*comment", "line", "more_comment*/b"];
+    let source = ["a/*comment", "line", "more_comment*/b"];
     let source = source.iter().map(|s| s.to_string()).collect();
     let expected = vec!["ab"];
     assert_eq!(Solution::remove_comments(source), expected);

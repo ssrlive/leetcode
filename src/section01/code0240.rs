@@ -59,6 +59,6 @@ fn test() {
         vec![18, 21, 23, 26, 30],
     ];
 
-    assert_eq!(Solution::search_matrix(matrix.clone(), 5), true);
-    assert_eq!(Solution::search_matrix(matrix, 20), false);
+    assert!(Solution::search_matrix(matrix.clone(), 5));
+    assert!(!Solution::search_matrix(matrix, 20));
 }

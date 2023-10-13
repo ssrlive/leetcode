@@ -62,7 +62,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::check_inclusion("ab".to_string(), "a".to_string()), false);
-    assert_eq!(Solution::check_inclusion("ab".to_string(), "eidbaooo".to_string()), true);
-    assert_eq!(Solution::check_inclusion("ab".to_string(), "eidboaoo".to_string()), false);
+    assert!(!Solution::check_inclusion("ab".to_string(), "a".to_string()));
+    assert!(Solution::check_inclusion("ab".to_string(), "eidbaooo".to_string()));
+    assert!(!Solution::check_inclusion("ab".to_string(), "eidboaoo".to_string()));
 }

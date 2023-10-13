@@ -78,12 +78,12 @@ impl Solution {
 
 #[test]
 fn test() {
-    let strs = vec!["cba", "daf", "ghi"].iter().map(|s| s.to_string()).collect();
+    let strs = ["cba", "daf", "ghi"].iter().map(|s| s.to_string()).collect();
     assert_eq!(Solution::min_deletion_size(strs), 1);
 
-    let strs = vec!["a", "b"].iter().map(|s| s.to_string()).collect();
+    let strs = ["a", "b"].iter().map(|s| s.to_string()).collect();
     assert_eq!(Solution::min_deletion_size(strs), 0);
 
-    let strs = vec!["zyx", "wvu", "tsr"].iter().map(|s| s.to_string()).collect();
+    let strs = ["zyx", "wvu", "tsr"].iter().map(|s| s.to_string()).collect();
     assert_eq!(Solution::min_deletion_size(strs), 3);
 }

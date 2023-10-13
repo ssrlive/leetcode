@@ -52,7 +52,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::check_possibility(vec![4, 2, 3]), true);
-    assert_eq!(Solution::check_possibility(vec![4, 2, 1]), false);
-    assert_eq!(Solution::check_possibility(vec![3, 4, 2, 3]), false);
+    assert!(Solution::check_possibility(vec![4, 2, 3]));
+    assert!(!Solution::check_possibility(vec![4, 2, 1]));
+    assert!(!Solution::check_possibility(vec![3, 4, 2, 3]));
 }

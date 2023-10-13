@@ -45,6 +45,6 @@ impl Solution {
 
 #[test]
 fn test_is_happy() {
-    assert_eq!(Solution::is_happy(19), true);
-    assert_eq!(Solution::is_happy(2), false);
+    assert!(Solution::is_happy(19));
+    assert!(!Solution::is_happy(2));
 }

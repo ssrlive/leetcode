@@ -53,7 +53,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::xor_game(vec![1, 1, 2]), false);
-    assert_eq!(Solution::xor_game(vec![0, 1]), true);
-    assert_eq!(Solution::xor_game(vec![1, 2, 3]), true);
+    assert!(!Solution::xor_game(vec![1, 1, 2]));
+    assert!(Solution::xor_game(vec![0, 1]));
+    assert!(Solution::xor_game(vec![1, 2, 3]));
 }

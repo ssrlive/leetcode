@@ -73,11 +73,11 @@ impl Solution {
 #[test]
 fn test() {
     let nums = vec![6, 5, 9, 6, 3, 5, 1, 10, 4, 1, 4, 3, 9, 9, 3, 3];
-    assert_eq!(Solution::can_partition_k_subsets(nums, 9), false);
+    assert!(!Solution::can_partition_k_subsets(nums, 9));
 
-    assert_eq!(Solution::can_partition_k_subsets(vec![4, 3, 2, 3, 5, 2, 1], 4), true);
-    assert_eq!(Solution::can_partition_k_subsets(vec![1, 2, 3, 4], 3), false);
+    assert!(Solution::can_partition_k_subsets(vec![4, 3, 2, 3, 5, 2, 1], 4));
+    assert!(!Solution::can_partition_k_subsets(vec![1, 2, 3, 4], 3));
 
     let nums = vec![1, 2, 3, 4, 5, 6, 7];
-    assert_eq!(Solution::can_partition_k_subsets(nums, 4), true);
+    assert!(Solution::can_partition_k_subsets(nums, 4));
 }

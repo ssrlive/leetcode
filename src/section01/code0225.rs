@@ -85,5 +85,5 @@ fn test() {
     stack.push(2);
     assert_eq!(stack.top(), 2);
     assert_eq!(stack.pop(), 2);
-    assert_eq!(stack.empty(), false);
+    assert!(!stack.empty());
 }

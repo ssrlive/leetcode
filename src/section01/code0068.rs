@@ -134,13 +134,13 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words = vec!["This", "is", "an", "example", "of", "text", "justification."];
+    let words = ["This", "is", "an", "example", "of", "text", "justification."];
     let words = words.iter().map(|s| s.to_string()).collect();
     let max_width = 16;
     let expected = vec!["This    is    an", "example  of text", "justification.  "];
     assert_eq!(Solution::full_justify(words, max_width), expected);
 
-    let words = vec!["What", "must", "be", "acknowledgment", "shall", "be"];
+    let words = ["What", "must", "be", "acknowledgment", "shall", "be"];
     let words = words.iter().map(|s| s.to_string()).collect();
     let max_width = 16;
     let expected = vec!["What   must   be", "acknowledgment  ", "shall be        "];

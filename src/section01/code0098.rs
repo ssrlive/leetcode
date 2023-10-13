@@ -42,5 +42,5 @@ impl Solution {
 #[test]
 fn test() {
     let tree = TreeNode::from_vec(&[Some(2), Some(1), Some(3)]);
-    assert_eq!(Solution::is_valid_bst(tree), true);
+    assert!(Solution::is_valid_bst(tree));
 }

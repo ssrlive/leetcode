@@ -99,23 +99,23 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::is_match("aa".to_string(), "a".to_string()), false);
-    assert_eq!(Solution::is_match("aa".to_string(), "*".to_string()), true);
-    assert_eq!(Solution::is_match("cb".to_string(), "?a".to_string()), false);
-    assert_eq!(Solution::is_match("adceb".to_string(), "*a*b".to_string()), true);
-    assert_eq!(Solution::is_match("acdcb".to_string(), "a*c?b".to_string()), false);
-    assert_eq!(Solution::is_match("".to_string(), "*".to_string()), true);
-    assert_eq!(Solution::is_match("".to_string(), "******".to_string()), true);
-    assert_eq!(Solution::is_match("".to_string(), "a".to_string()), false);
-    assert_eq!(Solution::is_match("".to_string(), "a*".to_string()), false);
-    assert_eq!(Solution::is_match("".to_string(), "a**".to_string()), false);
-    assert_eq!(Solution::is_match("".to_string(), "a***".to_string()), false);
-    assert_eq!(Solution::is_match("".to_string(), "a****".to_string()), false);
-    assert_eq!(Solution::is_match("".to_string(), "a*****".to_string()), false);
-    assert_eq!(Solution::is_match("".to_string(), "a******".to_string()), false);
-    assert_eq!(Solution::is_match("".to_string(), "a*******".to_string()), false);
-    assert_eq!(Solution::is_match("".to_string(), "a********".to_string()), false);
-    assert_eq!(Solution::is_match("".to_string(), "a*********".to_string()), false);
-    assert_eq!(Solution::is_match("".to_string(), "a**********".to_string()), false);
-    assert_eq!(Solution::is_match("".to_string(), "a***********".to_string()), false);
+    assert!(!Solution::is_match("aa".to_string(), "a".to_string()));
+    assert!(Solution::is_match("aa".to_string(), "*".to_string()));
+    assert!(!Solution::is_match("cb".to_string(), "?a".to_string()));
+    assert!(Solution::is_match("adceb".to_string(), "*a*b".to_string()));
+    assert!(!Solution::is_match("acdcb".to_string(), "a*c?b".to_string()));
+    assert!(Solution::is_match("".to_string(), "*".to_string()));
+    assert!(Solution::is_match("".to_string(), "******".to_string()));
+    assert!(!Solution::is_match("".to_string(), "a".to_string()));
+    assert!(!Solution::is_match("".to_string(), "a*".to_string()));
+    assert!(!Solution::is_match("".to_string(), "a**".to_string()));
+    assert!(!Solution::is_match("".to_string(), "a***".to_string()));
+    assert!(!Solution::is_match("".to_string(), "a****".to_string()));
+    assert!(!Solution::is_match("".to_string(), "a*****".to_string()));
+    assert!(!Solution::is_match("".to_string(), "a******".to_string()));
+    assert!(!Solution::is_match("".to_string(), "a*******".to_string()));
+    assert!(!Solution::is_match("".to_string(), "a********".to_string()));
+    assert!(!Solution::is_match("".to_string(), "a*********".to_string()));
+    assert!(!Solution::is_match("".to_string(), "a**********".to_string()));
+    assert!(!Solution::is_match("".to_string(), "a***********".to_string()));
 }

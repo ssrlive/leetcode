@@ -80,11 +80,11 @@ impl Solution {
 #[test]
 fn test() {
     let root = TreeNode::from_vec(&[Some(1), Some(2), Some(3), Some(4)]);
-    assert_eq!(Solution::is_cousins(root, 4, 3), false);
+    assert!(!Solution::is_cousins(root, 4, 3));
 
     let root = TreeNode::from_vec(&[Some(1), Some(2), Some(3), None, Some(4), None, Some(5)]);
-    assert_eq!(Solution::is_cousins(root, 5, 4), true);
+    assert!(Solution::is_cousins(root, 5, 4));
 
     let root = TreeNode::from_vec(&[Some(1), Some(2), Some(3), None, Some(4)]);
-    assert_eq!(Solution::is_cousins(root, 2, 3), false);
+    assert!(!Solution::is_cousins(root, 2, 3));
 }

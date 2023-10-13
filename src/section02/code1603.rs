@@ -82,8 +82,8 @@ impl ParkingSystem {
 #[test]
 fn test() {
     let mut parking_system = ParkingSystem::new(1, 1, 0);
-    assert_eq!(parking_system.add_car(1), true);
-    assert_eq!(parking_system.add_car(2), true);
-    assert_eq!(parking_system.add_car(3), false);
-    assert_eq!(parking_system.add_car(1), false);
+    assert!(parking_system.add_car(1));
+    assert!(parking_system.add_car(2));
+    assert!(!parking_system.add_car(3));
+    assert!(!parking_system.add_car(1));
 }

@@ -97,7 +97,7 @@ fn test() {
         vec!['#', 'c', ' '],
     ];
     let word = "abc".to_string();
-    assert_eq!(Solution::place_word_in_crossword(board, word), true);
+    assert!(Solution::place_word_in_crossword(board, word));
 
     #[rustfmt::skip]
     let board = vec![
@@ -106,7 +106,7 @@ fn test() {
         vec![' ', '#', 'a'],
     ];
     let word = "ac".to_string();
-    assert_eq!(Solution::place_word_in_crossword(board, word), false);
+    assert!(!Solution::place_word_in_crossword(board, word));
 
     #[rustfmt::skip]
     let board = vec![
@@ -115,5 +115,5 @@ fn test() {
         vec!['#', ' ', 'c'],
     ];
     let word = "ca".to_string();
-    assert_eq!(Solution::place_word_in_crossword(board, word), true);
+    assert!(Solution::place_word_in_crossword(board, word));
 }

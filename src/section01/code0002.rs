@@ -67,15 +67,15 @@ impl Solution {
 #[test]
 fn test() -> Result<(), Box<dyn std::error::Error>> {
     let res = Solution::add_two_numbers(ListNode::from_vec(&[2, 4, 3]), ListNode::from_vec(&[5, 6, 4]));
-    let res = res.ok_or_else(|| "")?.to_vec();
+    let res = res.ok_or("")?.to_vec();
     assert_eq!(res, &[7, 0, 8]);
 
     let res = Solution::add_two_numbers(ListNode::from_vec(&[0]), ListNode::from_vec(&[0]));
-    let res = res.ok_or_else(|| "")?.to_vec();
+    let res = res.ok_or("")?.to_vec();
     assert_eq!(res, &[0]);
 
     let res = Solution::add_two_numbers(ListNode::from_vec(&[9, 9, 9, 9, 9, 9, 9]), ListNode::from_vec(&[9, 9, 9, 9]));
-    let res = res.ok_or_else(|| "")?.to_vec();
+    let res = res.ok_or("")?.to_vec();
     assert_eq!(res, &[8, 9, 9, 9, 0, 0, 0, 1]);
 
     Ok(())

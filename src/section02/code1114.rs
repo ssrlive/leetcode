@@ -96,10 +96,10 @@ impl Foo {
 
 #[test]
 fn test() {
-    let foo = Foo::new();
-    let foo1 = foo.clone();
-    let foo2 = foo.clone();
-    let foo3 = foo.clone();
+    let foo9 = Foo::new();
+    let foo1 = foo9.clone();
+    let foo2 = foo9.clone();
+    let foo3 = foo9.clone();
     let t1 = thread::spawn(move || {
         foo1.first(|| {
             println!("first");

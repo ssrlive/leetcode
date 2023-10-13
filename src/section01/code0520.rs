@@ -62,10 +62,10 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::detect_capital_use("USA".to_string()), true);
-    assert_eq!(Solution::detect_capital_use("FlaG".to_string()), false);
-    assert_eq!(Solution::detect_capital_use("leetcode".to_string()), true);
-    assert_eq!(Solution::detect_capital_use("Google".to_string()), true);
-    assert_eq!(Solution::detect_capital_use("g".to_string()), true);
-    assert_eq!(Solution::detect_capital_use("G".to_string()), true);
+    assert!(Solution::detect_capital_use("USA".to_string()));
+    assert!(!Solution::detect_capital_use("FlaG".to_string()));
+    assert!(Solution::detect_capital_use("leetcode".to_string()));
+    assert!(Solution::detect_capital_use("Google".to_string()));
+    assert!(Solution::detect_capital_use("g".to_string()));
+    assert!(Solution::detect_capital_use("G".to_string()));
 }

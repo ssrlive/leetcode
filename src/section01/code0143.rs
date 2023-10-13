@@ -120,19 +120,19 @@ impl Solution {
 
 #[test]
 fn test_reorder_list() {
-    let mut list = ListNode::from_vec(&vec![1, 2, 3, 4, 5]);
+    let mut list = ListNode::from_vec(&[1, 2, 3, 4, 5]);
     Solution::reorder_list(&mut list);
-    assert_eq!(list, ListNode::from_vec(&vec![1, 5, 2, 4, 3]));
+    assert_eq!(list, ListNode::from_vec(&[1, 5, 2, 4, 3]));
 
-    let mut list = ListNode::from_vec(&vec![1, 2, 3, 4]);
+    let mut list = ListNode::from_vec(&[1, 2, 3, 4]);
     Solution::reorder_list(&mut list);
-    assert_eq!(list, ListNode::from_vec(&vec![1, 4, 2, 3]));
+    assert_eq!(list, ListNode::from_vec(&[1, 4, 2, 3]));
 
-    let mut list = ListNode::from_vec(&vec![1, 2, 3, 4, 5, 6]);
+    let mut list = ListNode::from_vec(&[1, 2, 3, 4, 5, 6]);
     Solution::reorder_list(&mut list);
-    assert_eq!(list, ListNode::from_vec(&vec![1, 6, 2, 5, 3, 4]));
+    assert_eq!(list, ListNode::from_vec(&[1, 6, 2, 5, 3, 4]));
 
-    let mut list = ListNode::from_vec(&vec![1, 2, 3, 4, 5, 6, 7]);
+    let mut list = ListNode::from_vec(&[1, 2, 3, 4, 5, 6, 7]);
     Solution::reorder_list(&mut list);
-    assert_eq!(list, ListNode::from_vec(&vec![1, 7, 2, 6, 3, 5, 4]));
+    assert_eq!(list, ListNode::from_vec(&[1, 7, 2, 6, 3, 5, 4]));
 }

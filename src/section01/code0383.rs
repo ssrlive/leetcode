@@ -49,7 +49,7 @@ impl Solution {
 
 #[test]
 fn test_can_construct() {
-    assert_eq!(Solution::can_construct("a".to_string(), "b".to_string()), false);
-    assert_eq!(Solution::can_construct("aa".to_string(), "ab".to_string()), false);
-    assert_eq!(Solution::can_construct("aa".to_string(), "aab".to_string()), true);
+    assert!(!Solution::can_construct("a".to_string(), "b".to_string()));
+    assert!(!Solution::can_construct("aa".to_string(), "ab".to_string()));
+    assert!(Solution::can_construct("aa".to_string(), "aab".to_string()));
 }

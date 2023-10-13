@@ -51,13 +51,13 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words = vec!["abc", "deq", "mee", "aqq", "dkd", "ccc"];
+    let words = ["abc", "deq", "mee", "aqq", "dkd", "ccc"];
     let words: Vec<String> = words.iter().map(|s| s.to_string()).collect();
     let pattern = "abb".to_string();
     let result = vec!["mee", "aqq"];
     assert_eq!(Solution::find_and_replace_pattern(words, pattern), result);
 
-    let words = vec!["a", "b", "c"];
+    let words = ["a", "b", "c"];
     let words: Vec<String> = words.iter().map(|s| s.to_string()).collect();
     let pattern = "a".to_string();
     let result = vec!["a", "b", "c"];

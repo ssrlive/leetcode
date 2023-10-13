@@ -81,8 +81,8 @@ impl MagicDictionary {
 fn test() {
     let mut magic_dictionary = MagicDictionary::new();
     magic_dictionary.build_dict(vec!["hello".to_string(), "leetcode".to_string()]);
-    assert_eq!(magic_dictionary.search("hello".to_string()), false);
-    assert_eq!(magic_dictionary.search("hhllo".to_string()), true);
-    assert_eq!(magic_dictionary.search("hell".to_string()), false);
-    assert_eq!(magic_dictionary.search("leetcoded".to_string()), false);
+    assert!(!magic_dictionary.search("hello".to_string()));
+    assert!(magic_dictionary.search("hhllo".to_string()));
+    assert!(!magic_dictionary.search("hell".to_string()));
+    assert!(!magic_dictionary.search("leetcoded".to_string()));
 }

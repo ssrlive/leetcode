@@ -47,8 +47,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::k_length_apart(vec![1, 0, 0, 0, 1, 0, 0, 1], 2), true);
-    assert_eq!(Solution::k_length_apart(vec![1, 0, 0, 1, 0, 1], 2), false);
-    assert_eq!(Solution::k_length_apart(vec![1, 1, 1, 1, 1], 0), true);
-    assert_eq!(Solution::k_length_apart(vec![0, 1, 0, 1], 1), true);
+    assert!(Solution::k_length_apart(vec![1, 0, 0, 0, 1, 0, 0, 1], 2));
+    assert!(!Solution::k_length_apart(vec![1, 0, 0, 1, 0, 1], 2));
+    assert!(Solution::k_length_apart(vec![1, 1, 1, 1, 1], 0));
+    assert!(Solution::k_length_apart(vec![0, 1, 0, 1], 1));
 }

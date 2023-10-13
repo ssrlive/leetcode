@@ -144,10 +144,10 @@ impl LockingTree {
 #[test]
 fn test() {
     let mut tree = LockingTree::new(vec![-1, 0, 0, 1, 1, 2, 2]);
-    assert_eq!(tree.lock(2, 2), true);
-    assert_eq!(tree.unlock(2, 3), false);
-    assert_eq!(tree.unlock(2, 2), true);
-    assert_eq!(tree.lock(4, 5), true);
-    assert_eq!(tree.upgrade(0, 1), true);
-    assert_eq!(tree.lock(0, 1), false);
+    assert!(tree.lock(2, 2));
+    assert!(!tree.unlock(2, 3));
+    assert!(tree.unlock(2, 2));
+    assert!(tree.lock(4, 5));
+    assert!(tree.upgrade(0, 1));
+    assert!(!tree.lock(0, 1));
 }

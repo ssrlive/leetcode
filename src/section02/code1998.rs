@@ -126,8 +126,8 @@ impl UnionFind {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::gcd_sort(vec![7, 21, 3]), true);
-    assert_eq!(Solution::gcd_sort(vec![5, 2, 6, 2]), false);
-    assert_eq!(Solution::gcd_sort(vec![10, 5, 9, 3, 15]), true);
-    assert_eq!(Solution::gcd_sort(vec![2, 5, 6, 10, 15]), true);
+    assert!(Solution::gcd_sort(vec![7, 21, 3]));
+    assert!(!Solution::gcd_sort(vec![5, 2, 6, 2]));
+    assert!(Solution::gcd_sort(vec![10, 5, 9, 3, 15]));
+    assert!(Solution::gcd_sort(vec![2, 5, 6, 10, 15]));
 }

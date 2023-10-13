@@ -53,12 +53,12 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words = vec!["w", "wo", "wor", "worl", "world"];
+    let words = ["w", "wo", "wor", "worl", "world"];
     let words = words.iter().map(|s| s.to_string()).collect();
     let ans = "world".to_string();
     assert_eq!(Solution::longest_word(words), ans);
 
-    let words = vec!["a", "banana", "app", "appl", "ap", "apply", "apple"];
+    let words = ["a", "banana", "app", "appl", "ap", "apply", "apple"];
     let words = words.iter().map(|s| s.to_string()).collect();
     let ans = "apple".to_string();
     assert_eq!(Solution::longest_word(words), ans);

@@ -70,6 +70,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::is_n_straight_hand(vec![1, 2, 3, 6, 2, 3, 4, 7, 8], 3), true);
-    assert_eq!(Solution::is_n_straight_hand(vec![1, 2, 3, 4, 5], 4), false);
+    assert!(Solution::is_n_straight_hand(vec![1, 2, 3, 6, 2, 3, 4, 7, 8], 3));
+    assert!(!Solution::is_n_straight_hand(vec![1, 2, 3, 4, 5], 4));
 }

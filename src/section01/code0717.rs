@@ -46,6 +46,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::is_one_bit_character(vec![1, 0, 0]), true);
-    assert_eq!(Solution::is_one_bit_character(vec![1, 1, 1, 0]), false);
+    assert!(Solution::is_one_bit_character(vec![1, 0, 0]));
+    assert!(!Solution::is_one_bit_character(vec![1, 1, 1, 0]));
 }

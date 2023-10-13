@@ -61,6 +61,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::check_partitioning("abcbdd".to_string()), true);
-    assert_eq!(Solution::check_partitioning("bcbddxy".to_string()), false);
+    assert!(Solution::check_partitioning("abcbdd".to_string()));
+    assert!(!Solution::check_partitioning("bcbddxy".to_string()));
 }

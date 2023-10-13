@@ -56,8 +56,8 @@ impl Solution {
 #[test]
 fn test() {
     let arr = vec![10, 2, 5, 3];
-    assert_eq!(Solution::check_if_exist(arr), true);
+    assert!(Solution::check_if_exist(arr));
 
     let arr = vec![3, 1, 7, 11];
-    assert_eq!(Solution::check_if_exist(arr), false);
+    assert!(!Solution::check_if_exist(arr));
 }

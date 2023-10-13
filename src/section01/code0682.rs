@@ -98,15 +98,15 @@ impl Solution {
 
 #[test]
 fn test() {
-    let ops = vec!["5", "2", "C", "D", "+"];
+    let ops = ["5", "2", "C", "D", "+"];
     let ops = ops.iter().map(|s| s.to_string()).collect();
     assert_eq!(Solution::cal_points(ops), 30);
 
-    let ops = vec!["5", "-2", "4", "C", "D", "9", "+", "+"];
+    let ops = ["5", "-2", "4", "C", "D", "9", "+", "+"];
     let ops = ops.iter().map(|s| s.to_string()).collect();
     assert_eq!(Solution::cal_points(ops), 27);
 
-    let ops = vec!["1", "C"];
+    let ops = ["1", "C"];
     let ops = ops.iter().map(|s| s.to_string()).collect();
     assert_eq!(Solution::cal_points(ops), 0);
 }

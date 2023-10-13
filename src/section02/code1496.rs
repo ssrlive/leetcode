@@ -59,6 +59,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::is_path_crossing("NES".to_string()), false);
-    assert_eq!(Solution::is_path_crossing("NESWW".to_string()), true);
+    assert!(!Solution::is_path_crossing("NES".to_string()));
+    assert!(Solution::is_path_crossing("NESWW".to_string()));
 }

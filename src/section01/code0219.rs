@@ -44,7 +44,7 @@ impl Solution {
 
 #[test]
 fn test_contains_nearby_duplicate() {
-    assert_eq!(Solution::contains_nearby_duplicate(vec![1, 2, 3, 1], 3), true);
-    assert_eq!(Solution::contains_nearby_duplicate(vec![1, 0, 1, 1], 1), true);
-    assert_eq!(Solution::contains_nearby_duplicate(vec![1, 2, 3, 1, 2, 3], 2), false);
+    assert!(Solution::contains_nearby_duplicate(vec![1, 2, 3, 1], 3));
+    assert!(Solution::contains_nearby_duplicate(vec![1, 0, 1, 1], 1));
+    assert!(!Solution::contains_nearby_duplicate(vec![1, 2, 3, 1, 2, 3], 2));
 }

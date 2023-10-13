@@ -68,10 +68,10 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::lemonade_change(vec![5, 5, 5, 10, 20]), true);
-    assert_eq!(Solution::lemonade_change(vec![5, 5, 10, 10, 20]), false);
-    assert_eq!(Solution::lemonade_change(vec![5, 5, 10]), true);
-    assert_eq!(Solution::lemonade_change(vec![10, 10]), false);
-    assert_eq!(Solution::lemonade_change(vec![5, 5, 10, 10, 20]), false);
-    assert_eq!(Solution::lemonade_change(vec![5, 5, 5, 5, 20, 20, 5, 5, 20, 5]), false);
+    assert!(Solution::lemonade_change(vec![5, 5, 5, 10, 20]));
+    assert!(!Solution::lemonade_change(vec![5, 5, 10, 10, 20]));
+    assert!(Solution::lemonade_change(vec![5, 5, 10]));
+    assert!(!Solution::lemonade_change(vec![10, 10]));
+    assert!(!Solution::lemonade_change(vec![5, 5, 10, 10, 20]));
+    assert!(!Solution::lemonade_change(vec![5, 5, 5, 5, 20, 20, 5, 5, 20, 5]));
 }

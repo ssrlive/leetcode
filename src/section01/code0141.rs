@@ -74,7 +74,7 @@ fn test_has_cycle() {
         let head = Node::from_vec(vec![3, 2, 0, -4]);
         let tail = head.as_ref()?.borrow().get_tail();
         tail?.borrow_mut().next = head.clone();
-        assert_eq!(Solution::has_cycle(head), true);
+        assert!(Solution::has_cycle(head));
         Some(())
     }
     assert!(test().is_some());

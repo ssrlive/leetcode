@@ -47,6 +47,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::can_partition(vec![1, 5, 11, 5]), true);
-    assert_eq!(Solution::can_partition(vec![1, 2, 3, 5]), false);
+    assert!(Solution::can_partition(vec![1, 5, 11, 5]));
+    assert!(!Solution::can_partition(vec![1, 2, 3, 5]));
 }

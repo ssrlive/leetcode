@@ -50,7 +50,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::has_alternating_bits(5), true);
-    assert_eq!(Solution::has_alternating_bits(7), false);
-    assert_eq!(Solution::has_alternating_bits(11), false);
+    assert!(Solution::has_alternating_bits(5));
+    assert!(!Solution::has_alternating_bits(7));
+    assert!(!Solution::has_alternating_bits(11));
 }

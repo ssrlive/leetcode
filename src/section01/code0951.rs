@@ -93,13 +93,13 @@ fn test() {
         Some(8),
         Some(7),
     ]);
-    assert_eq!(Solution::flip_equiv(root1, root2), true);
+    assert!(Solution::flip_equiv(root1, root2));
 
     let root1 = TreeNode::from_vec(&[]);
     let root2 = TreeNode::from_vec(&[]);
-    assert_eq!(Solution::flip_equiv(root1, root2), true);
+    assert!(Solution::flip_equiv(root1, root2));
 
     let root1 = TreeNode::from_vec(&[]);
     let root2 = TreeNode::from_vec(&[Some(1)]);
-    assert_eq!(Solution::flip_equiv(root1, root2), false);
+    assert!(!Solution::flip_equiv(root1, root2));
 }

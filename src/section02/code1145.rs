@@ -84,8 +84,8 @@ fn test() {
         Some(10),
         Some(11),
     ]);
-    assert_eq!(Solution::btree_game_winning_move(root, 11, 3), true);
+    assert!(Solution::btree_game_winning_move(root, 11, 3));
 
     let root = TreeNode::from_vec(&[Some(1), Some(2), Some(3)]);
-    assert_eq!(Solution::btree_game_winning_move(root, 3, 1), false);
+    assert!(!Solution::btree_game_winning_move(root, 3, 1));
 }

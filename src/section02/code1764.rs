@@ -91,13 +91,13 @@ impl Solution {
 fn test() {
     let groups = vec![vec![1, -1, -1], vec![3, -2, 0]];
     let nums = vec![1, -1, 0, 1, -1, -1, 3, -2, 0];
-    assert_eq!(Solution::can_choose(groups, nums), true);
+    assert!(Solution::can_choose(groups, nums));
 
     let groups = vec![vec![10, -2], vec![1, 2, 3, 4]];
     let nums = vec![1, 2, 3, 4, 10, -2];
-    assert_eq!(Solution::can_choose(groups, nums), false);
+    assert!(!Solution::can_choose(groups, nums));
 
     let groups = vec![vec![1, 2, 3], vec![3, 4]];
     let nums = vec![7, 7, 1, 2, 3, 4, 7, 7];
-    assert_eq!(Solution::can_choose(groups, nums), false);
+    assert!(!Solution::can_choose(groups, nums));
 }

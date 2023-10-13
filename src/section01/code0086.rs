@@ -33,8 +33,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    let head = ListNode::from_vec(&vec![1, 4, 3, 2, 5, 2]);
+    let head = ListNode::from_vec(&[1, 4, 3, 2, 5, 2]);
     let x = 3;
-    let res = ListNode::from_vec(&vec![1, 2, 2, 4, 3, 5]);
+    let res = ListNode::from_vec(&[1, 2, 2, 4, 3, 5]);
     assert_eq!(Solution::partition(head, x), res);
 }

@@ -236,8 +236,9 @@ fn test_find_words() {
         vec!['i', 'h', 'k', 'r'],
         vec!['i', 'f', 'l', 'v'],
     ];
-    let words = vec!["oath", "pea", "eat", "rain"];
+    let words = ["oath", "pea", "eat", "rain"];
     let words = words.iter().map(|s| s.to_string()).collect::<Vec<String>>();
     let mut res = Solution::find_words(board, words);
-    assert_eq!(res.sort(), vec!["oath", "eat",].sort());
+    res.sort();
+    assert_eq!(res, ["eat", "oath"]);
 }

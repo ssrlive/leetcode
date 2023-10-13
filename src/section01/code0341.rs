@@ -102,5 +102,5 @@ fn test() {
     assert_eq!(iter.next(), 2);
     assert_eq!(iter.next(), 1);
     assert_eq!(iter.next(), 1);
-    assert_eq!(iter.has_next(), false);
+    assert!(!iter.has_next());
 }

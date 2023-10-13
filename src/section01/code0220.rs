@@ -67,6 +67,6 @@ impl Solution {
 
 #[test]
 fn test_contains_nearby_almost_duplicate() {
-    assert_eq!(Solution::contains_nearby_almost_duplicate(vec![1, 2, 3, 1], 3, 0), true);
-    assert_eq!(Solution::contains_nearby_almost_duplicate(vec![1, 5, 9, 1, 5, 9], 2, 3), false);
+    assert!(Solution::contains_nearby_almost_duplicate(vec![1, 2, 3, 1], 3, 0));
+    assert!(!Solution::contains_nearby_almost_duplicate(vec![1, 5, 9, 1, 5, 9], 2, 3));
 }

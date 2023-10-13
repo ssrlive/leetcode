@@ -48,7 +48,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let root = TreeNode::from_vec(&vec![
+    let root = TreeNode::from_vec(&[
         Some(5),
         Some(4),
         Some(8),

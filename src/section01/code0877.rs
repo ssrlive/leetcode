@@ -65,6 +65,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::stone_game(vec![5, 3, 4, 5]), true);
-    assert_eq!(Solution::stone_game(vec![3, 7, 2, 3]), true);
+    assert!(Solution::stone_game(vec![5, 3, 4, 5]));
+    assert!(Solution::stone_game(vec![3, 7, 2, 3]));
 }

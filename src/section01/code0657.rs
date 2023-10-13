@@ -58,6 +58,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::judge_circle("UD".to_string()), true);
-    assert_eq!(Solution::judge_circle("LL".to_string()), false);
+    assert!(Solution::judge_circle("UD".to_string()));
+    assert!(!Solution::judge_circle("LL".to_string()));
 }

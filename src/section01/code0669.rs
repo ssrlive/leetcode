@@ -73,7 +73,7 @@ impl Solution {
 #[test]
 fn test() {
     let root = TreeNode::from_vec(&[Some(1), Some(0), Some(2)]);
-    let res = TreeNode::from_vec(&vec![Some(1), None, Some(2)]);
+    let res = TreeNode::from_vec(&[Some(1), None, Some(2)]);
     assert_eq!(Solution::trim_bst(root, 1, 2), res);
 
     let root = TreeNode::from_vec(&[Some(3), Some(0), Some(4), None, Some(2), None, None, Some(1)]);

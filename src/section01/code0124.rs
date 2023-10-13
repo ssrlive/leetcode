@@ -38,9 +38,7 @@ impl Solution {
 
 #[test]
 fn test_max_path_sum() {
-    assert_eq!(Solution::max_path_sum(TreeNode::from_vec(&vec![Some(1), Some(2), Some(3)])), 6);
-    assert_eq!(
-        Solution::max_path_sum(TreeNode::from_vec(&[Some(-10), Some(9), Some(20), None, None, Some(15), Some(7)])),
-        42
-    );
+    assert_eq!(Solution::max_path_sum(TreeNode::from_vec(&[Some(1), Some(2), Some(3)])), 6);
+    let node = TreeNode::from_vec(&[Some(-10), Some(9), Some(20), None, None, Some(15), Some(7)]);
+    assert_eq!(Solution::max_path_sum(node), 42);
 }

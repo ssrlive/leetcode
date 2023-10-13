@@ -87,7 +87,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::winner_of_game("AAABABB".to_string()), true);
-    assert_eq!(Solution::winner_of_game("AA".to_string()), false);
-    assert_eq!(Solution::winner_of_game("ABBBBBBBAAA".to_string()), false);
+    assert!(Solution::winner_of_game("AAABABB".to_string()));
+    assert!(!Solution::winner_of_game("AA".to_string()));
+    assert!(!Solution::winner_of_game("ABBBBBBBAAA".to_string()));
 }

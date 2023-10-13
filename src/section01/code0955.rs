@@ -75,15 +75,15 @@ impl Solution {
 
 #[test]
 fn test() {
-    let strs = vec!["ca", "bb", "ac"];
+    let strs = ["ca", "bb", "ac"];
     let res = Solution::min_deletion_size(strs.iter().map(|s| s.to_string()).collect());
     assert_eq!(res, 1);
 
-    let strs = vec!["xc", "yb", "za"];
+    let strs = ["xc", "yb", "za"];
     let res = Solution::min_deletion_size(strs.iter().map(|s| s.to_string()).collect());
     assert_eq!(res, 0);
 
-    let strs = vec!["zyx", "wvu", "tsr"];
+    let strs = ["zyx", "wvu", "tsr"];
     let res = Solution::min_deletion_size(strs.iter().map(|s| s.to_string()).collect());
     assert_eq!(res, 3);
 }

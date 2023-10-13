@@ -91,7 +91,7 @@ fn test() {
     ];
     let start = vec![0, 4];
     let destination = vec![4, 4];
-    assert_eq!(Solution::has_path(maze, start, destination), true);
+    assert!(Solution::has_path(maze, start, destination));
 
     let maze = vec![
         vec![0, 0, 1, 0, 0],
@@ -102,5 +102,5 @@ fn test() {
     ];
     let start = vec![0, 4];
     let destination = vec![3, 2];
-    assert_eq!(Solution::has_path(maze, start, destination), false);
+    assert!(!Solution::has_path(maze, start, destination));
 }

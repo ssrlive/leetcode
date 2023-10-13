@@ -51,13 +51,13 @@ impl Solution {
 #[test]
 fn test() {
     let s = "abpcplea".to_string();
-    let dictionary = vec!["ale", "apple", "monkey", "plea"];
+    let dictionary = ["ale", "apple", "monkey", "plea"];
     let dictionary = dictionary.iter().map(|s| s.to_string()).collect();
     let res = "apple".to_string();
     assert_eq!(Solution::find_longest_word(s, dictionary), res);
 
     let s = "abpcplea".to_string();
-    let dictionary = vec!["a", "b", "c"];
+    let dictionary = ["a", "b", "c"];
     let dictionary = dictionary.iter().map(|s| s.to_string()).collect();
     let res = "a".to_string();
     assert_eq!(Solution::find_longest_word(s, dictionary), res);

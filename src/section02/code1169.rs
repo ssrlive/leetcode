@@ -112,17 +112,17 @@ impl Solution {
 
 #[test]
 fn test() {
-    let transactions = vec!["alice,20,800,mtv", "alice,50,100,beijing"];
+    let transactions = ["alice,20,800,mtv", "alice,50,100,beijing"];
     let transactions = transactions.iter().map(|s| s.to_string()).collect();
     let res = vec!["alice,20,800,mtv", "alice,50,100,beijing"];
     assert_eq!(Solution::invalid_transactions(transactions), res);
 
-    let transactions = vec!["alice,20,800,mtv", "alice,50,1200,mtv"];
+    let transactions = ["alice,20,800,mtv", "alice,50,1200,mtv"];
     let transactions = transactions.iter().map(|s| s.to_string()).collect();
     let res = vec!["alice,50,1200,mtv"];
     assert_eq!(Solution::invalid_transactions(transactions), res);
 
-    let transactions = vec!["alice,20,800,mtv", "bob,50,1200,mtv"];
+    let transactions = ["alice,20,800,mtv", "bob,50,1200,mtv"];
     let transactions = transactions.iter().map(|s| s.to_string()).collect();
     let res = vec!["bob,50,1200,mtv"];
     assert_eq!(Solution::invalid_transactions(transactions), res);

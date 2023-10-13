@@ -47,6 +47,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::is_subsequence("abc".to_string(), "ahbgdc".to_string()), true);
-    assert_eq!(Solution::is_subsequence("axc".to_string(), "ahbgdc".to_string()), false);
+    assert!(Solution::is_subsequence("abc".to_string(), "ahbgdc".to_string()));
+    assert!(!Solution::is_subsequence("axc".to_string(), "ahbgdc".to_string()));
 }

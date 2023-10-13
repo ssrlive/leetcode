@@ -62,10 +62,10 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::winner_square_game(1), true);
-    assert_eq!(Solution::winner_square_game(2), false);
-    assert_eq!(Solution::winner_square_game(4), true);
-    assert_eq!(Solution::winner_square_game(7), false);
-    assert_eq!(Solution::winner_square_game(17), false);
-    assert_eq!(Solution::winner_square_game(100000), true);
+    assert!(Solution::winner_square_game(1));
+    assert!(!Solution::winner_square_game(2));
+    assert!(Solution::winner_square_game(4));
+    assert!(!Solution::winner_square_game(7));
+    assert!(!Solution::winner_square_game(17));
+    assert!(Solution::winner_square_game(100000));
 }

@@ -38,7 +38,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let mut root = TreeNode::from_vec(&vec![Some(1), Some(2), Some(5), Some(3), Some(4), None, Some(6)]);
+    let mut root = TreeNode::from_vec(&[Some(1), Some(2), Some(5), Some(3), Some(4), None, Some(6)]);
     Solution::flatten(&mut root);
     let mut v = vec![];
     while let Some(node) = root {

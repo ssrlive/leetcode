@@ -128,11 +128,11 @@ impl Solution {
 #[test]
 fn test() {
     let nums = vec![1, 2, 3, 4, 5, 6, 7, 8];
-    assert_eq!(Solution::split_array_same_average(nums), true);
+    assert!(Solution::split_array_same_average(nums));
 
     let nums = vec![3, 1];
-    assert_eq!(Solution::split_array_same_average(nums), false);
+    assert!(!Solution::split_array_same_average(nums));
 
     let nums = vec![18, 10, 5, 3];
-    assert_eq!(Solution::split_array_same_average(nums), false);
+    assert!(!Solution::split_array_same_average(nums));
 }

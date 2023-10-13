@@ -84,9 +84,9 @@ impl CombinationIterator {
 fn test() {
     let mut obj = CombinationIterator::new("abc".to_string(), 2);
     assert_eq!(obj.next(), "ab".to_string());
-    assert_eq!(obj.has_next(), true);
+    assert!(obj.has_next());
     assert_eq!(obj.next(), "ac".to_string());
-    assert_eq!(obj.has_next(), true);
+    assert!(obj.has_next());
     assert_eq!(obj.next(), "bc".to_string());
-    assert_eq!(obj.has_next(), false);
+    assert!(!obj.has_next());
 }

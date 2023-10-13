@@ -96,9 +96,9 @@ impl Solution {
 #[test]
 fn test() {
     let root = TreeNode::from_string("[1,10,4,3,null,7,9,12,8,6,null,null,2]");
-    assert_eq!(Solution::is_even_odd_tree(root), true);
+    assert!(Solution::is_even_odd_tree(root));
     let root = TreeNode::from_string("[5,4,2,3,3,7]");
-    assert_eq!(Solution::is_even_odd_tree(root), false);
+    assert!(!Solution::is_even_odd_tree(root));
     let root = TreeNode::from_string("[5,9,1,3,5,7]");
-    assert_eq!(Solution::is_even_odd_tree(root), false);
+    assert!(!Solution::is_even_odd_tree(root));
 }

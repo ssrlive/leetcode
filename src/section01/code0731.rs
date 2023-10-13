@@ -73,10 +73,10 @@ impl MyCalendarTwo {
 #[test]
 fn test() {
     let mut calendar = MyCalendarTwo::new();
-    assert_eq!(calendar.book(10, 20), true);
-    assert_eq!(calendar.book(50, 60), true);
-    assert_eq!(calendar.book(10, 40), true);
-    assert_eq!(calendar.book(5, 15), false);
-    assert_eq!(calendar.book(5, 10), true);
-    assert_eq!(calendar.book(25, 55), true);
+    assert!(calendar.book(10, 20));
+    assert!(calendar.book(50, 60));
+    assert!(calendar.book(10, 40));
+    assert!(!calendar.book(5, 15));
+    assert!(calendar.book(5, 10));
+    assert!(calendar.book(25, 55));
 }

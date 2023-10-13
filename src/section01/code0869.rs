@@ -56,9 +56,9 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::reordered_power_of2(1), true);
-    assert_eq!(Solution::reordered_power_of2(10), false);
-    assert_eq!(Solution::reordered_power_of2(16), true);
-    assert_eq!(Solution::reordered_power_of2(24), false);
-    assert_eq!(Solution::reordered_power_of2(46), true);
+    assert!(Solution::reordered_power_of2(1));
+    assert!(!Solution::reordered_power_of2(10));
+    assert!(Solution::reordered_power_of2(16));
+    assert!(!Solution::reordered_power_of2(24));
+    assert!(Solution::reordered_power_of2(46));
 }

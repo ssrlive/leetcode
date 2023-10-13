@@ -73,8 +73,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::has_groups_size_x(vec![1, 2, 3, 4, 4, 3, 2, 1]), true);
-    assert_eq!(Solution::has_groups_size_x(vec![1, 1, 1, 2, 2, 2, 3, 3]), false);
-    assert_eq!(Solution::has_groups_size_x(vec![1]), false);
-    assert_eq!(Solution::has_groups_size_x(vec![1, 1]), true);
+    assert!(Solution::has_groups_size_x(vec![1, 2, 3, 4, 4, 3, 2, 1]));
+    assert!(!Solution::has_groups_size_x(vec![1, 1, 1, 2, 2, 2, 3, 3]));
+    assert!(!Solution::has_groups_size_x(vec![1]));
+    assert!(Solution::has_groups_size_x(vec![1, 1]));
 }

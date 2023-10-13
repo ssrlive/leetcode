@@ -42,7 +42,7 @@ impl Solution {
 
 #[test]
 fn test_is_power_of_two() {
-    assert_eq!(Solution::is_power_of_two(1), true);
-    assert_eq!(Solution::is_power_of_two(16), true);
-    assert_eq!(Solution::is_power_of_two(3), false);
+    assert!(Solution::is_power_of_two(1));
+    assert!(Solution::is_power_of_two(16));
+    assert!(!Solution::is_power_of_two(3));
 }

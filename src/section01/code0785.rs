@@ -67,7 +67,7 @@ impl Solution {
 #[test]
 fn test() {
     let graph = vec![vec![1, 2, 3], vec![0, 2], vec![0, 1, 3], vec![0, 2]];
-    assert_eq!(Solution::is_bipartite(graph), false);
+    assert!(!Solution::is_bipartite(graph));
     let graph = vec![vec![1, 3], vec![0, 2], vec![1, 3], vec![0, 2]];
-    assert_eq!(Solution::is_bipartite(graph), true);
+    assert!(Solution::is_bipartite(graph));
 }

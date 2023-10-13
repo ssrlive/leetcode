@@ -52,7 +52,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::repeated_substring_pattern("abab".to_string()), true);
-    assert_eq!(Solution::repeated_substring_pattern("aba".to_string()), false);
-    assert_eq!(Solution::repeated_substring_pattern("abcabcabcabc".to_string()), true);
+    assert!(Solution::repeated_substring_pattern("abab".to_string()));
+    assert!(!Solution::repeated_substring_pattern("aba".to_string()));
+    assert!(Solution::repeated_substring_pattern("abcabcabcabc".to_string()));
 }

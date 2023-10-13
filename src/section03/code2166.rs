@@ -136,10 +136,10 @@ fn test() {
     bs.fix(3);
     bs.fix(1);
     bs.flip();
-    assert_eq!(bs.all(), false);
+    assert!(!bs.all());
     bs.unfix(0);
     bs.flip();
-    assert_eq!(bs.one(), true);
+    assert!(bs.one());
     bs.unfix(0);
     assert_eq!(bs.count(), 2);
     assert_eq!(bs.to_string(), "01010");

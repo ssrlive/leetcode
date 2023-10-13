@@ -72,6 +72,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::rotate_string("abcde".to_string(), "cdeab".to_string()), true);
-    assert_eq!(Solution::rotate_string("abcde".to_string(), "abced".to_string()), false);
+    assert!(Solution::rotate_string("abcde".to_string(), "cdeab".to_string()));
+    assert!(!Solution::rotate_string("abcde".to_string(), "abced".to_string()));
 }

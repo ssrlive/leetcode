@@ -73,5 +73,5 @@ fn test_peeking_iterator() {
     assert_eq!(iter.peek(), Some(&2));
     assert_eq!(iter.next(), Some(2));
     assert_eq!(iter.next(), Some(3));
-    assert_eq!(iter.has_next(), false);
+    assert!(!iter.has_next());
 }

@@ -48,6 +48,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::are_occurrences_equal("abacbc".to_string()), true);
-    assert_eq!(Solution::are_occurrences_equal("aaabb".to_string()), false);
+    assert!(Solution::are_occurrences_equal("abacbc".to_string()));
+    assert!(!Solution::are_occurrences_equal("aaabb".to_string()));
 }

@@ -96,7 +96,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::circular_array_loop(vec![2, -1, 1, 2, 2]), true);
-    assert_eq!(Solution::circular_array_loop(vec![-1, -2, -3, -4, -5, 6]), false);
-    assert_eq!(Solution::circular_array_loop(vec![1, -1, 5, 1, 4]), true);
+    assert!(Solution::circular_array_loop(vec![2, -1, 1, 2, 2]));
+    assert!(!Solution::circular_array_loop(vec![-1, -2, -3, -4, -5, 6]));
+    assert!(Solution::circular_array_loop(vec![1, -1, 5, 1, 4]));
 }

@@ -39,12 +39,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(
-        Solution::right_side_view(TreeNode::from_vec(&vec![Some(1), Some(2), Some(3), None, Some(5), None, Some(4)])),
-        vec![1, 3, 4]
-    );
-    assert_eq!(
-        Solution::right_side_view(TreeNode::from_vec(&[Some(1), Some(2), Some(3), Some(4), Some(5), Some(6), Some(7)])),
-        vec![1, 3, 7]
-    );
+    let node = TreeNode::from_vec(&[Some(1), Some(2), Some(3), None, Some(5), None, Some(4)]);
+    assert_eq!(Solution::right_side_view(node), vec![1, 3, 4]);
+    let node = TreeNode::from_vec(&[Some(1), Some(2), Some(3), Some(4), Some(5), Some(6), Some(7)]);
+    assert_eq!(Solution::right_side_view(node), vec![1, 3, 7]);
 }

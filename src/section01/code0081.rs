@@ -45,6 +45,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::search(vec![2, 5, 6, 0, 0, 1, 2], 0), true);
-    assert_eq!(Solution::search(vec![2, 5, 6, 0, 0, 1, 2], 3), false);
+    assert!(Solution::search(vec![2, 5, 6, 0, 0, 1, 2], 0));
+    assert!(!Solution::search(vec![2, 5, 6, 0, 0, 1, 2], 3));
 }

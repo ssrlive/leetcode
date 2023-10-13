@@ -158,7 +158,7 @@ fn test() {
     let foo_bar = FooBar::new(3);
     let foo_bar1 = foo_bar.clone();
     let foo_bar2 = foo_bar.clone();
-    let foo = thread::spawn(move || {
+    let foo3 = thread::spawn(move || {
         foo_bar1.foo(|| {
             print!("foo");
         });
@@ -168,7 +168,7 @@ fn test() {
             print!("bar");
         });
     });
-    foo.join().unwrap();
+    foo3.join().unwrap();
     bar.join().unwrap();
     println!();
 }

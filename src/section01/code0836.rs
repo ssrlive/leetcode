@@ -50,13 +50,13 @@ impl Solution {
 fn test() {
     let rect1 = vec![0, 0, 2, 2];
     let rect2 = vec![1, 1, 3, 3];
-    assert_eq!(Solution::is_rectangle_overlap(rect1, rect2), true);
+    assert!(Solution::is_rectangle_overlap(rect1, rect2));
 
     let rect1 = vec![0, 0, 1, 1];
     let rect2 = vec![1, 0, 2, 1];
-    assert_eq!(Solution::is_rectangle_overlap(rect1, rect2), false);
+    assert!(!Solution::is_rectangle_overlap(rect1, rect2));
 
     let rect1 = vec![0, 0, 1, 1];
     let rect2 = vec![2, 2, 3, 3];
-    assert_eq!(Solution::is_rectangle_overlap(rect1, rect2), false);
+    assert!(!Solution::is_rectangle_overlap(rect1, rect2));
 }

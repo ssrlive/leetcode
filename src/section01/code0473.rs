@@ -52,14 +52,14 @@ impl Solution {
 #[test]
 fn test_makesquare() {
     let matchsticks = vec![1, 1, 2, 2, 2];
-    assert_eq!(Solution::makesquare(matchsticks), true);
+    assert!(Solution::makesquare(matchsticks));
 
     let matchsticks = vec![3, 3, 3, 3, 4];
-    assert_eq!(Solution::makesquare(matchsticks), false);
+    assert!(!Solution::makesquare(matchsticks));
 
     let matchsticks = vec![8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 60];
-    assert_eq!(Solution::makesquare(matchsticks), false);
+    assert!(!Solution::makesquare(matchsticks));
 
     let matchsticks = vec![13, 11, 1, 8, 6, 7, 8, 8, 6, 7, 8, 9, 8];
-    assert_eq!(Solution::makesquare(matchsticks), true);
+    assert!(Solution::makesquare(matchsticks));
 }

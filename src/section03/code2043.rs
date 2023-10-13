@@ -86,9 +86,9 @@ impl Bank {
 #[test]
 fn test() {
     let mut bank = Bank::new(vec![10, 100, 20, 50, 30]);
-    assert_eq!(bank.withdraw(3, 10), true);
-    assert_eq!(bank.transfer(5, 1, 20), true);
-    assert_eq!(bank.deposit(5, 20), true);
-    assert_eq!(bank.transfer(3, 4, 15), false);
-    assert_eq!(bank.withdraw(10, 50), false);
+    assert!(bank.withdraw(3, 10));
+    assert!(bank.transfer(5, 1, 20));
+    assert!(bank.deposit(5, 20));
+    assert!(!bank.transfer(3, 4, 15));
+    assert!(!bank.withdraw(10, 50));
 }

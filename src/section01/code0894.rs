@@ -61,11 +61,11 @@ impl Solution {
 fn test() {
     let result = Solution::all_possible_fbt(7);
     result.iter().for_each(|r| {
-        println!("{:?}", TreeNode::to_vec(&r));
+        println!("{:?}", TreeNode::to_vec(r));
     });
 
     let result = Solution::all_possible_fbt(3);
     result.iter().for_each(|r| {
-        println!("{:?}", TreeNode::to_vec(&r));
+        println!("{:?}", TreeNode::to_vec(r));
     });
 }

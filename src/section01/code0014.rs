@@ -47,9 +47,9 @@ impl Solution {
 
 #[test]
 fn test() {
-    let strs = vec!["flower", "flow", "flight"].iter().map(|s| s.to_string()).collect();
+    let strs = ["flower", "flow", "flight"].iter().map(|s| s.to_string()).collect();
     assert_eq!(Solution::longest_common_prefix(strs), "fl".to_string());
 
-    let strs = vec!["dog", "racecar", "car"].iter().map(|s| s.to_string()).collect();
+    let strs = ["dog", "racecar", "car"].iter().map(|s| s.to_string()).collect();
     assert_eq!(Solution::longest_common_prefix(strs), "".to_string());
 }

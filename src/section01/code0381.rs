@@ -101,12 +101,12 @@ impl RandomizedCollection {
 #[test]
 fn test() {
     let mut col = RandomizedCollection::new();
-    assert_eq!(col.insert(1), true);
-    assert_eq!(col.insert(1), false);
-    assert_eq!(col.insert(2), true);
+    assert!(col.insert(1));
+    assert!(!col.insert(1));
+    assert!(col.insert(2));
     let v = col.get_random();
     assert!(v == 2 || v == 1);
-    assert_eq!(col.remove(1), true);
+    assert!(col.remove(1));
     let v = col.get_random();
     assert!(v == 2 || v == 1);
 }

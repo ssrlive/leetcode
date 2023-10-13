@@ -46,8 +46,8 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::valid_mountain_array(vec![2, 1]), false);
-    assert_eq!(Solution::valid_mountain_array(vec![3, 5, 5]), false);
-    assert_eq!(Solution::valid_mountain_array(vec![0, 3, 2, 1]), true);
-    assert_eq!(Solution::valid_mountain_array(vec![0, 2, 3, 4, 5, 2, 1, 0]), true);
+    assert!(!Solution::valid_mountain_array(vec![2, 1]));
+    assert!(!Solution::valid_mountain_array(vec![3, 5, 5]));
+    assert!(Solution::valid_mountain_array(vec![0, 3, 2, 1]));
+    assert!(Solution::valid_mountain_array(vec![0, 2, 3, 4, 5, 2, 1, 0]));
 }

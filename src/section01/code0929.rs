@@ -62,7 +62,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let emails = vec![
+    let emails = [
         "test.email+alex@leetcode.com",
         "test.e.mail+bob.cathy@leetcode.com",
         "testemail+david@lee.tcode.com",
@@ -70,7 +70,7 @@ fn test() {
     let emails = emails.iter().map(|s| s.to_string()).collect();
     assert_eq!(Solution::num_unique_emails(emails), 2);
 
-    let emails = vec!["a@leetcode.com", "b@leetcode.com", "c@leetcode.com"];
+    let emails = ["a@leetcode.com", "b@leetcode.com", "c@leetcode.com"];
     let emails = emails.iter().map(|s| s.to_string()).collect();
     assert_eq!(Solution::num_unique_emails(emails), 3);
 }

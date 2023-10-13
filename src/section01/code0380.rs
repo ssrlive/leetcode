@@ -84,12 +84,12 @@ impl RandomizedSet {
 #[test]
 fn test() {
     let mut randomized_set = RandomizedSet::new();
-    assert_eq!(randomized_set.insert(1), true);
-    assert_eq!(randomized_set.remove(2), false);
-    assert_eq!(randomized_set.insert(2), true);
+    assert!(randomized_set.insert(1));
+    assert!(!randomized_set.remove(2));
+    assert!(randomized_set.insert(2));
     let v = randomized_set.get_random();
     assert!(v == 1 || v == 2);
-    assert_eq!(randomized_set.remove(1), true);
-    assert_eq!(randomized_set.insert(2), false);
+    assert!(randomized_set.remove(1));
+    assert!(!randomized_set.insert(2));
     assert_eq!(randomized_set.get_random(), 2);
 }

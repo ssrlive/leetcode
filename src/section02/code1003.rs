@@ -69,7 +69,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::is_valid("aabcbc".to_string()), true);
-    assert_eq!(Solution::is_valid("abcabcababcc".to_string()), true);
-    assert_eq!(Solution::is_valid("abccba".to_string()), false);
+    assert!(Solution::is_valid("aabcbc".to_string()));
+    assert!(Solution::is_valid("abcabcababcc".to_string()));
+    assert!(!Solution::is_valid("abccba".to_string()));
 }

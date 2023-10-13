@@ -47,22 +47,22 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::is_perfect_square(1), true);
-    assert_eq!(Solution::is_perfect_square(2), false);
-    assert_eq!(Solution::is_perfect_square(3), false);
-    assert_eq!(Solution::is_perfect_square(4), true);
-    assert_eq!(Solution::is_perfect_square(5), false);
-    assert_eq!(Solution::is_perfect_square(6), false);
-    assert_eq!(Solution::is_perfect_square(7), false);
-    assert_eq!(Solution::is_perfect_square(8), false);
-    assert_eq!(Solution::is_perfect_square(9), true);
-    assert_eq!(Solution::is_perfect_square(10), false);
-    assert_eq!(Solution::is_perfect_square(11), false);
-    assert_eq!(Solution::is_perfect_square(16), true);
-    assert_eq!(Solution::is_perfect_square(17), false);
-    assert_eq!(Solution::is_perfect_square(25), true);
-    assert_eq!(Solution::is_perfect_square(26), false);
-    assert_eq!(Solution::is_perfect_square(27), false);
-    assert_eq!(Solution::is_perfect_square(28), false);
-    assert_eq!(Solution::is_perfect_square(36), true);
+    assert!(Solution::is_perfect_square(1));
+    assert!(!Solution::is_perfect_square(2));
+    assert!(!Solution::is_perfect_square(3));
+    assert!(Solution::is_perfect_square(4));
+    assert!(!Solution::is_perfect_square(5));
+    assert!(!Solution::is_perfect_square(6));
+    assert!(!Solution::is_perfect_square(7));
+    assert!(!Solution::is_perfect_square(8));
+    assert!(Solution::is_perfect_square(9));
+    assert!(!Solution::is_perfect_square(10));
+    assert!(!Solution::is_perfect_square(11));
+    assert!(Solution::is_perfect_square(16));
+    assert!(!Solution::is_perfect_square(17));
+    assert!(Solution::is_perfect_square(25));
+    assert!(!Solution::is_perfect_square(26));
+    assert!(!Solution::is_perfect_square(27));
+    assert!(!Solution::is_perfect_square(28));
+    assert!(Solution::is_perfect_square(36));
 }

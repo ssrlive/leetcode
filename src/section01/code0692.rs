@@ -61,14 +61,14 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words = vec!["i", "love", "leetcode", "i", "love", "coding"];
+    let words = ["i", "love", "leetcode", "i", "love", "coding"];
     let words = words.iter().map(|s| s.to_string()).collect();
     let k = 2;
     let result = vec!["i", "love"];
     let r = Solution::top_k_frequent(words, k);
     assert_eq!(r, result);
 
-    let words = vec!["the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"];
+    let words = ["the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"];
     let words = words.iter().map(|s| s.to_string()).collect();
     let k = 4;
     let result = vec!["the", "is", "sunny", "day"];

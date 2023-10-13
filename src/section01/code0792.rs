@@ -55,11 +55,11 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words = vec!["a", "bb", "acd", "ace"];
+    let words = ["a", "bb", "acd", "ace"];
     let words = words.iter().map(|&s| s.to_owned()).collect();
     assert_eq!(Solution::num_matching_subseq("abcde".to_owned(), words), 3);
 
-    let words = vec!["ahjpjau", "ja", "ahbwzgqnuk", "tnmlanowax"];
+    let words = ["ahjpjau", "ja", "ahbwzgqnuk", "tnmlanowax"];
     let words = words.iter().map(|&s| s.to_owned()).collect();
     assert_eq!(Solution::num_matching_subseq("dsahjpjauf".to_owned(), words), 2);
 }

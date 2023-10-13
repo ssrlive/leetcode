@@ -115,13 +115,13 @@ impl MyCircularQueue {
 #[test]
 fn test() {
     let mut q = MyCircularQueue::new(3);
-    assert_eq!(q.en_queue(1), true);
-    assert_eq!(q.en_queue(2), true);
-    assert_eq!(q.en_queue(3), true);
-    assert_eq!(q.en_queue(4), false);
+    assert!(q.en_queue(1));
+    assert!(q.en_queue(2));
+    assert!(q.en_queue(3));
+    assert!(!q.en_queue(4));
     assert_eq!(q.rear(), 3);
-    assert_eq!(q.is_full(), true);
-    assert_eq!(q.de_queue(), true);
-    assert_eq!(q.en_queue(4), true);
+    assert!(q.is_full());
+    assert!(q.de_queue());
+    assert!(q.en_queue(4));
     assert_eq!(q.rear(), 4);
 }

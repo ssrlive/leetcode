@@ -75,7 +75,7 @@ fn test_has_path_sum() {
         None,
         Some(1),
     ]);
-    assert_eq!(Solution::has_path_sum(root, 22), true);
+    assert!(Solution::has_path_sum(root, 22));
     let root = TreeNode::from_vec(&[Some(1), Some(2), Some(3)]);
-    assert_eq!(Solution::has_path_sum(root, 5), false);
+    assert!(!Solution::has_path_sum(root, 5));
 }

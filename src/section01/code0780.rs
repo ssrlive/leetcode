@@ -70,24 +70,24 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::reaching_points(1, 1, 3, 5), true);
-    assert_eq!(Solution::reaching_points(1, 1, 2, 2), false);
-    assert_eq!(Solution::reaching_points(1, 1, 1, 1), true);
-    assert_eq!(Solution::reaching_points(1, 1, 1000000000, 1), true);
-    assert_eq!(Solution::reaching_points(1, 1, 1, 1000000000), true);
-    assert_eq!(Solution::reaching_points(1, 1, 1000000000, 1000000000), false);
-    assert_eq!(Solution::reaching_points(9, 5, 12, 8), false);
-    assert_eq!(Solution::reaching_points(9, 10, 9, 19), true);
-    assert_eq!(Solution::reaching_points(35, 13, 455955547, 420098884), false);
-    assert_eq!(Solution::reaching_points(1, 1, 1000000000, 1000000000), false);
-    assert_eq!(Solution::reaching_points(1, 1, 1000000000, 1), true);
-    assert_eq!(Solution::reaching_points(1, 1, 1, 1000000000), true);
-    assert_eq!(Solution::reaching_points(1, 1, 2, 1), true);
-    assert_eq!(Solution::reaching_points(1, 1, 1, 2), true);
-    assert_eq!(Solution::reaching_points(1, 1, 2, 2), false);
-    assert_eq!(Solution::reaching_points(1, 1, 3, 5), true);
-    assert_eq!(Solution::reaching_points(1, 1, 5, 3), true);
-    assert_eq!(Solution::reaching_points(1, 1, 3, 2), true);
-    assert_eq!(Solution::reaching_points(1, 1, 2, 3), true);
-    assert_eq!(Solution::reaching_points(1, 1, 4, 5), true);
+    assert!(Solution::reaching_points(1, 1, 3, 5));
+    assert!(!Solution::reaching_points(1, 1, 2, 2));
+    assert!(Solution::reaching_points(1, 1, 1, 1));
+    assert!(Solution::reaching_points(1, 1, 1000000000, 1));
+    assert!(Solution::reaching_points(1, 1, 1, 1000000000));
+    assert!(!Solution::reaching_points(1, 1, 1000000000, 1000000000));
+    assert!(!Solution::reaching_points(9, 5, 12, 8));
+    assert!(Solution::reaching_points(9, 10, 9, 19));
+    assert!(!Solution::reaching_points(35, 13, 455955547, 420098884));
+    assert!(!Solution::reaching_points(1, 1, 1000000000, 1000000000));
+    assert!(Solution::reaching_points(1, 1, 1000000000, 1));
+    assert!(Solution::reaching_points(1, 1, 1, 1000000000));
+    assert!(Solution::reaching_points(1, 1, 2, 1));
+    assert!(Solution::reaching_points(1, 1, 1, 2));
+    assert!(!Solution::reaching_points(1, 1, 2, 2));
+    assert!(Solution::reaching_points(1, 1, 3, 5));
+    assert!(Solution::reaching_points(1, 1, 5, 3));
+    assert!(Solution::reaching_points(1, 1, 3, 2));
+    assert!(Solution::reaching_points(1, 1, 2, 3));
+    assert!(Solution::reaching_points(1, 1, 4, 5));
 }

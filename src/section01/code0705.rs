@@ -66,10 +66,10 @@ fn test() {
     let mut my_hash_set = MyHashSet::new();
     my_hash_set.add(1);
     my_hash_set.add(2);
-    assert_eq!(my_hash_set.contains(1), true);
-    assert_eq!(my_hash_set.contains(3), false);
+    assert!(my_hash_set.contains(1));
+    assert!(!my_hash_set.contains(3));
     my_hash_set.add(2);
-    assert_eq!(my_hash_set.contains(2), true);
+    assert!(my_hash_set.contains(2));
     my_hash_set.remove(2);
-    assert_eq!(my_hash_set.contains(2), false);
+    assert!(!my_hash_set.contains(2));
 }

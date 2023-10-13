@@ -55,11 +55,11 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::can_measure_water(3, 5, 4), true);
-    assert_eq!(Solution::can_measure_water(2, 6, 5), false);
-    assert_eq!(Solution::can_measure_water(1, 2, 3), true);
-    assert_eq!(Solution::can_measure_water(1, 1, 12), false);
-    assert_eq!(Solution::can_measure_water(2, 6, 5), false);
-    assert_eq!(Solution::can_measure_water(22003, 31237, 1), true);
-    assert_eq!(Solution::can_measure_water(104579, 104593, 12444), true);
+    assert!(Solution::can_measure_water(3, 5, 4));
+    assert!(!Solution::can_measure_water(2, 6, 5));
+    assert!(Solution::can_measure_water(1, 2, 3));
+    assert!(!Solution::can_measure_water(1, 1, 12));
+    assert!(!Solution::can_measure_water(2, 6, 5));
+    assert!(Solution::can_measure_water(22003, 31237, 1));
+    assert!(Solution::can_measure_water(104579, 104593, 12444));
 }

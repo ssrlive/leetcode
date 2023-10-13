@@ -75,7 +75,7 @@ impl Solution {
 #[test]
 fn test() {
     let root = TreeNode::from_vec(&[Some(5), Some(3), Some(6), Some(2), Some(4), None, Some(7)]);
-    assert_eq!(Solution::find_target(root, 9), true);
+    assert!(Solution::find_target(root, 9));
     let root = TreeNode::from_vec(&[Some(5), Some(3), Some(6), Some(2), Some(4), None, Some(7)]);
-    assert_eq!(Solution::find_target(root, 28), false);
+    assert!(!Solution::find_target(root, 28));
 }

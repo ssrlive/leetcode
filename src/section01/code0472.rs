@@ -69,7 +69,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let words = vec![
+    let words = [
         "cat",
         "cats",
         "catsdogcats",
@@ -84,7 +84,7 @@ fn test() {
     output.sort();
     assert_eq!(output, vec!["catsdogcats", "dogcatsdog", "ratcatdogcat"]);
 
-    let words = vec!["cat", "dog", "catdog"];
+    let words = ["cat", "dog", "catdog"];
     let words = words.iter().map(|s| s.to_string()).collect();
     let output = Solution::find_all_concatenated_words_in_a_dict(words);
     assert_eq!(output, vec!["catdog"]);

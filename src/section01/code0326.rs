@@ -51,8 +51,8 @@ impl Solution {
 
 #[test]
 fn test_is_power_of_three() {
-    assert_eq!(Solution::is_power_of_three(27), true);
-    assert_eq!(Solution::is_power_of_three(0), false);
-    assert_eq!(Solution::is_power_of_three(9), true);
-    assert_eq!(Solution::is_power_of_three(45), false);
+    assert!(Solution::is_power_of_three(27));
+    assert!(!Solution::is_power_of_three(0));
+    assert!(Solution::is_power_of_three(9));
+    assert!(!Solution::is_power_of_three(45));
 }

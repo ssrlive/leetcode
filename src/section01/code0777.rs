@@ -81,7 +81,7 @@ impl Solution {
 fn test() {
     let start = "RXXLRXRXL".to_string();
     let end = "XRLXXRRLX".to_string();
-    assert_eq!(Solution::can_transform(start, end), true);
+    assert!(Solution::can_transform(start, end));
 
-    assert_eq!(Solution::can_transform("X".to_string(), "L".to_string()), false);
+    assert!(!Solution::can_transform("X".to_string(), "L".to_string()));
 }

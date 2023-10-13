@@ -70,11 +70,11 @@ impl Solution {
 fn test() {
     let nums = vec![23, 2, 4, 6, 7];
     let k = 6;
-    assert_eq!(Solution::check_subarray_sum(nums, k), true);
+    assert!(Solution::check_subarray_sum(nums, k));
     let nums = vec![23, 2, 6, 4, 7];
     let k = 6;
-    assert_eq!(Solution::check_subarray_sum(nums, k), true);
+    assert!(Solution::check_subarray_sum(nums, k));
     let nums = vec![23, 2, 6, 4, 7];
     let k = 13;
-    assert_eq!(Solution::check_subarray_sum(nums, k), false);
+    assert!(!Solution::check_subarray_sum(nums, k));
 }

@@ -92,7 +92,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::is_robot_bounded("GGLLGG".to_string()), true);
-    assert_eq!(Solution::is_robot_bounded("GG".to_string()), false);
-    assert_eq!(Solution::is_robot_bounded("GL".to_string()), true);
+    assert!(Solution::is_robot_bounded("GGLLGG".to_string()));
+    assert!(!Solution::is_robot_bounded("GG".to_string()));
+    assert!(Solution::is_robot_bounded("GL".to_string()));
 }

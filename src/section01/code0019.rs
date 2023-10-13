@@ -28,15 +28,12 @@ impl Solution {
 #[test]
 fn test_remove_nth_from_end() {
     assert_eq!(
-        Solution::remove_nth_from_end(ListNode::from_vec(&vec![1, 2, 3, 4, 5]), 2),
-        ListNode::from_vec(&vec![1, 2, 3, 5])
+        Solution::remove_nth_from_end(ListNode::from_vec(&[1, 2, 3, 4, 5]), 2),
+        ListNode::from_vec(&[1, 2, 3, 5])
     );
+    assert_eq!(Solution::remove_nth_from_end(ListNode::from_vec(&[1]), 1), ListNode::from_vec(&[]));
     assert_eq!(
-        Solution::remove_nth_from_end(ListNode::from_vec(&vec![1]), 1),
-        ListNode::from_vec(&vec![])
-    );
-    assert_eq!(
-        Solution::remove_nth_from_end(ListNode::from_vec(&vec![1, 2]), 1),
-        ListNode::from_vec(&vec![1])
+        Solution::remove_nth_from_end(ListNode::from_vec(&[1, 2]), 1),
+        ListNode::from_vec(&[1])
     );
 }

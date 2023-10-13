@@ -57,7 +57,7 @@ impl Solution {
 #[test]
 fn test() {
     let matrix = vec![vec![1, 2, 3, 4], vec![5, 1, 2, 3], vec![9, 5, 1, 2]];
-    assert_eq!(Solution::is_toeplitz_matrix(matrix), true);
+    assert!(Solution::is_toeplitz_matrix(matrix));
     let matrix = vec![vec![1, 2], vec![2, 2]];
-    assert_eq!(Solution::is_toeplitz_matrix(matrix), false);
+    assert!(!Solution::is_toeplitz_matrix(matrix));
 }

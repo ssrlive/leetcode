@@ -94,7 +94,7 @@ fn test() {
         vec!['.', '.', '.', '4', '1', '9', '.', '.', '5'],
         vec!['.', '.', '.', '.', '8', '.', '.', '7', '9'],
     ];
-    assert_eq!(Solution::is_valid_sudoku(board), true);
+    assert!(Solution::is_valid_sudoku(board));
 
     let board = vec![
         vec!['8', '3', '.', '.', '7', '.', '.', '.', '.'],
@@ -107,5 +107,5 @@ fn test() {
         vec!['.', '.', '.', '4', '1', '9', '.', '.', '5'],
         vec!['.', '.', '.', '.', '8', '.', '.', '7', '9'],
     ];
-    assert_eq!(Solution::is_valid_sudoku(board), false);
+    assert!(!Solution::is_valid_sudoku(board));
 }

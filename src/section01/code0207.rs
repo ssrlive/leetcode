@@ -53,58 +53,49 @@ impl Solution {
 
 #[test]
 fn test_can_finish() {
-    assert_eq!(Solution::can_finish(2, vec![vec![1, 0]]), true);
-    assert_eq!(Solution::can_finish(2, vec![vec![1, 0], vec![0, 1]]), false);
-    assert_eq!(Solution::can_finish(3, vec![vec![1, 0], vec![1, 2], vec![0, 1]]), false);
-    assert_eq!(Solution::can_finish(3, vec![vec![1, 0], vec![2, 0], vec![0, 1]]), false);
-    assert_eq!(Solution::can_finish(3, vec![vec![1, 0], vec![2, 0], vec![0, 2]]), false);
-    assert_eq!(Solution::can_finish(3, vec![vec![1, 0], vec![2, 0], vec![0, 1], vec![2, 1]]), false);
-    assert_eq!(
-        Solution::can_finish(3, vec![vec![1, 0], vec![2, 0], vec![0, 1], vec![2, 1], vec![1, 2]]),
-        false
-    );
-    assert_eq!(
-        Solution::can_finish(3, vec![vec![1, 0], vec![2, 0], vec![0, 1], vec![2, 1], vec![1, 2], vec![2, 1]]),
-        false
-    );
-    assert_eq!(
-        Solution::can_finish(
-            3,
-            vec![vec![1, 0], vec![2, 0], vec![0, 1], vec![2, 1], vec![1, 2], vec![2, 1], vec![1, 0]]
-        ),
-        false
-    );
-    assert_eq!(
-        Solution::can_finish(
-            3,
-            vec![
-                vec![1, 0],
-                vec![2, 0],
-                vec![0, 1],
-                vec![2, 1],
-                vec![1, 2],
-                vec![2, 1],
-                vec![1, 0],
-                vec![0, 2]
-            ]
-        ),
-        false
-    );
-    assert_eq!(
-        Solution::can_finish(
-            3,
-            vec![
-                vec![1, 0],
-                vec![2, 0],
-                vec![0, 1],
-                vec![2, 1],
-                vec![1, 2],
-                vec![2, 1],
-                vec![1, 0],
-                vec![0, 2],
-                vec![2, 0]
-            ]
-        ),
-        false
-    );
+    assert!(Solution::can_finish(2, vec![vec![1, 0]]));
+    assert!(!Solution::can_finish(2, vec![vec![1, 0], vec![0, 1]]));
+    assert!(!Solution::can_finish(3, vec![vec![1, 0], vec![1, 2], vec![0, 1]]));
+    assert!(!Solution::can_finish(3, vec![vec![1, 0], vec![2, 0], vec![0, 1]]));
+    assert!(!Solution::can_finish(3, vec![vec![1, 0], vec![2, 0], vec![0, 2]]));
+    assert!(!Solution::can_finish(3, vec![vec![1, 0], vec![2, 0], vec![0, 1], vec![2, 1]]));
+    assert!(!Solution::can_finish(
+        3,
+        vec![vec![1, 0], vec![2, 0], vec![0, 1], vec![2, 1], vec![1, 2]]
+    ));
+    assert!(!Solution::can_finish(
+        3,
+        vec![vec![1, 0], vec![2, 0], vec![0, 1], vec![2, 1], vec![1, 2], vec![2, 1]]
+    ));
+    assert!(!Solution::can_finish(
+        3,
+        vec![vec![1, 0], vec![2, 0], vec![0, 1], vec![2, 1], vec![1, 2], vec![2, 1], vec![1, 0]]
+    ));
+    assert!(!Solution::can_finish(
+        3,
+        vec![
+            vec![1, 0],
+            vec![2, 0],
+            vec![0, 1],
+            vec![2, 1],
+            vec![1, 2],
+            vec![2, 1],
+            vec![1, 0],
+            vec![0, 2]
+        ]
+    ));
+    assert!(!Solution::can_finish(
+        3,
+        vec![
+            vec![1, 0],
+            vec![2, 0],
+            vec![0, 1],
+            vec![2, 1],
+            vec![1, 2],
+            vec![2, 1],
+            vec![1, 0],
+            vec![0, 2],
+            vec![2, 0]
+        ]
+    ));
 }

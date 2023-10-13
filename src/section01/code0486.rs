@@ -56,6 +56,6 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::predict_the_winner(vec![1, 5, 2]), false);
-    assert_eq!(Solution::predict_the_winner(vec![1, 5, 233, 7]), true);
+    assert!(!Solution::predict_the_winner(vec![1, 5, 2]));
+    assert!(Solution::predict_the_winner(vec![1, 5, 233, 7]));
 }

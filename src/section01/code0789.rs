@@ -64,13 +64,13 @@ impl Solution {
 fn test() {
     let ghosts = vec![vec![1, 0], vec![0, 3]];
     let target = vec![0, 1];
-    assert_eq!(Solution::escape_ghosts(ghosts, target), true);
+    assert!(Solution::escape_ghosts(ghosts, target));
 
     let ghosts = vec![vec![1, 0]];
     let target = vec![2, 0];
-    assert_eq!(Solution::escape_ghosts(ghosts, target), false);
+    assert!(!Solution::escape_ghosts(ghosts, target));
 
     let ghosts = vec![vec![2, 0]];
     let target = vec![1, 0];
-    assert_eq!(Solution::escape_ghosts(ghosts, target), false);
+    assert!(!Solution::escape_ghosts(ghosts, target));
 }

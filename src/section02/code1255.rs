@@ -133,7 +133,7 @@ fn test() {
     ];
     for (words, letters, score, expected) in cases {
         let words = words.iter().map(|s| s.to_string()).collect();
-        let letters = letters.iter().map(|c| *c).collect();
+        let letters = letters.to_vec();
         assert_eq!(Solution::max_score_words(words, letters, score), expected);
     }
 }

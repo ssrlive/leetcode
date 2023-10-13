@@ -26,13 +26,9 @@ impl Solution {
 
 #[test]
 fn test_reverse_list() {
-    assert_eq!(
-        Solution::reverse_list(ListNode::from_vec(&vec![1, 2, 3, 4, 5])),
-        ListNode::from_vec(&vec![5, 4, 3, 2, 1])
-    );
-    assert_eq!(
-        Solution::reverse_list(ListNode::from_vec(&vec![1, 2])),
-        ListNode::from_vec(&vec![2, 1])
-    );
-    assert_eq!(Solution::reverse_list(ListNode::from_vec(&vec![])), ListNode::from_vec(&vec![]));
+    let node = ListNode::from_vec(&[1, 2, 3, 4, 5]);
+    assert_eq!(Solution::reverse_list(node), ListNode::from_vec(&[5, 4, 3, 2, 1]));
+
+    assert_eq!(Solution::reverse_list(ListNode::from_vec(&[1, 2])), ListNode::from_vec(&[2, 1]));
+    assert_eq!(Solution::reverse_list(ListNode::from_vec(&[])), ListNode::from_vec(&[]));
 }

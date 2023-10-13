@@ -122,16 +122,16 @@ impl StreamChecker {
 fn test() {
     let words = vec!["cd", "f", "kl"].into_iter().map(|s| s.to_string()).collect();
     let mut stream_checker = StreamChecker::new(words);
-    assert_eq!(stream_checker.query('a'), false);
-    assert_eq!(stream_checker.query('b'), false);
-    assert_eq!(stream_checker.query('c'), false);
-    assert_eq!(stream_checker.query('d'), true);
-    assert_eq!(stream_checker.query('e'), false);
-    assert_eq!(stream_checker.query('f'), true);
-    assert_eq!(stream_checker.query('g'), false);
-    assert_eq!(stream_checker.query('h'), false);
-    assert_eq!(stream_checker.query('i'), false);
-    assert_eq!(stream_checker.query('j'), false);
-    assert_eq!(stream_checker.query('k'), false);
-    assert_eq!(stream_checker.query('l'), true);
+    assert!(!stream_checker.query('a'));
+    assert!(!stream_checker.query('b'));
+    assert!(!stream_checker.query('c'));
+    assert!(stream_checker.query('d'));
+    assert!(!stream_checker.query('e'));
+    assert!(stream_checker.query('f'));
+    assert!(!stream_checker.query('g'));
+    assert!(!stream_checker.query('h'));
+    assert!(!stream_checker.query('i'));
+    assert!(!stream_checker.query('j'));
+    assert!(!stream_checker.query('k'));
+    assert!(stream_checker.query('l'));
 }

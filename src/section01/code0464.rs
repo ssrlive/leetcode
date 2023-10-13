@@ -83,7 +83,7 @@ impl Solution {
 
 #[test]
 fn test_can_i_win() {
-    assert_eq!(Solution::can_i_win(10, 11), false);
-    assert_eq!(Solution::can_i_win(10, 0), true);
-    assert_eq!(Solution::can_i_win(10, 1), true);
+    assert!(!Solution::can_i_win(10, 11));
+    assert!(Solution::can_i_win(10, 0));
+    assert!(Solution::can_i_win(10, 1));
 }

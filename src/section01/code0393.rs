@@ -66,7 +66,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::valid_utf8(vec![197, 130, 1]), true);
-    assert_eq!(Solution::valid_utf8(vec![235, 140, 4]), false);
-    assert_eq!(Solution::valid_utf8(vec![255]), false);
+    assert!(Solution::valid_utf8(vec![197, 130, 1]));
+    assert!(!Solution::valid_utf8(vec![235, 140, 4]));
+    assert!(!Solution::valid_utf8(vec![255]));
 }

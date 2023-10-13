@@ -83,7 +83,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    assert_eq!(Solution::split_string("1234".to_string()), false);
-    assert_eq!(Solution::split_string("050043".to_string()), true);
-    assert_eq!(Solution::split_string("9080701".to_string()), false);
+    assert!(!Solution::split_string("1234".to_string()));
+    assert!(Solution::split_string("050043".to_string()));
+    assert!(!Solution::split_string("9080701".to_string()));
 }

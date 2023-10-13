@@ -64,8 +64,8 @@ impl Solution {
 
 #[test]
 fn test_find132pattern() {
-    assert_eq!(Solution::find132pattern(vec![3, 5, 0, 3, 4]), true);
-    assert_eq!(Solution::find132pattern(vec![1, 2, 3, 4]), false);
-    assert_eq!(Solution::find132pattern(vec![3, 1, 4, 2]), true);
-    assert_eq!(Solution::find132pattern(vec![-1, 3, 2, 0]), true);
+    assert!(Solution::find132pattern(vec![3, 5, 0, 3, 4]));
+    assert!(!Solution::find132pattern(vec![1, 2, 3, 4]));
+    assert!(Solution::find132pattern(vec![3, 1, 4, 2]));
+    assert!(Solution::find132pattern(vec![-1, 3, 2, 0]));
 }
