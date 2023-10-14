@@ -585,3 +585,11 @@ cargo test
 | 2697 | [Lexicographically Smallest Palindrome](code2697.rs) | [link](https://leetcode.com/problems/lexicographically-smallest-palindrome/) | Easy | :heavy_check_mark: |
 | 2698 | [Find the Punishment Number of an Integer](code2698.rs) | [link](https://leetcode.com/problems/find-the-punishment-number-of-an-integer/) | Medium | :heavy_check_mark: |
 | 2699 | [Modify Graph Edge Weights](code2699.rs) | [link](https://leetcode.com/problems/modify-graph-edge-weights/) | Hard | :heavy_check_mark: |
+| 2706 | [Buy Two Chocolates](code2706.rs) | [link](https://leetcode.com/problems/buy-two-chocolates/) | Easy | :heavy_check_mark: |
+| 2707 | [Extra Characters in a String](code2707.rs) | [link](https://leetcode.com/problems/extra-characters-in-a-string/) | Medium | :heavy_check_mark: |
+| 2708 | [Maximum Strength of a Group](code2708.rs) | [link](https://leetcode.com/problems/maximum-strength-of-a-group/) | Medium | :heavy_check_mark: |
+| 2709 | [Greatest Common Divisor Traversal](code2709.rs) | [link](https://leetcode.com/problems/greatest-common-divisor-traversal/) | Hard | :heavy_check_mark: |
+| 2710 | [Remove Trailing Zeros From a String](code2710.rs) | [link](https://leetcode.com/problems/remove-trailing-zeros-from-a-string/) | Easy | :heavy_check_mark: |
+| 2711 | [Difference of Number of Distinct Values on Diagonals](code2711.rs) | [link](https://leetcode.com/problems/difference-of-number-of-distinct-values-on-diagonals/) | Medium | :heavy_check_mark: |
+| 2712 | [Minimum Cost to Make All Characters Equal](code2712.rs) | [link](https://leetcode.com/problems/minimum-cost-to-make-all-characters-equal/) | Medium | :heavy_check_mark: |
+| 2713 | [Maximum Strictly Increasing Cells in a Matrix](code2713.rs) | [link](https://leetcode.com/problems/maximum-strictly-increasing-cells-in-a-matrix/) | Hard | :heavy_check_mark: |
