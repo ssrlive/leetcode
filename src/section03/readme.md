@@ -593,3 +593,7 @@ cargo test
 | 2711 | [Difference of Number of Distinct Values on Diagonals](code2711.rs) | [link](https://leetcode.com/problems/difference-of-number-of-distinct-values-on-diagonals/) | Medium | :heavy_check_mark: |
 | 2712 | [Minimum Cost to Make All Characters Equal](code2712.rs) | [link](https://leetcode.com/problems/minimum-cost-to-make-all-characters-equal/) | Medium | :heavy_check_mark: |
 | 2713 | [Maximum Strictly Increasing Cells in a Matrix](code2713.rs) | [link](https://leetcode.com/problems/maximum-strictly-increasing-cells-in-a-matrix/) | Hard | :heavy_check_mark: |
+| 2716 | [Minimize String Length](code2716.rs) | [link](https://leetcode.com/problems/minimize-string-length/) | Easy | :heavy_check_mark: |
+| 2717 | [Semi-Ordered Permutation](code2717.rs) | [link](https://leetcode.com/problems/semi-ordered-permutation/) | Medium | :heavy_check_mark: |
+| 2718 | [Sum of Matrix After Queries](code2718.rs) | [link](https://leetcode.com/problems/sum-of-matrix-after-queries/) | Medium | :heavy_check_mark: |
+| 2719 | [Count of Integers](code2719.rs) | [link](https://leetcode.com/problems/count-of-integers/) | Hard | :heavy_check_mark: |
