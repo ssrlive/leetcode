@@ -605,3 +605,14 @@ cargo test
 | 2734 | [Lexicographically Smallest String After Substring Operation](code2734.rs) | [link](https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/) | Medium | :heavy_check_mark: |
 | 2735 | [Collecting Chocolates](code2735.rs) | [link](https://leetcode.com/problems/collecting-chocolates/) | Medium | :heavy_check_mark: |
 | 2736 | [Maximum Sum Queries](code2736.rs) | [link](https://leetcode.com/problems/maximum-sum-queries/) | Hard | :heavy_check_mark: |
+| 2739 | [Total Distance Traveled](code2739.rs) | [link](https://leetcode.com/problems/total-distance-traveled/) | Easy | :heavy_check_mark: |
+| 2740 | [Find the Value of the Partition](code2740.rs) | [link](https://leetcode.com/problems/find-the-value-of-the-partition/) | Medium | :heavy_check_mark: |
+| 2741 | [Special Permutations](code2741.rs) | [link](https://leetcode.com/problems/special-permutations/) | Medium | :heavy_check_mark: |
+| 2742 | [Painting the Walls](code2742.rs) | [link](https://leetcode.com/problems/painting-the-walls/) | Hard | :heavy_check_mark: |
+| 2744 | [Find Maximum Number of String Pairs](code2744.rs) | [link](https://leetcode.com/problems/find-maximum-number-of-string-pairs/) | Easy | :heavy_check_mark: |
+| 2745 | [Construct the Longest New String](code2745.rs) | [link](https://leetcode.com/problems/construct-the-longest-new-string/) | Medium | :heavy_check_mark: |
+| 2746 | [Decremental String Concatenation](code2746.rs) | [link](https://leetcode.com/problems/decremental-string-concatenation/) | Medium | :heavy_check_mark: |
+| 2747 | [Count Zero Request Servers](code2747.rs) | [link](https://leetcode.com/problems/count-zero-request-servers/) | Medium | :heavy_check_mark: |
+| 2748 | [Number of Beautiful Pairs](code2748.rs) | [link](https://leetcode.com/problems/number-of-beautiful-pairs/) | Easy | :heavy_check_mark: |
+| 2749 | [Minimum Operations to Make the Integer Zero](code2749.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-the-integer-zero/) | Medium | :heavy_check_mark: |
+| 2750 | [Ways to Split Array Into Good Subarrays](code2750.rs) | [link](https://leetcode.com/problems/ways-to-split-array-into-good-subarrays/) | Medium | :heavy_check_mark: |
