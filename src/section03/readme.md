@@ -597,3 +597,11 @@ cargo test
 | 2717 | [Semi-Ordered Permutation](code2717.rs) | [link](https://leetcode.com/problems/semi-ordered-permutation/) | Medium | :heavy_check_mark: |
 | 2718 | [Sum of Matrix After Queries](code2718.rs) | [link](https://leetcode.com/problems/sum-of-matrix-after-queries/) | Medium | :heavy_check_mark: |
 | 2719 | [Count of Integers](code2719.rs) | [link](https://leetcode.com/problems/count-of-integers/) | Hard | :heavy_check_mark: |
+| 2729 | [Check if The Number is Fascinating](code2729.rs) | [link](https://leetcode.com/problems/check-if-the-number-is-fascinating/) | Easy | :heavy_check_mark: |
+| 2730 | [Find the Longest Semi-Repetitive Substring](code2730.rs) | [link](https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/) | Medium | :heavy_check_mark: |
+| 2731 | [Movement of Robots](code2731.rs) | [link](https://leetcode.com/problems/movement-of-robots/) | Medium | :heavy_check_mark: |
+| 2732 | [Find a Good Subset of the Matrix](code2732.rs) | [link](https://leetcode.com/problems/find-a-good-subset-of-the-matrix/) | Hard | :heavy_check_mark: |
+| 2733 | [Neither Minimum nor Maximum](code2733.rs) | [link](https://leetcode.com/problems/neither-minimum-nor-maximum/) | Easy | :heavy_check_mark: |
+| 2734 | [Lexicographically Smallest String After Substring Operation](code2734.rs) | [link](https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/) | Medium | :heavy_check_mark: |
+| 2735 | [Collecting Chocolates](code2735.rs) | [link](https://leetcode.com/problems/collecting-chocolates/) | Medium | :heavy_check_mark: |
+| 2736 | [Maximum Sum Queries](code2736.rs) | [link](https://leetcode.com/problems/maximum-sum-queries/) | Hard | :heavy_check_mark: |
