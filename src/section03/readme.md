@@ -629,3 +629,18 @@ cargo test
 | 2770 | [Maximum Number of Jumps to Reach the Last Index](code2770.rs) | [link](https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/) | Medium | :heavy_check_mark: |
 | 2771 | [Longest Non-decreasing Subarray From Two Arrays](code2771.rs) | [link](https://leetcode.com/problems/longest-non-decreasing-subarray-from-two-arrays/) | Medium | :heavy_check_mark: |
 | 2772 | [Apply Operations to Make All Array Elements Equal to Zero](code2772.rs) | [link](https://leetcode.com/problems/apply-operations-to-make-all-array-elements-equal-to-zero/) | Medium | :heavy_check_mark: |
+| 2778 | [Sum of Squares of Special Elements](code2778.rs) | [link](https://leetcode.com/problems/sum-of-squares-of-special-elements/) | Easy | :heavy_check_mark: |
+| 2779 | [Maximum Beauty of an Array After Applying Operation](code2779.rs) | [link](https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/) | Medium | :heavy_check_mark: |
+| 2780 | [Minimum Index of a Valid Split](code2780.rs) | [link](https://leetcode.com/problems/minimum-index-of-a-valid-split/) | Medium | :heavy_check_mark: |
+| 2781 | [Length of the Longest Valid Substring](code2781.rs) | [link](https://leetcode.com/problems/length-of-the-longest-valid-substring/) | Hard | :heavy_check_mark: |
+| 2784 | [Check if Array is Good](code2784.rs) | [link](https://leetcode.com/problems/check-if-array-is-good/) | Easy | :heavy_check_mark: |
+| 2785 | [Sort Vowels in a String](code2785.rs) | [link](https://leetcode.com/problems/sort-vowels-in-a-string/) | Medium | :heavy_check_mark: |
+| 2786 | [Visit Array Positions to Maximize Score](code2786.rs) | [link](https://leetcode.com/problems/visit-array-positions-to-maximize-score/) | Medium | :heavy_check_mark: |
+| 2787 | [Ways to Express an Integer as Sum of Powers](code2787.rs) | [link](https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/) | Medium | :heavy_check_mark: |
+| 2788 | [Split Strings by Separator](code2788.rs) | [link](https://leetcode.com/problems/split-strings-by-separator/) | Easy | :heavy_check_mark: |
+| 2789 | [Largest Element in an Array after Merge Operations](code2789.rs) | [link](https://leetcode.com/problems/largest-element-in-an-array-after-merge-operations/) | Medium | :heavy_check_mark: |
+| 2790 | [Maximum Number of Groups With Increasing Length](code2790.rs) | [link](https://leetcode.com/problems/maximum-number-of-groups-with-increasing-length/) | Hard | :heavy_check_mark: |
+| 2791 | [Count Paths That Can Form a Palindrome in a Tree](code2791.rs) | [link](https://leetcode.com/problems/count-paths-that-can-form-a-palindrome-in-a-tree/) | Hard | :heavy_check_mark: |
+| 2798 | [Number of Employees Who Met the Target](code2798.rs) | [link](https://leetcode.com/problems/number-of-employees-who-met-the-target/) | Easy | :heavy_check_mark: |
+| 2799 | [Count Complete Subarrays in an Array](code2799.rs) | [link](https://leetcode.com/problems/count-complete-subarrays-in-an-array/) | Medium | :heavy_check_mark: |
+| 2800 | [Shortest String That Contains Three Strings](code2800.rs) | [link](https://leetcode.com/problems/shortest-string-that-contains-three-strings/) | Medium | :heavy_check_mark: |
