@@ -616,3 +616,16 @@ cargo test
 | 2748 | [Number of Beautiful Pairs](code2748.rs) | [link](https://leetcode.com/problems/number-of-beautiful-pairs/) | Easy | :heavy_check_mark: |
 | 2749 | [Minimum Operations to Make the Integer Zero](code2749.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-the-integer-zero/) | Medium | :heavy_check_mark: |
 | 2750 | [Ways to Split Array Into Good Subarrays](code2750.rs) | [link](https://leetcode.com/problems/ways-to-split-array-into-good-subarrays/) | Medium | :heavy_check_mark: |
+| 2751 | [Robot Collisions](code2751.rs) | [link](https://leetcode.com/problems/robot-collisions/) | Hard | :heavy_check_mark: |
+| 2760 | [Longest Even Odd Subarray With Threshold](code2760.rs) | [link](https://leetcode.com/problems/longest-even-odd-subarray-with-threshold/) | Easy | :heavy_check_mark: |
+| 2761 | [Prime Pairs With Target Sum](code2761.rs) | [link](https://leetcode.com/problems/prime-pairs-with-target-sum/) | Medium | :heavy_check_mark: |
+| 2762 | [Continuous Subarrays](code2762.rs) | [link](https://leetcode.com/problems/continuous-subarrays/) | Medium | :heavy_check_mark: |
+| 2763 | [Sum of Imbalance Numbers of All Subarrays](code2763.rs) | [link](https://leetcode.com/problems/sum-of-imbalance-numbers-of-all-subarrays/) | Hard | :heavy_check_mark: |
+| 2765 | [Longest Alternating Subarray](code2765.rs) | [link](https://leetcode.com/problems/longest-alternating-subarray/) | Easy | :heavy_check_mark: |
+| 2766 | [Relocate Marbles](code2766.rs) | [link](https://leetcode.com/problems/relocate-marbles/) | Medium | :heavy_check_mark: |
+| 2767 | [Partition String Into Minimum Beautiful Substrings](code2767.rs) | [link](https://leetcode.com/problems/partition-string-into-minimum-beautiful-substrings/) | Medium | :heavy_check_mark: |
+| 2768 | [Number of Black Blocks](code2768.rs) | [link](https://leetcode.com/problems/number-of-black-blocks/) | Medium | :heavy_check_mark: |
+| 2769 | [Find the Maximum Achievable Number](code2769.rs) | [link](https://leetcode.com/problems/find-the-maximum-achievable-number/) | Easy | :heavy_check_mark: |
+| 2770 | [Maximum Number of Jumps to Reach the Last Index](code2770.rs) | [link](https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/) | Medium | :heavy_check_mark: |
+| 2771 | [Longest Non-decreasing Subarray From Two Arrays](code2771.rs) | [link](https://leetcode.com/problems/longest-non-decreasing-subarray-from-two-arrays/) | Medium | :heavy_check_mark: |
+| 2772 | [Apply Operations to Make All Array Elements Equal to Zero](code2772.rs) | [link](https://leetcode.com/problems/apply-operations-to-make-all-array-elements-equal-to-zero/) | Medium | :heavy_check_mark: |
