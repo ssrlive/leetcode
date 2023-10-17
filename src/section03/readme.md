@@ -585,6 +585,9 @@ cargo test
 | 2697 | [Lexicographically Smallest Palindrome](code2697.rs) | [link](https://leetcode.com/problems/lexicographically-smallest-palindrome/) | Easy | :heavy_check_mark: |
 | 2698 | [Find the Punishment Number of an Integer](code2698.rs) | [link](https://leetcode.com/problems/find-the-punishment-number-of-an-integer/) | Medium | :heavy_check_mark: |
 | 2699 | [Modify Graph Edge Weights](code2699.rs) | [link](https://leetcode.com/problems/modify-graph-edge-weights/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2706 | [Buy Two Chocolates](code2706.rs) | [link](https://leetcode.com/problems/buy-two-chocolates/) | Easy | :heavy_check_mark: |
 | 2707 | [Extra Characters in a String](code2707.rs) | [link](https://leetcode.com/problems/extra-characters-in-a-string/) | Medium | :heavy_check_mark: |
 | 2708 | [Maximum Strength of a Group](code2708.rs) | [link](https://leetcode.com/problems/maximum-strength-of-a-group/) | Medium | :heavy_check_mark: |
@@ -616,6 +619,9 @@ cargo test
 | 2748 | [Number of Beautiful Pairs](code2748.rs) | [link](https://leetcode.com/problems/number-of-beautiful-pairs/) | Easy | :heavy_check_mark: |
 | 2749 | [Minimum Operations to Make the Integer Zero](code2749.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-the-integer-zero/) | Medium | :heavy_check_mark: |
 | 2750 | [Ways to Split Array Into Good Subarrays](code2750.rs) | [link](https://leetcode.com/problems/ways-to-split-array-into-good-subarrays/) | Medium | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2751 | [Robot Collisions](code2751.rs) | [link](https://leetcode.com/problems/robot-collisions/) | Hard | :heavy_check_mark: |
 | 2760 | [Longest Even Odd Subarray With Threshold](code2760.rs) | [link](https://leetcode.com/problems/longest-even-odd-subarray-with-threshold/) | Easy | :heavy_check_mark: |
 | 2761 | [Prime Pairs With Target Sum](code2761.rs) | [link](https://leetcode.com/problems/prime-pairs-with-target-sum/) | Medium | :heavy_check_mark: |
@@ -644,6 +650,9 @@ cargo test
 | 2798 | [Number of Employees Who Met the Target](code2798.rs) | [link](https://leetcode.com/problems/number-of-employees-who-met-the-target/) | Easy | :heavy_check_mark: |
 | 2799 | [Count Complete Subarrays in an Array](code2799.rs) | [link](https://leetcode.com/problems/count-complete-subarrays-in-an-array/) | Medium | :heavy_check_mark: |
 | 2800 | [Shortest String That Contains Three Strings](code2800.rs) | [link](https://leetcode.com/problems/shortest-string-that-contains-three-strings/) | Medium | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 2801 | [Count Stepping Numbers in Range](code2801.rs) | [link](https://leetcode.com/problems/count-stepping-numbers-in-range/) | Hard | :heavy_check_mark: |
 | 2806 | [Account Balance After Rounded Purchase](code2806.rs) | [link](https://leetcode.com/problems/account-balance-after-rounded-purchase/) | Easy | :heavy_check_mark: |
 | 2807 | [Insert Greatest Common Divisors in Linked List](code2807.rs) | [link](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/) | Medium | :heavy_check_mark: |
@@ -657,3 +666,15 @@ cargo test
 | 2816 | [Double a Number Represented as a Linked List](code2816.rs) | [link](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/) | Medium | :heavy_check_mark: |
 | 2817 | [Minimum Absolute Difference Between Elements With Constraint](code2817.rs) | [link](https://leetcode.com/problems/minimum-absolute-difference-between-elements-with-constraint/) | Medium | :heavy_check_mark: |
 | 2818 | [Apply Operations to Maximize Score](code2818.rs) | [link](https://leetcode.com/problems/apply-operations-to-maximize-score/) | Hard | :heavy_check_mark: |
+| 2824 | [Count Pairs Whose Sum is Less than Target](code2824.rs) | [link](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/) | Easy | :heavy_check_mark: |
+| 2825 | [Make String a Subsequence Using Cyclic Increments](code2825.rs) | [link](https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/) | Medium | :heavy_check_mark: |
+| 2826 | [Sorting Three Groups](code2826.rs) | [link](https://leetcode.com/problems/sorting-three-groups/) | Medium | :heavy_check_mark: |
+| 2827 | [Number of Beautiful Integers in the Range](code2827.rs) | [link](https://leetcode.com/problems/number-of-beautiful-integers-in-the-range/) | Hard | :heavy_check_mark: |
+| 2828 | [Check if a String Is an Acronym of Words](code2828.rs) | [link](https://leetcode.com/problems/check-if-a-string-is-an-acronym-of-words/) | Easy | :heavy_check_mark: |
+| 2829 | [Determine the Minimum Sum of a k-avoiding Array](code2829.rs) | [link](https://leetcode.com/problems/determine-the-minimum-sum-of-a-k-avoiding-array/) | Medium | :heavy_check_mark: |
+| 2830 | [Maximize the Profit as the Salesman](code2830.rs) | [link](https://leetcode.com/problems/maximize-the-profit-as-the-salesman/) | Medium | :heavy_check_mark: |
+| 2831 | [Find the Longest Equal Subarray](code2831.rs) | [link](https://leetcode.com/problems/find-the-longest-equal-subarray/) | Medium | :heavy_check_mark: |
+| 2833 | [Furthest Point From Origin](code2833.rs) | [link](https://leetcode.com/problems/furthest-point-from-origin/) | Easy | :heavy_check_mark: |
+| 2834 | [Find the Minimum Possible Sum of a Beautiful Array](code2834.rs) | [link](https://leetcode.com/problems/find-the-minimum-possible-sum-of-a-beautiful-array/) | Medium | :heavy_check_mark: |
+| 2835 | [Minimum Operations to Form Subsequence With Target Sum](code2835.rs) | [link](https://leetcode.com/problems/minimum-operations-to-form-subsequence-with-target-sum/) | Hard | :heavy_check_mark: |
+| 2836 | [Maximize Value of Function in a Ball Passing Game](code2836.rs) | [link](https://leetcode.com/problems/maximize-value-of-function-in-a-ball-passing-game/) | Hard | :heavy_check_mark: |
