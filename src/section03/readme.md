@@ -644,3 +644,16 @@ cargo test
 | 2798 | [Number of Employees Who Met the Target](code2798.rs) | [link](https://leetcode.com/problems/number-of-employees-who-met-the-target/) | Easy | :heavy_check_mark: |
 | 2799 | [Count Complete Subarrays in an Array](code2799.rs) | [link](https://leetcode.com/problems/count-complete-subarrays-in-an-array/) | Medium | :heavy_check_mark: |
 | 2800 | [Shortest String That Contains Three Strings](code2800.rs) | [link](https://leetcode.com/problems/shortest-string-that-contains-three-strings/) | Medium | :heavy_check_mark: |
+| 2801 | [Count Stepping Numbers in Range](code2801.rs) | [link](https://leetcode.com/problems/count-stepping-numbers-in-range/) | Hard | :heavy_check_mark: |
+| 2806 | [Account Balance After Rounded Purchase](code2806.rs) | [link](https://leetcode.com/problems/account-balance-after-rounded-purchase/) | Easy | :heavy_check_mark: |
+| 2807 | [Insert Greatest Common Divisors in Linked List](code2807.rs) | [link](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/) | Medium | :heavy_check_mark: |
+| 2808 | [Minimum Seconds to Equalize a Circular Array](code2808.rs) | [link](https://leetcode.com/problems/minimum-seconds-to-equalize-a-circular-array/) | Medium | :heavy_check_mark: |
+| 2809 | [Minimum Time to Make Array Sum At Most x](code2809.rs) | [link](https://leetcode.com/problems/minimum-time-to-make-array-sum-at-most-x/) | Hard | :heavy_check_mark: |
+| 2810 | [Faulty Keyboard](code2810.rs) | [link](https://leetcode.com/problems/faulty-keyboard/) | Easy | :heavy_check_mark: |
+| 2811 | [Check if it is Possible to Split Array](code2811.rs) | [link](https://leetcode.com/problems/check-if-it-is-possible-to-split-array/) | Medium | :heavy_check_mark: |
+| 2812 | [Find the Safest Path in a Grid](code2812.rs) | [link](https://leetcode.com/problems/find-the-safest-path-in-a-grid/) | Medium | :heavy_check_mark: |
+| 2813 | [Maximum Elegance of a K-Length Subsequence](code2813.rs) | [link](https://leetcode.com/problems/maximum-elegance-of-a-k-length-subsequence/) | Hard | :heavy_check_mark: |
+| 2815 | [Max Pair Sum in an Array](code2815.rs) | [link](https://leetcode.com/problems/max-pair-sum-in-an-array/) | Easy | :heavy_check_mark: |
+| 2816 | [Double a Number Represented as a Linked List](code2816.rs) | [link](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/) | Medium | :heavy_check_mark: |
+| 2817 | [Minimum Absolute Difference Between Elements With Constraint](code2817.rs) | [link](https://leetcode.com/problems/minimum-absolute-difference-between-elements-with-constraint/) | Medium | :heavy_check_mark: |
+| 2818 | [Apply Operations to Maximize Score](code2818.rs) | [link](https://leetcode.com/problems/apply-operations-to-maximize-score/) | Hard | :heavy_check_mark: |
