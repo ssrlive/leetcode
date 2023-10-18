@@ -693,3 +693,15 @@ cargo test
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
 | 2851 | [String Transformation](code2851.rs) | [link](https://leetcode.com/problems/string-transformation/) | Hard | :heavy_check_mark: |
+| 2855 | [Minimum Right Shifts to Sort the Array](code2855.rs) | [link](https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/) | Easy | :heavy_check_mark: |
+| 2856 | [Minimum Array Length After Pair Removals](code2856.rs) | [link](https://leetcode.com/problems/minimum-array-length-after-pair-removals/) | Medium | :heavy_check_mark: |
+| 2857 | [Count Pairs of Points With Distance k](code2857.rs) | [link](https://leetcode.com/problems/count-pairs-of-points-with-distance-k/) | Medium | :heavy_check_mark: |
+| 2858 | [Minimum Edge Reversals So Every Node Is Reachable](code2858.rs) | [link](https://leetcode.com/problems/minimum-edge-reversals-so-every-node-is-reachable/) | Hard | :heavy_check_mark: |
+| 2859 | [Sum of Values at Indices With K Set Bits](code2859.rs) | [link](https://leetcode.com/problems/sum-of-values-at-indices-with-k-set-bits/) | Easy | :heavy_check_mark: |
+| 2860 | [Happy Students](code2860.rs) | [link](https://leetcode.com/problems/happy-students/) | Medium | :heavy_check_mark: |
+| 2861 | [Maximum Number of Alloys](code2861.rs) | [link](https://leetcode.com/problems/maximum-number-of-alloys/) | Medium | :heavy_check_mark: |
+| 2862 | [Maximum Element-Sum of a Complete Subset of Indices](code2862.rs) | [link](https://leetcode.com/problems/maximum-element-sum-of-a-complete-subset-of-indices/) | Hard | :heavy_check_mark: |
+| 2864 | [Maximum Odd Binary Number](code2864.rs) | [link](https://leetcode.com/problems/maximum-odd-binary-number/) | Easy | :heavy_check_mark: |
+| 2865 | [Beautiful Towers I](code2865.rs) | [link](https://leetcode.com/problems/beautiful-towers-i/) | Medium | :heavy_check_mark: |
+| 2866 | [Beautiful Towers II](code2866.rs) | [link](https://leetcode.com/problems/beautiful-towers-ii/) | Medium | :heavy_check_mark: |
+| 2867 | [Count Valid Paths in a Tree](code2867.rs) | [link](https://leetcode.com/problems/count-valid-paths-in-a-tree/) | Hard | :heavy_check_mark: |
