@@ -678,3 +678,18 @@ cargo test
 | 2834 | [Find the Minimum Possible Sum of a Beautiful Array](code2834.rs) | [link](https://leetcode.com/problems/find-the-minimum-possible-sum-of-a-beautiful-array/) | Medium | :heavy_check_mark: |
 | 2835 | [Minimum Operations to Form Subsequence With Target Sum](code2835.rs) | [link](https://leetcode.com/problems/minimum-operations-to-form-subsequence-with-target-sum/) | Hard | :heavy_check_mark: |
 | 2836 | [Maximize Value of Function in a Ball Passing Game](code2836.rs) | [link](https://leetcode.com/problems/maximize-value-of-function-in-a-ball-passing-game/) | Hard | :heavy_check_mark: |
+| 2839 | [Check if Strings Can be Made Equal With Operations I](code2839.rs) | [link](https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/) | Easy | :heavy_check_mark: |
+| 2840 | [Check if Strings Can be Made Equal With Operations II](code2840.rs) | [link](https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/) | Medium | :heavy_check_mark: |
+| 2841 | [Maximum Sum of Almost Unique Subarray](code2841.rs) | [link](https://leetcode.com/problems/maximum-sum-of-almost-unique-subarray/) | Medium | :heavy_check_mark: |
+| 2842 | [Count K-Subsequences of a String With Maximum Beauty](code2842.rs) | [link](https://leetcode.com/problems/count-k-subsequences-of-a-string-with-maximum-beauty/) | Hard | :heavy_check_mark: |
+| 2843 | [Count Symmetric Integers](code2843.rs) | [link](https://leetcode.com/problems/count-symmetric-integers/) | Easy | :heavy_check_mark: |
+| 2844 | [Minimum Operations to Make a Special Number](code2844.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-a-special-number/) | Medium | :heavy_check_mark: |
+| 2845 | [Count of Interesting Subarrays](code2845.rs) | [link](https://leetcode.com/problems/count-of-interesting-subarrays/) | Medium | :heavy_check_mark: |
+| 2846 | [Minimum Edge Weight Equilibrium Queries in a Tree](code2846.rs) | [link](https://leetcode.com/problems/minimum-edge-weight-equilibrium-queries-in-a-tree/) | Hard | :heavy_check_mark: |
+| 2848 | [Points That Intersect With Cars](code2848.rs) | [link](https://leetcode.com/problems/points-that-intersect-with-cars/) | Easy | :heavy_check_mark: |
+| 2849 | [Determine if a Cell Is Reachable at a Given Time](code2849.rs) | [link](https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/) | Medium | :heavy_check_mark: |
+| 2850 | [Minimum Moves to Spread Stones Over Grid](code2850.rs) | [link](https://leetcode.com/problems/minimum-moves-to-spread-stones-over-grid/) | Medium | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
+| 2851 | [String Transformation](code2851.rs) | [link](https://leetcode.com/problems/string-transformation/) | Hard | :heavy_check_mark: |
