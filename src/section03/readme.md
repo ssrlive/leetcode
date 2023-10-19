@@ -722,3 +722,9 @@ cargo test
 
 | # | Title | Link | Difficulty | Solution |
 |---| ----- | ---- | ---------- | :------: |
+| 2901 | [Longest Unequal Adjacent Groups Subsequence II](code2901.rs) | [link](https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-ii/) | Medium | :heavy_check_mark: |
+| 2902 | [Count of Sub-Multisets With Bounded Sum](code2902.rs) | [link](https://leetcode.com/problems/count-of-sub-multisets-with-bounded-sum/) | Hard | :heavy_check_mark: |
+| 2903 | [Find Indices With Index and Value Difference I](code2903.rs) | [link](https://leetcode.com/problems/find-indices-with-index-and-value-difference-i/) | Easy | :heavy_check_mark: |
+| 2904 | [Shortest and Lexicographically Smallest Beautiful String](code2904.rs) | [link](https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/) | Medium | :heavy_check_mark: |
+| 2905 | [Find Indices With Index and Value Difference II](code2905.rs) | [link](https://leetcode.com/problems/find-indices-with-index-and-value-difference-ii/) | Medium | :heavy_check_mark: |
+| 2906 | [Construct Product Matrix](code2906.rs) | [link](https://leetcode.com/problems/construct-product-matrix/) | Medium | :heavy_check_mark: |
