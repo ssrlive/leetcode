@@ -705,3 +705,20 @@ cargo test
 | 2865 | [Beautiful Towers I](code2865.rs) | [link](https://leetcode.com/problems/beautiful-towers-i/) | Medium | :heavy_check_mark: |
 | 2866 | [Beautiful Towers II](code2866.rs) | [link](https://leetcode.com/problems/beautiful-towers-ii/) | Medium | :heavy_check_mark: |
 | 2867 | [Count Valid Paths in a Tree](code2867.rs) | [link](https://leetcode.com/problems/count-valid-paths-in-a-tree/) | Hard | :heavy_check_mark: |
+| 2869 | [Minimum Operations to Collect Elements](code2869.rs) | [link](https://leetcode.com/problems/minimum-operations-to-collect-elements/) | Easy | :heavy_check_mark: |
+| 2870 | [Minimum Number of Operations to Make Array Empty](code2870.rs) | [link](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-empty/) | Medium | :heavy_check_mark: |
+| 2871 | [Split Array Into Maximum Number of Subarrays](code2871.rs) | [link](https://leetcode.com/problems/split-array-into-maximum-number-of-subarrays/) | Medium | :heavy_check_mark: |
+| 2872 | [Maximum Number of K-Divisible Components](code2872.rs) | [link](https://leetcode.com/problems/maximum-number-of-k-divisible-components/) | Hard | :heavy_check_mark: |
+| 2873 | [Maximum Value of an Ordered Triplet I](code2873.rs) | [link](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-i/) | Easy | :heavy_check_mark: |
+| 2874 | [Maximum Value of an Ordered Triplet II](code2874.rs) | [link](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/) | Medium | :heavy_check_mark: |
+| 2875 | [Minimum Size Subarray in Infinite Array](code2875.rs) | [link](https://leetcode.com/problems/minimum-size-subarray-in-infinite-array/) | Medium | :heavy_check_mark: |
+| 2876 | [Count Visited Nodes in a Directed Graph](code2876.rs) | [link](https://leetcode.com/problems/count-visited-nodes-in-a-directed-graph/) | Hard | :heavy_check_mark: |
+| 2894 | [Divisible and Non-divisible Sums Difference](code2894.rs) | [link](https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/) | Easy | :heavy_check_mark: |
+| 2895 | [Minimum Processing Time](code2895.rs) | [link](https://leetcode.com/problems/minimum-processing-time/) | Medium | :heavy_check_mark: |
+| 2896 | [Apply Operations to Make Two Strings Equal](code2896.rs) | [link](https://leetcode.com/problems/apply-operations-to-make-two-strings-equal/) | Medium | :heavy_check_mark: |
+| 2897 | [Apply Operations on Array to Maximize Sum of Squares](code2897.rs) | [link](https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/) | Hard | :heavy_check_mark: |
+| 2899 | [Last Visited Integers](code2899.rs) | [link](https://leetcode.com/problems/last-visited-integers/) | Easy | :heavy_check_mark: |
+| 2900 | [Longest Unequal Adjacent Groups Subsequence I](code2900.rs) | [link](https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-i/) | Medium | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
