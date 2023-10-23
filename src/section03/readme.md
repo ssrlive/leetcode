@@ -728,3 +728,7 @@ cargo test
 | 2904 | [Shortest and Lexicographically Smallest Beautiful String](code2904.rs) | [link](https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/) | Medium | :heavy_check_mark: |
 | 2905 | [Find Indices With Index and Value Difference II](code2905.rs) | [link](https://leetcode.com/problems/find-indices-with-index-and-value-difference-ii/) | Medium | :heavy_check_mark: |
 | 2906 | [Construct Product Matrix](code2906.rs) | [link](https://leetcode.com/problems/construct-product-matrix/) | Medium | :heavy_check_mark: |
+| 2908 | [Minimum Sum of Mountain Triplets I](code2908.rs) | [link](https://leetcode.com/problems/minimum-sum-of-mountain-triplets-i/) | Easy | :heavy_check_mark: |
+| 2909 | [Minimum Sum of Mountain Triplets II](code2909.rs) | [link](https://leetcode.com/problems/minimum-sum-of-mountain-triplets-ii/) | Medium | :heavy_check_mark: |
+| 2910 | [Minimum Number of Groups to Create a Valid Assignment](code2910.rs) | [link](https://leetcode.com/problems/minimum-number-of-groups-to-create-a-valid-assignment/) | Medium | :heavy_check_mark: |
+| 2911 | [Minimum Changes to Make K Semi-palindromes](code2911.rs) | [link](https://leetcode.com/problems/minimum-changes-to-make-k-semi-palindromes/) | Hard | :heavy_check_mark: |
