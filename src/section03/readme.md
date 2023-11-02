@@ -732,3 +732,11 @@ cargo test
 | 2909 | [Minimum Sum of Mountain Triplets II](code2909.rs) | [link](https://leetcode.com/problems/minimum-sum-of-mountain-triplets-ii/) | Medium | :heavy_check_mark: |
 | 2910 | [Minimum Number of Groups to Create a Valid Assignment](code2910.rs) | [link](https://leetcode.com/problems/minimum-number-of-groups-to-create-a-valid-assignment/) | Medium | :heavy_check_mark: |
 | 2911 | [Minimum Changes to Make K Semi-palindromes](code2911.rs) | [link](https://leetcode.com/problems/minimum-changes-to-make-k-semi-palindromes/) | Hard | :heavy_check_mark: |
+| 2913 | [Subarrays Distinct Element Sum of Squares I](code2913.rs) | [link](https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-i/) | Easy | :heavy_check_mark: |
+| 2914 | [Minimum Number of Changes to Make Binary String Beautiful](code2914.rs) | [link](https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/) | Medium | :heavy_check_mark: |
+| 2915 | [Length of the Longest Subsequence That Sums to Target](code2915.rs) | [link](https://leetcode.com/problems/length-of-the-longest-subsequence-that-sums-to-target/) | Medium | :heavy_check_mark: |
+| 2916 | [Subarrays Distinct Element Sum of Squares II](code2916.rs) | [link](https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/) | Hard | :heavy_check_mark: |
+| 2917 | [Find the K-or of an Array](code2917.rs) | [link](https://leetcode.com/problems/find-the-k-or-of-an-array/) | Easy | :heavy_check_mark: |
+| 2918 | [Minimum Equal Sum of Two Arrays After Replacing Zeros](code2918.rs) | [link](https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/) | Medium | :heavy_check_mark: |
+| 2919 | [Minimum Increment Operations to Make Array Beautiful](code2919.rs) | [link](https://leetcode.com/problems/minimum-increment-operations-to-make-array-beautiful/) | Medium | :heavy_check_mark: |
+| 2920 | [Maximum Points After Collecting Coins From All Nodes](code2920.rs) | [link](https://leetcode.com/problems/maximum-points-after-collecting-coins-from-all-nodes/) | Hard | :heavy_check_mark: |
