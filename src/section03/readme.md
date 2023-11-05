@@ -740,3 +740,7 @@ cargo test
 | 2918 | [Minimum Equal Sum of Two Arrays After Replacing Zeros](code2918.rs) | [link](https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/) | Medium | :heavy_check_mark: |
 | 2919 | [Minimum Increment Operations to Make Array Beautiful](code2919.rs) | [link](https://leetcode.com/problems/minimum-increment-operations-to-make-array-beautiful/) | Medium | :heavy_check_mark: |
 | 2920 | [Maximum Points After Collecting Coins From All Nodes](code2920.rs) | [link](https://leetcode.com/problems/maximum-points-after-collecting-coins-from-all-nodes/) | Hard | :heavy_check_mark: |
+| 2923 | [Find Champion I](code2923.rs) | [link](https://leetcode.com/problems/find-champion-i/) | Easy | :heavy_check_mark: |
+| 2924 | [Find Champion II](code2924.rs) | [link](https://leetcode.com/problems/find-champion-ii/) | Medium | :heavy_check_mark: |
+| 2925 | [Maximum Score After Applying Operations on a Tree](code2925.rs) | [link](https://leetcode.com/problems/maximum-score-after-applying-operations-on-a-tree/) | Medium | :heavy_check_mark: |
+| 2926 | [Maximum Balanced Subsequence Sum](code2926.rs) | [link](https://leetcode.com/problems/maximum-balanced-subsequence-sum/) | Hard | :heavy_check_mark: |
