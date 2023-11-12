@@ -744,3 +744,11 @@ cargo test
 | 2924 | [Find Champion II](code2924.rs) | [link](https://leetcode.com/problems/find-champion-ii/) | Medium | :heavy_check_mark: |
 | 2925 | [Maximum Score After Applying Operations on a Tree](code2925.rs) | [link](https://leetcode.com/problems/maximum-score-after-applying-operations-on-a-tree/) | Medium | :heavy_check_mark: |
 | 2926 | [Maximum Balanced Subsequence Sum](code2926.rs) | [link](https://leetcode.com/problems/maximum-balanced-subsequence-sum/) | Hard | :heavy_check_mark: |
+| 2928 | [Distribute Candies Among Children I](code2928.rs) | [link](https://leetcode.com/problems/distribute-candies-among-children-i/) | Easy | :heavy_check_mark: |
+| 2929 | [Distribute Candies Among Children II](code2929.rs) | [link](https://leetcode.com/problems/distribute-candies-among-children-ii/) | Medium | :heavy_check_mark: |
+| 2930 | [Number of Strings Which Can Be Rearranged to Contain Substring](code2930.rs) | [link](https://leetcode.com/problems/number-of-strings-which-can-be-rearranged-to-contain-substring/) | Medium | :heavy_check_mark: |
+| 2931 | [Maximum Spending After Buying Items](code2931.rs) | [link](https://leetcode.com/problems/maximum-spending-after-buying-items/) | Hard | :heavy_check_mark: |
+| 2932 | [Maximum Strong Pair XOR I](code2932.rs) | [link](https://leetcode.com/problems/maximum-strong-pair-xor-i/) | Easy | :heavy_check_mark: |
+| 2933 | [High-Access Employees](code2933.rs) | [link](https://leetcode.com/problems/high-access-employees/) | Medium | :heavy_check_mark: |
+| 2934 | [Minimum Operations to Maximize Last Elements in Arrays](code2934.rs) | [link](https://leetcode.com/problems/minimum-operations-to-maximize-last-elements-in-arrays/) | Medium | :heavy_check_mark: |
+| 2935 | [Maximum Strong Pair XOR II](code2935.rs) | [link](https://leetcode.com/problems/maximum-strong-pair-xor-ii/) | Hard | :heavy_check_mark: |
