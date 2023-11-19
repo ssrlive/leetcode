@@ -45,7 +45,7 @@ impl Solution {
             }
             map
         }
-        words.iter().cloned().filter(|word| get_map(word) == get_map(&pattern)).collect()
+        words.iter().filter(|word| get_map(word) == get_map(&pattern)).cloned().collect()
     }
 }
 

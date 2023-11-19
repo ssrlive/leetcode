@@ -752,3 +752,7 @@ cargo test
 | 2933 | [High-Access Employees](code2933.rs) | [link](https://leetcode.com/problems/high-access-employees/) | Medium | :heavy_check_mark: |
 | 2934 | [Minimum Operations to Maximize Last Elements in Arrays](code2934.rs) | [link](https://leetcode.com/problems/minimum-operations-to-maximize-last-elements-in-arrays/) | Medium | :heavy_check_mark: |
 | 2935 | [Maximum Strong Pair XOR II](code2935.rs) | [link](https://leetcode.com/problems/maximum-strong-pair-xor-ii/) | Hard | :heavy_check_mark: |
+| 2937 | [Make Three Strings Equal](code2937.rs) | [link](https://leetcode.com/problems/make-three-strings-equal/) | Easy | :heavy_check_mark: |
+| 2938 | [Separate Black and White Balls](code2938.rs) | [link](https://leetcode.com/problems/separate-black-and-white-balls/) | Medium | :heavy_check_mark: |
+| 2939 | [Maximum Xor Product](code2939.rs) | [link](https://leetcode.com/problems/maximum-xor-product/) | Medium | :heavy_check_mark: |
+| 2940 | [Find Building Where Alice and Bob Can Meet](code2940.rs) | [link](https://leetcode.com/problems/find-building-where-alice-and-bob-can-meet/) | Hard | :heavy_check_mark: |

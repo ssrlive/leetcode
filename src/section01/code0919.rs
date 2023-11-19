@@ -55,10 +55,10 @@ impl CBTInserter {
         queue.push_back(root);
         while !queue.is_empty() {
             if let Some(node) = queue.pop_front() {
-                if node.is_some() {
+                if let Some(_node) = &node {
                     nodes.push(node.clone());
-                    queue.push_back(node.as_ref().unwrap().borrow().left.clone());
-                    queue.push_back(node.as_ref().unwrap().borrow().right.clone());
+                    queue.push_back(_node.borrow().left.clone());
+                    queue.push_back(_node.borrow().right.clone());
                 }
             }
         }
