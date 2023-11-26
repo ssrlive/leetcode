@@ -756,3 +756,11 @@ cargo test
 | 2938 | [Separate Black and White Balls](code2938.rs) | [link](https://leetcode.com/problems/separate-black-and-white-balls/) | Medium | :heavy_check_mark: |
 | 2939 | [Maximum Xor Product](code2939.rs) | [link](https://leetcode.com/problems/maximum-xor-product/) | Medium | :heavy_check_mark: |
 | 2940 | [Find Building Where Alice and Bob Can Meet](code2940.rs) | [link](https://leetcode.com/problems/find-building-where-alice-and-bob-can-meet/) | Hard | :heavy_check_mark: |
+| 2942 | [Find Words Containing Character](code2942.rs) | [link](https://leetcode.com/problems/find-words-containing-character/) | Easy | :heavy_check_mark: |
+| 2943 | [Maximize Area of Square Hole in Grid](code2943.rs) | [link](https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/) | Medium | :heavy_check_mark: |
+| 2944 | [Minimum Number of Coins for Fruits](code2944.rs) | [link](https://leetcode.com/problems/minimum-number-of-coins-for-fruits/) | Medium | :heavy_check_mark: |
+| 2945 | [Find Maximum Non-decreasing Array Length](code2945.rs) | [link](https://leetcode.com/problems/find-maximum-non-decreasing-array-length/) | Hard | :heavy_check_mark: |
+| 2946 | [Matrix Similarity After Cyclic Shifts](code2946.rs) | [link](https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/) | Easy | :heavy_check_mark: |
+| 2947 | [Count Beautiful Substrings I](code2947.rs) | [link](https://leetcode.com/problems/count-beautiful-substrings-i/) | Medium | :heavy_check_mark: |
+| 2948 | [Make Lexicographically Smallest Array by Swapping Elements](code2948.rs) | [link](https://leetcode.com/problems/make-lexicographically-smallest-array-by-swapping-elements/) | Medium | :heavy_check_mark: |
+| 2949 | [Count Beautiful Substrings II](code2949.rs) | [link](https://leetcode.com/problems/count-beautiful-substrings-ii/) | Hard | :heavy_check_mark: |

@@ -1,10 +1,7 @@
 name: Push or PR
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  [push, pull_request]
 
 env:
   CARGO_TERM_COLOR: always
@@ -20,7 +17,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: rustfmt
-      run: cargo fmt --all -- --check
+      run: |
+        rustc --version
+        cargo fmt --all -- --check
     - name: check
       run: cargo check --verbose
     - name: clippy
