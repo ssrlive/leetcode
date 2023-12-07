@@ -764,3 +764,10 @@ cargo test
 | 2947 | [Count Beautiful Substrings I](code2947.rs) | [link](https://leetcode.com/problems/count-beautiful-substrings-i/) | Medium | :heavy_check_mark: |
 | 2948 | [Make Lexicographically Smallest Array by Swapping Elements](code2948.rs) | [link](https://leetcode.com/problems/make-lexicographically-smallest-array-by-swapping-elements/) | Medium | :heavy_check_mark: |
 | 2949 | [Count Beautiful Substrings II](code2949.rs) | [link](https://leetcode.com/problems/count-beautiful-substrings-ii/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
+| 2951 | [Find the Peaks](code2951.rs) | [link](https://leetcode.com/problems/find-the-peaks/) | Easy | :heavy_check_mark: |
+| 2952 | [Minimum Number of Coins to be Added](code2952.rs) | [link](https://leetcode.com/problems/minimum-number-of-coins-to-be-added/) | Hard | :heavy_check_mark: |
+| 2953 | [Count Complete Substrings](code2953.rs) | [link](https://leetcode.com/problems/count-complete-substrings/) | Medium | :heavy_check_mark: |
+| 2954 | [Count the Number of Infection Sequences](code2954.rs) | [link](https://leetcode.com/problems/count-the-number-of-infection-sequences/) | Hard | :heavy_check_mark: |
