@@ -771,3 +771,11 @@ cargo test
 | 2952 | [Minimum Number of Coins to be Added](code2952.rs) | [link](https://leetcode.com/problems/minimum-number-of-coins-to-be-added/) | Hard | :heavy_check_mark: |
 | 2953 | [Count Complete Substrings](code2953.rs) | [link](https://leetcode.com/problems/count-complete-substrings/) | Medium | :heavy_check_mark: |
 | 2954 | [Count the Number of Infection Sequences](code2954.rs) | [link](https://leetcode.com/problems/count-the-number-of-infection-sequences/) | Hard | :heavy_check_mark: |
+| 2956 | [Find Common Elements Between Two Arrays](code2956.rs) | [link](https://leetcode.com/problems/find-common-elements-between-two-arrays/) | Easy | :heavy_check_mark: |
+| 2957 | [Remove Adjacent Almost-Equal Characters](code2957.rs) | [link](https://leetcode.com/problems/remove-adjacent-almost-equal-characters/) | Medium | :heavy_check_mark: |
+| 2958 | [Length of Longest Subarray With at Most K Frequency](code2958.rs) | [link](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/) | Medium | :heavy_check_mark: |
+| 2959 | [Number of Possible Sets of Closing Branches](code2959.rs) | [link](https://leetcode.com/problems/number-of-possible-sets-of-closing-branches/) | Hard | :heavy_check_mark: |
+| 2960 | [Count Tested Devices After Test Operations](code2960.rs) | [link](https://leetcode.com/problems/count-tested-devices-after-test-operations/) | Easy | :heavy_check_mark: |
+| 2961 | [Double Modular Exponentiation](code2961.rs) | [link](https://leetcode.com/problems/double-modular-exponentiation/) | Medium | :heavy_check_mark: |
+| 2962 | [Count Subarrays Where Max Element Appears at Least K Times](code2962.rs) | [link](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/) | Medium | :heavy_check_mark: |
+| 2963 | [Count the Number of Good Partitions](code2963.rs) | [link](https://leetcode.com/problems/count-the-number-of-good-partitions/) | Hard | :heavy_check_mark: |
