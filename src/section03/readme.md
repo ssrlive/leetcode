@@ -779,3 +779,7 @@ cargo test
 | 2961 | [Double Modular Exponentiation](code2961.rs) | [link](https://leetcode.com/problems/double-modular-exponentiation/) | Medium | :heavy_check_mark: |
 | 2962 | [Count Subarrays Where Max Element Appears at Least K Times](code2962.rs) | [link](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/) | Medium | :heavy_check_mark: |
 | 2963 | [Count the Number of Good Partitions](code2963.rs) | [link](https://leetcode.com/problems/count-the-number-of-good-partitions/) | Hard | :heavy_check_mark: |
+| 2965 | [Find Missing and Repeated Values](code2965.rs) | [link](https://leetcode.com/problems/find-missing-and-repeated-values/) | Easy | :heavy_check_mark: |
+| 2966 | [Divide Array Into Arrays With Max Difference](code2966.rs) | [link](https://leetcode.com/problems/divide-array-into-arrays-with-max-difference/) | Medium | :heavy_check_mark: |
+| 2967 | [Minimum Cost to Make Array Equalindromic](code2967.rs) | [link](https://leetcode.com/problems/minimum-cost-to-make-array-equalindromic/) | Medium | :heavy_check_mark: |
+| 2968 | [Apply Operations to Maximize Frequency Score](code2968.rs) | [link](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/) | Hard | :heavy_check_mark: |
