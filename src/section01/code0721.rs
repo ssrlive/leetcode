@@ -53,7 +53,7 @@ impl Solution {
             let mut graph = HashMap::<_, HashSet<_>>::new();
 
             for account in accounts.iter() {
-                let name = account.get(0)?;
+                let name = account.first()?;
                 let emails = &account[1..];
 
                 for email in emails.iter() {
@@ -88,7 +88,7 @@ impl Solution {
                     }
 
                     component.sort();
-                    let mut account = vec![*email_to_name.get(*component.get(0)?)?];
+                    let mut account = vec![*email_to_name.get(*component.first()?)?];
                     account.extend(component.iter());
                     result.push(account);
                 }

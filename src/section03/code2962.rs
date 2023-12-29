@@ -40,7 +40,7 @@ impl Solution {
         let mut cnt: i64 = 0;
         let mut idx: Vec<i32> = vec![];
 
-        for (_i, val) in nums.iter().enumerate() {
+        for val in nums.iter() {
             max = max.max(*val);
         }
 

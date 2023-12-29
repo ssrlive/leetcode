@@ -783,3 +783,11 @@ cargo test
 | 2966 | [Divide Array Into Arrays With Max Difference](code2966.rs) | [link](https://leetcode.com/problems/divide-array-into-arrays-with-max-difference/) | Medium | :heavy_check_mark: |
 | 2967 | [Minimum Cost to Make Array Equalindromic](code2967.rs) | [link](https://leetcode.com/problems/minimum-cost-to-make-array-equalindromic/) | Medium | :heavy_check_mark: |
 | 2968 | [Apply Operations to Maximize Frequency Score](code2968.rs) | [link](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/) | Hard | :heavy_check_mark: |
+| 2970 | [Count the Number of Incremovable Subarrays I](code2970.rs) | [link](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/) | Easy | :heavy_check_mark: |
+| 2971 | [Find Polygon With the Largest Perimeter](code2971.rs) | [link](https://leetcode.com/problems/find-polygon-with-the-largest-perimeter/) | Medium | :heavy_check_mark: |
+| 2972 | [Count the Number of Incremovable Subarrays II](code2972.rs) | [link](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-ii/) | Hard | :heavy_check_mark: |
+| 2973 | [Find Number of Coins to Place in Tree Nodes](code2973.rs) | [link](https://leetcode.com/problems/find-number-of-coins-to-place-in-tree-nodes/) | Hard | :heavy_check_mark: |
+| 2974 | [Minimum Number Game](code2974.rs) | [link](https://leetcode.com/problems/minimum-number-game/) | Easy | :heavy_check_mark: |
+| 2975 | [Maximum Square Area by Removing Fences From a Field](code2975.rs) | [link](https://leetcode.com/problems/maximum-square-area-by-removing-fences-from-a-field/) | Medium | :heavy_check_mark: |
+| 2976 | [Minimum Cost to Convert String I](code2976.rs) | [link](https://leetcode.com/problems/minimum-cost-to-convert-string-i/) | Medium | :heavy_check_mark: |
+| 2977 | [Minimum Cost to Convert String II](code2977.rs) | [link](https://leetcode.com/problems/minimum-cost-to-convert-string-ii/) | Hard | :heavy_check_mark: |

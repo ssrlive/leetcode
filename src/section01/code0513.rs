@@ -55,7 +55,7 @@ impl Solution {
                 if !next_queue.is_empty() {
                     queue = next_queue;
                 } else {
-                    result = queue.get(0)?.as_ref()?.borrow().val;
+                    result = queue.first()?.as_ref()?.borrow().val;
                     break;
                 }
             }
