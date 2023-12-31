@@ -791,3 +791,7 @@ cargo test
 | 2975 | [Maximum Square Area by Removing Fences From a Field](code2975.rs) | [link](https://leetcode.com/problems/maximum-square-area-by-removing-fences-from-a-field/) | Medium | :heavy_check_mark: |
 | 2976 | [Minimum Cost to Convert String I](code2976.rs) | [link](https://leetcode.com/problems/minimum-cost-to-convert-string-i/) | Medium | :heavy_check_mark: |
 | 2977 | [Minimum Cost to Convert String II](code2977.rs) | [link](https://leetcode.com/problems/minimum-cost-to-convert-string-ii/) | Hard | :heavy_check_mark: |
+| 2980 | [Check if Bitwise OR Has Trailing Zeros](code2980.rs) | [link](https://leetcode.com/problems/check-if-bitwise-or-has-trailing-zeros/) | Easy | :heavy_check_mark: |
+| 2981 | [Find Longest Special Substring That Occurs Thrice I](code2981.rs) | [link](https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-i/) | Medium | :heavy_check_mark: |
+| 2982 | [Find Longest Special Substring That Occurs Thrice II](code2982.rs) | [link](https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-ii/) | Medium | :heavy_check_mark: |
+| 2983 | [Palindrome Rearrangement Queries](code2983.rs) | [link](https://leetcode.com/problems/palindrome-rearrangement-queries/) | Hard | :heavy_check_mark: |
