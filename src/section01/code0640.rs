@@ -40,7 +40,7 @@ impl Solution {
         let len = equations.len();
         let (mut tmp, mut lr, mut a, mut b, mut sign, mut calc) = (0, 1, 0, 0, 1, 0);
         for (idx, &equation) in equations.iter().enumerate() {
-            if equation >= b'0' && equation <= b'9' {
+            if (b'0'..=b'9').contains(&equation) {
                 tmp = tmp * 10 + (equation - b'0') as i32;
                 calc += 1;
             }
