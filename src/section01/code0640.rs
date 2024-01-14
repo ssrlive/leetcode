@@ -36,121 +36,43 @@ struct Solution;
 
 impl Solution {
     pub fn solve_equation(equation: String) -> String {
-        Self::_solve_equation(equation).unwrap_or_else(|e| e.to_string())
-    }
-    pub fn _solve_equation(equation: String) -> Result<String, Box<dyn std::error::Error>> {
-        let mut nox = 0;
-        let mut curr = 0;
-        let mut i = 0;
-        let mut j = 0;
-        let n = equation.len();
-        let equation = equation.as_bytes();
-        while i < n {
-            if equation[i] == b'=' {
-                j = i;
-                break;
-            } else if equation[i] == b'x' && i == 0 {
-                nox += 1;
-            } else if equation[i] == b'x' && equation[i - 1] == b'-' {
-                nox -= 1;
-            } else if equation[i] == b'x' && equation[i - 1] == b'+' {
-                nox += 1;
-            } else if equation[i] >= b'0' && equation[i] <= b'9' && i == 0 {
-                let mut s = String::new();
-                while i < n && equation[i] >= b'0' && equation[i] <= b'9' {
-                    s.push(equation[i] as char);
-                    i += 1;
+        let equations = equation.as_bytes();
+        let len = equations.len();
+        let (mut tmp, mut lr, mut a, mut b, mut sign, mut calc) = (0, 1, 0, 0, 1, 0);
+        for (idx, &equation) in equations.iter().enumerate() {
+            if equation >= b'0' && equation <= b'9' {
+                tmp = tmp * 10 + (equation - b'0') as i32;
+                calc += 1;
+            }
+            if equation == b'x' {
+                if tmp == 0 && calc == 0 {
+                    a += sign * lr;
                 }
-                if i < n && equation[i] == b'x' {
-                    nox += s.parse::<i32>()?;
-                } else {
-                    i -= 1;
-                    curr += s.parse::<i32>()?;
-                }
-            } else if equation[i] >= b'0' && equation[i] <= b'9' && equation[i - 1] == b'-' {
-                let mut s = String::new();
-                while i < n && equation[i] >= b'0' && equation[i] <= b'9' {
-                    s.push(equation[i] as char);
-                    i += 1;
-                }
-                if i < n && equation[i] == b'x' {
-                    nox -= s.parse::<i32>()?;
-                } else {
-                    i -= 1;
-                    curr -= s.parse::<i32>()?;
-                }
-            } else if equation[i] >= b'0' && equation[i] <= b'9' && equation[i - 1] == b'+' {
-                let mut s = String::new();
-                while i < n && equation[i] >= b'0' && equation[i] <= b'9' {
-                    s.push(equation[i] as char);
-                    i += 1;
-                }
-                if i < n && equation[i] == b'x' {
-                    nox += s.parse::<i32>()?;
-                } else {
-                    i -= 1;
-                    curr += s.parse::<i32>()?;
+                a += sign * lr * tmp;
+                calc = 0;
+                tmp = 0;
+            }
+            if equation == b'-' || equation == b'+' || equation == b'=' || idx == len - 1 {
+                b += sign * lr * tmp;
+                calc = 0;
+                tmp = 0;
+                if equation == b'-' {
+                    sign = -1;
+                } else if equation == b'+' {
+                    sign = 1;
+                } else if equation == b'=' {
+                    lr = -1;
+                    sign = 1;
                 }
             }
-            i += 1;
         }
-        i = j + 1;
-        while i < n {
-            if equation[i] == b'x' && equation[i - 1] == b'=' {
-                nox -= 1;
-            } else if equation[i] == b'x' && equation[i - 1] == b'-' {
-                nox += 1;
-            } else if equation[i] == b'x' && equation[i - 1] == b'+' {
-                nox -= 1;
-            } else if equation[i] >= b'0' && equation[i] <= b'9' && equation[i - 1] == b'=' {
-                let mut s = String::new();
-                while i < n && equation[i] >= b'0' && equation[i] <= b'9' {
-                    s.push(equation[i] as char);
-                    i += 1;
-                }
-                if i < n && equation[i] == b'x' {
-                    nox -= s.parse::<i32>()?;
-                } else {
-                    i -= 1;
-                    curr -= s.parse::<i32>()?;
-                }
-            } else if equation[i] >= b'0' && equation[i] <= b'9' && equation[i - 1] == b'-' {
-                let mut s = String::new();
-                while i < n && equation[i] >= b'0' && equation[i] <= b'9' {
-                    s.push(equation[i] as char);
-                    i += 1;
-                }
-                if i < n && equation[i] == b'x' {
-                    nox += s.parse::<i32>()?;
-                } else {
-                    i -= 1;
-                    curr += s.parse::<i32>()?;
-                }
-            } else if equation[i] >= b'0' && equation[i] <= b'9' && equation[i - 1] == b'+' {
-                let mut s = String::new();
-                while i < n && equation[i] >= b'0' && equation[i] <= b'9' {
-                    s.push(equation[i] as char);
-                    i += 1;
-                }
-                if i < n && equation[i] == b'x' {
-                    nox -= s.parse::<i32>()?;
-                } else {
-                    i -= 1;
-                    curr -= s.parse::<i32>()?;
-                }
-            }
-            i += 1;
+        if a != 0 {
+            format!("x={}", -b / a)
+        } else if b == 0 {
+            "Infinite solutions".to_string()
+        } else {
+            "No solution".to_string()
         }
-        if nox == 0 && curr == 0 {
-            return Ok("Infinite solutions".to_string());
-        } else if nox == 0 {
-            return Ok("No solution".to_string());
-        }
-        let res = -(curr / nox);
-        let mut ans = res.to_string();
-        ans.insert(0, 'x');
-        ans.insert(1, '=');
-        Ok(ans)
     }
 }
 
