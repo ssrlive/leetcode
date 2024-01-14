@@ -795,3 +795,8 @@ cargo test
 | 2981 | [Find Longest Special Substring That Occurs Thrice I](code2981.rs) | [link](https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-i/) | Medium | :heavy_check_mark: |
 | 2982 | [Find Longest Special Substring That Occurs Thrice II](code2982.rs) | [link](https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-ii/) | Medium | :heavy_check_mark: |
 | 2983 | [Palindrome Rearrangement Queries](code2983.rs) | [link](https://leetcode.com/problems/palindrome-rearrangement-queries/) | Hard | :heavy_check_mark: |
+| 2996 | [Smallest Missing Integer Greater Than Sequential Prefix Sum](code2996.rs) | [link](https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/) | Easy | :heavy_check_mark: |
+| 2997 | [Minimum Number of Operations to Make Array XOR Equal to K](code2997.rs) | [link](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k/) | Medium | :heavy_check_mark: |
+| 2998 | [Minimum Number of Operations to Make X and Y Equal](code2998.rs) | [link](https://leetcode.com/problems/minimum-number-of-operations-to-make-x-and-y-equal/) | Medium | :heavy_check_mark: |
+| 2999 | [Count the Number of Powerful Integers](code2999.rs) | [link](https://leetcode.com/problems/count-the-number-of-powerful-integers/) | Hard | :heavy_check_mark: |
+| 3000 | [Maximum Area of Longest Diagonal Rectangle](code3000.rs) | [link](https://leetcode.com/problems/maximum-area-of-longest-diagonal-rectangle/) | Easy | :heavy_check_mark: |

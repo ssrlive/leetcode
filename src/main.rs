@@ -7,6 +7,7 @@ mod treenode;
 mod section01;
 mod section02;
 mod section03;
+mod section04;
 
 fn main() {
     let mut problems = vec![

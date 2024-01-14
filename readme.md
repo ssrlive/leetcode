@@ -15,3 +15,5 @@ cargo test
 [problems 1001-2000](src/section02/readme.md)
 
 [problems 2001-3000](src/section03/readme.md)
+
+[problems 3001-4000](src/section04/readme.md)
