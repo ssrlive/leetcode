@@ -19,3 +19,15 @@ cargo test
 | 3006 | [Find Beautiful Indices in the Given Array I](code3006.rs) | [link](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/) | Medium | :heavy_check_mark: |
 | 3007 | [Maximum Number That Sum of the Prices Is Less Than or Equal to K](code3007.rs) | [link](https://leetcode.com/problems/maximum-number-that-sum-of_the_prices-is-less-than-or-equal-to-k/) | Medium | :heavy_check_mark: |
 | 3008 | [Find Beautiful Indices in the Given Array II](code3008.rs) | [link](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-ii/) | Hard | :heavy_check_mark: |
+| 3010 | [Divide an Array Into Subarrays With Minimum Cost I](code3010.rs) | [link](https://leetcode.com/problems/divide-an-array-into-subsequences-with-minimum-cost-i/) | Easy | :heavy_check_mark: |
+| 3011 | [Find if Array Can Be Sorted](code3011.rs) | [link](https://leetcode.com/problems/find-if-array-can-be-sorted/) | Medium | :heavy_check_mark: |
+| 3012 | [Minimize Length of Array Using Operations](code3012.rs) | [link](https://leetcode.com/problems/minimize-length-of-array-using-operations/) | Medium | :heavy_check_mark: |
+| 3013 | [Divide an Array Into Subarrays With Minimum Cost II](code3013.rs) | [link](https://leetcode.com/problems/divide-an-array-into-subsequences-with-minimum-cost-ii/) | Hard | :heavy_check_mark: |
+| 3014 | [Minimum Number of Pushes to Type Word I](code3014.rs) | [link](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/) | Easy | :heavy_check_mark: |
+| 3015 | [Count the Number of Houses at a Certain Distance I](code3015.rs) | [link](https://leetcode.com/problems/count-the-number-of-houses-at-a-certain-distance-i/) | Medium | :heavy_check_mark: |
+| 3016 | [Minimum Number of Pushes to Type Word II](code3016.rs) | [link](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/) | Medium | :heavy_check_mark: |
+| 3017 | [Count the Number of Houses at a Certain Distance II](code3017.rs) | [link](https://leetcode.com/problems/count-the-number-of-houses-at-a-certain-distance-ii/) | Hard | :heavy_check_mark: |
+| 3019 | [Number of Changing Keys](code3019.rs) | [link](https://leetcode.com/problems/number-of-changing-keys/) | Easy | :heavy_check_mark: |
+| 3020 | [Find the Maximum Number of Elements in Subset](code3020.rs) | [link](https://leetcode.com/problems/find-the-maximum-number-of-elements-in-subset/) | Medium | :heavy_check_mark: |
+| 3021 | [Alice and Bob Playing Flower Game](code3021.rs) | [link](https://leetcode.com/problems/alice-and-bob-playing-flower-game/) | Medium | :heavy_check_mark: |
+| 3022 | [Minimize OR of Remaining Elements Using Operations](code3022.rs) | [link](https://leetcode.com/problems/minimize-or-of-remaining-elements-using-operations/) | Hard | :heavy_check_mark: |
