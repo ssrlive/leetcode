@@ -31,3 +31,11 @@ cargo test
 | 3020 | [Find the Maximum Number of Elements in Subset](code3020.rs) | [link](https://leetcode.com/problems/find-the-maximum-number-of-elements-in-subset/) | Medium | :heavy_check_mark: |
 | 3021 | [Alice and Bob Playing Flower Game](code3021.rs) | [link](https://leetcode.com/problems/alice-and-bob-playing-flower-game/) | Medium | :heavy_check_mark: |
 | 3022 | [Minimize OR of Remaining Elements Using Operations](code3022.rs) | [link](https://leetcode.com/problems/minimize-or-of-remaining-elements-using-operations/) | Hard | :heavy_check_mark: |
+| 3024 | [Type of Triangle II](code3024.rs) | [link](https://leetcode.com/problems/type-of-triangle-ii/) | Easy | :heavy_check_mark: |
+| 3025 | [Find the Number of Ways to Place People I](code3025.rs) | [link](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i/) | Medium | :heavy_check_mark: |
+| 3026 | [Maximum Good Subarray Sum](code3026.rs) | [link](https://leetcode.com/problems/maximum-good-subarray-sum/) | Medium | :heavy_check_mark: |
+| 3027 | [Find the Number of Ways to Place People II](code3027.rs) | [link](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-ii/) | Hard | :heavy_check_mark: |
+| 3028 | [Ant on the Boundary](code3028.rs) | [link](https://leetcode.com/problems/ant-on-the-boundary/) | Easy | :heavy_check_mark: |
+| 3029 | [Minimum Time to Revert Word to Initial State I](code3029.rs) | [link](https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-i/) | Medium | :heavy_check_mark: |
+| 3030 | [Find the Grid of Region Average](code3030.rs) | [link](https://leetcode.com/problems/find-the-grid-of-region-average/) | Medium | :heavy_check_mark: |
+| 3031 | [Minimum Time to Revert Word to Initial State II](code3031.rs) | [link](https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-ii/) | Hard | :heavy_check_mark: |
