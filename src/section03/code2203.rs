@@ -61,7 +61,7 @@ impl Solution {
             adj_rev[e[1] as usize].push((e[0] as usize, e[2] as i64));
         }
 
-        fn dijkstra(adj: &Vec<Vec<(usize, i64)>>, s: usize) -> Vec<Option<i64>> {
+        fn dijkstra(adj: &[Vec<(usize, i64)>], s: usize) -> Vec<Option<i64>> {
             let mut dist = vec![None; adj.len()];
             dist[s] = Some(0);
 

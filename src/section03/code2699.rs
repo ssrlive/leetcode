@@ -118,7 +118,7 @@ impl Solution {
         ret
     }
 
-    fn dfs(graph: &Vec<HashMap<usize, i32>>, dist: &mut [i32], source: usize) {
+    fn dfs(graph: &[HashMap<usize, i32>], dist: &mut [i32], source: usize) {
         for item in dist.iter_mut().take(graph.len()) {
             *item = 1_000_000_000;
         }

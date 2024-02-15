@@ -57,7 +57,7 @@ impl Solution {
         use std::cmp::Ordering::*;
         use std::collections::*;
 
-        fn lower_bound(arr: &Vec<(i32, i32)>, x: &i32) -> usize {
+        fn lower_bound(arr: &[(i32, i32)], x: &i32) -> usize {
             let mut low = 0;
             let mut high = arr.len();
             while low != high {

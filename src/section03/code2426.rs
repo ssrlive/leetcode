@@ -71,7 +71,7 @@ impl Solution {
         ret
     }
 
-    fn binary_search(index: &Vec<i32>, val: i32) -> usize {
+    fn binary_search(index: &[i32], val: i32) -> usize {
         let m = index.len();
         if index[m - 1] < val {
             return m;

@@ -46,7 +46,7 @@ struct Solution;
 
 impl Solution {
     pub fn minimum_difference(nums: Vec<i32>) -> i32 {
-        fn binary_search(data: &Vec<i32>, a: i32) -> usize {
+        fn binary_search(data: &[i32], a: i32) -> usize {
             if a > data[data.len() - 1] {
                 return data.len();
             }

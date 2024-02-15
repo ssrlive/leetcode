@@ -43,7 +43,7 @@ impl Solution {
 
         type Target = usize;
         type UseValue = usize;
-        fn upper_bound(arr: &Vec<Target>, x: &UseValue) -> usize {
+        fn upper_bound(arr: &[Target], x: &UseValue) -> usize {
             let mut low = 0;
             let mut high = arr.len();
             while low != high {
@@ -60,7 +60,7 @@ impl Solution {
             low
         }
 
-        fn lower_bound(arr: &Vec<Target>, x: &UseValue) -> usize {
+        fn lower_bound(arr: &[Target], x: &UseValue) -> usize {
             let mut low = 0;
             let mut high = arr.len();
             while low != high {

@@ -51,7 +51,7 @@ struct Solution;
 
 impl Solution {
     pub fn place_word_in_crossword(board: Vec<Vec<char>>, word: String) -> bool {
-        fn check(board: &Vec<Vec<char>>, word: &[char]) -> bool {
+        fn check(board: &[Vec<char>], word: &[char]) -> bool {
             let m = board.len();
             let n = board[0].len();
             let mut h = vec![vec![-1; n]; m];

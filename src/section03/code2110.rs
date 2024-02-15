@@ -45,7 +45,7 @@ struct Solution;
 
 impl Solution {
     pub fn get_descent_periods(prices: Vec<i32>) -> i64 {
-        pub fn smooth(arr: &Vec<i32>, index: usize) -> usize {
+        pub fn smooth(arr: &[i32], index: usize) -> usize {
             let mut count: usize = 1;
             if index < arr.len() - 1 {
                 for i in index..(arr.len() - 1) {

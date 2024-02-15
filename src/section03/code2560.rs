@@ -48,7 +48,7 @@ struct Solution;
 
 impl Solution {
     pub fn min_capability(nums: Vec<i32>, k: i32) -> i32 {
-        fn check(nums: &Vec<i32>, k: i32, val: i32) -> bool {
+        fn check(nums: &[i32], k: i32, val: i32) -> bool {
             let (mut i, n, mut k) = (0, nums.len(), k);
             while i < n {
                 if nums[i] <= val {

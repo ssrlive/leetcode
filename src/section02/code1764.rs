@@ -50,7 +50,7 @@ struct Solution;
 
 impl Solution {
     pub fn can_choose(groups: Vec<Vec<i32>>, nums: Vec<i32>) -> bool {
-        fn helper(a: &Vec<i32>, b: &[i32]) -> bool {
+        fn helper(a: &[i32], b: &[i32]) -> bool {
             for i in 0..a.len() {
                 if a[i] != b[i] {
                     return false;

@@ -70,7 +70,7 @@ impl Solution {
             a
         }
 
-        fn good(la: &Vec<i32>, ra: &Vec<i32>, lg: &Vec<i32>, rg: &Vec<i32>) -> bool {
+        fn good(la: &[i32], ra: &[i32], lg: &[i32], rg: &[i32]) -> bool {
             let mut g = 0;
             if !la.is_empty() {
                 g = gcd(g, lg[lg.len() - 1]);

@@ -56,7 +56,7 @@ struct Solution;
 
 impl Solution {
     pub fn max_building(n: i32, restrictions: Vec<Vec<i32>>) -> i32 {
-        fn pass(r: &mut Vec<Vec<i32>>) -> i32 {
+        fn pass(r: &mut [Vec<i32>]) -> i32 {
             let mut res = 0;
             for i in 0..r.len() - 1 {
                 let h1 = r[i][1];

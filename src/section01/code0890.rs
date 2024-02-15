@@ -34,8 +34,8 @@ struct Solution;
 
 impl Solution {
     pub fn find_and_replace_pattern(words: Vec<String>, pattern: String) -> Vec<String> {
-        fn get_map(word: &String) -> String {
-            let mut map = word.clone();
+        fn get_map(word: &str) -> String {
+            let mut map = word.to_owned();
             for i in 0..word.len() {
                 let c = word.chars().nth(i).unwrap();
 

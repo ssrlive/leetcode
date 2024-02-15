@@ -58,7 +58,7 @@ struct Solution;
 
 impl Solution {
     pub fn max_total_fruits(fruits: Vec<Vec<i32>>, start_pos: i32, k: i32) -> i32 {
-        pub fn upper_bound<T: Ord>(vec: &Vec<T>, x: &T) -> Result<usize, usize> {
+        pub fn upper_bound<T: Ord>(vec: &[T], x: &T) -> Result<usize, usize> {
             vec.iter().position(|y| y > x).ok_or(vec.len())
         }
 

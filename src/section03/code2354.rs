@@ -49,7 +49,7 @@ struct Solution;
 impl Solution {
     pub fn count_excellent_pairs(nums: Vec<i32>, k: i32) -> i64 {
         use std::collections::HashSet;
-        fn binary_search(v: &Vec<i32>, a: i32) -> i64 {
+        fn binary_search(v: &[i32], a: i32) -> i64 {
             let (mut left, mut right) = (0, v.len() - 1);
             if a > v[v.len() - 1] {
                 return 0i64;

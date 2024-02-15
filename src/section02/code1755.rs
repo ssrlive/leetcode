@@ -83,7 +83,7 @@ impl Solution {
         ret as i32
     }
 
-    fn binary_search(v2: &Vec<i64>, val: i64) -> usize {
+    fn binary_search(v2: &[i64], val: i64) -> usize {
         if val >= v2[v2.len() - 1] {
             return v2.len() - 1;
         }

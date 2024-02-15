@@ -35,7 +35,7 @@
 struct Solution;
 
 impl Solution {
-    pub fn set_zeroes(matrix: &mut Vec<Vec<i32>>) {
+    pub fn set_zeroes(matrix: &mut [Vec<i32>]) {
         let mut clear_row = [false; 200];
         let mut clear_col = [false; 200];
         for i in 0..matrix.len() {

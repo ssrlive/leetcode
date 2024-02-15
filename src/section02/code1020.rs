@@ -34,7 +34,7 @@ struct Solution;
 
 impl Solution {
     pub fn num_enclaves(grid: Vec<Vec<i32>>) -> i32 {
-        fn bfs(grid: &mut Vec<Vec<i32>>, i: usize, j: usize) {
+        fn bfs(grid: &mut [Vec<i32>], i: usize, j: usize) {
             if grid[i][j] == 0 {
                 return;
             }

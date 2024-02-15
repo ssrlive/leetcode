@@ -12,7 +12,7 @@
 struct Solution;
 
 impl Solution {
-    pub fn solve(board: &mut Vec<Vec<char>>) {
+    pub fn solve(board: &mut [Vec<char>]) {
         if board.is_empty() {
             return;
         }

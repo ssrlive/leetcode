@@ -41,7 +41,7 @@
 struct Solution;
 
 impl Solution {
-    pub fn game_of_life(board: &mut Vec<Vec<i32>>) {
+    pub fn game_of_life(board: &mut [Vec<i32>]) {
         let (m, n) = (board.len(), board[0].len());
         let mut next = vec![vec![0; n]; m];
         for i in 0..m {

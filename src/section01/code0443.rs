@@ -51,7 +51,7 @@
 struct Solution;
 
 impl Solution {
-    pub fn compress(chars: &mut Vec<char>) -> i32 {
+    pub fn compress(chars: &mut [char]) -> i32 {
         fn assign_count(target: &mut [char], count: i32) -> usize {
             if count == 1 {
                 return 0;

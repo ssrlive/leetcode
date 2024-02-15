@@ -29,7 +29,7 @@
 struct Solution;
 
 impl Solution {
-    pub fn move_zeroes(nums: &mut Vec<i32>) {
+    pub fn move_zeroes(nums: &mut [i32]) {
         let mut i = 0;
         let mut j = 0;
         while j < nums.len() {

@@ -45,7 +45,7 @@
 struct Solution;
 
 impl Solution {
-    pub fn next_permutation(nums: &mut Vec<i32>) {
+    pub fn next_permutation(nums: &mut [i32]) {
         let l = nums.len();
         let (mut i, mut j) = (l - 1, l - 1);
 

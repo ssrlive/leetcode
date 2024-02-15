@@ -39,3 +39,7 @@ cargo test
 | 3029 | [Minimum Time to Revert Word to Initial State I](code3029.rs) | [link](https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-i/) | Medium | :heavy_check_mark: |
 | 3030 | [Find the Grid of Region Average](code3030.rs) | [link](https://leetcode.com/problems/find-the-grid-of-region-average/) | Medium | :heavy_check_mark: |
 | 3031 | [Minimum Time to Revert Word to Initial State II](code3031.rs) | [link](https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-ii/) | Hard | :heavy_check_mark: |
+| 3033 | [Modify the Matrix](code3033.rs) | [link](https://leetcode.com/problems/modify-the-matrix/) | Easy | :heavy_check_mark: |
+| 3034 | [Number of Subarrays That Match a Pattern I](code3034.rs) | [link](https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-i/) | Medium | :heavy_check_mark: |
+| 3035 | [Maximum Palindromes After Operations](code3035.rs) | [link](https://leetcode.com/problems/maximum-palindromes-after-operations/) | Medium | :heavy_check_mark: |
+| 3036 | [Number of Subarrays That Match a Pattern II](code3036.rs) | [link](https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-ii/) | Hard | :heavy_check_mark: |

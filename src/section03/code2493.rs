@@ -52,7 +52,7 @@ impl Solution {
         use std::collections::HashMap;
         use std::collections::VecDeque;
 
-        fn bfs(adj: &Vec<Vec<usize>>, s: usize) -> (i32, usize, i32) {
+        fn bfs(adj: &[Vec<usize>], s: usize) -> (i32, usize, i32) {
             let n = adj.len();
             let mut id = usize::MAX;
             let mut groups = 0;

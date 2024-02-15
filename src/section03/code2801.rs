@@ -93,7 +93,7 @@ impl Solution {
         ret % 1_000_000_007
     }
 
-    fn extra(nums: &Vec<usize>) -> i32 {
+    fn extra(nums: &[usize]) -> i32 {
         for i in 1..nums.len() {
             if i32::abs(nums[i - 1] as i32 - nums[i] as i32) != 1 {
                 return 0;

@@ -72,7 +72,7 @@ impl Solution {
         dp[mask]
     }
 
-    fn score(student: &Vec<i32>, mentor: &[i32]) -> i32 {
+    fn score(student: &[i32], mentor: &[i32]) -> i32 {
         let mut score = 0;
         for i in 0..student.len() {
             if student[i] ^ mentor[i] == 0 {

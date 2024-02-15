@@ -45,7 +45,7 @@
 struct Solution;
 
 impl Solution {
-    fn check(num: &Vec<char>, i: i32) -> usize {
+    fn check(num: &[char], i: i32) -> usize {
         if i < 0 {
             return num.len();
         }

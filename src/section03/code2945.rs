@@ -50,7 +50,7 @@
 struct Solution;
 
 impl Solution {
-    pub fn find_maximum_length(nums: &mut Vec<i32>) -> i32 {
+    pub fn find_maximum_length(nums: &mut [i32]) -> i32 {
         let n = nums.len();
         let mut pref: Vec<i64> = vec![0; n + 1];
         for i in 0..n {

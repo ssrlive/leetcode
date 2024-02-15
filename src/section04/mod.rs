@@ -25,3 +25,7 @@ mod code3028;
 mod code3029;
 mod code3030;
 mod code3031;
+mod code3033;
+mod code3034;
+mod code3035;
+mod code3036;

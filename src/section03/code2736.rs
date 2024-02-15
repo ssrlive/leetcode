@@ -137,7 +137,7 @@ impl Solution {
         ret1.max(ret2)
     }
 
-    fn binary_search(data: &Vec<i32>, a: i32) -> usize {
+    fn binary_search(data: &[i32], a: i32) -> usize {
         let (mut l, mut r) = (0, data.len() - 1);
         if a > data[r] {
             return r + 1;

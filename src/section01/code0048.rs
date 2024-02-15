@@ -29,7 +29,7 @@
 struct Solution;
 
 impl Solution {
-    pub fn rotate(matrix: &mut Vec<Vec<i32>>) {
+    pub fn rotate(matrix: &mut [Vec<i32>]) {
         matrix.reverse();
         for i in 1..matrix.len() {
             for j in 0..i {

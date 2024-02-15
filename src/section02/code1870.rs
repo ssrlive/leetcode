@@ -57,7 +57,7 @@ struct Solution;
 
 impl Solution {
     pub fn min_speed_on_time(dist: Vec<i32>, hour: f64) -> i32 {
-        fn good(dist: &Vec<i64>, hour: f64, h: i64) -> bool {
+        fn good(dist: &[i64], hour: f64, h: i64) -> bool {
             let mut cnt = 0.0;
             for i in 0..dist.len() {
                 if i == dist.len() - 1 {

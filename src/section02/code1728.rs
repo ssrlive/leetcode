@@ -65,7 +65,7 @@ struct Solution;
 
 impl Solution {
     pub fn can_mouse_win(grid: Vec<String>, cat_jump: i32, mouse_jump: i32) -> bool {
-        fn get_jumps(grid: &Vec<String>, p: i32, f: i32, max: i32) -> Vec<i32> {
+        fn get_jumps(grid: &[String], p: i32, f: i32, max: i32) -> Vec<i32> {
             let dirs = [0, 1, 0, -1, 0];
             let mut res = vec![p];
             for d in 0..4 {

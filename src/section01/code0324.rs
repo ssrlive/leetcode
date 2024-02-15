@@ -31,8 +31,8 @@
 struct Solution;
 
 impl Solution {
-    pub fn wiggle_sort(nums: &mut Vec<i32>) {
-        let mut tmp = nums.clone();
+    pub fn wiggle_sort(nums: &mut [i32]) {
+        let mut tmp = nums.to_owned();
         tmp.sort_unstable();
         let len = nums.len() as i32;
         let mut x = len / 2;

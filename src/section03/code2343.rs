@@ -61,7 +61,7 @@ struct Solution;
 
 impl Solution {
     pub fn smallest_trimmed_numbers(nums: Vec<String>, queries: Vec<Vec<i32>>) -> Vec<i32> {
-        fn get_kth_num(nums: &Vec<String>, trim: usize, k: usize) -> i32 {
+        fn get_kth_num(nums: &[String], trim: usize, k: usize) -> i32 {
             let len_ns: usize = nums.len();
             let mut res: Vec<(&str, usize)> = Vec::with_capacity(len_ns);
             for (idx, num) in nums.iter().enumerate() {

@@ -86,7 +86,7 @@ impl Solution {
         z
     }
 
-    fn mul2(a: &Vec<Vec<i64>>, b: &[Vec<i64>]) -> Vec<Vec<i64>> {
+    fn mul2(a: &[Vec<i64>], b: &[Vec<i64>]) -> Vec<Vec<i64>> {
         let m = a.len();
         let n = a[0].len();
         let p = b[0].len();
@@ -101,13 +101,13 @@ impl Solution {
         r
     }
 
-    fn pow(a: &Vec<Vec<i64>>, y: i64) -> Vec<Vec<i64>> {
+    fn pow(a: &[Vec<i64>], y: i64) -> Vec<Vec<i64>> {
         let n = a.len();
         let mut r = vec![vec![0; n]; n];
         for (i, r_i) in r.iter_mut().enumerate().take(n) {
             r_i[i] = 1;
         }
-        let mut x = a.clone();
+        let mut x = a.to_owned();
         let mut y = y;
         while y > 0 {
             if y & 1 == 1 {
@@ -121,7 +121,7 @@ impl Solution {
 
     pub fn number_of_ways(s: String, t: String, k: i64) -> i32 {
         let n = s.len() as i64;
-        let dp = &Solution::pow(&vec![vec![0_i64, 1], vec![n - 1, n - 2]], k)[0];
+        let dp = &Solution::pow(&[vec![0_i64, 1], vec![n - 1, n - 2]], k)[0];
         let mut s = s;
         s.push_str(&t);
         s.push_str(&t);

@@ -37,7 +37,7 @@ struct Solution;
 impl Solution {
     pub fn shortest_alternating_paths(n: i32, red_edges: Vec<Vec<i32>>, blue_edges: Vec<Vec<i32>>) -> Vec<i32> {
         const INF: i32 = 1_000_000_000;
-        fn bfs(g: &Vec<Vec<usize>>, start: usize, goal: usize) -> i32 {
+        fn bfs(g: &[Vec<usize>], start: usize, goal: usize) -> i32 {
             let n = g.len();
             let mut memo = vec![INF; n];
 
