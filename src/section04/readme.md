@@ -43,3 +43,10 @@ cargo test
 | 3034 | [Number of Subarrays That Match a Pattern I](code3034.rs) | [link](https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-i/) | Medium | :heavy_check_mark: |
 | 3035 | [Maximum Palindromes After Operations](code3035.rs) | [link](https://leetcode.com/problems/maximum-palindromes-after-operations/) | Medium | :heavy_check_mark: |
 | 3036 | [Number of Subarrays That Match a Pattern II](code3036.rs) | [link](https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-ii/) | Hard | :heavy_check_mark: |
+| 3038 | [Maximum Number of Operations With the Same Score I](code3038.rs) | [link](https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/) | Easy | :heavy_check_mark: |
+| 3039 | [Apply Operations to Make String Empty](code3039.rs) | [link](https://leetcode.com/problems/apply-operations-to-make-string-empty/) | Medium | :heavy_check_mark: |
+| 3040 | [Maximum Number of Operations With the Same Score II](code3040.rs) | [link](https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/) | Medium | :heavy_check_mark: |
+| 3041 | [Maximize Consecutive Elements in an Array After Modification](code3041.rs) | [link](https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/) | Hard | :heavy_check_mark: |
+| 3043 | [Find the Length of the Longest Common Prefix](code3043.rs) | [link](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/) | Medium | :heavy_check_mark: |
+| 3044 | [Most Frequent Prime](code3044.rs) | [link](https://leetcode.com/problems/most-frequent-prime/) | Medium | :heavy_check_mark: |
+| 3045 | [Count Prefix and Suffix Pairs II](code3045.rs) | [link](https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii/) | Hard | :heavy_check_mark: |
