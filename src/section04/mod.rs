@@ -37,3 +37,7 @@ mod code3042;
 mod code3043;
 mod code3044;
 mod code3045;
+mod code3046;
+mod code3047;
+mod code3048;
+mod code3049;
