@@ -50,3 +50,14 @@ cargo test
 | 3043 | [Find the Length of the Longest Common Prefix](code3043.rs) | [link](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/) | Medium | :heavy_check_mark: |
 | 3044 | [Most Frequent Prime](code3044.rs) | [link](https://leetcode.com/problems/most-frequent-prime/) | Medium | :heavy_check_mark: |
 | 3045 | [Count Prefix and Suffix Pairs II](code3045.rs) | [link](https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
+| 3065 | [Minimum Operations to Exceed Threshold Value I](code3065.rs) | [link](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-i/) | Easy | :heavy_check_mark: |
+| 3066 | [Minimum Operations to Exceed Threshold Value II](code3066.rs) | [link](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii/) | Medium | :heavy_check_mark: |
+| 3067 | [Count Pairs of Connectable Servers in a Weighted Tree Network](code3067.rs) | [link](https://leetcode.com/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network/) | Medium | :heavy_check_mark: |
+| 3068 | [Find the Maximum Sum of Node Values](code3068.rs) | [link](https://leetcode.com/problems/find-the-maximum-sum-of-node-values/) | Hard | :heavy_check_mark: |
+| 3069 | [Distribute Elements Into Two Arrays I](code3069.rs) | [link](https://leetcode.com/problems/distribute-elements-into-two-arrays-i/) | Easy | :heavy_check_mark: |
+| 3070 | [Count Submatrices with Top-Left Element and Sum Less Than k](code3070.rs) | [link](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/) | Medium | :heavy_check_mark: |
+| 3071 | [Minimum Operations to Write the Letter Y on a Grid](code3071.rs) | [link](https://leetcode.com/problems/minimum-operations-to-write-the-letter-y-on-a-grid/) | Medium | :heavy_check_mark: |
+| 3072 | [Distribute Elements Into Two Arrays II](code3072.rs) | [link](https://leetcode.com/problems/distribute-elements-into-two-arrays-ii/) | Hard | :heavy_check_mark: |
