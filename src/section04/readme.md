@@ -61,3 +61,7 @@ cargo test
 | 3070 | [Count Submatrices with Top-Left Element and Sum Less Than k](code3070.rs) | [link](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/) | Medium | :heavy_check_mark: |
 | 3071 | [Minimum Operations to Write the Letter Y on a Grid](code3071.rs) | [link](https://leetcode.com/problems/minimum-operations-to-write-the-letter-y-on-a-grid/) | Medium | :heavy_check_mark: |
 | 3072 | [Distribute Elements Into Two Arrays II](code3072.rs) | [link](https://leetcode.com/problems/distribute-elements-into-two-arrays-ii/) | Hard | :heavy_check_mark: |
+| 3074 | [Apple Redistribution into Boxes](code3074.rs) | [link](https://leetcode.com/problems/apple-redistribution-into-boxes/) | Easy | :heavy_check_mark: |
+| 3075 | [Maximize Happiness of Selected Children](code3075.rs) | [link](https://leetcode.com/problems/maximize-happiness-of-selected-children/) | Medium | :heavy_check_mark: |
+| 3076 | [Shortest Uncommon Substring in an Array](code3076.rs) | [link](https://leetcode.com/problems/shortest-uncommon-substring-in-an-array/) | Medium | :heavy_check_mark: |
+| 3077 | [Maximum Strength of K Disjoint Subarrays](code3077.rs) | [link](https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/) | Hard | :heavy_check_mark: |
