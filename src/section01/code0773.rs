@@ -57,7 +57,7 @@ impl Solution {
 
         fn _sliding_puzzle(board: Vec<Vec<i32>>) -> Option<i32> {
             let goal = "123450".to_string();
-            let moves = vec![vec![1, 3], vec![0, 2, 4], vec![1, 5], vec![0, 4], vec![1, 3, 5], vec![2, 4]];
+            let moves = [vec![1, 3], vec![0, 2, 4], vec![1, 5], vec![0, 4], vec![1, 3, 5], vec![2, 4]];
             let mut cr = String::new();
             for i in 0..board.len() {
                 for j in 0..board[0].len() {

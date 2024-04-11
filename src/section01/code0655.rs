@@ -98,12 +98,12 @@ impl Solution {
 
 #[test]
 fn test() {
-    let expected = vec![vec!["", "1", ""], vec!["2", "", ""]];
+    let expected = [vec!["", "1", ""], vec!["2", "", ""]];
     let expected: Vec<Vec<String>> = expected.iter().map(|v| v.iter().map(|s| s.to_string()).collect()).collect();
     let root = TreeNode::from_vec(&[Some(1), Some(2)]);
     assert_eq!(Solution::print_tree(root), expected);
 
-    let expected = vec![
+    let expected = [
         vec!["", "", "", "1", "", "", ""],
         vec!["", "2", "", "", "", "3", ""],
         vec!["", "", "4", "", "", "", ""],
@@ -112,7 +112,7 @@ fn test() {
     let root = TreeNode::from_vec(&[Some(1), Some(2), Some(3), None, Some(4)]);
     assert_eq!(Solution::print_tree(root), expected);
 
-    let expected = vec![
+    let expected = [
         vec!["", "", "", "", "", "", "", "1", "", "", "", "", "", "", ""],
         vec!["", "", "", "2", "", "", "", "", "", "", "", "5", "", "", ""],
         vec!["", "3", "", "", "", "", "", "", "", "", "", "", "", "", ""],

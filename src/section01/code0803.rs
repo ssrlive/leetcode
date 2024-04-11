@@ -94,7 +94,7 @@ impl Solution {
         let mut parents = vec![0; m * n];
         let mut _size = vec![1; m * n];
         let mut ret = vec![0; hits.len()];
-        let dirs = vec![vec![0, 1], vec![0, -1], vec![-1, 0], vec![1, 0]];
+        let dirs = [vec![0, 1], vec![0, -1], vec![-1, 0], vec![1, 0]];
         let c21 = |i: usize, j: usize| -> usize { i * n + j };
         for h in hits.iter() {
             grid[h[0] as usize][h[1] as usize] -= 1;

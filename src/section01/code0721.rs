@@ -159,7 +159,7 @@ impl Solution {
 
 #[test]
 fn test() {
-    let accounts = vec![
+    let accounts = [
         vec!["John", "johnsmith@mail.com", "john_newyork@mail.com"],
         vec!["John", "johnsmith@mail.com", "john00@mail.com"],
         vec!["Mary", "mary@mail.com"],
@@ -175,7 +175,7 @@ fn test() {
     ];
     assert_eq!(result, expected);
 
-    let accounts = vec![
+    let accounts = [
         vec!["Gabe", "Gabe0@m.co", "Gabe3@m.co", "Gabe1@m.co"],
         vec!["Kevin", "Kevin3@m.co", "Kevin5@m.co", "Kevin0@m.co"],
         vec!["Ethan", "Ethan5@m.co", "Ethan4@m.co", "Ethan0@m.co"],

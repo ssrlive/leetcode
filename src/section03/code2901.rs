@@ -119,7 +119,7 @@ fn test() {
     let n = 3;
     let words = vec!["bab".to_string(), "dab".to_string(), "cab".to_string()];
     let groups = vec![1, 2, 2];
-    let res = vec![
+    let res = [
         vec!["bab".to_string(), "cab".to_string()],
         vec!["bab".to_string(), "dab".to_string()],
     ];

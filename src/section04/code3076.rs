@@ -80,11 +80,11 @@ impl Solution {
 
 #[test]
 fn test() {
-    let arr = vec!["cab", "ad", "bad", "c"];
+    let arr = ["cab", "ad", "bad", "c"];
     let expected = vec!["ab", "", "ba", ""];
     assert_eq!(Solution::shortest_substrings(arr.iter().map(|s| s.to_string()).collect()), expected);
 
-    let arr = vec!["abc", "bcd", "abcd"];
+    let arr = ["abc", "bcd", "abcd"];
     let expected = vec!["", "", "abcd"];
     assert_eq!(Solution::shortest_substrings(arr.iter().map(|s| s.to_string()).collect()), expected);
 }

@@ -33,7 +33,7 @@ impl Solution {
             return result;
         }
 
-        let compass = vec![vec![0, 1], vec![1, 0], vec![0, -1], vec![-1, 0]];
+        let compass = [vec![0, 1], vec![1, 0], vec![0, -1], vec![-1, 0]];
         let mut direction = 0;
         let mut steps = [matrix[0].len(), matrix.len() - 1];
         let mut row = 0;

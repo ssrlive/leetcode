@@ -72,7 +72,7 @@ impl Solution {
         let mut y = 0;
         let mut dir = 0_i32;
         let mut res = 0;
-        let ds = vec![vec![0, 1], vec![1, 0], vec![0, -1], vec![-1, 0]];
+        let ds = [vec![0, 1], vec![1, 0], vec![0, -1], vec![-1, 0]];
         for &command in &commands {
             if command == -2 {
                 dir -= 1;

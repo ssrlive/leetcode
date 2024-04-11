@@ -77,6 +77,6 @@ fn test() {
     assert_eq!(Solution::reorganize_string(s), "".to_string());
 
     let s = "vvvlo".to_string();
-    let expected = vec!["vlvov".to_string(), "vovlv".to_string()];
+    let expected = ["vlvov".to_string(), "vovlv".to_string()];
     assert!(expected.contains(&Solution::reorganize_string(s)));
 }
