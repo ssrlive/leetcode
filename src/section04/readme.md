@@ -65,3 +65,21 @@ cargo test
 | 3075 | [Maximize Happiness of Selected Children](code3075.rs) | [link](https://leetcode.com/problems/maximize-happiness-of-selected-children/) | Medium | :heavy_check_mark: |
 | 3076 | [Shortest Uncommon Substring in an Array](code3076.rs) | [link](https://leetcode.com/problems/shortest-uncommon-substring-in-an-array/) | Medium | :heavy_check_mark: |
 | 3077 | [Maximum Strength of K Disjoint Subarrays](code3077.rs) | [link](https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/) | Hard | :heavy_check_mark: |
+| 3079 | [Find the Sum of Encrypted Integers](code3079.rs) | [link](https://leetcode.com/problems/find-the-sum-of-encrypted-integers/) | Easy | :heavy_check_mark: |
+| 3080 | [Mark Elements on Array by Performing Queries](code3080.rs) | [link](https://leetcode.com/problems/mark-elements-on-array-by-performing-queries/) | Medium | :heavy_check_mark: |
+| 3081 | [Replace Question Marks in String to Minimize Its Value](code3081.rs) | [link](https://leetcode.com/problems/replace-question-marks-in-string-to-minimize-its-value/) | Medium | :heavy_check_mark: |
+| 3082 | [Find the Sum of the Power of All Subsequences](code3082.rs) | [link](https://leetcode.com/problems/find-the-sum-of-the-power-of-all-subsequences/) | Hard | :heavy_check_mark: |
+| 3083 | [Existence of a Substring in a String and Its Reverse](code3083.rs) | [link](https://leetcode.com/problems/existence-of-a-substring-in-a-string-and-its-reverse/) | Easy | :heavy_check_mark: |
+| 3084 | [Count Substrings Starting and Ending with Given Character](code3084.rs) | [link](https://leetcode.com/problems/count-substrings-starting-and-ending-with-given-character/) | Medium | :heavy_check_mark: |
+| 3085 | [Minimum Deletions to Make String K-Special](code3085.rs) | [link](https://leetcode.com/problems/minimum-deletions-to-make-string-k-special/) | Medium | :heavy_check_mark: |
+| 3086 | [Minimum Moves to Pick K Ones](code3086.rs) | [link](https://leetcode.com/problems/minimum-moves-to-pick-k-ones/) | Hard | :heavy_check_mark: |
+| 3090 | [Maximum Length Substring With Two Occurrences](code3090.rs) | [link](https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/) | Easy | :heavy_check_mark: |
+| 3091 | [Apply Operations to Make Sum of Array Greater Than or Equal to k](code3091.rs) | [link](https://leetcode.com/problems/apply-operations-to-make-sum-of-array-greater-than-or-equal-to-k/) | Medium | :heavy_check_mark: |
+| 3092 | [Most Frequent IDs](code3092.rs) | [link](https://leetcode.com/problems/most-frequent-ids/) | Medium | :heavy_check_mark: |
+| 3093 | [Longest Common Suffix Queries](code3093.rs) | [link](https://leetcode.com/problems/longest-common-suffix-queries/) | Hard | :heavy_check_mark: |
+| 3095 | [Shortest Subarray With OR at Least K I](code3095.rs) | [link](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/) | Easy | :heavy_check_mark: |
+| 3096 | [Minimum Levels to Gain More Points](code3096.rs) | [link](https://leetcode.com/problems/minimum-levels-to-gain-more-points/) | Medium | :heavy_check_mark: |
+| 3097 | [Shortest Subarray With OR at Least K II](code3097.rs) | [link](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/) | Medium | :heavy_check_mark: |
+| 3098 | [Find the Sum of Subsequence Powers](code3098.rs) | [link](https://leetcode.com/problems/find-the-sum-of-subsequence-powers/) | Hard | :heavy_check_mark: |
+| 3099 | [Harshad Number](code3099.rs) | [link](https://leetcode.com/problems/harshad-number/) | Easy | :heavy_check_mark: |
+| 3100 | [Water Bottles II](code3100.rs) | [link](https://leetcode.com/problems/water-bottles-ii/) | Medium | :heavy_check_mark: |
