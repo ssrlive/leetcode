@@ -83,3 +83,12 @@ cargo test
 | 3098 | [Find the Sum of Subsequence Powers](code3098.rs) | [link](https://leetcode.com/problems/find-the-sum-of-subsequence-powers/) | Hard | :heavy_check_mark: |
 | 3099 | [Harshad Number](code3099.rs) | [link](https://leetcode.com/problems/harshad-number/) | Easy | :heavy_check_mark: |
 | 3100 | [Water Bottles II](code3100.rs) | [link](https://leetcode.com/problems/water-bottles-ii/) | Medium | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
+| 3101 | [Count Alternating Subarrays](code3101.rs) | [link](https://leetcode.com/problems/count-alternating-subarrays/) | Medium | :heavy_check_mark: |
+| 3102 | [Minimize Manhattan Distances](code3102.rs) | [link](https://leetcode.com/problems/minimize-manhattan-distances/) | Hard | :heavy_check_mark: |
+| 3105 | [Longest Strictly Increasing or Strictly Decreasing Subarray](code3105.rs) | [link](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray/) | Easy | :heavy_check_mark: |
+| 3106 | [Lexicographically Smallest String After Operations With Constraint](code3106.rs) | [link](https://leetcode.com/problems/lexicographically-smallest-string-after-operations-with-constraint/) | Medium | :heavy_check_mark: |
+| 3107 | [Minimum Operations to Make Median of Array Equal to K](code3107.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-median-of-array-equal-to-k/) | Medium | :heavy_check_mark: |
+| 3108 | [Minimum Cost Walk in Weighted Graph](code3108.rs) | [link](https://leetcode.com/problems/minimum-cost-walk-in-weighted-graph/) | Hard | :heavy_check_mark: |
