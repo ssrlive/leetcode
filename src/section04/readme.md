@@ -92,3 +92,11 @@ cargo test
 | 3106 | [Lexicographically Smallest String After Operations With Constraint](code3106.rs) | [link](https://leetcode.com/problems/lexicographically-smallest-string-after-operations-with-constraint/) | Medium | :heavy_check_mark: |
 | 3107 | [Minimum Operations to Make Median of Array Equal to K](code3107.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-median-of-array-equal-to-k/) | Medium | :heavy_check_mark: |
 | 3108 | [Minimum Cost Walk in Weighted Graph](code3108.rs) | [link](https://leetcode.com/problems/minimum-cost-walk-in-weighted-graph/) | Hard | :heavy_check_mark: |
+| 3110 | [Score of a String](code3110.rs) | [link](https://leetcode.com/problems/score-of-a-string/) | Easy | :heavy_check_mark: |
+| 3111 | [Minimum Rectangles to Cover Points](code3111.rs) | [link](https://leetcode.com/problems/minimum-rectangles-to-cover-points/) | Medium | :heavy_check_mark: |
+| 3112 | [Minimum Time to Visit Disappearing Nodes](code3112.rs) | [link](https://leetcode.com/problems/minimum-time-to-visit-disappearing-nodes/) | Medium | :heavy_check_mark: |
+| 3113 | [Find the Number of Subarrays Where Boundary Elements Are Maximum](code3113.rs) | [link](https://leetcode.com/problems/find-the-number-of-subarrays-where-boundary-elements-are-maximum/) | Hard | :heavy_check_mark: |
+| 3114 | [Latest Time You Can Obtain After Replacing Characters](code3114.rs) | [link](https://leetcode.com/problems/latest-time-you-can-obtain-after-replacing-characters/) | Easy | :heavy_check_mark: |
+| 3115 | [Maximum Prime Difference](code3115.rs) | [link](https://leetcode.com/problems/maximum-prime-difference/) | Medium | :heavy_check_mark: |
+| 3116 | [Kth Smallest Amount With Single Denomination Combination](code3116.rs) | [link](https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/) | Hard | :heavy_check_mark: |
+| 3117 | [Minimum Sum of Values by Dividing Array](code3117.rs) | [link](https://leetcode.com/problems/minimum-sum-of-values-by-dividing-array/) | Hard | :heavy_check_mark: |
