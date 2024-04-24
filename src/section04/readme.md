@@ -100,3 +100,7 @@ cargo test
 | 3115 | [Maximum Prime Difference](code3115.rs) | [link](https://leetcode.com/problems/maximum-prime-difference/) | Medium | :heavy_check_mark: |
 | 3116 | [Kth Smallest Amount With Single Denomination Combination](code3116.rs) | [link](https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/) | Hard | :heavy_check_mark: |
 | 3117 | [Minimum Sum of Values by Dividing Array](code3117.rs) | [link](https://leetcode.com/problems/minimum-sum-of-values-by-dividing-array/) | Hard | :heavy_check_mark: |
+| 3120 | [Count the Number of Special Characters I](code3120.rs) | [link](https://leetcode.com/problems/count-the-number-of-special-characters-i/) | Easy | :heavy_check_mark: |
+| 3121 | [Count the Number of Special Characters II](code3121.rs) | [link](https://leetcode.com/problems/count-the-number-of-special-characters-ii/) | Medium | :heavy_check_mark: |
+| 3122 | [Minimum Number of Operations to Satisfy Conditions](code3122.rs) | [link](https://leetcode.com/problems/minimum-number-of-operations-to-satisfy-conditions/) | Medium | :heavy_check_mark: |
+| 3123 | [Find Edges in Shortest Paths](code3123.rs) | [link](https://leetcode.com/problems/find-edges-in-shortest-paths/) | Hard | :heavy_check_mark: |
