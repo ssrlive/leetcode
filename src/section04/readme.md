@@ -104,3 +104,7 @@ cargo test
 | 3121 | [Count the Number of Special Characters II](code3121.rs) | [link](https://leetcode.com/problems/count-the-number-of-special-characters-ii/) | Medium | :heavy_check_mark: |
 | 3122 | [Minimum Number of Operations to Satisfy Conditions](code3122.rs) | [link](https://leetcode.com/problems/minimum-number-of-operations-to-satisfy-conditions/) | Medium | :heavy_check_mark: |
 | 3123 | [Find Edges in Shortest Paths](code3123.rs) | [link](https://leetcode.com/problems/find-edges-in-shortest-paths/) | Hard | :heavy_check_mark: |
+| 3127 | [Make a Square with the Same Color](code3127.rs) | [link](https://leetcode.com/problems/make-a-square-with-the-same-color/) | Easy | :heavy_check_mark: |
+| 3128 | [Right Triangles](code3128.rs) | [link](https://leetcode.com/problems/right-triangles/) | Medium | :heavy_check_mark: |
+| 3129 | [Find All Possible Stable Binary Arrays I](code3129.rs) | [link](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/) | Medium | :heavy_check_mark: |
+| 3130 | [Find All Possible Stable Binary Arrays II](code3130.rs) | [link](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/) | Hard | :heavy_check_mark: |
