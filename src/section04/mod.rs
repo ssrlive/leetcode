@@ -93,3 +93,7 @@ mod code3127;
 mod code3128;
 mod code3129;
 mod code3130;
+mod code3131;
+mod code3132;
+mod code3133;
+mod code3134;

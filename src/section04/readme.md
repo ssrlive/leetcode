@@ -108,3 +108,7 @@ cargo test
 | 3128 | [Right Triangles](code3128.rs) | [link](https://leetcode.com/problems/right-triangles/) | Medium | :heavy_check_mark: |
 | 3129 | [Find All Possible Stable Binary Arrays I](code3129.rs) | [link](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/) | Medium | :heavy_check_mark: |
 | 3130 | [Find All Possible Stable Binary Arrays II](code3130.rs) | [link](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/) | Hard | :heavy_check_mark: |
+| 3131 | [Find the Integer Added to Array I](code3131.rs) | [link](https://leetcode.com/problems/find-the-integer-added-to-array-i/) | Easy | :heavy_check_mark: |
+| 3132 | [Find the Integer Added to Array II](code3132.rs) | [link](https://leetcode.com/problems/find-the-integer-added-to-array-ii/) | Medium | :heavy_check_mark: |
+| 3133 | [Minimum Array End](code3133.rs) | [link](https://leetcode.com/problems/minimum-array-end/) | Medium | :heavy_check_mark: |
+| 3134 | [Find the Median of the Uniqueness Array](code3134.rs) | [link](https://leetcode.com/problems/find-the-median-of-the-uniqueness-array/) | Hard | :heavy_check_mark: |
