@@ -112,3 +112,7 @@ cargo test
 | 3132 | [Find the Integer Added to Array II](code3132.rs) | [link](https://leetcode.com/problems/find-the-integer-added-to-array-ii/) | Medium | :heavy_check_mark: |
 | 3133 | [Minimum Array End](code3133.rs) | [link](https://leetcode.com/problems/minimum-array-end/) | Medium | :heavy_check_mark: |
 | 3134 | [Find the Median of the Uniqueness Array](code3134.rs) | [link](https://leetcode.com/problems/find-the-median-of-the-uniqueness-array/) | Hard | :heavy_check_mark: |
+| 3136 | [Valid Word](code3136.rs) | [link](https://leetcode.com/problems/valid-word/) | Easy | :heavy_check_mark: |
+| 3137 | [Minimum Number of Operations to Make Word K-Periodic](code3137.rs) | [link](https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/) | Medium | :heavy_check_mark: |
+| 3138 | [Minimum Length of Anagram Concatenation](code3138.rs) | [link](https://leetcode.com/problems/minimum-length-of-anagram-concatenation/) | Medium | :heavy_check_mark: |
+| 3139 | [Minimum Cost to Equalize Array](code3139.rs) | [link](https://leetcode.com/problems/minimum-cost-to-equalize-array/) | Hard | :heavy_check_mark: |
