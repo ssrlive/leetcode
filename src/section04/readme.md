@@ -116,3 +116,11 @@ cargo test
 | 3137 | [Minimum Number of Operations to Make Word K-Periodic](code3137.rs) | [link](https://leetcode.com/problems/minimum-number-of-operations-to-make-word-k-periodic/) | Medium | :heavy_check_mark: |
 | 3138 | [Minimum Length of Anagram Concatenation](code3138.rs) | [link](https://leetcode.com/problems/minimum-length-of-anagram-concatenation/) | Medium | :heavy_check_mark: |
 | 3139 | [Minimum Cost to Equalize Array](code3139.rs) | [link](https://leetcode.com/problems/minimum-cost-to-equalize-array/) | Hard | :heavy_check_mark: |
+| 3142 | [Check if Grid Satisfies Conditions](code3142.rs) | [link](https://leetcode.com/problems/check-if-grid-satisfies-conditions/) | Easy | :heavy_check_mark: |
+| 3143 | [Maximum Points Inside the Square](code3143.rs) | [link](https://leetcode.com/problems/maximum-points-inside-the-square/) | Medium | :heavy_check_mark: |
+| 3144 | [Minimum Substring Partition of Equal Character Frequency](code3144.rs) | [link](https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/) | Medium | :heavy_check_mark: |
+| 3145 | [Find Products of Elements of Big Array](code3145.rs) | [link](https://leetcode.com/problems/find-products-of-elements-of-big-array/) | Hard | :heavy_check_mark: |
+| 3146 | [Permutation Difference between Two Strings](code3146.rs) | [link](https://leetcode.com/problems/permutation-difference-between-two-strings/) | Easy | :heavy_check_mark: |
+| 3147 | [Taking Maximum Energy From the Mystic Dungeon](code3147.rs) | [link](https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/) | Medium | :heavy_check_mark: |
+| 3148 | [Maximum Difference Score in a Grid](code3148.rs) | [link](https://leetcode.com/problems/maximum-difference-score-in-a-grid/) | Medium | :heavy_check_mark: |
+| 3149 | [Find the Minimum Cost Array Permutation](code3149.rs) | [link](https://leetcode.com/problems/find-the-minimum-cost-array-permutation/) | Hard | :heavy_check_mark: |
