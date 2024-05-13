@@ -75,7 +75,10 @@ impl Solution {
             let mut head = head.clone();
             while let Some(node) = head {
                 node.borrow_mut().val *= -1;
-                head = node.borrow_mut().next.clone();
+                #[allow(clippy::assigning_clones)]
+                {
+                    head = node.borrow_mut().next.clone();
+                }
             }
         }
 
@@ -86,7 +89,10 @@ impl Solution {
                 head_b = Some(node);
                 break;
             }
-            head_b = node.borrow().next.clone();
+            #[allow(clippy::assigning_clones)]
+            {
+                head_b = node.borrow().next.clone();
+            }
         }
         change_sign(&head_a);
         head_b

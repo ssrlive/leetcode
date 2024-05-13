@@ -38,6 +38,7 @@ impl Node {
 
     pub fn get_tail(&self) -> Option<Rc<RefCell<Node>>> {
         let mut tail = Some(Rc::new(RefCell::new(self.clone())));
+        #[allow(clippy::assigning_clones)]
         while tail.as_ref()?.borrow().next.is_some() {
             tail = tail?.borrow().next.clone();
         }
@@ -51,6 +52,7 @@ use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
     pub fn has_cycle(head: Option<Rc<RefCell<Node>>>) -> bool {
+        #[allow(clippy::assigning_clones)]
         fn _has_cycle(head: Option<Rc<RefCell<Node>>>) -> Option<bool> {
             let mut slow = head.clone();
             let mut fast = head;

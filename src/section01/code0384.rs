@@ -56,7 +56,7 @@ impl Solution {
     }
 
     fn reset(&mut self) -> Vec<i32> {
-        self.shuffled = self.origin.clone();
+        self.shuffled.clone_from(&self.origin);
         self.origin.clone()
     }
 

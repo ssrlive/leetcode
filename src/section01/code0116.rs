@@ -12,6 +12,7 @@ struct Solution {}
 use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
+    #[allow(clippy::assigning_clones)]
     pub fn connect(root: Option<Rc<RefCell<TreeNode>>>) -> Option<Rc<RefCell<TreeNode>>> {
         let mut cur = root.clone();
         while let Some(cur_rc) = cur.clone() {

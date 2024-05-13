@@ -136,7 +136,7 @@ impl Solution {
                         let v = multiply(&st.pop()?, &num);
                         st.push(v);
                     }
-                    sign = char.clone();
+                    sign.clone_from(&char);
                 }
                 if char == ")" {
                     break;

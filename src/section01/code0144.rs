@@ -19,6 +19,7 @@ impl Solution {
         let mut stack = Vec::new();
         let mut node = root;
 
+        #[allow(clippy::assigning_clones)]
         while let Some(n) = node {
             result.push(n.borrow().val);
             if let Some(right) = n.borrow().right.clone() {

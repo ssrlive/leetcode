@@ -45,6 +45,7 @@ impl Solution {
             let left = Self::all_possible_fbt(i);
             let right = Self::all_possible_fbt(n - i - 1);
             for l in left {
+                #[allow(clippy::assigning_clones)]
                 for r in &right {
                     let mut root = TreeNode::new(0);
                     root.left = l.clone();

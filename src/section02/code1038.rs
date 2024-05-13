@@ -43,6 +43,7 @@ impl Solution {
         let mut sum = 0;
         let mut stack = vec![];
         let mut node = root.clone();
+        #[allow(clippy::assigning_clones)]
         while node.is_some() || !stack.is_empty() {
             while let Some(n) = node {
                 stack.push(n.clone());

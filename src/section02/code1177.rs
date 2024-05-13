@@ -49,7 +49,10 @@ impl Solution {
         let mut memo = vec![vec![0; 26]; n + 1];
 
         for i in 0..n {
-            memo[i + 1] = memo[i].clone();
+            #[allow(clippy::assigning_clones)]
+            {
+                memo[i + 1] = memo[i].clone();
+            }
             memo[i + 1][s[i]] += 1;
         }
 

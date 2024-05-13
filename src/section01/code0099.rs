@@ -52,7 +52,10 @@ impl Solution {
 
         while !(stack.is_empty() && curr.is_none()) {
             while let Some(node) = curr {
-                curr = node.borrow_mut().left.clone();
+                #[allow(clippy::assigning_clones)]
+                {
+                    curr = node.borrow_mut().left.clone();
+                }
                 stack.push(node);
             }
             if let Some(node) = stack.pop() {
@@ -67,7 +70,10 @@ impl Solution {
                     }
                 }
                 pred = Some(node.clone());
-                curr = node.borrow_mut().right.clone();
+                #[allow(clippy::assigning_clones)]
+                {
+                    curr = node.borrow_mut().right.clone();
+                }
             }
         }
 

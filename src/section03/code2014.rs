@@ -73,7 +73,7 @@ impl Solution {
                     new_cur.push(ch as char);
                     if check(s, &new_cur, k) {
                         if new_cur.len() > best.len() {
-                            *best = new_cur.clone();
+                            best.clone_from(&new_cur);
                         }
                         generate(s, chars, &new_cur, best, mask + (1 << i), k);
                     }

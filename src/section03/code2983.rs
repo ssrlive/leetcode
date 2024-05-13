@@ -98,6 +98,7 @@ impl Solution {
 
         let mut cnt = vec![vec![0; 26]; n];
         for i in 0..n {
+            #[allow(clippy::assigning_clones)]
             if i > 0 {
                 cnt[i] = cnt[i - 1].clone();
             }

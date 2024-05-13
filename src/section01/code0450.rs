@@ -76,6 +76,7 @@ impl Solution {
     }
     fn min(mut root: Option<Rc<RefCell<TreeNode>>>) -> Option<Rc<RefCell<TreeNode>>> {
         let mut temp = None;
+        #[allow(clippy::assigning_clones)]
         while root.as_ref().is_some() {
             temp = root.clone();
             root = root?.borrow_mut().left.clone();

@@ -106,7 +106,7 @@ impl Solution {
 
     fn add_path(mut node: Option<Rc<RefCell<Node>>>, path: Vec<String>) {
         for s in path {
-            if node.as_ref().unwrap().borrow().next.get(&s).is_none() {
+            if !node.as_ref().unwrap().borrow().next.contains_key(&s) {
                 node.as_mut()
                     .unwrap()
                     .borrow_mut()

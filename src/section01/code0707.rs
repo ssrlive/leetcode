@@ -97,7 +97,10 @@ impl MyLinkedList {
             self.head = Some(node.clone());
             self.tail = Some(node);
         } else {
-            node.borrow_mut().next = self.head.clone();
+            #[allow(clippy::assigning_clones)]
+            {
+                node.borrow_mut().next = self.head.clone();
+            }
             self.head = Some(node);
         }
         self.len += 1;
@@ -148,7 +151,10 @@ impl MyLinkedList {
         }
 
         let new_node = Rc::new(RefCell::new(Node::new(val)));
-        new_node.borrow_mut().next = node.borrow().next.clone();
+        #[allow(clippy::assigning_clones)]
+        {
+            new_node.borrow_mut().next = node.borrow().next.clone();
+        }
         node.borrow_mut().next = Some(new_node);
         self.len += 1;
         Some(())

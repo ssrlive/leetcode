@@ -23,6 +23,7 @@ use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
     pub fn detect_cycle(head: Option<Rc<RefCell<Node>>>) -> Option<Rc<RefCell<Node>>> {
+        #[allow(clippy::assigning_clones)]
         fn _detect_cycle(head: Option<Rc<RefCell<Node>>>) -> Option<Rc<RefCell<Node>>> {
             let mut slow = head.clone();
             let mut fast = head.clone();

@@ -114,6 +114,7 @@ impl Solution {
             add_leaf(left, &mut leaves, &mut roots, &mut unique_vals);
             add_leaf(right, &mut leaves, &mut roots, &mut unique_vals);
         }
+        #[allow(clippy::assigning_clones)]
         for leaf in leaves {
             let val = leaf.as_ref()?.borrow().val;
             let root = roots.get_mut(&val)?;

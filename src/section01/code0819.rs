@@ -54,7 +54,7 @@ impl Solution {
                     *count += 1;
                     if *count > max {
                         max = *count;
-                        result = word.clone();
+                        result.clone_from(&word);
                     }
                 }
                 word.clear();
@@ -64,7 +64,7 @@ impl Solution {
             let count = map.entry(word.clone()).or_insert(0);
             *count += 1;
             if *count > max {
-                result = word.clone();
+                result.clone_from(&word);
             }
         }
         result

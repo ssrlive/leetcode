@@ -60,7 +60,7 @@ impl Solution {
             next[7] = (curr[2] % MOD + curr[6] % MOD) % MOD;
             next[8] = (curr[1] % MOD + curr[3] % MOD) % MOD;
             next[9] = (curr[4] % MOD + curr[2] % MOD) % MOD;
-            curr = next.clone();
+            curr.clone_from(&next);
         }
         let mut ans = 0;
         for &item in next.iter() {

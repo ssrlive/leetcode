@@ -30,7 +30,10 @@ impl BSTIterator {
         let mut node = root;
         while let Some(n) = node {
             stack.push(n.clone());
-            node = n.borrow().left.clone();
+            #[allow(clippy::assigning_clones)]
+            {
+                node = n.borrow().left.clone();
+            }
         }
         BSTIterator { stack }
     }
@@ -42,7 +45,10 @@ impl BSTIterator {
         let mut node = node.right.clone();
         while let Some(n) = node {
             self.stack.push(n.clone());
-            node = n.borrow().left.clone();
+            #[allow(clippy::assigning_clones)]
+            {
+                node = n.borrow().left.clone();
+            }
         }
         result
     }

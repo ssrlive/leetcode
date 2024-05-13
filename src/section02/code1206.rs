@@ -154,6 +154,7 @@ impl Skiplist {
         let level = random_level();
         self.level = self.level.max(level);
         let node = new_link(num, level);
+        #[allow(clippy::assigning_clones)]
         for (i, item) in update.iter().enumerate().take(level) {
             node.as_ref().unwrap().borrow_mut().forward[i] = item.as_ref().unwrap().borrow().forward[i].clone();
             item.as_ref().unwrap().borrow_mut().forward[i] = node.clone();
@@ -163,6 +164,8 @@ impl Skiplist {
     pub fn erase(&mut self, num: i32) -> bool {
         self._erase(num).unwrap_or(false)
     }
+
+    #[allow(clippy::assigning_clones)]
     fn _erase(&mut self, num: i32) -> Option<bool> {
         let mut cur = self.head.clone();
         let mut update: Vec<Link> = vec![None; MAX_LEVEL];

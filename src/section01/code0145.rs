@@ -24,7 +24,10 @@ impl Solution {
             if let Some(left) = n.borrow().left.clone() {
                 stack.push(left);
             }
-            node = n.borrow().right.clone();
+            #[allow(clippy::assigning_clones)]
+            {
+                node = n.borrow().right.clone();
+            }
             if node.is_none() {
                 node = stack.pop();
             }

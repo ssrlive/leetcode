@@ -99,7 +99,10 @@ impl Codec {
         while i < nodes.len() {
             let node = queue.pop_front()?;
             if let left @ Some(_) = nodes[i].clone() {
-                node.as_ref()?.borrow_mut().left = left.clone();
+                #[allow(clippy::assigning_clones)]
+                {
+                    node.as_ref()?.borrow_mut().left = left.clone();
+                }
                 queue.push_back(left);
             }
             i += 1;
@@ -107,7 +110,10 @@ impl Codec {
                 break;
             }
             if let right @ Some(_) = nodes[i].clone() {
-                node.as_ref()?.borrow_mut().right = right.clone();
+                #[allow(clippy::assigning_clones)]
+                {
+                    node.as_ref()?.borrow_mut().right = right.clone();
+                }
                 queue.push_back(right);
             }
             i += 1;

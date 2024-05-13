@@ -67,14 +67,14 @@ impl Solution {
                     return ans;
                 }
                 if pos == 0 {
-                    if y + 1 < n as i32 && grid[x as usize][y as usize + 1] == 0 && mp.get(&(0, (x, y + 1))).is_none() {
+                    if y + 1 < n as i32 && grid[x as usize][y as usize + 1] == 0 && !mp.contains_key(&(0, (x, y + 1))) {
                         q.push_back((0, (x, y + 1)));
                         mp.insert((0, (x, y + 1)), 1);
                     }
                     if x + 1 < n as i32
                         && grid[x as usize + 1][y as usize] == 0
                         && grid[x as usize + 1][y as usize - 1] == 0
-                        && mp.get(&(0, (x + 1, y))).is_none()
+                        && !mp.contains_key(&(0, (x + 1, y)))
                     {
                         q.push_back((0, (x + 1, y)));
                         mp.insert((0, (x + 1, y)), 1);
@@ -82,20 +82,20 @@ impl Solution {
                     if x + 1 < n as i32
                         && grid[x as usize + 1][y as usize] == 0
                         && grid[x as usize + 1][y as usize - 1] == 0
-                        && mp.get(&(1, (x + 1, y - 1))).is_none()
+                        && !mp.contains_key(&(1, (x + 1, y - 1)))
                     {
                         q.push_back((1, (x + 1, y - 1)));
                         mp.insert((1, (x + 1, y - 1)), 1);
                     }
                 } else {
-                    if x + 1 < n as i32 && grid[x as usize + 1][y as usize] == 0 && mp.get(&(1, (x + 1, y))).is_none() {
+                    if x + 1 < n as i32 && grid[x as usize + 1][y as usize] == 0 && !mp.contains_key(&(1, (x + 1, y))) {
                         q.push_back((1, (x + 1, y)));
                         mp.insert((1, (x + 1, y)), 1);
                     }
                     if y + 1 < n as i32
                         && grid[x as usize][y as usize + 1] == 0
                         && grid[x as usize - 1][y as usize + 1] == 0
-                        && mp.get(&(1, (x, y + 1))).is_none()
+                        && !mp.contains_key(&(1, (x, y + 1)))
                     {
                         q.push_back((1, (x, y + 1)));
                         mp.insert((1, (x, y + 1)), 1);
@@ -103,7 +103,7 @@ impl Solution {
                     if y + 1 < n as i32
                         && grid[x as usize][y as usize + 1] == 0
                         && grid[x as usize - 1][y as usize + 1] == 0
-                        && mp.get(&(0, (x - 1, y + 1))).is_none()
+                        && !mp.contains_key(&(0, (x - 1, y + 1)))
                     {
                         q.push_back((0, (x - 1, y + 1)));
                         mp.insert((0, (x - 1, y + 1)), 1);

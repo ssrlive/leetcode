@@ -41,7 +41,7 @@ impl Solution {
         for word in words {
             if word.len() == 1 || set.contains(&word[..word.len() - 1]) {
                 if word.len() > ans.len() {
-                    ans = word.clone();
+                    ans.clone_from(&word);
                 }
                 set.insert(word.clone());
             }

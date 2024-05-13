@@ -111,7 +111,10 @@ impl Node {
                 parent = temp;
                 count -= 1;
             }
-            parent.as_ref()?.borrow_mut().child = child.clone();
+            #[allow(clippy::assigning_clones)]
+            {
+                parent.as_ref()?.borrow_mut().child = child.clone();
+            }
             parent = child;
         }
         result
@@ -125,6 +128,7 @@ impl Node {
                 if i > 0 {
                     node.borrow_mut().prev = Some(Rc::downgrade(nodes[i - 1].as_ref()?));
                 }
+                #[allow(clippy::assigning_clones)]
                 if i < nodes.len() - 1 {
                     node.borrow_mut().next = nodes[i + 1].clone();
                 }
@@ -162,6 +166,7 @@ impl Solution {
         head
     }
 
+    #[allow(clippy::assigning_clones)]
     fn dfs(ans: &mut Option<Rc<RefCell<Node>>>, cur: &mut Option<Rc<RefCell<Node>>>) -> Option<()> {
         if cur.is_none() {
             return Some(());

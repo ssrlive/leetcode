@@ -48,6 +48,7 @@ struct Solution;
 use std::cell::RefCell;
 use std::rc::Rc;
 impl Solution {
+    #[allow(clippy::assigning_clones)]
     pub fn copy_random_list(head: Option<Rc<RefCell<Node>>>) -> Option<Rc<RefCell<Node>>> {
         head.as_ref()?;
         let mut node = head.clone();

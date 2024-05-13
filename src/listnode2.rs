@@ -35,7 +35,10 @@ impl ListNode {
         let mut node = Some(Rc::new(RefCell::new(self.clone())));
         while let Some(n) = node {
             v.push(n.borrow().val);
-            node = n.borrow().next.clone();
+            #[allow(clippy::assigning_clones)]
+            {
+                node = n.borrow().next.clone();
+            }
         }
         v
     }
@@ -46,7 +49,10 @@ impl ListNode {
             if n.borrow().val == val {
                 return Some(n);
             }
-            node = n.borrow().next.clone();
+            #[allow(clippy::assigning_clones)]
+            {
+                node = n.borrow().next.clone();
+            }
         }
         None
     }

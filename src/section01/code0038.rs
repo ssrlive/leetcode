@@ -45,7 +45,7 @@ impl Solution {
             let mut last_char = ' ';
             let mut count = 0;
             let mut ans = Vec::new();
-            for (idx, c) in v.into_iter().enumerate() {
+            for (idx, &c) in v.iter().enumerate() {
                 if idx == 0 {
                     last_char = c;
                     count += 1;
@@ -60,7 +60,7 @@ impl Solution {
             }
             ans.push(char::from_digit(count, 10).unwrap());
             ans.push(last_char);
-            v = ans.clone();
+            v.clone_from(&ans);
         }
         v.into_iter().collect()
     }

@@ -54,9 +54,9 @@ impl Solution {
 
         let mut ranges = Vec::<(i32, i32)>::with_capacity(20);
         let [mut l, mut n, _] = [nums[0]; 3];
-        for (prev, num) in nums.iter().zip(nums[1..].iter()) {
-            let p = prev.to_owned();
-            n = num.to_owned();
+        for (&prev, &num) in nums.iter().zip(nums[1..].iter()) {
+            let p = prev;
+            n = num;
             if n != p + 1 {
                 ranges.push((l, p));
                 l = n;

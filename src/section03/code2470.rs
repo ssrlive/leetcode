@@ -60,7 +60,10 @@ impl Solution {
                 arr[k][0] = arr[k][0] / gcd(arr[k][0], num) * num;
                 if arr[k][0] != arr[j][0] {
                     j += 1;
-                    arr[j] = arr[k].clone();
+                    #[allow(clippy::assigning_clones)]
+                    {
+                        arr[j] = arr[k].clone();
+                    }
                 } else {
                     arr[j][1] = arr[k][1];
                 }

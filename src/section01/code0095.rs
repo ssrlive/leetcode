@@ -34,8 +34,8 @@ impl Solution {
                 for l_item in &l_trees {
                     for r_item in &r_trees {
                         let mut tree = TreeNode::new(pivot);
-                        tree.left = l_item.clone();
-                        tree.right = r_item.clone();
+                        tree.left.clone_from(l_item);
+                        tree.right.clone_from(r_item);
                         res.push(Some(Rc::new(RefCell::new(tree))));
                     }
                 }
