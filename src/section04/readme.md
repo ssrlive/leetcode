@@ -124,3 +124,7 @@ cargo test
 | 3147 | [Taking Maximum Energy From the Mystic Dungeon](code3147.rs) | [link](https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/) | Medium | :heavy_check_mark: |
 | 3148 | [Maximum Difference Score in a Grid](code3148.rs) | [link](https://leetcode.com/problems/maximum-difference-score-in-a-grid/) | Medium | :heavy_check_mark: |
 | 3149 | [Find the Minimum Cost Array Permutation](code3149.rs) | [link](https://leetcode.com/problems/find-the-minimum-cost-array-permutation/) | Hard | :heavy_check_mark: |
+| 3151 | [Special Array I](code3151.rs) | [link](https://leetcode.com/problems/special-array-i/) | Easy | :heavy_check_mark: |
+| 3152 | [Special Array II](code3152.rs) | [link](https://leetcode.com/problems/special-array-ii/) | Medium | :heavy_check_mark: |
+| 3153 | [Sum of Digit Differences of All Pairs](code3153.rs) | [link](https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/) | Medium | :heavy_check_mark: |
+| 3154 | [Find Number of Ways to Reach the K-th Stair](code3154.rs) | [link](https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/) | Hard | :heavy_check_mark: |

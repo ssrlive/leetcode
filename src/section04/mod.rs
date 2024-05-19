@@ -109,3 +109,7 @@ mod code3146;
 mod code3147;
 mod code3148;
 mod code3149;
+mod code3151;
+mod code3152;
+mod code3153;
+mod code3154;
