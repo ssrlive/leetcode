@@ -90,7 +90,8 @@ fn test() {
         if let b @ Some(_) = b {
             n.borrow_mut().random = b;
         }
-        node = n.borrow().next.clone();
+        let tmp = n.borrow().next.clone();
+        node = tmp;
     }
     let new_head = Solution::copy_random_list(head);
     let mut node = new_head.clone();
@@ -99,7 +100,8 @@ fn test() {
         if let b @ Some(_) = b {
             assert_eq!(n.borrow().random, b);
         }
-        node = n.borrow().next.clone();
+        let tmp = n.borrow().next.clone();
+        node = tmp;
     }
     while let Some(n) = node {
         let val = n.borrow().val;
@@ -108,6 +110,7 @@ fn test() {
             None => -1,
         };
         println!("{:?} {:?}", val, val2);
-        node = n.borrow().next.clone();
+        let tmp = n.borrow().next.clone();
+        node = tmp;
     }
 }

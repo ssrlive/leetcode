@@ -110,15 +110,17 @@ fn test_get_intersection_node() {
             node = Some(n);
             break;
         }
-        node = n.borrow().next.clone();
+        let tmp = n.borrow().next.clone();
+        node = tmp;
     }
     let mut node2 = head_b.clone();
     while let Some(n) = node2 {
         if n.borrow().val == 1 {
-            n.borrow_mut().next = node.clone();
+            n.borrow_mut().next.clone_from(&node);
             break;
         }
-        node2 = n.borrow().next.clone();
+        let tmp = n.borrow().next.clone();
+        node2 = tmp;
     }
     assert_eq!(
         ListNode::to_vec(&Solution::get_intersection_node(head_a, head_b)),

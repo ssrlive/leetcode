@@ -51,7 +51,7 @@ fn test_detect_cycle() {
     fn test() -> Option<()> {
         let head = Node::from_vec(vec![3, 2, 0, -4]);
         let tail = head.as_ref()?.borrow().get_tail();
-        tail?.borrow_mut().next = head.clone();
+        tail?.borrow_mut().next.clone_from(&head);
         let head = Solution::detect_cycle(head);
         assert_eq!(head?.borrow().val, 3);
         Some(())

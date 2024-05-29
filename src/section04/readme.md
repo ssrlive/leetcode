@@ -128,3 +128,11 @@ cargo test
 | 3152 | [Special Array II](code3152.rs) | [link](https://leetcode.com/problems/special-array-ii/) | Medium | :heavy_check_mark: |
 | 3153 | [Sum of Digit Differences of All Pairs](code3153.rs) | [link](https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/) | Medium | :heavy_check_mark: |
 | 3154 | [Find Number of Ways to Reach the K-th Stair](code3154.rs) | [link](https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/) | Hard | :heavy_check_mark: |
+| 3158 | [Find the XOR of Numbers Which Appear Twice](code3158.rs) | [link](https://leetcode.com/problems/find-the-xor-of-numbers-which-appear-twice/) | Easy | :heavy_check_mark: |
+| 3159 | [Find Occurrences of an Element in an Array](code3159.rs) | [link](https://leetcode.com/problems/find-occurrences-of-an-element-in-an-array/) | Medium | :heavy_check_mark: |
+| 3160 | [Find the Number of Distinct Colors Among the Balls](code3160.rs) | [link](https://leetcode.com/problems/find-the-number-of-distinct-colors-among-the-balls/) | Medium | :heavy_check_mark: |
+| 3161 | [Block Placement Queries](code3161.rs) | [link](https://leetcode.com/problems/block-placement-queries/) | Hard | :heavy_check_mark: |
+| 3162 | [Find the Number of Good Pairs I](code3162.rs) | [link](https://leetcode.com/problems/find-the-number-of-good-pairs-i/) | Easy | :heavy_check_mark: |
+| 3163 | [String Compression III](code3163.rs) | [link](https://leetcode.com/problems/string-compression-iii/) | Medium | :heavy_check_mark: |
+| 3164 | [Find the Number of Good Pairs II](code3164.rs) | [link](https://leetcode.com/problems/find-the-number-of-good-pairs-ii/) | Medium | :heavy_check_mark: |
+| 3165 | [Maximum Sum of Subsequence With Non-adjacent Elements](code3165.rs) | [link](https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/) | Hard | :heavy_check_mark: |
