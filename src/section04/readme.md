@@ -136,3 +136,7 @@ cargo test
 | 3163 | [String Compression III](code3163.rs) | [link](https://leetcode.com/problems/string-compression-iii/) | Medium | :heavy_check_mark: |
 | 3164 | [Find the Number of Good Pairs II](code3164.rs) | [link](https://leetcode.com/problems/find-the-number-of-good-pairs-ii/) | Medium | :heavy_check_mark: |
 | 3165 | [Maximum Sum of Subsequence With Non-adjacent Elements](code3165.rs) | [link](https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/) | Hard | :heavy_check_mark: |
+| 3168 | [Minimum Number of Chairs in a Waiting Room](code3168.rs) | [link](https://leetcode.com/problems/minimum-number-of-chairs-in-a-waiting-room/) | Easy | :heavy_check_mark: |
+| 3169 | [Count Days Without Meetings](code3169.rs) | [link](https://leetcode.com/problems/count-days-without-meetings/) | Medium | :heavy_check_mark: |
+| 3170 | [Lexicographically Minimum String After Removing Stars](code3170.rs) | [link](https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/) | Medium | :heavy_check_mark: |
+| 3171 | [Find Subarray With Bitwise AND Closest to K](code3171.rs) | [link](https://leetcode.com/problems/find-subarray-with-bitwise-and-closest-to-k/) | Hard | :heavy_check_mark: |
