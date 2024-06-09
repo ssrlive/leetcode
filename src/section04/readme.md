@@ -124,6 +124,9 @@ cargo test
 | 3147 | [Taking Maximum Energy From the Mystic Dungeon](code3147.rs) | [link](https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/) | Medium | :heavy_check_mark: |
 | 3148 | [Maximum Difference Score in a Grid](code3148.rs) | [link](https://leetcode.com/problems/maximum-difference-score-in-a-grid/) | Medium | :heavy_check_mark: |
 | 3149 | [Find the Minimum Cost Array Permutation](code3149.rs) | [link](https://leetcode.com/problems/find-the-minimum-cost-array-permutation/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 3151 | [Special Array I](code3151.rs) | [link](https://leetcode.com/problems/special-array-i/) | Easy | :heavy_check_mark: |
 | 3152 | [Special Array II](code3152.rs) | [link](https://leetcode.com/problems/special-array-ii/) | Medium | :heavy_check_mark: |
 | 3153 | [Sum of Digit Differences of All Pairs](code3153.rs) | [link](https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/) | Medium | :heavy_check_mark: |
@@ -140,3 +143,11 @@ cargo test
 | 3169 | [Count Days Without Meetings](code3169.rs) | [link](https://leetcode.com/problems/count-days-without-meetings/) | Medium | :heavy_check_mark: |
 | 3170 | [Lexicographically Minimum String After Removing Stars](code3170.rs) | [link](https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/) | Medium | :heavy_check_mark: |
 | 3171 | [Find Subarray With Bitwise AND Closest to K](code3171.rs) | [link](https://leetcode.com/problems/find-subarray-with-bitwise-and-closest-to-k/) | Hard | :heavy_check_mark: |
+| 3174 | [Clear Digits](code3174.rs) | [link](https://leetcode.com/problems/clear-digits/) | Easy | :heavy_check_mark: |
+| 3175 | [Find The First Player to win K Games in a Row](code3175.rs) | [link](https://leetcode.com/problems/find-the-first-player-to-win-k-games-in-a-row/) | Medium | :heavy_check_mark: |
+| 3176 | [Find the Maximum Length of a Good Subsequence I](code3176.rs) | [link](https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-i/) | Medium | :heavy_check_mark: |
+| 3177 | [Find the Maximum Length of a Good Subsequence II](code3177.rs) | [link](https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii/) | Hard | :heavy_check_mark: |
+| 3178 | [Find the Child Who Has the Ball After K Seconds](code3178.rs) | [link](https://leetcode.com/problems/find-the-child-who-has-the-ball-after-k-seconds/) | Easy | :heavy_check_mark: |
+| 3179 | [Find the N-th Value After K Seconds](code3179.rs) | [link](https://leetcode.com/problems/find-the-n-th-value-after-k-seconds/) | Medium | :heavy_check_mark: |
+| 3180 | [Maximum Total Reward Using Operations I](code3180.rs) | [link](https://leetcode.com/problems/maximum-total-reward-using-operations-i/) | Medium | :heavy_check_mark: |
+| 3181 | [Maximum Total Reward Using Operations II](code3181.rs) | [link](https://leetcode.com/problems/maximum-total-reward-using-operations-ii/) | Hard | :heavy_check_mark: |
