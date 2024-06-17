@@ -151,3 +151,7 @@ cargo test
 | 3179 | [Find the N-th Value After K Seconds](code3179.rs) | [link](https://leetcode.com/problems/find-the-n-th-value-after-k-seconds/) | Medium | :heavy_check_mark: |
 | 3180 | [Maximum Total Reward Using Operations I](code3180.rs) | [link](https://leetcode.com/problems/maximum-total-reward-using-operations-i/) | Medium | :heavy_check_mark: |
 | 3181 | [Maximum Total Reward Using Operations II](code3181.rs) | [link](https://leetcode.com/problems/maximum-total-reward-using-operations-ii/) | Hard | :heavy_check_mark: |
+| 3184 | [Count Pairs That Form a Complete Day I](code3184.rs) | [link](https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/) | Easy | :heavy_check_mark: |
+| 3185 | [Count Pairs That Form a Complete Day II](code3185.rs) | [link](https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/) | Medium | :heavy_check_mark: |
+| 3186 | [Maximum Total Damage With Spell Casting](code3186.rs) | [link](https://leetcode.com/problems/maximum-total-damage-with-spell-casting/) | Medium | :heavy_check_mark: |
+| 3187 | [Peaks in Array](code3187.rs) | [link](https://leetcode.com/problems/peaks-in-array/) | Hard | :heavy_check_mark: |
