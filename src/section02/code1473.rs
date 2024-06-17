@@ -61,7 +61,7 @@ impl Solution {
         let m = m as usize;
         let n = n as usize;
         let target = target as usize;
-        let mut dp = vec![vec![vec![std::i32::MAX; n]; target + 1]; m + 1];
+        let mut dp = vec![vec![vec![i32::MAX; n]; target + 1]; m + 1];
         for i in 0..n {
             dp[0][0][i] = 0;
         }
@@ -78,17 +78,17 @@ impl Solution {
                             dp[i][j][k] = dp[i][j][k].min(dp[i - 1][j - 1][l]);
                         }
                     }
-                    if dp[i][j][k] != std::i32::MAX {
+                    if dp[i][j][k] != i32::MAX {
                         dp[i][j][k] += if houses[i - 1] != 0 { 0 } else { cost[i - 1][k] };
                     }
                 }
             }
         }
-        let mut ans = std::i32::MAX;
+        let mut ans = i32::MAX;
         for i in 0..n {
             ans = ans.min(dp[m][target][i]);
         }
-        if ans == std::i32::MAX {
+        if ans == i32::MAX {
             -1
         } else {
             ans

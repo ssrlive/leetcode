@@ -30,7 +30,7 @@ impl Solution {
             }
         }
 
-        let mut answer = std::i32::MIN;
+        let mut answer = i32::MIN;
         dfs(&root, &mut answer);
         answer
     }

@@ -75,14 +75,14 @@ impl Solution {
                 uncommon_2 += 1;
             }
         }
-        let mut mini = std::i32::MAX;
+        let mut mini = i32::MAX;
         if uncommon_1 % 2 == 0 {
             mini = mini.min(uncommon_1);
         }
         if uncommon_2 % 2 == 0 {
             mini = mini.min(uncommon_2);
         }
-        if mini == std::i32::MAX {
+        if mini == i32::MAX {
             return -1;
         }
         mini / 2

@@ -27,7 +27,7 @@ impl Solution {
             None => None,
             Some(node) => {
                 let mut unsorted = Some(node);
-                let mut sorted = ListNode::new(std::i32::MIN);
+                let mut sorted = ListNode::new(i32::MIN);
                 while let Some(mut node_to_insert) = unsorted {
                     unsorted = node_to_insert.next.take();
                     let mut sorted_ref = &mut sorted;

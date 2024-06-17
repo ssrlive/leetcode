@@ -47,7 +47,7 @@ impl Solution {
     pub fn racecar(target: i32) -> i32 {
         use std::cmp::min;
         let n: usize = target as usize;
-        let mut dp: Vec<i32> = vec![std::i32::MAX; n + 1];
+        let mut dp: Vec<i32> = vec![i32::MAX; n + 1];
         dp[0] = 0;
 
         for i in 1..n + 1 {

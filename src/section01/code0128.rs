@@ -18,7 +18,7 @@ impl Solution {
 
         let mut max_len = 0;
         let mut cur_len = 0;
-        let mut prev = std::i32::MIN;
+        let mut prev = i32::MIN;
         for n in nums {
             if n == prev {
                 continue;

@@ -41,12 +41,12 @@ impl Solution {
                 return 0.0;
             }
             if k == 0 {
-                return std::f64::MIN;
+                return f64::MIN;
             }
             if dp[idx][k as usize] != -1.0 {
                 return dp[idx][k as usize];
             }
-            let mut ans = std::f64::MIN;
+            let mut ans = f64::MIN;
             let mut sum = 0.0;
             for i in idx..nums.len() {
                 sum += nums[i] as f64;

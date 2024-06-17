@@ -56,7 +56,7 @@ impl Solution {
         x /= positions.len() as f64;
         y /= positions.len() as f64;
         let mut step = 100.0;
-        let mut min_dist = std::f64::MAX;
+        let mut min_dist = f64::MAX;
         while step > 1e-6 {
             let mut found = false;
             for dx in &[-1.0, 0.0, 1.0] {

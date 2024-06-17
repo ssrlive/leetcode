@@ -67,7 +67,7 @@ impl Solution {
         points.sort_unstable_by(|a, b| if a[0] == b[0] { b[1].cmp(&a[1]) } else { a[0].cmp(&b[0]) });
         let n = points.len();
         for i in 0..n {
-            let mut y = std::i32::MIN;
+            let mut y = i32::MIN;
             for j in i + 1..n {
                 if points[i][1] >= points[j][1] && y < points[j][1] {
                     res += 1;

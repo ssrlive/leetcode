@@ -44,7 +44,7 @@ struct Solution;
 impl Solution {
     pub fn find_max_value_of_equation(points: Vec<Vec<i32>>, k: i32) -> i32 {
         let mut p = std::collections::BinaryHeap::<(i32, i32)>::new();
-        let mut ans = std::i32::MIN;
+        let mut ans = i32::MIN;
         for point in points.iter() {
             while !p.is_empty() && (point[0] - p.peek().unwrap().1) > k {
                 p.pop();

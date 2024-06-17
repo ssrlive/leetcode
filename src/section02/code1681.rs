@@ -71,9 +71,9 @@ impl Solution {
         nums.sort();
         let k = k as usize;
         let mut buckets = vec![VecDeque::with_capacity(nums.len() / k); k];
-        let mut res = std::i32::MAX;
+        let mut res = i32::MAX;
         dfs(0, &nums, &mut buckets, 0, nums.len() / k, 0, &mut res);
-        if res == std::i32::MAX {
+        if res == i32::MAX {
             return -1;
         }
         res

@@ -50,7 +50,7 @@ impl Solution {
         }
         let mut ans = 0;
         let mut prefix = 0;
-        let mut mx = std::i32::MIN;
+        let mut mx = i32::MIN;
         for (i, &item) in diff.iter().enumerate() {
             prefix += item;
             if prefix > mx {

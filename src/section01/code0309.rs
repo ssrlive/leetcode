@@ -35,7 +35,7 @@ struct Solution;
 impl Solution {
     pub fn max_profit(prices: Vec<i32>) -> i32 {
         let mut dp = vec![vec![0; 2]; prices.len() + 1];
-        dp[0][1] = std::i32::MIN;
+        dp[0][1] = i32::MIN;
         for i in 1..=prices.len() {
             dp[i][0] = dp[i - 1][0].max(dp[i - 1][1] + prices[i - 1]);
             dp[i][1] = dp[i - 1][1].max(if i >= 2 { dp[i - 2][0] } else { 0 } - prices[i - 1]);

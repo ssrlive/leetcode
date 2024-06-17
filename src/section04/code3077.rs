@@ -57,8 +57,8 @@ impl Solution {
         let mut dp = vec![vec![0; nums.len() + 1]; k as usize + 1];
 
         for i in 1..=k {
-            let mut max_sum = std::i64::MIN / 2;
-            let mut curr = std::i64::MIN / 2;
+            let mut max_sum = i64::MIN / 2;
+            let mut curr = i64::MIN / 2;
             let multiplier = if i % 2 == 1 { k + 1 - i } else { i - 1 - k };
 
             for j in i - 1..nums.len() as i64 {

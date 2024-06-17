@@ -54,7 +54,7 @@ impl Solution {
         let mut res = target[0] - start[0] + target[1] - start[1];
         let sz = special_roads.len();
         special_roads.push(vec![start[0], start[1], start[0], start[1], 0]);
-        let mut dp = vec![std::i32::MAX; sz + 1];
+        let mut dp = vec![i32::MAX; sz + 1];
         let mut q = vec![vec![sz as i32, 0]];
         let mut q1 = vec![];
         while !q.is_empty() {

@@ -43,7 +43,7 @@ struct Solution;
 
 impl Solution {
     pub fn nearest_valid_point(x: i32, y: i32, points: Vec<Vec<i32>>) -> i32 {
-        let mut dist_min = std::i32::MAX;
+        let mut dist_min = i32::MAX;
         let mut res_ind = -1;
         for (ind, pi) in points.iter().enumerate() {
             if x == pi[0] || y == pi[1] {

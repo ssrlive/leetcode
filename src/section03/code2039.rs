@@ -79,7 +79,7 @@ impl Solution {
     pub fn network_becomes_idle(edges: Vec<Vec<i32>>, patience: Vec<i32>) -> i32 {
         use std::collections::{HashMap, VecDeque};
         let n = patience.len();
-        let mut dist = vec![std::i32::MAX; n];
+        let mut dist = vec![i32::MAX; n];
         let mut queue = VecDeque::new();
         let mut visited = vec![false; n];
         let mut graph: HashMap<usize, Vec<usize>> = HashMap::new();

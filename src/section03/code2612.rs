@@ -55,7 +55,7 @@ struct Solution;
 
 impl Solution {
     pub fn min_reverse_operations(n: i32, p: i32, banned: Vec<i32>, k: i32) -> Vec<i32> {
-        let mut distances = vec![std::i32::MAX; n as usize];
+        let mut distances = vec![i32::MAX; n as usize];
         for &x in banned.iter() {
             distances[x as usize] = -1;
         }
@@ -64,13 +64,13 @@ impl Solution {
         distances[p as usize] = 0;
         nodes.push(p);
         while !nodes.is_empty() {
-            let mut i_min = std::i32::MAX;
-            let mut i_max = std::i32::MIN;
+            let mut i_min = i32::MAX;
+            let mut i_max = i32::MIN;
             for &node in nodes.iter() {
                 let base = node - k + 1;
                 let j2i = |j| base + (j - base) * 2;
                 let mut update = |i| {
-                    if distances[i as usize] == std::i32::MAX {
+                    if distances[i as usize] == i32::MAX {
                         distances[i as usize] = distances[node as usize] + 1;
                         new_nodes.push(i);
                     }
@@ -90,7 +90,7 @@ impl Solution {
             new_nodes.clear();
         }
         for x in distances.iter_mut() {
-            if *x == std::i32::MAX {
+            if *x == i32::MAX {
                 *x = -1;
             }
         }

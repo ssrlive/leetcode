@@ -52,7 +52,7 @@ impl Solution {
         let mut nums2 = nums2;
         nums1.sort_unstable();
         nums2.sort_unstable();
-        let mut ans = std::i32::MAX;
+        let mut ans = i32::MAX;
 
         for i in 0..nums1.len() {
             let x = nums2[0] - nums1[i];

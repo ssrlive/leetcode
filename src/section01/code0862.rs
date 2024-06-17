@@ -37,9 +37,8 @@ impl Solution {
     pub fn shortest_subarray(nums: Vec<i32>, k: i32) -> i32 {
         fn _shortest_subarray(nums: Vec<i64>, k: i64) -> i64 {
             use std::collections::VecDeque;
-            use std::i64::MAX;
 
-            let mut ans = MAX;
+            let mut ans = i64::MAX;
             let mut queue: VecDeque<(i64, i64)> = VecDeque::new();
             queue.push_back((-1, 0));
             let mut prefix = 0;
@@ -56,7 +55,7 @@ impl Solution {
 
                 queue.push_back((i as i64, prefix));
             }
-            if ans == MAX {
+            if ans == i64::MAX {
                 -1
             } else {
                 ans

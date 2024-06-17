@@ -55,7 +55,7 @@ impl Solution {
     }
     fn solve(grid: &Vec<Vec<i32>>, r1: usize, r2: usize, c1: usize, c2: usize, n: usize, dp: &mut Vec<Vec<Vec<i32>>>) -> Option<i32> {
         if r1 == n || r2 == n || c1 == n || c2 == n || grid[r1][c1] == -1 || grid[r2][c2] == -1 {
-            return Some(std::i32::MIN);
+            return Some(i32::MIN);
         }
         if r1 == n - 1 && c1 == n - 1 {
             return Some(*grid.get(n - 1)?.get(n - 1)?);
@@ -74,7 +74,7 @@ impl Solution {
         let l4 = Self::solve(grid, r1, r2, c1 + 1, c2 + 1, n, dp)?;
         let temp = l1.max(l2).max(l3).max(l4);
         let target = dp.get_mut(r1)?.get_mut(r2)?.get_mut(c1)?;
-        if temp == std::i32::MIN {
+        if temp == i32::MIN {
             *target = temp;
         } else {
             *target = temp + answer;

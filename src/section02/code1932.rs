@@ -123,7 +123,7 @@ impl Solution {
             roots.remove(&val);
         }
         let first_node = roots.values().next().cloned()?;
-        if roots.len() == 1 && valid_nodes(first_node.clone(), std::i32::MIN, std::i32::MAX) == unique_vals.len() {
+        if roots.len() == 1 && valid_nodes(first_node.clone(), i32::MIN, i32::MAX) == unique_vals.len() {
             first_node
         } else {
             None

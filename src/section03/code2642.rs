@@ -64,7 +64,7 @@ impl Graph {
 
     fn shortest_path(&self, node1: i32, node2: i32) -> i32 {
         let mut pq = std::collections::BinaryHeap::new();
-        let mut cost = vec![std::i32::MAX; self.al.len()];
+        let mut cost = vec![i32::MAX; self.al.len()];
         cost[node1 as usize] = 0;
         pq.push(std::cmp::Reverse((0, node1)));
         while let Some(std::cmp::Reverse((cost_i, i))) = pq.pop() {
@@ -78,7 +78,7 @@ impl Graph {
                 }
             }
         }
-        if cost[node2 as usize] == std::i32::MAX {
+        if cost[node2 as usize] == i32::MAX {
             -1
         } else {
             cost[node2 as usize]

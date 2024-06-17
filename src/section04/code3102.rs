@@ -62,7 +62,7 @@ impl Solution {
         sum.sort();
         diff.sort();
 
-        let mut ans = std::i32::MAX;
+        let mut ans = i32::MAX;
 
         for i in 0..n {
             let mut left = 0;

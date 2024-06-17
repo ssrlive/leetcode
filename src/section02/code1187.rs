@@ -43,8 +43,8 @@ impl Solution {
         arr2.dedup();
         let m = arr1.len();
         let n = arr2.len();
-        let mut f = vec![vec![std::i32::MAX; n]; m];
-        let mut g = vec![std::i32::MAX; m];
+        let mut f = vec![vec![i32::MAX; n]; m];
+        let mut g = vec![i32::MAX; m];
         for i in 0..n {
             f[0][i] = 1;
         }
@@ -52,16 +52,16 @@ impl Solution {
         for i in 1..m {
             for (j, &item) in arr2.iter().enumerate() {
                 if item > arr1[i - 1] {
-                    f[i][j] = std::cmp::min(g[i - 1], std::i32::MAX - 1) + 1;
+                    f[i][j] = std::cmp::min(g[i - 1], i32::MAX - 1) + 1;
                 }
                 if j > 0 {
-                    f[i][j] = std::cmp::min(f[i][j], std::cmp::min(f[i - 1][j - 1], std::i32::MAX - 1) + 1);
+                    f[i][j] = std::cmp::min(f[i][j], std::cmp::min(f[i - 1][j - 1], i32::MAX - 1) + 1);
                 }
             }
             if arr1[i] > arr1[i - 1] {
                 g[i] = g[i - 1];
             } else {
-                g[i] = std::i32::MAX;
+                g[i] = i32::MAX;
             }
             for (j, &item) in arr2.iter().enumerate() {
                 if item < arr1[i] {
@@ -70,7 +70,7 @@ impl Solution {
             }
         }
         let ans = std::cmp::min(g[m - 1], *f[m - 1].iter().min().unwrap());
-        if ans == std::i32::MAX {
+        if ans == i32::MAX {
             -1
         } else {
             ans

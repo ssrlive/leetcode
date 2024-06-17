@@ -47,7 +47,7 @@ impl Solution {
         let mut map = std::collections::HashMap::new();
         let mut start = 0;
         let mut end = 0;
-        let mut min = std::i32::MAX;
+        let mut min = i32::MAX;
         let mut min_start = 0;
         let mut min_end = 0;
         while end < ranges.len() {

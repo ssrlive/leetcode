@@ -68,7 +68,7 @@ impl Solution {
                 if i + len > s.len() {
                     break;
                 }
-                *memo_s_i_len = std::i32::MAX as i64;
+                *memo_s_i_len = i32::MAX as i64;
                 for d in 1..=len / 2 {
                     if *memo_s_i_len <= 0 {
                         break;

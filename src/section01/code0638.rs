@@ -73,7 +73,7 @@ impl Solution {
             dp.insert(k, 0);
             return 0;
         }
-        let mut min_price = std::i32::MAX;
+        let mut min_price = i32::MAX;
         for i in 0..special.len() {
             if Self::is_valid(needs, special, i) {
                 let mut needs = needs.clone();

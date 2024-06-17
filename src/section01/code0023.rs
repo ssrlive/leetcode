@@ -62,7 +62,7 @@ impl Solution {
 
     pub fn merge_k_lists_3(lists: Vec<Option<Box<ListNode>>>) -> Option<Box<ListNode>> {
         fn _merge_k_lists_3(mut lists: Vec<Option<Box<ListNode>>>) -> Option<Box<ListNode>> {
-            let f = |(_, x): &(usize, &Option<Box<ListNode>>)| x.as_ref().map_or(std::i32::MAX, |x| x.val);
+            let f = |(_, x): &(usize, &Option<Box<ListNode>>)| x.as_ref().map_or(i32::MAX, |x| x.val);
             let index = lists.iter().enumerate().min_by_key(f)?.0;
             let mut head = lists[index].take()?;
             lists[index] = head.next.take();

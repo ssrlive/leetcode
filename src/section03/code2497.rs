@@ -76,7 +76,7 @@ impl Solution {
             }
         }
 
-        let mut result = i32::min_value();
+        let mut result = i32::MIN;
         for i in 0..n {
             let mut temp = vals[i];
             for v in &g[i] {

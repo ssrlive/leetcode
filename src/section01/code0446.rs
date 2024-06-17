@@ -50,7 +50,7 @@ impl Solution {
         for i in 1..nums.len() {
             for j in 0..i {
                 let diff = nums[i] as i64 - nums[j] as i64;
-                if diff < std::i32::MIN as i64 || diff > std::i32::MAX as i64 {
+                if diff < i32::MIN as i64 || diff > i32::MAX as i64 {
                     continue;
                 }
                 let diff = diff as i32;

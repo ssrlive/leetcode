@@ -90,8 +90,7 @@ impl Solution {
             dfs(&mut result, &g, i);
         }
 
-        let f = |v: Option<Vec<i32>>| if let Some(v) = v { v } else { vec![] };
-        result.into_iter().map(f).collect::<Vec<Vec<i32>>>()
+        result.into_iter().map(|v| v.unwrap_or_default()).collect::<Vec<Vec<i32>>>()
     }
 }
 

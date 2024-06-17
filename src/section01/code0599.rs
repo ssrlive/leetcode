@@ -51,7 +51,7 @@ impl Solution {
         for (i, s) in list1.iter().enumerate() {
             map.insert(s, i);
         }
-        let mut min_sum = std::usize::MAX;
+        let mut min_sum = usize::MAX;
         let mut result = Vec::new();
         for (i, s) in list2.iter().enumerate() {
             if let Some(&j) = map.get(s) {

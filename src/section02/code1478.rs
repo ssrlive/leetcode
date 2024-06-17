@@ -57,7 +57,7 @@ impl Solution {
         }
         for i in 1..k as usize {
             for j in i..n {
-                let mut min = std::i32::MAX;
+                let mut min = i32::MAX;
                 for k in i - 1..j {
                     min = min.min(dp2[i - 1][k] + dp[k + 1][j]);
                 }

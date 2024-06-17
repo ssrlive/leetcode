@@ -61,7 +61,7 @@ impl Solution {
                 0
             }
         }
-        dfs(&root, std::i32::MIN)
+        dfs(&root, i32::MIN)
     }
 }
 

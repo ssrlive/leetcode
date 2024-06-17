@@ -47,7 +47,7 @@ impl Solution {
     pub fn maximum_subarray_sum(nums: Vec<i32>, k: i32) -> i64 {
         let k = k as i64;
         let nums = nums.iter().map(|&x| x as i64).collect::<Vec<i64>>();
-        let mut res = std::i64::MIN;
+        let mut res = i64::MIN;
         let mut psum = vec![0];
         let mut m = std::collections::HashMap::new();
         for i in 0..nums.len() {
@@ -62,7 +62,7 @@ impl Solution {
                 m.insert(nums[i], i);
             }
         }
-        if res == std::i64::MIN {
+        if res == i64::MIN {
             0
         } else {
             res

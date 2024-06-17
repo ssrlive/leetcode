@@ -33,7 +33,7 @@ struct Solution;
 impl Solution {
     pub fn check_possibility(nums: Vec<i32>) -> bool {
         let mut count = 0;
-        let mut prev = std::i32::MIN;
+        let mut prev = i32::MIN;
         for i in 0..nums.len() {
             if nums[i] < prev {
                 count += 1;

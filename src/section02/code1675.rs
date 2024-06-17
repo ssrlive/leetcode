@@ -50,14 +50,14 @@ struct Solution;
 impl Solution {
     pub fn minimum_deviation(nums: Vec<i32>) -> i32 {
         let mut nums = nums;
-        let mut min = std::i32::MAX;
+        let mut min = i32::MAX;
         for num in nums.iter_mut() {
             if *num % 2 == 1 {
                 *num *= 2;
             }
             min = min.min(*num);
         }
-        let mut ans = std::i32::MAX;
+        let mut ans = i32::MAX;
         let mut heap = std::collections::BinaryHeap::new();
         for num in nums {
             heap.push(num);

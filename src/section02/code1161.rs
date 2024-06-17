@@ -45,7 +45,7 @@ impl Solution {
 
         let mut level = 1;
         let mut res = 0;
-        let mut max = std::i32::MIN;
+        let mut max = i32::MIN;
         let mut queue = VecDeque::new();
         queue.push_back(root);
         while !queue.is_empty() {

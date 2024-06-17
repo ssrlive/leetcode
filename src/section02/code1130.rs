@@ -50,9 +50,9 @@ impl Solution {
         use std::cmp::min;
         let mut arr = arr;
         let mut a: Vec<i32> = vec![];
-        a.push(std::i32::MAX);
+        a.push(i32::MAX);
         a.append(&mut arr);
-        a.push(std::i32::MAX);
+        a.push(i32::MAX);
         let mut res = 0;
         while a.len() > 3 {
             let min_index = min_index(&a);

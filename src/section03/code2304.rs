@@ -51,7 +51,7 @@ impl Solution {
         let (m, n) = (grid.len(), grid[0].len());
         let mut prev = grid[0].clone();
         for i in 1..m {
-            let mut cur = vec![std::i32::MAX; n];
+            let mut cur = vec![i32::MAX; n];
             for j in 0..n {
                 for (k, cur_k) in cur.iter_mut().enumerate() {
                     let cost = prev[j] + grid[i][k] + move_cost[grid[i - 1][j] as usize][k];

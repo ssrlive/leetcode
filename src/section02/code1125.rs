@@ -56,13 +56,13 @@ impl Solution {
             }
         }
         let s = 1 << req_skills.len();
-        let mut dp = vec![std::i32::MAX; s];
+        let mut dp = vec![i32::MAX; s];
         let mut parent = vec![-1; s];
         let mut parent_state = vec![0; s];
         dp[0] = 0;
         for i in 0..(1 << req_skills.len()) {
             for (j, &item) in people_skill.iter().enumerate() {
-                if dp[i] == std::i32::MAX {
+                if dp[i] == i32::MAX {
                     continue;
                 }
                 let temp = i | item;

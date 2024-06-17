@@ -54,7 +54,7 @@ impl Solution {
     pub fn min_cost(max_time: i32, edges: Vec<Vec<i32>>, passing_fees: Vec<i32>) -> i32 {
         fn solve(dp: &mut Vec<Vec<i32>>, time: i32, adj: &Vec<Vec<(i32, i32)>>, v: i32, pass: &Vec<i32>) -> i32 {
             if time < 0 {
-                return std::i32::MAX;
+                return i32::MAX;
             }
             let n = pass.len() as i32;
             if v == n - 1 {
@@ -63,7 +63,7 @@ impl Solution {
             if dp[v as usize][time as usize] != -1 {
                 return dp[v as usize][time as usize];
             }
-            let mut cost = std::i32::MAX;
+            let mut cost = i32::MAX;
             for x in &adj[v as usize] {
                 let u = x.0;
                 let temp = x.1;
@@ -72,9 +72,9 @@ impl Solution {
                     cost = cost.min(sol);
                 }
             }
-            if cost == std::i32::MAX {
-                dp[v as usize][time as usize] = std::i32::MAX;
-                return std::i32::MAX;
+            if cost == i32::MAX {
+                dp[v as usize][time as usize] = i32::MAX;
+                return i32::MAX;
             }
             dp[v as usize][time as usize] = cost + pass[v as usize];
             dp[v as usize][time as usize]
@@ -91,7 +91,7 @@ impl Solution {
             adj[y].push((x as i32, time));
         }
         let ans = solve(&mut dp, max_time, &adj, 0, &passing_fees);
-        if ans == std::i32::MAX {
+        if ans == i32::MAX {
             return -1;
         }
         ans

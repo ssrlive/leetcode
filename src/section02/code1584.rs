@@ -41,7 +41,7 @@ impl Solution {
     pub fn min_cost_connect_points(points: Vec<Vec<i32>>) -> i32 {
         use std::{cmp::Reverse, collections::BinaryHeap};
         let n = points.len();
-        let mut dist = vec![vec![std::i32::MAX; n]; n];
+        let mut dist = vec![vec![i32::MAX; n]; n];
         for i in 0..n {
             for j in i + 1..n {
                 let d = (points[i][0] - points[j][0]).abs() + (points[i][1] - points[j][1]).abs();

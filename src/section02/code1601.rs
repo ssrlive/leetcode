@@ -80,7 +80,7 @@ impl Solution {
     pub fn maximum_requests(n: i32, requests: Vec<Vec<i32>>) -> i32 {
         fn _maximum_requests(bal: &mut Vec<i32>, requests: &Vec<Vec<i32>>, i: usize) -> i32 {
             if i == requests.len() {
-                return if bal.iter().all(|&x| x == 0) { 0 } else { std::i32::MIN };
+                return if bal.iter().all(|&x| x == 0) { 0 } else { i32::MIN };
             }
             bal[requests[i][0] as usize] -= 1;
             bal[requests[i][1] as usize] += 1;

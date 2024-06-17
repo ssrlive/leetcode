@@ -105,7 +105,7 @@ impl Solution {
         }
         let k = k - max_changes;
         let precost = 2 * max_changes as i64;
-        let mut ans = std::i64::MAX;
+        let mut ans = i64::MAX;
         for l in 0..m as i32 - k + 1 {
             let r = l + k - 1;
             let im = (r + l) / 2;

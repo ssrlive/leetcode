@@ -79,7 +79,7 @@ impl Solution {
             }
             r[i as usize] = sum;
         }
-        let mut ans = std::i64::MAX;
+        let mut ans = i64::MAX;
         for i in (n / 3 - 1..n / 3 * 2).rev() {
             ans = ans.min(l[i as usize] - r[i as usize + 1]);
         }

@@ -47,7 +47,7 @@ impl Solution {
 
         let mut pq = std::collections::BinaryHeap::new();
         let mut qs = 0.0;
-        let mut ans = std::f64::MAX;
+        let mut ans = f64::MAX;
         for item in v.iter() {
             qs += item.1;
             pq.push(item.1 as i64);

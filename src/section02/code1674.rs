@@ -51,7 +51,7 @@ impl Solution {
     pub fn min_moves(nums: Vec<i32>, limit: i32) -> i32 {
         let n = nums.len();
         let mut v = vec![0; 2 * limit as usize + 2];
-        let mut ans = std::i32::MAX;
+        let mut ans = i32::MAX;
         for i in 0..n / 2 {
             let l = nums[i].min(nums[n - i - 1]) + 1;
             let mid = nums[i] + nums[n - i - 1];

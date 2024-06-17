@@ -84,7 +84,7 @@ impl Solution {
             adj[b].push((a, t));
         }
         q.push(Reverse((0, 0)));
-        let mut dist = vec![std::i32::MAX; n as usize];
+        let mut dist = vec![i32::MAX; n as usize];
         let mut vis = vec![false; n as usize];
         dist[0] = 0;
         while let Some(Reverse((t, s))) = q.pop() {

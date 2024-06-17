@@ -57,7 +57,7 @@ impl Solution {
 
                 for (key, val) in &map {
                     let new_key = key | (1 << j);
-                    let entry = new_map.entry(new_key).or_insert(i32::max_value());
+                    let entry = new_map.entry(new_key).or_insert(i32::MAX);
                     *entry = std::cmp::min(*entry, val + (v1 ^ v2));
                 }
             }

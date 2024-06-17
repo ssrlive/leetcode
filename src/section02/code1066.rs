@@ -53,7 +53,7 @@ impl Solution {
             if let Some(&v) = memo.get(&(i, distance)) {
                 return v;
             }
-            let mut min = i32::max_value();
+            let mut min = i32::MAX;
             for j in 0..bikes.len() {
                 if visited[j] {
                     continue;

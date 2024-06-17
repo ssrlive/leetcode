@@ -47,7 +47,7 @@ impl Solution {
         };
         let min_r = {
             let mut res = vec![];
-            let mut min = std::i32::MAX;
+            let mut min = i32::MAX;
             for &num in nums.iter().rev() {
                 min = min.min(num);
                 res.push(min);

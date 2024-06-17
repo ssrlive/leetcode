@@ -63,13 +63,13 @@ impl Solution {
             let num = s[1] - s[0];
             let mut l_zero = false;
             for i in 0..s.len() {
-                if s[i] != std::i32::MIN {
+                if s[i] != i32::MIN {
                     l_zero |= s[i] == 0;
                     l.push(s[i]);
                     r.push(s[i] + num);
                     for j in i + 1..s.len() {
                         if s[j] == s[i] + num {
-                            s[j] = std::i32::MIN;
+                            s[j] = i32::MIN;
                             break;
                         }
                     }

@@ -36,7 +36,7 @@ impl Solution {
             map.entry(p[0]).or_insert_with(std::collections::HashSet::new);
             map.get_mut(&p[0]).unwrap().insert(p[1]);
         }
-        let mut min = std::i32::MAX;
+        let mut min = i32::MAX;
         for p1 in points.iter() {
             for p2 in points.iter() {
                 if p1[0] == p2[0] || p1[1] == p2[1] {
@@ -47,7 +47,7 @@ impl Solution {
                 }
             }
         }
-        if min == std::i32::MAX {
+        if min == i32::MAX {
             0
         } else {
             min

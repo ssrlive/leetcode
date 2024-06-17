@@ -62,7 +62,7 @@ impl Solution {
         for len in 2..m {
             for i in 0..m - len {
                 let j = i + len;
-                let mut min = std::i32::MAX;
+                let mut min = i32::MAX;
                 for k in i + 1..j {
                     let cost = dp[i][k] + dp[k][j] + cuts[j] - cuts[i];
                     if cost < min {

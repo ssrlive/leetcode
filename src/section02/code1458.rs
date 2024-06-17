@@ -42,7 +42,7 @@ struct Solution;
 impl Solution {
     pub fn max_dot_product(nums1: Vec<i32>, nums2: Vec<i32>) -> i32 {
         use std::cmp::max;
-        let mut curr = vec![i32::min_value(); nums2.len() + 1];
+        let mut curr = vec![i32::MIN; nums2.len() + 1];
         for i in 1..nums1.len() + 1 {
             let prev = curr.to_vec();
             for j in 1..nums2.len() + 1 {

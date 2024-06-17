@@ -49,7 +49,7 @@ struct Solution;
 
 impl Solution {
     pub fn find_rotate_steps(ring: String, key: String) -> i32 {
-        let mut f: Vec<Vec<i64>> = vec![vec![std::i32::MAX as i64; ring.len()]; key.len()];
+        let mut f: Vec<Vec<i64>> = vec![vec![i32::MAX as i64; ring.len()]; key.len()];
         let mut map = std::collections::HashMap::<char, Vec<usize>>::new();
         for (i, c) in ring.char_indices() {
             map.entry(c).or_default().push(i);
@@ -70,7 +70,7 @@ impl Solution {
         }
         map[&key[key.len() - 1]]
             .iter()
-            .fold(std::i64::MAX, |ret, idx| ret.min(f[key.len() - 1][*idx])) as i32
+            .fold(i64::MAX, |ret, idx| ret.min(f[key.len() - 1][*idx])) as i32
             + key.len() as i32
     }
 }

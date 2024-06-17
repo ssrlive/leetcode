@@ -41,7 +41,7 @@ impl Solution {
                 if s[i] == s[j] {
                     dp[i][j] = dp[i][j - 1];
                 } else {
-                    let mut min_val = std::i32::MAX;
+                    let mut min_val = i32::MAX;
                     for k in i..j {
                         min_val = min_val.min(dp[i][k] + dp[k + 1][j]);
                     }

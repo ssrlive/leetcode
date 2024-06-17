@@ -46,7 +46,7 @@ impl Solution {
                 graph[time[0] as usize - 1].push((time[1] as usize - 1, time[2]));
             }
 
-            let mut dist = vec![std::i32::MAX; n as usize];
+            let mut dist = vec![i32::MAX; n as usize];
             dist[k as usize - 1] = 0;
 
             let mut heap = std::collections::BinaryHeap::new();
@@ -66,7 +66,7 @@ impl Solution {
             }
 
             let ans = dist.iter().max()?;
-            if *ans == std::i32::MAX {
+            if *ans == i32::MAX {
                 Some(-1)
             } else {
                 Some(*ans)

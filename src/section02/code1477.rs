@@ -44,7 +44,7 @@ struct Solution;
 impl Solution {
     pub fn min_sum_of_lengths(arr: Vec<i32>, target: i32) -> i32 {
         use std::collections::HashMap;
-        let (mut sum, mut res, mut lsize) = (0, std::i32::MAX, std::i32::MAX);
+        let (mut sum, mut res, mut lsize) = (0, i32::MAX, i32::MAX);
         let mut prefix_sum: HashMap<i32, i32> = HashMap::new();
 
         prefix_sum.insert(0, -1);
@@ -63,13 +63,13 @@ impl Solution {
                 lsize = lsize.min(index - *prefix_sum.get(&(sum - target)).unwrap());
             }
 
-            if prefix_sum.contains_key(&(sum + target)) && lsize != std::i32::MAX {
+            if prefix_sum.contains_key(&(sum + target)) && lsize != i32::MAX {
                 let rsize = *prefix_sum.get(&(sum + target)).unwrap() - index;
                 res = res.min(rsize + lsize);
             }
         }
 
-        if res == std::i32::MAX {
+        if res == i32::MAX {
             -1
         } else {
             res

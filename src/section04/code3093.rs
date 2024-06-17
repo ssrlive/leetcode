@@ -73,7 +73,7 @@ impl Solution {
         let q = words_query.len();
         let mut res = vec![-1; q];
         let mut minn = 0;
-        let mut mins = std::i64::MAX;
+        let mut mins = i64::MAX;
         for (i, words_container_i) in words_container.iter().enumerate().take(c) {
             let word = &words_container_i;
             let n = word.len() - 1;
