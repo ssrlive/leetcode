@@ -155,3 +155,12 @@ cargo test
 | 3185 | [Count Pairs That Form a Complete Day II](code3185.rs) | [link](https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/) | Medium | :heavy_check_mark: |
 | 3186 | [Maximum Total Damage With Spell Casting](code3186.rs) | [link](https://leetcode.com/problems/maximum-total-damage-with-spell-casting/) | Medium | :heavy_check_mark: |
 | 3187 | [Peaks in Array](code3187.rs) | [link](https://leetcode.com/problems/peaks-in-array/) | Hard | :heavy_check_mark: |
+| 3190 | [Find Minimum Operations to Make All Elements Divisible by Three](code3190.rs) | [link](https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/) | Easy | :heavy_check_mark: |
+| 3191 | [Minimum Operations to Make Binary Array Elements Equal to One I](code3191.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/) | Medium | :heavy_check_mark: |
+| 3192 | [Minimum Operations to Make Binary Array Elements Equal to One II](code3192.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-ii/) | Medium | :heavy_check_mark: |
+| 3193 | [Count the Number of Inversions](code3193.rs) | [link](https://leetcode.com/problems/count-the-number-of-inversions/) | Hard | :heavy_check_mark: |
+| 3194 | [Minimum Average of Smallest and Largest Elements](code3194.rs) | [link](https://leetcode.com/problems/minimum-average-of-smallest-and-largest-elements/) | Easy | :heavy_check_mark: |
+| 3195 | [Find the Minimum Area to Cover All Ones I](code3195.rs) | [link](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-i/) | Medium | :heavy_check_mark: |
+| 3196 | [Maximize Total Cost of Alternating Subarrays](code3196.rs) | [link](https://leetcode.com/problems/maximize-total-cost-of-alternating-subarrays/) | Medium | :heavy_check_mark: |
+| 3197 | [Find the Minimum Area to Cover All Ones II](code3197.rs) | [link](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-ii/) | Hard | :heavy_check_mark: |
+| 3200 | [Maximum Height of a Triangle](code3200.rs) | [link](https://leetcode.com/problems/maximum-height-of-a-triangle/) | Easy | :heavy_check_mark: |
