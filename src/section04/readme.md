@@ -164,3 +164,17 @@ cargo test
 | 3196 | [Maximize Total Cost of Alternating Subarrays](code3196.rs) | [link](https://leetcode.com/problems/maximize-total-cost-of-alternating-subarrays/) | Medium | :heavy_check_mark: |
 | 3197 | [Find the Minimum Area to Cover All Ones II](code3197.rs) | [link](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-ii/) | Hard | :heavy_check_mark: |
 | 3200 | [Maximum Height of a Triangle](code3200.rs) | [link](https://leetcode.com/problems/maximum-height-of-a-triangle/) | Easy | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
+| 3201 | [Find the Maximum Length of Valid Subsequence I](code3201.rs) | [link](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/) | Medium | :heavy_check_mark: |
+| 3202 | [Find the Maximum Length of Valid Subsequence II](code3202.rs) | [link](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/) | Medium | :heavy_check_mark: |
+| 3203 | [Find Minimum Diameter After Merging Two Trees](code3203.rs) | [link](https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/) | Hard | :heavy_check_mark: |
+| 3206 | [Alternating Groups I](code3206.rs) | [link](https://leetcode.com/problems/alternating-groups-i/) | Easy | :heavy_check_mark: |
+| 3207 | [Maximum Points After Enemy Battles](code3207.rs) | [link](https://leetcode.com/problems/maximum-points-after-enemy-battles/) | Medium | :heavy_check_mark: |
+| 3208 | [Alternating Groups II](code3208.rs) | [link](https://leetcode.com/problems/alternating-groups-ii/) | Medium | :heavy_check_mark: |
+| 3209 | [Number of Subarrays With AND Value of K](code3209.rs) | [link](https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/) | Hard | :heavy_check_mark: |
+| 3210 | [Find the Encrypted String](code3210.rs) | [link](https://leetcode.com/problems/find-the-encrypted-string/) | Easy | :heavy_check_mark: |
+| 3211 | [Generate Binary Strings Without Adjacent Zeros](code3211.rs) | [link](https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/) | Medium | :heavy_check_mark: |
+| 3212 | [Count Submatrices With Equal Frequency of X and Y](code3212.rs) | [link](https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/) | Medium | :heavy_check_mark: |
+| 3213 | [Construct String with Minimum Cost](code3213.rs) | [link](https://leetcode.com/problems/construct-string-with-minimum-cost/) | Hard | :heavy_check_mark: |
