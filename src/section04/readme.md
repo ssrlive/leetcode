@@ -178,3 +178,7 @@ cargo test
 | 3211 | [Generate Binary Strings Without Adjacent Zeros](code3211.rs) | [link](https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/) | Medium | :heavy_check_mark: |
 | 3212 | [Count Submatrices With Equal Frequency of X and Y](code3212.rs) | [link](https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/) | Medium | :heavy_check_mark: |
 | 3213 | [Construct String with Minimum Cost](code3213.rs) | [link](https://leetcode.com/problems/construct-string-with-minimum-cost/) | Hard | :heavy_check_mark: |
+| 3216 | [Lexicographically Smallest String After a Swap](code3216.rs) | [link](https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/) | Easy | :heavy_check_mark: |
+| 3217 | [Delete Nodes From Linked List Present in Array](code3217.rs) | [link](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | Medium | :heavy_check_mark: |
+| 3218 | [Minimum Cost for Cutting Cake I](code3218.rs) | [link](https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/) | Medium | :heavy_check_mark: |
+| 3219 | [Minimum Cost for Cutting Cake II](code3219.rs) | [link](https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/) | Hard | :heavy_check_mark: |
