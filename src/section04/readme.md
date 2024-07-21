@@ -182,3 +182,11 @@ cargo test
 | 3217 | [Delete Nodes From Linked List Present in Array](code3217.rs) | [link](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | Medium | :heavy_check_mark: |
 | 3218 | [Minimum Cost for Cutting Cake I](code3218.rs) | [link](https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/) | Medium | :heavy_check_mark: |
 | 3219 | [Minimum Cost for Cutting Cake II](code3219.rs) | [link](https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/) | Hard | :heavy_check_mark: |
+| 3222 | [Find the Winning Player in Coin Game](code3222.rs) | [link](https://leetcode.com/problems/find-the-winning-player-in-coin-game/) | Easy | :heavy_check_mark: |
+| 3223 | [Minimum Length of String After Operations](code3223.rs) | [link](https://leetcode.com/problems/minimum-length-of-string-after-operations/) | Medium | :heavy_check_mark: |
+| 3224 | [Minimum Array Changes to Make Differences Equal](code3224.rs) | [link](https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/) | Medium | :heavy_check_mark: |
+| 3225 | [Maximum Score From Grid Operations](code3225.rs) | [link](https://leetcode.com/problems/maximum-score-from-grid-operations/) | Hard | :heavy_check_mark: |
+| 3226 | [Number of Bit Changes to Make Two Integers Equal](code3226.rs) | [link](https://leetcode.com/problems/number-of-bit-changes-to-make-two-integers-equal/) | Easy | :heavy_check_mark: |
+| 3227 | [Vowels Game in a String](code3227.rs) | [link](https://leetcode.com/problems/vowels-game-in-a-string/) | Medium | :heavy_check_mark: |
+| 3228 | [Maximum Number of Operations to Move Ones to the End](code3228.rs) | [link](https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/) | Medium | :heavy_check_mark: |
+| 3229 | [Minimum Operations to Make Array Equal to Target](code3229.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/) | Hard | :heavy_check_mark: |
