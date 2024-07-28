@@ -169,3 +169,7 @@ mod code3226;
 mod code3227;
 mod code3228;
 mod code3229;
+mod code3232;
+mod code3233;
+mod code3234;
+mod code3235;

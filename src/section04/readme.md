@@ -190,3 +190,7 @@ cargo test
 | 3227 | [Vowels Game in a String](code3227.rs) | [link](https://leetcode.com/problems/vowels-game-in-a-string/) | Medium | :heavy_check_mark: |
 | 3228 | [Maximum Number of Operations to Move Ones to the End](code3228.rs) | [link](https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/) | Medium | :heavy_check_mark: |
 | 3229 | [Minimum Operations to Make Array Equal to Target](code3229.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/) | Hard | :heavy_check_mark: |
+| 3232 | [Find if Digit Game Can Be Won](code3232.rs) | [link](https://leetcode.com/problems/find-if-digit-game-can-be-won/) | Easy | :heavy_check_mark: |
+| 3233 | [Find the Count of Numbers Which Are Not Special](code3233.rs) | [link](https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/) | Medium | :heavy_check_mark: |
+| 3234 | [Count the Number of Substrings With Dominant Ones](code3234.rs) | [link](https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/) | Medium | :heavy_check_mark: |
+| 3235 | [Check if the Rectangle Corner Is Reachable](code3235.rs) | [link](https://leetcode.com/problems/check-if-the-rectangle-corner-is-reachable/) | Hard | :heavy_check_mark: |
