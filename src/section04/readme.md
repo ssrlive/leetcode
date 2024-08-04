@@ -194,3 +194,7 @@ cargo test
 | 3233 | [Find the Count of Numbers Which Are Not Special](code3233.rs) | [link](https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/) | Medium | :heavy_check_mark: |
 | 3234 | [Count the Number of Substrings With Dominant Ones](code3234.rs) | [link](https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/) | Medium | :heavy_check_mark: |
 | 3235 | [Check if the Rectangle Corner Is Reachable](code3235.rs) | [link](https://leetcode.com/problems/check-if-the-rectangle-corner-is-reachable/) | Hard | :heavy_check_mark: |
+| 3238 | [Find the Number of Winning Players](code3238.rs) | [link](https://leetcode.com/problems/find-the-number-of-winning-players/) | Easy | :heavy_check_mark: |
+| 3239 | [Minimum Number of Flips to Make Binary Grid Palindromic I](code3239.rs) | [link](https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/) | Medium | :heavy_check_mark: |
+| 3240 | [Minimum Number of Flips to Make Binary Grid Palindromic II](code3240.rs) | [link](https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-ii/) | Medium | :heavy_check_mark: |
+| 3241 | [Time Taken to Mark All Nodes](code3241.rs) | [link](https://leetcode.com/problems/time-taken-to-mark-all-nodes/) | Hard | :heavy_check_mark: |
