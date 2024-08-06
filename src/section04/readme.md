@@ -198,3 +198,7 @@ cargo test
 | 3239 | [Minimum Number of Flips to Make Binary Grid Palindromic I](code3239.rs) | [link](https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/) | Medium | :heavy_check_mark: |
 | 3240 | [Minimum Number of Flips to Make Binary Grid Palindromic II](code3240.rs) | [link](https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-ii/) | Medium | :heavy_check_mark: |
 | 3241 | [Time Taken to Mark All Nodes](code3241.rs) | [link](https://leetcode.com/problems/time-taken-to-mark-all-nodes/) | Hard | :heavy_check_mark: |
+| 3242 | [Design Neighbor Sum Service](code3242.rs) | [link](https://leetcode.com/problems/design-neighbor-sum-service/) | Easy | :heavy_check_mark: |
+| 3243 | [Shortest Distance After Road Addition Queries I](code3243.rs) | [link](https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/) | Medium | :heavy_check_mark: |
+| 3244 | [Shortest Distance After Road Addition Queries II](code3244.rs) | [link](https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/) | Hard | :heavy_check_mark: |
+| 3245 | [Alternating Groups III](code3245.rs) | [link](https://leetcode.com/problems/alternating-groups-iii/) | Hard | :heavy_check_mark: |

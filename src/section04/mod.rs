@@ -177,3 +177,7 @@ mod code3238;
 mod code3239;
 mod code3240;
 mod code3241;
+mod code3242;
+mod code3243;
+mod code3244;
+mod code3245;
