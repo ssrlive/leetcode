@@ -71,6 +71,130 @@
 struct Solution;
 
 impl Solution {
+    fn lowbit(x: i32) -> i32 {
+        x & -x
+    }
+
+    fn update<T>(mut i: i32, x: T, c: &mut [T])
+    where
+        T: std::ops::AddAssign + Copy,
+    {
+        if i == 0 {
+            return;
+        }
+        while i < c.len() as i32 {
+            c[i as usize] += x;
+            i += Self::lowbit(i);
+        }
+    }
+
+    fn getsum<T>(mut i: i32, c: &[T]) -> T
+    where
+        T: std::ops::Add<Output = T> + Copy + Default,
+    {
+        let mut r = T::default();
+        while i != 0 {
+            r = r + c[i as usize];
+            i -= Self::lowbit(i);
+        }
+        r
+    }
+
+    fn insert(n: i32, x: i32, s: &mut std::collections::BTreeSet<i32>, count: &mut [i32], sum: &mut [i64]) {
+        s.insert(x);
+        let t = s.get(&x).unwrap();
+        if s.len() == 1 {
+            Self::update(n, 1, count);
+            Self::update(n, n as i64, sum);
+        } else {
+            let before = s.range(..t).next_back().unwrap_or(s.last().unwrap());
+            let after = s.range(*t + 1..).next().unwrap_or(s.first().unwrap());
+
+            let len1 = if s.len() == 2 { n } else { (*after - *before + n) % n };
+            Self::update(len1, -1, count);
+            Self::update(len1, -len1 as i64, sum);
+            let len2 = (*t - *before + n) % n;
+            Self::update(len2, 1, count);
+            Self::update(len2, len2 as i64, sum);
+            let len3 = (*after - *t + n) % n;
+            Self::update(len3, 1, count);
+            Self::update(len3, len3 as i64, sum);
+        }
+    }
+
+    fn remove(n: i32, x: i32, s: &mut std::collections::BTreeSet<i32>, count: &mut [i32], sum: &mut [i64]) {
+        if s.len() == 1 {
+            s.clear();
+            Self::update(n, -1, count);
+            Self::update(n, -n as i64, sum);
+        } else {
+            let t = s.get(&x).unwrap();
+            let before = s.range(..t).next_back().unwrap_or(s.last().unwrap());
+            let after = s.range(*t + 1..).next().unwrap_or(s.first().unwrap());
+            let len1 = if s.len() == 2 { n } else { (*after - *before + n) % n };
+            Self::update(len1, 1, count);
+            Self::update(len1, len1 as i64, sum);
+            let len2 = (*t - *before + n) % n;
+            Self::update(len2, -1, count);
+            Self::update(len2, -len2 as i64, sum);
+            let len3 = (*after - *t + n) % n;
+            Self::update(len3, -1, count);
+            Self::update(len3, -len3 as i64, sum);
+            s.remove(&x);
+        }
+    }
+
+    pub fn number_of_alternating_groups(colors: Vec<i32>, queries: Vec<Vec<i32>>) -> Vec<i32> {
+        let mut colors = colors;
+        let n = colors.len() as i32;
+        let mut s = std::collections::BTreeSet::new();
+        let mut sum = vec![0; n as usize + 1];
+        let mut count = vec![0; n as usize + 1];
+        let mut r = Vec::new();
+        for i in 1..n {
+            if colors[i as usize] == colors[i as usize - 1] {
+                Self::insert(n, i - 1, &mut s, &mut count, &mut sum);
+            }
+        }
+        if colors[n as usize - 1] == colors[0] {
+            Self::insert(n, n - 1, &mut s, &mut count, &mut sum);
+        }
+        for q in queries {
+            if q[0] == 1 {
+                let k = q[1];
+                r.push(if s.is_empty() {
+                    n
+                } else {
+                    Self::getsum(n, &sum) as i32
+                        - Self::getsum(k - 1, &sum) as i32
+                        - (k - 1) * (Self::getsum(n, &count) - Self::getsum(k - 1, &count))
+                });
+            } else {
+                let ind = q[1];
+                if colors[ind as usize] == q[2] {
+                    continue;
+                }
+                colors[ind as usize] = q[2];
+                let before = (ind + n - 1) % n;
+                if colors[ind as usize] == colors[before as usize] {
+                    Self::insert(n, before, &mut s, &mut count, &mut sum);
+                } else {
+                    Self::remove(n, before, &mut s, &mut count, &mut sum);
+                }
+                let after = (ind + 1) % n;
+                if colors[ind as usize] == colors[after as usize] {
+                    Self::insert(n, ind, &mut s, &mut count, &mut sum);
+                } else {
+                    Self::remove(n, ind, &mut s, &mut count, &mut sum);
+                }
+            }
+        }
+        r
+    }
+}
+
+/*
+impl Solution {
     // This solution can not pass the test cases for performance issue.
     pub fn number_of_alternating_groups(colors: Vec<i32>, queries: Vec<Vec<i32>>) -> Vec<i32> {
         let n = colors.len();
@@ -120,7 +244,7 @@ impl Solution {
         result
     }
 }
-
+*/
 #[test]
 fn test() {
     let colors = vec![0, 1, 1, 0, 1];
