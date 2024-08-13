@@ -202,3 +202,7 @@ cargo test
 | 3243 | [Shortest Distance After Road Addition Queries I](code3243.rs) | [link](https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/) | Medium | :heavy_check_mark: |
 | 3244 | [Shortest Distance After Road Addition Queries II](code3244.rs) | [link](https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/) | Hard | :heavy_check_mark: |
 | 3245 | [Alternating Groups III](code3245.rs) | [link](https://leetcode.com/problems/alternating-groups-iii/) | Hard | :heavy_check_mark: |
+| 3248 | [Snake in Matrix](code3248.rs) | [link](https://leetcode.com/problems/snake-in-matrix/) | Easy | :heavy_check_mark: |
+| 3249 | [Count the Number of Good Nodes](code3249.rs) | [link](https://leetcode.com/problems/count-the-number-of-good-nodes/) | Medium | :heavy_check_mark: |
+| 3250 | [Find the Count of Monotonic Pairs I](code3250.rs) | [link](https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/) | Hard | :heavy_check_mark: |
+| 3251 | [Find the Count of Monotonic Pairs II](code3251.rs) | [link](https://leetcode.com/problems/find-the-count-of-monotonic-pairs-ii/) | Hard | :heavy_check_mark: |
