@@ -205,4 +205,15 @@ cargo test
 | 3248 | [Snake in Matrix](code3248.rs) | [link](https://leetcode.com/problems/snake-in-matrix/) | Easy | :heavy_check_mark: |
 | 3249 | [Count the Number of Good Nodes](code3249.rs) | [link](https://leetcode.com/problems/count-the-number-of-good-nodes/) | Medium | :heavy_check_mark: |
 | 3250 | [Find the Count of Monotonic Pairs I](code3250.rs) | [link](https://leetcode.com/problems/find-the-count-of-monotonic-pairs-i/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 3251 | [Find the Count of Monotonic Pairs II](code3251.rs) | [link](https://leetcode.com/problems/find-the-count-of-monotonic-pairs-ii/) | Hard | :heavy_check_mark: |
+| 3254 | [Find the Power of K-Size Subarrays I](code3254.rs) | [link](https://leetcode.com/problems/find-the-power-of-k-size-subarrays-i/) | Medium | :heavy_check_mark: |
+| 3255 | [Find the Power of K-Size Subarrays II](code3255.rs) | [link](https://leetcode.com/problems/find-the-power-of-k-size-subarrays-ii/) | Medium | :heavy_check_mark: |
+| 3256 | [Maximum Value Sum by Placing Three Rooks I](code3256.rs) | [link](https://leetcode.com/problems/maximum-value-sum-by-placing-three-rooks-i/) | Hard | :heavy_check_mark: |
+| 3257 | [Maximum Value Sum by Placing Three Rooks II](code3257.rs) | [link](https://leetcode.com/problems/maximum-value-sum-by-placing-three-rooks-ii/) | Hard | :heavy_check_mark: |
+| 3258 | [Count Substrings That Satisfy K-Constraint I](code3258.rs) | [link](https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/) | Easy | :heavy_check_mark: |
+| 3259 | [Maximum Energy Boost From Two Drinks](code3259.rs) | [link](https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/) | Medium | :heavy_check_mark: |
+| 3260 | [Find the Largest Palindrome Divisible by K](code3260.rs) | [link](https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/) | Hard | :heavy_check_mark: |
+| 3261 | [Count Substrings That Satisfy K-Constraint II](code3261.rs) | [link](https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/) | Hard | :heavy_check_mark: |
