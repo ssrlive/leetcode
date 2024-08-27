@@ -217,3 +217,7 @@ cargo test
 | 3259 | [Maximum Energy Boost From Two Drinks](code3259.rs) | [link](https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/) | Medium | :heavy_check_mark: |
 | 3260 | [Find the Largest Palindrome Divisible by K](code3260.rs) | [link](https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/) | Hard | :heavy_check_mark: |
 | 3261 | [Count Substrings That Satisfy K-Constraint II](code3261.rs) | [link](https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/) | Hard | :heavy_check_mark: |
+| 3264 | [Final Array State After K Multiplication Operations I](code3264.rs) | [link](https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-i/) | Easy | :heavy_check_mark: |
+| 3265 | [Count Almost Equal Pairs I](code3265.rs) | [link](https://leetcode.com/problems/count-almost-equal-pairs-i/) | Medium | :heavy_check_mark: |
+| 3266 | [Final Array State After K Multiplication Operations II](code3266.rs) | [link](https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-ii/) | Hard | :heavy_check_mark: |
+| 3267 | [Count Almost Equal Pairs II](code3267.rs) | [link](https://leetcode.com/problems/count-almost-equal-pairs-ii/) | Hard | :heavy_check_mark: |
