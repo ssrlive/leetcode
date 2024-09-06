@@ -221,3 +221,11 @@ cargo test
 | 3265 | [Count Almost Equal Pairs I](code3265.rs) | [link](https://leetcode.com/problems/count-almost-equal-pairs-i/) | Medium | :heavy_check_mark: |
 | 3266 | [Final Array State After K Multiplication Operations II](code3266.rs) | [link](https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-ii/) | Hard | :heavy_check_mark: |
 | 3267 | [Count Almost Equal Pairs II](code3267.rs) | [link](https://leetcode.com/problems/count-almost-equal-pairs-ii/) | Hard | :heavy_check_mark: |
+| 3270 | [Find the Key of the Numbers](code3270.rs) | [link](https://leetcode.com/problems/find-the-key-of-the-numbers/) | Easy | :heavy_check_mark: |
+| 3271 | [Hash Divided String](code3271.rs) | [link](https://leetcode.com/problems/hash-divided-string/) | Medium | :heavy_check_mark: |
+| 3272 | [Find the Count of Good Integers](code3272.rs) | [link](https://leetcode.com/problems/find-the-count-of-good-integers/) | Hard | :heavy_check_mark: |
+| 3273 | [Minimum Amount of Damage Dealt to Bob](code3273.rs) | [link](https://leetcode.com/problems/minimum-amount-of-damage-dealt-to-bob/) | Hard | :heavy_check_mark: |
+| 3274 | [Check if Two Chessboard Squares Have the Same Color](code3274.rs) | [link](https://leetcode.com/problems/check-if-two-chessboard-squares-have-the-same-color/) | Easy | :heavy_check_mark: |
+| 3275 | [K-th Nearest Obstacle Queries](code3275.rs) | [link](https://leetcode.com/problems/k-th-nearest-obstacle-queries/) | Medium | :heavy_check_mark: |
+| 3276 | [Select Cells in Grid With Maximum Score](code3276.rs) | [link](https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/) | Hard | :heavy_check_mark: |
+| 3277 | [Maximum XOR Score Subarray Queries](code3277.rs) | [link](https://leetcode.com/problems/maximum-xor-score-subarray-queries/) | Hard | :heavy_check_mark: |
