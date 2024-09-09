@@ -229,3 +229,7 @@ cargo test
 | 3275 | [K-th Nearest Obstacle Queries](code3275.rs) | [link](https://leetcode.com/problems/k-th-nearest-obstacle-queries/) | Medium | :heavy_check_mark: |
 | 3276 | [Select Cells in Grid With Maximum Score](code3276.rs) | [link](https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/) | Hard | :heavy_check_mark: |
 | 3277 | [Maximum XOR Score Subarray Queries](code3277.rs) | [link](https://leetcode.com/problems/maximum-xor-score-subarray-queries/) | Hard | :heavy_check_mark: |
+| 3280 | [Convert Date to Binary](code3280.rs) | [link](https://leetcode.com/problems/convert-date-to-binary/) | Easy | :heavy_check_mark: |
+| 3281 | [Maximize Score of Numbers in Ranges](code3281.rs) | [link](https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/) | Medium | :heavy_check_mark: |
+| 3282 | [Reach End of Array With Max Score](code3282.rs) | [link](https://leetcode.com/problems/reach-end-of-array-with-max-score/) | Medium | :heavy_check_mark: |
+| 3283 | [Maximum Number of Moves to Kill All Pawns](code3283.rs) | [link](https://leetcode.com/problems/maximum-number-of-moves-to-kill-all-pawns/) | Hard | :heavy_check_mark: |
