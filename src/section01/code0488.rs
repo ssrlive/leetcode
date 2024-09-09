@@ -91,7 +91,7 @@ impl Solution {
                     }
                     if pick {
                         let mut new_board = curr_board.clone();
-                        new_board.insert_str(i, &curr_hand[j].to_string());
+                        new_board.insert(i, curr_hand[j]);
                         new_board = Self::remove_same(&new_board, i)?;
                         let mut new_hand = curr_hand.clone();
                         new_hand.remove(j);

@@ -105,11 +105,7 @@ impl Solution {
             .map(|row| row.iter().map(|x| *x == 1).collect::<Vec<bool>>())
             .collect::<Vec<Vec<bool>>>();
 
-        if let Some(x) = _min_flips(0, mat) {
-            x
-        } else {
-            -1
-        }
+        _min_flips(0, mat).unwrap_or(-1)
     }
 }
 

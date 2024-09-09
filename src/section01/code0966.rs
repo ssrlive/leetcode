@@ -52,7 +52,7 @@ impl Solution {
         let mut exactly_matches = HashSet::new();
         let mut capitalization = HashMap::new();
         let mut vowel = HashMap::new();
-        let to_any_vowels = |s: &String| -> String { s.to_ascii_lowercase().replace(|c| matches!(c, 'a' | 'e' | 'i' | 'o' | 'u'), "*") };
+        let to_any_vowels = |s: &String| -> String { s.to_ascii_lowercase().replace(['a', 'e', 'i', 'o', 'u'], "*") };
         for word in wordlist.iter() {
             exactly_matches.insert(word);
             capitalization.entry(word.to_ascii_lowercase()).or_insert(word);
