@@ -233,3 +233,7 @@ cargo test
 | 3281 | [Maximize Score of Numbers in Ranges](code3281.rs) | [link](https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/) | Medium | :heavy_check_mark: |
 | 3282 | [Reach End of Array With Max Score](code3282.rs) | [link](https://leetcode.com/problems/reach-end-of-array-with-max-score/) | Medium | :heavy_check_mark: |
 | 3283 | [Maximum Number of Moves to Kill All Pawns](code3283.rs) | [link](https://leetcode.com/problems/maximum-number-of-moves-to-kill-all-pawns/) | Hard | :heavy_check_mark: |
+| 3285 | [Find Indices of Stable Mountains](code3285.rs) | [link](https://leetcode.com/problems/find-indices-of-stable-mountains/) | Easy | :heavy_check_mark: |
+| 3286 | [Find a Safe Walk Through a Grid](code3286.rs) | [link](https://leetcode.com/problems/find-a-safe-walk-through-a-grid/) | Medium | :heavy_check_mark: |
+| 3287 | [Find the Maximum Sequence Value of Array](code3287.rs) | [link](https://leetcode.com/problems/find-the-maximum-sequence-value-of-array/) | Hard | :heavy_check_mark: |
+| 3288 | [Length of the Longest Increasing Path](code3288.rs) | [link](https://leetcode.com/problems/length-of-the-longest-increasing-path/) | Hard | :heavy_check_mark: |
