@@ -237,3 +237,11 @@ cargo test
 | 3286 | [Find a Safe Walk Through a Grid](code3286.rs) | [link](https://leetcode.com/problems/find-a-safe-walk-through-a-grid/) | Medium | :heavy_check_mark: |
 | 3287 | [Find the Maximum Sequence Value of Array](code3287.rs) | [link](https://leetcode.com/problems/find-the-maximum-sequence-value-of-array/) | Hard | :heavy_check_mark: |
 | 3288 | [Length of the Longest Increasing Path](code3288.rs) | [link](https://leetcode.com/problems/length-of-the-longest-increasing-path/) | Hard | :heavy_check_mark: |
+| 3289 | [The Two Sneaky Numbers of Digitville](code3289.rs) | [link](https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/) | Easy | :heavy_check_mark: |
+| 3290 | [Maximum Multiplication Score](code3290.rs) | [link](https://leetcode.com/problems/maximum-multiplication-score/) | Medium | :heavy_check_mark: |
+| 3291 | [Minimum Number of Valid Strings to Form Target I](code3291.rs) | [link](https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/) | Medium | :heavy_check_mark: |
+| 3292 | [Minimum Number of Valid Strings to Form Target II](code3292.rs) | [link](https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-ii/) | Hard | :heavy_check_mark: |
+| 3295 | [Report Spam Message](code3295.rs) | [link](https://leetcode.com/problems/report-spam-message/) | Medium | :heavy_check_mark: |
+| 3296 | [Minimum Number of Seconds to Make Mountain Height Zero](code3296.rs) | [link](https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium | :heavy_check_mark: |
+| 3297 | [Count Substrings That Can Be Rearranged to Contain a String I](code3297.rs) | [link](https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/) | Medium | :heavy_check_mark: |
+| 3298 | [Count Substrings That Can Be Rearranged to Contain a String II](code3298.rs) | [link](https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/) | Hard | :heavy_check_mark: |
