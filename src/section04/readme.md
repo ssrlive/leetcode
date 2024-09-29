@@ -245,3 +245,10 @@ cargo test
 | 3296 | [Minimum Number of Seconds to Make Mountain Height Zero](code3296.rs) | [link](https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium | :heavy_check_mark: |
 | 3297 | [Count Substrings That Can Be Rearranged to Contain a String I](code3297.rs) | [link](https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/) | Medium | :heavy_check_mark: |
 | 3298 | [Count Substrings That Can Be Rearranged to Contain a String II](code3298.rs) | [link](https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/) | Hard | :heavy_check_mark: |
+| 3300 | [Minimum Element After Replacement With Digit Sum](code3300.rs) | [link](https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/) | Easy | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
+| 3301 | [Maximize the Total Height of Unique Towers](code3301.rs) | [link](https://leetcode.com/problems/maximize-the-total-height-of-unique-towers/) | Medium | :heavy_check_mark: |
+| 3302 | [Find the Lexicographically Smallest Valid Sequence](code3302.rs) | [link](https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/) | Medium | :heavy_check_mark: |
+| 3303 | [Find the Occurrence of First Almost Equal Substring](code3303.rs) | [link](https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/) | Hard | :heavy_check_mark: |
