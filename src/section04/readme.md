@@ -252,3 +252,7 @@ cargo test
 | 3301 | [Maximize the Total Height of Unique Towers](code3301.rs) | [link](https://leetcode.com/problems/maximize-the-total-height-of-unique-towers/) | Medium | :heavy_check_mark: |
 | 3302 | [Find the Lexicographically Smallest Valid Sequence](code3302.rs) | [link](https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/) | Medium | :heavy_check_mark: |
 | 3303 | [Find the Occurrence of First Almost Equal Substring](code3303.rs) | [link](https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/) | Hard | :heavy_check_mark: |
+| 3304 | [Find the K-th Character in String Game I](code3304.rs) | [link](https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/) | Easy | :heavy_check_mark: |
+| 3305 | [Count of Substrings Containing Every Vowel and K Consonants I](code3305.rs) | [link](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/) | Medium | :heavy_check_mark: |
+| 3306 | [Count of Substrings Containing Every Vowel and K Consonants II](code3306.rs) | [link](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/) | Medium | :heavy_check_mark: |
+| 3307 | [Find the K-th Character in String Game II](code3307.rs) | [link](https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/) | Hard | :heavy_check_mark: |
