@@ -7,3 +7,11 @@ edition = "2021"
 
 [dependencies]
 rand = "0.8.5"
+
+[features]
+default = []
+# default = ["section01", "section02", "section03", "section04"]
+section01 = []
+section02 = []
+section03 = []
+section04 = []

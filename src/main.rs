@@ -4,9 +4,13 @@ mod narytree;
 mod quadtree;
 mod treenode;
 
+#[cfg(feature = "section01")]
 mod section01;
+#[cfg(feature = "section02")]
 mod section02;
+#[cfg(feature = "section03")]
 mod section03;
+#[cfg(feature = "section04")]
 mod section04;
 
 fn main() {
