@@ -256,3 +256,7 @@ cargo test
 | 3305 | [Count of Substrings Containing Every Vowel and K Consonants I](code3305.rs) | [link](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/) | Medium | :heavy_check_mark: |
 | 3306 | [Count of Substrings Containing Every Vowel and K Consonants II](code3306.rs) | [link](https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/) | Medium | :heavy_check_mark: |
 | 3307 | [Find the K-th Character in String Game II](code3307.rs) | [link](https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/) | Hard | :heavy_check_mark: |
+| 3309 | [Maximum Possible Number by Binary Concatenation](code3309.rs) | [link](https://leetcode.com/problems/maximum-possible-number-by-binary-concatenation/) | Easy | :heavy_check_mark: |
+| 3310 | [Remove Methods From Project](code3310.rs) | [link](https://leetcode.com/problems/remove-methods-from-project/) | Medium | :heavy_check_mark: |
+| 3311 | [Construct 2D Grid Matching Graph Layout](code3311.rs) | [link](https://leetcode.com/problems/construct-2d-grid-matching-graph-layout/) | Hard | :heavy_check_mark: |
+| 3312 | [Sorted GCD Pair Queries](code3312.rs) | [link](https://leetcode.com/problems/sorted-gcd-pair-queries/) | Hard | :heavy_check_mark: |
