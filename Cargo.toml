@@ -9,7 +9,7 @@ edition = "2021"
 rand = "0.8.5"
 
 [features]
-default = []
+default = ["section04"]
 # default = ["section01", "section02", "section03", "section04"]
 section01 = []
 section02 = []

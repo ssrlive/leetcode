@@ -260,3 +260,11 @@ cargo test
 | 3310 | [Remove Methods From Project](code3310.rs) | [link](https://leetcode.com/problems/remove-methods-from-project/) | Medium | :heavy_check_mark: |
 | 3311 | [Construct 2D Grid Matching Graph Layout](code3311.rs) | [link](https://leetcode.com/problems/construct-2d-grid-matching-graph-layout/) | Hard | :heavy_check_mark: |
 | 3312 | [Sorted GCD Pair Queries](code3312.rs) | [link](https://leetcode.com/problems/sorted-gcd-pair-queries/) | Hard | :heavy_check_mark: |
+| 3314 | [Construct the Minimum Bitwise Array I](code3314.rs) | [link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/) | Easy | :heavy_check_mark: |
+| 3315 | [Construct the Minimum Bitwise Array II](code3315.rs) | [link](https://leetcode.com/problems/construct-the-minimum-bitwise-array-ii/) | Medium | :heavy_check_mark: |
+| 3316 | [Find Maximum Removals From Source String](code3316.rs) | [link](https://leetcode.com/problems/find-maximum-removals-from-source-string/) | Medium | :heavy_check_mark: |
+| 3317 | [Find the Number of Possible Ways for an Event](code3317.rs) | [link](https://leetcode.com/problems/find-the-number-of-possible-ways-for-an-event/) | Hard | :heavy_check_mark: |
+| 3318 | [Find X-Sum of All K-Long Subarrays I](code3318.rs) | [link](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/) | Easy | :heavy_check_mark: |
+| 3319 | [K-th Largest Perfect Subtree Size in Binary Tree](code3319.rs) | [link](https://leetcode.com/problems/k-th-largest-perfect-subtree-size-in-binary-tree/) | Medium | :heavy_check_mark: |
+| 3320 | [Count The Number of Winning Sequences](code3320.rs) | [link](https://leetcode.com/problems/count-the-number-of-winning-sequences/) | Hard | :heavy_check_mark: |
+| 3321 | [Find X-Sum of All K-Long Subarrays II](code3321.rs) | [link](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/) | Easy | :heavy_check_mark: |
