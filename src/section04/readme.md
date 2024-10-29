@@ -272,3 +272,11 @@ cargo test
 | 3325 | [Count Substrings With K-Frequency Characters I](code3325.rs) | [link](https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/) | Medium | :heavy_check_mark: |
 | 3326 | [Minimum Division Operations to Make Array Non Decreasing](code3326.rs) | [link](https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/) | Medium | :heavy_check_mark: |
 | 3327 | [Check if DFS Strings Are Palindromes](code3327.rs) | [link](https://leetcode.com/problems/check-if-dfs-strings-are-palindromes/) | Hard | :heavy_check_mark: |
+| 3330 | [Find the Original Typed String I](code3330.rs) | [link](https://leetcode.com/problems/find-the-original-typed-string-i/) | Easy | :heavy_check_mark: |
+| 3331 | [Find Subtree Sizes After Changes](code3331.rs) | [link](https://leetcode.com/problems/find-subtree-sizes-after-changes/) | Medium | :heavy_check_mark: |
+| 3332 | [Maximum Points Tourist Can Earn](code3332.rs) | [link](https://leetcode.com/problems/maximum-points-tourist-can-earn/) | Medium | :heavy_check_mark: |
+| 3333 | [Find the Original Typed String II](code3333.rs) | [link](https://leetcode.com/problems/find-the-original-typed-string-ii/) | Hard | :heavy_check_mark: |
+| 3334 | [Find the Maximum Factor Score of Array](code3334.rs) | [link](https://leetcode.com/problems/find-the-maximum-factor-score-of-array/) | Medium | :heavy_check_mark: |
+| 3335 | [Total Characters in String After Transformations I](code3335.rs) | [link](https://leetcode.com/problems/total-characters-in-string-after-transformations-i/) | Medium | :heavy_check_mark: |
+| 3336 | [Find the Number of Subsequences With Equal GCD](code3336.rs) | [link](https://leetcode.com/problems/find-the-number-of-subsequences-with-equal-gcd/) | Hard | :heavy_check_mark: |
+| 3337 | [Total Characters in String After Transformations II](code3337.rs) | [link](https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/) | Hard | :heavy_check_mark: |
