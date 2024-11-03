@@ -253,3 +253,7 @@ mod code3334;
 mod code3335;
 mod code3336;
 mod code3337;
+mod code3340;
+mod code3341;
+mod code3342;
+mod code3343;

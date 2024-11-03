@@ -280,3 +280,7 @@ cargo test
 | 3335 | [Total Characters in String After Transformations I](code3335.rs) | [link](https://leetcode.com/problems/total-characters-in-string-after-transformations-i/) | Medium | :heavy_check_mark: |
 | 3336 | [Find the Number of Subsequences With Equal GCD](code3336.rs) | [link](https://leetcode.com/problems/find-the-number-of-subsequences-with-equal-gcd/) | Hard | :heavy_check_mark: |
 | 3337 | [Total Characters in String After Transformations II](code3337.rs) | [link](https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/) | Hard | :heavy_check_mark: |
+| 3340 | [Check Balanced String](code3340.rs) | [link](https://leetcode.com/problems/check-balanced-string/) | Easy | :heavy_check_mark: |
+| 3341 | [Find Minimum Time to Reach Last Room I](code3341.rs) | [link](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/) | Medium | :heavy_check_mark: |
+| 3342 | [Find Minimum Time to Reach Last Room II](code3342.rs) | [link](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/) | Medium | :heavy_check_mark: |
+| 3343 | [Count Number of Balanced Permutations](code3343.rs) | [link](https://leetcode.com/problems/count-number-of-balanced-permutations/) | Hard | :heavy_check_mark: |
