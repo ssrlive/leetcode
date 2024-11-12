@@ -284,3 +284,14 @@ cargo test
 | 3341 | [Find Minimum Time to Reach Last Room I](code3341.rs) | [link](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/) | Medium | :heavy_check_mark: |
 | 3342 | [Find Minimum Time to Reach Last Room II](code3342.rs) | [link](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/) | Medium | :heavy_check_mark: |
 | 3343 | [Count Number of Balanced Permutations](code3343.rs) | [link](https://leetcode.com/problems/count-number-of-balanced-permutations/) | Hard | :heavy_check_mark: |
+| 3345 | [Smallest Divisible Digit Product I](code3345.rs) | [link](https://leetcode.com/problems/smallest-divisible-digit-product-i/) | Easy | :heavy_check_mark: |
+| 3346 | [Maximum Frequency of an Element After Performing Operations I](code3346.rs) | [link](https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-i/) | Medium | :heavy_check_mark: |
+| 3347 | [Maximum Frequency of an Element After Performing Operations II](code3347.rs) | [link](https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-ii/) | Hard | :heavy_check_mark: |
+| 3348 | [Smallest Divisible Digit Product II](code3348.rs) | [link](https://leetcode.com/problems/smallest-divisible-digit-product-ii/) | Hard | :heavy_check_mark: |
+| 3349 | [Adjacent Increasing Subarrays Detection I](code3349.rs) | [link](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-i/) | Easy | :heavy_check_mark: |
+| 3350 | [Adjacent Increasing Subarrays Detection II](code3350.rs) | [link](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-ii/) | Medium | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
+| 3351 | [Sum of Good Subsequences](code3351.rs) | [link](https://leetcode.com/problems/sum-of-good-subsequences/) | Hard | :heavy_check_mark: |
+| 3352 | [Count K-Reducible Numbers Less Than N](code3352.rs) | [link](https://leetcode.com/problems/count-k-reducible-numbers-less-than-n/) | Hard | :heavy_check_mark: |
