@@ -295,3 +295,7 @@ cargo test
 |---| ----- | ---- | ---------- | :------: |
 | 3351 | [Sum of Good Subsequences](code3351.rs) | [link](https://leetcode.com/problems/sum-of-good-subsequences/) | Hard | :heavy_check_mark: |
 | 3352 | [Count K-Reducible Numbers Less Than N](code3352.rs) | [link](https://leetcode.com/problems/count-k-reducible-numbers-less-than-n/) | Hard | :heavy_check_mark: |
+| 3354 | [Make Array Elements Equal to Zero](code3354.rs) | [link](https://leetcode.com/problems/make-array-elements-equal-to-zero/) | Easy | :heavy_check_mark: |
+| 3355 | [Zero Array Transformation I](code3355.rs) | [link](https://leetcode.com/problems/zero-array-transformation-i/) | Medium | :heavy_check_mark: |
+| 3356 | [Zero Array Transformation II](code3356.rs) | [link](https://leetcode.com/problems/zero-array-transformation-ii/) | Medium | :heavy_check_mark: |
+| 3357 | [Minimize the Maximum Adjacent Element Difference](code3357.rs) | [link](https://leetcode.com/problems/minimize-the-maximum-adjacent-element-difference/) | Hard | :heavy_check_mark: |
