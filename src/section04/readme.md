@@ -299,3 +299,11 @@ cargo test
 | 3355 | [Zero Array Transformation I](code3355.rs) | [link](https://leetcode.com/problems/zero-array-transformation-i/) | Medium | :heavy_check_mark: |
 | 3356 | [Zero Array Transformation II](code3356.rs) | [link](https://leetcode.com/problems/zero-array-transformation-ii/) | Medium | :heavy_check_mark: |
 | 3357 | [Minimize the Maximum Adjacent Element Difference](code3357.rs) | [link](https://leetcode.com/problems/minimize-the-maximum-adjacent-element-difference/) | Hard | :heavy_check_mark: |
+| 3360 | [Stone Removal Game](code3360.rs) | [link](https://leetcode.com/problems/stone-removal-game/) | Easy | :heavy_check_mark: |
+| 3361 | [Shift Distance Between Two Strings](code3361.rs) | [link](https://leetcode.com/problems/shift-distance-between-two-strings/) | Medium | :heavy_check_mark: |
+| 3362 | [Zero Array Transformation III](code3362.rs) | [link](https://leetcode.com/problems/zero-array-transformation-iii/) | Medium | :heavy_check_mark: |
+| 3363 | [Find the Maximum Number of Fruits Collected](code3363.rs) | [link](https://leetcode.com/problems/find-the-maximum-number-of-fruits-collected/) | Hard | :heavy_check_mark: |
+| 3364 | [Minimum Positive Sum Subarray](code3364.rs) | [link](https://leetcode.com/problems/minimum-positive-sum-subarray/) | Easy | :heavy_check_mark: |
+| 3365 | [Rearrange K Substrings to Form Target String](code3365.rs) | [link](https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/) | Medium | :heavy_check_mark: |
+| 3366 | [Minimum Array Sum](code3366.rs) | [link](https://leetcode.com/problems/minimum-array-sum/) | Medium | :heavy_check_mark: |
+| 3367 | [Maximize Sum of Weights after Edge Removals](code3367.rs) | [link](https://leetcode.com/problems/maximize-sum-of-weights-after-edge-removals/) | Hard | :heavy_check_mark: |
