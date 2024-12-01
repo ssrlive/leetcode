@@ -307,3 +307,7 @@ cargo test
 | 3365 | [Rearrange K Substrings to Form Target String](code3365.rs) | [link](https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/) | Medium | :heavy_check_mark: |
 | 3366 | [Minimum Array Sum](code3366.rs) | [link](https://leetcode.com/problems/minimum-array-sum/) | Medium | :heavy_check_mark: |
 | 3367 | [Maximize Sum of Weights after Edge Removals](code3367.rs) | [link](https://leetcode.com/problems/maximize-sum-of-weights-after-edge-removals/) | Hard | :heavy_check_mark: |
+| 3370 | [Smallest Number With All Set Bits](code3370.rs) | [link](https://leetcode.com/problems/smallest-number-with-all-set-bits/) | Easy | :heavy_check_mark: |
+| 3371 | [Identify the Largest Outlier in an Array](code3371.rs) | [link](https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/) | Medium | :heavy_check_mark: |
+| 3372 | [Maximize the Number of Target Nodes After Connecting Trees I](code3372.rs) | [link](https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-i/) | Medium | :heavy_check_mark: |
+| 3373 | [Maximize the Number of Target Nodes After Connecting Trees II](code3373.rs) | [link](https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-ii/) | Hard | :heavy_check_mark: |

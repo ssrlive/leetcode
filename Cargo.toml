@@ -3,11 +3,6 @@ name = "leetcode"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
-rand = "0.8.5"
-
 [features]
 default = ["section04"]
 # default = ["section01", "section02", "section03", "section04"]
@@ -15,3 +10,6 @@ section01 = []
 section02 = []
 section03 = []
 section04 = []
+
+[dependencies]
+rand = "0.8.5"
