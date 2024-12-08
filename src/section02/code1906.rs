@@ -128,13 +128,13 @@ impl SegmentTree {
         }
         let mid = self.start + (self.end - self.start) / 2;
         if end <= mid {
-            return self.left.as_ref().unwrap().query(start, end);
+            self.left.as_ref().unwrap().query(start, end)
         } else if start > mid {
-            return self.right.as_ref().unwrap().query(start, end);
+            self.right.as_ref().unwrap().query(start, end)
         } else {
             let left = self.left.as_ref().unwrap().query(start, mid);
             let right = self.right.as_ref().unwrap().query(mid + 1, end);
-            return left | right;
+            left | right
         }
     }
 }

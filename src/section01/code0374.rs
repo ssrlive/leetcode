@@ -66,19 +66,17 @@ impl Solution {
     }
 }
 
-static mut PICK: i32 = 6;
+static PICK: i32 = 6;
 
 fn guess(num: i32) -> i32 {
-    unsafe {
-        match PICK.cmp(&num) {
-            std::cmp::Ordering::Less => -1,
-            std::cmp::Ordering::Equal => 0,
-            std::cmp::Ordering::Greater => 1,
-        }
+    match PICK.cmp(&num) {
+        std::cmp::Ordering::Less => -1,
+        std::cmp::Ordering::Equal => 0,
+        std::cmp::Ordering::Greater => 1,
     }
 }
 
 #[test]
 fn test() {
-    assert_eq!(Solution::guess_number(10), unsafe { PICK });
+    assert_eq!(Solution::guess_number(10), PICK);
 }

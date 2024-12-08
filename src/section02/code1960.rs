@@ -40,7 +40,7 @@ impl Solution {
     pub fn max_product(s: String) -> i64 {
         use std::collections::VecDeque;
 
-        fn manacher_odd(s: &String) -> Vec<i32> {
+        fn manacher_odd(s: &str) -> Vec<i32> {
             let n = s.len();
             let s = String::from("$") + s + &String::from("^");
             let s = s.chars().collect::<Vec<char>>();

@@ -59,7 +59,7 @@ impl Solution {
             let available = freqs[freq] * freq;
             if available >= left {
                 // (left + freq - 1) / freq is left / freq rounded up to nearest integer
-                return (rez + (left + freq - 1) / freq) as _;
+                return (rez + left.div_ceil(freq)) as _;
             }
             left -= available;
             rez += freqs[freq];

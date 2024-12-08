@@ -93,7 +93,7 @@ impl Solution {
             }
         }
 
-        return is_match_bytes(s.as_bytes(), p.as_bytes(), dp);
+        is_match_bytes(s.as_bytes(), p.as_bytes(), dp)
     }
 }
 
