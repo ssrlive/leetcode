@@ -315,3 +315,7 @@ cargo test
 | 3376 | [Minimum Time to Break Locks I](code3376.rs) | [link](https://leetcode.com/problems/minimum-time-to-break-locks-i/) | Medium | :heavy_check_mark: |
 | 3377 | [Digit Operations to Make Two Integers Equal](code3377.rs) | [link](https://leetcode.com/problems/digit-operations-to-make-two-integers-equal/) | Medium | :heavy_check_mark: |
 | 3378 | [Count Connected Components in LCM Graph](code3378.rs) | [link](https://leetcode.com/problems/count-connected-components-in-lcm-graph/) | Hard | :heavy_check_mark: |
+| 3379 | [Transformed Array](code3379.rs) | [link](https://leetcode.com/problems/transformed-array/) | Easy | :heavy_check_mark: |
+| 3380 | [Maximum Area Rectangle With Point Constraints I](code3380.rs) | [link](https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/) | Medium | :heavy_check_mark: |
+| 3381 | [Maximum Subarray Sum With Length Divisible by K](code3381.rs) | [link](https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/) | Medium | :heavy_check_mark: |
+| 3382 | [Maximum Area Rectangle With Point Constraints II](code3382.rs) | [link](https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-ii/) | Hard | :heavy_check_mark: |

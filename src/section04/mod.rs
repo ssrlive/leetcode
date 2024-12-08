@@ -285,3 +285,7 @@ mod code3375;
 mod code3376;
 mod code3377;
 mod code3378;
+mod code3379;
+mod code3380;
+mod code3381;
+mod code3382;
