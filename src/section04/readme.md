@@ -311,3 +311,7 @@ cargo test
 | 3371 | [Identify the Largest Outlier in an Array](code3371.rs) | [link](https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/) | Medium | :heavy_check_mark: |
 | 3372 | [Maximize the Number of Target Nodes After Connecting Trees I](code3372.rs) | [link](https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-i/) | Medium | :heavy_check_mark: |
 | 3373 | [Maximize the Number of Target Nodes After Connecting Trees II](code3373.rs) | [link](https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-ii/) | Hard | :heavy_check_mark: |
+| 3375 | [Minimum Operations to Make Array Values Equal to K](code3375.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-array-values-equal-to-k/) | Easy | :heavy_check_mark: |
+| 3376 | [Minimum Time to Break Locks I](code3376.rs) | [link](https://leetcode.com/problems/minimum-time-to-break-locks-i/) | Medium | :heavy_check_mark: |
+| 3377 | [Digit Operations to Make Two Integers Equal](code3377.rs) | [link](https://leetcode.com/problems/digit-operations-to-make-two-integers-equal/) | Medium | :heavy_check_mark: |
+| 3378 | [Count Connected Components in LCM Graph](code3378.rs) | [link](https://leetcode.com/problems/count-connected-components-in-lcm-graph/) | Hard | :heavy_check_mark: |
