@@ -319,3 +319,7 @@ cargo test
 | 3380 | [Maximum Area Rectangle With Point Constraints I](code3380.rs) | [link](https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/) | Medium | :heavy_check_mark: |
 | 3381 | [Maximum Subarray Sum With Length Divisible by K](code3381.rs) | [link](https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/) | Medium | :heavy_check_mark: |
 | 3382 | [Maximum Area Rectangle With Point Constraints II](code3382.rs) | [link](https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-ii/) | Hard | :heavy_check_mark: |
+| 3386 | [Button with Longest Push Time](code3386.rs) | [link](https://leetcode.com/problems/button-with-longest-push-time/) | Easy | :heavy_check_mark: |
+| 3387 | [Maximize Amount After Two Days of Conversions](code3387.rs) | [link](https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions/) | Medium | :heavy_check_mark: |
+| 3388 | [Count Beautiful Splits in an Array](code3388.rs) | [link](https://leetcode.com/problems/count-beautiful-splits-in-an-array/) | Medium | :heavy_check_mark: |
+| 3389 | [Minimum Operations to Make Character Frequencies Equal](code3389.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-character-frequencies-equal/) | Hard | :heavy_check_mark: |
