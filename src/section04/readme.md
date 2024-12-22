@@ -323,3 +323,11 @@ cargo test
 | 3387 | [Maximize Amount After Two Days of Conversions](code3387.rs) | [link](https://leetcode.com/problems/maximize-amount-after-two-days-of-conversions/) | Medium | :heavy_check_mark: |
 | 3388 | [Count Beautiful Splits in an Array](code3388.rs) | [link](https://leetcode.com/problems/count-beautiful-splits-in-an-array/) | Medium | :heavy_check_mark: |
 | 3389 | [Minimum Operations to Make Character Frequencies Equal](code3389.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-character-frequencies-equal/) | Hard | :heavy_check_mark: |
+| 3392 | [Count Subarrays of Length Three With a Condition](code3392.rs) | [link](https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition/) | Easy | :heavy_check_mark: |
+| 3393 | [Count Paths With the Given XOR Value](code3393.rs) | [link](https://leetcode.com/problems/count-paths-with-the-given-xor-value/) | Medium | :heavy_check_mark: |
+| 3394 | [Check if Grid can be Cut into Sections](code3394.rs) | [link](https://leetcode.com/problems/check-if-grid-can-be-cut-into-sections/) | Medium | :heavy_check_mark: |
+| 3395 | [Subsequences with a Unique Middle Mode I](code3395.rs) | [link](https://leetcode.com/problems/subsequences-with-a-unique-middle-mode-i/) | Hard | :heavy_check_mark: |
+| 3396 | [Minimum Number of Operations to Make Elements in Array Distinct](code3396.rs) | [link](https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/) | Easy | :heavy_check_mark: |
+| 3397 | [Maximum Number of Distinct Elements After Operations](code3397.rs) | [link](https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/) | Medium | :heavy_check_mark: |
+| 3398 | [Smallest Substring With Identical Characters I](code3398.rs) | [link](https://leetcode.com/problems/smallest-substring-with-identical-characters-i/) | Hard | :heavy_check_mark: |
+| 3399 | [Smallest Substring With Identical Characters II](code3399.rs) | [link](https://leetcode.com/problems/smallest-substring-with-identical-characters-ii/) | Hard | :heavy_check_mark: |
