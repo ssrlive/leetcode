@@ -331,3 +331,10 @@ cargo test
 | 3397 | [Maximum Number of Distinct Elements After Operations](code3397.rs) | [link](https://leetcode.com/problems/maximum-number-of-distinct-elements-after-operations/) | Medium | :heavy_check_mark: |
 | 3398 | [Smallest Substring With Identical Characters I](code3398.rs) | [link](https://leetcode.com/problems/smallest-substring-with-identical-characters-i/) | Hard | :heavy_check_mark: |
 | 3399 | [Smallest Substring With Identical Characters II](code3399.rs) | [link](https://leetcode.com/problems/smallest-substring-with-identical-characters-ii/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
+| 3402 | [Minimum Operations to Make Columns Strictly Increasing](code3402.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/) | Easy | :heavy_check_mark: |
+| 3403 | [Find the Lexicographically Largest String From the Box I](code3403.rs) | [link](https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-i/) | Medium | :heavy_check_mark: |
+| 3404 | [Count Special Subsequences](code3404.rs) | [link](https://leetcode.com/problems/count-special-subsequences/) | Medium | :heavy_check_mark: |
+| 3405 | [Count the Number of Arrays with K Matching Adjacent Elements](code3405.rs) | [link](https://leetcode.com/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/) | Hard | :heavy_check_mark: |
