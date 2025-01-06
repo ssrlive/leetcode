@@ -338,3 +338,11 @@ cargo test
 | 3403 | [Find the Lexicographically Largest String From the Box I](code3403.rs) | [link](https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-i/) | Medium | :heavy_check_mark: |
 | 3404 | [Count Special Subsequences](code3404.rs) | [link](https://leetcode.com/problems/count-special-subsequences/) | Medium | :heavy_check_mark: |
 | 3405 | [Count the Number of Arrays with K Matching Adjacent Elements](code3405.rs) | [link](https://leetcode.com/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/) | Hard | :heavy_check_mark: |
+| 3407 | [Substring Matching Pattern](code3407.rs) | [link](https://leetcode.com/problems/substring-matching-pattern/) | Easy | :heavy_check_mark: |
+| 3408 | [Design Task Manager](code3408.rs) | [link](https://leetcode.com/problems/design-task-manager/) | Medium | :heavy_check_mark: |
+| 3409 | [Longest Subsequence With Decreasing Adjacent Difference](code3409.rs) | [link](https://leetcode.com/problems/longest-subsequence-with-decreasing-adjacent-difference/) | Medium | :heavy_check_mark: |
+| 3410 | [Maximize Subarray Sum After Removing All Occurrences of One Element](code3410.rs) | [link](https://leetcode.com/problems/maximize-subarray-sum-after-removing-all-occurrences-of-one-element/) | Hard | :heavy_check_mark: |
+| 3411 | [Maximum Subarray With Equal Products](code3411.rs) | [link](https://leetcode.com/problems/maximum-subarray-with-equal-products/) | Easy | :heavy_check_mark: |
+| 3412 | [Find Mirror Score of a String](code3412.rs) | [link](https://leetcode.com/problems/find-mirror-score-of-a-string/) | Medium | :heavy_check_mark: |
+| 3413 | [Maximum Coins From K Consecutive Bags](code3413.rs) | [link](https://leetcode.com/problems/maximum-coins-from-k-consecutive-bags/) | Medium | :heavy_check_mark: |
+| 3414 | [Maximum Score of Non-overlapping Intervals](code3414.rs) | [link](https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals/) | Hard | :heavy_check_mark: |
