@@ -346,3 +346,7 @@ cargo test
 | 3412 | [Find Mirror Score of a String](code3412.rs) | [link](https://leetcode.com/problems/find-mirror-score-of-a-string/) | Medium | :heavy_check_mark: |
 | 3413 | [Maximum Coins From K Consecutive Bags](code3413.rs) | [link](https://leetcode.com/problems/maximum-coins-from-k-consecutive-bags/) | Medium | :heavy_check_mark: |
 | 3414 | [Maximum Score of Non-overlapping Intervals](code3414.rs) | [link](https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals/) | Hard | :heavy_check_mark: |
+| 3417 | [Zigzag Grid Traversal With Skip](code3417.rs) | [link](https://leetcode.com/problems/zigzag-grid-traversal-with-skip/) | Easy | :heavy_check_mark: |
+| 3418 | [Maximum Amount of Money Robot Can Earn](code3418.rs) | [link](https://leetcode.com/problems/maximum-amount-of-money-robot-can-earn/) | Medium | :heavy_check_mark: |
+| 3419 | [Minimize the Maximum Edge Weight of Graph](code3419.rs) | [link](https://leetcode.com/problems/minimize-the-maximum-edge-weight-of-graph/) | Medium | :heavy_check_mark: |
+| 3420 | [Count Non-Decreasing Subarrays After K Operations](code3420.rs) | [link](https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/) | Hard | :heavy_check_mark: |
