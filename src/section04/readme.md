@@ -350,3 +350,11 @@ cargo test
 | 3418 | [Maximum Amount of Money Robot Can Earn](code3418.rs) | [link](https://leetcode.com/problems/maximum-amount-of-money-robot-can-earn/) | Medium | :heavy_check_mark: |
 | 3419 | [Minimize the Maximum Edge Weight of Graph](code3419.rs) | [link](https://leetcode.com/problems/minimize-the-maximum-edge-weight-of-graph/) | Medium | :heavy_check_mark: |
 | 3420 | [Count Non-Decreasing Subarrays After K Operations](code3420.rs) | [link](https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/) | Hard | :heavy_check_mark: |
+| 3423 | [Maximum Difference Between Adjacent Elements in a Circular Array](code3423.rs) | [link](https://leetcode.com/problems/maximum-difference-between-adjacent-elements-in-a-circular-array/) | Easy | :heavy_check_mark: |
+| 3424 | [Minimum Cost to Make Arrays Identical](code3424.rs) | [link](https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/) | Medium | :heavy_check_mark: |
+| 3425 | [Longest Special Path](code3425.rs) | [link](https://leetcode.com/problems/longest-special-path/) | Hard | :heavy_check_mark: |
+| 3426 | [Manhattan Distances of All Arrangements of Pieces](code3426.rs) | [link](https://leetcode.com/problems/manhattan-distances-of-all-arrangements-of-pieces/) | Hard | :heavy_check_mark: |
+| 3427 | [Sum of Variable Length Subarrays](code3427.rs) | [link](https://leetcode.com/problems/sum-of-variable-length-subarrays/) | Easy | :heavy_check_mark: |
+| 3428 | [Maximum and Minimum Sums of at Most Size K Subsequences](code3428.rs) | [link](https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/) | Medium | :heavy_check_mark: |
+| 3429 | [Paint House IV](code3429.rs) | [link](https://leetcode.com/problems/paint-house-iv/) | Medium | :heavy_check_mark: |
+| 3430 | [Maximum and Minimum Sums of at Most Size K Subarrays](code3430.rs) | [link](https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subarrays/) | Hard | :heavy_check_mark: |
