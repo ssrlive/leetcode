@@ -65,7 +65,7 @@ impl Twitter {
         let mut feed = vec![];
         let mut count = 0;
         for (user, tweet) in self.posts.iter().rev() {
-            if *user == user_id || self.follows.get(&user_id).map_or(false, |m| m.get(user).is_some()) {
+            if *user == user_id || self.follows.get(&user_id).is_some_and(|m| m.get(user).is_some()) {
                 feed.push(*tweet);
                 count += 1;
                 if count == 10 {

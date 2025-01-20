@@ -68,7 +68,7 @@ impl Solution {
             for i in 0..sub.len() {
                 let a = s[start + i];
                 let b = sub[i];
-                if s[start + i] != sub[i] && !replacements.get(&b).map_or(false, |set| set.contains(&a)) {
+                if s[start + i] != sub[i] && !replacements.get(&b).is_some_and(|set| set.contains(&a)) {
                     continue 'outer;
                 }
             }

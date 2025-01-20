@@ -47,12 +47,12 @@ impl Solution {
             let node = node.borrow();
             let left = Self::dfs(node.left.as_ref(), max);
             let right = Self::dfs(node.right.as_ref(), max);
-            let left = if node.left.as_ref().map_or(false, |n| n.borrow().val == node.val) {
+            let left = if node.left.as_ref().is_some_and(|n| n.borrow().val == node.val) {
                 left + 1
             } else {
                 0
             };
-            let right = if node.right.as_ref().map_or(false, |n| n.borrow().val == node.val) {
+            let right = if node.right.as_ref().is_some_and(|n| n.borrow().val == node.val) {
                 right + 1
             } else {
                 0

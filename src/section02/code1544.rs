@@ -53,7 +53,7 @@ impl Solution {
         let mut res = Vec::<char>::new();
         for c in s.chars() {
             if let Some(&last) = res.last() {
-                if last != c && last.to_ascii_lowercase() == c.to_ascii_lowercase() {
+                if last != c && last.eq_ignore_ascii_case(&c) {
                     res.pop();
                     continue;
                 }
