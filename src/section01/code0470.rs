@@ -50,8 +50,8 @@ impl Solution {
 
 fn rand7() -> i32 {
     use rand::Rng;
-    let mut rng = rand::thread_rng();
-    rng.gen_range(1..8)
+    let mut rng = rand::rng();
+    rng.random_range(1..8)
 }
 
 #[test]

@@ -56,10 +56,10 @@ impl Solution {
 
     fn flip(&mut self) -> Vec<i32> {
         use rand::Rng;
-        let mut rng = rand::thread_rng();
-        let mut index = rng.gen_range(0..self.total);
+        let mut rng = rand::rng();
+        let mut index = rng.random_range(0..self.total);
         while self.used.contains(&index) {
-            index = rng.gen_range(0..self.total);
+            index = rng.random_range(0..self.total);
         }
         self.used.insert(index);
         vec![index / self.n, index % self.n]

@@ -76,7 +76,7 @@ impl RandomizedSet {
     }
 
     fn get_random(&self) -> i32 {
-        let index = rand::random::<usize>() % self.vec.len();
+        let index = rand::Rng::random::<u64>(&mut rand::rng()) as usize % self.vec.len();
         self.vec[index]
     }
 }

@@ -62,8 +62,8 @@ fn new_link(value: i32, level: usize) -> Link {
 
 fn random_level() -> usize {
     let mut level = 1;
-    let mut rng = rand::thread_rng();
-    while level < MAX_LEVEL && rng.gen::<f64>() < P_FACTOR {
+    let mut rng = rand::rng();
+    while level < MAX_LEVEL && rng.random::<f64>() < P_FACTOR {
         level += 1;
     }
     level
@@ -229,22 +229,22 @@ impl Skiplist {
 #[test]
 fn test() {
     const N: i32 = 10;
-    let mut rng = rand::thread_rng();
+    let mut rng = rand::rng();
     let mut skiplist = Skiplist::new();
     let mut v = vec![];
     for _ in 0..N {
-        let num = rng.gen_range(0..N);
+        let num = rng.random_range(0..N);
         v.push(num);
         skiplist.add(num);
     }
     skiplist.debug();
 
     for _ in 0..N {
-        let num = rng.gen_range(0..N);
+        let num = rng.random_range(0..N);
         assert_eq!(v.contains(&num), skiplist.search(num));
     }
     for _ in 0..N {
-        let num = rng.gen_range(0..N);
+        let num = rng.random_range(0..N);
         println!("=====");
         println!("{}", num);
         match v.iter().position(|&x| x == num) {

@@ -67,8 +67,7 @@ impl MajorityChecker {
     }
 
     fn get_random(&self, l: usize, r: usize) -> usize {
-        let mut rng = thread_rng();
-        rng.gen_range(l..(r + 1))
+        rand::rng().random_range(l..(r + 1))
     }
 
     fn query(&self, left: i32, right: i32, threshold: i32) -> i32 {

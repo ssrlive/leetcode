@@ -79,12 +79,12 @@ impl Solution {
             mapping,
             black_list,
             last,
-            rng: thread_rng(),
+            rng: rand::rng(),
         }
     }
 
     fn pick(&mut self) -> i32 {
-        let picked = self.rng.gen_range(0..self.sz);
+        let picked = self.rng.random_range(0..self.sz);
         if let Some(&v) = self.mapping.get(&picked) {
             return v as i32;
         }

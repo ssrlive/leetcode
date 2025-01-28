@@ -60,11 +60,11 @@ impl Solution {
 
     fn pick(&self) -> Vec<i32> {
         use rand::Rng;
-        let r = rand::thread_rng().gen_range(0..self.c_areas[self.c_areas.len() - 1]) + 1;
+        let r = rand::rng().random_range(0..self.c_areas[self.c_areas.len() - 1]) + 1;
         let i = self.c_areas.binary_search(&r).unwrap_or_else(|x| x) - 1;
         let rect = &self.rects[i];
-        let x = rand::thread_rng().gen_range(rect[0]..rect[2] + 1);
-        let y = rand::thread_rng().gen_range(rect[1]..rect[3] + 1);
+        let x = rand::rng().random_range(rect[0]..rect[2] + 1);
+        let y = rand::rng().random_range(rect[1]..rect[3] + 1);
         vec![x, y]
     }
 }

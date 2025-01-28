@@ -93,7 +93,7 @@ impl RandomizedCollection {
     pub fn get_random(&self) -> i32 {
         // use rand::Rng;
         // self.data[rand::thread_rng().gen_range(0..self.data.len())]
-        let index = rand::random::<usize>() % self.data.len();
+        let index = rand::random::<u64>() as usize % self.data.len();
         self.data[index]
     }
 }

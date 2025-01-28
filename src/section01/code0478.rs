@@ -53,8 +53,8 @@ impl Solution {
     }
 
     fn rand_point(&mut self) -> Vec<f64> {
-        let r = self.rng.gen::<f64>().sqrt() * self.radius;
-        let theta = self.rng.gen::<f64>() * 2.0 * std::f64::consts::PI;
+        let r = self.rng.random::<f64>().sqrt() * self.radius;
+        let theta = self.rng.random::<f64>() * 2.0 * std::f64::consts::PI;
         [self.x_center + r * theta.cos(), self.y_center + r * theta.sin()].to_vec()
     }
 }

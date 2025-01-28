@@ -75,8 +75,8 @@ impl Solution {
 
     fn pick_index(&self) -> i32 {
         use rand::Rng;
-        let mut rng = rand::thread_rng();
-        let random = rng.gen_range(0..self.total);
+        let mut rng = rand::rng();
+        let random = rng.random_range(0..self.total);
         let mut left = 0;
         let mut right = self.weights.len() - 1;
         while left < right {

@@ -37,7 +37,7 @@
 // - At most 104 calls in total will be made to reset and shuffle.
 //
 
-use rand::distributions::Uniform;
+use rand::distr::{Distribution, Uniform};
 use rand::prelude::*;
 
 struct Solution {
@@ -51,7 +51,7 @@ impl Solution {
         Self {
             origin: nums.clone(),
             shuffled: nums,
-            rng: thread_rng(),
+            rng: rand::rng(),
         }
     }
 
@@ -63,8 +63,8 @@ impl Solution {
     fn shuffle(&mut self) -> Vec<i32> {
         let n = self.shuffled.len();
         for i in 0..(n - 1) {
-            let uniform = Uniform::from(i..n);
-            let j = self.rng.sample(uniform);
+            let uniform = Uniform::try_from(i..n).unwrap();
+            let j = uniform.sample(&mut self.rng);
             self.shuffled.swap(i, j);
         }
         self.shuffled.clone()

@@ -51,7 +51,7 @@ impl Solution {
     fn pick(&self, target: i32) -> i32 {
         let v = self.m.get(&target).unwrap();
         use rand::Rng;
-        let x = rand::thread_rng().gen_range(0..v.len());
+        let x = rand::rng().random_range(0..v.len());
         v[x]
     }
 }
