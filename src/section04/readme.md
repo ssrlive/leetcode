@@ -358,3 +358,7 @@ cargo test
 | 3428 | [Maximum and Minimum Sums of at Most Size K Subsequences](code3428.rs) | [link](https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/) | Medium | :heavy_check_mark: |
 | 3429 | [Paint House IV](code3429.rs) | [link](https://leetcode.com/problems/paint-house-iv/) | Medium | :heavy_check_mark: |
 | 3430 | [Maximum and Minimum Sums of at Most Size K Subarrays](code3430.rs) | [link](https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subarrays/) | Hard | :heavy_check_mark: |
+| 3432 | [Count Partitions with Even Sum Difference](code3432.rs) | [link](https://leetcode.com/problems/count-partitions-with-even-sum-difference/) | Easy | :heavy_check_mark: |
+| 3433 | [Count Mentions Per User](code3433.rs) | [link](https://leetcode.com/problems/count-mentions-per-user/) | Medium | :heavy_check_mark: |
+| 3434 | [Maximum Frequency After Subarray Operation](code3434.rs) | [link](https://leetcode.com/problems/maximum-frequency-after-subarray-operation/) | Medium | :heavy_check_mark: |
+| 3435 | [Frequencies of Shortest Supersequences](code3435.rs) | [link](https://leetcode.com/problems/frequencies-of-shortest-supersequences/) | Hard | :heavy_check_mark: |
