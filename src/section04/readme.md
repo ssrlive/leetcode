@@ -362,3 +362,15 @@ cargo test
 | 3433 | [Count Mentions Per User](code3433.rs) | [link](https://leetcode.com/problems/count-mentions-per-user/) | Medium | :heavy_check_mark: |
 | 3434 | [Maximum Frequency After Subarray Operation](code3434.rs) | [link](https://leetcode.com/problems/maximum-frequency-after-subarray-operation/) | Medium | :heavy_check_mark: |
 | 3435 | [Frequencies of Shortest Supersequences](code3435.rs) | [link](https://leetcode.com/problems/frequencies-of-shortest-supersequences/) | Hard | :heavy_check_mark: |
+| 3438 | [Find Valid Pair of Adjacent Digits in String](code3438.rs) | [link](https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/) | Easy | :heavy_check_mark: |
+| 3439 | [Reschedule Meetings for Maximum Free Time I](code3439.rs) | [link](https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-i/) | Medium | :heavy_check_mark: |
+| 3440 | [Reschedule Meetings for Maximum Free Time II](code3440.rs) | [link](https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-ii/) | Medium | :heavy_check_mark: |
+| 3441 | [Minimum Cost Good Caption](code3441.rs) | [link](https://leetcode.com/problems/minimum-cost-good-caption/) | Hard | :heavy_check_mark: |
+| 3442 | [Maximum Difference Between Even and Odd Frequency I](code3442.rs) | [link](https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-i/) | Easy | :heavy_check_mark: |
+| 3443 | [Maximum Manhattan Distance After K Changes](code3443.rs) | [link](https://leetcode.com/problems/maximum-manhattan-distance-after-k-changes/) | Medium | :heavy_check_mark: |
+| 3444 | [Minimum Increments for Target Multiples in an Array](code3444.rs) | [link](https://leetcode.com/problems/minimum-increments-for-target-multiples-in-an-array/) | Hard | :heavy_check_mark: |
+| 3445 | [Maximum Difference Between Even and Odd Frequency II](code3445.rs) | [link](https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/) | Hard | :heavy_check_mark: |
+| 3446 | [Sort Matrix by Diagonals](code3446.rs) | [link](https://leetcode.com/problems/sort-matrix-by-diagonals/) | Medium | :heavy_check_mark: |
+| 3447 | [Assign Elements to Groups with Constraints](code3447.rs) | [link](https://leetcode.com/problems/assign-elements-to-groups-with-constraints/) | Medium | :heavy_check_mark: |
+| 3448 | [Count Substrings Divisible By Last Digit](code3448.rs) | [link](https://leetcode.com/problems/count-substrings-divisible-by-last-digit/) | Hard | :heavy_check_mark: |
+| 3449 | [Maximize the Minimum Game Score](code3449.rs) | [link](https://leetcode.com/problems/maximize-the-minimum-game-score/) | Hard | :heavy_check_mark: |
