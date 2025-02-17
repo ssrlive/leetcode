@@ -374,3 +374,15 @@ cargo test
 | 3447 | [Assign Elements to Groups with Constraints](code3447.rs) | [link](https://leetcode.com/problems/assign-elements-to-groups-with-constraints/) | Medium | :heavy_check_mark: |
 | 3448 | [Count Substrings Divisible By Last Digit](code3448.rs) | [link](https://leetcode.com/problems/count-substrings-divisible-by-last-digit/) | Hard | :heavy_check_mark: |
 | 3449 | [Maximize the Minimum Game Score](code3449.rs) | [link](https://leetcode.com/problems/maximize-the-minimum-game-score/) | Hard | :heavy_check_mark: |
+
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
+| 3452 | [Sum of Good Numbers](code3452.rs) | [link](https://leetcode.com/problems/sum-of-good-numbers/) | Easy | :heavy_check_mark: |
+| 3453 | [Separate Squares I](code3453.rs) | [link](https://leetcode.com/problems/separate-squares-i/) | Medium | :heavy_check_mark: |
+| 3454 | [Separate Squares II](code3454.rs) | [link](https://leetcode.com/problems/separate-squares-ii/) | Hard | :heavy_check_mark: |
+| 3455 | [Shortest Matching Substring](code3455.rs) | [link](https://leetcode.com/problems/shortest-matching-substring/) | Hard | :heavy_check_mark: |
+| 3456 | [Find Special Substring of Length K](code3456.rs) | [link](https://leetcode.com/problems/find-special-substring-of-length-k/) | Easy | :heavy_check_mark: |
+| 3457 | [Eat Pizzas!] | [link](https://leetcode.com/problems/eat-pizzas/) | Medium | :heavy_check_mark: |
+| 3458 | [Select K Disjoint Special Substrings](code3458.rs) | [link](https://leetcode.com/problems/select-k-disjoint-special-substrings/) | Medium | :heavy_check_mark: |
+| 3459 | [Length of Longest V-Shaped Diagonal Segment](code3459.rs) | [link](https://leetcode.com/problems/length-of-longest-v-shaped-diagonal-segment/) | Hard | :heavy_check_mark: |
