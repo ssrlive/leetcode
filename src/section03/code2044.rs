@@ -57,7 +57,7 @@ impl Solution {
         for i in 0..limit {
             let mut temp = 0i32;
             for (j, &num) in nums.iter().enumerate() {
-                if i >> j & 1 == 1 {
+                if (i >> j) & 1 == 1 {
                     temp |= num;
                 }
             }

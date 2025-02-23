@@ -49,12 +49,12 @@ impl Solution {
         let mut parent = vec![vec![None; n]; 1 << n];
         for mask in 0..1 << n {
             for b in 0..n {
-                if mask >> b & 1 == 0 {
+                if (mask >> b) & 1 == 0 {
                     continue;
                 }
-                let prev = mask ^ 1 << b;
+                let prev = mask ^ (1 << b);
                 for (i, row) in graph.iter().enumerate() {
-                    if prev >> i & 1 == 0 {
+                    if (prev >> i) & 1 == 0 {
                         continue;
                     }
                     let val = dp[prev][i] + row[b];

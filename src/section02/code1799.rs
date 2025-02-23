@@ -73,7 +73,7 @@ impl Solution {
 
         let mut k = nums.len();
         for i in 0..nums.len() {
-            if mask & 1 << i != 0 {
+            if mask & (1 << i) != 0 {
                 k -= 1;
             }
         }
@@ -85,10 +85,10 @@ impl Solution {
         dp[mask] = 0;
         for i in 0..nums.len() {
             for j in i + 1..nums.len() {
-                if mask & 1 << i != 0 || mask & 1 << j != 0 {
+                if mask & (1 << i) != 0 || mask & (1 << j) != 0 {
                     continue;
                 }
-                let mask_new = mask | 1 << i | 1 << j;
+                let mask_new = mask | (1 << i) | (1 << j);
                 dp[mask] = dp[mask].max(k as i32 * Self::gcd(nums[i], nums[j]) + Self::eval(nums, mask_new, dp));
             }
         }

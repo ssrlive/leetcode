@@ -65,13 +65,13 @@ impl Solution {
             }
             current_or |= num;
 
-            (0..32).for_each(|bit| bit_counts[bit as usize] += (num >> bit & 1 == 1) as i32);
+            (0..32).for_each(|bit| bit_counts[bit as usize] += ((num >> bit) & 1 == 1) as i32);
 
             while current_or >= k {
                 min_len = min_len.min(right - left);
                 (0..32).for_each(|bit| {
                     let to_remove = nums[left as usize];
-                    let decrement = to_remove >> bit & 1 == 1;
+                    let decrement = (to_remove >> bit) & 1 == 1;
                     if decrement && bit_counts[bit as usize] == 1 {
                         current_or ^= 1 << bit
                     }

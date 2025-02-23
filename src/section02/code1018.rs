@@ -37,7 +37,7 @@ impl Solution {
         let mut val = 0;
 
         for &num in &nums {
-            val = (val << 1 | num) % 5;
+            val = ((val << 1) | num) % 5;
             res.push(val == 0);
         }
         res

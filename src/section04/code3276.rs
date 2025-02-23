@@ -90,10 +90,10 @@ impl Solution {
             for cells_k in cells.iter().take(j).skip(i) {
                 let c = cells_k;
                 for m in 0..dp.len() {
-                    if m & 1 << c.loc.0 != 0 {
+                    if m & (1 << c.loc.0) != 0 {
                         continue;
                     }
-                    tmp[m | 1 << c.loc.0] = tmp[m | 1 << c.loc.0].max(dp[m] + c.val);
+                    tmp[m | (1 << c.loc.0)] = tmp[m | (1 << c.loc.0)].max(dp[m] + c.val);
                 }
             }
 

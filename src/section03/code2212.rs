@@ -60,7 +60,7 @@ impl Solution {
             let mut score = 0;
             let mut memo = vec![0; 12];
             for j in 0..12 {
-                if i >> j & 1 == 1 {
+                if (i >> j) & 1 == 1 {
                     temp += alice_arrows[j] + 1;
                     memo[j] = alice_arrows[j] + 1;
                     score += j as i32;

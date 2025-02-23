@@ -48,7 +48,7 @@ impl Solution {
         } else {
             let mut prev = Self::gray_code(n - 1);
             for i in (0..(1 << (n - 1) as usize)).rev() {
-                prev.push(prev[i as usize] | 1 << (n - 1) as usize)
+                prev.push(prev[i as usize] | (1 << (n - 1) as usize))
             }
             prev
         }

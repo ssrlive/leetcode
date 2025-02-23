@@ -65,7 +65,7 @@ impl Helper {
                 continue;
             }
             let d = i32::abs(self.from[k].0 - self.to[i].0) + i32::abs(self.from[k].1 - self.to[i].1);
-            self.backtracking(ret, i + 1, val + d, flag | 1 << k);
+            self.backtracking(ret, i + 1, val + d, flag | (1 << k));
         }
     }
 }

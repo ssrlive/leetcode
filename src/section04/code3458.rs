@@ -104,7 +104,7 @@ impl Solution {
         let mut last_end: Option<usize> = None;
 
         for (start, end) in intervals {
-            if last_end.map_or(true, |last| start > last) {
+            if last_end.is_none_or(|last| start > last) {
                 count += 1;
                 last_end = Some(end);
                 if count >= k {

@@ -65,7 +65,7 @@ impl Solution {
     fn dfs(g: &Vec<Vec<usize>>, u: usize, cnt: &mut std::collections::HashMap<i32, i64>, mask: i32, s: &Vec<i32>) {
         *cnt.entry(mask).or_insert(0) += 1;
         for v in &g[u] {
-            Self::dfs(g, *v, cnt, mask ^ 1 << s[*v], s);
+            Self::dfs(g, *v, cnt, mask ^ (1 << s[*v]), s);
         }
     }
 
@@ -74,12 +74,12 @@ impl Solution {
             *ret += *a;
         }
         for i in 0..26 {
-            if let Some(a) = cnt.get(&(mask ^ 1 << i)) {
+            if let Some(a) = cnt.get(&(mask ^ (1 << i))) {
                 *ret += *a;
             }
         }
         for v in &g[u] {
-            Self::collect(g, *v, cnt, mask ^ 1 << s[*v], ret, s);
+            Self::collect(g, *v, cnt, mask ^ (1 << s[*v]), ret, s);
         }
     }
 }

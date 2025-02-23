@@ -47,7 +47,7 @@ impl Solution {
         for i in 0..limit {
             let mut arr = vec![" "; len];
             for (j, arr_j) in arr.iter_mut().enumerate() {
-                if i >> j & 1 == 1 {
+                if (i >> j) & 1 == 1 {
                     *arr_j = "1";
                 } else {
                     *arr_j = "0";

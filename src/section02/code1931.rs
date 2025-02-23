@@ -90,7 +90,7 @@ impl Solution {
                 b = false;
             }
             if i > 0 {
-                let v = acc >> ((i - 1) * 2) & 0b11;
+                let v = (acc >> ((i - 1) * 2)) & 0b11;
                 if v == 1 {
                     r = false;
                 }
@@ -102,13 +102,13 @@ impl Solution {
                 }
             }
             if r {
-                calc_next_cols(m, prev, i + 1, acc | 1 << (i * 2), res);
+                calc_next_cols(m, prev, i + 1, acc | (1 << (i * 2)), res);
             }
             if g {
-                calc_next_cols(m, prev, i + 1, acc | 2 << (i * 2), res);
+                calc_next_cols(m, prev, i + 1, acc | (2 << (i * 2)), res);
             }
             if b {
-                calc_next_cols(m, prev, i + 1, acc | 3 << (i * 2), res);
+                calc_next_cols(m, prev, i + 1, acc | (3 << (i * 2)), res);
             }
         }
 

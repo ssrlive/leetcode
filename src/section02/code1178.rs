@@ -46,11 +46,11 @@ impl Solution {
         use std::collections::HashMap;
         let mut hm = HashMap::new();
         for w in &words {
-            *hm.entry(w.bytes().fold(0_u32, |acc, u| acc | 1 << (u - b'a'))).or_insert(0) += 1;
+            *hm.entry(w.bytes().fold(0_u32, |acc, u| acc | (1 << (u - b'a')))).or_insert(0) += 1;
         }
         let f = |p: &String| {
             let first = 1 << (p.as_bytes()[0] - b'a');
-            let mask = p.bytes().skip(1).fold(0, |acc, u| acc | 1 << (u - b'a'));
+            let mask = p.bytes().skip(1).fold(0, |acc, u| acc | (1 << (u - b'a')));
             let mut count = *hm.get(&first).unwrap_or(&0);
             let mut submask = mask;
             while submask > 0 {
