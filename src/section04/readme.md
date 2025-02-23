@@ -386,3 +386,7 @@ cargo test
 | 3457 | [Eat Pizzas!] | [link](https://leetcode.com/problems/eat-pizzas/) | Medium | :heavy_check_mark: |
 | 3458 | [Select K Disjoint Special Substrings](code3458.rs) | [link](https://leetcode.com/problems/select-k-disjoint-special-substrings/) | Medium | :heavy_check_mark: |
 | 3459 | [Length of Longest V-Shaped Diagonal Segment](code3459.rs) | [link](https://leetcode.com/problems/length-of-longest-v-shaped-diagonal-segment/) | Hard | :heavy_check_mark: |
+| 3461 | [Check If Digits Are Equal in String After Operations I](code3461.rs) | [link](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-i/) | Easy | :heavy_check_mark: |
+| 3462 | [Maximum Sum With at Most K Elements](code3462.rs) | [link](https://leetcode.com/problems/maximum-sum-with-at-most-k-elements/) | Medium | :heavy_check_mark: |
+| 3463 | [Check If Digits Are Equal in String After Operations II](code3463.rs) | [link](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-ii/) | Hard | :heavy_check_mark: |
+| 3464 | [Maximize the Distance Between Points on a Square](code3464.rs) | [link](https://leetcode.com/problems/maximize-the-distance-between-points-on-a-square/) | Hard | :heavy_check_mark: |
