@@ -33,11 +33,7 @@ struct Solution;
 impl Solution {
     pub fn num_dup_digits_at_most_n(n: i32) -> i32 {
         fn _a(m: i32, n: i32) -> i32 {
-            if n == 0 {
-                1
-            } else {
-                _a(m, n - 1) * (m - n + 1)
-            }
+            if n == 0 { 1 } else { _a(m, n - 1) * (m - n + 1) }
         }
 
         let mut digits = Vec::new();

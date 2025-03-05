@@ -80,7 +80,7 @@ impl Solution {
             running_sum += (count + 1) * nums[i];
             if top.len() > x as usize {
                 let it_top = top.iter().next_back().copied().unwrap();
-                running_sum -= it_top.0 .0 * it_top.0 .1;
+                running_sum -= it_top.0.0 * it_top.0.1;
                 bot.insert(it_top);
                 top.remove(&it_top);
             }
@@ -90,7 +90,7 @@ impl Solution {
                     bot.remove(&it);
                 } else {
                     let it = top.get(&Reverse((count, nums[i - k as usize]))).copied().unwrap();
-                    running_sum -= it.0 .0 * it.0 .1;
+                    running_sum -= it.0.0 * it.0.1;
                     top.remove(&it);
                 }
                 if count > 1 {
@@ -99,7 +99,7 @@ impl Solution {
                 *cnt.get_mut(&nums[i - k as usize]).unwrap() -= 1;
                 if top.len() < x as usize {
                     if let Some(it) = bot.iter().next().copied() {
-                        running_sum += it.0 .0 * it.0 .1;
+                        running_sum += it.0.0 * it.0.1;
                         top.insert(it);
                         bot.remove(&it);
                     }

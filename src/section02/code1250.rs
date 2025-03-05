@@ -39,11 +39,7 @@ struct Solution;
 impl Solution {
     pub fn is_good_array(nums: Vec<i32>) -> bool {
         fn gcd(a: i32, b: i32) -> i32 {
-            if b == 0 {
-                a
-            } else {
-                gcd(b, a % b)
-            }
+            if b == 0 { a } else { gcd(b, a % b) }
         }
 
         let mut res = nums[0];

@@ -49,7 +49,7 @@ impl Solution {
             *map.entry(num).or_insert(0) += 1;
         }
         map.iter()
-            .filter(|(&key, &val)| {
+            .filter(|&(&key, &val)| {
                 let (prev, next) = (key - 1, key + 1);
                 val == 1 && !map.contains_key(&prev) && !map.contains_key(&next)
             })

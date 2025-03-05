@@ -54,7 +54,7 @@ impl Solution {
         let mut digits = digits;
         digits.sort_unstable();
         let mut prev_x = -1;
-        for (i, &x) in digits.iter().enumerate().filter(|(_, &x)| x % 2 == 0) {
+        for (i, &x) in digits.iter().enumerate().filter(|&(_, &x)| x % 2 == 0) {
             match x == prev_x {
                 true => continue,
                 false => prev_x = x,

@@ -71,11 +71,7 @@ impl Solution {
         for i in 0..n {
             res = res.min(root(i));
         }
-        if res < inf {
-            res
-        } else {
-            -1
-        }
+        if res < inf { res } else { -1 }
     }
 }
 

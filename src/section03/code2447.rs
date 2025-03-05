@@ -38,11 +38,7 @@ struct Solution;
 impl Solution {
     pub fn subarray_gcd(nums: Vec<i32>, k: i32) -> i32 {
         fn gcd(a: i32, b: i32) -> i32 {
-            if b == 0 {
-                a
-            } else {
-                gcd(b, a % b)
-            }
+            if b == 0 { a } else { gcd(b, a % b) }
         }
 
         let n = nums.len();

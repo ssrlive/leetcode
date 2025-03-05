@@ -59,11 +59,7 @@ impl Solution {
                 min_sum = 0;
             }
         }
-        if max > -min {
-            max
-        } else {
-            -min
-        }
+        if max > -min { max } else { -min }
     }
 }
 

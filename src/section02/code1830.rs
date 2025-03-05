@@ -52,11 +52,7 @@ impl Solution {
             }
             let p = mod_pow(x, y / 2, m) % m;
             let p = (p * p) % m;
-            if y % 2 == 1 {
-                (p * x) % m
-            } else {
-                p
-            }
+            if y % 2 == 1 { (p * x) % m } else { p }
         }
         let s = s.as_bytes();
         let mut ft = vec![1_i64];

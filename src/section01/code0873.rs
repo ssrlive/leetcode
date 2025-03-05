@@ -56,11 +56,7 @@ impl Solution {
                 temp = std::cmp::max(temp, sum);
             }
         }
-        if temp >= 3 {
-            temp
-        } else {
-            0
-        }
+        if temp >= 3 { temp } else { 0 }
     }
 }
 

@@ -54,29 +54,29 @@ impl Solution {
             }
             let recn = rec.get_mut(&n).unwrap();
             recn[0] += 1;
-            if recn[0] > mm[0].0 .0 {
-                mm[0].1 = mm[0].0 .0;
+            if recn[0] > mm[0].0.0 {
+                mm[0].1 = mm[0].0.0;
                 mm[0].0 = (recn[0], n);
             } else if recn[0] > mm[0].1 {
                 mm[0].1 = recn[0];
             }
             for i in 1..=k {
                 let mut tmp = if recn[i] >= 0 { recn[i] + 1 } else { -1 };
-                let m = if mm[i - 1].0 .1 == n { mm[i - 1].1 } else { mm[i - 1].0 .0 } + 1;
+                let m = if mm[i - 1].0.1 == n { mm[i - 1].1 } else { mm[i - 1].0.0 } + 1;
                 tmp = max(m, tmp);
                 if tmp <= 0 {
                     break;
                 }
                 recn[i] = tmp;
-                if tmp > mm[i].0 .0 {
-                    mm[i].1 = mm[i].0 .0;
+                if tmp > mm[i].0.0 {
+                    mm[i].1 = mm[i].0.0;
                     mm[i].0 = (tmp, n);
                 } else if tmp > mm[i].1 {
                     mm[i].1 = tmp;
                 }
             }
         }
-        mm.into_iter().map(|x| x.0 .0).max().unwrap()
+        mm.into_iter().map(|x| x.0.0).max().unwrap()
     }
 }
 

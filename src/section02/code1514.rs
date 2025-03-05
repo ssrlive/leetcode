@@ -76,11 +76,7 @@ impl Solution {
             stack = new_stack;
         }
 
-        if memo[e] == -10000.0 {
-            0.0
-        } else {
-            memo[e]
-        }
+        if memo[e] == -10000.0 { 0.0 } else { memo[e] }
     }
 }
 

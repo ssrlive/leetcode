@@ -54,11 +54,7 @@ impl Solution {
                 min = min.min(backs[i]);
             }
         }
-        if min == 2001 {
-            0
-        } else {
-            min
-        }
+        if min == 2001 { 0 } else { min }
     }
 }
 

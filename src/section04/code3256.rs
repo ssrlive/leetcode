@@ -60,14 +60,14 @@ impl Solution {
         for row in &board {
             let mut rec = ((i32::MIN, 0), (i32::MIN, 0), (i32::MIN, 0));
             for (i, &n) in row.iter().enumerate() {
-                if n > rec.0 .0 {
+                if n > rec.0.0 {
                     rec.2 = rec.1;
                     rec.1 = rec.0;
                     rec.0 = (n, i);
-                } else if n > rec.1 .0 {
+                } else if n > rec.1.0 {
                     rec.2 = rec.1;
                     rec.1 = (n, i);
-                } else if n > rec.2 .0 {
+                } else if n > rec.2.0 {
                     rec.2 = (n, i);
                 }
             }
@@ -82,15 +82,15 @@ impl Solution {
                     continue;
                 }
                 let tmp = &max_three[j];
-                let bb = if tmp.0 .1 != aa.1 { &tmp.0 } else { &tmp.1 };
+                let bb = if tmp.0.1 != aa.1 { &tmp.0 } else { &tmp.1 };
                 for (k, max_three_k) in max_three.iter().enumerate().take(m) {
                     if k == i || k == j {
                         continue;
                     }
                     let tmp = &max_three_k;
-                    let cc = if tmp.0 .1 != aa.1 && tmp.0 .1 != bb.1 {
+                    let cc = if tmp.0.1 != aa.1 && tmp.0.1 != bb.1 {
                         &tmp.0
-                    } else if tmp.1 .1 != aa.1 && tmp.1 .1 != bb.1 {
+                    } else if tmp.1.1 != aa.1 && tmp.1.1 != bb.1 {
                         &tmp.1
                     } else {
                         &tmp.2

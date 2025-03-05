@@ -94,11 +94,7 @@ impl Solution {
             if left.is_some() {
                 let right0 = root.as_ref()?.borrow().right.clone();
                 let right = _lowest_common_ancestor(right0, p, q);
-                if right.is_some() {
-                    root
-                } else {
-                    left
-                }
+                if right.is_some() { root } else { left }
             } else {
                 let right = root.as_ref()?.borrow().right.clone();
                 _lowest_common_ancestor(right, p, q)

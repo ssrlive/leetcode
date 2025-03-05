@@ -98,11 +98,7 @@ impl Solution {
                 l = m + 1;
             }
         }
-        if l == 1000001 {
-            -1
-        } else {
-            l
-        }
+        if l == 1000001 { -1 } else { l }
     }
 }
 

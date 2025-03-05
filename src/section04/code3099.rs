@@ -46,11 +46,7 @@ impl Solution {
             temp /= 10;
         }
 
-        if x % s == 0 {
-            s
-        } else {
-            -1
-        }
+        if x % s == 0 { s } else { -1 }
     }
 }
 

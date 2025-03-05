@@ -38,11 +38,7 @@ impl Solution {
                 count += 1;
             }
         }
-        if count == 0 {
-            0
-        } else {
-            sum / count
-        }
+        if count == 0 { 0 } else { sum / count }
     }
 }
 

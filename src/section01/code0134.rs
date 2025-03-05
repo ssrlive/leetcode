@@ -26,11 +26,7 @@ impl Solution {
                 tank = 0;
             }
         }
-        if total + tank < 0 {
-            -1
-        } else {
-            start as i32
-        }
+        if total + tank < 0 { -1 } else { start as i32 }
     }
 }
 

@@ -84,11 +84,7 @@ impl Solution {
                 lo = mid + 1;
             }
         }
-        if lo == m + 1 {
-            -1
-        } else {
-            lo as _
-        }
+        if lo == m + 1 { -1 } else { lo as _ }
     }
 
     fn ok(nums: &[i64], change_indices: &[i64], ans: i64) -> bool {

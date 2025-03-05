@@ -73,11 +73,7 @@ impl Solution {
             res += 1;
             len -= ps[len as usize];
         }
-        if len == 0 {
-            res
-        } else {
-            -1
-        }
+        if len == 0 { res } else { -1 }
     }
 
     fn prefix_function(s: &str) -> Vec<i32> {

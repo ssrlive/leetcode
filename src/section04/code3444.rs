@@ -59,11 +59,7 @@ struct Solution;
 impl Solution {
     pub fn minimum_increments(nums: Vec<i32>, target: Vec<i32>) -> i32 {
         fn gcd<T: Eq + Default + Copy + std::ops::Rem<Output = T>>(a: T, b: T) -> T {
-            if b == T::default() {
-                a
-            } else {
-                gcd(b, a % b)
-            }
+            if b == T::default() { a } else { gcd(b, a % b) }
         }
         fn lcm(a: i64, b: i64) -> i64 {
             a.checked_div(gcd(a, b)).and_then(|x| x.checked_mul(b)).unwrap_or(i64::MAX)

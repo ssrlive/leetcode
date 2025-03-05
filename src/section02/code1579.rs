@@ -68,11 +68,7 @@ impl Solution {
                 ans += 1;
             }
         }
-        if uf1.set_count != 1 || uf2.set_count != 1 {
-            -1
-        } else {
-            ans
-        }
+        if uf1.set_count != 1 || uf2.set_count != 1 { -1 } else { ans }
     }
 }
 

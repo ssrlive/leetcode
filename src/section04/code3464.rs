@@ -116,11 +116,7 @@ impl Solution {
             if candidate2 == -1 {
                 return candidate1;
             }
-            if candidate1 < candidate2 {
-                candidate1
-            } else {
-                candidate2
-            }
+            if candidate1 < candidate2 { candidate1 } else { candidate2 }
         }
 
         fn can(points: &[Vec<i64>], n: i64, k: i64, mid: i64) -> bool {

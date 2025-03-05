@@ -53,11 +53,7 @@ struct Solution;
 impl Solution {
     pub fn make_sub_k_sum_equal(arr: Vec<i32>, k: i32) -> i64 {
         fn gcd(a: i64, b: i64) -> i64 {
-            if b == 0 {
-                a
-            } else {
-                gcd(b, a % b)
-            }
+            if b == 0 { a } else { gcd(b, a % b) }
         }
 
         let arr = arr.iter().map(|&x| x as i64).collect::<Vec<_>>();

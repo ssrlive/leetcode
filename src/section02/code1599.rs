@@ -93,11 +93,7 @@ impl Solution {
                 max_profit_rotation = i;
             }
         }
-        if max_profit > 0 {
-            max_profit_rotation
-        } else {
-            -1
-        }
+        if max_profit > 0 { max_profit_rotation } else { -1 }
     }
 }
 

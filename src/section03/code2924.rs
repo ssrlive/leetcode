@@ -63,11 +63,7 @@ impl Solution {
             .enumerate()
             .filter_map(|(i, x)| if x == 0 { Some(i as i32) } else { None })
             .collect::<Vec<_>>();
-        if ret.len() > 1 {
-            -1
-        } else {
-            ret[0]
-        }
+        if ret.len() > 1 { -1 } else { ret[0] }
     }
 }
 

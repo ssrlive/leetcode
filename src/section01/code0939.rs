@@ -47,11 +47,7 @@ impl Solution {
                 }
             }
         }
-        if min == i32::MAX {
-            0
-        } else {
-            min
-        }
+        if min == i32::MAX { 0 } else { min }
     }
 }
 

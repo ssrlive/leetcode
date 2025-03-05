@@ -48,11 +48,7 @@ impl Solution {
 
         fn dfs(curr_pos: i32, end_pos: i32, k: i32, memo: &mut HashMap<(i32, i32), i32>) -> i32 {
             if k == 0 {
-                if curr_pos == end_pos {
-                    1
-                } else {
-                    0
-                }
+                if curr_pos == end_pos { 1 } else { 0 }
             } else if let Some(n_ways) = memo.get(&(curr_pos, k)) {
                 *n_ways
             } else {

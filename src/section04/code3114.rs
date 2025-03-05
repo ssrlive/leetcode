@@ -46,20 +46,12 @@ impl Solution {
         b[4] = if b[4] == b'?' { b'9' } else { b[4] };
         b[3] = if b[3] == b'?' { b'5' } else { b[3] };
         b[1] = if b[1] == b'?' {
-            if b[0] == b'0' {
-                b'9'
-            } else {
-                b'1'
-            }
+            if b[0] == b'0' { b'9' } else { b'1' }
         } else {
             b[1]
         };
         b[0] = if b[0] == b'?' {
-            if b[1] == b'0' || b[1] == b'1' {
-                b'1'
-            } else {
-                b'0'
-            }
+            if b[1] == b'0' || b[1] == b'1' { b'1' } else { b'0' }
         } else {
             b[0]
         };

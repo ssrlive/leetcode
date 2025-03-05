@@ -43,11 +43,7 @@ struct Solution;
 impl Solution {
     pub fn kth_grammar(n: i32, k: i32) -> i32 {
         fn recurse_kth_grammar(n: i32, k: i32) -> i32 {
-            if n == 0 {
-                0
-            } else {
-                (k & 1) ^ recurse_kth_grammar(n - 1, k / 2)
-            }
+            if n == 0 { 0 } else { (k & 1) ^ recurse_kth_grammar(n - 1, k / 2) }
         }
 
         recurse_kth_grammar(n - 1, k - 1)

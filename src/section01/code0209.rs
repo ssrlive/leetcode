@@ -36,11 +36,7 @@ impl Solution {
                 left += 1;
             }
         }
-        if min_len == nums.len() + 1 {
-            0
-        } else {
-            min_len as i32
-        }
+        if min_len == nums.len() + 1 { 0 } else { min_len as i32 }
     }
 }
 

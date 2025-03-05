@@ -61,11 +61,7 @@ impl Solution {
                 }
             }
             assert_eq!(left, right);
-            if left == len {
-                Err(left)
-            } else {
-                Ok(left)
-            }
+            if left == len { Err(left) } else { Ok(left) }
         }
 
         let mut ps = vec![0];

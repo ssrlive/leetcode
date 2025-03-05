@@ -81,11 +81,7 @@ impl Solution {
             ret = ret.max(dp[i]);
         }
 
-        if ret == 1 {
-            -1
-        } else {
-            ret
-        }
+        if ret == 1 { -1 } else { ret }
     }
 }
 

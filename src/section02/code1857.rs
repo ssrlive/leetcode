@@ -79,11 +79,7 @@ impl Solution {
                 sk.push(*v);
             }
         }
-        if count > 0 {
-            -1
-        } else {
-            ret
-        }
+        if count > 0 { -1 } else { ret }
     }
 }
 

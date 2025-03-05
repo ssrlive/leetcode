@@ -54,19 +54,11 @@ impl Solution {
                     bin_search_target_logn(&nums[0..mid], target)
                 } else {
                     let m = bin_search_target_logn(&nums[mid + 1..length], target);
-                    if m > -1 {
-                        m + mid as i32 + 1
-                    } else {
-                        -1
-                    }
+                    if m > -1 { m + mid as i32 + 1 } else { -1 }
                 }
             } else if target <= nums[length - 1] && target >= nums[mid] {
                 let m = bin_search_target_logn(&nums[mid + 1..length], target);
-                if m > -1 {
-                    m + mid as i32 + 1
-                } else {
-                    -1
-                }
+                if m > -1 { m + mid as i32 + 1 } else { -1 }
             } else {
                 bin_search_target_logn(&nums[0..mid], target)
             }

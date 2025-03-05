@@ -76,11 +76,7 @@ impl Solution {
     pub fn minimum_value_sum(nums: Vec<i32>, and_values: Vec<i32>) -> i32 {
         let mut dp = vec![vec![std::collections::HashMap::new(); 11]; nums.len() + 2];
         let n = Solution::f(&mut dp, &nums, &and_values, 0, 0, (1 << 19) - 1);
-        if n == 1_000_000_000 {
-            -1
-        } else {
-            n
-        }
+        if n == 1_000_000_000 { -1 } else { n }
     }
 
     fn f(

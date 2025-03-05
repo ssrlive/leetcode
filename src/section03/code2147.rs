@@ -61,11 +61,7 @@ impl Solution {
                 j = i as i64;
             }
         }
-        if k % 2 == 0 && k > 0 {
-            res as _
-        } else {
-            0
-        }
+        if k % 2 == 0 && k > 0 { res as _ } else { 0 }
     }
 }
 

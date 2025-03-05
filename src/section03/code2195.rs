@@ -46,11 +46,7 @@ impl Solution {
             .into_iter()
             .fold(((1 + k) * k / 2, k), |(res, k), num| {
                 let num = num as i64;
-                if num <= k {
-                    (res - num + k + 1, k + 1)
-                } else {
-                    (res, k)
-                }
+                if num <= k { (res - num + k + 1, k + 1) } else { (res, k) }
             })
             .0
     }

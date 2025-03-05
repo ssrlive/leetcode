@@ -63,7 +63,7 @@ impl Solution {
                     .collect::<std::collections::BinaryHeap<Reverse<(i32, usize)>>>(),
                 |mut indexed, _| {
                     if let Some(mut inner) = indexed.peek_mut() {
-                        inner.0 .0 *= multiplier;
+                        inner.0.0 *= multiplier;
                     }
                     indexed
                 },

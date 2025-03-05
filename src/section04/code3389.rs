@@ -74,11 +74,7 @@ impl Solution {
 
             let curr = nf[i]
                 + if surplus {
-                    if nf[i - 1] < target {
-                        nf[i - 1]
-                    } else {
-                        nf[i - 1] - target
-                    }
+                    if nf[i - 1] < target { nf[i - 1] } else { nf[i - 1] - target }
                 } else {
                     0
                 };

@@ -50,7 +50,7 @@ impl Solution {
         let mut start;
         let mut end = -1;
 
-        for (_, idx) in nums.iter().zip(0..).filter(|(&x, _)| x == key) {
+        for (_, idx) in nums.iter().zip(0..).filter(|&(&x, _)| x == key) {
             start = (end + 1).max(idx - k);
             end = l.min(idx + k);
 

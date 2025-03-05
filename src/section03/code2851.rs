@@ -53,11 +53,7 @@ impl Solution {
     const M: i64 = 1_000_000_007;
 
     fn add(x: i64, y: i64) -> i64 {
-        if (x + y) >= Solution::M {
-            x + y - Solution::M
-        } else {
-            x + y
-        }
+        if (x + y) >= Solution::M { x + y - Solution::M } else { x + y }
     }
 
     fn mul(x: i64, y: i64) -> i64 {

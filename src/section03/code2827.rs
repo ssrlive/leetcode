@@ -79,11 +79,7 @@ impl Solution {
             low /= 10;
         }
 
-        if even == odd {
-            1
-        } else {
-            0
-        }
+        if even == odd { 1 } else { 0 }
     }
 }
 

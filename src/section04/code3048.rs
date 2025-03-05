@@ -99,11 +99,7 @@ impl Solution {
             }
         }
 
-        if l <= m {
-            l as i32
-        } else {
-            -1
-        }
+        if l <= m { l as i32 } else { -1 }
     }
 
     fn enable_to_mark_indices(nums: &[i32], change_indices: &[i32], m: i32) -> bool {

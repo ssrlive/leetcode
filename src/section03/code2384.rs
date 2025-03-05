@@ -47,7 +47,7 @@ impl Solution {
         let mut mid = None;
         let mut counter = [0; 10];
         num.bytes().for_each(|b| counter[(b - b'0') as usize] += 1);
-        for (i, n) in counter.iter().enumerate().filter(|(_, &n)| n > 0).rev() {
+        for (i, n) in counter.iter().enumerate().filter(|&(_, &n)| n > 0).rev() {
             let b = i as u8 + b'0';
             if mid.is_none() && n % 2 == 1 {
                 mid = Some(b);

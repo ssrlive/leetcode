@@ -61,11 +61,7 @@ impl Solution {
             cnt += 1;
         }
 
-        if cnt == 0 {
-            1
-        } else {
-            cnt
-        }
+        if cnt == 0 { 1 } else { cnt }
     }
 }
 

@@ -72,11 +72,7 @@ impl Solution {
             lower -= 1;
         }
 
-        if upper != 0 || lower != 0 {
-            vec![]
-        } else {
-            ret
-        }
+        if upper != 0 || lower != 0 { vec![] } else { ret }
     }
 }
 

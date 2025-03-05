@@ -51,17 +51,9 @@ impl Solution {
         let d2 = (num - cur).abs();
         let d3 = (num - next).abs();
         if num == cur {
-            if d1 <= d3 {
-                Some(pre_p)
-            } else {
-                Some(next_p)
-            }
+            if d1 <= d3 { Some(pre_p) } else { Some(next_p) }
         } else if num > cur {
-            if d2 <= d3 {
-                Some(cur_p)
-            } else {
-                Some(next_p)
-            }
+            if d2 <= d3 { Some(cur_p) } else { Some(next_p) }
         } else if d1 <= d2 {
             Some(pre_p)
         } else {

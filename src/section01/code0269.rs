@@ -51,7 +51,7 @@ struct Solution;
 
 impl Solution {
     pub fn alien_order(words: Vec<String>) -> String {
-        use std::collections::{hash_map::Entry, HashMap};
+        use std::collections::{HashMap, hash_map::Entry};
         fn build_graph(words: &Vec<String>, map: &mut HashMap<char, Vec<char>>, visited: &mut HashMap<char, i32>) {
             for word in words {
                 for c in word.chars() {

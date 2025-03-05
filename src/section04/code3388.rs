@@ -68,11 +68,7 @@ impl Solution {
         fn get_hash(l: usize, r: usize, preh: &[i64], preb: &[i64]) -> i64 {
             let mod_num = 1_000_000_007;
             let hash = preh[r + 1] - (preh[l] * preb[r - l + 1]) % mod_num;
-            if hash < 0 {
-                hash + mod_num
-            } else {
-                hash
-            }
+            if hash < 0 { hash + mod_num } else { hash }
         }
 
         fn compare(start1: usize, start2: usize, len: usize, preh: &[i64], preb: &[i64]) -> bool {

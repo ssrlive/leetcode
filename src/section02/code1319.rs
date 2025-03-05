@@ -58,11 +58,7 @@ impl Solution {
                 count += 1;
             }
         }
-        if count - 1 <= extra {
-            count - 1
-        } else {
-            -1
-        }
+        if count - 1 <= extra { count - 1 } else { -1 }
     }
 }
 

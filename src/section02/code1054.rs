@@ -38,7 +38,7 @@ impl Solution {
         for (k, v) in m.iter() {
             s.insert((v, k));
         }
-        for (&v, &k) in s.iter().rev() {
+        for &(&v, &k) in s.iter().rev() {
             for _ in 0..v {
                 if pos >= barcodes.len() {
                     pos = 1;

@@ -56,11 +56,7 @@ impl Solution {
                 let left = dfs(&node.left, ans, true);
                 let right = dfs(&node.right, ans, false);
                 *ans = (*ans).max(left).max(right);
-                if is_left {
-                    right + 1
-                } else {
-                    left + 1
-                }
+                if is_left { right + 1 } else { left + 1 }
             } else {
                 0
             }

@@ -54,7 +54,7 @@ impl Solution {
         for &num in nums.iter() {
             *map.entry(num).or_insert(0) += 1;
         }
-        map.iter().filter(|(_, &v)| v > 1).map(|(&k, _)| k).collect()
+        map.iter().filter(|&(_, &v)| v > 1).map(|(&k, _)| k).collect()
     }
 }
 

@@ -66,11 +66,7 @@ impl Solution {
             }
 
             let ans = dist.iter().max()?;
-            if *ans == i32::MAX {
-                Some(-1)
-            } else {
-                Some(*ans)
-            }
+            if *ans == i32::MAX { Some(-1) } else { Some(*ans) }
         }
 
         _network_delay_time(times, n, k).unwrap_or(-1)

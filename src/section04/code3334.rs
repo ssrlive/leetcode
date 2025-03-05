@@ -82,11 +82,7 @@ impl Solution {
     }
 
     fn __gcd(a: i64, b: i64) -> i64 {
-        if b == 0 {
-            a
-        } else {
-            Solution::__gcd(b, a % b)
-        }
+        if b == 0 { a } else { Solution::__gcd(b, a % b) }
     }
 }
 

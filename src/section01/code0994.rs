@@ -87,11 +87,7 @@ impl Solution {
             }
         }
 
-        if fresh > 0 {
-            -1
-        } else {
-            time
-        }
+        if fresh > 0 { -1 } else { time }
     }
 }
 

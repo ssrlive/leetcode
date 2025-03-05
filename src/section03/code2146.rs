@@ -157,11 +157,7 @@ impl Solution {
                 let v2 = a.1.cmp(&b.1);
                 if v2 == Ordering::Equal {
                     let v3 = a.2.cmp(&b.2);
-                    if v3 == Ordering::Equal {
-                        a.3.cmp(&b.3)
-                    } else {
-                        v3
-                    }
+                    if v3 == Ordering::Equal { a.3.cmp(&b.3) } else { v3 }
                 } else {
                     v2
                 }

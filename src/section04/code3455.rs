@@ -129,11 +129,7 @@ impl Solution {
             res = res.min((k - i + na) as i32);
             i += 1;
         }
-        if res == i32::MAX {
-            -1
-        } else {
-            res
-        }
+        if res == i32::MAX { -1 } else { res }
     }
 }
 

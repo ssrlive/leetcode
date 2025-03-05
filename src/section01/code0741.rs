@@ -47,11 +47,7 @@ impl Solution {
         let n = grid.len();
         let mut dp = vec![vec![vec![0; n]; n]; n];
         let answer = Self::solve(&grid, 0, 0, 0, 0, n, &mut dp).unwrap_or_default();
-        if answer <= 0 {
-            0
-        } else {
-            answer
-        }
+        if answer <= 0 { 0 } else { answer }
     }
     fn solve(grid: &Vec<Vec<i32>>, r1: usize, r2: usize, c1: usize, c2: usize, n: usize, dp: &mut Vec<Vec<Vec<i32>>>) -> Option<i32> {
         if r1 == n || r2 == n || c1 == n || c2 == n || grid[r1][c1] == -1 || grid[r2][c2] == -1 {

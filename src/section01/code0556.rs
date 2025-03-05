@@ -54,11 +54,7 @@ impl Solution {
         for &digit in digits.iter() {
             result = result * 10 + digit;
         }
-        if result > i32::MAX as i64 {
-            -1
-        } else {
-            result as i32
-        }
+        if result > i32::MAX as i64 { -1 } else { result as i32 }
     }
 }
 

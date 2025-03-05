@@ -84,11 +84,7 @@ impl Solution {
             }
         }
         if let Some(v) = que.pop_front() {
-            if a.max(b) < v {
-                count + 1
-            } else {
-                count
-            }
+            if a.max(b) < v { count + 1 } else { count }
         } else {
             count
         }

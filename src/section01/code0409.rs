@@ -49,11 +49,7 @@ impl Solution {
                 odd = true;
             }
         }
-        if odd {
-            res + 1
-        } else {
-            res
-        }
+        if odd { res + 1 } else { res }
     }
 }
 

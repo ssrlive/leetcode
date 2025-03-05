@@ -111,8 +111,8 @@ impl Solution {
         for events_i in &events {
             let event_i_i = events_i[1].parse::<i32>().unwrap();
             if events_i[0] == "MESSAGE" {
-                while !pq.is_empty() && pq.peek().unwrap().0 .0 <= event_i_i {
-                    user_status[pq.pop().unwrap().0 .1 as usize] += 1;
+                while !pq.is_empty() && pq.peek().unwrap().0.0 <= event_i_i {
+                    user_status[pq.pop().unwrap().0.1 as usize] += 1;
                 }
                 if events_i[2] == "ALL" {
                     all += 1;

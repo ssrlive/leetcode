@@ -48,11 +48,7 @@ struct Solution;
 impl Solution {
     pub fn zero_filled_subarray(nums: Vec<i32>) -> i64 {
         let f = |(tot, cur): (i64, i64), &x: &i32| {
-            if x == 0 {
-                (tot + cur + 1, cur + 1)
-            } else {
-                (tot, 0)
-            }
+            if x == 0 { (tot + cur + 1, cur + 1) } else { (tot, 0) }
         };
         nums.iter().fold((0, 0), f).0
     }

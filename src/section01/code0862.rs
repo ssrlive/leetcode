@@ -55,11 +55,7 @@ impl Solution {
 
                 queue.push_back((i as i64, prefix));
             }
-            if ans == i64::MAX {
-                -1
-            } else {
-                ans
-            }
+            if ans == i64::MAX { -1 } else { ans }
         }
         _shortest_subarray(nums.iter().map(|x| *x as i64).collect(), k as i64) as i32
     }

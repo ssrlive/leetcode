@@ -86,11 +86,7 @@ impl Solution {
                 ans = ans.max(l1 - 2).max(l2);
             }
         }
-        if ans != 0 {
-            ans
-        } else {
-            -1
-        }
+        if ans != 0 { ans } else { -1 }
     }
 }
 

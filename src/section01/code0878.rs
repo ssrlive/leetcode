@@ -30,11 +30,7 @@ impl Solution {
     pub fn nth_magical_number(n: i32, a: i32, b: i32) -> i32 {
         fn gcd(a: i32, b: i32) -> i32 {
             let r = a % b;
-            if r == 0 {
-                b
-            } else {
-                gcd(b, r)
-            }
+            if r == 0 { b } else { gcd(b, r) }
         }
 
         const CLIP: i64 = 1_000_000_007;

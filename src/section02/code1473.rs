@@ -88,11 +88,7 @@ impl Solution {
         for i in 0..n {
             ans = ans.min(dp[m][target][i]);
         }
-        if ans == i32::MAX {
-            -1
-        } else {
-            ans
-        }
+        if ans == i32::MAX { -1 } else { ans }
     }
 }
 

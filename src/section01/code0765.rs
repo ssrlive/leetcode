@@ -37,11 +37,7 @@ struct Solution;
 impl Solution {
     pub fn min_swaps_couples(row: Vec<i32>) -> i32 {
         fn couple(x: usize) -> usize {
-            if x & 1 == 1 {
-                x - 1
-            } else {
-                x + 1
-            }
+            if x & 1 == 1 { x - 1 } else { x + 1 }
         }
 
         fn _min_swaps_couples(row: Vec<i32>) -> Option<i32> {

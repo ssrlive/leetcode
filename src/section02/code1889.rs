@@ -75,11 +75,7 @@ impl Solution {
             }
             res = res.min(cur);
         }
-        if res < i64::MAX {
-            ((res - sum_a) % 1_000_000_007) as _
-        } else {
-            -1
-        }
+        if res < i64::MAX { ((res - sum_a) % 1_000_000_007) as _ } else { -1 }
     }
 }
 

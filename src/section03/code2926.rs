@@ -73,7 +73,7 @@ impl Solution {
                 if let Some((_, &v)) = map.range(..=arr[i]).next_back() {
                     temp += v;
                 }
-                let keys_to_remove: Vec<_> = map.range(arr[i]..).take_while(|(_, &v)| v < temp).map(|(k, _)| *k).collect();
+                let keys_to_remove: Vec<_> = map.range(arr[i]..).take_while(|&(_, &v)| v < temp).map(|(k, _)| *k).collect();
                 for k in keys_to_remove {
                     map.remove(&k);
                 }

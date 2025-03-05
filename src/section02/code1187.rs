@@ -70,11 +70,7 @@ impl Solution {
             }
         }
         let ans = std::cmp::min(g[m - 1], *f[m - 1].iter().min().unwrap());
-        if ans == i32::MAX {
-            -1
-        } else {
-            ans
-        }
+        if ans == i32::MAX { -1 } else { ans }
     }
 }
 

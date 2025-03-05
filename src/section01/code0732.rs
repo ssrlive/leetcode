@@ -38,7 +38,7 @@
 //
 
 use std::collections::BTreeMap;
-use std::iter::{once, FromIterator};
+use std::iter::{FromIterator, once};
 
 struct MyCalendarThree {
     data: BTreeMap<i32, i32>,

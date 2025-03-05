@@ -60,11 +60,7 @@ impl Solution {
         use std::collections::VecDeque;
 
         fn add(u: i32, i: i32) -> i32 {
-            if i.is_negative() {
-                u - i.wrapping_abs()
-            } else {
-                u + i
-            }
+            if i.is_negative() { u - i.wrapping_abs() } else { u + i }
         }
 
         let mut maze = maze;

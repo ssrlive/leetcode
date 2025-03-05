@@ -48,11 +48,7 @@ impl Solution {
             ans = min(ans, curr as i32);
             vi.insert(v, i);
         }
-        if ans == i32::MAX {
-            -1
-        } else {
-            ans
-        }
+        if ans == i32::MAX { -1 } else { ans }
     }
 }
 

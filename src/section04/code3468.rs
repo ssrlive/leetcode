@@ -73,11 +73,7 @@ impl Solution {
             high = std::cmp::min(high + diff, bounds[i][1]);
             ans = std::cmp::min(ans, high - low + 1);
         }
-        if ans < 0 {
-            0
-        } else {
-            ans
-        }
+        if ans < 0 { 0 } else { ans }
     }
 }
 

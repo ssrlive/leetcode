@@ -57,11 +57,7 @@ impl Solution {
             }
         }
 
-        if start == end {
-            0
-        } else {
-            (end - start + 1) as i32
-        }
+        if start == end { 0 } else { (end - start + 1) as i32 }
     }
 }
 

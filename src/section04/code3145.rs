@@ -63,11 +63,7 @@ impl Solution {
             let x = x % m;
             let y = y % m;
             let res = x * y;
-            if res >= m {
-                res % m
-            } else {
-                res
-            }
+            if res >= m { res % m } else { res }
         };
 
         let mod_pow = |x: i64, y: i64, m: i64| -> i64 {

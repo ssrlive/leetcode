@@ -62,11 +62,7 @@ impl Solution {
                 m.insert(nums[i], i);
             }
         }
-        if res == i64::MIN {
-            0
-        } else {
-            res
-        }
+        if res == i64::MIN { 0 } else { res }
     }
 }
 

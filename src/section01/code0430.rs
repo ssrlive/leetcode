@@ -134,11 +134,7 @@ impl Node {
                 }
             }
         }
-        if nodes.is_empty() {
-            None
-        } else {
-            nodes[0].clone()
-        }
+        if nodes.is_empty() { None } else { nodes[0].clone() }
     }
 }
 

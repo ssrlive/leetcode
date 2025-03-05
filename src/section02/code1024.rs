@@ -77,11 +77,7 @@ impl Solution {
             stack = new_stack;
         }
 
-        if memo[n] == 10000 {
-            -1
-        } else {
-            memo[n]
-        }
+        if memo[n] == 10000 { -1 } else { memo[n] }
     }
 }
 

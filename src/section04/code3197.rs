@@ -119,25 +119,25 @@ impl Solution {
                 let s = c.binary_search(&rows[i].0);
                 match s {
                     Ok(sc) => {
-                        diff.0 .0 = min(diff.0 .0, c[0]);
-                        diff.0 .1 = max(diff.0 .1, c[sc]);
-                        up_diff_left.push((cols_j.0, diff.0 .1 - diff.0 .0 + 1));
+                        diff.0.0 = min(diff.0.0, c[0]);
+                        diff.0.1 = max(diff.0.1, c[sc]);
+                        up_diff_left.push((cols_j.0, diff.0.1 - diff.0.0 + 1));
                         if sc + 1 < c.len() {
-                            diff.1 .0 = min(diff.1 .0, c[sc + 1]);
-                            diff.1 .1 = max(diff.1 .1, *c.last().unwrap());
-                            down_diff_left.push((cols_j.0, diff.1 .1 - diff.1 .0 + 1));
+                            diff.1.0 = min(diff.1.0, c[sc + 1]);
+                            diff.1.1 = max(diff.1.1, *c.last().unwrap());
+                            down_diff_left.push((cols_j.0, diff.1.1 - diff.1.0 + 1));
                         }
                     }
                     Err(sc) => {
                         if sc > 0 {
-                            diff.0 .0 = min(diff.0 .0, c[0]);
-                            diff.0 .1 = max(diff.0 .1, c[sc - 1]);
-                            up_diff_left.push((cols_j.0, diff.0 .1 - diff.0 .0 + 1));
+                            diff.0.0 = min(diff.0.0, c[0]);
+                            diff.0.1 = max(diff.0.1, c[sc - 1]);
+                            up_diff_left.push((cols_j.0, diff.0.1 - diff.0.0 + 1));
                         }
                         if sc < c.len() {
-                            diff.1 .0 = min(diff.1 .0, c[sc]);
-                            diff.1 .1 = max(diff.1 .1, *c.last().unwrap());
-                            down_diff_left.push((cols_j.0, diff.1 .1 - diff.1 .0 + 1));
+                            diff.1.0 = min(diff.1.0, c[sc]);
+                            diff.1.1 = max(diff.1.1, *c.last().unwrap());
+                            down_diff_left.push((cols_j.0, diff.1.1 - diff.1.0 + 1));
                         }
                     }
                 }
@@ -150,25 +150,25 @@ impl Solution {
                 let s = c.binary_search(&rows[i].0);
                 match s {
                     Ok(sc) => {
-                        diff.0 .0 = min(diff.0 .0, c[0]);
-                        diff.0 .1 = max(diff.0 .1, c[sc]);
-                        up_diff_right.push((cols[j].0, diff.0 .1 - diff.0 .0 + 1));
+                        diff.0.0 = min(diff.0.0, c[0]);
+                        diff.0.1 = max(diff.0.1, c[sc]);
+                        up_diff_right.push((cols[j].0, diff.0.1 - diff.0.0 + 1));
                         if sc + 1 < c.len() {
-                            diff.1 .0 = min(diff.1 .0, c[sc + 1]);
-                            diff.1 .1 = max(diff.1 .1, *c.last().unwrap());
-                            down_diff_right.push((cols[j].0, diff.1 .1 - diff.1 .0 + 1));
+                            diff.1.0 = min(diff.1.0, c[sc + 1]);
+                            diff.1.1 = max(diff.1.1, *c.last().unwrap());
+                            down_diff_right.push((cols[j].0, diff.1.1 - diff.1.0 + 1));
                         }
                     }
                     Err(sc) => {
                         if sc > 0 {
-                            diff.0 .0 = min(diff.0 .0, c[0]);
-                            diff.0 .1 = max(diff.0 .1, c[sc - 1]);
-                            up_diff_right.push((cols[j].0, diff.0 .1 - diff.0 .0 + 1));
+                            diff.0.0 = min(diff.0.0, c[0]);
+                            diff.0.1 = max(diff.0.1, c[sc - 1]);
+                            up_diff_right.push((cols[j].0, diff.0.1 - diff.0.0 + 1));
                         }
                         if sc < c.len() {
-                            diff.1 .0 = min(diff.1 .0, c[sc]);
-                            diff.1 .1 = max(diff.1 .1, *c.last().unwrap());
-                            down_diff_right.push((cols[j].0, diff.1 .1 - diff.1 .0 + 1));
+                            diff.1.0 = min(diff.1.0, c[sc]);
+                            diff.1.1 = max(diff.1.1, *c.last().unwrap());
+                            down_diff_right.push((cols[j].0, diff.1.1 - diff.1.0 + 1));
                         }
                     }
                 }
@@ -220,25 +220,25 @@ impl Solution {
                 let s = r.binary_search(&cols[j].0);
                 match s {
                     Ok(sc) => {
-                        diff.0 .0 = min(diff.0 .0, r[0]);
-                        diff.0 .1 = max(diff.0 .1, r[sc]);
-                        left_diff_up.push((rows_i.0, diff.0 .1 - diff.0 .0 + 1));
+                        diff.0.0 = min(diff.0.0, r[0]);
+                        diff.0.1 = max(diff.0.1, r[sc]);
+                        left_diff_up.push((rows_i.0, diff.0.1 - diff.0.0 + 1));
                         if sc + 1 < r.len() {
-                            diff.1 .0 = min(diff.1 .0, r[sc + 1]);
-                            diff.1 .1 = max(diff.1 .1, *r.last().unwrap());
-                            right_diff_up.push((rows_i.0, diff.1 .1 - diff.1 .0 + 1));
+                            diff.1.0 = min(diff.1.0, r[sc + 1]);
+                            diff.1.1 = max(diff.1.1, *r.last().unwrap());
+                            right_diff_up.push((rows_i.0, diff.1.1 - diff.1.0 + 1));
                         }
                     }
                     Err(sc) => {
                         if sc > 0 {
-                            diff.0 .0 = min(diff.0 .0, r[0]);
-                            diff.0 .1 = max(diff.0 .1, r[sc - 1]);
-                            left_diff_up.push((rows_i.0, diff.0 .1 - diff.0 .0 + 1));
+                            diff.0.0 = min(diff.0.0, r[0]);
+                            diff.0.1 = max(diff.0.1, r[sc - 1]);
+                            left_diff_up.push((rows_i.0, diff.0.1 - diff.0.0 + 1));
                         }
                         if sc < r.len() {
-                            diff.1 .0 = min(diff.1 .0, r[sc]);
-                            diff.1 .1 = max(diff.1 .1, *r.last().unwrap());
-                            right_diff_up.push((rows_i.0, diff.1 .1 - diff.1 .0 + 1));
+                            diff.1.0 = min(diff.1.0, r[sc]);
+                            diff.1.1 = max(diff.1.1, *r.last().unwrap());
+                            right_diff_up.push((rows_i.0, diff.1.1 - diff.1.0 + 1));
                         }
                     }
                 }
@@ -251,25 +251,25 @@ impl Solution {
                 let s = r.binary_search(&cols[j].0);
                 match s {
                     Ok(sc) => {
-                        diff.0 .0 = min(diff.0 .0, r[0]);
-                        diff.0 .1 = max(diff.0 .1, r[sc]);
-                        left_diff_down.push((rows[i].0, diff.0 .1 - diff.0 .0 + 1));
+                        diff.0.0 = min(diff.0.0, r[0]);
+                        diff.0.1 = max(diff.0.1, r[sc]);
+                        left_diff_down.push((rows[i].0, diff.0.1 - diff.0.0 + 1));
                         if sc + 1 < r.len() {
-                            diff.1 .0 = min(diff.1 .0, r[sc + 1]);
-                            diff.1 .1 = max(diff.1 .1, *r.last().unwrap());
-                            right_diff_down.push((rows[i].0, diff.1 .1 - diff.1 .0 + 1));
+                            diff.1.0 = min(diff.1.0, r[sc + 1]);
+                            diff.1.1 = max(diff.1.1, *r.last().unwrap());
+                            right_diff_down.push((rows[i].0, diff.1.1 - diff.1.0 + 1));
                         }
                     }
                     Err(sc) => {
                         if sc > 0 {
-                            diff.0 .0 = min(diff.0 .0, r[0]);
-                            diff.0 .1 = max(diff.0 .1, r[sc - 1]);
-                            left_diff_down.push((rows[i].0, diff.0 .1 - diff.0 .0 + 1));
+                            diff.0.0 = min(diff.0.0, r[0]);
+                            diff.0.1 = max(diff.0.1, r[sc - 1]);
+                            left_diff_down.push((rows[i].0, diff.0.1 - diff.0.0 + 1));
                         }
                         if sc < r.len() {
-                            diff.1 .0 = min(diff.1 .0, r[sc]);
-                            diff.1 .1 = max(diff.1 .1, *r.last().unwrap());
-                            right_diff_down.push((rows[i].0, diff.1 .1 - diff.1 .0 + 1));
+                            diff.1.0 = min(diff.1.0, r[sc]);
+                            diff.1.1 = max(diff.1.1, *r.last().unwrap());
+                            right_diff_down.push((rows[i].0, diff.1.1 - diff.1.0 + 1));
                         }
                     }
                 }

@@ -60,11 +60,7 @@ impl Solution {
 
         let mut memo = vec![vec![-1; target as usize]; nums.len()];
         let ans = dp(0, 0, &nums, &mut memo);
-        if ans <= 0 {
-            -1
-        } else {
-            ans
-        }
+        if ans <= 0 { -1 } else { ans }
     }
 }
 

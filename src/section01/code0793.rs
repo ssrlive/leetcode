@@ -56,11 +56,7 @@ impl Solution {
                 hi = mid;
             }
         }
-        if trailing_zeros(lo) == k {
-            5
-        } else {
-            0
-        }
+        if trailing_zeros(lo) == k { 5 } else { 0 }
     }
 }
 

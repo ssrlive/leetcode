@@ -72,11 +72,7 @@ impl Solution {
                 }
             }
         }
-        if dp[0] == i32::MAX {
-            -1
-        } else {
-            dp[0]
-        }
+        if dp[0] == i32::MAX { -1 } else { dp[0] }
     }
 
     fn check(a: i32) -> bool {

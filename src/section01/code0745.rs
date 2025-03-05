@@ -100,11 +100,7 @@ impl WordFilter {
         };
 
         let res = p_res.intersection(&s_res);
-        if let Some(i) = res.max() {
-            *i as i32
-        } else {
-            -1
-        }
+        if let Some(i) = res.max() { *i as i32 } else { -1 }
     }
 }
 

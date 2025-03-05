@@ -85,11 +85,7 @@ impl Solution {
             }
         }
 
-        if target > 0 {
-            -1
-        } else {
-            cnt
-        }
+        if target > 0 { -1 } else { cnt }
     }
 
     fn power(a: i32) -> i32 {

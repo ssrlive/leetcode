@@ -54,11 +54,7 @@ impl Solution {
         let mut nums = nums;
         nums.sort_by(|a, b| {
             let v = a.len().cmp(&b.len());
-            if v == Ordering::Equal {
-                a.cmp(b)
-            } else {
-                v
-            }
+            if v == Ordering::Equal { a.cmp(b) } else { v }
         });
         nums.reverse();
         nums[k as usize - 1].to_string()

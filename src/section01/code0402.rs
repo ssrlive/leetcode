@@ -53,11 +53,7 @@ impl Solution {
         while result.starts_with('0') {
             result.remove(0);
         }
-        if result.is_empty() {
-            "0".to_string()
-        } else {
-            result
-        }
+        if result.is_empty() { "0".to_string() } else { result }
     }
 }
 

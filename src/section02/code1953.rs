@@ -70,11 +70,7 @@ impl Solution {
             sum += milestone as i64;
         }
         let lv = milestones[n - 1] as i64;
-        if sum < lv {
-            sum * 2 + 1
-        } else {
-            sum + lv
-        }
+        if sum < lv { sum * 2 + 1 } else { sum + lv }
     }
 }
 

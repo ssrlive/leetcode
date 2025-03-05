@@ -65,11 +65,7 @@ impl Solution {
                 }
             }
         }
-        if res == i32::MAX {
-            -1
-        } else {
-            res
-        }
+        if res == i32::MAX { -1 } else { res }
     }
 }
 

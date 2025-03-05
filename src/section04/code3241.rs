@@ -102,8 +102,8 @@ impl Solution {
                 continue;
             }
             let t = as_root[c] + 2 - c as i32 % 2;
-            if t > rec.0 .0 {
-                rec.1 = rec.0 .0;
+            if t > rec.0.0 {
+                rec.1 = rec.0.0;
                 rec.0 = (t, c);
             } else if t > rec.1 {
                 rec.1 = t;
@@ -116,7 +116,7 @@ impl Solution {
             Self::get_result(
                 c,
                 node,
-                if c == rec.0 .1 { rec.1 } else { rec.0 .0 } + 2 - node as i32 % 2,
+                if c == rec.0.1 { rec.1 } else { rec.0.0 } + 2 - node as i32 % 2,
                 e,
                 as_root,
                 result,

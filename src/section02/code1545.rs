@@ -66,11 +66,7 @@ impl Solution {
             }
         }
 
-        if arr[n - 1][k - 1] {
-            '1'
-        } else {
-            '0'
-        }
+        if arr[n - 1][k - 1] { '1' } else { '0' }
     }
 }
 

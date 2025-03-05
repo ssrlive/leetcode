@@ -32,7 +32,7 @@
 // - At most 3 * 10^4 calls will be made to randPoint.
 //
 
-use rand::{rngs::ThreadRng, Rng};
+use rand::{Rng, rngs::ThreadRng};
 
 #[derive(Default)]
 struct Solution {

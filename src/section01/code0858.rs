@@ -38,11 +38,7 @@ impl Solution {
             p >>= 1;
             q >>= 1;
         }
-        if p % 2 == 0 {
-            2
-        } else {
-            i32::from(q % 2 != 0)
-        }
+        if p % 2 == 0 { 2 } else { i32::from(q % 2 != 0) }
     }
 }
 

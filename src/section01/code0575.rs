@@ -50,11 +50,7 @@ impl Solution {
             set.insert(candy);
         }
         let n = candy_type.len() / 2;
-        if set.len() > n {
-            n as i32
-        } else {
-            set.len() as i32
-        }
+        if set.len() > n { n as i32 } else { set.len() as i32 }
     }
 }
 

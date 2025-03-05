@@ -161,11 +161,7 @@ impl Solution {
             keys.sort_by(|a, b| {
                 let a_len = a.split('*').count();
                 let b_len = b.split('*').count();
-                if a_len == b_len {
-                    a.cmp(b)
-                } else {
-                    b_len.cmp(&a_len)
-                }
+                if a_len == b_len { a.cmp(b) } else { b_len.cmp(&a_len) }
             });
             for k in keys.iter() {
                 let val = res_map[k];

@@ -63,11 +63,7 @@ impl Solution {
             m = std::cmp::min(m, nums[i]);
         }
 
-        if r == i32::MAX {
-            -1
-        } else {
-            r
-        }
+        if r == i32::MAX { -1 } else { r }
     }
 }
 

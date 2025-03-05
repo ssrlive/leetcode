@@ -70,11 +70,7 @@ impl Solution {
         };
         let pen = customers.chars().enumerate().fold((i32::MAX, 0, 0), f);
 
-        if pen.2 >= pen.0 {
-            pen.1
-        } else {
-            customers.len() as i32
-        }
+        if pen.2 >= pen.0 { pen.1 } else { customers.len() as i32 }
     }
 }
 

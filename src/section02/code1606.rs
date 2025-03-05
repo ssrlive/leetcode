@@ -73,7 +73,7 @@ impl Solution {
         let mut requests = vec![0; k];
         let mut i = 0;
 
-        while let Some((&t2, &_l)) = iterator.peek() {
+        while let Some(&(&t2, &_l)) = iterator.peek() {
             if active_requests.peek().is_none() || (active_requests.peek().unwrap().0).0 > t2 {
                 let (time, load) = iterator.next().unwrap();
 

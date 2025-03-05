@@ -53,11 +53,7 @@ impl Solution {
                 odd += 1;
             }
         }
-        if odd > even {
-            even
-        } else {
-            odd
-        }
+        if odd > even { even } else { odd }
     }
 }
 
