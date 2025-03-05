@@ -390,3 +390,11 @@ cargo test
 | 3462 | [Maximum Sum With at Most K Elements](code3462.rs) | [link](https://leetcode.com/problems/maximum-sum-with-at-most-k-elements/) | Medium | :heavy_check_mark: |
 | 3463 | [Check If Digits Are Equal in String After Operations II](code3463.rs) | [link](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-ii/) | Hard | :heavy_check_mark: |
 | 3464 | [Maximize the Distance Between Points on a Square](code3464.rs) | [link](https://leetcode.com/problems/maximize-the-distance-between-points-on-a-square/) | Hard | :heavy_check_mark: |
+| 3467 | [Transform Array by Parity](code3467.rs) | [link](https://leetcode.com/problems/transform-array-by-parity/) | Easy | :heavy_check_mark: |
+| 3468 | [Transform Array by Parity](code3468.rs) | [link](https://leetcode.com/problems/transform-array-by-parity/) | Medium | :heavy_check_mark: |
+| 3469 | [Find Minimum Cost to Remove Array Elements](code3469.rs) | [link](https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/) | Medium | :heavy_check_mark: |
+| 3470 | [Permutations IV](code3470.rs) | [link](https://leetcode.com/problems/permutations-iv/) | Hard | :heavy_check_mark: |
+| 3471 | [Find the Largest Almost Missing Integer](code3471.rs) | [link](https://leetcode.com/problems/find-the-largest-almost-missing-integer/) | Easy | :heavy_check_mark: |
+| 3472 | [Longest Palindromic Subsequence After at Most K Operations](code3472.rs) | [link](https://leetcode.com/problems/longest-palindromic-subsequence-after-at-most-k-operations/) | Medium | :heavy_check_mark: |
+| 3473 | [Sum of K Subarrays With Length at Least M](code3473.rs) | [link](https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/) | Medium | :heavy_check_mark: |
+| 3474 | [Lexicographically Smallest Generated String](code3474.rs) | [link](https://leetcode.com/problems/lexicographically-smallest-generated-string/) | Hard | :heavy_check_mark: |
