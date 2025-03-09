@@ -361,3 +361,7 @@ mod code3471;
 mod code3472;
 mod code3473;
 mod code3474;
+mod code3477;
+mod code3478;
+mod code3479;
+mod code3480;

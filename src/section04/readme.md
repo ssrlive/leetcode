@@ -398,3 +398,7 @@ cargo test
 | 3472 | [Longest Palindromic Subsequence After at Most K Operations](code3472.rs) | [link](https://leetcode.com/problems/longest-palindromic-subsequence-after-at-most-k-operations/) | Medium | :heavy_check_mark: |
 | 3473 | [Sum of K Subarrays With Length at Least M](code3473.rs) | [link](https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/) | Medium | :heavy_check_mark: |
 | 3474 | [Lexicographically Smallest Generated String](code3474.rs) | [link](https://leetcode.com/problems/lexicographically-smallest-generated-string/) | Hard | :heavy_check_mark: |
+| 3477 | [Fruits Into Baskets II](code3477.rs) | [link](https://leetcode.com/problems/fruits-into-baskets-ii/) | Easy | :heavy_check_mark: |
+| 3478 | [Choose K Elements With Maximum Sum](code3478.rs) | [link](https://leetcode.com/problems/choose-k-elements-with-maximum-sum/) | Medium | :heavy_check_mark: |
+| 3479 | [Fruits Into Baskets III](code3479.rs) | [link](https://leetcode.com/problems/fruits-into-baskets-iii/) | Medium | :heavy_check_mark: |
+| 3480 | [Maximize Subarrays After Removing One Conflicting Pair](code3480.rs) | [link](https://leetcode.com/problems/maximize-subarrays-after-removing-one-conflicting-pair/) | Hard | :heavy_check_mark: |
