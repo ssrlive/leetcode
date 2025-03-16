@@ -402,3 +402,11 @@ cargo test
 | 3478 | [Choose K Elements With Maximum Sum](code3478.rs) | [link](https://leetcode.com/problems/choose-k-elements-with-maximum-sum/) | Medium | :heavy_check_mark: |
 | 3479 | [Fruits Into Baskets III](code3479.rs) | [link](https://leetcode.com/problems/fruits-into-baskets-iii/) | Medium | :heavy_check_mark: |
 | 3480 | [Maximize Subarrays After Removing One Conflicting Pair](code3480.rs) | [link](https://leetcode.com/problems/maximize-subarrays-after-removing-one-conflicting-pair/) | Hard | :heavy_check_mark: |
+| 3483 | [Unique 3-Digit Even Numbers](code3483.rs) | [link](https://leetcode.com/problems/unique-3-digit-even-numbers/) | Easy | :heavy_check_mark: |
+| 3484 | [Design Spreadsheet](code3484.rs) | [link](https://leetcode.com/problems/design-spreadsheet/) | Medium | :heavy_check_mark: |
+| 3485 | [Longest Common Prefix of K Strings After Removal](code3485.rs) | [link](https://leetcode.com/problems/longest-common-prefix-of-k-strings-after-removal/) | Hard | :heavy_check_mark: |
+| 3486 | [Longest Special Path II](code3486.rs) | [link](https://leetcode.com/problems/longest-special-path-ii/) | Hard | :heavy_check_mark: |
+| 3487 | [Maximum Unique Subarray Sum After Deletion](code3487.rs) | [link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion/) | Easy | :heavy_check_mark: |
+| 3488 | [Closest Equal Element Queries](code3488.rs) | [link](https://leetcode.com/problems/closest-equal-element-queries/) | Medium | :heavy_check_mark: |
+| 3489 | [Zero Array Transformation IV](code3489.rs) | [link](https://leetcode.com/problems/zero-array-transformation-iv/) | Medium | :heavy_check_mark: |
+| 3490 | [Count Beautiful Numbers](code3490.rs) | [link](https://leetcode.com/problems/count-beautiful-numbers/) | Hard | :heavy_check_mark: |
