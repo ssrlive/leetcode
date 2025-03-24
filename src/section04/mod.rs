@@ -373,3 +373,7 @@ mod code3487;
 mod code3488;
 mod code3489;
 mod code3490;
+mod code3492;
+mod code3493;
+mod code3494;
+mod code3495;

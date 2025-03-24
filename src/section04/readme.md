@@ -410,3 +410,7 @@ cargo test
 | 3488 | [Closest Equal Element Queries](code3488.rs) | [link](https://leetcode.com/problems/closest-equal-element-queries/) | Medium | :heavy_check_mark: |
 | 3489 | [Zero Array Transformation IV](code3489.rs) | [link](https://leetcode.com/problems/zero-array-transformation-iv/) | Medium | :heavy_check_mark: |
 | 3490 | [Count Beautiful Numbers](code3490.rs) | [link](https://leetcode.com/problems/count-beautiful-numbers/) | Hard | :heavy_check_mark: |
+| 3492 | [Maximum Containers on a Ship](code3492.rs) | [link](https://leetcode.com/problems/maximum-containers-on-a-ship/) | Easy | :heavy_check_mark: |
+| 3493 | [Properties Graph](code3493.rs) | [link](https://leetcode.com/problems/properties-graph/) | Medium | :heavy_check_mark: |
+| 3494 | [Find the Minimum Amount of Time to Brew Potions](code3494.rs) | [link](https://leetcode.com/problems/find-the-minimum-amount-of-time-to-brew-potions/) | Medium | :heavy_check_mark: |
+| 3495 | [Minimum Operations to Make Array Elements Zero](code3495.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-array-elements-zero/) | Hard | :heavy_check_mark: |
