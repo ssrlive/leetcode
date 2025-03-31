@@ -414,3 +414,15 @@ cargo test
 | 3493 | [Properties Graph](code3493.rs) | [link](https://leetcode.com/problems/properties-graph/) | Medium | :heavy_check_mark: |
 | 3494 | [Find the Minimum Amount of Time to Brew Potions](code3494.rs) | [link](https://leetcode.com/problems/find-the-minimum-amount-of-time-to-brew-potions/) | Medium | :heavy_check_mark: |
 | 3495 | [Minimum Operations to Make Array Elements Zero](code3495.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-array-elements-zero/) | Hard | :heavy_check_mark: |
+| 3498 | [Reverse Degree of a String](code3498.rs) | [link](https://leetcode.com/problems/reverse-degree-of-a-string/) | Easy | :heavy_check_mark: |
+| 3499 | [Maximize Active Section with Trade I](code3499.rs) | [link](https://leetcode.com/problems/maximize-active-section-with-trade-i/) | Medium | :heavy_check_mark: |
+| 3500 | [Minimum Cost to Divide Array Into Subarrays](code3500.rs) | [link](https://leetcode.com/problems/minimum-cost-to-divide-array-into-subarrays/) | Hard | :heavy_check_mark: |
+
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
+| 3501 | [Maximize Active Section with Trade II](code3501.rs) | [link](https://leetcode.com/problems/maximize-active-section-with-trade-ii/) | Hard | :heavy_check_mark: |
+| 3502 | [Minimum Cost to Reach Every Position](code3502.rs) | [link](https://leetcode.com/problems/minimum-cost-to-reach-every-position/) | Easy | :heavy_check_mark: |
+| 3503 | [Longest Palindrome After Substring Concatenation I](code3503.rs) | [link](https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-i/) | Medium | :heavy_check_mark: |
+| 3504 | [Longest Palindrome After Substring Concatenation II](code3504.rs) | [link](https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/) | Hard | :heavy_check_mark: |
+| 3505 | [Minimum Operations to Make Elements Within K Subarrays Equal](code3505.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard | :heavy_check_mark: |
