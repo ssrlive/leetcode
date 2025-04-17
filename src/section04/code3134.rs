@@ -61,7 +61,7 @@ impl Solution {
         let sz = n * (n + 1) / 2;
         let mut l = 1;
         let mut r = n as i32;
-        let median = (sz + 1) / 2;
+        let median = sz.div_ceil(2);
 
         while l < r {
             let m = (l + r) / 2;

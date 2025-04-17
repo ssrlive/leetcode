@@ -98,7 +98,7 @@ impl Solution {
         tasks.sort();
         workers.sort_by(|a, b| b.cmp(a));
         while l < r {
-            let mid = (l + r + 1) / 2;
+            let mid = (l + r).div_ceil(2);
             if check(&tasks, &workers, pills, strength, mid) {
                 l = mid;
             } else {

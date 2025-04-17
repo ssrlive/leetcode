@@ -48,21 +48,16 @@ struct Solution;
 
 impl Solution {
     pub fn max_distance(nums1: Vec<i32>, nums2: Vec<i32>) -> i32 {
-        let mut max = 0;
-        for (i1, &n1) in nums1.iter().enumerate() {
-            let mut left = i1;
-            let mut right = nums2.len() - 1;
-            while left < right {
-                let mid = left + (right - left + 1) / 2;
-                if nums2[mid] >= n1 {
-                    left = mid;
-                } else {
-                    right = mid - 1;
-                }
+        let (mut i, mut j, mut res) = (0_i32, 0_i32, 0_i32);
+        while (i as usize) < nums1.len() && (j as usize) < nums2.len() {
+            if nums1[i as usize] > nums2[j as usize] {
+                i += 1;
+            } else {
+                res = res.max(j - i);
+                j += 1;
             }
-            max = max.max(left - i1);
         }
-        max as _
+        res
     }
 }
 

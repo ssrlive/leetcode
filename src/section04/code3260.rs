@@ -53,7 +53,7 @@ struct Solution;
 
 impl Solution {
     pub fn largest_palindrome(n: i32, k: i32) -> String {
-        use std::iter::{once, repeat};
+        use std::iter::once;
         let n = n as usize;
         match k {
             1 | 3 | 9 => "9".repeat(n),
@@ -61,24 +61,23 @@ impl Solution {
                 if n == 1 {
                     "5".to_string()
                 } else {
-                    once('5').chain(repeat('9').take(n - 2)).chain(once('5')).collect()
+                    once('5').chain(std::iter::repeat_n('9', n - 2)).chain(once('5')).collect()
                 }
             }
             2 => {
                 if n == 1 {
                     "8".to_string()
                 } else {
-                    once('8').chain(repeat('9').take(n - 2)).chain(once('8')).collect()
+                    once('8').chain(std::iter::repeat_n('9', n - 2)).chain(once('8')).collect()
                 }
             }
             4 => {
                 if n <= 4 {
                     "8".repeat(n)
                 } else {
-                    repeat('8')
-                        .take(2)
-                        .chain(repeat('9').take(n - 4))
-                        .chain(repeat('8').take(2))
+                    std::iter::repeat_n('8', 2)
+                        .chain(std::iter::repeat_n('9', n - 4))
+                        .chain(std::iter::repeat_n('8', 2))
                         .collect()
                 }
             }
@@ -86,10 +85,9 @@ impl Solution {
                 if n <= 6 {
                     "8".repeat(n)
                 } else {
-                    repeat('8')
-                        .take(3)
-                        .chain(repeat('9').take(n - 6))
-                        .chain(repeat('8').take(3))
+                    std::iter::repeat_n('8', 3)
+                        .chain(std::iter::repeat_n('9', n - 6))
+                        .chain(std::iter::repeat_n('8', 3))
                         .collect()
                 }
             }
@@ -100,51 +98,45 @@ impl Solution {
                     "888".to_string()
                 } else if n % 2 == 0 {
                     once('8')
-                        .chain(repeat('9').take((n - 4) / 2))
-                        .chain(repeat('7').take(2))
-                        .chain(repeat('9').take((n - 4) / 2))
+                        .chain(std::iter::repeat_n('9', (n - 4) / 2))
+                        .chain(std::iter::repeat_n('7', 2))
+                        .chain(std::iter::repeat_n('9', (n - 4) / 2))
                         .chain(once('8'))
                         .collect()
                 } else {
                     once('8')
-                        .chain(repeat('9').take((n - 3) / 2))
+                        .chain(std::iter::repeat_n('9', (n - 3) / 2))
                         .chain(once('8'))
-                        .chain(repeat('9').take((n - 3) / 2))
+                        .chain(std::iter::repeat_n('9', (n - 3) / 2))
                         .chain(once('8'))
                         .collect()
                 }
             }
             7 => match n % 12 {
                 0 | 6 => "9".repeat(n),
-                1 | 5 => repeat('9')
-                    .take((n - 1) / 2)
+                1 | 5 => std::iter::repeat_n('9', (n - 1) / 2)
                     .chain(once('7'))
-                    .chain(repeat('9').take((n - 1) / 2))
+                    .chain(std::iter::repeat_n('9', (n - 1) / 2))
                     .collect(),
-                2 | 4 => repeat('9')
-                    .take(n / 2 - 1)
-                    .chain(repeat('7').take(2))
-                    .chain(repeat('9').take(n / 2 - 1))
+                2 | 4 => std::iter::repeat_n('9', n / 2 - 1)
+                    .chain(std::iter::repeat_n('7', 2))
+                    .chain(std::iter::repeat_n('9', n / 2 - 1))
                     .collect(),
-                3 => repeat('9')
-                    .take((n - 1) / 2)
+                3 => std::iter::repeat_n('9', (n - 1) / 2)
                     .chain(once('5'))
-                    .chain(repeat('9').take((n - 1) / 2))
+                    .chain(std::iter::repeat_n('9', (n - 1) / 2))
                     .collect(),
-                7 | 11 => repeat('9')
-                    .take((n - 1) / 2)
+                7 | 11 => std::iter::repeat_n('9', (n - 1) / 2)
                     .chain(once('4'))
-                    .chain(repeat('9').take((n - 1) / 2))
+                    .chain(std::iter::repeat_n('9', (n - 1) / 2))
                     .collect(),
-                8 | 10 => repeat('9')
-                    .take(n / 2 - 1)
-                    .chain(repeat('4').take(2))
-                    .chain(repeat('9').take(n / 2 - 1))
+                8 | 10 => std::iter::repeat_n('9', n / 2 - 1)
+                    .chain(std::iter::repeat_n('4', 2))
+                    .chain(std::iter::repeat_n('9', n / 2 - 1))
                     .collect(),
-                9 => repeat('9')
-                    .take((n - 1) / 2)
+                9 => std::iter::repeat_n('9', (n - 1) / 2)
                     .chain(once('6'))
-                    .chain(repeat('9').take((n - 1) / 2))
+                    .chain(std::iter::repeat_n('9', (n - 1) / 2))
                     .collect(),
                 _ => String::new(),
             },

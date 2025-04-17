@@ -54,9 +54,9 @@ impl Solution {
         }
         let mut res = 2e9 as i64;
         for i in 0..a.len() - k + 1 {
-            res = res.min(b[i + k] - b[k / 2 + i] - b[(k + 1) / 2 + i] + b[i]);
+            res = res.min(b[i + k] - b[k / 2 + i] - b[k.div_ceil(2) + i] + b[i]);
         }
-        res -= ((k / 2) * ((k + 1) / 2)) as i64;
+        res -= ((k / 2) * k.div_ceil(2)) as i64;
         res as _
     }
 }

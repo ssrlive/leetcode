@@ -54,7 +54,7 @@ impl Solution {
 
         // Take greedily
         let mut rez = 0;
-        let mut left = (n + 1) / 2;
+        let mut left = n.div_ceil(2);
         for freq in (1..=max_freq).rev() {
             let available = freqs[freq] * freq;
             if available >= left {

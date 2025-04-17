@@ -59,7 +59,7 @@ struct Solution;
 
 impl Solution {
     pub fn min_length_after_removals(nums: Vec<i32>) -> i32 {
-        let (mut i, mut j, mut res) = (0, (nums.len() + 1) / 2, nums.len());
+        let (mut i, mut j, mut res) = (0, nums.len().div_ceil(2), nums.len());
         while j < nums.len() {
             if nums[i] < nums[j] {
                 i += 1;

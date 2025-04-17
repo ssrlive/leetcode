@@ -38,8 +38,7 @@ struct Solution;
 
 impl Solution {
     pub fn generate_the_string(n: i32) -> String {
-        std::iter::repeat('a')
-            .take((n - 1 + n % 2) as usize)
+        std::iter::repeat_n('a', (n - 1 + n % 2) as usize)
             .chain(std::iter::once('b').take((1 - n % 2) as usize))
             .collect()
     }

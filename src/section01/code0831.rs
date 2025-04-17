@@ -81,7 +81,7 @@ impl Solution {
             let s = s.to_lowercase();
             let mut name = s.split('@').next().unwrap().to_string();
             name.replace_range(1..name.len() - 1, "*****");
-            name + "@" + s.split('@').last().unwrap()
+            name + "@" + s.split('@').next_back().unwrap()
         } else {
             let num = s.chars().filter(|c| c.is_ascii_digit()).collect::<String>();
             if num.len() == 10 {

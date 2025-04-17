@@ -47,7 +47,7 @@ impl Solution {
                 let mut left = 0;
                 let mut right = std::cmp::min(m - i, n - j);
                 while left < right {
-                    let mid = (left + right + 1) / 2;
+                    let mid = (left + right).div_ceil(2);
                     let sum = dp[i + mid][j + mid] - dp[i + mid][j] - dp[i][j + mid] + dp[i][j];
                     if sum <= threshold {
                         left = mid;

@@ -34,7 +34,7 @@ impl Solution {
         for i in (0..s.len()).step_by(2 * k) {
             let j = i + k - 1;
             let j = if j < s.len() { j } else { s.len() - 1 };
-            for k in 0..(j - i + 1) / 2 {
+            for k in 0..(j - i).div_ceil(2) {
                 s.swap(i + k, j - k);
             }
         }

@@ -58,9 +58,9 @@ impl Solution {
         for (i, &item) in arr.iter().enumerate() {
             let l = i + 1;
             let r = n - i;
-            let l_odd = (l + 1) / 2;
+            let l_odd = l.div_ceil(2);
             let l_even = l / 2;
-            let r_odd = (r + 1) / 2;
+            let r_odd = r.div_ceil(2);
             let r_even = r / 2;
             ans += item as usize * (l_odd * r_odd + l_even * r_even);
         }

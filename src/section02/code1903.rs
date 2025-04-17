@@ -40,7 +40,7 @@ struct Solution;
 
 impl Solution {
     pub fn largest_odd_number(num: String) -> String {
-        let max_odd_ind = num.char_indices().filter(|&(_, c)| (c as u8) % 2 == 1).last();
+        let max_odd_ind = num.char_indices().filter(|&(_, c)| (c as u8) % 2 == 1).next_back();
         match max_odd_ind {
             None => "",
             Some((ind, _)) => &num[..=ind],

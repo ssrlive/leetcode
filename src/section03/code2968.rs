@@ -62,9 +62,9 @@ impl Solution {
         let mut r = n;
 
         while l < r {
-            let m = (l + r + 1) / 2;
+            let m = (l + r).div_ceil(2);
             for i in 0..n - m + 1 {
-                if s[i + m] - s[(2 * i + m + 1) / 2] - s[(2 * i + m) / 2] + s[i] <= k {
+                if s[i + m] - s[(2 * i + m).div_ceil(2)] - s[(2 * i + m) / 2] + s[i] <= k {
                     l = m;
                     break;
                 }

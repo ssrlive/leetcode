@@ -63,7 +63,7 @@ impl Solution {
     pub fn count_good_integers(n: i32, k: i32) -> i64 {
         let k = k as i64;
         let n = n as usize;
-        let s = 10i64.pow(((n + 1) / 2) as u32 - 1);
+        let s = 10i64.pow(n.div_ceil(2) as u32 - 1);
         let d = n / 2;
         let b = 10i64.pow(d as u32);
         let r = if n % 2 == 0 { 1 } else { 10 };

@@ -57,7 +57,7 @@ impl Solution {
         pizzas.sort_unstable();
         let n = pizzas.len();
         let total_days = n / 4;
-        let odd_days = (total_days + 1) / 2;
+        let odd_days = total_days.div_ceil(2);
         let even_days = total_days - odd_days;
 
         let mut total_weight = 0i64;
