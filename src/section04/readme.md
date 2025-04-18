@@ -426,3 +426,15 @@ cargo test
 | 3503 | [Longest Palindrome After Substring Concatenation I](code3503.rs) | [link](https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-i/) | Medium | :heavy_check_mark: |
 | 3504 | [Longest Palindrome After Substring Concatenation II](code3504.rs) | [link](https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/) | Hard | :heavy_check_mark: |
 | 3505 | [Minimum Operations to Make Elements Within K Subarrays Equal](code3505.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard | :heavy_check_mark: |
+| 3507 | [Minimum Pair Removal to Sort Array I](code3507.rs) | [link](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-i/) | Easy | :heavy_check_mark: |
+| 3508 | [Implement Router](code3508.rs) | [link](https://leetcode.com/problems/implement-router/) | Medium | :heavy_check_mark: |
+| 3509 | [Maximum Product of Subsequences With an Alternating Sum Equal to K](code3509.rs) | [link](https://leetcode.com/problems/maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k/) | Hard | :heavy_check_mark: |
+| 3510 | [Minimum Pair Removal to Sort Array II](code3510.rs) | [link](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-ii/) | Hard | :heavy_check_mark: |
+| 3512 | [Minimum Operations to Make Array Sum Divisible by K](code3512.rs) | [link](https://leetcode.com/problems/minimum-operations-to-make-array-sum-divisible-by-k/) | Easy | :heavy_check_mark: |
+| 3513 | [Number of Unique XOR Triplets I](code3513.rs) | [link](https://leetcode.com/problems/number-of-unique-xor-triplets-i/) | Medium | :heavy_check_mark: |
+| 3514 | [Number of Unique XOR Triplets II](code3514.rs) | [link](https://leetcode.com/problems/number-of-unique-xor-triplets-ii/) | Medium | :heavy_check_mark: |
+| 3515 | [Shortest Path in a Weighted Tree](code3515.rs) | [link](https://leetcode.com/problems/shortest-path-in-a-weighted-tree/) | Hard | :heavy_check_mark: |
+| 3516 | [Find Closest Person](code3516.rs) | [link](https://leetcode.com/problems/find-closest-person/) | Easy | :heavy_check_mark: |
+| 3517 | [Smallest Palindromic Rearrangement I](code3517.rs) | [link](https://leetcode.com/problems/smallest-palindromic-rearrangement-i/) | Medium | :heavy_check_mark: |
+| 3518 | [Smallest Palindromic Rearrangement II](code3518.rs) | [link](https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/) | Hard | :heavy_check_mark: |
+| 3519 | [Count Numbers with Non-Decreasing Digits](code3519.rs) | [link](https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/) | Hard | :heavy_check_mark: |
