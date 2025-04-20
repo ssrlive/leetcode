@@ -438,3 +438,7 @@ cargo test
 | 3517 | [Smallest Palindromic Rearrangement I](code3517.rs) | [link](https://leetcode.com/problems/smallest-palindromic-rearrangement-i/) | Medium | :heavy_check_mark: |
 | 3518 | [Smallest Palindromic Rearrangement II](code3518.rs) | [link](https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/) | Hard | :heavy_check_mark: |
 | 3519 | [Count Numbers with Non-Decreasing Digits](code3519.rs) | [link](https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/) | Hard | :heavy_check_mark: |
+| 3522 | [Calculate Score After Performing Instructions](code3522.rs) | [link](https://leetcode.com/problems/calculate-score-after-performing-instructions/) | Easy | :heavy_check_mark: |
+| 3523 | [Make Array Non-decreasing](code3523.rs) | [link](https://leetcode.com/problems/make-array-non-decreasing/) | Medium | :heavy_check_mark: |
+| 3524 | [Find X Value of Array I](code3524.rs) | [link](https://leetcode.com/problems/find-x-value-of-array-i/) | Medium | :heavy_check_mark: |
+| 3525 | [Find X Value of Array II](code3525.rs) | [link](https://leetcode.com/problems/find-x-value-of-array-ii/) | Hard | :heavy_check_mark: |

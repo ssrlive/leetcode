@@ -397,3 +397,7 @@ mod code3516;
 mod code3517;
 mod code3518;
 mod code3519;
+mod code3522;
+mod code3523;
+mod code3524;
+mod code3525;
