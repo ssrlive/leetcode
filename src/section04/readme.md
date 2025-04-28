@@ -442,3 +442,11 @@ cargo test
 | 3523 | [Make Array Non-decreasing](code3523.rs) | [link](https://leetcode.com/problems/make-array-non-decreasing/) | Medium | :heavy_check_mark: |
 | 3524 | [Find X Value of Array I](code3524.rs) | [link](https://leetcode.com/problems/find-x-value-of-array-i/) | Medium | :heavy_check_mark: |
 | 3525 | [Find X Value of Array II](code3525.rs) | [link](https://leetcode.com/problems/find-x-value-of-array-ii/) | Hard | :heavy_check_mark: |
+| 3527 | [Find the Most Common Response](code3527.rs) | [link](https://leetcode.com/problems/find-the-most-common-response/) | Medium | :heavy_check_mark: |
+| 3528 | [Unit Conversion I](code3528.rs) | [link](https://leetcode.com/problems/unit-conversion-i/) | Medium | :heavy_check_mark: |
+| 3529 | [Count Cells in Overlapping Horizontal and Vertical Substrings](code3529.rs) | [link](https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/) | Medium | :heavy_check_mark: |
+| 3530 | [Maximum Profit from Valid Topological Order in DAG](code3530.rs) | [link](https://leetcode.com/problems/maximum-profit-from-valid-topological-order-in-dag/) | Hard | :heavy_check_mark: |
+| 3531 | [Count Covered Buildings](code3531.rs) | [link](https://leetcode.com/problems/count-covered-buildings/) | Medium | :heavy_check_mark: |
+| 3532 | [Path Existence Queries in a Graph I](code3532.rs) | [link](https://leetcode.com/problems/path-existence-queries-in-a-graph-i/) | Medium | :heavy_check_mark: |
+| 3533 | [Concatenated Divisibility](code3533.rs) | [link](https://leetcode.com/problems/concatenated-divisibility/) | Hard | :heavy_check_mark: |
+| 3534 | [Path Existence Queries in a Graph II](code3534.rs) | [link](https://leetcode.com/problems/path-existence-queries-in-a-graph-ii/) | Hard | :heavy_check_mark: |
