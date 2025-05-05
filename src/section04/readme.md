@@ -450,3 +450,7 @@ cargo test
 | 3532 | [Path Existence Queries in a Graph I](code3532.rs) | [link](https://leetcode.com/problems/path-existence-queries-in-a-graph-i/) | Medium | :heavy_check_mark: |
 | 3533 | [Concatenated Divisibility](code3533.rs) | [link](https://leetcode.com/problems/concatenated-divisibility/) | Hard | :heavy_check_mark: |
 | 3534 | [Path Existence Queries in a Graph II](code3534.rs) | [link](https://leetcode.com/problems/path-existence-queries-in-a-graph-ii/) | Hard | :heavy_check_mark: |
+| 3536 | [Maximum Product of Two Digits](code3536.rs) | [link](https://leetcode.com/problems/maximum-product-of-two-digits/) | Easy | :heavy_check_mark: |
+| 3537 | [Fill a Special Grid](code3537.rs) | [link](https://leetcode.com/problems/fill-a-special-grid/) | Medium | :heavy_check_mark: |
+| 3538 | [Merge Operations for Minimum Travel Time](code3538.rs) | [link](https://leetcode.com/problems/merge-operations-for-minimum-travel-time/) | Hard | :heavy_check_mark: |
+| 3539 | [Find Sum of Array Product of Magical Sequences](code3539.rs) | [link](https://leetcode.com/problems/find-sum-of-array-product-of-magical-sequences/) | Hard | :heavy_check_mark: |
