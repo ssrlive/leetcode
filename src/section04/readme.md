@@ -454,3 +454,11 @@ cargo test
 | 3537 | [Fill a Special Grid](code3537.rs) | [link](https://leetcode.com/problems/fill-a-special-grid/) | Medium | :heavy_check_mark: |
 | 3538 | [Merge Operations for Minimum Travel Time](code3538.rs) | [link](https://leetcode.com/problems/merge-operations-for-minimum-travel-time/) | Hard | :heavy_check_mark: |
 | 3539 | [Find Sum of Array Product of Magical Sequences](code3539.rs) | [link](https://leetcode.com/problems/find-sum-of-array-product-of-magical-sequences/) | Hard | :heavy_check_mark: |
+| 3541 | [Find Most Frequent Vowel and Consonant](code3541.rs) | [link](https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/) | Easy | :heavy_check_mark: |
+| 3542 | [Minimum Operations to Convert All Elements to Zero](code3542.rs) | [link](https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/) | Medium | :heavy_check_mark: |
+| 3543 | [Maximum Weighted K-Edge Path](code3543.rs) | [link](https://leetcode.com/problems/maximum-weighted-k-edge-path/) | Medium | :heavy_check_mark: |
+| 3544 | [Subtree Inversion Sum](code3544.rs) | [link](https://leetcode.com/problems/subtree-inversion-sum/) | Hard | :heavy_check_mark: |
+| 3545 | [Minimum Deletions for At Most K Distinct Characters](code3545.rs) | [link](https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/) | Easy | :heavy_check_mark: |
+| 3546 | [Equal Sum Grid Partition I](code3546.rs) | [link](https://leetcode.com/problems/equal-sum-grid-partition-i/) | Medium | :heavy_check_mark: |
+| 3547 | [Maximum Sum of Edge Values in a Graph](code3547.rs) | [link](https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/) | Hard | :heavy_check_mark: |
+| 3548 | [Equal Sum Grid Partition II](code3548.rs) | [link](https://leetcode.com/problems/equal-sum-grid-partition-ii/) | Hard | :heavy_check_mark: |
