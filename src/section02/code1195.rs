@@ -136,8 +136,7 @@ fn test() {
         t3.join().unwrap();
         t4.join().unwrap();
 
-        let v = result0.lock().unwrap().clone();
-        v
+        result0.lock().unwrap().clone()
     }
 
     assert_eq!(

@@ -87,8 +87,7 @@ impl Solution {
             pl = security[i];
             pr = security[security.len() - 1 - i];
         }
-        let x = Vec::from_iter((&a & &b).iter().cloned());
-        x
+        Vec::from_iter((&a & &b).iter().cloned())
     }
 }
 

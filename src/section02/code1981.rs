@@ -70,14 +70,13 @@ impl Solution {
                 }
             }
         }
-        let result = dp[n]
+        dp[n]
             .iter()
             .enumerate()
             .filter(|x| *x.1)
             .map(|x| (target - x.0 as i32).abs())
             .min()
-            .unwrap();
-        result
+            .unwrap()
     }
 }
 

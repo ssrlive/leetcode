@@ -63,8 +63,7 @@ impl Solution {
             f[i] += f[i - 1] + i2 - last_pos[char_id];
             last_pos[char_id] = i2;
         }
-        let ans = f.iter().sum();
-        ans
+        f.iter().sum()
     }
 }
 
