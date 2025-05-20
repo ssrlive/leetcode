@@ -462,3 +462,11 @@ cargo test
 | 3546 | [Equal Sum Grid Partition I](code3546.rs) | [link](https://leetcode.com/problems/equal-sum-grid-partition-i/) | Medium | :heavy_check_mark: |
 | 3547 | [Maximum Sum of Edge Values in a Graph](code3547.rs) | [link](https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/) | Hard | :heavy_check_mark: |
 | 3548 | [Equal Sum Grid Partition II](code3548.rs) | [link](https://leetcode.com/problems/equal-sum-grid-partition-ii/) | Hard | :heavy_check_mark: |
+| 3550 | [Smallest Index With Digit Sum Equal to Index](code3550.rs) | [link](https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/) | Easy | :heavy_check_mark: |
+
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
+| 3551 | [Minimum Swaps to Sort by Digit Sum](code3551.rs) | [link](https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/) | Medium | :heavy_check_mark: |
+| 3552 | [Grid Teleportation Traversal](code3552.rs) | [link](https://leetcode.com/problems/grid-teleportation-traversal/) | Medium | :heavy_check_mark: |
+| 3553 | [Minimum Weighted Subgraph With the Required Paths II](code3553.rs) | [link](https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths-ii/) | Hard | :heavy_check_mark: |
