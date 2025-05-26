@@ -470,3 +470,11 @@ cargo test
 | 3551 | [Minimum Swaps to Sort by Digit Sum](code3551.rs) | [link](https://leetcode.com/problems/minimum-swaps-to-sort-by-digit-sum/) | Medium | :heavy_check_mark: |
 | 3552 | [Grid Teleportation Traversal](code3552.rs) | [link](https://leetcode.com/problems/grid-teleportation-traversal/) | Medium | :heavy_check_mark: |
 | 3553 | [Minimum Weighted Subgraph With the Required Paths II](code3553.rs) | [link](https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths-ii/) | Hard | :heavy_check_mark: |
+| 3556 | [Sum of Largest Prime Substrings](code3556.rs) | [link](https://leetcode.com/problems/sum-of-largest-prime-substrings/) | Medium | :heavy_check_mark: |
+| 3557 | [Find Maximum Number of Non Intersecting Substrings](code3557.rs) | [link](https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/) | Medium | :heavy_check_mark: |
+| 3558 | [Number of Ways to Assign Edge Weights I](code3558.rs) | [link](https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/) | Medium | :heavy_check_mark: |
+| 3559 | [Number of Ways to Assign Edge Weights II](code3559.rs) | [link](https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-ii/) | Hard | :heavy_check_mark: |
+| 3560 | [Find Minimum Log Transportation Cost](code3560.rs) | [link](https://leetcode.com/problems/find-minimum-log-transportation-cost/) | Easy | :heavy_check_mark: |
+| 3561 | [Resulting String After Adjacent Removals](code3561.rs) | [link](https://leetcode.com/problems/resulting-string-after-adjacent-removals/) | Medium | :heavy_check_mark: |
+| 3562 | [Maximum Profit from Trading Stocks with Discounts](code3562.rs) | [link](https://leetcode.com/problems/maximum-profit-from-trading-stocks-with-discounts/) | Hard | :heavy_check_mark: |
+| 3563 | [Lexicographically Smallest String After Adjacent Removals](code3563.rs) | [link](https://leetcode.com/problems/lexicographically-smallest-string-after-adjacent-removals/) | Hard | :heavy_check_mark: |
