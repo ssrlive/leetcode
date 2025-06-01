@@ -478,3 +478,7 @@ cargo test
 | 3561 | [Resulting String After Adjacent Removals](code3561.rs) | [link](https://leetcode.com/problems/resulting-string-after-adjacent-removals/) | Medium | :heavy_check_mark: |
 | 3562 | [Maximum Profit from Trading Stocks with Discounts](code3562.rs) | [link](https://leetcode.com/problems/maximum-profit-from-trading-stocks-with-discounts/) | Hard | :heavy_check_mark: |
 | 3563 | [Lexicographically Smallest String After Adjacent Removals](code3563.rs) | [link](https://leetcode.com/problems/lexicographically-smallest-string-after-adjacent-removals/) | Hard | :heavy_check_mark: |
+| 3566 | [Partition Array into Two Equal Product Subsets](code3566.rs) | [link](https://leetcode.com/problems/partition-array-into-two-equal-product-subsets/) | Medium | :heavy_check_mark: |
+| 3567 | [Minimum Absolute Difference in Sliding Submatrix](code3567.rs) | [link](https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/) | Medium | :heavy_check_mark: |
+| 3568 | [Minimum Moves to Clean the Classroom](code3568.rs) | [link](https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/) | Medium | :heavy_check_mark: |
+| 3569 | [Maximize Count of Distinct Primes After Split](code3569.rs) | [link](https://leetcode.com/problems/maximize-count-of-distinct-primes-after-split/) | Hard | :heavy_check_mark: |
