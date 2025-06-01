@@ -72,12 +72,12 @@ impl Solution {
             if min_sum > sum && sum > 0 {
                 min_sum = sum;
             }
-            println!("{}", n);
+            println!("{n}");
 
             for i in n..nums.len() as i32 {
                 sum += nums[i as usize];
                 sum -= nums[i as usize - n as usize];
-                println!("{}", sum);
+                println!("{sum}");
 
                 if min_sum > sum && sum > 0 {
                     min_sum = sum;

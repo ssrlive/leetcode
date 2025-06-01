@@ -59,8 +59,8 @@ impl Solution {
         let m = pattern.len();
         let pattern2 = pattern.chars().rev().collect::<String>();
         let s2 = s.chars().rev().collect::<String>();
-        let z1 = Self::z_function(format!("{}{}", pattern, s));
-        let z2 = Self::z_function(format!("{}{}", pattern2, s2));
+        let z1 = Self::z_function(format!("{pattern}{s}"));
+        let z2 = Self::z_function(format!("{pattern2}{s2}"));
         for i in 0..=n - m {
             if z1[m + i] + 1 + z2[n - i] >= m as i32 {
                 return i as i32;

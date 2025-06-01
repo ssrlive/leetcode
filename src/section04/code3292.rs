@@ -62,7 +62,7 @@ impl Solution {
     pub fn min_valid_strings(words: Vec<String>, target: String) -> i32 {
         let mut ps = vec![0; target.len() + 1];
         for w in words.iter() {
-            let pi = Self::prefix_function(&format!("{}#{}", w, target));
+            let pi = Self::prefix_function(&format!("{w}#{target}"));
             for i in 1..=target.len() {
                 ps[i] = ps[i].max(pi[w.len() + i]);
             }

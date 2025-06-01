@@ -65,7 +65,7 @@ impl Solution {
         for n in nums {
             *freq.entry(n).or_insert(0) += 1;
             ans += freq[&n] - 1;
-            let mut s = format!("{:07}", n).chars().collect::<Vec<_>>();
+            let mut s = format!("{n:07}").chars().collect::<Vec<_>>();
             for i in 0..s.len() {
                 for j in i + 1..s.len() {
                     s.swap(i, j);

@@ -62,7 +62,7 @@ impl Solution {
     pub fn min_valid_strings(words: Vec<String>, target: String) -> i32 {
         let mut pis = Vec::new();
         for w in words.iter() {
-            pis.push(Self::prefix_function(&format!("{}#{}", w, target)));
+            pis.push(Self::prefix_function(&format!("{w}#{target}")));
         }
         let mut len = target.len() as i32;
         let mut res = 0;
