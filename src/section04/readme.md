@@ -482,3 +482,11 @@ cargo test
 | 3567 | [Minimum Absolute Difference in Sliding Submatrix](code3567.rs) | [link](https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/) | Medium | :heavy_check_mark: |
 | 3568 | [Minimum Moves to Clean the Classroom](code3568.rs) | [link](https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/) | Medium | :heavy_check_mark: |
 | 3569 | [Maximize Count of Distinct Primes After Split](code3569.rs) | [link](https://leetcode.com/problems/maximize-count-of-distinct-primes-after-split/) | Hard | :heavy_check_mark: |
+| 3572 | [Maximize Y‑Sum by Picking a Triplet of Distinct X‑Values](code3572.rs) | [link](https://leetcode.com/problems/maximize-y-sum-by-picking-a-triplet-of-distinct-x-values/) | Medium | :heavy_check_mark: |
+| 3573 | [Best Time to Buy and Sell Stock V](code3573.rs) | [link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-v/) | Medium | :heavy_check_mark: |
+| 3574 | [Maximize Subarray GCD Score](code3574.rs) | [link](https://leetcode.com/problems/maximize-subarray-gcd-score/) | Hard | :heavy_check_mark: |
+| 3575 | [Maximum Good Subtree Score](code3575.rs) | [link](https://leetcode.com/problems/maximum-good-subtree-score/) | Hard | :heavy_check_mark: |
+| 3576 | [Transform Array to All Equal Elements](code3576.rs) | [link](https://leetcode.com/problems/transform-array-to-all-equal-elements/) | Medium | :heavy_check_mark: |
+| 3577 | [Count the Number of Computer Unlocking Permutations](code3577.rs) | [link](https://leetcode.com/problems/count-the-number-of-computer-unlocking-permutations/) | Medium | :heavy_check_mark: |
+| 3578 | [Count Partitions With Max-Min Difference at Most K](code3578.rs) | [link](https://leetcode.com/problems/count-partitions-with-max-min-difference-at-most-k/) | Medium | :heavy_check_mark: |
+| 3579 | [Minimum Steps to Convert String with Operations](code3579.rs) | [link](https://leetcode.com/problems/minimum-steps-to-convert-string-with-operations/) | Hard | :heavy_check_mark: |
