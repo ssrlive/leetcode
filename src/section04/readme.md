@@ -490,3 +490,7 @@ cargo test
 | 3577 | [Count the Number of Computer Unlocking Permutations](code3577.rs) | [link](https://leetcode.com/problems/count-the-number-of-computer-unlocking-permutations/) | Medium | :heavy_check_mark: |
 | 3578 | [Count Partitions With Max-Min Difference at Most K](code3578.rs) | [link](https://leetcode.com/problems/count-partitions-with-max-min-difference-at-most-k/) | Medium | :heavy_check_mark: |
 | 3579 | [Minimum Steps to Convert String with Operations](code3579.rs) | [link](https://leetcode.com/problems/minimum-steps-to-convert-string-with-operations/) | Hard | :heavy_check_mark: |
+| 3582 | [Generate Tag for Video Caption](code3582.rs) | [link](https://leetcode.com/problems/generate-tag-for-video-caption/) | Easy | :heavy_check_mark: |
+| 3583 | [Count Special Triplets](code3583.rs) | [link](https://leetcode.com/problems/count-special-triplets/) | Medium | :heavy_check_mark: |
+| 3584 | [Maximum Product of First and Last Elements of a Subsequence](code3584.rs) | [link](https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/) | Medium | :heavy_check_mark: |
+| 3585 | [Find Weighted Median Node in Tree](code3585.rs) | [link](https://leetcode.com/problems/find-weighted-median-node-in-tree/) | Hard | :heavy_check_mark: |

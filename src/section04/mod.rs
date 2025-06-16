@@ -445,3 +445,7 @@ mod code3576;
 mod code3577;
 mod code3578;
 mod code3579;
+mod code3582;
+mod code3583;
+mod code3584;
+mod code3585;
