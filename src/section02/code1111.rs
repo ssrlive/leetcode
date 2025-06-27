@@ -70,9 +70,9 @@ impl Solution {
 fn test() {
     let seq = "(()())".to_string();
     let result = Solution::max_depth_after_split(seq);
-    println!("{:?}", result);
+    println!("{result:?}");
 
     let seq = "()(())()".to_string();
     let result = Solution::max_depth_after_split(seq);
-    println!("{:?}", result);
+    println!("{result:?}");
 }

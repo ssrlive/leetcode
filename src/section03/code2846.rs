@@ -78,7 +78,7 @@ impl Solution {
         if lev[u] < lev[v] {
             std::mem::swap(&mut u, &mut v);
         }
-        println!("log: {}", log);
+        println!("log: {log}");
         for i in (0..=log).rev() {
             if (lev[u] as i64 - (1_i64 << i)) >= lev[v] as i64 {
                 u = memo[u][i] as usize;

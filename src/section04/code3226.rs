@@ -53,8 +53,8 @@ impl Solution {
             return -1;
         }
         let mut res = 0;
-        let n_bin = format!("{:b}", n);
-        let k_bin = format!("{:b}", k);
+        let n_bin = format!("{n:b}");
+        let k_bin = format!("{k:b}");
         for c in n_bin.chars() {
             res += c.to_digit(10).unwrap();
         }

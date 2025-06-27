@@ -109,7 +109,7 @@ fn test() {
             Some(r) => r.borrow().val,
             None => -1,
         };
-        println!("{:?} {:?}", val, val2);
+        println!("{val:?} {val2:?}");
         let tmp = n.borrow().next.clone();
         node = tmp;
     }

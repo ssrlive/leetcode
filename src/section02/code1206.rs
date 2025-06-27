@@ -246,7 +246,7 @@ fn test() {
     for _ in 0..N {
         let num = rng.random_range(0..N);
         println!("=====");
-        println!("{}", num);
+        println!("{num}");
         match v.iter().position(|&x| x == num) {
             Some(index) => {
                 assert!(skiplist.erase(num));

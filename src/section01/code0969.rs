@@ -85,6 +85,6 @@ fn test() {
     let cases = vec![(vec![3, 2, 4, 1], vec![4, 2, 4, 3]), (vec![1, 2, 3], vec![])];
     for (arr, _expect) in cases {
         let result = Solution::pancake_sort(arr);
-        println!("result = {:?}", result);
+        println!("result = {result:?}");
     }
 }

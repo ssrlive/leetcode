@@ -35,7 +35,7 @@ struct Solution;
 impl Solution {
     pub fn diff_ways_to_compute(expression: String) -> Vec<i32> {
         let mut result = vec![];
-        for (i, c) in expression.chars().enumerate() {
+        for (i, c) in expression.char_indices() {
             if c == '+' || c == '-' || c == '*' {
                 let left = Self::diff_ways_to_compute(expression[..i].to_string());
                 let right = Self::diff_ways_to_compute(expression[i + 1..].to_string());

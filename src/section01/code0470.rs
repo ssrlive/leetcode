@@ -61,5 +61,5 @@ fn test() {
         let n = Solution::rand10();
         count[n as usize - 1] += 1;
     }
-    println!("{:?}", count);
+    println!("{count:?}");
 }

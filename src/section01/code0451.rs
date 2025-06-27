@@ -56,7 +56,7 @@ fn test_frequency_sort() {
 
     let r = ["cccaaa", "aaaccc"];
     let s = Solution::frequency_sort("cccaaa".to_string());
-    println!("{}", s);
+    println!("{s}");
     assert!(r.contains(&s.as_str()));
 
     let r = ["bbAa", "bbaA"];

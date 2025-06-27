@@ -38,7 +38,7 @@ impl Solution {
     pub fn max_sum(nums: Vec<i32>) -> i32 {
         let mut map = std::collections::HashMap::new();
         for &num in nums.iter() {
-            let max_digit = format!("{}", num).chars().fold(0, |max_digit, n| {
+            let max_digit = format!("{num}").chars().fold(0, |max_digit, n| {
                 let digit = n.to_digit(10).unwrap();
                 max_digit.max(digit)
             });

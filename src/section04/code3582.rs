@@ -70,7 +70,7 @@ impl Solution {
         }
 
         let first_word = words[0].clone();
-        let mut tag = format!("#{}", first_word);
+        let mut tag = format!("#{first_word}");
 
         for word in &words[1..] {
             if tag.len() >= 100 {

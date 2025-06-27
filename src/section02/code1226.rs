@@ -93,11 +93,11 @@ fn test() {
         handles.push(thread::spawn(move || {
             dp.wants_to_eat(
                 i,
-                || println!("{} pick left fork", i),
-                || println!("{} pick right fork", i),
-                || println!("{} eat", i),
-                || println!("{} put left fork", i),
-                || println!("{} put right fork", i),
+                || println!("{i} pick left fork"),
+                || println!("{i} pick right fork"),
+                || println!("{i} eat"),
+                || println!("{i} put left fork"),
+                || println!("{i} put right fork"),
             );
         }));
     }

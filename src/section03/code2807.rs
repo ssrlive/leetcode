@@ -90,6 +90,6 @@ fn test() {
     for (nums, expect) in test_cases {
         let l1 = ListNode::from_vec(&nums);
         let l2 = ListNode::from_vec(&expect);
-        assert_eq!(Solution::insert_greatest_common_divisors(l1), l2, "nums: {:?}", nums);
+        assert_eq!(Solution::insert_greatest_common_divisors(l1), l2, "nums: {nums:?}");
     }
 }

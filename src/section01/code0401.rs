@@ -68,7 +68,7 @@ fn test() {
 
     let result = Solution::read_binary_watch(2);
     assert_eq!(result.len(), 44);
-    println!("{:?}", result);
+    println!("{result:?}");
     assert!(result.contains(&"0:03".to_string()));
     assert!(result.contains(&"0:05".to_string()));
     assert!(result.contains(&"0:06".to_string()));

@@ -99,6 +99,6 @@ fn test_remove_invalid_parentheses() {
     let s = "((()((s((((()".to_string();
     let result = Solution::remove_invalid_parentheses(s);
     assert_eq!(result.len(), 3);
-    println!("{:?}", result);
+    println!("{result:?}");
     assert!(result.contains(&"(()s)".to_string()));
 }

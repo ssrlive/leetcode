@@ -38,7 +38,7 @@ impl Solution {
     }
 
     fn is_symmetric(num: &i32) -> bool {
-        let s = format!("{}", num);
+        let s = format!("{num}");
 
         if s.len() % 2 != 0 {
             return false;

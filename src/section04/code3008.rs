@@ -63,7 +63,7 @@ impl Solution {
     }
 
     fn get_pattern_matching_index(s: &str, a: &str, v: &mut Vec<i32>) {
-        let t = format!("{}@{}", a, s);
+        let t = format!("{a}@{s}");
         let t = t.as_bytes();
         let mut lps = vec![0];
         for i in 1..t.len() {

@@ -43,7 +43,7 @@ impl Solution {
         let mut i = 0;
         let mut res = vec![];
 
-        for (j, c) in s.chars().enumerate() {
+        for (j, c) in s.char_indices() {
             if c == '1' {
                 count += 1;
             } else {

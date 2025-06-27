@@ -98,5 +98,5 @@ fn test() {
     let target = 3;
     let mountain_arr = MountainArray;
     let result = Solution::find_in_mountain_array(target, &mountain_arr);
-    println!("result = {}", result);
+    println!("result = {result}");
 }

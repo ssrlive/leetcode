@@ -50,7 +50,7 @@ impl Solution {
             if s.contains(&temp) {
                 res = temp.len() as i32;
             }
-            temp = format!("0{}1", temp);
+            temp = format!("0{temp}1");
         }
         res
     }
