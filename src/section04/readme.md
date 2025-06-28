@@ -494,3 +494,11 @@ cargo test
 | 3583 | [Count Special Triplets](code3583.rs) | [link](https://leetcode.com/problems/count-special-triplets/) | Medium | :heavy_check_mark: |
 | 3584 | [Maximum Product of First and Last Elements of a Subsequence](code3584.rs) | [link](https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/) | Medium | :heavy_check_mark: |
 | 3585 | [Find Weighted Median Node in Tree](code3585.rs) | [link](https://leetcode.com/problems/find-weighted-median-node-in-tree/) | Hard | :heavy_check_mark: |
+| 3587 | [Minimum Adjacent Swaps to Alternate Parity](code3587.rs) | [link](https://leetcode.com/problems/minimum-adjacent-swaps-to-alternate-parity/) | Medium | :heavy_check_mark: |
+| 3588 | [Find Maximum Area of a Triangle](code3588.rs) | [link](https://leetcode.com/problems/find-maximum-area-of-a-triangle/) | Medium | :heavy_check_mark: |
+| 3589 | [Count Prime-Gap Balanced Subarrays](code3589.rs) | [link](https://leetcode.com/problems/count-prime-gap-balanced-subarrays/) | Medium | :heavy_check_mark: |
+| 3590 | [Kth Smallest Path XOR Sum](code3590.rs) | [link](https://leetcode.com/problems/kth-smallest-path-xor-sum/) | Hard | :heavy_check_mark: |
+| 3591 | [Check if Any Element Has Prime Frequency](code3591.rs) | [link](https://leetcode.com/problems/check-if-any-element-has-prime-frequency/) | Easy | :heavy_check_mark: |
+| 3592 | [Inverse Coin Change](code3592.rs) | [link](https://leetcode.com/problems/inverse-coin-change/) | Medium | :heavy_check_mark: |
+| 3593 | [Minimum Increments to Equalize Leaf Paths](code3593.rs) | [link](https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/) | Medium | :heavy_check_mark: |
+| 3594 | [Minimum Time to Transport All Individuals](code3594.rs) | [link](https://leetcode.com/problems/minimum-time-to-transport-all-individuals/) | Hard | :heavy_check_mark: |
