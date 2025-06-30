@@ -502,3 +502,7 @@ cargo test
 | 3592 | [Inverse Coin Change](code3592.rs) | [link](https://leetcode.com/problems/inverse-coin-change/) | Medium | :heavy_check_mark: |
 | 3593 | [Minimum Increments to Equalize Leaf Paths](code3593.rs) | [link](https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/) | Medium | :heavy_check_mark: |
 | 3594 | [Minimum Time to Transport All Individuals](code3594.rs) | [link](https://leetcode.com/problems/minimum-time-to-transport-all-individuals/) | Hard | :heavy_check_mark: |
+| 3597 | [Partition String](code3597.rs) | [link](https://leetcode.com/problems/partition-string/) | Easy | :heavy_check_mark: |
+| 3598 | [Longest Common Prefix Between Adjacent Strings After Removals](code3598.rs) | [link](https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/) | Medium | :heavy_check_mark: |
+| 3599 | [Partition Array to Minimize XOR](code3599.rs) | [link](https://leetcode.com/problems/partition-array-to-minimize-xor/) | Medium | :heavy_check_mark: |
+| 3600 | [Maximize Spanning Tree Stability with Upgrades](code3600.rs) | [link](https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/) | Hard | :heavy_check_mark: |
