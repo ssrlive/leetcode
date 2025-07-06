@@ -64,10 +64,10 @@ impl Solution {
             sum += b;
             pq.push(Reverse(b));
 
-            if pq.len() > k as usize {
-                if let Some(Reverse(c)) = pq.pop() {
-                    sum -= c;
-                }
+            if pq.len() > k as usize
+                && let Some(Reverse(c)) = pq.pop()
+            {
+                sum -= c;
             }
             if pq.len() == k as usize {
                 ret = ret.max(sum * a);

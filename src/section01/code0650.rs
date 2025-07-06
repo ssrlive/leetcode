@@ -38,7 +38,7 @@ impl Solution {
         for i in 2..=n {
             dp[i] = i;
             for j in 2..=i / 2 {
-                if i % j == 0 {
+                if i.is_multiple_of(j) {
                     dp[i] = dp[j] + dp[i / j];
                     break;
                 }

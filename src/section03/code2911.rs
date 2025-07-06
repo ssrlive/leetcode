@@ -74,7 +74,7 @@ impl Solution {
                         break;
                     }
 
-                    if len % d == 0 {
+                    if len.is_multiple_of(d) {
                         let mut res_d = 0_i64;
                         for offset in 0..d {
                             let mut l = i + offset;

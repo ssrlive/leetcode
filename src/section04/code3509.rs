@@ -102,14 +102,12 @@ impl Solution {
             }
 
             let pos_i32 = pos as i32;
-            if let Some(pos_map) = dp.get(&pos_i32) {
-                if let Some(curr_sum_map) = pos_map.get(&curr_sum) {
-                    if let Some(product_map) = curr_sum_map.get(&product) {
-                        if let Some(is_odd_map) = product_map.get(&is_odd) {
-                            return *is_odd_map;
-                        }
-                    }
-                }
+            if let Some(pos_map) = dp.get(&pos_i32)
+                && let Some(curr_sum_map) = pos_map.get(&curr_sum)
+                && let Some(product_map) = curr_sum_map.get(&product)
+                && let Some(is_odd_map) = product_map.get(&is_odd)
+            {
+                return *is_odd_map;
             }
 
             let mut ans = recursion(pos + 1, curr_sum, product, is_odd, k, n, nums, limit, dp);

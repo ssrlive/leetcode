@@ -82,13 +82,13 @@ impl Solution {
                 res.push(1);
                 for li in i - 1..=i + 1 {
                     for lj in j - 1..=j + 1 {
-                        if let Some(s) = ls.get_mut(&li) {
-                            if s.remove(&lj) {
-                                *x.get_mut(&li).unwrap() -= 1;
-                                *y.get_mut(&lj).unwrap() -= 1;
-                                *a_d.get_mut(&(li + lj)).unwrap() -= 1;
-                                *d_d.get_mut(&(li - lj)).unwrap() -= 1;
-                            }
+                        if let Some(s) = ls.get_mut(&li)
+                            && s.remove(&lj)
+                        {
+                            *x.get_mut(&li).unwrap() -= 1;
+                            *y.get_mut(&lj).unwrap() -= 1;
+                            *a_d.get_mut(&(li + lj)).unwrap() -= 1;
+                            *d_d.get_mut(&(li - lj)).unwrap() -= 1;
                         }
                     }
                 }

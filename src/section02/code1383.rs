@@ -67,10 +67,10 @@ impl Solution {
         for &(Reverse(e), s) in &v {
             sum += s;
             bh.push(Reverse(s));
-            if bh.len() > k as usize {
-                if let Some(Reverse(min)) = bh.pop() {
-                    sum -= min;
-                }
+            if bh.len() > k as usize
+                && let Some(Reverse(min)) = bh.pop()
+            {
+                sum -= min;
             }
             answer = answer.max(sum * e);
         }

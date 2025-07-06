@@ -48,13 +48,13 @@ impl Solution {
         let mut answer: Vec<String> = Vec::with_capacity(tickets.len() + 1);
         let mut stack: Vec<&str> = vec!["JFK"];
         while let Some(src) = stack.last() {
-            if let Some(dsts) = graph.get_mut(src) {
-                if !dsts.is_empty() {
-                    if let Some(dst) = dsts.pop() {
-                        stack.push(dst.0);
-                    }
-                    continue;
+            if let Some(dsts) = graph.get_mut(src)
+                && !dsts.is_empty()
+            {
+                if let Some(dst) = dsts.pop() {
+                    stack.push(dst.0);
                 }
+                continue;
             }
             if let Some(last) = stack.pop() {
                 answer.push(last.to_string());

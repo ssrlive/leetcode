@@ -45,7 +45,7 @@ impl Solution {
     pub fn is_balanced(num: String) -> bool {
         let (mut even_sum, mut odd_sum) = (0, 0);
         for (i, c) in num.chars().enumerate() {
-            if i % 2 == 0 {
+            if i.is_multiple_of(2) {
                 even_sum += c.to_digit(10).unwrap();
             } else {
                 odd_sum += c.to_digit(10).unwrap();

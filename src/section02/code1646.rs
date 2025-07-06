@@ -60,7 +60,7 @@ impl Solution {
         nums[1] = 1;
         let mut max = 1;
         for i in 2..=n as usize {
-            if i % 2 == 0 {
+            if i.is_multiple_of(2) {
                 nums[i] = nums[i / 2];
             } else {
                 nums[i] = nums[i / 2] + nums[i / 2 + 1];

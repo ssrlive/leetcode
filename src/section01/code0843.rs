@@ -90,11 +90,11 @@ impl Solution {
                             groups[h[i][j]].push(j);
                         }
                     }
-                    if let Some(maxsize) = groups.iter().map(|g| g.len()).max() {
-                        if maxsize < minsize {
-                            minsize = maxsize;
-                            ret = i;
-                        }
+                    if let Some(maxsize) = groups.iter().map(|g| g.len()).max()
+                        && maxsize < minsize
+                    {
+                        minsize = maxsize;
+                        ret = i;
                     }
                 }
             }

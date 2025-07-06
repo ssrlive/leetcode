@@ -50,7 +50,7 @@ impl Solution {
         use std::collections::{HashMap, HashSet};
         fn prime_set(n: usize) -> HashSet<usize> {
             for i in 2..((n as f64).sqrt() as usize + 1) {
-                if n % i == 0 {
+                if n.is_multiple_of(i) {
                     let mut set = prime_set(n / i);
                     set.insert(i);
                     return set;

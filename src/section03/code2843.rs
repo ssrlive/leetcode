@@ -40,7 +40,7 @@ impl Solution {
     fn is_symmetric(num: &i32) -> bool {
         let s = format!("{num}");
 
-        if s.len() % 2 != 0 {
+        if !s.len().is_multiple_of(2) {
             return false;
         }
 

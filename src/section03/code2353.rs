@@ -87,12 +87,12 @@ impl FoodRatings {
     }
 
     fn change_rating(&mut self, food: String, new_rating: i32) {
-        if let Some(&i) = self.food_index.get(&food) {
-            if let Some(s) = self.rate_lists.get_mut(&self.cuisines[i]) {
-                s.remove(&(self.ratings[i] as usize, i));
-                self.ratings[i] = new_rating;
-                s.insert((self.ratings[i] as usize, i));
-            }
+        if let Some(&i) = self.food_index.get(&food)
+            && let Some(s) = self.rate_lists.get_mut(&self.cuisines[i])
+        {
+            s.remove(&(self.ratings[i] as usize, i));
+            self.ratings[i] = new_rating;
+            s.insert((self.ratings[i] as usize, i));
         }
     }
 

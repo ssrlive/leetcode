@@ -88,7 +88,7 @@ impl Solution {
             true
         }
 
-        if s.len() % 2 != 0 {
+        if !s.len().is_multiple_of(2) {
             return false;
         }
         scan(&s, &locked, '(', ')') && scan(&s, &locked, ')', '(')

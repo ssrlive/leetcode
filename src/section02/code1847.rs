@@ -61,10 +61,10 @@ impl Solution {
                 ans = floor;
                 ans_abs = (preferred_id - floor).abs();
             }
-            if let Some(&ceiling) = ceiling {
-                if ans_abs > (preferred_id - ceiling).abs() {
-                    ans = ceiling;
-                }
+            if let Some(&ceiling) = ceiling
+                && ans_abs > (preferred_id - ceiling).abs()
+            {
+                ans = ceiling;
             }
             ans
         }

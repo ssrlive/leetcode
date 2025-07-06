@@ -48,7 +48,7 @@ struct Solution;
 impl Solution {
     pub fn merge_stones(stones: Vec<i32>, k: i32) -> i32 {
         let (n, k) = (stones.len(), k as usize);
-        if (n - 1) % (k - 1) != 0 {
+        if !(n - 1).is_multiple_of(k - 1) {
             return -1;
         }
 

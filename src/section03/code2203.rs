@@ -89,10 +89,10 @@ impl Solution {
 
         let mut min_dist = None;
         for u in 0..n {
-            if let (Some(d1), Some(d2), Some(dd)) = (dist_s1[u], dist_s2[u], dist_de[u]) {
-                if !matches!(min_dist, Some(d) if d <= d1 + d2 + dd) {
-                    min_dist = Some(d1 + d2 + dd);
-                }
+            if let (Some(d1), Some(d2), Some(dd)) = (dist_s1[u], dist_s2[u], dist_de[u])
+                && !matches!(min_dist, Some(d) if d <= d1 + d2 + dd)
+            {
+                min_dist = Some(d1 + d2 + dd);
             }
         }
         min_dist.unwrap_or(-1)

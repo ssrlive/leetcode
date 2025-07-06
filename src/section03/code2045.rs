@@ -79,10 +79,10 @@ impl Solution {
         let mut visited: Vec<[Option<i32>; 2]> = vec![[None, None]; n];
         visited[0][0] = Some(0);
         while let Some((cost, v)) = queue.pop_front() {
-            if v == n - 1 {
-                if let Some(cost_1) = visited[v][1] {
-                    return cost_1;
-                }
+            if v == n - 1
+                && let Some(cost_1) = visited[v][1]
+            {
+                return cost_1;
             }
             let wait_time = if cost % (2 * change) < change {
                 0

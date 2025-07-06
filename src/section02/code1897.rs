@@ -48,7 +48,7 @@ impl Solution {
                 counter
             })
             .iter()
-            .all(|x| *x % l == 0)
+            .all(|x: &usize| (*x).is_multiple_of(l))
     }
 }
 

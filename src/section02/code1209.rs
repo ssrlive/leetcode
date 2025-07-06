@@ -45,14 +45,14 @@ impl Solution {
     pub fn remove_duplicates(s: String, k: i32) -> String {
         let mut stack = Vec::new();
         for c in s.chars() {
-            if let Some((last_c, last_count)) = stack.last_mut() {
-                if *last_c == c {
-                    *last_count += 1;
-                    if *last_count == k {
-                        stack.pop();
-                    }
-                    continue;
+            if let Some((last_c, last_count)) = stack.last_mut()
+                && *last_c == c
+            {
+                *last_count += 1;
+                if *last_count == k {
+                    stack.pop();
                 }
+                continue;
             }
             stack.push((c, 1));
         }

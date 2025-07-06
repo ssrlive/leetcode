@@ -51,7 +51,7 @@ impl Solution {
 
         let mut ret = 0;
         for (i, &item) in v.iter().enumerate() {
-            if i % 2 == 0 {
+            if i.is_multiple_of(2) {
                 ret += item;
             } else {
                 ret -= item;

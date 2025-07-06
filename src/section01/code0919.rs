@@ -54,12 +54,12 @@ impl CBTInserter {
         let mut queue = std::collections::VecDeque::new();
         queue.push_back(root);
         while !queue.is_empty() {
-            if let Some(node) = queue.pop_front() {
-                if let Some(_node) = &node {
-                    nodes.push(node.clone());
-                    queue.push_back(_node.borrow().left.clone());
-                    queue.push_back(_node.borrow().right.clone());
-                }
+            if let Some(node) = queue.pop_front()
+                && let Some(_node) = &node
+            {
+                nodes.push(node.clone());
+                queue.push_back(_node.borrow().left.clone());
+                queue.push_back(_node.borrow().right.clone());
             }
         }
         Self { nodes }
@@ -69,7 +69,7 @@ impl CBTInserter {
         let n = self.nodes.len();
         let node = Some(Rc::new(RefCell::new(TreeNode::new(v))));
         self.nodes.push(node.clone());
-        if n % 2 != 0 {
+        if !n.is_multiple_of(2) {
             self.nodes[(n - 1) / 2].as_ref().unwrap().borrow_mut().left = node;
         } else {
             self.nodes[(n - 1) / 2].as_ref().unwrap().borrow_mut().right = node;

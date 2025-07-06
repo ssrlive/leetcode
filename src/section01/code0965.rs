@@ -37,15 +37,15 @@ impl Solution {
                 let val = node.borrow().val;
                 let left = node.borrow().left.clone();
                 let right = node.borrow().right.clone();
-                if let Some(left) = left {
-                    if left.borrow().val != val {
-                        return false;
-                    }
+                if let Some(left) = left
+                    && left.borrow().val != val
+                {
+                    return false;
                 }
-                if let Some(right) = right {
-                    if right.borrow().val != val {
-                        return false;
-                    }
+                if let Some(right) = right
+                    && right.borrow().val != val
+                {
+                    return false;
                 }
                 return _is_unival_tree(node.borrow().left.clone()) && _is_unival_tree(node.borrow().right.clone());
             }

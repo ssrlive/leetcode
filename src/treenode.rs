@@ -65,8 +65,8 @@ impl TreeNode {
         let mut queue = std::collections::VecDeque::new();
         queue.push_back(root.clone());
         while let Some(node) = queue.pop_front() {
-            if node.is_some() {
-                let node = node.as_ref().unwrap().borrow();
+            if let Some(node) = &node {
+                let node = node.borrow();
                 v.push(Some(node.val));
                 queue.push_back(node.left.clone());
                 queue.push_back(node.right.clone());

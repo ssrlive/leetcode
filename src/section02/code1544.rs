@@ -52,11 +52,12 @@ impl Solution {
     pub fn make_good(s: String) -> String {
         let mut res = Vec::<char>::new();
         for c in s.chars() {
-            if let Some(&last) = res.last() {
-                if last != c && last.eq_ignore_ascii_case(&c) {
-                    res.pop();
-                    continue;
-                }
+            if let Some(&last) = res.last()
+                && last != c
+                && last.eq_ignore_ascii_case(&c)
+            {
+                res.pop();
+                continue;
             }
             res.push(c);
         }

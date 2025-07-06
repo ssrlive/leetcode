@@ -68,7 +68,7 @@ impl Solution {
         let mut alice = 0;
         let mut bob = 0;
         for (i, item) in v.iter().enumerate().take(n) {
-            if i % 2 == 0 {
+            if i.is_multiple_of(2) {
                 alice += item.1;
             } else {
                 bob += item.2;

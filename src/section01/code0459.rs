@@ -36,7 +36,7 @@ impl Solution {
         let s = s.as_bytes();
         let n = s.len();
         for i in 1..=n / 2 {
-            if n % i == 0 {
+            if n.is_multiple_of(i) {
                 let mut j = i;
                 while j < n && s[j] == s[j % i] {
                     j += 1;

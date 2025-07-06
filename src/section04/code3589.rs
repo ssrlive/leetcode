@@ -100,10 +100,10 @@ impl Solution {
             }
 
             while !ms.is_empty() && ms[ms.len() - 1] - ms[0] > k {
-                if is_prime[nums[l] as usize] {
-                    if let Some(pos) = ms.iter().position(|&x| x == nums[l]) {
-                        ms.remove(pos);
-                    }
+                if is_prime[nums[l] as usize]
+                    && let Some(pos) = ms.iter().position(|&x| x == nums[l])
+                {
+                    ms.remove(pos);
                 }
                 l += 1;
             }

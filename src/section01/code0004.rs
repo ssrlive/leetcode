@@ -52,7 +52,7 @@ impl Solution {
                 arr2_index += 1;
             }
         }
-        if merged_array_len % 2 == 0 {
+        if merged_array_len.is_multiple_of(2) {
             (last + one_before) as f64 / 2.0
         } else {
             last as f64
@@ -65,7 +65,7 @@ impl Solution {
         nums.extend(nums2);
         nums.sort_unstable();
         let n = nums.len();
-        if n % 2 == 0 {
+        if n.is_multiple_of(2) {
             (nums[n / 2 - 1] + nums[n / 2]) as f64 / 2.0
         } else {
             nums[n / 2] as f64

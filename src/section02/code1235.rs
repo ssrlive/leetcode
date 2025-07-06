@@ -49,10 +49,10 @@ impl Solution {
         let mut btm = BTreeMap::new();
         btm.insert(0, 0);
         for &i in &index {
-            if let Some((_, &p)) = btm.range(..=start_time[i]).last() {
-                if p + profit[i] > *btm.iter().last().unwrap().1 {
-                    btm.insert(end_time[i], p + profit[i]);
-                }
+            if let Some((_, &p)) = btm.range(..=start_time[i]).last()
+                && p + profit[i] > *btm.iter().last().unwrap().1
+            {
+                btm.insert(end_time[i], p + profit[i]);
             }
         }
         *btm.iter().last().unwrap().1

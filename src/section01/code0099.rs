@@ -59,14 +59,14 @@ impl Solution {
                 stack.push(node);
             }
             if let Some(node) = stack.pop() {
-                if let Some(p) = pred {
-                    if p.borrow_mut().val > node.borrow_mut().val {
-                        y = Some(node.clone());
-                        if x.is_none() {
-                            x = Some(p);
-                        } else {
-                            break;
-                        }
+                if let Some(p) = pred
+                    && p.borrow_mut().val > node.borrow_mut().val
+                {
+                    y = Some(node.clone());
+                    if x.is_none() {
+                        x = Some(p);
+                    } else {
+                        break;
                     }
                 }
                 pred = Some(node.clone());

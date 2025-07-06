@@ -93,10 +93,10 @@ impl Solution {
                     if stack.pop().unwrap() == '!' {
                         value = !value;
                     }
-                    if let Some(&op) = stack.last() {
-                        if (value && op == '|') || (!value && op == '&') {
-                            short_circuit = paren_count;
-                        }
+                    if let Some(&op) = stack.last()
+                        && ((value && op == '|') || (!value && op == '&'))
+                    {
+                        short_circuit = paren_count;
                     }
                 }
                 _ => {}

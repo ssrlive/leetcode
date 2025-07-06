@@ -37,7 +37,7 @@ struct Solution;
 
 impl Solution {
     pub fn find_numbers(nums: Vec<i32>) -> i32 {
-        nums.iter().map(|n| n.to_string()).filter(|v| v.len() % 2 == 0).count() as i32
+        nums.iter().map(|n| n.to_string()).filter(|v| v.len().is_multiple_of(2)).count() as i32
     }
 
     pub fn find_numbers_2(nums: Vec<i32>) -> i32 {

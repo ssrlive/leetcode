@@ -68,7 +68,7 @@ impl Solution {
                 j += 1;
             }
             z[i] = j;
-            if i % k as usize == 0 && z[i] + i == n {
+            if i.is_multiple_of(k as usize) && z[i] + i == n {
                 return i as i32 / k;
             }
             if z[i] + i > r + 1 {

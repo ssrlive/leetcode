@@ -52,12 +52,12 @@ impl Solution {
             if time + c[0] <= c[1] {
                 time += c[0];
                 heap.push(c[0]);
-            } else if let Some(&t) = heap.peek() {
-                if t > c[0] {
-                    time += c[0] - t;
-                    heap.pop();
-                    heap.push(c[0]);
-                }
+            } else if let Some(&t) = heap.peek()
+                && t > c[0]
+            {
+                time += c[0] - t;
+                heap.pop();
+                heap.push(c[0]);
             }
         }
         heap.len() as i32

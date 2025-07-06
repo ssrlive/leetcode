@@ -115,7 +115,7 @@ impl Solution {
                 i += 1;
             }
 
-            if j % 2 == 0 {
+            if j.is_multiple_of(2) {
                 s += t[j - 1];
                 j -= 1;
             }

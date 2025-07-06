@@ -67,7 +67,7 @@ impl Solution {
         if gcd < 2 {
             return false;
         }
-        count_map.values().all(|&x| x % gcd == 0)
+        count_map.values().all(|&x| x.is_multiple_of(gcd))
     }
 }
 

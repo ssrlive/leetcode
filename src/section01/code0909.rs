@@ -68,7 +68,7 @@ impl Solution {
                 let mut v = u + 1;
                 while v <= u + 6 && v <= n * n {
                     let (i, mut j) = (m - 1 - (v - 1) / n, (v - 1) % n);
-                    if (m - 1 - i) % 2 != 0 {
+                    if !(m - 1 - i).is_multiple_of(2) {
                         j = n - 1 - j;
                     }
                     let w = board[i][j];

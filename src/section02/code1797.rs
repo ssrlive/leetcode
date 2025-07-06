@@ -68,10 +68,10 @@ impl AuthenticationManager {
     }
 
     fn renew(&mut self, token_id: String, current_time: i32) {
-        if let Some(expiry) = self.tokens.get_mut(&token_id) {
-            if *expiry > current_time {
-                *expiry = current_time + self.time_to_live;
-            }
+        if let Some(expiry) = self.tokens.get_mut(&token_id)
+            && *expiry > current_time
+        {
+            *expiry = current_time + self.time_to_live;
         }
     }
 

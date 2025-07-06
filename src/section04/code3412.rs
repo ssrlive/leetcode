@@ -65,11 +65,11 @@ impl Solution {
             let cur = (s_i - b'a') as i64;
             let mirror = 25 - cur;
             let mut done = false;
-            if let Some(v) = mp.get_mut(&mirror) {
-                if let Some(j) = v.pop() {
-                    ans += i as i64 - j;
-                    done = true;
-                }
+            if let Some(v) = mp.get_mut(&mirror)
+                && let Some(j) = v.pop()
+            {
+                ans += i as i64 - j;
+                done = true;
             }
             if !done {
                 mp.entry(cur).or_default().push(i as i64);

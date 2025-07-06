@@ -59,7 +59,7 @@ impl Solution {
             let mut i = 2;
             let mut map = HashMap::new();
             while i * i <= k {
-                if k % i == 0 {
+                if k.is_multiple_of(i) {
                     *map.entry(i).or_insert(0) += 1;
                     k /= i;
                 } else {

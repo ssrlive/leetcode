@@ -71,7 +71,7 @@ impl Solution {
             node.next = None;
             data.push(node);
             if data.len() == sz {
-                if sz % 2 == 0 {
+                if sz.is_multiple_of(2) {
                     data.reverse();
                 }
                 for p in data {
@@ -83,7 +83,7 @@ impl Solution {
         }
 
         if !data.is_empty() {
-            if data.len() % 2 == 0 {
+            if data.len().is_multiple_of(2) {
                 data.reverse();
             }
             for p in data {

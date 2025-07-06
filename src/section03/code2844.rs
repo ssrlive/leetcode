@@ -52,7 +52,7 @@ impl Solution {
         let i = i as usize;
         for j in (0..i).rev() {
             let t = (num[i] as u8 - b'0') + (num[j] as u8 - b'0') * 10;
-            if t % 25 == 0 {
+            if t.is_multiple_of(25) {
                 return num.len() - j - 2;
             }
         }

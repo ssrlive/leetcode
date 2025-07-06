@@ -58,7 +58,7 @@ impl Solution {
         let mut evens = vec![0; n + 1];
 
         for i in 0..n {
-            if i % 2 == 0 {
+            if i.is_multiple_of(2) {
                 odds[i + 1] = odds[i];
                 evens[i + 1] = nums[i] + evens[i];
             } else {
@@ -71,7 +71,7 @@ impl Solution {
         for i in 0..n {
             let ov = odds[i] - odds[0] + evens[n] - evens[i];
             let ev = evens[i] - evens[0] + odds[n] - odds[i];
-            if i % 2 == 0 {
+            if i.is_multiple_of(2) {
                 if ov - nums[i] == ev {
                     result += 1;
                 }

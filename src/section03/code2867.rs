@@ -72,14 +72,14 @@ struct Helper {
 
 impl Helper {
     fn new(edges: Vec<Vec<i32>>) -> Self {
-        let mut primes = vec![];
-        for i in 2..1000 {
+        let mut primes: Vec<usize> = vec![];
+        for i in 2..1000_usize {
             if i * i > 100000 {
                 break;
             }
             let mut flag = 1;
             for p in &primes {
-                if i % (*p) != 0 {
+                if !i.is_multiple_of(*p) {
                     continue;
                 }
                 flag = 0;
@@ -112,7 +112,7 @@ impl Helper {
             if *p >= i {
                 break;
             }
-            if i % (*p) == 0 {
+            if i.is_multiple_of(*p) {
                 return false;
             }
         }

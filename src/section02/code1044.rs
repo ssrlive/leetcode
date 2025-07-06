@@ -36,10 +36,10 @@ impl Solution {
             let mut hm = HashMap::new();
             for i in 0..=s.len() - len {
                 let hash = (v[i + len] - v[i] * pow).rem_euclid(MOD);
-                if let Some(&j) = hm.get(&hash) {
-                    if (0..len).all(|k| s[i + k] == s[j + k]) {
-                        return Some(i);
-                    }
+                if let Some(&j) = hm.get(&hash)
+                    && (0..len).all(|k| s[i + k] == s[j + k])
+                {
+                    return Some(i);
                 }
                 hm.insert(hash, i);
             }

@@ -97,12 +97,12 @@ impl Solution {
                     bot.insert(Reverse((count - 1, nums[i - k as usize])));
                 }
                 *cnt.get_mut(&nums[i - k as usize]).unwrap() -= 1;
-                if top.len() < x as usize {
-                    if let Some(it) = bot.iter().next().copied() {
-                        running_sum += it.0.0 * it.0.1;
-                        top.insert(it);
-                        bot.remove(&it);
-                    }
+                if top.len() < x as usize
+                    && let Some(it) = bot.iter().next().copied()
+                {
+                    running_sum += it.0.0 * it.0.1;
+                    top.insert(it);
+                    bot.remove(&it);
                 }
             }
             if i as i64 + 1 >= k {

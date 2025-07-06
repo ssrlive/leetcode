@@ -45,7 +45,7 @@ impl Solution {
     pub fn min_anagram_length(s: String) -> i32 {
         let n = s.len();
         for i in 1..=n {
-            if n % i == 0 && Self::is_anagram(s.as_str(), i) {
+            if n.is_multiple_of(i) && Self::is_anagram(s.as_str(), i) {
                 return i as i32;
             }
         }

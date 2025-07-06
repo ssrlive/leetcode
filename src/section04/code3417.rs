@@ -58,7 +58,7 @@ impl Solution {
     pub fn zigzag_traversal(grid: Vec<Vec<i32>>) -> Vec<i32> {
         let mut res = Vec::new();
         for (i, r) in grid.iter().enumerate() {
-            if i % 2 == 0 {
+            if i.is_multiple_of(2) {
                 res.extend_from_slice(r);
             } else {
                 res.extend_from_slice(&r.iter().rev().cloned().collect::<Vec<i32>>());

@@ -41,7 +41,7 @@ struct Solution;
 impl Solution {
     pub fn kth_palindrome(queries: Vec<i32>, int_length: i32) -> Vec<i64> {
         fn generate_palindromes(pos: i32, len: u32) -> i64 {
-            if len % 2 == 0 {
+            if len.is_multiple_of(2) {
                 let left_half = (pos - 1) + 10_i32.pow((len - 1) / 2);
                 format!("{}{}", left_half, left_half.to_string().chars().rev().collect::<String>())
             } else {

@@ -45,11 +45,11 @@ impl Solution {
             let mut dp = vec![1; arr.len()];
             for i in 0..arr.len() {
                 for j in 0..i {
-                    if arr[i] % arr[j] == 0 {
-                        if let Some(&k) = map.get(&(arr[i] / arr[j])) {
-                            dp[i] += dp[j] * dp[k];
-                            dp[i] %= 1_000_000_007;
-                        }
+                    if arr[i] % arr[j] == 0
+                        && let Some(&k) = map.get(&(arr[i] / arr[j]))
+                    {
+                        dp[i] += dp[j] * dp[k];
+                        dp[i] %= 1_000_000_007;
                     }
                 }
             }

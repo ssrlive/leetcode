@@ -37,7 +37,7 @@ impl Solution {
         let mut index = 0;
         let mut map = std::collections::HashMap::new();
 
-        if n % group_size as usize != 0 {
+        if !n.is_multiple_of(group_size as usize) {
             return false;
         }
 

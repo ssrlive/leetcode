@@ -73,20 +73,20 @@ impl Solution {
                 for _ in 0..len_q {
                     if let Some(cur) = queue.pop_front() {
                         ans.push(cur.borrow().val);
-                        if let Some(left) = cur.clone().borrow().left.clone() {
-                            if seen.insert(left.clone().borrow().val) {
-                                queue.push_back(left);
-                            }
+                        if let Some(left) = cur.clone().borrow().left.clone()
+                            && seen.insert(left.clone().borrow().val)
+                        {
+                            queue.push_back(left);
                         }
-                        if let Some(right) = cur.clone().borrow().right.clone() {
-                            if seen.insert(right.clone().borrow().val) {
-                                queue.push_back(right);
-                            }
+                        if let Some(right) = cur.clone().borrow().right.clone()
+                            && seen.insert(right.clone().borrow().val)
+                        {
+                            queue.push_back(right);
                         }
-                        if let Some(prnt) = chd_to_prnt.get(&cur.clone().borrow().val) {
-                            if seen.insert(prnt.clone().borrow().val) {
-                                queue.push_back(prnt.clone());
-                            }
+                        if let Some(prnt) = chd_to_prnt.get(&cur.clone().borrow().val)
+                            && seen.insert(prnt.clone().borrow().val)
+                        {
+                            queue.push_back(prnt.clone());
                         }
                     }
                 }

@@ -93,11 +93,11 @@ impl Solution {
             let mut count_2 = 0;
             let mut count_5 = 0;
             let mut k = i;
-            while k % 2 == 0 {
+            while k.is_multiple_of(2) {
                 k /= 2;
                 count_2 += 1;
             }
-            while k % 5 == 0 {
+            while k.is_multiple_of(5) {
                 k /= 5;
                 count_5 += 1;
             }

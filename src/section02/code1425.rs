@@ -58,10 +58,10 @@ impl Solution {
                 }
             }
             q.push_back(i);
-            if let Some(&j) = q.front() {
-                if i as i32 - j as i32 >= k {
-                    q.pop_front();
-                }
+            if let Some(&j) = q.front()
+                && i as i32 - j as i32 >= k
+            {
+                q.pop_front();
             }
         }
         max

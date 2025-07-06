@@ -85,7 +85,7 @@ impl Solution {
                 while n != 1 {
                     let p = divisor[n];
                     let mut d = 0;
-                    while n % p == 0 {
+                    while n.is_multiple_of(p) {
                         d += 1;
                         n /= p;
                     }

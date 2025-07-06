@@ -45,7 +45,7 @@ impl Solution {
         let mut cnt0 = 0;
         let mut cnt1 = 0;
         for (i, c) in s.chars().enumerate() {
-            if i % 2 == 0 {
+            if i.is_multiple_of(2) {
                 if c == '1' {
                     cnt0 += 1;
                 } else {

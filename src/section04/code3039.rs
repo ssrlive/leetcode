@@ -51,11 +51,11 @@ impl Solution {
         }
         let mut ans = String::new();
         for c in s.chars().rev() {
-            if let Some(count) = mp.get_mut(&c) {
-                if *count == maxi {
-                    ans.insert(0, c);
-                    mp.remove(&c);
-                }
+            if let Some(count) = mp.get_mut(&c)
+                && *count == maxi
+            {
+                ans.insert(0, c);
+                mp.remove(&c);
             }
         }
         ans

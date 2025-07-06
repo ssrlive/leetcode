@@ -64,7 +64,7 @@ impl Solution {
         let nx = max(n1, n2);
         let nn = min(n1, n2);
 
-        (nn != 0 && n0 % 2 == 0) || (nx > nn + 2 && n0 % 2 == 1)
+        (nn != 0 && n0.is_multiple_of(2)) || (nx > nn + 2 && n0 % 2 == 1)
     }
 }
 

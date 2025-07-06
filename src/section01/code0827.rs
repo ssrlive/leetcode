@@ -72,10 +72,11 @@ impl Solution {
                     for d in [0, 1, 0, !0, 0].windows(2) {
                         let i = i.wrapping_add(d[0]);
                         let j = j.wrapping_add(d[1]);
-                        if i < n && j < n {
-                            if let Some(idx) = ids[i][j] {
-                                v.push(idx);
-                            }
+                        if i < n
+                            && j < n
+                            && let Some(idx) = ids[i][j]
+                        {
+                            v.push(idx);
                         }
                     }
                 }

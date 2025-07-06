@@ -55,7 +55,7 @@ impl Solution {
         let mut even_num = 0;
         for (i, &num) in nums.iter().enumerate() {
             let v = num;
-            if i % 2 == 0 {
+            if i.is_multiple_of(2) {
                 odd_num += 1;
                 *odds.entry(v).or_insert(0) += 1;
             } else {

@@ -103,10 +103,10 @@ impl Solution {
 
                 traversed += 1;
 
-                if let Some(cost) = next.cost.as_ref() {
-                    if let Some(total) = dfs(t, root, i + traversed, dp) {
-                        res = res.min(total + cost);
-                    }
+                if let Some(cost) = next.cost.as_ref()
+                    && let Some(total) = dfs(t, root, i + traversed, dp)
+                {
+                    res = res.min(total + cost);
                 }
 
                 curr = next;

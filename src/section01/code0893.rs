@@ -49,7 +49,7 @@ impl Solution {
             let mut even = String::new();
             let mut odd = String::new();
             for (i, c) in word.chars().enumerate() {
-                if i % 2 == 0 {
+                if i.is_multiple_of(2) {
                     even.push(c);
                 } else {
                     odd.push(c);

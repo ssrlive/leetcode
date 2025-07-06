@@ -53,7 +53,7 @@ impl Solution {
                 }
             }
             i = (i + 1) % 4;
-            step += i32::from(i % 2 == 0);
+            step += i32::from(i.is_multiple_of(2));
         }
         ans
     }

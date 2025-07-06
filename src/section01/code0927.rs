@@ -46,7 +46,7 @@ impl Solution {
             .enumerate()
             .filter_map(|(i, &a)| if a == 1 { Some(i) } else { None })
             .collect::<Vec<_>>();
-        if arr.len() < 3 || v.len() % 3 != 0 {
+        if arr.len() < 3 || !v.len().is_multiple_of(3) {
             return [-1, -1].to_vec();
         }
         if v.is_empty() {

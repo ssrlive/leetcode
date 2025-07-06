@@ -72,7 +72,7 @@ impl Solution {
             ret *= a;
         }
         negative.sort();
-        if negative.len() % 2 != 0 {
+        if !negative.len().is_multiple_of(2) {
             negative.pop();
         }
         for a in negative {

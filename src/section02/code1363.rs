@@ -63,7 +63,7 @@ impl Solution {
             }
             return fin_res.iter().map(|a| ((*a + '0' as i32) as u8) as char).collect::<String>();
         }
-        if cnt_g1 > 0 && cnt_g1 % 3 == 0 && cnt_g2 % 3 == 2 {
+        if cnt_g1 > 0 && cnt_g1.is_multiple_of(3) && cnt_g2 % 3 == 2 {
             for _ in 0..(cnt_g1 - 1) {
                 if bucket[7] > 0 {
                     res.push(7);
@@ -88,7 +88,7 @@ impl Solution {
                     bucket[2] -= 1;
                 }
             }
-        } else if cnt_g2 > 0 && cnt_g2 % 3 == 0 && cnt_g1 % 3 == 2 {
+        } else if cnt_g2 > 0 && cnt_g2.is_multiple_of(3) && cnt_g1 % 3 == 2 {
             for _ in 0..(cnt_g2 - 1) {
                 if bucket[8] > 0 {
                     res.push(8);
@@ -164,10 +164,10 @@ impl Solution {
             }
         }
         res.sort_by(|a, b| b.cmp(a));
-        if let Some(&v) = res.first() {
-            if v == 0 {
-                return String::from("0");
-            }
+        if let Some(&v) = res.first()
+            && v == 0
+        {
+            return String::from("0");
         }
         res.iter().map(|a| ((*a + '0' as i32) as u8) as char).collect::<String>()
     }

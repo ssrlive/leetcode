@@ -55,7 +55,7 @@ impl Solution {
                 }
             }
         }
-        let sign = if nums.len() % 2 == 0 { 1 } else { -1 };
+        let sign = if nums.len().is_multiple_of(2) { 1 } else { -1 };
         (heap.iter().fold(1, |prod, &x| (prod * x) % 1_000_000_007) * sign) as _
     }
 }

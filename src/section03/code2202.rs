@@ -58,7 +58,7 @@ impl Solution {
             return if len_n == 1 { -1 } else { nums[1] };
         };
         if len_n == 1 {
-            return if k % 2 == 0 { nums[0] } else { -1 };
+            return if k.is_multiple_of(2) { nums[0] } else { -1 };
         };
         let max: i32 = {
             let mut max: i32 = 0;

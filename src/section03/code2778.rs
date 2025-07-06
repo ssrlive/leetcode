@@ -39,7 +39,7 @@ impl Solution {
         let len = nums.len();
         nums.iter()
             .enumerate()
-            .filter_map(|(i, x)| if len % (i + 1) == 0 { Some(x * x) } else { None })
+            .filter_map(|(i, x)| if len.is_multiple_of(i + 1) { Some(x * x) } else { None })
             .sum()
     }
 }

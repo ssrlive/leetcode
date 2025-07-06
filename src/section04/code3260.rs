@@ -96,7 +96,7 @@ impl Solution {
                     "6".repeat(n)
                 } else if n == 3 {
                     "888".to_string()
-                } else if n % 2 == 0 {
+                } else if n.is_multiple_of(2) {
                     once('8')
                         .chain(std::iter::repeat_n('9', (n - 4) / 2))
                         .chain(std::iter::repeat_n('7', 2))

@@ -66,7 +66,7 @@ impl Solution {
         let s = 10i64.pow(n.div_ceil(2) as u32 - 1);
         let d = n / 2;
         let b = 10i64.pow(d as u32);
-        let r = if n % 2 == 0 { 1 } else { 10 };
+        let r = if n.is_multiple_of(2) { 1 } else { 10 };
 
         let mut seen = vec![false; s as usize * 10];
         let mut res = 0;

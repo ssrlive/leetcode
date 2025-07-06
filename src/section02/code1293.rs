@@ -55,10 +55,10 @@ impl Solution {
                 let i = i.wrapping_add(d[0]);
                 let j = j.wrapping_add(d[1]);
                 if (0..rows).contains(&i) && (0..cols).contains(&j) && k - grid[i][j] >= 0 {
-                    if let Some(v) = visited[i][j] {
-                        if k - grid[i][j] <= v {
-                            continue;
-                        }
+                    if let Some(v) = visited[i][j]
+                        && k - grid[i][j] <= v
+                    {
+                        continue;
                     }
                     visited[i][j] = Some(k - grid[i][j]);
                     vd.push_back(((i, j), steps + 1, k - grid[i][j]));

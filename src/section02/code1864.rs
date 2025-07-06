@@ -57,7 +57,7 @@ impl Solution {
         }
         let mut uncommon_1 = 0;
         for (i, &s_i) in s.iter().enumerate() {
-            if i % 2 == 0 {
+            if i.is_multiple_of(2) {
                 if s_i != '0' {
                     uncommon_1 += 1;
                 }

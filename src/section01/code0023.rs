@@ -22,11 +22,11 @@ impl Solution {
             let mut min: Option<&Box<ListNode>> = None;
             let mut min_index = 0;
             for (i, item) in lists.iter().enumerate() {
-                if let Some(node) = item {
-                    if min.is_none() || node.val < min?.val {
-                        min = Some(node);
-                        min_index = i;
-                    }
+                if let Some(node) = item
+                    && (min.is_none() || node.val < min?.val)
+                {
+                    min = Some(node);
+                    min_index = i;
                 }
             }
             if min.is_none() {

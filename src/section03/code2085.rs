@@ -48,10 +48,10 @@ impl Solution {
         let (mut m1, mut m2) = (HashMap::new(), HashMap::new());
         words1.iter().for_each(|w| *m1.entry(w).or_insert(0) += 1);
         words2.iter().for_each(|w| {
-            if let Some(v) = m1.get(w) {
-                if v == &1 {
-                    *m2.entry(w).or_insert(0) += 1;
-                }
+            if let Some(v) = m1.get(w)
+                && v == &1
+            {
+                *m2.entry(w).or_insert(0) += 1;
             }
         });
         m2.values().filter(|v| **v == 1).count() as _

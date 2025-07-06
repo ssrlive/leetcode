@@ -49,7 +49,7 @@ impl Solution {
         let s = croak_of_frogs.chars().collect::<Vec<char>>();
         let n = s.len();
 
-        if n % 5 != 0 {
+        if !n.is_multiple_of(5) {
             return -1;
         }
 

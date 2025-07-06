@@ -78,7 +78,7 @@ impl Solution {
         fn add(s: &str, a: i32) -> String {
             let mut res = String::new();
             for (i, c) in s.chars().enumerate() {
-                if i % 2 == 0 {
+                if i.is_multiple_of(2) {
                     res.push(c);
                 } else {
                     res.push((b'0' + (c as u8 - b'0' + a as u8) % 10) as char);

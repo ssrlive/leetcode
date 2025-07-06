@@ -75,16 +75,16 @@ impl CountIntervals {
             self.mp.insert(left, right);
             return;
         }
-        if let Some((&key, &value)) = self.mp.range(..left + 1).next_back() {
-            if value + 1 >= left {
-                if value > right {
-                    self.cnt -= right - left + 1;
-                } else {
-                    self.cnt -= value + 1 - left;
-                }
-                left = key;
-                right = right.max(value);
+        if let Some((&key, &value)) = self.mp.range(..left + 1).next_back()
+            && value + 1 >= left
+        {
+            if value > right {
+                self.cnt -= right - left + 1;
+            } else {
+                self.cnt -= value + 1 - left;
             }
+            left = key;
+            right = right.max(value);
         }
         let mut done = false;
         while !done {
@@ -98,12 +98,12 @@ impl CountIntervals {
                 done = false;
             }
         }
-        if let Some((&key, &value)) = self.mp.range(left + 1..).next() {
-            if right + 1 >= key {
-                self.cnt -= right + 1 - key;
-                right = value;
-                self.mp.remove(&key);
-            }
+        if let Some((&key, &value)) = self.mp.range(left + 1..).next()
+            && right + 1 >= key
+        {
+            self.cnt -= right + 1 - key;
+            right = value;
+            self.mp.remove(&key);
         }
 
         self.mp.insert(left, right);

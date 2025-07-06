@@ -70,10 +70,10 @@ impl Solution {
 
         let mut start = *graph.keys().next().unwrap();
         for (key, val) in &out_degree {
-            if let Some(val1) = in_degree.get(key) {
-                if *val <= *val1 {
-                    continue;
-                }
+            if let Some(val1) = in_degree.get(key)
+                && *val <= *val1
+            {
+                continue;
             }
             start = *key;
             break;

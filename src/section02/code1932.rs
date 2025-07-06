@@ -78,8 +78,8 @@ impl Solution {
             roots: &mut HashMap<i32, Option<Rc<RefCell<TreeNode>>>>,
             unique_vals: &mut HashSet<i32>,
         ) {
-            if r.is_some() {
-                let val = r.as_ref().unwrap().borrow().val;
+            if let Some(_r) = &r {
+                let val = _r.borrow().val;
                 unique_vals.insert(val);
                 if roots.contains_key(&val) {
                     leaves.push(r);

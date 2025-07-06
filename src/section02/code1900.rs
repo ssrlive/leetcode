@@ -101,7 +101,7 @@ impl Solution {
                     right -= 1;
                 }
             }
-            if arr.len() % 2 != 0 {
+            if !arr.len().is_multiple_of(2) {
                 nextarr[left as usize] = arr[arr.len() / 2];
             }
             Solution::dfs(&nextarr, round + 1, mn, mx, first, second);

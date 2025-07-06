@@ -47,7 +47,7 @@ impl Solution {
         for &num in nums.iter() {
             xor ^= num;
         }
-        xor == 0 || nums.len() % 2 == 0
+        xor == 0 || nums.len().is_multiple_of(2)
     }
 }
 

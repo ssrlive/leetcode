@@ -109,20 +109,20 @@ impl Solution {
                 break;
             }
 
-            if let Some((_, i)) = left.pop() {
-                if n > 0 {
-                    n -= 1;
-                    tm += time[i][0];
-                    right_wait.push(Reverse((tm + time[i][1], i)));
-                    continue;
-                }
+            if let Some((_, i)) = left.pop()
+                && n > 0
+            {
+                n -= 1;
+                tm += time[i][0];
+                right_wait.push(Reverse((tm + time[i][1], i)));
+                continue;
             }
 
             let mut new_time = i32::MAX;
-            if let Some(Reverse((t, _))) = left_wait.peek() {
-                if n > 0 {
-                    new_time = new_time.min(*t);
-                }
+            if let Some(Reverse((t, _))) = left_wait.peek()
+                && n > 0
+            {
+                new_time = new_time.min(*t);
             }
             if let Some(Reverse((t, _))) = right_wait.peek() {
                 new_time = new_time.min(*t);
