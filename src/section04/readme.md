@@ -506,3 +506,14 @@ cargo test
 | 3598 | [Longest Common Prefix Between Adjacent Strings After Removals](code3598.rs) | [link](https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/) | Medium | :heavy_check_mark: |
 | 3599 | [Partition Array to Minimize XOR](code3599.rs) | [link](https://leetcode.com/problems/partition-array-to-minimize-xor/) | Medium | :heavy_check_mark: |
 | 3600 | [Maximize Spanning Tree Stability with Upgrades](code3600.rs) | [link](https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
+| 3602 | [Hexadecimal and Hexatrigesimal Conversion](code3602.rs) | [link](https://leetcode.com/problems/hexadecimal-and-hexatrigesimal-conversion/) | Easy | :heavy_check_mark: |
+| 3603 | [Minimum Cost Path with Alternating Directions II](code3603.rs) | [link](https://leetcode.com/problems/minimum-cost-path-with-alternating-directions-ii/) | Medium | :heavy_check_mark: |
+| 3604 | [Minimum Time to Reach Destination in Directed Graph](code3604.rs) | [link](https://leetcode.com/problems/minimum-time-to-reach-destination-in-directed-graph/) | Medium | :heavy_check_mark: |
+| 3605 | [Minimum Stability Factor of Array](code3605.rs) | [link](https://leetcode.com/problems/minimum-stability-factor-of-array/) | Hard | :heavy_check_mark: |
+| 3606 | [Coupon Code Validator](code3606.rs) | [link](https://leetcode.com/problems/coupon-code-validator/) | Easy | :heavy_check_mark: |
+| 3607 | [Power Grid Maintenance](code3607.rs) | [link](https://leetcode.com/problems/power-grid-maintenance/) | Medium | :heavy_check_mark: |
+| 3608 | [Minimum Time for K Connected Components](code3608.rs) | [link](https://leetcode.com/problems/minimum-time-for-k-connected-components/) | Medium | :heavy_check_mark: |
+| 3609 | [Minimum Moves to Reach Target in Grid](code3609.rs) | [link](https://leetcode.com/problems/minimum-moves-to-reach-target-in-grid/) | Hard | :heavy_check_mark: |
