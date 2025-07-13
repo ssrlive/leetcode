@@ -517,3 +517,7 @@ cargo test
 | 3607 | [Power Grid Maintenance](code3607.rs) | [link](https://leetcode.com/problems/power-grid-maintenance/) | Medium | :heavy_check_mark: |
 | 3608 | [Minimum Time for K Connected Components](code3608.rs) | [link](https://leetcode.com/problems/minimum-time-for-k-connected-components/) | Medium | :heavy_check_mark: |
 | 3609 | [Minimum Moves to Reach Target in Grid](code3609.rs) | [link](https://leetcode.com/problems/minimum-moves-to-reach-target-in-grid/) | Hard | :heavy_check_mark: |
+| 3612 | [Process String with Special Operations I](code3612.rs) | [link](https://leetcode.com/problems/process-string-with-special-operations-i/) | Medium | :heavy_check_mark: |
+| 3613 | [Minimize Maximum Component Cost](code3613.rs) | [link](https://leetcode.com/problems/minimize-maximum-component-cost/) | Medium | :heavy_check_mark: |
+| 3614 | [Process String with Special Operations II](code3614.rs) | [link](https://leetcode.com/problems/process-string-with-special-operations-ii/) | Hard | :heavy_check_mark: |
+| 3615 | [Longest Palindromic Path in Graph](code3615.rs) | [link](https://leetcode.com/problems/longest-palindromic-path-in-graph/) | Hard | :heavy_check_mark: |

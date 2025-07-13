@@ -469,3 +469,7 @@ mod code3606;
 mod code3607;
 mod code3608;
 mod code3609;
+mod code3612;
+mod code3613;
+mod code3614;
+mod code3615;
