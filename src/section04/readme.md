@@ -521,3 +521,15 @@ cargo test
 | 3613 | [Minimize Maximum Component Cost](code3613.rs) | [link](https://leetcode.com/problems/minimize-maximum-component-cost/) | Medium | :heavy_check_mark: |
 | 3614 | [Process String with Special Operations II](code3614.rs) | [link](https://leetcode.com/problems/process-string-with-special-operations-ii/) | Hard | :heavy_check_mark: |
 | 3615 | [Longest Palindromic Path in Graph](code3615.rs) | [link](https://leetcode.com/problems/longest-palindromic-path-in-graph/) | Hard | :heavy_check_mark: |
+| 3618 | [Split Array by Prime Indices](code3618.rs) | [link](https://leetcode.com/problems/split-array-by-prime-indices/) | Medium | :heavy_check_mark: |
+| 3619 | [Count Islands With Total Value Divisible by K](code3619.rs) | [link](https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k/) | Medium | :heavy_check_mark: |
+| 3620 | [Network Recovery Pathways](code3620.rs) | [link](https://leetcode.com/problems/network-recovery-pathways/) | Hard | :heavy_check_mark: |
+| 3621 | [Number of Integers With Popcount-Depth Equal to K I](code3621.rs) | [link](https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-i/) | Hard | :heavy_check_mark: |
+| 3622 | [Check Divisibility by Digit Sum and Product](code3622.rs) | [link](https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/) | Easy | :heavy_check_mark: |
+| 3623 | [Count Number of Trapezoids I](code3623.rs) | [link](https://leetcode.com/problems/count-number-of-trapezoids-i/) | Medium | :heavy_check_mark: |
+| 3624 | [Number of Integers With Popcount-Depth Equal to K II](code3624.rs) | [link](https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/) | Hard | :heavy_check_mark: |
+| 3625 | [Count Number of Trapezoids II](code3625.rs) | [link](https://leetcode.com/problems/count-number-of-trapezoids-ii/) | Hard | :heavy_check_mark: |
+| 3627 | [Maximum Median Sum of Subsequences of Size 3](code3627.rs) | [link](https://leetcode.com/problems/maximum-median-sum-of-subsequences-of-size-3/) | Medium | :heavy_check_mark: |
+| 3628 | [Maximum Number of Subsequences After One Inserting](code3628.rs) | [link](https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/) | Medium | :heavy_check_mark: |
+| 3629 | [Minimum Jumps to Reach End via Prime Teleportation](code3629.rs) | [link](https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium | :heavy_check_mark: |
+| 3630 | [Partition Array for Maximum XOR and AND](code3630.rs) | [link](https://leetcode.com/problems/partition-array-for-maximum-xor-and-and/) | Hard | :heavy_check_mark: |
