@@ -533,3 +533,11 @@ cargo test
 | 3628 | [Maximum Number of Subsequences After One Inserting](code3628.rs) | [link](https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/) | Medium | :heavy_check_mark: |
 | 3629 | [Minimum Jumps to Reach End via Prime Teleportation](code3629.rs) | [link](https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium | :heavy_check_mark: |
 | 3630 | [Partition Array for Maximum XOR and AND](code3630.rs) | [link](https://leetcode.com/problems/partition-array-for-maximum-xor-and-and/) | Hard | :heavy_check_mark: |
+| 3633 | [Earliest Finish Time for Land and Water Rides I](code3633.rs) | [link](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/) | Easy | :heavy_check_mark: |
+| 3634 | [Minimum Removals to Balance Array](code3634.rs) | [link](https://leetcode.com/problems/minimum-removals-to-balance-array/) | Medium | :heavy_check_mark: |
+| 3635 | [Earliest Finish Time for Land and Water Rides II](code3635.rs) | [link](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-ii/) | Medium | :heavy_check_mark: |
+| 3636 | [Threshold Majority Queries](code3636.rs) | [link](https://leetcode.com/problems/threshold-majority-queries/) | Hard | :heavy_check_mark: |
+| 3637 | [Trionic Array I](code3637.rs) | [link](https://leetcode.com/problems/trionic-array-i/) | Easy | :heavy_check_mark: |
+| 3638 | [Maximum Balanced Shipments](code3638.rs) | [link](https://leetcode.com/problems/maximum-balanced-shipments/) | Medium | :heavy_check_mark: |
+| 3639 | [Minimum Time to Activate String](code3639.rs) | [link](https://leetcode.com/problems/minimum-time-to-activate-string/) | Medium | :heavy_check_mark: |
+| 3640 | [Trionic Array II](code3640.rs) | [link](https://leetcode.com/problems/trionic-array-ii/) | Hard | :heavy_check_mark: |
