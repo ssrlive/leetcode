@@ -44,7 +44,7 @@ impl Solution {
         let indices = nums
             .iter()
             .enumerate()
-            .filter(|&(_i, &n)| (n == 1))
+            .filter(|&(_i, &n)| n == 1)
             .map(|(i, &_n)| i)
             .collect::<Vec<_>>();
         if indices.is_empty() {

@@ -49,8 +49,8 @@ impl Solution {
 
         let mut cache: BTreeMap<(usize, bool, bool, i16), i64> = BTreeMap::new();
 
-        let num1 = num1.chars().map(|c| (c.to_digit(10).unwrap() as i16)).collect::<Vec<i16>>();
-        let num2 = num2.chars().map(|c| (c.to_digit(10).unwrap() as i16)).collect::<Vec<i16>>();
+        let num1 = num1.chars().map(|c| c.to_digit(10).unwrap() as i16).collect::<Vec<i16>>();
+        let num2 = num2.chars().map(|c| c.to_digit(10).unwrap() as i16).collect::<Vec<i16>>();
 
         Self::solve(0, false, false, 0, &num1, &num2, min_sum as i16, max_sum as i16, &mut cache) as i32
     }
