@@ -82,9 +82,9 @@ impl Solution {
         let mut grid = grid;
         let mut pos = (0, 0);
         let mut count = 0;
-        for i in 0..grid.len() {
-            for j in 0..grid[0].len() {
-                match grid[i][j] {
+        for (i, row) in grid.iter().enumerate() {
+            for (j, &val) in row.iter().enumerate() {
+                match val {
                     0 => count += 1,
                     1 => pos = (i, j),
                     _ => {}

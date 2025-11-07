@@ -77,14 +77,12 @@ impl Solution {
             }
         }
 
-        for n in 0..nums.len() {
-            let mut number_of_subsequences = 0;
-            for r in 0..=k - 1 {
-                if n >= r {
-                    number_of_subsequences = (number_of_subsequences + ncr[n][r]) % mod_num;
-                }
-            }
-            ans = (ans + (nums[n] + nums[nums.len() - n - 1]) * number_of_subsequences) % mod_num;
+        for (n, &num) in nums.iter().enumerate() {
+            let number_of_subsequences = (0..=k - 1)
+                .filter(|&r| n >= r)
+                .map(|r| ncr[n][r])
+                .fold(0, |acc, x| (acc + x) % mod_num);
+            ans = (ans + (num + nums[nums.len() - n - 1]) * number_of_subsequences) % mod_num;
         }
         ans as _
     }

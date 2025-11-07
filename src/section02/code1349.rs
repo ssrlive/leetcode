@@ -61,8 +61,8 @@ impl Solution {
         let mut validity = vec![0; m + 1];
         for i in 0..m {
             let mut rowvalid = 0;
-            for j in 0..n {
-                if seats[i][j] == '.' {
+            for (j, &ch) in seats[i].iter().enumerate() {
+                if ch == '.' {
                     rowvalid += 1 << j;
                 }
             }

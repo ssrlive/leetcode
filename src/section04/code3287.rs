@@ -53,10 +53,12 @@ impl Solution {
         let mut res = 0;
         let mut i = k as usize - 1;
         while i + (k as usize) < nums.len() {
-            for a in 0..=128 {
-                for b in 0..=128 {
-                    if left[i][k as usize][a] != 0 && right[i + 1][k as usize][b] != 0 {
-                        res = res.max(a ^ b);
+            for (a, &left_val) in left[i][k as usize].iter().enumerate() {
+                if left_val != 0 {
+                    for (b, &right_val) in right[i + 1][k as usize].iter().enumerate() {
+                        if right_val != 0 {
+                            res = res.max(a ^ b);
+                        }
                     }
                 }
             }

@@ -60,8 +60,8 @@ impl Solution {
             }
         }
         let mut res = 0;
-        for i in 0..=n {
-            res = res % m + dp[n][i] % m;
+        for &val in dp[n].iter() {
+            res = res % m + val % m;
         }
         (res % m) as _
     }

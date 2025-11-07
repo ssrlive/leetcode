@@ -63,11 +63,9 @@ impl Solution {
             count[c] += 1;
             let suf = &word[1..];
             let letters = suffix.entry(suf).or_insert(0);
-            for i in 0..26 {
-                if (1_usize << i) & *letters > 0 {
-                    tab[i][c] += 1;
-                    tab[c][i] += 1;
-                }
+            for i in (0..26).filter(|&i| (1_usize << i) & *letters > 0) {
+                tab[i][c] += 1;
+                tab[c][i] += 1;
             }
             *letters |= 1 << c;
         }

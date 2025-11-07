@@ -63,8 +63,8 @@ impl Solution {
             for i in 0..m - len {
                 let j = i + len;
                 let mut min = i32::MAX;
-                for k in i + 1..j {
-                    let cost = dp[i][k] + dp[k][j] + cuts[j] - cuts[i];
+                for (k, &val) in dp[i].iter().enumerate().skip(i + 1).take(j - i - 1) {
+                    let cost = val + dp[k][j] + cuts[j] - cuts[i];
                     if cost < min {
                         min = cost;
                     }

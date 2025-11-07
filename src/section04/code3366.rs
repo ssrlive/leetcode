@@ -60,10 +60,8 @@ impl Solution {
         let op2 = op2 as usize;
         let mut dp = vec![vec![vec![i32::MAX; op2 + 1]; op1 + 1]; n + 1];
 
-        for o1 in 0..=op1 {
-            for o2 in 0..=op2 {
-                dp[n][o1][o2] = 0;
-            }
+        for row in dp[n].iter_mut() {
+            row.iter_mut().for_each(|cell| *cell = 0);
         }
 
         for pos in (0..n).rev() {

@@ -64,11 +64,18 @@ impl Solution {
             count -= 1;
             for v in &graph[u] {
                 let idx = colors[*v] as usize - 'a' as usize;
-                for k in 0..26 {
+                let (data_u, data_v) = if u < *v {
+                    let (left, right) = data.split_at_mut(*v);
+                    (&left[u], &mut right[0])
+                } else {
+                    let (left, right) = data.split_at_mut(u);
+                    (&right[0], &mut left[*v])
+                };
+                for (k, (dv, &du)) in data_v.iter_mut().zip(data_u.iter()).enumerate() {
                     if k == idx {
-                        data[*v][k] = data[*v][k].max(data[u][k] + 1);
+                        *dv = (*dv).max(du + 1);
                     } else {
-                        data[*v][k] = data[*v][k].max(data[u][k]);
+                        *dv = (*dv).max(du);
                     }
                 }
                 ret = ret.max(data[*v][idx]);

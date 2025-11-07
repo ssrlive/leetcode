@@ -120,9 +120,9 @@ impl Solution {
             }
         }
         let mut ans = 0;
-        for k1 in 0..=k {
-            for m2 in 0..=m {
-                let val = dp[n][m][k1][m2];
+        for (k1, slice_k1) in dp[n][m].iter().enumerate().take(k + 1) {
+            // Iterate over all possible carry state m2 using enumerate over the last dimension.
+            for (m2, &val) in slice_k1.iter().enumerate() {
                 if val == 0 {
                     continue;
                 }

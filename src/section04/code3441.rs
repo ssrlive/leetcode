@@ -83,24 +83,25 @@ impl Solution {
         if n < 3 {
             return "".to_string();
         }
-        for last in 0..26 {
-            for cnt in 0..=3 {
-                dp[n][last][cnt] = if cnt >= 3 { (0, '~') } else { (-1, '~') };
+        for last_row in dp[n].iter_mut() {
+            for (cnt, cell) in last_row.iter_mut().enumerate() {
+                *cell = if cnt >= 3 { (0, '~') } else { (-1, '~') };
             }
         }
         for i in (0..n).rev() {
             let caption_char = caption[i] - b'a';
-            for last in 0..26 {
-                for cnt in 0..=3 {
+            let (curr_dp, next_dp) = dp.split_at_mut(i + 1);
+            for (last, last_row) in curr_dp[i].iter_mut().enumerate() {
+                for (cnt, cell) in last_row.iter_mut().enumerate() {
                     let mut best_char = b'~';
                     let mut best_cost = -1;
-                    for ch in 0..26 {
+                    for (ch, ch_row) in next_dp[0].iter().enumerate() {
                         let change_cost = (caption_char as i32 - ch as i32).abs();
                         if (1..3).contains(&cnt) && ch != last {
                             continue;
                         }
                         let next_cnt = std::cmp::min(3, 1 + (ch == last) as usize * cnt);
-                        let res = dp[i + 1][ch][next_cnt];
+                        let res = ch_row[next_cnt];
                         if res.0 == -1 {
                             continue;
                         }
@@ -109,7 +110,7 @@ impl Solution {
                             best_char = ch as u8;
                         }
                     }
-                    dp[i][last][cnt] = (best_cost, best_char as char);
+                    *cell = (best_cost, best_char as char);
                 }
             }
         }

@@ -59,9 +59,9 @@ impl Solution {
             let goal = "123450".to_string();
             let moves = [vec![1, 3], vec![0, 2, 4], vec![1, 5], vec![0, 4], vec![1, 3, 5], vec![2, 4]];
             let mut cr = String::new();
-            for i in 0..board.len() {
-                for j in 0..board[0].len() {
-                    cr.push_str(&board[i][j].to_string());
+            for row in board.iter() {
+                for &val in row.iter() {
+                    cr.push_str(&val.to_string());
                 }
             }
             let mut q = std::collections::VecDeque::new();

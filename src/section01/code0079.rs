@@ -59,10 +59,9 @@ impl Solution {
             item[0] = false;
             item[m + 1] = false;
         }
-        for j in 0..m + 2 {
-            f[0][j] = false;
-            f[n + 1][j] = false;
-        }
+        // Set top and bottom boundaries
+        f[0].iter_mut().for_each(|cell| *cell = false);
+        f[n + 1].iter_mut().for_each(|cell| *cell = false);
 
         fn rec(b: &Vec<Vec<char>>, w: &Vec<char>, i: usize, j: usize, k: usize, f: &mut Vec<Vec<bool>>) -> bool {
             if k == w.len() {

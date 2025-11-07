@@ -47,8 +47,7 @@ impl Solution {
                 let mut new_stack = vec![];
                 while let Some((ci, v)) = stack.pop() {
                     let nv = v + 1;
-                    for i in 0..g[ci].len() {
-                        let ni = g[ci][i];
+                    for &ni in g[ci].iter() {
                         if nv < memo[ni] {
                             memo[ni] = nv;
                             new_stack.push((ni, nv));

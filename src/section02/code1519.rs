@@ -67,19 +67,26 @@ impl Solution {
         ans
     }
 
-    fn dfs(u: usize, visited: &mut Vec<bool>, count: &mut Vec<Vec<i32>>, graph: &Vec<Vec<usize>>, labels: &[u8], ans: &mut Vec<i32>) {
+    fn dfs(u: usize, visited: &mut [bool], count: &mut [Vec<i32>], graph: &[Vec<usize>], labels: &[u8], ans: &mut [i32]) {
         visited[u] = true;
-        let c = labels[u] - b'a';
-        count[u][c as usize] += 1;
+        let c = (labels[u] - b'a') as usize;
+        count[u][c] += 1;
         for &v in &graph[u] {
             if !visited[v] {
                 Self::dfs(v, visited, count, graph, labels, ans);
-                for i in 0..26 {
-                    count[u][i] += count[v][i];
+                let (count_u, count_v) = if u < v {
+                    let (left, right) = count.split_at_mut(v);
+                    (&mut left[u], &mut right[0])
+                } else {
+                    let (left, right) = count.split_at_mut(u);
+                    (&mut right[0], &mut left[v])
+                };
+                for (cu, &cv) in count_u.iter_mut().zip(count_v.iter()) {
+                    *cu += cv;
                 }
             }
         }
-        ans[u] = count[u][c as usize];
+        ans[u] = count[u][c];
     }
 }
 

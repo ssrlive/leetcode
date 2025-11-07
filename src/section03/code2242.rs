@@ -73,8 +73,7 @@ impl Solution {
                 if a == c {
                     continue;
                 }
-                for j in 0..graph[c].len().min(3) {
-                    let d = graph[c][j].1;
+                for &(_, d) in graph[c].iter().take(3) {
                     if d == b || d == a {
                         continue;
                     }

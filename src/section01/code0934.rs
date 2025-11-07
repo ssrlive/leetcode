@@ -51,9 +51,9 @@ impl Solution {
 
         // bfs from marked island until find the other land
         let mut queue = std::collections::VecDeque::new();
-        for i in 0..grid.len() {
-            for j in 0..grid[0].len() {
-                if grid[i][j] == 2 {
+        for (i, row) in grid.iter().enumerate() {
+            for (j, &val) in row.iter().enumerate() {
+                if val == 2 {
                     queue.push_back((i, j, 0_i32));
                 }
             }

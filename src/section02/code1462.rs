@@ -69,14 +69,21 @@ impl Solution {
         res
     }
 
-    fn search(u: usize, g: &Vec<Vec<usize>>, c: &mut Vec<bool>, pre: &mut Vec<Vec<bool>>) {
+    fn search(u: usize, g: &[Vec<usize>], c: &mut [bool], pre: &mut [Vec<bool>]) {
         for v in &g[u] {
             if !c[*v] {
                 Solution::search(*v, g, c, pre);
             }
             pre[u][*v] = true;
-            for i in 0..pre.len() {
-                pre[u][i] |= pre[*v][i];
+            let (pre_u, pre_v) = if u < *v {
+                let (left, right) = pre.split_at_mut(*v);
+                (&mut left[u], &right[0])
+            } else {
+                let (left, right) = pre.split_at_mut(u);
+                (&mut right[0], &left[*v])
+            };
+            for (pu, &pv) in pre_u.iter_mut().zip(pre_v.iter()) {
+                *pu |= pv;
             }
         }
         c[u] = true;

@@ -57,9 +57,9 @@ impl Solution {
                 }
             }
         }
-        for i in 0..freq.len() {
-            for j in 0..freq[0].len() {
-                ans += freq[i][j] as i64 * (nums.len() as i64 - freq[i][j] as i64);
+        for freq_i in freq.iter() {
+            for &count in freq_i.iter() {
+                ans += count as i64 * (nums.len() as i64 - count as i64);
             }
         }
         ans / 2

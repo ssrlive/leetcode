@@ -54,8 +54,8 @@ impl Solution {
         }
         let mut dp = vec![vec![vec![0; k + 1]; m + 1]; 2];
         let mod_num = 1_000_000_007;
-        for j in 1..=m {
-            dp[0][j][1] = j as i64;
+        for (j, row_j) in dp[0].iter_mut().enumerate().skip(1).take(m) {
+            row_j[1] = j as i64;
         }
         for i in 1..n {
             for j in 1..=m {

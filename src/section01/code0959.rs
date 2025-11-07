@@ -88,8 +88,8 @@ impl Solution {
                     }
                 }
                 for i in 0..3 {
-                    for j in 0..3 {
-                        v[i].push(data[i][j]);
+                    for &val in data[i].iter().take(3) {
+                        v[i].push(val);
                     }
                 }
             }

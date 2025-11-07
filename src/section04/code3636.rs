@@ -77,8 +77,8 @@ impl Solution {
             let l = queries[i][0] as usize;
             let r = queries[i][1] as usize;
             let th = queries[i][2];
-            for j in 0..m {
-                let freq = cnt[r + 1][j] - cnt[l][j];
+            for (j, (&r_cnt, &l_cnt)) in cnt[r + 1].iter().zip(&cnt[l]).enumerate() {
+                let freq = r_cnt - l_cnt;
                 if freq > hf {
                     hf = freq;
                     v = j as i32;

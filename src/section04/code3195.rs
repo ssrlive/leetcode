@@ -43,9 +43,9 @@ struct Solution;
 impl Solution {
     pub fn minimum_area(grid: Vec<Vec<i32>>) -> i32 {
         let (mut y1, mut y2, mut x1, mut x2) = (i32::MAX, i32::MIN, i32::MAX, i32::MIN);
-        for y in 0..grid.len() {
-            for x in 0..grid[0].len() {
-                if grid[y][x] == 1 {
+        for (y, row) in grid.iter().enumerate() {
+            for (x, &cell) in row.iter().enumerate() {
+                if cell == 1 {
                     y1 = y1.min(y as i32);
                     y2 = y2.max(y as i32);
                     x1 = x1.min(x as i32);

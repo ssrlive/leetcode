@@ -44,9 +44,10 @@ impl Solution {
         use std::collections::HashMap;
         fn clean(dp: &mut [Vec<Vec<std::collections::HashMap<i32, i32>>>]) {
             for dp_i in dp.iter_mut().take(11) {
-                for sum in 0..82 {
-                    dp_i[0][sum] = HashMap::new();
-                    dp_i[1][sum] = HashMap::new();
+                for dp_row in dp_i.iter_mut() {
+                    for sum_map in dp_row.iter_mut() {
+                        *sum_map = HashMap::new();
+                    }
                 }
             }
         }

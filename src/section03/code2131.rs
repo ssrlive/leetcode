@@ -55,10 +55,10 @@ impl Solution {
         }
         let mut result = 0;
         let mut have_middle = false;
-        for i in 0..26 {
-            for j in i..26 {
+        for (i, occ_i) in occ.iter().enumerate() {
+            for (j, &occ_ij) in occ_i.iter().enumerate().skip(i) {
                 if i == j {
-                    let aa = occ[i][j];
+                    let aa = occ_ij;
                     result += (aa / 2) * 4;
                     if aa % 2 == 1 && !have_middle {
                         result += 2;

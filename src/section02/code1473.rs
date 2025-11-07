@@ -62,9 +62,7 @@ impl Solution {
         let n = n as usize;
         let target = target as usize;
         let mut dp = vec![vec![vec![i32::MAX; n]; target + 1]; m + 1];
-        for i in 0..n {
-            dp[0][0][i] = 0;
-        }
+        dp[0][0].iter_mut().for_each(|cell| *cell = 0);
         for i in 1..=m {
             for j in 1..=target {
                 for k in 0..n {
@@ -85,8 +83,8 @@ impl Solution {
             }
         }
         let mut ans = i32::MAX;
-        for i in 0..n {
-            ans = ans.min(dp[m][target][i]);
+        for &val in dp[m][target].iter() {
+            ans = ans.min(val);
         }
         if ans == i32::MAX { -1 } else { ans }
     }

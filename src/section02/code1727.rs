@@ -48,9 +48,10 @@ impl Solution {
         let m = matrix.len();
         let n = matrix[0].len();
         for i in 1..m {
-            for j in 0..n {
-                if matrix[i][j] == 1 {
-                    matrix[i][j] += matrix[i - 1][j];
+            let (prev, curr) = matrix.split_at_mut(i);
+            for (curr_val, &prev_val) in curr[0].iter_mut().zip(prev[i - 1].iter()) {
+                if *curr_val == 1 {
+                    *curr_val += prev_val;
                 }
             }
         }

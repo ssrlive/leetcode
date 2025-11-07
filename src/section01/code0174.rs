@@ -33,9 +33,7 @@ impl Solution {
         for item in dp.iter_mut() {
             item[n] = i32::MAX;
         }
-        for j in 0..=n {
-            dp[m][j] = i32::MAX;
-        }
+        dp[m].iter_mut().for_each(|cell| *cell = i32::MAX);
         dp[m][n - 1] = 1;
         dp[m - 1][n] = 1;
         for i in (0..m).rev() {

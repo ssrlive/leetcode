@@ -65,9 +65,7 @@ impl Solution {
 
         let mut pq: BinaryHeap<(i32, usize, usize)> = BinaryHeap::new();
 
-        for j in 0..=k {
-            dist[src][j] = 0;
-        }
+        dist[src].iter_mut().for_each(|cell| *cell = 0);
         pq.push((0, src, 0));
         while let Some((d, u, cnt)) = pq.pop() {
             if u == dst {

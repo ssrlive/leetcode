@@ -97,8 +97,15 @@ impl Solution {
     }
 
     fn get_count(n: usize, par: usize, adj: &Vec<Vec<(usize, i32)>>, count: &mut Vec<Vec<i32>>) {
-        for i in 0..27 {
-            count[n][i] += count[par][i];
+        if n != par {
+            let (count_n, count_par) = if n < par {
+                let (left, right) = count.split_at_mut(par);
+                (&mut left[n], &right[0])
+            } else {
+                let (left, right) = count.split_at_mut(n);
+                (&mut right[0], &left[par])
+            };
+            count_n.iter_mut().zip(count_par.iter()).for_each(|(cn, &cp)| *cn += cp);
         }
         for x in adj[n].iter() {
             if x.0 != par {
@@ -125,13 +132,9 @@ impl Solution {
         let mut ans = vec![];
         for x in queries.iter() {
             let l = Solution::lca(x[0] as usize, x[1] as usize, log, &lev, &memo);
-            let mut tot = 0;
-            let mut mx = 0;
-            for i in 0..27 {
-                let cur = count[x[0] as usize][i] + count[x[1] as usize][i] - 2 * count[l][i];
-                tot += cur;
-                mx = mx.max(cur);
-            }
+            let (tot, mx) = (0..27)
+                .map(|i| count[x[0] as usize][i] + count[x[1] as usize][i] - 2 * count[l][i])
+                .fold((0, 0), |(tot, mx), cur| (tot + cur, mx.max(cur)));
             ans.push(tot - mx);
         }
         ans

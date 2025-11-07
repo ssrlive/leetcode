@@ -64,8 +64,8 @@ impl Solution {
             let c = queries[i][2] as usize;
 
             let mut odd = 0;
-            for j in 0..26 {
-                odd += (memo[r + 1][j] - memo[l][j]) % 2;
+            for (r_val, l_val) in memo[r + 1].iter().zip(&memo[l]) {
+                odd += (r_val - l_val) % 2;
             }
             odd += odd % 2;
 

@@ -89,7 +89,7 @@ impl Solution {
                 if i & (1 << j) == 0 {
                     continue;
                 }
-                for k in 0..statements.len() {
+                for (k, _) in statements.iter().enumerate() {
                     if ((i & (1 << k) != 0) && statements[j][k] == 0) ||
                        ((i & (1 << k) == 0) && statements[j][k] == 1)
                     {

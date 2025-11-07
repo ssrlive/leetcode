@@ -46,12 +46,12 @@ impl Solution {
         for i in 1..n {
             let mut min1 = i32::MAX;
             let mut min2 = i32::MAX;
-            for j in 0..n {
-                if dp[i - 1][j] < min1 {
+            for &val in dp[i - 1].iter().take(n) {
+                if val < min1 {
                     min2 = min1;
-                    min1 = dp[i - 1][j];
-                } else if dp[i - 1][j] < min2 {
-                    min2 = dp[i - 1][j];
+                    min1 = val;
+                } else if val < min2 {
+                    min2 = val;
                 }
             }
             for j in 0..n {
@@ -63,9 +63,9 @@ impl Solution {
             }
         }
         let mut min = i32::MAX;
-        for i in 0..n {
-            if dp[n - 1][i] < min {
-                min = dp[n - 1][i];
+        for &val in dp[n - 1].iter().take(n) {
+            if val < min {
+                min = val;
             }
         }
         min

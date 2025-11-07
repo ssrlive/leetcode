@@ -69,16 +69,10 @@ impl Solution {
             }
         }
 
-        let mut col_count = 0;
-
         // Count flips needed for each column to make them palindromic
-        for j in 0..m {
-            for i in (0..n).rev() {
-                if grid[n - i - 1][j] != grid[i][j] {
-                    col_count += 1;
-                }
-            }
-        }
+        let col_count: i32 = (0..m)
+            .map(|j| (0..n).rev().filter(|&i| grid[n - i - 1][j] != grid[i][j]).count() as i32)
+            .sum();
 
         // Return the minimum number of flips required
         (row_count / 2).min(col_count / 2)

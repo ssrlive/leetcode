@@ -61,9 +61,9 @@ impl Solution {
             }
         }
         let mut ans = 0;
-        for j in 0..2 {
-            for k in 0..3 {
-                ans = (ans + dp[n][j][k]) % 1000000007;
+        for row_j in dp[n].iter().take(2) {
+            for &val in row_j.iter().take(3) {
+                ans = (ans + val) % 1000000007;
             }
         }
         ans as i32

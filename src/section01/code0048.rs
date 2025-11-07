@@ -32,10 +32,10 @@ impl Solution {
     pub fn rotate(matrix: &mut [Vec<i32>]) {
         matrix.reverse();
         for i in 1..matrix.len() {
+            let (left, right) = matrix.split_at_mut(i);
+            let row_i = &mut right[0];
             for j in 0..i {
-                let t = matrix[i][j];
-                matrix[i][j] = matrix[j][i];
-                matrix[j][i] = t;
+                std::mem::swap(&mut row_i[j], &mut left[j][i]);
             }
         }
     }

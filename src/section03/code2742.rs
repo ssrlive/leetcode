@@ -45,9 +45,7 @@ impl Solution {
     pub fn paint_walls(cost: Vec<i32>, time: Vec<i32>) -> i32 {
         let n = cost.len();
         let mut dp = vec![vec![0; n + 1]; n + 1];
-        for i in 1..n + 1 {
-            dp[n][i] = 1_000_000_000;
-        }
+        dp[n].iter_mut().skip(1).for_each(|cell| *cell = 1_000_000_000);
 
         for i in (0..n).rev() {
             for need_to_take in 1..n + 1 {

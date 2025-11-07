@@ -52,8 +52,8 @@ impl Solution {
             last[1][c] = last[0][c];
             last[0][c] = i;
         }
-        for c in 0..26 {
-            ret += (s.len() as i32 - last[0][c]) * (last[0][c] - last[1][c]);
+        for (last_0, last_1) in last[0].iter().zip(&last[1]) {
+            ret += (s.len() as i32 - last_0) * (last_0 - last_1);
         }
         ret
     }

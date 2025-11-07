@@ -57,18 +57,31 @@ impl Solution {
         let mut outdegree = vec![vec![vec![0; len]; len]; 2];
         let mut q = VecDeque::new();
 
-        for j in 0..len {
-            dp[0][0][j] = 1;
-            dp[1][0][j] = 1;
-            q.push_back((0, 0, j));
-            q.push_back((1, 0, j));
-        }
-        for j in 1..len {
-            dp[0][j][j] = 2;
-            dp[1][j][j] = 2;
-            q.push_back((0, j, j));
-            q.push_back((1, j, j));
-        }
+        let (dp0, dp1) = dp.split_at_mut(1);
+        dp0[0][0]
+            .iter_mut()
+            .zip(dp1[0][0].iter_mut())
+            .enumerate()
+            .for_each(|(j, (val0, val1))| {
+                *val0 = 1;
+                *val1 = 1;
+                q.push_back((0, 0, j));
+                q.push_back((1, 0, j));
+            });
+
+        let (dp0, dp1) = dp.split_at_mut(1);
+        dp0[0]
+            .iter_mut()
+            .zip(dp1[0].iter_mut())
+            .enumerate()
+            .skip(1)
+            .for_each(|(j, (dp0_row, dp1_row))| {
+                dp0_row[j] = 2;
+                dp1_row[j] = 2;
+                q.push_back((0, j, j));
+                q.push_back((1, j, j));
+            });
+
         for i in 0..len {
             for j in 1..len {
                 outdegree[0][i][j] = graph[i].len() as i32;
@@ -76,9 +89,7 @@ impl Solution {
             }
         }
         for &v in &graph[0] {
-            for i in 0..len {
-                outdegree[1][i][v as usize] -= 1;
-            }
+            outdegree[1].iter_mut().for_each(|row| row[v as usize] -= 1);
         }
         while let Some((turn, mouse, cat)) = q.pop_front() {
             if turn == 0 && mouse == 1 && cat == 2 {

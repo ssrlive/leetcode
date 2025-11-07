@@ -43,12 +43,7 @@ impl Solution {
         let mut ret = 0;
         for i in 0..n {
             for j in 0..n {
-                let mut valid = true;
-                for k in 0..n {
-                    if grid[i][k] != grid[k][j] {
-                        valid = false;
-                    }
-                }
+                let valid = grid[i].iter().zip(grid.iter().map(|row| row[j])).all(|(a, b)| *a == b);
                 if valid {
                     ret += 1;
                 }

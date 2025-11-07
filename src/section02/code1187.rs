@@ -45,8 +45,8 @@ impl Solution {
         let n = arr2.len();
         let mut f = vec![vec![i32::MAX; n]; m];
         let mut g = vec![i32::MAX; m];
-        for i in 0..n {
-            f[0][i] = 1;
+        for item in f[0].iter_mut().take(n) {
+            *item = 1;
         }
         g[0] = 0;
         for i in 1..m {

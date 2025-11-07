@@ -41,16 +41,17 @@ impl Solution {
         let mut grid = grid;
         let mut s = 0;
         let (yy, xx) = (grid.len(), grid[0].len());
-        for x in 0..xx {
-            s += grid[0][x];
-            grid[0][x] = s;
+        for cell in grid[0].iter_mut() {
+            s += *cell;
+            *cell = s;
         }
 
         for y in 1..yy {
             s = 0;
-            for x in 0..xx {
-                s += grid[y][x];
-                grid[y][x] = grid[y - 1][x] + s;
+            let (prev, curr) = grid.split_at_mut(y);
+            for (curr_cell, &prev_cell) in curr[0].iter_mut().zip(prev[y - 1].iter()) {
+                s += *curr_cell;
+                *curr_cell = prev_cell + s;
             }
         }
 

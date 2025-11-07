@@ -58,9 +58,7 @@ impl Solution {
 
         let mut dp = vec![vec![MOD; n + 1]; k as usize + 1];
 
-        for j in 0..=n {
-            dp[0][j] = 0;
-        }
+        dp[0].iter_mut().for_each(|cell| *cell = 0);
 
         for i in 0..k {
             let mut best = MOD;

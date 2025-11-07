@@ -102,13 +102,10 @@ impl Solution {
                 child_dps.push((dp[v as usize][0].clone(), dp[v as usize][1].clone()));
             }
 
-            for parent_bought in 0..=1 {
-                let price = if parent_bought == 1 {
-                    present[u as usize] / 2
-                } else {
-                    present[u as usize]
-                };
-                let profit = future[u as usize] - price;
+            let uidx = u as usize;
+            for (parent_bought, slot) in dp[uidx].iter_mut().enumerate() {
+                let price = if parent_bought == 1 { present[uidx] / 2 } else { present[uidx] };
+                let profit = future[uidx] - price;
 
                 let mut curr = vec![0; (budget + 1) as usize];
 
@@ -151,7 +148,7 @@ impl Solution {
                         curr[b as usize] = curr[b as usize].max(base_buy[(b - price) as usize] + profit);
                     }
                 }
-                dp[u as usize][parent_bought] = curr;
+                *slot = curr;
             }
         }
 

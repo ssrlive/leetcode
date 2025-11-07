@@ -54,13 +54,13 @@ impl Solution {
                 }
             }
         }
-        for i in 0..n {
-            row += board[0][i];
-            col += board[i][0];
-            if board[i][0] == i as i32 % 2 {
+        for (i, (&row_val, &col_val)) in board[0].iter().zip(board.iter().map(|r| &r[0])).enumerate() {
+            row += row_val;
+            col += col_val;
+            if col_val == i as i32 % 2 {
                 row_diff += 1;
             }
-            if board[0][i] == i as i32 % 2 {
+            if row_val == i as i32 % 2 {
                 col_diff += 1;
             }
         }
