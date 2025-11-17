@@ -541,3 +541,15 @@ cargo test
 | 3638 | [Maximum Balanced Shipments](code3638.rs) | [link](https://leetcode.com/problems/maximum-balanced-shipments/) | Medium | :heavy_check_mark: |
 | 3639 | [Minimum Time to Activate String](code3639.rs) | [link](https://leetcode.com/problems/minimum-time-to-activate-string/) | Medium | :heavy_check_mark: |
 | 3640 | [Trionic Array II](code3640.rs) | [link](https://leetcode.com/problems/trionic-array-ii/) | Hard | :heavy_check_mark: |
+| 3643 | [Flip Square Submatrix Vertically](code3643.rs) | [link](https://leetcode.com/problems/flip-square-submatrix-vertically/) | Easy | :heavy_check_mark: |
+| 3644 | [Maximum K to Sort a Permutation](code3644.rs) | [link](https://leetcode.com/problems/maximum-k-to-sort-a-permutation/) | Medium | :heavy_check_mark: |
+| 3645 | [Maximum Total from Optimal Activation Order](code3645.rs) | [link](https://leetcode.com/problems/maximum-total-from-optimal-activation-order/) | Medium | :heavy_check_mark: |
+| 3646 | [Next Special Palindrome Number](code3646.rs) | [link](https://leetcode.com/problems/next-special-palindrome-number/) | Hard | :heavy_check_mark: |
+| 3648 | [Minimum Sensors to Cover Grid](code3648.rs) | [link](https://leetcode.com/problems/minimum-sensors-to-cover-grid/) | Medium | :heavy_check_mark: |
+| 3649 | [Number of Perfect Pairs](code3649.rs) | [link](https://leetcode.com/problems/number-of-perfect-pairs/) | Medium | :heavy_check_mark: |
+| 3650 | [Minimum Cost Path with Edge Reversals](code3650.rs) | [link](https://leetcode.com/problems/minimum-cost-path-with-edge-reversals/) | Medium | :heavy_check_mark: |
+| 3651 | [Minimum Cost Path with Teleportations](code3651.rs) | [link](https://leetcode.com/problems/minimum-cost-path-with-teleportations/) | Hard | :heavy_check_mark: |
+| 3652 | [Best Time to Buy and Sell Stock using Strategy](code3652.rs) | [link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-using-strategy/) | Medium | :heavy_check_mark: |
+| 3653 | [XOR After Range Multiplication Queries I](code3653.rs) | [link](https://leetcode.com/problems/xor-after-range-multiplication-queries-i/) | Medium | :heavy_check_mark: |
+| 3654 | [Minimum Sum After Divisible Sum Deletions](code3654.rs) | [link](https://leetcode.com/problems/minimum-sum-after-divisible-sum-deletions/) | Medium | :heavy_check_mark: |
+| 3655 | [XOR After Range Multiplication Queries II](code3655.rs) | [link](https://leetcode.com/problems/xor-after-range-multiplication-queries-ii/) | Hard | :heavy_check_mark: |
