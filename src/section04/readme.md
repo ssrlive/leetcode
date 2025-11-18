@@ -553,3 +553,15 @@ cargo test
 | 3653 | [XOR After Range Multiplication Queries I](code3653.rs) | [link](https://leetcode.com/problems/xor-after-range-multiplication-queries-i/) | Medium | :heavy_check_mark: |
 | 3654 | [Minimum Sum After Divisible Sum Deletions](code3654.rs) | [link](https://leetcode.com/problems/minimum-sum-after-divisible-sum-deletions/) | Medium | :heavy_check_mark: |
 | 3655 | [XOR After Range Multiplication Queries II](code3655.rs) | [link](https://leetcode.com/problems/xor-after-range-multiplication-queries-ii/) | Hard | :heavy_check_mark: |
+| 3658 | [GCD of Odd and Even Sums](code3658.rs) | [link](https://leetcode.com/problems/gcd-of-odd-and-even-sums/) | Easy | :heavy_check_mark: |
+| 3659 | [Partition Array Into K-Distinct Groups](code3659.rs) | [link](https://leetcode.com/problems/partition-array-into-k-distinct-groups/) | Medium | :heavy_check_mark: |
+| 3660 | [Jump Game IX](code3660.rs) | [link](https://leetcode.com/problems/jump-game-ix/) | Medium | :heavy_check_mark: |
+| 3661 | [Maximum Walls Destroyed by Robots](code3661.rs) | [link](https://leetcode.com/problems/maximum-walls-destroyed-by-robots/) | Hard | :heavy_check_mark: |
+| 3663 | [Find The Least Frequent Digit](code3663.rs) | [link](https://leetcode.com/problems/find-the-least-frequent-digit/) | Easy | :heavy_check_mark: |
+| 3664 | [Two-Letter Card Game](code3664.rs) | [link](https://leetcode.com/problems/two-letter-card-game/) | Medium | :heavy_check_mark: |
+| 3665 | [Twisted Mirror Path Count](code3665.rs) | [link](https://leetcode.com/problems/twisted-mirror-path-count/) | Medium | :heavy_check_mark: |
+| 3666 | [Minimum Operations to Equalize Binary String](code3666.rs) | [link](https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/) | Hard | :heavy_check_mark: |
+| 3668 | [Restore Finishing Order](code3668.rs) | [link](https://leetcode.com/problems/restore-finishing-order/) | Medium | :heavy_check_mark: |
+| 3669 | [Balanced K-Factor Decomposition](code3669.rs) | [link](https://leetcode.com/problems/balanced-k-factor-decomposition/) | Medium | :heavy_check_mark: |
+| 3670 | [Maximum Product of Two Integers With No Common Bits](code3670.rs) | [link](https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/) | Medium | :heavy_check_mark: |
+| 3671 | [Sum of Beautiful Subsequences](code3671.rs) | [link](https://leetcode.com/problems/sum-of-beautiful-subsequences/) | Hard | :heavy_check_mark: |
