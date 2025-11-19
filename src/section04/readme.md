@@ -548,6 +548,9 @@ cargo test
 | 3648 | [Minimum Sensors to Cover Grid](code3648.rs) | [link](https://leetcode.com/problems/minimum-sensors-to-cover-grid/) | Medium | :heavy_check_mark: |
 | 3649 | [Number of Perfect Pairs](code3649.rs) | [link](https://leetcode.com/problems/number-of-perfect-pairs/) | Medium | :heavy_check_mark: |
 | 3650 | [Minimum Cost Path with Edge Reversals](code3650.rs) | [link](https://leetcode.com/problems/minimum-cost-path-with-edge-reversals/) | Medium | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
 | 3651 | [Minimum Cost Path with Teleportations](code3651.rs) | [link](https://leetcode.com/problems/minimum-cost-path-with-teleportations/) | Hard | :heavy_check_mark: |
 | 3652 | [Best Time to Buy and Sell Stock using Strategy](code3652.rs) | [link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-using-strategy/) | Medium | :heavy_check_mark: |
 | 3653 | [XOR After Range Multiplication Queries I](code3653.rs) | [link](https://leetcode.com/problems/xor-after-range-multiplication-queries-i/) | Medium | :heavy_check_mark: |
@@ -565,3 +568,15 @@ cargo test
 | 3669 | [Balanced K-Factor Decomposition](code3669.rs) | [link](https://leetcode.com/problems/balanced-k-factor-decomposition/) | Medium | :heavy_check_mark: |
 | 3670 | [Maximum Product of Two Integers With No Common Bits](code3670.rs) | [link](https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/) | Medium | :heavy_check_mark: |
 | 3671 | [Sum of Beautiful Subsequences](code3671.rs) | [link](https://leetcode.com/problems/sum-of-beautiful-subsequences/) | Hard | :heavy_check_mark: |
+| 3674 | [Minimum Operations to Equalize Array](code3674.rs) | [link](https://leetcode.com/problems/minimum-operations-to-equalize-array/) | Easy | :heavy_check_mark: |
+| 3675 | [Minimum Operations to Transform String](code3675.rs) | [link](https://leetcode.com/problems/minimum-operations-to-transform-string/) | Medium | :heavy_check_mark: |
+| 3676 | [Count Bowl Subarrays](code3676.rs) | [link](https://leetcode.com/problems/count-bowl-subarrays/) | Medium | :heavy_check_mark: |
+| 3677 | [Count Binary Palindromic Numbers](code3677.rs) | [link](https://leetcode.com/problems/count-binary-palindromic-numbers/) | Hard | :heavy_check_mark: |
+| 3678 | [Smallest Absent Positive Greater Than Average](code3678.rs) | [link](https://leetcode.com/problems/smallest-absent-positive-greater-than-average/) | Easy | :heavy_check_mark: |
+| 3679 | [Minimum Discards to Balance Inventory](code3679.rs) | [link](https://leetcode.com/problems/minimum-discards-to-balance-inventory/) | Medium | :heavy_check_mark: |
+| 3680 | [Generate Schedule](code3680.rs) | [link](https://leetcode.com/problems/generate-schedule/) | Medium | :heavy_check_mark: |
+| 3681 | [Maximum XOR of Subsequences](code3681.rs) | [link](https://leetcode.com/problems/maximum-xor-of-subsequences/) | Hard | :heavy_check_mark: |
+| 3683 | [Earliest Time to Finish One Task](code3683.rs) | [link](https://leetcode.com/problems/earliest-time-to-finish-one-task/) | Easy | :heavy_check_mark: |
+| 3684 | [Maximize Sum of At Most K Distinct Elements](code3684.rs) | [link](https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/) | Easy | :heavy_check_mark: |
+| 3685 | [Subsequence Sum After Capping Elements](code3685.rs) | [link](https://leetcode.com/problems/subsequence-sum-after-capping-elements/) | Medium | :heavy_check_mark: |
+| 3686 | [Number of Stable Subsequences](code3686.rs) | [link](https://leetcode.com/problems/number-of-stable-subsequences/) | Hard | :heavy_check_mark: |
