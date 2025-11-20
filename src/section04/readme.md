@@ -580,3 +580,11 @@ cargo test
 | 3684 | [Maximize Sum of At Most K Distinct Elements](code3684.rs) | [link](https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/) | Easy | :heavy_check_mark: |
 | 3685 | [Subsequence Sum After Capping Elements](code3685.rs) | [link](https://leetcode.com/problems/subsequence-sum-after-capping-elements/) | Medium | :heavy_check_mark: |
 | 3686 | [Number of Stable Subsequences](code3686.rs) | [link](https://leetcode.com/problems/number-of-stable-subsequences/) | Hard | :heavy_check_mark: |
+| 3688 | [Bitwise OR of Even Numbers in an Array](code3688.rs) | [link](https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/) | Easy | :heavy_check_mark: |
+| 3689 | [Maximum Total Subarray Value I](code3689.rs) | [link](https://leetcode.com/problems/maximum-total-subarray-value-i/) | Medium | :heavy_check_mark: |
+| 3690 | [Split and Merge Array Transformation](code3690.rs) | [link](https://leetcode.com/problems/split-and-merge-array-transformation/) | Medium | :heavy_check_mark: |
+| 3691 | [Maximum Total Subarray Value II](code3691.rs) | [link](https://leetcode.com/problems/maximum-total-subarray-value-ii/) | Hard | :heavy_check_mark: |
+| 3692 | [Majority Frequency Characters](code3692.rs) | [link](https://leetcode.com/problems/majority-frequency-characters/) | Easy | :heavy_check_mark: |
+| 3693 | [Climbing Stairs II](code3693.rs) | [link](https://leetcode.com/problems/climbing-stairs-ii/) | Medium | :heavy_check_mark: |
+| 3694 | [Distinct Points Reachable After Substring Removal](code3694.rs) | [link](https://leetcode.com/problems/distinct-points-reachable-after-substring-removal/) | Medium | :heavy_check_mark: |
+| 3695 | [Maximize Alternating Sum Using Swaps](code3695.rs) | [link](https://leetcode.com/problems/maximize-alternating-sum-using-swaps/) | Hard | :heavy_check_mark: |
