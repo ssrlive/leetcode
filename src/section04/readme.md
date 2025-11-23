@@ -588,3 +588,18 @@ cargo test
 | 3693 | [Climbing Stairs II](code3693.rs) | [link](https://leetcode.com/problems/climbing-stairs-ii/) | Medium | :heavy_check_mark: |
 | 3694 | [Distinct Points Reachable After Substring Removal](code3694.rs) | [link](https://leetcode.com/problems/distinct-points-reachable-after-substring-removal/) | Medium | :heavy_check_mark: |
 | 3695 | [Maximize Alternating Sum Using Swaps](code3695.rs) | [link](https://leetcode.com/problems/maximize-alternating-sum-using-swaps/) | Hard | :heavy_check_mark: |
+| 3697 | [Compute Decimal Representation](code3697.rs) | [link](https://leetcode.com/problems/compute-decimal-representation/) | Easy | :heavy_check_mark: |
+| 3698 | [Split Array With Minimum Difference](code3698.rs) | [link](https://leetcode.com/problems/split-array-with-minimum-difference/) | Medium | :heavy_check_mark: |
+| 3699 | [Number of ZigZag Arrays I](code3699.rs) | [link](https://leetcode.com/problems/number-of-zigzag-arrays-i/) | Hard | :heavy_check_mark: |
+| 3700 | [Number of ZigZag Arrays II](code3700.rs) | [link](https://leetcode.com/problems/number-of-zigzag-arrays-ii/) | Hard | :heavy_check_mark: |
+
+| # | Title | Link | Difficulty | Solution |
+|---| ----- | ---- | ---------- | :------: |
+| 3701 | [Compute Alternating Sum](code3701.rs) | [link](https://leetcode.com/problems/compute-alternating-sum/) | Easy | :heavy_check_mark: |
+| 3702 | [Longest Subsequence With Non-Zero Bitwise XOR](code3702.rs) | [link](https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/) | Medium | :heavy_check_mark: |
+| 3703 | [Remove K-Balanced Substrings](code3703.rs) | [link](https://leetcode.com/problems/remove-k-balanced-substrings/) | Medium | :heavy_check_mark: |
+| 3704 | [Count No-Zero Pairs That Sum to N](code3704.rs) | [link](https://leetcode.com/problems/count-no-zero-pairs-that-sum-to-n/) | Hard | :heavy_check_mark: |
+| 3707 | [Equal Score Substrings](code3707.rs) | [link](https://leetcode.com/problems/equal-score-substrings/) | Easy | :heavy_check_mark: |
+| 3708 | [Longest Fibonacci Subarray](code3708.rs) | [link](https://leetcode.com/problems/longest-fibonacci-subarray/) | Medium | :heavy_check_mark: |
+| 3709 | [Design Exam Scores Tracker](code3709.rs) | [link](https://leetcode.com/problems/design-exam-scores-tracker/) | Medium | :heavy_check_mark: |
+| 3710 | [Maximum Partition Factor](code3710.rs) | [link](https://leetcode.com/problems/maximum-partition-factor/) | Hard | :heavy_check_mark: |
