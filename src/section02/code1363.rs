@@ -36,6 +36,7 @@
 struct Solution;
 
 impl Solution {
+    #[allow(unused_assignments)]
     pub fn largest_multiple_of_three(digits: Vec<i32>) -> String {
         let mut bucket: [usize; 10] = [0; 10];
         let mut res: Vec<i32> = Vec::new();
